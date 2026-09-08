@@ -1,0 +1,475 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1E1E1E;
+}
+
+@theme inline {
+  --color-primary: #147BD1;
+  --color-primary-hover: #0f67b0;
+  --color-secondary: #1E1E1E;
+  --color-secondary-hover: #111111;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-open-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-secondary);
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+h1 {
+  font-size: 3rem; /* 48px */
+  font-weight: 600 !important;
+  font-family: var(--font-primary);
+}
+
+h2 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 600 !important;
+  font-family: var(--font-primary);
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px */
+  font-family: var(--font-primary);
+}
+
+h4 {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
+
+p,
+li {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+}
+
+span {
+  font-size: 0.875rem; /* 14px */
+  font-family: var(--font-secondary);
+}
+
+.navbar {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+}
+
+.footer-heading {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+
+.footer-body {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+}
+
+.button {
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+  font-family: var(--font-primary) !important;
+}
+
+.number {
+  font-size: 8rem; /* 128px */
+  font-weight: 700;
+  font-family: var(--font-primary);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1;
+}
+
+/* Custom Swiper Pagination */
+.custom-swiper-pagination .swiper-pagination-bullets {
+  bottom: auto !important;
+  position: relative !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 20px;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet {
+  width: 40px !important;
+  height: 6px !important;
+  border-radius: 0 !important;
+  background-color: #E5E7EB !important;
+  opacity: 1 !important;
+  margin: 0 4px !important;
+  transition: background-color 0.3s;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
+}
+
+/* Mobile Portrait Screen (up to 480px) */
+/* Multiplier: ~0.65 - 0.75 */
+@media (max-width: 480px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.95rem; /* ~31.2px */
+  }
+
+  h2 {
+    font-size: 1.4625rem; /* ~23.4px */
+  }
+
+  h3 {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  h4 {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  p,
+  li {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  span {
+    font-size: 0.6875rem; /* 11px */
+  }
+
+  .navbar {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  .footer-heading {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  .footer-body {
+    font-size: 0.8125rem; /* 13px */
+  }
+
+  .button {
+    font-size: 0.8125rem; /* 13px */
+  }
+
+  .number {
+    font-size: 5.2rem;
+  }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+/* Multiplier: ~0.75 - 0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container {
+    max-width: 92%;
+  }
+
+  h1 {
+    font-size: 2.25rem; /* 36px */
+  }
+
+  h2 {
+    font-size: 1.6875rem; /* 27px */
+  }
+
+  h3 {
+    font-size: 1rem; /* 16px */
+  }
+
+  h4 {
+    font-size: 0.8rem; /* ~13px */
+  }
+
+  p,
+  li {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  span {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  .navbar {
+    font-size: 0.8125rem; /* 13px */
+  }
+
+  .footer-heading {
+    font-size: 1rem; /* 16px */
+  }
+
+  .footer-body {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .button {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .number {
+    font-size: 6rem;
+  }
+}
+
+/* Tablet / Tab Screen (768px - 1023px) */
+/* Multiplier: ~0.85 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2.55rem; /* ~41px */
+  }
+
+  h2 {
+    font-size: 1.9125rem; /* ~30.6px */
+  }
+
+  h3 {
+    font-size: 1.0625rem; /* 17px */
+  }
+
+  h4 {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  p,
+  li {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  span {
+    font-size: 0.78125rem; /* 12.5px */
+  }
+
+  .navbar {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .footer-heading {
+    font-size: 1.0625rem; /* 17px */
+  }
+
+  .footer-body {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  .button {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  .number {
+    font-size: 6.8rem;
+  }
+}
+
+/* Laptop Screen (1024px - 1279px) */
+/* Multiplier: ~0.9 - 0.95 */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2.7rem; /* ~43.2px */
+  }
+
+  h2 {
+    font-size: 2.025rem; /* ~32.4px */
+  }
+
+  h3 {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  h4 {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  p,
+  li {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  span {
+    font-size: 0.8125rem; /* 13px */
+  }
+
+  .navbar {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  .footer-heading {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .footer-body {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  .button {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  .number {
+    font-size: 7.2rem;
+  }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+/* Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container {
+    max-width: 85%;
+  }
+
+  h1 {
+    font-size: 4.5rem; /* 72px */
+  }
+
+  h2 {
+    font-size: 3.375rem; /* 54px */
+  }
+
+  h3 {
+    font-size: 1.875rem; /* 30px */
+  }
+
+  h4 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  p,
+  li {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  span {
+    font-size: 1.3125rem; /* 21px */
+  }
+
+  .navbar {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .footer-heading {
+    font-size: 1.875rem; /* 30px */
+  }
+
+  .footer-body {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .button {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .number {
+    font-size: 12rem;
+  }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+/* Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 6rem; /* 96px */
+  }
+
+  h2 {
+    font-size: 4.5rem; /* 72px */
+  }
+
+  h3 {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  h4 {
+    font-size: 2rem; /* 32px */
+  }
+
+  p,
+  li {
+    font-size: 2rem; /* 32px */
+  }
+
+  span {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .navbar {
+    font-size: 2rem; /* 32px */
+  }
+
+  .footer-heading {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  .footer-body {
+    font-size: 2rem; /* 32px */
+  }
+
+  .button {
+    font-size: 2rem; /* 32px */
+  }
+
+  .number {
+    font-size: 16rem;
+  }
+}
