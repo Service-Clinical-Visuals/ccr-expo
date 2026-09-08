@@ -18,7 +18,7 @@ const navLinks = [
 ]
 
 const Header = () => {
-  const [scrollState, setScrollState] = useState("top");
+  const [isVisible, setIsVisible] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
   const pathname = usePathname();
@@ -36,17 +36,12 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY;
-      const threshold = typeof window !== "undefined" ? window.innerHeight : 820;
+    // Hidden at the very top of the page; appears once the user has
+    // scrolled down a little bit, and stays visible from then on.
+    const SHOW_AFTER = 100;
 
-      if (y < 150) {
-        setScrollState("top");
-      } else if (y < threshold) {
-        setScrollState("hidden");
-      } else {
-        setScrollState("sticky");
-      }
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > SHOW_AFTER);
     };
 
     handleScroll();
@@ -65,18 +60,14 @@ const Header = () => {
     };
   }, [mobileMenuOpen]);
 
-  const isTop = scrollState === "top";
-  const isSticky = scrollState === "sticky";
+  const showHeader = isVisible || mobileMenuOpen;
 
   return (
     <>
-      <div className="h-[85px] w-full shrink-0" aria-hidden="true" />
       <header
-        className={`top-0 left-0 w-full block z-70 transition-all duration-500 transform ${isSticky || (mobileMenuOpen && !isTop)
-          ? "fixed translate-y-0 opacity-100 shadow-md border-b border-gray-100 bg-white"
-          : isTop
-            ? "absolute translate-y-0 opacity-100"
-            : "fixed -translate-y-full opacity-0 pointer-events-none"
+        className={`fixed top-0 left-0 w-full z-70 transition-all duration-500 transform ${showHeader
+          ? "translate-y-0 opacity-100 shadow-md border-b border-gray-100 bg-white"
+          : "-translate-y-full opacity-0 pointer-events-none"
           }`}
       >
         {/* Main Navigation */}
