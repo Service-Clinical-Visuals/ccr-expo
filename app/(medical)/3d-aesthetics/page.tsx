@@ -11,8 +11,8 @@ import FeaturedProducts from "./_components/FeaturedProducts";
 import Choose from "./_components/Choose";
 
 export const metadata = {
-  title: "Speedcar",
-  description: "Engineering Performance You Can Trust",
+  title: "3D Aesthetics",
+  description: "Elevating Beauty, Enhancing Confidence",
 };
 
 export default function Page() {
