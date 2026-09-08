@@ -87,7 +87,7 @@ const Header = () => {
               <img
                 src="/moto/3d-aesthetics/logo.png"
                 alt="3D Aesthetics Logo"
-                className="h-12 w-auto object-contain"
+                className="h-18 w-auto object-contain"
               />
             </Link>
 
