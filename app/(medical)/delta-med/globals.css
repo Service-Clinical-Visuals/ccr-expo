@@ -1,0 +1,244 @@
+@layer base {
+  :root {
+    --font-body-family: var(--font-inter), sans-serif;
+    --font-heading-family: var(--font-poppins), sans-serif;
+  }
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1980AA;
+  --color-primary-hover: #4B5A62;
+  --color-secondary: #D82424;
+  --color-secondary-hover: #b01d1d;
+  --color-accent: #C08552;
+  --color-dark: #1A1A1A;
+  --color-text: #1A1A1A;
+  --color-gray-light: #f8f9fa;
+  --color-border: #e2e8f0;
+
+  --font-poppins: var(--font-poppins), 'Poppins', ui-sans-serif, sans-serif;
+  --font-inter: var(--font-inter), 'Inter', ui-sans-serif, sans-serif;
+}
+
+html,
+body {
+  font-family: var(--font-inter);
+  color: var(--color-text);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden !important;
+  width: 100%;
+
+}
+
+.navlink{
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #333333;
+  font-weight: normal;
+  font-family: var(--font-poppins);
+}
+
+.heading{
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1A1A1A;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+}
+
+.subheading{
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #1A1A1A;
+  font-family: var(--font-poppins);
+}
+
+.content{
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #666666;
+  font-family: var(--font-inter);
+}
+
+.heading-white{
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+}
+
+.subheading-white{
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  font-family: var(--font-poppins);
+}
+
+.content-white{
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  font-family: var(--font-inter);
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-4xl {
+  border-radius: 2rem;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+
+
+/* Custom container class with individual media queries for easy customization */
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile Portrait Screen (up to 480px) */
+@media (max-width: 480px) {
+  .custom-container {
+    max-width: 95%;
+  }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container {
+    max-width: 92%;
+  }
+}
+
+/* Tablet / Tab Screen (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Laptop Screen (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1920px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1921px) and (max-width: 2499px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  /* h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  } */
+}
+
+/* Ultra-wide Screen / Max Cover (2500px and above) */
+@media (min-width: 2500px) and (max-width: 3800px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  /* h2 {
+    font-size: 90px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  } */
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+@media (min-width: 3800px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  /* h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  } */
+}
+
+/* 2K / QHD Monitors (2560px wide) - Maintain 1920px design proportions */
+@media (min-width: 2560px) {
+  .eurol-root {
+    zoom: 1.38
+    ;
+    transform-origin: top center;
+  }
+}
+
+/* 4K UHD Monitors (3840px wide) - Maintain 1920px design proportions */
+@media (min-width: 3840px) {
+  .eurol-root {
+    zoom: 1.75;
+    transform-origin: top center;
+  }
+}
