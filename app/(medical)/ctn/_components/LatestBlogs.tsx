@@ -27,7 +27,8 @@ const BLOG_POSTS: BlogPost[] = [
   {
     id: "blog-3",
     image: "/medical/ctn/b3.png",
-    title: "Prepare Your Wellness Business for a Profitable Summer Season with CTN tech",
+    title:
+      "Prepare Your Wellness Business for a Profitable Summer Season with CTN tech",
     href: "#blog-profitable-summer-season",
   },
   {
@@ -39,13 +40,15 @@ const BLOG_POSTS: BlogPost[] = [
   {
     id: "blog-5",
     image: "/medical/ctn/b5.png",
-    title: "5 Reasons Top Athletes Use Mild Hyperbaric Oxygen Therapy for Peak Performance",
+    title:
+      "5 Reasons Top Athletes Use Mild Hyperbaric Oxygen Therapy for Peak Performance",
     href: "#blog-athletes-hyperbaric-oxygen",
   },
   {
     id: "blog-6",
     image: "/medical/ctn/b6.png",
-    title: "Beyond Cryotherapy: Combining Recovery Technologies for Maximum Results",
+    title:
+      "Beyond Cryotherapy: Combining Recovery Technologies for Maximum Results",
     href: "#blog-beyond-cryotherapy",
   },
   {
@@ -122,58 +125,61 @@ export default function LatestBlogs() {
   return (
     <section className="w-full bg-[#f7f7f7] py-16 md:py-24">
       <div className="custom-container px-2 md:px-10">
-
         {/* Centered Section Header */}
-        <div className="flex flex-col items-center text-center max-w-7xl mx-auto mb-10 sm:mb-14">
+        <div
+          className="flex flex-col items-center text-center max-w-7xl mx-auto mb-10 sm:mb-14"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <h2 className="section-title font-semibold tracking-tight">
             <span className="text-slate-900">Our </span>
             <span className="text-[#2b7ab7]">Latest Blogs</span>
           </h2>
 
           <p className="section-text text-slate-600 mt-4 sm:mt-5 max-w-6xl leading-relaxed">
-            Explore the latest from CTN™ through expert insights, innovative recovery
-            technologies, wellness trends, athlete performance, customer stories, and
-            industry developments. Discover how advanced recovery solutions help athletes,
-            wellness professionals, clinics, and individuals optimise performance, support
-            recovery, and enhance well-being. From cutting-edge technology and practical
-            recovery strategies to inspiring partnerships, our blog keeps you informed about
-            the evolving world of recovery and wellness.
+            Explore the latest from CTN™ through expert insights, innovative
+            recovery technologies, wellness trends, athlete performance,
+            customer stories, and industry developments. Discover how advanced
+            recovery solutions help athletes, wellness professionals, clinics,
+            and individuals optimise performance, support recovery, and enhance
+            well-being. From cutting-edge technology and practical recovery
+            strategies to inspiring partnerships, our blog keeps you informed
+            about the evolving world of recovery and wellness.
           </p>
         </div>
 
         {/* Products / Blog Slider Container */}
         <div
           className="relative w-full overflow-hidden select-none py-2"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-        >
+          onTouchEnd={handleTouchEnd}>
           {/* Animated Track */}
           <div
             className="flex transition-transform duration-700 ease-in-out -mx-3 sm:-mx-4"
             style={{
               transform: `translateX(-${currentIndex * (100 / visibleCount)}%)`,
-            }}
-          >
+            }}>
             {BLOG_POSTS.map((blog) => (
               <div
                 key={blog.id}
                 className="flex-shrink-0 px-3 sm:px-4"
                 style={{
                   width: `${100 / visibleCount}%`,
-                }}
-              >
+                }}>
                 <Link
                   href={blog.href}
-                  className="group relative block w-full rounded-2xl sm:rounded-3xl overflow-hidden  transition-all duration-300 aspect-[16/11] "
-                >
+                  className="group relative block w-full rounded-2xl sm:rounded-3xl overflow-hidden  transition-all duration-300 aspect-[16/11] ">
                   {/* Background Image */}
                   <Image
                     src={blog.image}
                     alt={blog.title}
                     fill
-                    // sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                     priority={blog.id === "blog-1"}
                   />
@@ -201,7 +207,12 @@ export default function LatestBlogs() {
         </div>
 
         {/* Carousel Pagination Dots */}
-        <div className="flex items-center justify-center gap-2 mt-8 sm:mt-12">
+        <div
+          className="flex items-center justify-center gap-2 mt-8 sm:mt-12"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="250"
+        >
           {Array.from({ length: maxIndex + 1 }).map((_, index) => {
             const isActive = index === currentIndex;
             return (
@@ -210,17 +221,16 @@ export default function LatestBlogs() {
                 type="button"
                 onClick={() => setCurrentIndex(index)}
                 aria-label={`Go to blog slide ${index + 1}`}
-                className={`transition-all duration-300 rounded-full h-2 cursor-pointer ${isActive
-                  ? "w-8 sm:w-10 bg-[#2b7ab7]"
-                  : "w-2 bg-slate-300 hover:bg-slate-400"
-                  }`}
+                className={`transition-all duration-300 rounded-full h-2 cursor-pointer ${
+                  isActive
+                    ? "w-8 sm:w-10 bg-[#2b7ab7]"
+                    : "w-2 bg-slate-300 hover:bg-slate-400"
+                }`}
               />
             );
           })}
         </div>
-
       </div>
     </section>
   );
 }
-

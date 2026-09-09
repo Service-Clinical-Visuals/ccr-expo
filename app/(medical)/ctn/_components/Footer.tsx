@@ -66,7 +66,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 xl:gap-6">
 
           {/* CTN Brand & Description */}
-          <div className="col-span-1 md:col-span-7 xl:col-span-3 flex flex-col pr-0 xl:pr-4">
+          <div
+            className="col-span-1 md:col-span-7 xl:col-span-3 flex flex-col pr-0 xl:pr-4"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <Link href="/ctn" className="inline-block mb-4 sm:mb-6">
               <div className="relative h-9 w-28 sm:h-10 sm:w-32">
                 <Image
@@ -94,7 +98,12 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-12 xl:col-span-7 md:order-last xl:order-none grid grid-cols-2 md:grid-cols-4 gap-x-6 sm:gap-x-8 gap-y-8 md:gap-6">
 
             {/* Column: Industries */}
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
               <h4 className="footer-text font-semibold text-white mb-3 sm:mb-4 xl:mb-5">
                 Industries
               </h4>
@@ -113,7 +122,12 @@ export default function Footer() {
             </div>
 
             {/* Column: Products */}
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="150"
+            >
               <h4 className="footer-text font-semibold text-white mb-3 sm:mb-4 xl:mb-5">
                 Products
               </h4>
@@ -135,7 +149,12 @@ export default function Footer() {
             </div>
 
             {/* Column: Company */}
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
               <h4 className="footer-text font-semibold text-white mb-3 sm:mb-4 xl:mb-5">
                 Company
               </h4>
@@ -154,7 +173,12 @@ export default function Footer() {
             </div>
 
             {/* Column: Partners */}
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="250"
+            >
               <h4 className="footer-text font-semibold text-white mb-3 sm:mb-4 xl:mb-5">
                 Partners
               </h4>
@@ -175,7 +199,12 @@ export default function Footer() {
           </div>
 
           {/* Social Media Links */}
-          <div className="col-span-1 md:col-span-5 xl:col-span-2 flex flex-col md:items-start xl:items-start">
+          <div
+            className="col-span-1 md:col-span-5 xl:col-span-2 flex flex-col md:items-start xl:items-start"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
             <h4 className="footer-text font-semibold text-white mb-3 sm:mb-4 xl:mb-5">
               Social Media Links
             </h4>
@@ -204,10 +233,20 @@ export default function Footer() {
         </div>
 
         {/* Subtle Horizontal Divider */}
-        <div className="w-full h-px bg-white/20 mt-10 sm:mt-14 xl:mt-16 mb-6 sm:mb-8" />
+        <div
+          className="w-full h-px bg-white/20 mt-10 sm:mt-14 xl:mt-16 mb-6 sm:mb-8"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="100"
+        />
 
         {/* Bottom Copyright Text */}
-        <div className="text-center">
+        <div
+          className="text-center"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
+        >
           <p className="header-link text-white/90 font-normal">
             &copy; CTN 2024, All Rights Reserved.
           </p>

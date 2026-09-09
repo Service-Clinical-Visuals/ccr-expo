@@ -10,7 +10,11 @@ export default function Explore360() {
       <div className="custom-container px-2 md:px-10 ">
 
         {/* Top Header Row */}
-        <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6">
+        <div
+          className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
 
           {/* Left: Heading & Description */}
           <div className="max-w-5xl">
@@ -42,7 +46,12 @@ export default function Explore360() {
         <div className="w-full h-px bg-slate-200/90 mt-6 sm:mt-8 mb-6 sm:mb-8" />
 
         {/* 360 Video Player Box */}
-        <div className="relative w-full max-w-7xl mx-auto rounded-4xl aspect-video overflow-hidden flex items-center justify-center ">
+        <div
+          className="relative w-full max-w-7xl mx-auto rounded-4xl aspect-video overflow-hidden flex items-center justify-center"
+          data-aos="zoom-in"
+          data-aos-duration="900"
+          data-aos-delay="150"
+        >
 
           {/* Dynamic 360 Video Player */}
           <div className="absolute inset-0 w-full h-full z-0 flex items-center justify-center">

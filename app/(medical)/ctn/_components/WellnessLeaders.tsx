@@ -12,7 +12,11 @@ export default function WellnessLeaders() {
         <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-14 items-center">
 
           {/* Left Column: Text, Value Propositions & CTA */}
-          <div className="xl:col-span-5 flex flex-col justify-center">
+          <div
+            className="xl:col-span-5 flex flex-col justify-center"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
 
             {/* Section Title */}
             <h2 className="section-title font-semibold tracking-tight">
@@ -39,7 +43,11 @@ export default function WellnessLeaders() {
             <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-4.5">
 
               {/* Highlight 1 */}
-              <div className="flex items-start gap-3 sm:gap-3.5">
+              <div
+                className="flex items-start gap-3 sm:gap-3.5"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div className="w-5 h-5 rounded-full bg-[#2b7ab7] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
                   <Check className="w-3.5 h-3.5 stroke-[3]" />
                 </div>
@@ -53,7 +61,11 @@ export default function WellnessLeaders() {
               </div>
 
               {/* Highlight 2 */}
-              <div className="flex items-start gap-3 sm:gap-3.5">
+              <div
+                className="flex items-start gap-3 sm:gap-3.5"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <div className="w-5 h-5 rounded-full bg-[#2b7ab7] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
                   <Check className="w-3.5 h-3.5 stroke-[3]" />
                 </div>
@@ -67,7 +79,11 @@ export default function WellnessLeaders() {
               </div>
 
               {/* Highlight 3 */}
-              <div className="flex items-start gap-3 sm:gap-3.5">
+              <div
+                className="flex items-start gap-3 sm:gap-3.5"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <div className="w-5 h-5 rounded-full bg-[#2b7ab7] text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
                   <Check className="w-3.5 h-3.5 stroke-[3]" />
                 </div>
@@ -92,7 +108,12 @@ export default function WellnessLeaders() {
           </div>
 
           {/* Right Column: High-Resolution Clinic Imagery */}
-          <div className="xl:col-span-7">
+          <div
+            className="xl:col-span-7"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="150"
+          >
             <div className="relative w-full rounded-4xl overflow-hidden ">
               <Image
                 src="/medical/ctn/wllness.png"

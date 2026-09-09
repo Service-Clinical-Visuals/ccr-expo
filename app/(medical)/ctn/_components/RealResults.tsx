@@ -39,7 +39,11 @@ export default function RealResults() {
       <div className="custom-container px-2 md:px-10">
 
         {/* Top Header Row */}
-        <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6">
+        <div
+          className="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-6"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
 
           {/* Left: Heading & Description */}
           <div className="max-w-5xl">
@@ -73,6 +77,9 @@ export default function RealResults() {
             <Link
               key={story.id}
               href={story.href}
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay={(index + 1) * 100}
               className={`group relative rounded-4xl overflow-hidden transition-all duration-300 block w-full ${
                 index === 2
                   ? "md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto xl:col-span-1 xl:w-full xl:mx-0"

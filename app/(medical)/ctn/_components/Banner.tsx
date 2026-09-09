@@ -8,7 +8,11 @@ export default function Banner() {
   return (
     <section className="custom-container mt-6 ">
       {/* Rounded Video Hero Box */}
-      <div className="relative w-full h-screen rounded-3xl overflow-hidden bg-black ">
+      <div
+        className="relative w-full h-screen rounded-3xl overflow-hidden bg-black"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+      >
 
         {/* Dynamic Video Player Background */}
         <div className="absolute inset-0 w-full h-full z-0">
@@ -24,13 +28,23 @@ export default function Banner() {
           <div className="max-w-3xl">
 
             {/* Main Hero Heading */}
-            <h1 className="banner-title font-semibold text-white tracking-tight">
+            <h1
+              className="banner-title font-semibold text-white tracking-tight"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
               Advanced Wellness &amp; Cryotherapy
               <br className="hidden sm:inline" /> Devices
             </h1>
 
             {/* Explore Solutions Button with Arrow Badge */}
-            <div className="mt-6 sm:mt-8">
+            <div
+              className="mt-6 sm:mt-8"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="350"
+            >
               <Button href="#solutions" variant="primary">
                 Explore Solutions
               </Button>

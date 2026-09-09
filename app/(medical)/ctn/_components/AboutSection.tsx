@@ -8,11 +8,20 @@ export default function AboutSection() {
   return (
     <section className="custom-container py-16 md:py-24 px-2 md:px-10">
       {/* 1. Top Header Box: Global Leaders in Recovery Technology */}
-      <div className="bg-[#3d57a5] rounded-4xl p-6 sm:p-8 md:p-10 xl:p-12 text-white">
+      <div
+        className="bg-[#3d57a5] rounded-4xl p-6 sm:p-8 md:p-10 xl:p-12 text-white"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
         <div className="flex flex-col xl:flex-row xl:items-start xl:justify-between gap-8">
 
           {/* Left: Heading & Paragraph */}
-          <div className="xl:max-w-5xl">
+          <div
+            className="xl:max-w-5xl"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
             <h2 className="section-title font-semibold text-white tracking-tight">
               Global Leaders In Recovery Technology
             </h2>
@@ -27,7 +36,12 @@ export default function AboutSection() {
           </div>
 
           {/* Right: Tagline & Learn More Button */}
-          <div className="flex flex-col items-start xl:items-end justify-between gap-6 sm:gap-8 flex-shrink-0">
+          <div
+            className="flex flex-col items-start xl:items-end justify-between gap-6 sm:gap-8 flex-shrink-0"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
             <div className="card-title text-white xl:text-right font-medium">
               <p>Finnish Innovation. Smarter Recovery.</p>
               <p className="mt-0.5">Better Performance.</p>
@@ -45,10 +59,19 @@ export default function AboutSection() {
       <div className="grid grid-cols-1 xl:grid-cols-12 gap-6 sm:gap-8 mt-6 sm:mt-8 items-stretch">
 
         {/* Left Column: Features Card */}
-        <div className="xl:col-span-4 bg-[#3d57a5] rounded-4xl p-6 sm:p-8 md:p-10 text-white flex flex-col justify-center gap-7 sm:gap-8">
+        <div
+          className="xl:col-span-4 bg-[#3d57a5] rounded-4xl p-6 sm:p-8 md:p-10 text-white flex flex-col justify-center gap-7 sm:gap-8"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-delay="100"
+        >
 
           {/* Feature 1: Our Mission */}
-          <div className="flex items-start gap-4 sm:gap-5">
+          <div
+            className="flex items-start gap-4 sm:gap-5"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-md p-1">
               <Image
                 src="/medical/ctn/abt1.png"
@@ -68,7 +91,11 @@ export default function AboutSection() {
           </div>
 
           {/* Feature 2: Built On Expertise */}
-          <div className="flex items-start gap-4 sm:gap-5">
+          <div
+            className="flex items-start gap-4 sm:gap-5"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-md p-1">
               <Image
                 src="/medical/ctn/abt2.png"
@@ -88,7 +115,11 @@ export default function AboutSection() {
           </div>
 
           {/* Feature 3: CTN Advantage */}
-          <div className="flex items-start gap-4 sm:gap-5">
+          <div
+            className="flex items-start gap-4 sm:gap-5"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-md p-1">
               <Image
                 src="/medical/ctn/abt3.png"
@@ -110,7 +141,12 @@ export default function AboutSection() {
         </div>
 
         {/* Right Column: Showroom Image */}
-        <div className="xl:col-span-8 rounded-4xl overflow-hidden bg-slate-100 min-h-[380px] sm:min-h-[460px] md:min-h-[500px] flex">
+        <div
+          className="xl:col-span-8 rounded-4xl overflow-hidden bg-slate-100 min-h-[380px] sm:min-h-[460px] md:min-h-[500px] flex"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
           <div className="relative w-full h-full min-h-[380px] sm:min-h-[460px] md:min-h-[500px]">
             <Image
               src="/medical/ctn/abt.png"

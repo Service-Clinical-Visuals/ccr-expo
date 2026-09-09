@@ -9,7 +9,11 @@ export default function RealWorldPerformance() {
       <div className="custom-container px-2 md:px-10">
 
         {/* Section Header: Centered Heading & Subtitle */}
-        <div className="flex flex-col items-center text-center max-w-7xl mx-auto mb-10 sm:mb-14">
+        <div
+          className="flex flex-col items-center text-center max-w-7xl mx-auto mb-10 sm:mb-14"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <h2 className="section-title tracking-tight font-semibold">
             <span className="text-slate-900">Engineered For </span>
             <span className="text-[#2b7ab7]">Real-World Performance</span>
@@ -27,7 +31,12 @@ export default function RealWorldPerformance() {
         </div>
 
         {/* Rounded 16:9 Video Box */}
-        <div className="relative w-full max-w-7xl mx-auto aspect-video rounded-4xl overflow-hidden flex items-center justify-center bg-black/5 ">
+        <div
+          className="relative w-full max-w-7xl mx-auto aspect-video rounded-4xl overflow-hidden flex items-center justify-center bg-black/5"
+          data-aos="zoom-in"
+          data-aos-duration="900"
+          data-aos-delay="150"
+        >
           <div className="absolute inset-0 w-full h-full z-0 flex items-center justify-center">
             <DynamicVideoPlayer
               type="short-2"

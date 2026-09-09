@@ -1,4 +1,5 @@
 import React from "react";
+import AosInit from "./_components/AosInit";
 import Header from "./_components/Header";
 import Banner from "./_components/Banner";
 import AboutSection from "./_components/AboutSection";
@@ -14,6 +15,7 @@ import Footer from "./_components/Footer";
 export default function CTNPage() {
   return (
     <main className="min-h-screen bg-white">
+      <AosInit />
       <Header />
       <Banner />
       <AboutSection />

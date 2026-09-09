@@ -11,7 +11,11 @@ export default function IntendedPurpose() {
       <div className="custom-container px-2 md:px-10">
 
         {/* Section Header: Centered Heading & Subtitle */}
-        <div className="flex flex-col items-center text-center max-w-7xl mx-auto">
+        <div
+          className="flex flex-col items-center text-center max-w-7xl mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <h2 className="section-title font-semibold text-white tracking-tight">
             Intended Purpose &amp; Operation
           </h2>
@@ -32,7 +36,12 @@ export default function IntendedPurpose() {
         <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-12 items-center">
 
           {/* Left Column: Rounded Video Player Box */}
-          <div className="xl:col-span-9">
+          <div
+            className="xl:col-span-9"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
             <div className="relative w-full aspect-video rounded-4xl overflow-hidden bg-black/40 flex items-center justify-center">
 
               {/* Dynamic Video Player */}
@@ -48,7 +57,12 @@ export default function IntendedPurpose() {
           </div>
 
           {/* Right Column: Information & Bullet Points */}
-          <div className="xl:col-span-3 flex flex-col justify-between">
+          <div
+            className="xl:col-span-3 flex flex-col justify-between"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
 
             <div>
               {/* Title */}
@@ -66,7 +80,11 @@ export default function IntendedPurpose() {
               <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-5">
 
                 {/* Feature 1 */}
-                <div className="flex items-start gap-3 sm:gap-3.5">
+                <div
+                  className="flex items-start gap-3 sm:gap-3.5"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
                   <div className="w-5 h-5 rounded-full bg-white text-[#3d57a5] flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
                     <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>
@@ -80,7 +98,11 @@ export default function IntendedPurpose() {
                 </div>
 
                 {/* Feature 2 */}
-                <div className="flex items-start gap-3 sm:gap-3.5">
+                <div
+                  className="flex items-start gap-3 sm:gap-3.5"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                >
                   <div className="w-5 h-5 rounded-full bg-white text-[#3d57a5] flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
                     <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>
@@ -94,7 +116,11 @@ export default function IntendedPurpose() {
                 </div>
 
                 {/* Feature 3 */}
-                <div className="flex items-start gap-3 sm:gap-3.5">
+                <div
+                  className="flex items-start gap-3 sm:gap-3.5"
+                  data-aos="fade-up"
+                  data-aos-delay="450"
+                >
                   <div className="w-5 h-5 rounded-full bg-white text-[#3d57a5] flex items-center justify-center flex-shrink-0 mt-0.5 shadow-xs">
                     <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>

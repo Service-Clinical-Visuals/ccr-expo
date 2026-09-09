@@ -132,7 +132,11 @@ export default function WellnessDevices() {
       <div className="custom-container px-2 md:px-10">
 
         {/* Section Header: Centered Title & Description */}
-        <div className="flex flex-col items-center text-center max-w-7xl mx-auto mb-12 sm:mb-16">
+        <div
+          className="flex flex-col items-center text-center max-w-7xl mx-auto mb-12 sm:mb-16"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <h2 className="section-title tracking-tight font-semibold">
             <span className="text-slate-900">Explore Our </span>
             <span className="text-[#2b7ab7]">Wellness Devices</span>
@@ -151,6 +155,9 @@ export default function WellnessDevices() {
         {/* Products Slider Container */}
         <div
           className="relative w-full overflow-hidden select-none py-2"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="150"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           onTouchStart={handleTouchStart}
@@ -229,7 +236,12 @@ export default function WellnessDevices() {
         </div>
 
         {/* Pagination Dots matching reference design */}
-        <div className="flex items-center justify-center gap-2 mt-8 sm:mt-12">
+        <div
+          className="flex items-center justify-center gap-2 mt-8 sm:mt-12"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="250"
+        >
           {Array.from({ length: TOTAL_SLIDES }).map((_, index) => {
             const isActive = index === currentSlide;
             return (
