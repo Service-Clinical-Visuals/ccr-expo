@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+@layer base {
+  :root {
+    --primary: #24559c;
+    --primary-hover: #1d4682;
+    --accent: #24a6a8;
+    --accent-hover: #1f8e90;
+    --bg-banner: #02042b;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  /* Headings and Buttons use Inter font */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  .btn-text,
+  .header-link,
+  .banner-title,
+  .section-title,
+  .card-title,
+  .stat-number,
+  .stat-label,
+  .footer-heading {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Paragraphs, body, and text use Poppins font */
+  p,
+  span,
+  li,
+  a,
+  .section-text,
+  .section-subtitle,
+  .card-text,
+  .stat-desc,
+  .footer-text,
+  .footer-link {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+section {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+/* Custom Responsive Container */
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Custom Responsive Grids */
+.custom-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.custom-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3.5rem;
+    align-items: center;
+  }
+}
+
+.custom-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) and (max-width: 1279px) {
+  .custom-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .custom-grid-3 > :nth-child(3):last-child {
+    grid-column: span 2 / span 2;
+    width: 100%;
+    max-width: calc(50% - 0.75rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+.custom-grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .custom-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Base Typography - Mobile Portrait (< 480px) */
+.header-link {
+  font-size: 16px;
+}
+
+.btn-text {
+  font-size: 16px;
+}
+
+.banner-title {
+  font-size: 32px;
+}
+
+.section-title {
+  font-size: 32px;
+}
+
+.section-text {
+  font-size: 16px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.stat-number {
+  font-size: 36px;
+}
+
+
+/* Responsive Custom Container & Font Sizes Across Breakpoints */
+
+/* Mobile Portrait (<= 480px) */
+@media (max-width: 480px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 16px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+}
+
+/* Mobile Landscape (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 16px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 16px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+}
+
+/* Laptop (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 16px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+}
+
+/* Desktop Standard (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 16px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+}
+
+/* Large Desktop (1536px - 1920px - standard figma reference) as per figma */
+@media (min-width: 1536px) and (max-width: 1920px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 16px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+}
+
+/* Wide Screens (1921px - 2559px) */
+@media (min-width: 1921px) and (max-width: 2559px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 16px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+}
+
+/* 2K Screens (2560px - 3800px) */
+@media (min-width: 2560px) and (max-width: 3800px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 20px;
+  }
+
+  .btn-text {
+    font-size: 20px;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 20px;
+  }
+
+  .card-title {
+    font-size: 26px;
+  }
+
+  .stat-number {
+    font-size: 40px;
+  }
+
+}
+
+/* 4K and Ultra-wide (> 3800px) */
+@media (min-width: 3800px) {
+  .custom-container {
+    max-width: 85%;
+  }
+
+  .header-link {
+    font-size: 26px;
+  }
+
+  .btn-text {
+    font-size: 26px;
+  }
+
+  .banner-title {
+    font-size: 48px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 26px;
+  }
+
+  .card-title {
+    font-size: 32px;
+  }
+
+  .stat-number {
+    font-size: 54px;
+  }
+}
+
+/* Farmac Swiper Pagination */
+.farmac-swiper-pagination {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-top: 2rem !important;
+  position: relative !important;
+  bottom: auto !important;
+}
+
+.farmac-swiper-bullet {
+  display: inline-block !important;
+  width: 36px !important;
+  height: 4px !important;
+  border-radius: 9999px !important;
+  background-color: #b9d1ea !important;
+  opacity: 1 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+.farmac-swiper-bullet-active {
+  background-color: #24559c !important;
+  width: 44px !important;
+}
+
+/* Background Utility for Production & Innovation */
+.bg-production-pills {
+  background-image: url('/medical/farmac/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Background Utility for Quality Policy */
+.bg-quality-stethoscope {
+  background-image: url('/medical/farmac/bg1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
