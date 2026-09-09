@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-auto h-[calc(100vh-85px)] lg:z-60 pointer-events-none relative overflow-hidden flex items-center bg-primary"
+      className="w-auto h-[100vh]! lg:z-60 pointer-events-none relative overflow-hidden flex items-center bg-primary"
       data-aos="fade-in">
       <div className="absolute w-full inset-0 z-0 pointer-events-none">
         <DynamicVideoPlayer
