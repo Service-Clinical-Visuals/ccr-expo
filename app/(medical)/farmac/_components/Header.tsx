@@ -109,14 +109,14 @@ export default function Header() {
         }`}
     >
       <div className="custom-container">
-        <div className="flex items-center justify-between py-2 sm:py-2.5 md:py-2.5">
+        <div className="flex items-center justify-between ">
           {/* Logo Section */}
           <Link href="/farmac" className="flex items-center flex-shrink-0 mr-2 sm:mr-4 group">
             <div className="relative flex items-center">
               <img
                 src="/medical/farmac/logo.png"
                 alt="Farmac-Zabban Logo"
-                className="h-10 sm:h-16 md:h-20 lg:h-25 w-auto object-contain"
+                className="h-full w-auto object-contain"
               />
             </div>
           </Link>
@@ -229,7 +229,7 @@ export default function Header() {
                       <Link
                         href={item.href}
                         onClick={() => !hasChildren && setMobileMenuOpen(false)}
-                        className={`header-link font-medium ${item.label === "Home" ? "text-[#24559c] font-bold" : "text-slate-800"
+                        className={`header-link font-medium ${item.label === "Home" ? "text-[#24559c] font-semibold" : "text-slate-800"
                           }`}
                       >
                         {item.label}
