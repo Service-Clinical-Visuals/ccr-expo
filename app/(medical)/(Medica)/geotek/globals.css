@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+/* ---------------------------------------------
+   Strict Layout Overflow & Scroll Control
+--------------------------------------------- */
+html {
+  overflow-x: clip !important;
+  width: 100%;
+}
+
+body {
+  overflow-x: clip !important;
+  width: 100%;
+  position: relative;
+  background: #ffffff;
+  color: #4A4A4A;
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  overflow-x: clip !important;
+  max-width: 100%;
+}
+
+/* Fix for AOS initial scale-out causing page overflow */
+[data-aos] {
+  pointer-events: none;
+}
+
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+/* ---------------------------------------------
+   Design Tokens & Theme Definitions
+--------------------------------------------- */
+@theme inline {
+  --color-primary: #468A28;
+  --color-primary-hover: #3b7422;
+  --color-accent: #84BB65;
+  --color-dark: #2A2A2A;
+  --color-body: #4A4A4A;
+  --color-muted: #727272;
+  --color-border-light: rgba(0, 0, 0, 0.24);
+  --color-card-border: rgba(132, 187, 101, 0.25);
+
+  --font-baloo: var(--font-baloo), 'Baloo Thambi 2', sans-serif;
+  --font-outfit: var(--font-outfit), 'Outfit', sans-serif;
+}
+
+/* ---------------------------------------------
+   Container — Responsive width across all screens
+--------------------------------------------- */
+.custom-container {
+  width: 95% !important;
+  max-width: 95% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1025px) {
+  .custom-container {
+    max-width: 92% !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  .custom-container {
+    max-width: 90% !important;
+  }
+}
+
+/* ---------------------------------------------
+   Typography Scaling (Mobile to 4K)
+--------------------------------------------- */
+h1, .hero-heading {
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif;
+  font-weight: 600;
+  color: #2A2A2A;
+  font-size: 26px;
+  line-height: 1.35;
+}
+
+h2, .section-heading {
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif;
+  font-weight: 600;
+  color: #2A2A2A;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+h3, .card-heading {
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif;
+  font-weight: 600;
+  color: #2A2A2A;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+p, .section-text, .body-text {
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif;
+  font-weight: 500;
+  color: #4A4A4A;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Mobile Landscape (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  h1, .hero-heading { font-size: 28px; }
+  h2, .section-heading { font-size: 24px; }
+  h3, .card-heading { font-size: 19px; }
+  p, .section-text { font-size: 15px; }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1, .hero-heading { font-size: 32px; }
+  h2, .section-heading { font-size: 26px; }
+  h3, .card-heading { font-size: 20px; }
+  p, .section-text { font-size: 15.5px; }
+}
+
+/* Laptop (1025px - 1279px) */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  h1, .hero-heading { font-size: 34px; }
+  h2, .section-heading { font-size: 28px; }
+  h3, .card-heading { font-size: 21px; }
+  p, .section-text { font-size: 16px; }
+}
+
+/* Desktop PC (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  h1, .hero-heading { font-size: 36px; }
+  h2, .section-heading { font-size: 30px; }
+  h3, .card-heading { font-size: 22px; }
+  p, .section-text { font-size: 16.5px; }
+}
+
+/* Figma Baseline Screen (1536px - 1920px) */
+@media (min-width: 1536px) {
+  h1, .hero-heading { font-size: 40px; }
+  h2, .section-heading { font-size: 34px; }
+  h3, .card-heading { font-size: 24px; }
+  p, .section-text { font-size: 17px; }
+}
+
+/* 2K / QHD Screen (1921px - 2559px) */
+@media (min-width: 1921px) {
+  h1, .hero-heading { font-size: 46px; }
+  h2, .section-heading { font-size: 38px; }
+  h3, .card-heading { font-size: 26px; }
+  p, .section-text { font-size: 18px; }
+}
+
+/* Ultra-Wide / 2K Screens (2560px - 3839px) */
+@media (min-width: 2560px) {
+  h1, .hero-heading { font-size: 50px; }
+  h2, .section-heading { font-size: 42px; }
+  h3, .card-heading { font-size: 28px; }
+  p, .section-text { font-size: 19px; }
+}
+
+/* 4K Ultra-HD Screens (3840px and above) */
+@media (min-width: 3840px) {
+  h1, .hero-heading { font-size: 58px; }
+  h2, .section-heading { font-size: 48px; }
+  h3, .card-heading { font-size: 32px; }
+  p, .section-text { font-size: 22px; }
+}
+
+/* ---------------------------------------------
+   Custom Accent Pill Indicator
+--------------------------------------------- */
+.accent-pill {
+  width: 33px;
+  height: 5px;
+  background-color: #84BB65;
+  border-radius: 43px;
+  display: inline-block;
+}
+
+.accent-pill-white {
+  width: 33px;
+  height: 5px;
+  background-color: #FFFFFF;
+  border-radius: 43px;
+  display: inline-block;
+}
+
+/* ---------------------------------------------
+   About Section — Vertical Centering for Info Card
+--------------------------------------------- */
+@media (max-width: 1024px) {
+  .about-info-card {
+    margin-top: -2.5rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .about-info-card {
+    margin-top: -4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .about-info-card {
+    margin-top: 0 !important;
+    margin-left: -5rem !important;
+    align-self: center !important;
+  }
+}
+
+/* ---------------------------------------------
+   Text Styling for Green Background Image Sections
+   Figma Reference Specifications:
+   - Heading: Baloo Thambi 2, Weight: 600 (SemiBold), Line height: 150%, Color: #ffffff
+   - Paragraph: Baloo Thambi 2, Weight: 500 (Medium), Line height: 150%, Color: #ffffff
+--------------------------------------------- */
+#stent-360,
+#solutions,
+#reliable {
+  color: #ffffff;
+}
+
+#stent-360 h1,
+#stent-360 h2,
+#stent-360 h3,
+#stent-360 h4,
+#solutions h1,
+#solutions h2,
+#solutions h3,
+#solutions h4,
+#reliable h1,
+#reliable h2,
+#reliable h3,
+#reliable h4 {
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  color: #ffffff !important;
+}
+
+#stent-360 p,
+#solutions p,
+#reliable p {
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  color: #ffffff !important;
+}
+
+/* ---------------------------------------------
+   Hero Banner — Text & Screen Fit (100dvh)
+--------------------------------------------- */
+#home {
+  height: 100vh !important;
+  height: 100dvh !important;
+  min-height: 0 !important;
+  max-height: 100vh !important;
+  max-height: 100dvh !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+#home h1,
+#home h2,
+#home p,
+#home .hero-heading {
+  color: #ffffff !important;
+}
+
+/* ---------------------------------------------
+   Footer Column Headings
+--------------------------------------------- */
+.footer-column-heading {
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif !important;
+  font-weight: 600 !important;
+  color: #2A2A2A !important;
+  font-size: 22px !important;
+  line-height: 1.25 !important;
+}
+
+@media (min-width: 640px) {
+  .footer-column-heading {
+    font-size: 24px !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer-column-heading {
+    font-size: 26px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-column-heading {
+    font-size: 28px !important;
+  }
+}
+
+/* ---------------------------------------------
+   Advance Section Product Card Hover Text
+   Figma Specification:
+   - Font: Baloo Thambi 2, Bold (700), Color: #ffffff
+   - Centered, uppercase, leading 1.25, balanced sizing matching Figma screenshot
+--------------------------------------------- */
+.advance-hover-title {
+  font-family: var(--font-baloo), 'Baloo Thambi 2', sans-serif !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) !important;
+  font-size: 20px !important;
+}
+
+@media (min-width: 640px) {
+  .advance-hover-title {
+    font-size: 22px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .advance-hover-title {
+    font-size: 23px !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .advance-hover-title {
+    font-size: 24px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .advance-hover-title {
+    font-size: 25px !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  .advance-hover-title {
+    font-size: 26px !important;
+  }
+}
+
+
+
+
