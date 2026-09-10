@@ -1,36 +1,55 @@
 "use client";
 
 import React from "react";
+import Button from "./Button";
 import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 import Typography from "./Typography";
-import Button from "./Button";
 
 const Deg360 = () => {
   return (
     <section
       id="360-experience"
-      className="w-full py-16 bg-secondary relative overflow-hidden"
+      className="relative w-full py-16 md:py-24 bg overflow-hidden"
     >
-      <div className="custom-container flex flex-col gap-10">
+
+      <div className="custom-container relative z-10 flex flex-col">
 
         {/* Top Header Row */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-white/40 pb-6 gap-6" data-aos="fade-up">
-          <div className="w-full md:w-[65%] lg:w-[50%] flex flex-col gap-4">
-            <Typography variant="h2" color="white" className="font-bold">
-              360° Product Experience
+        <div
+          className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 sm:pb-8 border-b border-white/20"
+          data-aos="fade-up"
+        >
+          {/* Left Text */}
+          <div className="max-w-3xl flex flex-col gap-2.5">
+            <Typography
+              variant="h2"
+              color="white"
+              className="font-semibold text-2xl sm:text-3xl lg:text-[34px] tracking-tight text-white font-outfit"
+            >
+              Explore Urology Solutions In 360°
             </Typography>
-            <Typography variant="p" color="white" className="leading-relaxed">
-              Experience SKT gasket solutions through an immersive 360° view. Explore the product design, construction, and details from every angle while discovering the precision and engineering behind SKT's sealing solutions.
+            <Typography
+              variant="p"
+              color="none"
+              className="text-white/85 text-xs sm:text-sm lg:text-[14.5px] leading-relaxed font-outfit"
+            >
+              Explore our range of catheters, drainage bags, and urology solutions through an interactive 360° experience, highlighting their design, features, functionality, quality, reliability, and patient-focused care.
             </Typography>
           </div>
-          <div className="w-full md:w-auto flex justify-start md:justify-end">
-            <Button text="Explore in 360°" href="#explore" showIcon={true} iconVariant="white" />
+
+          {/* Right CTA Button */}
+          <div className="flex-shrink-0">
+            <Button text="View in 360°" href="#explore" variant="white" />
           </div>
         </div>
 
-        {/* Video Container */}
-        <div className="w-full relative  xl:max-w-[80%] mx-auto shadow-2xl overflow-hidden rounded-tl-[3rem] rounded-br-[3rem]" data-aos="zoom-in" data-aos-delay="100">
-          <div className="w-full aspect-video bg-[#121c22]">
+        {/* 360 Video Player Container */}
+        <div
+          className="w-full mt-8 sm:mt-10 max-w-7xl mx-auto overflow-hidden rounded-tl-[3.5rem] lg:rounded-tl-[4.5rem] rounded-br-[3.5rem] lg:rounded-br-[4.5rem] rounded-tr-none rounded-bl-none border border-white/15"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div className="relative w-full aspect-video bg-[#121c22]">
             <DynamicVideoPlayer
               type="360"
               className="absolute inset-0 w-full h-full object-cover"
@@ -44,3 +63,4 @@ const Deg360 = () => {
 };
 
 export default Deg360;
+

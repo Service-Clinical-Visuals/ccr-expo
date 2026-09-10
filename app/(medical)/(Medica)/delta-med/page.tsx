@@ -7,6 +7,10 @@ import Leading from "./_components/Leading";
 import AboutUs from "./_components/AboutUs";
 import Deg360 from "./_components/360deg";
 import Reliable from "./_components/Reliable";
+import Quality from "./_components/Quality";
+import Brands from "./_components/Brands";
+import AdvancedCare from "./_components/AdvancedCare";
+import LatestNews from "./_components/LatestNews";
 import Products from "./_components/Products";
 import Precision from "./_components/Precision";
 import Sustainability from "./_components/Sustainability";
@@ -28,10 +32,10 @@ export default function ETEnginePage() {
         <Deg360 />
         <Products />
         <Reliable />
-        <Leading />
-        <Sustainability />
-        <Precision />
-        <Values />
+        <Quality />
+        <Brands />
+        <AdvancedCare />
+        <LatestNews />
       </main>
 
       <Footer />

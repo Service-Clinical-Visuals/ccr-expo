@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
 @layer base {
   :root {
-    --font-body-family: var(--font-inter), sans-serif;
-    --font-heading-family: var(--font-poppins), sans-serif;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-body-family: var(--font-outfit), 'Outfit', sans-serif;
+    --font-heading-family: var(--font-outfit), 'Outfit', sans-serif;
   }
 }
 
@@ -18,78 +21,85 @@
   --color-gray-light: #f8f9fa;
   --color-border: #e2e8f0;
 
-  --font-poppins: var(--font-poppins), 'Poppins', ui-sans-serif, sans-serif;
-  --font-inter: var(--font-inter), 'Inter', ui-sans-serif, sans-serif;
+  --font-outfit: var(--font-outfit), 'Outfit', ui-sans-serif, sans-serif;
+  --font-poppins: var(--font-outfit), 'Outfit', ui-sans-serif, sans-serif;
+  --font-inter: var(--font-outfit), 'Outfit', ui-sans-serif, sans-serif;
+}
+
+html,
+body,
+.ampro-root,
+.ampro-root * {
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
 }
 
 html,
 body {
-  font-family: var(--font-inter);
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
   color: var(--color-text);
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden !important;
   width: 100%;
-
 }
 
-.navlink{
+.navlink {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #333333;
   font-weight: normal;
-  font-family: var(--font-poppins);
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
 }
 
-.heading{
+.heading {
   font-size: 36px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #1A1A1A;
   font-weight: 600;
-  font-family: var(--font-poppins);
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
 }
 
-.subheading{
+.subheading {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0%;
   color: #1A1A1A;
-  font-family: var(--font-poppins);
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
 }
 
-.content{
+.content {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0%;
   color: #666666;
-  font-family: var(--font-inter);
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
 }
 
-.heading-white{
+.heading-white {
   font-size: 36px;
   line-height: 45px;
   letter-spacing: 0%;
   color: #ffffff;
   font-weight: 600;
-  font-family: var(--font-poppins);
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
 }
 
-.subheading-white{
+.subheading-white {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0%;
   color: #ffffff;
-  font-family: var(--font-poppins);
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
 }
 
-.content-white{
+.content-white {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0%;
   color: #ffffff;
-  font-family: var(--font-inter);
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
 }
 
 .rounded-3xl {
@@ -229,8 +239,7 @@ body {
 /* 2K / QHD Monitors (2560px wide) - Maintain 1920px design proportions */
 @media (min-width: 2560px) {
   .eurol-root {
-    zoom: 1.38
-    ;
+    zoom: 1.38;
     transform-origin: top center;
   }
 }
@@ -241,4 +250,13 @@ body {
     zoom: 1.75;
     transform-origin: top center;
   }
+}
+
+
+.bg {
+  background-color: #0c3548;
+  background-image: url("/medical/delta-med/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
