@@ -1,7 +1,7 @@
 import React from "react";
-import DynamicVideoPlayer from "../../../_components/DynamicVideoPlayer";
 import Typography from "./Typography";
 import Button from "./Button";
+import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 
 export default function Banner() {
   return (
