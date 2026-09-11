@@ -3,9 +3,9 @@ import "./global.css";
 import { VideoProvider } from "@/app/_context/VideoContext";
 
 export const metadata: Metadata = {
-  title: "AMECATH - Innovative Catheter Manufacturing & Healthcare Solutions",
+  title: "Kaul - Innovative Catheter Manufacturing & Healthcare Solutions",
   description:
-    "AMECATH is a leading manufacturer of innovative catheters and advanced medical healthcare solutions worldwide.",
+    "Kaul is a leading manufacturer of innovative catheters and advanced medical healthcare solutions worldwide.",
 };
 
 export default function AmecathLayout({
