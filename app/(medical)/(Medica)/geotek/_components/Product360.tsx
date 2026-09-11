@@ -24,7 +24,7 @@ export default function Product360() {
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 md:gap-8">
           {/* Left: Heading with white accent pill & Description */}
           <div
-            className="flex-1 max-w-5xl xl:max-w-[1050px]"
+            className="flex-1 w-full xl:max-w-[70%]"
             data-aos="fade-right"
             data-aos-duration="900"
           >
@@ -35,7 +35,7 @@ export default function Product360() {
               <span className="w-[33px] h-[5px] bg-white rounded-[43px] inline-block shrink-0" />
             </div>
 
-            <p className="font-baloo font-medium text-[15px] sm:text-[16px] md:text-[17px] leading-[150%] text-white max-w-[963px] w-full">
+            <p className="font-baloo font-medium text-[15px] sm:text-[16px] md:text-[17px] leading-[150%] text-white w-full">
               Take a closer look at the Double J Ureteral Stent Set through an interactive 360°
               experience. Explore its design, components, and key features, including the DJ stent,
               pusher, guide wire, and clamps, designed for reliable ureteral drainage and clinical
@@ -69,7 +69,7 @@ export default function Product360() {
         <div
           className="
             relative w-full max-w-[1394px] mx-auto
-            aspect-video min-h-[300px] sm:min-h-[420px] md:min-h-[540px] lg:min-h-[640px] xl:min-h-[690px]
+            aspect-video
             rounded-[28px] sm:rounded-[40px] md:rounded-[50px]
             overflow-hidden shadow-[0px_6px_24px_rgba(0,0,0,0.25)]
             bg-white/10
@@ -80,7 +80,7 @@ export default function Product360() {
         >
           <DynamicVideoPlayer
             type="360"
-            className="absolute inset-0 w-full h-full object-cover aspect-video"
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
       </div>
