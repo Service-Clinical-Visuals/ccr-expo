@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+@layer base {
+  :root {
+    --primary: #e2007a;
+    --primary-hover: #c4006a;
+    --primary-light: #fdf0f7;
+    --primary-border: #e2007a;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-outfit), 'Outfit';
+    color: #1a1a1a;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  /* Headings and Buttons use Exo 2 font family */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  .btn-text,
+  .banner-title,
+  .section-title,
+  .card-title,
+  .font-heading {
+    font-family: var(--font-exo-2), 'Exo 2';
+  }
+
+  /* Paragraphs and general text use Outfit font family */
+  p,
+  span,
+  a,
+  li,
+  .header-link,
+  .section-text,
+  .section-subtitle,
+  .card-text,
+  .footer-text,
+  .footer-link,
+  .font-body {
+    font-family: var(--font-outfit), 'Outfit';
+  }
+}
+
+.font-exo2 {
+  font-family: var(--font-exo-2), 'Exo 2' !important;
+}
+
+.font-outfit {
+  font-family: var(--font-outfit), 'Outfit' !important;
+}
+
+section {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Responsive Container */
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Custom Responsive Grids */
+.custom-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.custom-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .custom-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+    align-items: center;
+  }
+}
+
+.custom-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .custom-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+.custom-grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .custom-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* ==========================================================================
+   Responsive Custom Container & Font Sizes Across All 9 Breakpoints
+   Rule: Font sizes configured ONLY in global.css (not inline or in JSX)
+   ========================================================================== */
+
+/* 1. Mobile Portrait (< 480px) */
+@media (max-width: 480px) {
+  .custom-container {
+    max-width: 95%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 17px;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+/* 2. Mobile Landscape (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container {
+    max-width: 95%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 17px;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+/* 3. Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container {
+    max-width: 95%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 17px;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+/* 4. Desktop Small (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container {
+    max-width: 95%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 17px;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+/* 5. Desktop Standard (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container {
+    max-width: 95%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 17px;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+/* 6. Desktop Large / Full HD (1536px - 1920px) as per figma */
+@media (min-width: 1536px) and (max-width: 1920px) {
+  .custom-container {
+    max-width: 95%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 17px;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+/* 7. Extra Large (1921px - 2559px) */
+@media (min-width: 1921px) and (max-width: 2559px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 17px;
+  }
+
+  .banner-title {
+    font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+/* 8. 2K Screens (2560px - 3800px) */
+@media (min-width: 2560px) and (max-width: 3800px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 20px;
+  }
+
+  .btn-text {
+    font-size: 21px;
+  }
+
+  .banner-title {
+    font-size: 42px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-text {
+    font-size: 20px;
+  }
+
+  .card-title {
+    font-size: 26px;
+  }
+
+  .footer-text {
+    font-size: 26px;
+  }
+}
+
+/* 9. 4K / Ultra-wide (> 3800px) */
+@media (min-width: 3801px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  .header-link {
+    font-size: 26px;
+  }
+
+  .btn-text {
+    font-size: 24px;
+  }
+
+  .banner-title {
+    font-size: 50px;
+  }
+
+  .section-title {
+    font-size: 42px;
+  }
+
+  .section-text {
+    font-size: 26px;
+  }
+
+  .card-title {
+    font-size: 32px;
+  }
+
+  .footer-text {
+    font-size: 32px;
+  }
+}
