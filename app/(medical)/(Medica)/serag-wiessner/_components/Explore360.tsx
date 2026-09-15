@@ -5,7 +5,7 @@ import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 
 export default function Explore360() {
   return (
-    <section id="explore-360" className="w-full bg-[#f5f5f5] py-14 sm:py-20 md:py-24">
+    <section className="w-full bg-[#f5f5f5] py-14 sm:py-20 md:py-24">
       <div className="custom-container">
         {/* Centered Heading and Description */}
         <div
