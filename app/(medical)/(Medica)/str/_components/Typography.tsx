@@ -49,7 +49,7 @@ export default function Typography({
     primary: "text-[var(--color-primary)]",
     secondary: "text-[var(--color-secondary)]",
     accent: "text-[var(--color-accent)]",
-    dark: "text-[#121C22]",
+    dark: "text-[#202020]",
     white: "text-white",
     muted: "text-[var(--color-muted)]",
     none: "",

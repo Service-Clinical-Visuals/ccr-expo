@@ -32,16 +32,16 @@ export default function Footer() {
               <Typography variant="footer-heading" color="white">
                 Biotech GmbH
               </Typography>
-              <ul className="flex flex-col gap-2 min-[2500px]:gap-3 text-white text-[14px] sm:text-[15px] xl:text-[17px] min-[2500px]:text-[24px] min-[3800px]:text-[30px] leading-[150%] font-[var(--font-secondary)] font-normal">
+              <ul className="flex flex-col gap-2 min-[2500px]:gap-3 text-white">
                 <li>
-                  <Link href="#home" className="hover:text-[#DBB001] transition-colors">
+                  <Link href="#home" className="footer-body block hover:text-[#DBB001] transition-colors">
                     Home
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#pharmaceutical"
-                    className="hover:text-[#DBB001] transition-colors"
+                    className="footer-body block hover:text-[#DBB001] transition-colors"
                   >
                     Biotech Pharmaceutical
                   </Link>
@@ -49,26 +49,26 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#surgical-technique"
-                    className="hover:text-[#DBB001] transition-colors"
+                    className="footer-body block hover:text-[#DBB001] transition-colors"
                   >
                     Surgical Technique
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="hover:text-[#DBB001] transition-colors">
+                  <Link href="#contact" className="footer-body block hover:text-[#DBB001] transition-colors">
                     Contact
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#privacy"
-                    className="hover:text-[#DBB001] transition-colors whitespace-normal"
+                    className="footer-body block hover:text-[#DBB001] transition-colors whitespace-normal"
                   >
                     Privacy Policy / Datecnschutzerklarung
                   </Link>
                 </li>
                 <li>
-                  <Link href="#catalog" className="hover:text-[#DBB001] transition-colors">
+                  <Link href="#catalog" className="footer-body block hover:text-[#DBB001] transition-colors">
                     Product Catalog
                   </Link>
                 </li>
@@ -80,25 +80,25 @@ export default function Footer() {
               <Typography variant="footer-heading" color="white">
                 Biotech GmbH
               </Typography>
-              <div className="flex flex-col gap-2.5 min-[2500px]:gap-4 text-white text-[14px] sm:text-[15px] xl:text-[17px] min-[2500px]:text-[24px] min-[3800px]:text-[30px] leading-[150%] font-[var(--font-secondary)] font-normal">
+              <div className="flex flex-col gap-2.5 min-[2500px]:gap-4 text-white">
                 <div className="flex items-start gap-2.5 min-[2500px]:gap-4">
-                  <MapPin className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 text-white shrink-0 mt-0.5" />
-                  <span>Hauptstraße 113. 56598 Rheinbrohl Germany,</span>
+                  <MapPin className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-10 min-[3800px]:h-10 text-white shrink-0 mt-0.5" />
+                  <p className="footer-body">Hauptstraße 113. 56598 Rheinbrohl Germany,</p>
                 </div>
                 <div className="flex items-center gap-2.5 min-[2500px]:gap-4">
-                  <Phone className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 text-white shrink-0" />
+                  <Phone className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-10 min-[3800px]:h-10 text-white shrink-0" />
                   <a
                     href="tel:+492635922210"
-                    className="hover:text-[#DBB001] transition-colors whitespace-nowrap"
+                    className="footer-body hover:text-[#DBB001] transition-colors whitespace-nowrap"
                   >
                     +49 2635 92221-0
                   </a>
                 </div>
                 <div className="flex items-center gap-2.5 min-[2500px]:gap-4">
-                  <Mail className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 text-white shrink-0" />
+                  <Mail className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-10 min-[3800px]:h-10 text-white shrink-0" />
                   <a
                     href="mailto:office-de@biotech-medical.net"
-                    className="hover:text-[#DBB001] transition-colors break-all"
+                    className="footer-body hover:text-[#DBB001] transition-colors break-all"
                   >
                     office-de@biotech-medical.net
                   </a>
@@ -111,22 +111,22 @@ export default function Footer() {
               <Typography variant="footer-heading" color="white">
                 Managing Director
               </Typography>
-              <div className="flex flex-col gap-2.5 min-[2500px]:gap-4 text-white text-[14px] sm:text-[15px] xl:text-[17px] min-[2500px]:text-[24px] min-[3800px]:text-[30px] leading-[150%] font-[var(--font-secondary)] font-normal">
-                <p className="text-white">Dr. Ghazi Alkaysi</p>
+              <div className="flex flex-col gap-2.5 min-[2500px]:gap-4 text-white">
+                <p className="footer-body">Dr. Ghazi Alkaysi</p>
                 <div className="flex items-center gap-2.5 min-[2500px]:gap-4">
-                  <Phone className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 text-white shrink-0" />
+                  <Phone className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-10 min-[3800px]:h-10 text-white shrink-0" />
                   <a
                     href="tel:+4915167311635"
-                    className="hover:text-[#DBB001] transition-colors whitespace-nowrap"
+                    className="footer-body hover:text-[#DBB001] transition-colors whitespace-nowrap"
                   >
                     +49 151 67311635
                   </a>
                 </div>
                 <div className="flex items-center gap-2.5 min-[2500px]:gap-4">
-                  <Mail className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 text-white shrink-0" />
+                  <Mail className="w-4 h-4 sm:w-4.5 sm:h-4.5 min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-10 min-[3800px]:h-10 text-white shrink-0" />
                   <a
                     href="mailto:ag@biotech-medical.net"
-                    className="hover:text-[#DBB001] transition-colors break-all"
+                    className="footer-body hover:text-[#DBB001] transition-colors break-all"
                   >
                     ag@biotech-medical.net
                   </a>
@@ -140,36 +140,36 @@ export default function Footer() {
         <div className="w-full h-[2px] min-[2500px]:h-[3px] bg-[#D9D9D9] mt-8 lg:mt-10 min-[2500px]:mt-14" />
 
         {/* Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 mt-4 sm:mt-5 min-[2500px]:mt-7 text-[13px] sm:text-[14px] lg:text-[15px] xl:text-[17px] min-[2500px]:text-[22px] min-[3800px]:text-[28px] text-white font-[var(--font-secondary)] font-normal leading-[150%]">
-          <p className="text-center sm:text-left">© 2026 Biotech GmbH. All rights reserved.</p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 mt-4 sm:mt-5 min-[2500px]:mt-7 text-white">
+          <p className="footer-body text-center sm:text-left">© 2026 Biotech GmbH. All rights reserved.</p>
 
           <div className="flex items-center gap-3 sm:gap-5 flex-wrap justify-center">
             <div className="flex items-center gap-2">
               <Link
                 href="#privacy"
-                className="underline underline-offset-4 hover:text-[#DBB001] transition-colors whitespace-nowrap"
+                className="footer-body underline underline-offset-4 hover:text-[#DBB001] transition-colors whitespace-nowrap"
               >
                 Privacy Policy
               </Link>
-              <span>|</span>
+              <span className="footer-body">|</span>
               <Link
                 href="#cookie"
-                className="underline underline-offset-4 hover:text-[#DBB001] transition-colors whitespace-nowrap"
+                className="footer-body underline underline-offset-4 hover:text-[#DBB001] transition-colors whitespace-nowrap"
               >
                 Cookie Policy
               </Link>
-              <span>|</span>
+              <span className="footer-body">|</span>
             </div>
 
             <div className="flex items-center gap-2.5 sm:gap-3">
-              <span className="whitespace-nowrap">Follow Us :</span>
+              <span className="footer-body whitespace-nowrap">Follow Us :</span>
               <div className="flex items-center gap-2 min-[2500px]:gap-4">
                 <a
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
-                  className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] min-[2500px]:w-8 min-[2500px]:h-8 flex items-center justify-center text-white hover:text-[#DBB001] transition-colors"
+                  className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] min-[2500px]:w-8 min-[2500px]:h-8 min-[3800px]:w-11 min-[3800px]:h-11 flex items-center justify-center text-white hover:text-[#DBB001] transition-colors"
                 >
                   <Linkedin className="w-full h-full" strokeWidth={1.75} />
                 </a>
@@ -178,7 +178,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Twitter"
-                  className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] min-[2500px]:w-8 min-[2500px]:h-8 flex items-center justify-center text-white hover:text-[#DBB001] transition-colors"
+                  className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] min-[2500px]:w-8 min-[2500px]:h-8 min-[3800px]:w-11 min-[3800px]:h-11 flex items-center justify-center text-white hover:text-[#DBB001] transition-colors"
                 >
                   <Twitter className="w-full h-full" strokeWidth={1.75} />
                 </a>
@@ -187,7 +187,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Facebook"
-                  className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] min-[2500px]:w-8 min-[2500px]:h-8 flex items-center justify-center text-white hover:text-[#DBB001] transition-colors"
+                  className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] min-[2500px]:w-8 min-[2500px]:h-8 min-[3800px]:w-11 min-[3800px]:h-11 flex items-center justify-center text-white hover:text-[#DBB001] transition-colors"
                 >
                   <Facebook className="w-full h-full" strokeWidth={1.75} />
                 </a>

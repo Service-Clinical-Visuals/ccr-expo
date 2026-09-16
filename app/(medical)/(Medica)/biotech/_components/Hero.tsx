@@ -16,8 +16,6 @@ export default function Hero() {
           type="banner"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        {/* Subtle gradient for text legibility at bottom without heavy dark tint overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#003470]/70 via-transparent to-black/20 pointer-events-none" />
       </div>
 
       {/* Hero Content Container */}

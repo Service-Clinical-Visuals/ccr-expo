@@ -47,11 +47,11 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden min-[1026px]:flex items-center gap-5 xl:gap-7 min-[1600px]:gap-9">
+        <nav className="hidden min-[1026px]:flex items-center gap-5 xl:gap-7 min-[1600px]:gap-8 min-[2500px]:gap-10 min-[3800px]:gap-12">
           {/* Home */}
           <Link
             href="#home"
-            className="font-[var(--font-secondary)] text-[16px] xl:text-[17px] min-[2500px]:text-[22px] min-[3800px]:text-[28px] leading-[26px] text-white underline underline-offset-4 decoration-1 decoration-white hover:text-[#DBB001] transition-colors"
+            className="navbar leading-normal text-white underline underline-offset-4 decoration-1 decoration-white hover:text-[#DBB001] transition-colors"
           >
             Home
           </Link>
@@ -60,21 +60,21 @@ export default function Header() {
           <div className="relative group py-2">
             <button
               type="button"
-              className="flex items-center gap-1.5 font-[var(--font-secondary)] text-[16px] xl:text-[17px] min-[2500px]:text-[22px] min-[3800px]:text-[28px] leading-[26px] text-white hover:text-[#DBB001] transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 min-[2500px]:gap-2.5 min-[3800px]:gap-3 navbar leading-normal text-white hover:text-[#DBB001] transition-colors cursor-pointer"
             >
-              <span>Biotech Pharmaceutical</span>
-              <ChevronDown className="w-4 h-4 text-white group-hover:rotate-180 transition-transform duration-200 shrink-0" />
+              Biotech Pharmaceutical
+              <ChevronDown className="w-4 h-4 min-[2500px]:w-6 min-[2500px]:h-6 min-[3800px]:w-8 min-[3800px]:h-8 text-white group-hover:rotate-180 transition-transform duration-200 shrink-0" />
             </button>
-            <div className="absolute top-full left-0 hidden group-hover:block bg-white text-slate-800 shadow-xl rounded-md py-2 w-56 border border-slate-100 animate-in fade-in zoom-in-95 duration-200">
+            <div className="absolute top-full left-0 hidden group-hover:block bg-white text-slate-800 shadow-xl rounded-md py-2 min-[2500px]:py-3.5 min-[3800px]:py-4 w-56 min-[2500px]:w-80 min-[3800px]:w-96 border border-slate-100 animate-in fade-in zoom-in-95 duration-200">
               <Link
                 href="#pharmaceutical"
-                className="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-[#003470] transition-colors"
+                className="block px-4 min-[2500px]:px-6 min-[3800px]:px-8 py-2 min-[2500px]:py-3 min-[3800px]:py-4 navbar hover:bg-slate-50 hover:text-[#003470] transition-colors"
               >
                 Prednidelt® 30 mg
               </Link>
               <Link
                 href="#products"
-                className="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-[#003470] transition-colors"
+                className="block px-4 min-[2500px]:px-6 min-[3800px]:px-8 py-2 min-[2500px]:py-3 min-[3800px]:py-4 navbar hover:bg-slate-50 hover:text-[#003470] transition-colors"
               >
                 Pharmaceutical Products
               </Link>
@@ -85,21 +85,21 @@ export default function Header() {
           <div className="relative group py-2">
             <button
               type="button"
-              className="flex items-center gap-1.5 font-[var(--font-secondary)] text-[16px] xl:text-[17px] min-[2500px]:text-[22px] min-[3800px]:text-[28px] leading-[26px] text-white hover:text-[#DBB001] transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 min-[2500px]:gap-2.5 min-[3800px]:gap-3 navbar leading-normal text-white hover:text-[#DBB001] transition-colors cursor-pointer"
             >
-              <span>Surgical Technique</span>
-              <ChevronDown className="w-4 h-4 text-white group-hover:rotate-180 transition-transform duration-200 shrink-0" />
+              Surgical Technique
+              <ChevronDown className="w-4 h-4 min-[2500px]:w-6 min-[2500px]:h-6 min-[3800px]:w-8 min-[3800px]:h-8 text-white group-hover:rotate-180 transition-transform duration-200 shrink-0" />
             </button>
-            <div className="absolute top-full left-0 hidden group-hover:block bg-white text-slate-800 shadow-xl rounded-md py-2 w-64 border border-slate-100 animate-in fade-in zoom-in-95 duration-200">
+            <div className="absolute top-full left-0 hidden group-hover:block bg-white text-slate-800 shadow-xl rounded-md py-2 min-[2500px]:py-3.5 min-[3800px]:py-4 w-64 min-[2500px]:w-96 min-[3800px]:w-[420px] border border-slate-100 animate-in fade-in zoom-in-95 duration-200">
               <Link
                 href="#surgical-technique"
-                className="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-[#003470] transition-colors"
+                className="block px-4 min-[2500px]:px-6 min-[3800px]:px-8 py-2 min-[2500px]:py-3 min-[3800px]:py-4 navbar hover:bg-slate-50 hover:text-[#003470] transition-colors"
               >
                 Future Knee Modular System
               </Link>
               <Link
                 href="#surgical-technique"
-                className="block px-4 py-2 text-sm hover:bg-slate-50 hover:text-[#003470] transition-colors"
+                className="block px-4 min-[2500px]:px-6 min-[3800px]:px-8 py-2 min-[2500px]:py-3 min-[3800px]:py-4 navbar hover:bg-slate-50 hover:text-[#003470] transition-colors"
               >
                 Cobalt Crome Femoral
               </Link>
@@ -109,7 +109,7 @@ export default function Header() {
           {/* Contact */}
           <Link
             href="#contact"
-            className="font-[var(--font-secondary)] text-[16px] xl:text-[17px] min-[2500px]:text-[22px] min-[3800px]:text-[28px] leading-[26px] text-white hover:text-[#DBB001] transition-colors"
+            className="navbar leading-normal text-white hover:text-[#DBB001] transition-colors"
           >
             Contact
           </Link>
@@ -117,7 +117,7 @@ export default function Header() {
           {/* Privacy Policy */}
           <Link
             href="#privacy"
-            className="font-[var(--font-secondary)] text-[16px] xl:text-[17px] min-[2500px]:text-[22px] min-[3800px]:text-[28px] leading-[26px] text-white hover:text-[#DBB001] transition-colors whitespace-nowrap"
+            className="navbar leading-normal text-white hover:text-[#DBB001] transition-colors whitespace-nowrap"
           >
             Privacy Policy / Datecnschutzerklarung
           </Link>
@@ -125,7 +125,7 @@ export default function Header() {
           {/* Product Catalog */}
           <Link
             href="#catalog"
-            className="font-[var(--font-secondary)] text-[16px] xl:text-[17px] min-[2500px]:text-[22px] min-[3800px]:text-[28px] leading-[26px] text-white hover:text-[#DBB001] transition-colors whitespace-nowrap"
+            className="navbar leading-normal text-white hover:text-[#DBB001] transition-colors whitespace-nowrap"
           >
             Product Catalog
           </Link>
@@ -140,25 +140,25 @@ export default function Header() {
               className="flex items-center gap-1.5 p-1 rounded hover:bg-white/10 transition-colors cursor-pointer"
               aria-label="Language options"
             >
-              <div className="w-9 h-9 rounded-full bg-[#DBB001] flex items-center justify-center text-[#003470] shadow-sm">
-                <Globe className="w-[19px] h-[19px] text-white" strokeWidth={1.75} />
+              <div className="w-9 h-9 min-[2500px]:w-14 min-[2500px]:h-14 min-[3800px]:w-[76px] min-[3800px]:h-[76px] rounded-full bg-[#DBB001] flex items-center justify-center text-[#003470] shadow-sm">
+                <Globe className="w-[19px] h-[19px] min-[2500px]:w-[28px] min-[2500px]:h-[28px] min-[3800px]:w-[38px] min-[3800px]:h-[38px] text-white" strokeWidth={1.75} />
               </div>
-              <ChevronDown className="w-4 h-4 text-white" />
+              <ChevronDown className="w-4 h-4 min-[2500px]:w-6 min-[2500px]:h-6 min-[3800px]:w-8 min-[3800px]:h-8 text-white" />
             </button>
 
             {langDropdownOpen && (
-              <div className="absolute right-0 top-full mt-2 bg-white text-slate-800 shadow-xl rounded-md py-2 w-36 border border-slate-100 z-50">
+              <div className="absolute right-0 top-full mt-2 bg-white text-slate-800 shadow-xl rounded-md py-2 min-[2500px]:py-3 min-[3800px]:py-4 w-36 min-[2500px]:w-52 min-[3800px]:w-64 border border-slate-100 z-50">
                 <button
                   type="button"
                   onClick={() => setLangDropdownOpen(false)}
-                  className="w-full text-left px-4 py-1.5 text-sm hover:bg-slate-50 font-medium text-[#003470]"
+                  className="w-full text-left px-4 min-[2500px]:px-6 min-[3800px]:px-8 py-1.5 min-[2500px]:py-2.5 min-[3800px]:py-3 navbar hover:bg-slate-50 font-medium text-[#003470]"
                 >
                   English
                 </button>
                 <button
                   type="button"
                   onClick={() => setLangDropdownOpen(false)}
-                  className="w-full text-left px-4 py-1.5 text-sm hover:bg-slate-50 text-slate-600"
+                  className="w-full text-left px-4 min-[2500px]:px-6 min-[3800px]:px-8 py-1.5 min-[2500px]:py-2.5 min-[3800px]:py-3 navbar hover:bg-slate-50 text-slate-600"
                 >
                   Deutsch
                 </button>
@@ -184,42 +184,42 @@ export default function Header() {
           <Link
             href="#home"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[17px] font-medium py-2 border-b border-white/10 text-[#DBB001]"
+            className="navbar font-medium py-2 border-b border-white/10 text-[#DBB001]"
           >
             Home
           </Link>
           <Link
             href="#pharmaceutical"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[17px] py-2 border-b border-white/10 hover:text-[#DBB001]"
+            className="navbar py-2 border-b border-white/10 hover:text-[#DBB001]"
           >
             Biotech Pharmaceutical
           </Link>
           <Link
             href="#surgical-technique"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[17px] py-2 border-b border-white/10 hover:text-[#DBB001]"
+            className="navbar py-2 border-b border-white/10 hover:text-[#DBB001]"
           >
             Surgical Technique
           </Link>
           <Link
             href="#contact"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[17px] py-2 border-b border-white/10 hover:text-[#DBB001]"
+            className="navbar py-2 border-b border-white/10 hover:text-[#DBB001]"
           >
             Contact
           </Link>
           <Link
             href="#privacy"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[17px] py-2 border-b border-white/10 hover:text-[#DBB001]"
+            className="navbar py-2 border-b border-white/10 hover:text-[#DBB001]"
           >
             Privacy Policy / Datecnschutzerklarung
           </Link>
           <Link
             href="#catalog"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[17px] py-2 hover:text-[#DBB001]"
+            className="navbar py-2 hover:text-[#DBB001]"
           >
             Product Catalog
           </Link>
