@@ -18,7 +18,7 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "/surgival" },
+  { label: "Home", href: "/technologie" },
   { label: "Products", href: "#products" },
   { label: "Company", href: "#company" },
   { label: "Patients", href: "#patients" },
@@ -84,7 +84,7 @@ export default function Header() {
 
           {/* Brand Logo */}
           <Link
-            href="/surgival"
+            href="/technologie"
             className="flex items-center flex-shrink-0 group focus:outline-none"
             aria-label="Surgival Home"
           >

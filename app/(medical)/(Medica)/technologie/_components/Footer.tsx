@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook, Youtube, Twitter } 
 
 const footerLinks = {
   quickLinks: [
-    { name: "Home", href: "/surgival" },
+    { name: "Home", href: "/technologie" },
     { name: "Products", href: "#products" },
     { name: "Company", href: "#company" },
     { name: "News", href: "#news" },
