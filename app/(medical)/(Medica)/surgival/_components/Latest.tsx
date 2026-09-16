@@ -96,7 +96,7 @@ const Latest = () => {
               <SwiperSlide key={index} className="h-auto">
                 <div className="flex flex-col bg-white border border-gray-100 shadow-[0_4px_20px_rgb(0,0,0,0.06)] overflow-hidden h-full">
                   {/* Image */}
-                  <div className="w-full relative bg-gray-100" style={{ aspectRatio: '491/328' }}>
+                  <div className="w-full relative  p-4" style={{ aspectRatio: '491/328' }}>
                     <img
                       src={post.image}
                       alt={post.title}
