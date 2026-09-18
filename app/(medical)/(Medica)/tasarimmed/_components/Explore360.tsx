@@ -9,25 +9,25 @@ export default function Explore360() {
   return (
     <section className="w-full bg-[#0B1126] py-16 sm:py-20 md:py-24 relative overflow-hidden">
       <div className="custom-container relative z-10 px-4 sm:px-8 md:px-10 lg:px-12 xl:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-12 xl:gap-16 items-stretch">
 
           {/* Left Column: 360 Video Player */}
           <div
-            className="lg:col-span-7 w-full relative h-full"
+            className="xl:col-span-7 w-full relative h-full"
             data-aos="fade-right"
             data-aos-duration="800"
           >
             <div className="relative w-full h-full aspect-video overflow-hidden bg-gray-200 rounded-md">
               <DynamicVideoPlayer
                 type="360"
-                className="absolute inset-0 w-full h-full object-cover object-center"
+                className="absolute inset-0 w-full h-full object-cover object-center aspect-video"
               />
             </div>
           </div>
 
           {/* Right Column: Text Content */}
           <div
-            className="lg:col-span-5 flex flex-col gap-4 sm:gap-5 justify-center"
+            className="xl:col-span-5 flex flex-col gap-4 sm:gap-5 justify-center"
             data-aos="fade-left"
             data-aos-duration="800"
           >

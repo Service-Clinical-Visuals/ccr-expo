@@ -26,10 +26,10 @@ export default function Footer() {
       <div className="custom-container px-4 sm:px-8 md:px-10 lg:px-12 xl:px-16">
 
         {/* Main Footer Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-12 pb-12 sm:pb-16" data-aos="fade-up">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-10 xl:gap-8 xl:gap-12 pb-12 sm:pb-16" data-aos="fade-up">
 
           {/* Column 1: Logo and Description */}
-          <div className="flex flex-col gap-6 lg:col-span-4 lg:pr-4">
+          <div className="flex flex-col gap-6 xl:col-span-4 xl:pr-4">
             <Link href="/" className="inline-block">
               <img
                 src="/medical/tasarimmed/logo.png"
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Quick Menu */}
-          <div className="lg:col-span-2 lg:pl-4">
+          <div className="xl:col-span-2 xl:pl-4">
             <h3 className="font-dm-sans font-bold text-white footer-text mb-6">Quick Menu</h3>
             <ul className="flex flex-col gap-4">
               {FOOTER_LINKS.quickMenu.map((link, index) => (
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Products */}
-          <div className="lg:col-span-3">
+          <div className="xl:col-span-3">
             <h3 className="font-dm-sans font-bold text-white footer-text mb-6">Products</h3>
             <ul className="flex flex-col gap-4">
               {FOOTER_LINKS.products.map((link, index) => (
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
 
           {/* Column 4: Contact Info */}
-          <div className="lg:col-span-3">
+          <div className="xl:col-span-3">
             <h3 className="font-dm-sans font-bold text-white footer-text mb-6">Contact info</h3>
             <ul className="flex flex-col gap-5">
               <li className="flex items-start gap-4">
