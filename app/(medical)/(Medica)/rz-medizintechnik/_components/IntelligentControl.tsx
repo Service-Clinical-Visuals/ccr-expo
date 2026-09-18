@@ -16,7 +16,7 @@ export default function IntelligentControl() {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-12 xl:gap-16 min-[2500px]:gap-20 min-[3800px]:gap-28 w-full">
           {/* Left Column: Video Clip 01 (order-2 on mobile, order-1 on desktop: 50% equal half) */}
           <div
-            className="w-full relative aspect-video overflow-hidden rounded-[12px] sm:rounded-[16px] min-[2500px]:rounded-[20px] min-[3800px]:rounded-[28px] shadow-md border border-[#0099A1]/25 bg-white order-2 lg:order-1"
+            className="w-full relative aspect-video overflow-hidden rounded-[12px] sm:rounded-[16px] min-[2500px]:rounded-[20px] min-[3800px]:rounded-[28px] shadow-md border border-[#0099A1]/25 bg-transparent order-2 lg:order-1"
             data-aos="fade-right"
             data-aos-duration="900"
           >

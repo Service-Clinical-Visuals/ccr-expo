@@ -24,7 +24,9 @@ export default function VersatileFunctions() {
               <Typography
                 variant="h2"
                 color="dark"
-                className="font-semibold leading-tight tracking-tight"
+                weight="semibold"
+                className="leading-tight tracking-tight font-semibold"
+                style={{ fontWeight: 600 }}
               >
                 Versatile Functions. Controlled Performance.
               </Typography>
@@ -52,7 +54,7 @@ export default function VersatileFunctions() {
 
           {/* Right Column: Video Clip 02 (matching Deleo aspect-video) */}
           <div
-            className="w-full xl:w-[58%] 2xl:w-[60%] relative aspect-video overflow-hidden rounded-[12px] sm:rounded-[16px] min-[2500px]:rounded-[20px] min-[3800px]:rounded-[24px] shadow-md border border-[#0099A1]/25 bg-white"
+            className="w-full xl:w-[58%] 2xl:w-[60%] relative aspect-video overflow-hidden rounded-[12px] sm:rounded-[16px] min-[2500px]:rounded-[20px] min-[3800px]:rounded-[24px] shadow-md border border-[#0099A1]/25 bg-transparent"
             data-aos="fade-left"
             data-aos-duration="900"
           >

@@ -77,11 +77,11 @@ export default function LatestNews() {
                 <div className="absolute top-6 sm:top-8 xl:top-9 right-6 sm:right-7 xl:right-8 min-[2500px]:right-10 min-[3800px]:right-12 w-[3px] h-[100px] sm:h-[120px] min-[2500px]:h-[140px] min-[3800px]:h-[160px] bg-[#0099A1] rounded-full" />
 
                 <div className="space-y-3 sm:space-y-4 pr-5">
-                  <h3 className="font-primary font-bold text-[#000000] text-[18px] sm:text-[20px] min-[2500px]:text-[26px] min-[3800px]:text-[32px] leading-[26px] sm:leading-[28px] min-[2500px]:leading-[34px] min-[3800px]:leading-[42px] whitespace-pre-line">
+                  <h3 className="font-primary font-bold text-[#000000] text-[17px] sm:text-[18px] min-[2500px]:text-[21px] min-[3800px]:text-[25px] leading-[24px] sm:leading-[26px] min-[2500px]:leading-[30px] min-[3800px]:leading-[36px] whitespace-pre-line">
                     {item.title}
                   </h3>
 
-                  <p className="font-primary font-normal text-[#111111] text-[14px] sm:text-[15px] xl:text-[16px] min-[2500px]:text-[20px] min-[3800px]:text-[26px] leading-[22px] sm:leading-[24px] min-[2500px]:leading-[32px] min-[3800px]:leading-[40px]">
+                  <p className="font-primary font-normal text-[#111111] text-[13.5px] sm:text-[14px] xl:text-[14.5px] min-[2500px]:text-[17px] min-[3800px]:text-[20px] leading-[21px] sm:leading-[22px] min-[2500px]:leading-[26px] min-[3800px]:leading-[30px]">
                     {item.description}
                   </p>
                 </div>
@@ -89,10 +89,10 @@ export default function LatestNews() {
                 <div className="pt-5 sm:pt-7">
                   <Link
                     href={item.href}
-                    className="inline-flex items-center gap-2 font-['Sora'] font-semibold text-[15px] sm:text-[16px] min-[2500px]:text-[22px] min-[3800px]:text-[28px] leading-[24px] min-[2500px]:leading-[32px] text-[#0099A1] hover:text-[#00828a] transition-colors group-hover:translate-x-1 duration-200"
+                    className="inline-flex items-center gap-2 font-['Sora'] font-semibold text-[14px] sm:text-[14px] min-[2500px]:text-[17px] min-[3800px]:text-[20px] leading-[22px] min-[2500px]:leading-[26px] text-[#0099A1] hover:text-[#00828a] transition-colors group-hover:translate-x-1 duration-200"
                   >
                     <span>Read More</span>
-                    <ArrowRight className="w-4 h-4 min-[2500px]:w-6 min-[2500px]:h-6 min-[3800px]:w-7 min-[3800px]:h-7" />
+                    <ArrowRight className="w-4 h-4 min-[2500px]:w-5 min-[2500px]:h-5 min-[3800px]:w-6 min-[3800px]:h-6" />
                   </Link>
                 </div>
               </div>
