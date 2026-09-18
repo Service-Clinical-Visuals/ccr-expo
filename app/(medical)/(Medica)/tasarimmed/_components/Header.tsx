@@ -58,7 +58,7 @@ export default function Header() {
         {/* Right Navigation Section */}
         <div className="flex-1 h-full flex items-center justify-end pr-4 sm:pr-8 lg:pr-16 xl:pr-24">
 
-          <nav className="hidden lg:flex items-center gap-10 xl:gap-12 font-inter">
+          <nav className="hidden xl:flex items-center gap-10 xl:gap-12 font-inter">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.label}
@@ -74,10 +74,10 @@ export default function Header() {
           </nav>
 
           {/* Divider */}
-          <div className="hidden lg:block w-[1px] h-12 bg-[#00000059] mx-6 xl:mx-8"></div>
+          <div className="hidden xl:block w-[1px] h-12 bg-[#00000059] mx-6 xl:mx-8"></div>
 
           {/* Language Selector */}
-          <div className="hidden lg:flex items-center gap-2 cursor-pointer font-inter">
+          <div className="hidden xl:flex items-center gap-2 cursor-pointer font-inter">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="68" height="40" className="rounded-sm object-cover">
 
               <g clipPath="url(#s)">
@@ -96,7 +96,7 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="lg:hidden ml-4 text-[#0B1126] focus:outline-none"
+            className="xl:hidden ml-4 text-[#0B1126] focus:outline-none"
           >
             {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
           </button>
@@ -105,7 +105,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-[80px] left-0 w-full bg-white shadow-lg border-t border-gray-100 p-6 flex flex-col gap-4 z-40 font-inter">
+        <div className="xl:hidden absolute top-[80px] left-0 w-full bg-white shadow-lg border-t border-gray-100 p-6 flex flex-col gap-4 z-40 font-inter">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.label}

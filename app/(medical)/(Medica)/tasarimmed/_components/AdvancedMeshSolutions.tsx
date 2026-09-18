@@ -8,11 +8,11 @@ export default function AdvancedMeshSolutions() {
   return (
     <section className="w-full bg-[#0B1126] py-16 sm:py-20 md:py-24 text-white">
       <div className="custom-container px-4 sm:px-8 md:px-10 lg:px-12 xl:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-10 items-center">
 
           {/* Left Column: Video */}
           <div
-            className="lg:col-span-7 w-full relative h-full"
+            className="xl:col-span-7 w-full relative h-full"
             data-aos="fade-right"
             data-aos-duration="800"
           >
@@ -22,7 +22,7 @@ export default function AdvancedMeshSolutions() {
               <div className="absolute inset-0 w-full h-full z-10">
                 <DynamicVideoPlayer
                   type="short-2"
-                  className="absolute inset-0 w-full h-full object-cover object-center mix-blend-screen"
+                  className="absolute inset-0 w-full h-full object-cover object-center mix-blend-screen aspect-video"
                 />
               </div>
             </div>
@@ -30,7 +30,7 @@ export default function AdvancedMeshSolutions() {
 
           {/* Right Column: Text Content */}
           <div
-            className="lg:col-span-5 flex flex-col justify-center"
+            className="xl:col-span-5 flex flex-col justify-center"
             data-aos="fade-left"
             data-aos-duration="800"
           >

@@ -11,9 +11,9 @@ export default function AbsorbableDesign() {
       <div className="custom-container px-4 sm:px-8 md:px-10 lg:px-12 xl:px-16">
 
         {/* Top Header Section */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-12 mb-8" data-aos="fade-up">
+        <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6 xl:gap-12 mb-8" data-aos="fade-up">
           {/* Left Title Area */}
-          <div className="lg:w-1/2">
+          <div className="xl:w-1/2">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-6 h-[1px] bg-[#C382B4]"></div>
               <span className="font-inter text-[#C382B4] section-text font-regular tracking-wide">
@@ -26,7 +26,7 @@ export default function AbsorbableDesign() {
           </div>
 
           {/* Right Description Area */}
-          <div className="lg:w-1/2">
+          <div className="xl:w-1/2">
             <p className="font-inter section-text font-regular text-gray-200 leading-relaxed">
               The Raptor Spinal System provides immobilization and stabilization of spinal segments to support thoracic, lumbar, and sacral spine fusion in skeletally mature patients.
             </p>
@@ -37,11 +37,11 @@ export default function AbsorbableDesign() {
         <div className="w-full h-[1px] bg-white/70 mb-10 sm:mb-14" data-aos="fade-up" data-aos-delay="100"></div>
 
         {/* Bottom Content Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-12 xl:gap-16 items-stretch">
 
           {/* Left Column: Text & Features */}
           <div
-            className="lg:col-span-4 flex flex-col justify-center"
+            className="xl:col-span-4 flex flex-col justify-center"
             data-aos="fade-right"
             data-aos-duration="800"
           >
@@ -92,7 +92,7 @@ export default function AbsorbableDesign() {
 
           {/* Right Column: Video */}
           <div
-            className="lg:col-span-8 w-full relative h-full"
+            className="xl:col-span-8 w-full relative h-full"
             data-aos="fade-left"
             data-aos-duration="800"
           >
@@ -102,7 +102,7 @@ export default function AbsorbableDesign() {
               <div className="absolute inset-0 w-full h-full z-10">
                 <DynamicVideoPlayer
                   type="short-1"
-                  className="absolute inset-0 w-full h-full object-cover object-center mix-blend-screen"
+                  className="absolute inset-0 w-full h-full object-cover object-center mix-blend-screen aspect-video"
                 />
               </div>
             </div>
