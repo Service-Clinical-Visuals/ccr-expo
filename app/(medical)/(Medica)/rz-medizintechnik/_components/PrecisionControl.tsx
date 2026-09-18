@@ -46,7 +46,7 @@ export default function PrecisionControl() {
 
         {/* 360 Video Player Container matching Deleo 360deg.tsx */}
         <div
-          className="mt-10 sm:mt-12 lg:mt-14 w-full xl:max-w-[70%] max-w-[90%] mx-auto aspect-video relative overflow-hidden rounded-[12px] sm:rounded-[16px] min-[2500px]:rounded-[20px] min-[3800px]:rounded-[24px] shadow-sm border border-[#0099A1]/20 bg-white"
+          className="mt-10 sm:mt-12 lg:mt-14 w-full xl:max-w-[70%] max-w-[90%] mx-auto aspect-video relative overflow-hidden rounded-[12px] sm:rounded-[16px] min-[2500px]:rounded-[20px] min-[3800px]:rounded-[24px] shadow-sm border border-[#0099A1]/20 bg-transparent"
           data-aos="zoom-in"
           data-aos-duration="900"
           data-aos-delay="100"

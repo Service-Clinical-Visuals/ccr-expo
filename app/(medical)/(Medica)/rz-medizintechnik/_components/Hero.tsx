@@ -16,6 +16,7 @@ export default function Hero() {
         <DynamicVideoPlayer
           type="banner"
           className="absolute inset-0 w-full h-full object-cover"
+          audioFeature
         />
         {/* Subtle dark gradient overlay to ensure text contrast */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/30 pointer-events-none" />

@@ -91,13 +91,13 @@ export default function ProductCategories() {
 
               {/* Floating Glassmorphism Overlay Card */}
               <div className="relative z-10 w-full max-w-[92%] sm:max-w-[90%] mx-auto rounded-[12px] sm:rounded-[16px] min-[2500px]:rounded-[24px] min-[3800px]:rounded-[32px] bg-black/30 backdrop-blur-md border border-white/25 p-3.5 sm:p-4 lg:p-5 min-[2500px]:p-8 min-[3800px]:p-12 flex flex-col items-center justify-center text-center gap-2 sm:gap-3 lg:gap-4 min-[2500px]:gap-6 min-[3800px]:gap-9 transition-all duration-300 group-hover:bg-black/40 group-hover:border-white/35 shadow-md mb-2 sm:mb-3 min-[2500px]:mb-5 min-[3800px]:mb-8">
-                <h3 className="font-primary font-semibold text-white text-[18px] sm:text-[20px] lg:text-[22px] xl:text-[24px] 2xl:text-[26px] min-[2500px]:text-[36px] min-[3800px]:text-[50px] leading-tight drop-shadow-sm">
+                <h3 className="font-primary font-semibold text-white text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[20px] 2xl:text-[21px] min-[2500px]:text-[24px] min-[3800px]:text-[28px] leading-tight drop-shadow-sm">
                   {cat.title}
                 </h3>
 
                 <Link
                   href={cat.href}
-                  className="w-auto px-4 sm:px-5 lg:px-6 min-[2500px]:px-10 min-[3800px]:px-14 h-[34px] sm:h-[38px] lg:h-[42px] xl:h-[46px] min-[2500px]:h-[64px] min-[3800px]:h-[86px] bg-[#0099A1] hover:bg-[#00828a] text-white rounded-[6px] sm:rounded-[8px] min-[2500px]:rounded-[14px] min-[3800px]:rounded-[18px] font-semibold text-[13px] sm:text-[14px] lg:text-[15px] xl:text-[16px] min-[2500px]:text-[22px] min-[3800px]:text-[30px] transition-colors flex items-center justify-center text-center shadow-sm active:scale-[0.98] whitespace-nowrap"
+                  className="w-auto px-4 sm:px-5 lg:px-6 min-[2500px]:px-10 min-[3800px]:px-14 h-[34px] sm:h-[38px] lg:h-[40px] xl:h-[42px] min-[2500px]:h-[52px] min-[3800px]:h-[64px] bg-[#0099A1] hover:bg-[#00828a] text-white rounded-[6px] sm:rounded-[8px] min-[2500px]:rounded-[14px] min-[3800px]:rounded-[18px] font-semibold text-[13px] sm:text-[13.5px] lg:text-[14px] xl:text-[14.5px] min-[2500px]:text-[17px] min-[3800px]:text-[20px] transition-colors flex items-center justify-center text-center shadow-sm active:scale-[0.98] whitespace-nowrap"
                 >
                   View Products
                 </Link>
@@ -114,7 +114,7 @@ export default function ProductCategories() {
         >
           <Link
             href="#products"
-            className="font-primary font-normal text-[16px] xl:text-[18px] min-[2500px]:text-[26px] min-[3800px]:text-[36px] leading-[26px] underline text-[#0099A1] hover:text-[#00828a] transition-colors"
+            className="font-primary font-normal text-[15px] xl:text-[15px] min-[2500px]:text-[18px] min-[3800px]:text-[22px] leading-[26px] underline text-[#0099A1] hover:text-[#00828a] transition-colors"
           >
             View All Categories
           </Link>
