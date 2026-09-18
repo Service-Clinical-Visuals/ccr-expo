@@ -12,7 +12,7 @@ export default function BannerMuteButton() {
       aria-label={isBannerMuted ? "Unmute video" : "Mute video"}
       aria-hidden={!isBannerVisible}
       tabIndex={isBannerVisible ? 0 : -1}
-      className={`fixed bottom-4 right-4 z-[60] flex items-center justify-center w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/30 text-white transition-all duration-300 ease-out hover:scale-110 ${
+      className={`fixed bottom-4 right-4 z-[60] flex items-center justify-center w-10 h-10 rounded-full bg-[#0081e9]/59 backdrop-blur-md border border-[#1A80C3]/30 text-white transition-all duration-300 ease-out hover:scale-110 ${
         isBannerVisible
           ? "opacity-100 scale-100 pointer-events-auto"
           : "opacity-0 scale-75 pointer-events-none"
