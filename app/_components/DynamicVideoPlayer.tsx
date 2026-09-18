@@ -10,6 +10,8 @@ import { useVideo, useBannerMute, FALLBACK_VIDEOS } from "../_context/VideoConte
 // going out of bounds (see `parseShortIndex` / `loopShortIndex` below).
 type PlayerType = "banner" | "short" | `short-${number}` | "360";
 
+const obeyAudioProps=true;
+
 // Parses the 1-based `short-N` suffix into a 0-based index (`short` alone
 // is index 0). Returns null for a malformed suffix (e.g. "short-abc").
 function parseShortIndex(type: string): number | null {
@@ -32,29 +34,36 @@ interface DynamicVideoPlayerProps {
   videos?: string | string[] | (string | string[])[];
   className?: string;
   type?: PlayerType;
+  // Opt-in: a banner only exposes the mute toggle/audio when this is true.
+  // Every other banner instance stays silent, with no visibility tracking
+  // or toggle button shown for it.
+  audioFeature?: boolean;
 }
 
 export default function DynamicVideoPlayer({
   videos: manualVideos,
   className = "absolute inset-0 w-full h-full object-cover",
   type = "short",
+  audioFeature = false,
 }: DynamicVideoPlayerProps) {
   const { videos: contextVideos } = useVideo();
   const { isBannerMuted, isBannerVisible, setBannerVisible } = useBannerMute();
   const [currentIndex, setCurrentIndex] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [autoplayBlocked, setAutoplayBlocked] = useState(false);
+  const isAudioBanner =
+    type === "banner" && (obeyAudioProps ? audioFeature : true);
   // Browsers require a real user gesture before an autoplay-muted video can
   // become audible — unmuting it via script with no gesture behind it gets
   // the video paused outright (Chrome's anti "bait and switch" check). So
-  // even though banner audio defaults to "on", it only actually turns on
+  // even after the user unmutes via the toggle, it only actually turns on
   // once the page has seen a genuine activation event.
   const [hasUserGesture, setHasUserGesture] = useState(false);
-  // Only the banner player is user-mutable, and only while at least 60% of
-  // it is on screen — otherwise there's no mute control shown, so it must
-  // stay muted regardless of the user's earlier toggle.
+  // Only a banner with audioFeature enabled is user-mutable, and only while
+  // at least 60% of it is on screen — otherwise there's no mute control
+  // shown, so it must stay muted regardless of the user's earlier toggle.
   const isMuted =
-    type === "banner"
+    isAudioBanner
       ? isBannerMuted || !isBannerVisible || !hasUserGesture
       : true;
 
@@ -114,7 +123,7 @@ export default function DynamicVideoPlayer({
   const bannerObserverRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    if (type !== "banner") return;
+    if (!isAudioBanner) return;
     const observer = new IntersectionObserver(
       ([entry]) => setBannerVisible(entry.isIntersecting && entry.intersectionRatio >= 0.6),
       { threshold: [0, 0.6, 1] },
@@ -125,7 +134,7 @@ export default function DynamicVideoPlayer({
       bannerObserverRef.current = null;
       setBannerVisible(false);
     };
-  }, [type, setBannerVisible]);
+  }, [isAudioBanner, setBannerVisible]);
 
   // Re-point that observer at whichever <video> element is currently
   // mounted (it remounts via `key` on every source change).
@@ -140,7 +149,7 @@ export default function DynamicVideoPlayer({
   // Unlike the Safari play()-retry below, scroll doesn't count here — only
   // events the platform recognizes as real user activation unlock audio.
   useEffect(() => {
-    if (type !== "banner" || hasUserGesture) return;
+    if (!isAudioBanner || hasUserGesture) return;
     const markGesture = () => setHasUserGesture(true);
     const events: Array<keyof WindowEventMap> = [
       "pointerdown",
@@ -152,7 +161,7 @@ export default function DynamicVideoPlayer({
     );
     return () =>
       events.forEach((evt) => window.removeEventListener(evt, markGesture));
-  }, [type, hasUserGesture]);
+  }, [isAudioBanner, hasUserGesture]);
 
   const handleVideoEnd = () => {
     if (activeVideos.length > 1) {

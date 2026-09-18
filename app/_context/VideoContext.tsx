@@ -31,7 +31,7 @@ const VideoConfigContext = createContext<VideoConfigContextType>({
 });
 
 export const VideoConfigProvider = ({ children, apiUrl }: { children: ReactNode; apiUrl: string }) => {
-  const [isBannerMuted, setIsBannerMuted] = useState(false);
+  const [isBannerMuted, setIsBannerMuted] = useState(true);
   const [isBannerVisible, setBannerVisible] = useState(false);
   const toggleBannerMute = useCallback(() => setIsBannerMuted((prev) => !prev), []);
 
