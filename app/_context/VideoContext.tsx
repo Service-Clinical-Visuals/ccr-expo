@@ -1,5 +1,5 @@
 "use client";
-import React, { createContext, useContext, ReactNode, useState, useEffect } from "react";
+import React, { createContext, useContext, ReactNode, useState, useEffect, useCallback, useMemo } from "react";
 
 interface VideoData {
   banner: string[];
@@ -15,20 +15,37 @@ interface VideoContextType {
 
 interface VideoConfigContextType {
   apiUrl: string;
+  isBannerMuted: boolean;
+  toggleBannerMute: () => void;
+  isBannerVisible: boolean;
+  setBannerVisible: (visible: boolean) => void;
 }
 
 const VideoContext = createContext<VideoContextType | undefined>(undefined);
 const VideoConfigContext = createContext<VideoConfigContextType>({
   apiUrl: "https://api.clinicalvisuals.com/admin/custom-business/public/business-media",
+  isBannerMuted: true,
+  toggleBannerMute: () => {},
+  isBannerVisible: false,
+  setBannerVisible: () => {},
 });
 
 export const VideoConfigProvider = ({ children, apiUrl }: { children: ReactNode; apiUrl: string }) => {
+  const [isBannerMuted, setIsBannerMuted] = useState(false);
+  const [isBannerVisible, setBannerVisible] = useState(false);
+  const toggleBannerMute = useCallback(() => setIsBannerMuted((prev) => !prev), []);
+
+  const value = useMemo(
+    () => ({ apiUrl, isBannerMuted, toggleBannerMute, isBannerVisible, setBannerVisible }),
+    [apiUrl, isBannerMuted, toggleBannerMute, isBannerVisible],
+  );
+
   return (
-    <VideoConfigContext.Provider value={{ apiUrl }}>
-      {children}
-    </VideoConfigContext.Provider>
+    <VideoConfigContext.Provider value={value}>{children}</VideoConfigContext.Provider>
   );
 };
+
+export const useBannerMute = () => useContext(VideoConfigContext);
 
 // Fallback data to use when API fails or returns error
 export const FALLBACK_VIDEOS: VideoData = {

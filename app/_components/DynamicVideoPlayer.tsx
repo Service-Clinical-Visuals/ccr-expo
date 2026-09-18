@@ -1,16 +1,32 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import { useVideo, FALLBACK_VIDEOS } from "../_context/VideoContext";
+import { useVideo, useBannerMute, FALLBACK_VIDEOS } from "../_context/VideoContext";
 
-// Map granular types to VideoData properties
-type PlayerType =
-  | "banner"
-  | "short"
-  | "short-1"
-  | "short-2"
-  | "short-3"
-  | "short-4"
-  | "360";
+// Map granular types to VideoData properties. `short-${n}` accepts any
+// positive index (short-1, short-2, ... short-1000, ...). The API's own
+// shortVideo list is read at that exact index — short-20 means the 20th
+// API entry, nothing else. Only once the API doesn't have that many clips
+// do we drop to FALLBACK_VIDEOS, which loops back to its start instead of
+// going out of bounds (see `parseShortIndex` / `loopShortIndex` below).
+type PlayerType = "banner" | "short" | `short-${number}` | "360";
+
+// Parses the 1-based `short-N` suffix into a 0-based index (`short` alone
+// is index 0). Returns null for a malformed suffix (e.g. "short-abc").
+function parseShortIndex(type: string): number | null {
+  const indexStr = type.split("-")[1];
+  if (indexStr === undefined) return 0;
+  const requested = parseInt(indexStr, 10) - 1;
+  return Number.isNaN(requested) ? null : requested;
+}
+
+// Maps a 1-based `short-N` suffix onto a valid index into an array of
+// length `length`, looping back to the start once N exceeds it (e.g. with
+// 4 clips, short-5 -> index 0, short-6 -> index 1, ...).
+function loopShortIndex(type: string, length: number): number {
+  if (length <= 0) return 0;
+  const requested = parseShortIndex(type) ?? 0;
+  return ((requested % length) + length) % length;
+}
 
 interface DynamicVideoPlayerProps {
   videos?: string | string[] | (string | string[])[];
@@ -24,9 +40,23 @@ export default function DynamicVideoPlayer({
   type = "short",
 }: DynamicVideoPlayerProps) {
   const { videos: contextVideos } = useVideo();
+  const { isBannerMuted, isBannerVisible, setBannerVisible } = useBannerMute();
   const [currentIndex, setCurrentIndex] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [autoplayBlocked, setAutoplayBlocked] = useState(false);
+  // Browsers require a real user gesture before an autoplay-muted video can
+  // become audible — unmuting it via script with no gesture behind it gets
+  // the video paused outright (Chrome's anti "bait and switch" check). So
+  // even though banner audio defaults to "on", it only actually turns on
+  // once the page has seen a genuine activation event.
+  const [hasUserGesture, setHasUserGesture] = useState(false);
+  // Only the banner player is user-mutable, and only while at least 60% of
+  // it is on screen — otherwise there's no mute control shown, so it must
+  // stay muted regardless of the user's earlier toggle.
+  const isMuted =
+    type === "banner"
+      ? isBannerMuted || !isBannerVisible || !hasUserGesture
+      : true;
 
   // Normalize dynamic videos into a flat array of strings
   const activeVideos = React.useMemo(() => {
@@ -39,13 +69,9 @@ export default function DynamicVideoPlayer({
       } else if (type === "360") {
         source = contextVideos.videos360;
       } else if (type.startsWith("short")) {
-        const indexStr = type.split("-")[1];
-        if (indexStr !== undefined) {
-          const index = parseInt(indexStr) - 1; // Map short-1 to index 0
-          source = contextVideos.shortVideo?.[index];
-        } else {
-          source = contextVideos.shortVideo?.[0];
-        }
+        const shortVideos = contextVideos.shortVideo;
+        const index = parseShortIndex(type);
+        source = index !== null ? shortVideos?.[index] : undefined;
       }
     }
 
@@ -56,11 +82,9 @@ export default function DynamicVideoPlayer({
       } else if (type === "360") {
         source = FALLBACK_VIDEOS.videos360;
       } else if (type.startsWith("short")) {
-        const indexStr = type.split("-")[1];
-        const index = indexStr !== undefined ? parseInt(indexStr) - 1 : 0; // Map short-1 to index 0
-        source =
-          FALLBACK_VIDEOS.shortVideo?.[index] ||
-          FALLBACK_VIDEOS.shortVideo?.[0];
+        const shortVideos = FALLBACK_VIDEOS.shortVideo;
+        const index = loopShortIndex(type, shortVideos?.length ?? 0);
+        source = shortVideos?.[index] || shortVideos?.[0];
       }
     }
 
@@ -74,6 +98,61 @@ export default function DynamicVideoPlayer({
   }, [manualVideos, contextVideos, type]);
 
   const currentSource = activeVideos[currentIndex];
+  const hasAutoplayedRef = useRef(false);
+
+  // A new source (remount, or a stall-triggered re-buffer) needs a fresh
+  // muted-autoplay bootstrap before the user's mute choice takes over again.
+  useEffect(() => {
+    hasAutoplayedRef.current = false;
+  }, [currentSource]);
+
+  // Only the banner exposes a mute toggle, and only while it's actually
+  // visible enough to matter. The observer itself is created once (not per
+  // source change) so cycling to the next clip in a multi-clip banner never
+  // reports a spurious "not visible" — it just keeps watching the same spot
+  // on screen.
+  const bannerObserverRef = useRef<IntersectionObserver | null>(null);
+
+  useEffect(() => {
+    if (type !== "banner") return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setBannerVisible(entry.isIntersecting && entry.intersectionRatio >= 0.6),
+      { threshold: [0, 0.6, 1] },
+    );
+    bannerObserverRef.current = observer;
+    return () => {
+      observer.disconnect();
+      bannerObserverRef.current = null;
+      setBannerVisible(false);
+    };
+  }, [type, setBannerVisible]);
+
+  // Re-point that observer at whichever <video> element is currently
+  // mounted (it remounts via `key` on every source change).
+  useEffect(() => {
+    const observer = bannerObserverRef.current;
+    const el = videoRef.current;
+    if (!observer || !el) return;
+    observer.observe(el);
+    return () => observer.unobserve(el);
+  }, [currentSource]);
+
+  // Unlike the Safari play()-retry below, scroll doesn't count here — only
+  // events the platform recognizes as real user activation unlock audio.
+  useEffect(() => {
+    if (type !== "banner" || hasUserGesture) return;
+    const markGesture = () => setHasUserGesture(true);
+    const events: Array<keyof WindowEventMap> = [
+      "pointerdown",
+      "touchstart",
+      "keydown",
+    ];
+    events.forEach((evt) =>
+      window.addEventListener(evt, markGesture, { once: true, passive: true }),
+    );
+    return () =>
+      events.forEach((evt) => window.removeEventListener(evt, markGesture));
+  }, [type, hasUserGesture]);
 
   const handleVideoEnd = () => {
     if (activeVideos.length > 1) {
@@ -86,20 +165,46 @@ export default function DynamicVideoPlayer({
     setCurrentIndex(0);
   }, [activeVideos]);
 
-  // The <video> is remounted (via `key`) on every source change, so a fresh
-  // autoplay attempt only needs to happen once, when that new element becomes
-  // ready to play.
+  // `canplay` can refire well after the initial mount (e.g. a network stall
+  // and re-buffer), so only force muted playback for the bootstrap attempt —
+  // forcing it on every refire would silently re-mute a video the user had
+  // unmuted, with nothing left to correct it back.
   const attemptPlay = () => {
     const el = videoRef.current;
     if (!el) return;
-    el.muted = true;
-    el.defaultMuted = true;
+    const isBootstrap = !hasAutoplayedRef.current;
+    if (isBootstrap) {
+      el.muted = true;
+      el.defaultMuted = true;
+    }
     el.play()
-      .then(() => setAutoplayBlocked(false))
+      .then(() => {
+        setAutoplayBlocked(false);
+        if (isBootstrap) {
+          hasAutoplayedRef.current = true;
+          // Hand mute control back to the user's chosen state now that
+          // autoplay has actually started.
+          el.muted = isMuted;
+        }
+      })
       .catch((error) => {
         console.warn("Autoplay blocked:", error);
         setAutoplayBlocked(true);
       });
+  };
+
+  // Always call the latest attemptPlay from the retry listener below, which
+  // binds once, without having to reattach it on every render.
+  const attemptPlayRef = useRef(attemptPlay);
+  attemptPlayRef.current = attemptPlay;
+
+  // If anything pauses the video after a successful start (the browser's
+  // own anti-bait-and-switch check, a network hiccup, etc.), treat the next
+  // play() attempt as a fresh bootstrap. Otherwise a later retry could call
+  // play() on an element that's paused AND already unmuted, which throws
+  // NotAllowedError instead of recovering.
+  const handlePause = () => {
+    hasAutoplayedRef.current = false;
   };
 
   const handleManualPlay = () => {
@@ -110,16 +215,26 @@ export default function DynamicVideoPlayer({
       .catch((err) => console.error("Manual play failed:", err));
   };
 
+  // Keep the element's muted state in sync with the toggle. Runs after the
+  // initial (forced-muted) autoplay attempt has already resolved, so this
+  // never fights that attempt — it only reflects the user's own choice.
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+    el.muted = isMuted;
+  }, [isMuted, currentSource]);
+
   // Safari can decline the initial autoplay attempt yet allow play() once the
   // page has seen a user gesture. Scroll alone isn't a gesture the platform
   // recognizes, so retry on the first scroll AND on the first genuine
   // activation event (pointer/touch/key), whichever happens first, anywhere
-  // on the page — not just a click directly on the video.
+  // on the page — not just a click directly on the video. Bound once (not
+  // per source change) since it only needs to fire while autoplay is stuck.
   useEffect(() => {
     const retry = () => {
       const el = videoRef.current;
       if (!el || !el.paused) return;
-      attemptPlay();
+      attemptPlayRef.current();
     };
     const events: Array<keyof WindowEventMap> = [
       "scroll",
@@ -130,9 +245,8 @@ export default function DynamicVideoPlayer({
     events.forEach((evt) =>
       window.addEventListener(evt, retry, { once: true, passive: true }),
     );
-    return () =>
-      events.forEach((evt) => window.removeEventListener(evt, retry));
-  }, [currentSource]);
+    return () => events.forEach((evt) => window.removeEventListener(evt, retry));
+  }, []);
 
   if (activeVideos.length === 0) return null;
 
@@ -142,10 +256,11 @@ export default function DynamicVideoPlayer({
         key={currentSource}
         ref={videoRef}
         autoPlay
-        muted
+        muted={isMuted}
         playsInline
         preload="auto"
         onCanPlay={attemptPlay}
+        onPause={handlePause}
         loop={activeVideos.length === 1}
         onEnded={handleVideoEnd}
         className={className}
