@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #2A2A2A;
+}
+
+@theme inline {
+  --color-primary: #0F3E7B;
+  --color-primary-hover: #0a2d59;
+  --color-dark: #2A2A2A;
+  --color-body: #4A4A4A;
+  --color-muted: #727272;
+  --color-header-bg: #000000;
+  --color-bg-light: #F5F5F5;
+  --font-primary: 'Exo 2', var(--font-exo2), ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: 'Outfit', var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-special: 'Anta', var(--font-anta), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Explicit font-family utility enforcement to guarantee exact Figma typography matching */
+.font-exo2,
+[class*="font-['Exo_2']"],
+[class*="font-['Exo 2']"] {
+  font-family: 'Exo 2', var(--font-exo2), sans-serif !important;
+}
+
+.font-outfit,
+[class*="font-['Outfit']"] {
+  font-family: 'Outfit', var(--font-outfit), sans-serif !important;
+}
+
+.font-anta,
+[class*="font-['Anta']"] {
+  font-family: 'Anta', var(--font-anta), sans-serif !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-secondary);
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Custom Swiper Pagination */
+.products-custom-pagination,
+.exhibitions-custom-pagination {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px;
+  margin-top: 36px;
+  position: relative !important;
+  bottom: auto !important;
+}
+
+.products-custom-pagination .swiper-pagination-bullet,
+.exhibitions-custom-pagination .swiper-pagination-bullet {
+  width: 33px !important;
+  height: 9px !important;
+  border-radius: 9px !important;
+  background-color: #DADADA !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.products-custom-pagination .swiper-pagination-bullet-active,
+.exhibitions-custom-pagination .swiper-pagination-bullet-active {
+  background-color: #0F3E7B !important;
+  width: 78px !important;
+}
+
+@media (min-width: 3800px) {
+  .products-custom-pagination,
+  .exhibitions-custom-pagination {
+    gap: 24px;
+    margin-top: 70px;
+  }
+  .products-custom-pagination .swiper-pagination-bullet,
+  .exhibitions-custom-pagination .swiper-pagination-bullet {
+    width: 60px !important;
+    height: 16px !important;
+    border-radius: 16px !important;
+  }
+  .products-custom-pagination .swiper-pagination-bullet-active,
+  .exhibitions-custom-pagination .swiper-pagination-bullet-active {
+    width: 140px !important;
+  }
+}
+
+/* ========================================================
+   Responsive Header Styles for Small to 4K Screens
+   ======================================================== */
+.telemed-header-wrapper {
+  padding-top: 0.75rem;
+}
+.telemed-header-bar {
+  height: 62px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.header-brand-icon {
+  width: 32px;
+  height: 32px;
+}
+.header-brand-title {
+  font-size: 17px;
+  line-height: 1.15;
+}
+.header-brand-sub {
+  font-size: 8.5px;
+  line-height: 1;
+}
+.header-nav-list {
+  gap: 1.25rem;
+}
+.header-nav-link {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 1.2;
+}
+.header-home-underline {
+  width: 38px;
+  height: 3.5px;
+}
+.header-cta-btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 14px;
+}
+.header-cta-arrow {
+  width: 14px;
+  height: 14px;
+}
+
+/* Tablet: 640px - 1024px */
+@media (min-width: 640px) {
+  .telemed-header-wrapper {
+    padding-top: 1rem;
+  }
+  .telemed-header-bar {
+    height: 68px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .header-brand-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .header-brand-title {
+    font-size: 19px;
+  }
+  .header-brand-sub {
+    font-size: 9.5px;
+  }
+}
+
+/* Desktop Laptop: 1025px - 1279px */
+@media (min-width: 1025px) {
+  .telemed-header-wrapper {
+    padding-top: 1.25rem;
+  }
+  .telemed-header-bar {
+    height: 74px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .header-brand-icon {
+    width: 38px;
+    height: 38px;
+  }
+  .header-brand-title {
+    font-size: 20px;
+  }
+  .header-brand-sub {
+    font-size: 10px;
+  }
+  .header-nav-list {
+    gap: 1.5rem;
+  }
+  .header-nav-link {
+    font-size: 15.5px;
+  }
+  .header-home-underline {
+    width: 40px;
+    height: 4px;
+  }
+  .header-cta-btn {
+    padding: 0.6rem 1.4rem;
+    font-size: 14.5px;
+  }
+  .header-cta-arrow {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Large Laptop / Desktop: 1280px - 1535px */
+@media (min-width: 1280px) {
+  .telemed-header-wrapper {
+    padding-top: 1.25rem;
+  }
+  .telemed-header-bar {
+    height: 78px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .header-brand-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .header-brand-title {
+    font-size: 21px;
+  }
+  .header-brand-sub {
+    font-size: 10.5px;
+  }
+  .header-nav-list {
+    gap: 1.75rem;
+  }
+  .header-nav-link {
+    font-size: 16.5px;
+  }
+  .header-home-underline {
+    width: 44px;
+    height: 4px;
+  }
+  .header-cta-btn {
+    padding: 0.65rem 1.6rem;
+    font-size: 15px;
+  }
+  .header-cta-arrow {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* 2XL Desktop: 1536px - 1919px */
+@media (min-width: 1536px) {
+  .telemed-header-wrapper {
+    padding-top: 1.5rem;
+  }
+  .telemed-header-bar {
+    height: 86px;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+  .header-brand-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .header-brand-title {
+    font-size: 23px;
+  }
+  .header-brand-sub {
+    font-size: 11.5px;
+  }
+  .header-nav-list {
+    gap: 2rem;
+  }
+  .header-nav-link {
+    font-size: 18.5px;
+  }
+  .header-home-underline {
+    width: 50px;
+    height: 4.5px;
+  }
+  .header-cta-btn {
+    padding: 0.75rem 1.85rem;
+    font-size: 17px;
+  }
+  .header-cta-arrow {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* 2K / 1080p+ Screen: 1920px - 2499px */
+@media (min-width: 1920px) {
+  .telemed-header-wrapper {
+    padding-top: 1.75rem;
+  }
+  .telemed-header-bar {
+    height: 96px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .header-brand-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .header-brand-title {
+    font-size: 26px;
+  }
+  .header-brand-sub {
+    font-size: 13px;
+  }
+  .header-nav-list {
+    gap: 2.5rem;
+  }
+  .header-nav-link {
+    font-size: 21px;
+  }
+  .header-home-underline {
+    width: 56px;
+    height: 5px;
+  }
+  .header-cta-btn {
+    padding: 0.85rem 2.1rem;
+    font-size: 19px;
+  }
+  .header-cta-arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Ultra-wide Screen: 2500px - 3799px */
+@media (min-width: 2500px) {
+  .telemed-header-wrapper {
+    padding-top: 2.5rem;
+  }
+  .telemed-header-bar {
+    height: 126px;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .header-brand-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .header-brand-title {
+    font-size: 34px;
+  }
+  .header-brand-sub {
+    font-size: 17px;
+  }
+  .header-nav-list {
+    gap: 3.5rem;
+  }
+  .header-nav-link {
+    font-size: 28px;
+  }
+  .header-home-underline {
+    width: 74px;
+    height: 7px;
+  }
+  .header-cta-btn {
+    padding: 1.15rem 2.8rem;
+    font-size: 26px;
+  }
+  .header-cta-arrow {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* 4K Ultra-wide Screen: 3800px and above */
+@media (min-width: 3800px) {
+  .telemed-header-wrapper {
+    padding-top: 4rem;
+  }
+  .telemed-header-bar {
+    height: 170px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .header-brand-icon {
+    width: 92px;
+    height: 92px;
+  }
+  .header-brand-title {
+    font-size: 48px;
+  }
+  .header-brand-sub {
+    font-size: 24px;
+  }
+  .header-nav-list {
+    gap: 5rem;
+  }
+  .header-nav-link {
+    font-size: 42px;
+  }
+  .header-home-underline {
+    width: 110px;
+    height: 10px;
+  }
+  .header-cta-btn {
+    padding: 1.6rem 4rem;
+    font-size: 36px;
+  }
+}
+
+/* ========================================================
+   Responsive Hero Section Spacing
+   Ensures a thin, sleek gap below the floating header
+   on all screen sizes without overlaying on big screens
+   ======================================================== */
+.telemed-hero-section {
+  padding-top: 79px; /* Mobile: Header 74px + 5px thin gap */
+}
+
+@media (min-width: 640px) {
+  .telemed-hero-section {
+    padding-top: 89px; /* Tablet: Header 84px + 5px thin gap */
+  }
+}
+
+@media (min-width: 1025px) {
+  .telemed-hero-section {
+    padding-top: 99px; /* Laptop: Header 94px + 5px thin gap */
+  }
+}
+
+@media (min-width: 1280px) {
+  .telemed-hero-section {
+    padding-top: 104px; /* Large Laptop: Header 98px + 6px thin gap */
+  }
+}
+
+@media (min-width: 1536px) {
+  .telemed-hero-section {
+    padding-top: 116px; /* 2XL Desktop: Header 110px + 6px thin gap */
+  }
+}
+
+@media (min-width: 1920px) {
+  .telemed-hero-section {
+    padding-top: 132px; /* 2K / FHD+: Header 124px + 8px thin gap */
+  }
+}
+
+@media (min-width: 2500px) {
+  .telemed-hero-section {
+    padding-top: 176px; /* Ultra-wide: Header 166px + 10px thin gap */
+  }
+}
+
+@media (min-width: 3800px) {
+  .telemed-hero-section {
+    padding-top: 248px; /* 4K: Header 234px + 14px thin gap */
+  }
+}
+
+.header-cta-arrow {
+  height: auto !important;
+}
+
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+h1 {
+  font-size: 2.375rem; /* 38px */
+  font-weight: 600 !important;
+  font-family: var(--font-primary);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+  font-weight: 600 !important;
+  font-family: var(--font-primary) !important;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600 !important;
+  font-family: var(--font-primary);
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  font-family: var(--font-primary);
+  line-height: 1.4;
+}
+
+p,
+li {
+  font-size: 1.0625rem; /* 17px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+  line-height: 1.65;
+}
+
+span {
+  font-size: 1rem; /* 16px */
+  font-family: var(--font-secondary);
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+.navbar {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+
+.button {
+  font-size: 1.0625rem; /* 17px */
+  font-weight: 300;
+  font-family: var(--font-primary) !important;
+}
+
+.footer-heading {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  font-family: var(--font-primary);
+  line-height: 1.35;
+  color: #ffffff;
+}
+
+.footer-body {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.footer-link {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+  line-height: 1.6;
+  color: #ffffff;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #cce0ff;
+}
+
+/* Mobile Portrait Screen (up to 480px) */
+@media (max-width: 480px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 { font-size: 1.75rem; /* 28px */ }
+  h2 { font-size: 1.5rem; /* 24px */ }
+  h3 { font-size: 1.125rem; /* 18px */ }
+  h4 { font-size: 1rem; }
+  p, li { font-size: 0.875rem; /* 14px */ }
+  span { font-size: 0.875rem; }
+  .navbar { font-size: 0.875rem; /* 14px */ }
+  .footer-heading { font-size: 1.125rem; /* 18px */ }
+  .footer-body, .footer-link { font-size: 0.875rem; /* 14px */ }
+  .button { font-size: 0.875rem; /* 14px */ }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container {
+    max-width: 92%;
+  }
+
+  h1 { font-size: 1.875rem; /* 30px */ }
+  h2 { font-size: 1.625rem; /* 26px */ }
+  h3 { font-size: 1.25rem; /* 20px */ }
+  h4 { font-size: 1.05rem; }
+  p, li { font-size: 0.9375rem; /* 15px */ }
+  span { font-size: 0.9375rem; }
+  .navbar { font-size: 0.9375rem; /* 15px */ }
+  .footer-heading { font-size: 1.25rem; /* 20px */ }
+  .footer-body, .footer-link { font-size: 0.9375rem; /* 15px */ }
+  .button { font-size: 0.9375rem; /* 15px */ }
+}
+
+/* Tablet / Tab Screen (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 { font-size: 2.125rem; /* 34px */ }
+  h2 { font-size: 1.8125rem; /* 29px */ }
+  h3 { font-size: 1.375rem; /* 22px */ }
+  h4 { font-size: 1.1rem; }
+  p, li { font-size: 1rem; /* 16px */ }
+  span { font-size: 1rem; }
+  .navbar { font-size: 0.9375rem; /* 15px */ }
+  .footer-heading { font-size: 1.375rem; /* 22px */ }
+  .footer-body, .footer-link { font-size: 0.9375rem; /* 15px */ }
+  .button { font-size: 1rem; /* 16px */ }
+}
+
+/* Laptop Screen (1025px - 1279px) */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 { font-size: 2.25rem; /* 36px */ }
+  h2 { font-size: 1.875rem; /* 30px */ }
+  h3 { font-size: 1.4375rem; /* 23px */ }
+  h4 { font-size: 1.125rem; }
+  p, li { font-size: 1rem; /* 16px */ }
+  span { font-size: 1rem; }
+  .navbar { font-size: 1rem; /* 16px */ }
+  .footer-heading { font-size: 1.4375rem; /* 23px */ }
+  .footer-body, .footer-link { font-size: 1rem; /* 16px */ }
+  .button { font-size: 1rem; /* 16px */ }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container {
+    max-width: 85%;
+  }
+
+  h1 { font-size: 3.5625rem; /* 57px */ }
+  h2 { font-size: 3rem; /* 48px */ }
+  h3 { font-size: 2.25rem; /* 36px */ }
+  h4 { font-size: 1.75rem; /* 28px */ }
+  p, li { font-size: 1.5625rem; /* 25px */ }
+  span { font-size: 1.5rem; }
+  .navbar { font-size: 1.5rem; /* 24px */ }
+  .footer-heading { font-size: 2.25rem; /* 36px */ }
+  .footer-body, .footer-link { font-size: 1.5rem; /* 24px */ }
+  .button { font-size: 1.5625rem; /* 25px */ }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+@media (min-width: 3800px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 { font-size: 4.75rem; /* 76px */ }
+  h2 { font-size: 4rem; /* 64px */ }
+  h3 { font-size: 3rem; /* 48px */ }
+  h4 { font-size: 2.25rem; /* 36px */ }
+  p, li { font-size: 2.125rem; /* 34px */ }
+  span { font-size: 2rem; }
+  .navbar { font-size: 2rem; /* 32px */ }
+  .footer-heading { font-size: 3rem; /* 48px */ }
+  .footer-body, .footer-link { font-size: 2rem; /* 32px */ }
+  .button { font-size: 2.125rem; /* 34px */ }
+}
