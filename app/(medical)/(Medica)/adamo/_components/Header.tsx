@@ -18,11 +18,11 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "/technologie" },
-  { label: "Products", href: "#products" },
-  { label: "Company", href: "#company" },
-  { label: "Patients", href: "#patients" },
-  { label: "E-IFUS Portal", href: "#portal" },
+  { label: "Home", href: "/adamo" },
+  { label: "Company", href: "#about" },
+  { label: "Products", href: "#solutions" },
+  { label: "Diagnostic", href: "#diagnostic" },
+  { label: "News", href: "#news" },
 ];
 
 export default function Header() {

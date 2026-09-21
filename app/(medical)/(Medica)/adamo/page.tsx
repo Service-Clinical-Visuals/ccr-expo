@@ -14,7 +14,7 @@ import Deg360 from "./_components/360deg";
 import Footer from "./_components/Footer";
 import Banner from "./_components/Banner";
 
-export default function MeylePage() {
+export default function AdamoPage() {
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-secondary)] overflow-x-hidden">
       <SmoothAOS />

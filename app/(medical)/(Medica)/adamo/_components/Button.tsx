@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   showIcon?: boolean;
+  icon?: React.ReactNode;
   variant?: "primary" | "secondary";
 }
 
@@ -24,6 +25,7 @@ const Button = ({
   onClick,
   className = "",
   showIcon = false,
+  icon,
   variant = "primary",
 }: ButtonProps) => {
 
@@ -34,10 +36,12 @@ const Button = ({
 
   const content = (
     <div className={`flex items-center justify-center px-4 py-2.5 transition-colors ${variantStyles} ${className}`}>
-      <span className={`button whitespace-nowrap ${showIcon ? "mr-3" : ""}`}>{text}</span>
-      {showIcon && (
+      <span className={`button whitespace-nowrap ${showIcon || icon ? "mr-3" : ""}`}>{text}</span>
+      {icon ? (
+        <span className="shrink-0">{icon}</span>
+      ) : showIcon ? (
         <CustomArrow className="group-hover:translate-x-1.5 transition-transform duration-300 shrink-0" />
-      )}
+      ) : null}
     </div>
   );
 
