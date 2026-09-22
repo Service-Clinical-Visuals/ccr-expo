@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="custom-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
 
           {/* Logo & Text */}
-          <div className="lg:col-span-3 flex flex-col gap-6" data-aos="fade-right">
+          <div className="md:col-span-2 lg:col-span-3 flex flex-col gap-6" data-aos="fade-right">
             <Link href="/" className="inline-block">
               <img src="/medical/elektro/f-logo.png" alt="Elektro-mag Logo" className="w-auto h-auto object-contain brightness-0 invert" />
             </Link>
@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="lg:col-span-2 flex flex-col gap-4 lg:pl-4" data-aos="fade-up" data-aos-delay="100">
+          <div className="md:col-span-1 lg:col-span-2 flex flex-col gap-4 lg:pl-4" data-aos="fade-up" data-aos-delay="100">
             <Typography variant="h4" color="white" className="font-semibold text-lg mb-2">
               Quick Links
             </Typography>
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           {/* Products */}
-          <div className="lg:col-span-2 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
+          <div className="md:col-span-1 lg:col-span-2 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
             <Typography variant="h4" color="white" className="font-semibold text-lg mb-2">
               Products
             </Typography>
@@ -49,43 +49,43 @@ const Footer = () => {
           </div>
 
           {/* Contact Us */}
-          <div className="col-span-2 md:col-span-2 lg:col-span-3 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="300">
-            <Typography variant="h4" color="white" className="font-semibold text-lg mb-2 min-[3800px]:text-4xl">
+          <div className="md:col-span-1 lg:col-span-3 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="300">
+            <Typography variant="h4" color="white" className="font-semibold text-lg mb-2">
               Contact Us
             </Typography>
-            <div className="flex flex-col gap-4 min-[3800px]:gap-8">
+            <div className="flex flex-col gap-4">
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 min-[3800px]:w-10 min-[3800px]:h-10 shrink-0 text-white mt-0.5" />
-                <Typography variant="p" color="white" className="min-[3800px]:text-2xl leading-relaxed text-sm">+90 (212) 549 55 25</Typography>
+                <Phone className="w-5 h-5 shrink-0 text-white mt-0.5" />
+                <Typography variant="p" color="white" className="leading-relaxed text-sm">+90 (212) 549 55 25</Typography>
               </div>
               <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 min-[3800px]:w-10 min-[3800px]:h-10 shrink-0 text-white mt-0.5" />
-                <Typography variant="p" color="white" className="min-[3800px]:text-2xl leading-relaxed text-sm">export@elektro-mag.com</Typography>
+                <Mail className="w-5 h-5 shrink-0 text-white mt-0.5" />
+                <Typography variant="p" color="white" className="leading-relaxed text-sm">export@elektro-mag.com</Typography>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 min-[3800px]:w-10 min-[3800px]:h-10 shrink-0 text-white mt-0.5" />
-                <Typography variant="p" color="white" className="min-[3800px]:text-2xl leading-relaxed text-sm">Ikitelli O.S.B.<br />Demirciler Sit.<br />B:7 Blok No: 153, 34490 Basaksehir<br />Istanbul - TURKIYE</Typography>
+                <MapPin className="w-5 h-5 shrink-0 text-white mt-0.5" />
+                <Typography variant="p" color="white" className="leading-relaxed text-sm">Ikitelli O.S.B.<br />Demirciler Sit.<br />B:7 Blok No: 153, 34490 Basaksehir<br />Istanbul - TURKIYE</Typography>
               </div>
             </div>
           </div>
 
           {/* Social Media Links */}
-          <div className="col-span-2 md:col-span-2 lg:col-span-2 flex flex-col gap-4 items-start" data-aos="fade-left" data-aos-delay="400">
-            <Typography variant="h4" color="white" className="font-semibold text-lg mb-2 min-[3800px]:text-4xl">
+          <div className="md:col-span-1 lg:col-span-2 flex flex-col gap-4 items-start" data-aos="fade-left" data-aos-delay="400">
+            <Typography variant="h4" color="white" className="font-semibold text-lg mb-2">
               Social Media Links
             </Typography>
-            <div className="flex gap-3 min-[3800px]:gap-6 mt-2">
-              <Link href="#" className="w-8 h-8 min-[3800px]:w-16 min-[3800px]:h-16 rounded-full bg-white text-[#10253D] flex items-center justify-center hover:opacity-80 transition-opacity">
-                <FaLinkedinIn className="text-sm min-[3800px]:text-3xl" />
+            <div className="flex gap-3 mt-2">
+              <Link href="#" className="w-8 h-8 rounded-full bg-white text-[#10253D] flex items-center justify-center hover:opacity-80 transition-opacity">
+                <FaLinkedinIn className="text-sm" />
               </Link>
-              <Link href="#" className="w-8 h-8 min-[3800px]:w-16 min-[3800px]:h-16 rounded-full bg-white text-[#10253D] flex items-center justify-center hover:opacity-80 transition-opacity">
-                <FaInstagram className="text-sm min-[3800px]:text-3xl" />
+              <Link href="#" className="w-8 h-8 rounded-full bg-white text-[#10253D] flex items-center justify-center hover:opacity-80 transition-opacity">
+                <FaInstagram className="text-sm" />
               </Link>
-              <Link href="#" className="w-8 h-8 min-[3800px]:w-16 min-[3800px]:h-16 rounded-full bg-white text-[#10253D] flex items-center justify-center hover:opacity-80 transition-opacity">
-                <FaFacebookF className="text-sm min-[3800px]:text-3xl" />
+              <Link href="#" className="w-8 h-8 rounded-full bg-white text-[#10253D] flex items-center justify-center hover:opacity-80 transition-opacity">
+                <FaFacebookF className="text-sm" />
               </Link>
-              <Link href="#" className="w-8 h-8 min-[3800px]:w-16 min-[3800px]:h-16 rounded-full bg-white text-[#10253D] flex items-center justify-center hover:opacity-80 transition-opacity">
-                <FaYoutube className="text-sm min-[3800px]:text-3xl" />
+              <Link href="#" className="w-8 h-8 rounded-full bg-white text-[#10253D] flex items-center justify-center hover:opacity-80 transition-opacity">
+                <FaYoutube className="text-sm" />
               </Link>
             </div>
           </div>
@@ -95,8 +95,8 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="w-full">
-        <div className="custom-container border-t border-white/20 py-6 min-[3800px]:py-12 flex justify-center items-center">
-          <Typography variant="p" color="white" className="text-sm min-[3800px]:text-2xl text-center opacity-90">
+        <div className="custom-container border-t border-white/20 py-6 flex justify-center items-center">
+          <Typography variant="p" color="white" className="text-sm text-center opacity-90">
             © 2026 - Elektro-mag. All rights reserved.
           </Typography>
         </div>

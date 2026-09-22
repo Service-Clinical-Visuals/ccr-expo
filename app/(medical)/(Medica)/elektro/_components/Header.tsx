@@ -18,7 +18,7 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Home", href: "/medical/elektro" },
+  { label: "Home", href: "/" },
   { label: "Corporate", href: "#corporate" },
   { label: "All Products", href: "#products" },
   { label: "News", href: "#news" },
@@ -47,7 +47,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`fixed left-0 right-0 w-full z-50 flex justify-center pointer-events-none transition-all duration-300 ${isScrolled ? "top-0 bg-[#10253D] shadow-lg pointer-events-auto" : "top-4 sm:top-6"
+    <header className={`fixed left-0 right-0 w-full z-50 flex justify-center pointer-events-none transition-all duration-300 ${isScrolled ? "top-0 bg-[#10253D] shadow-lg pointer-events-auto" : "top-4 sm:top-6 min-[3800px]:top-16"
       }`}>
       <div className={`custom-container w-full pointer-events-auto transition-colors duration-300 ${isScrolled ? "bg-transparent" : "bg-[#10253D]"
         }`}>
@@ -58,7 +58,7 @@ export default function Header() {
             className="flex items-center flex-shrink-0 group focus:outline-none"
             aria-label="Elektro-mag Home"
           >
-            <div className="relative h-8 sm:h-10 md:h-12 min-[3800px]:h-20 flex items-center">
+            <div className="relative h-8 sm:h-10 md:h-25 min-[3800px]:h-24 flex items-center">
               <img
                 src="/medical/elektro/logo.png"
                 alt="Elektro-mag"
@@ -68,7 +68,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <nav className="hidden min-[1220px]:flex items-center gap-6 xl:gap-8">
             {NAV_ITEMS.map((item) => {
               const hasChildren = Boolean(item.items && item.items.length > 0);
               const isDropdownOpen = activeDropdown === item.label;
@@ -137,7 +137,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen((prev) => !prev)}
-              className="lg:hidden w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors focus:outline-none flex-shrink-0 pointer-events-auto"
+              className="min-[1220px]:hidden w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors focus:outline-none flex-shrink-0 pointer-events-auto"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -147,7 +147,7 @@ export default function Header() {
 
         {/* Mobile & Tablet Drawer Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden mt-2 mb-4 mx-4 rounded-xl bg-[#10253D] shadow-lg border border-white/10 p-5 z-50 animate-in fade-in duration-200 max-h-[80vh] overflow-y-auto pointer-events-auto">
+          <div className="min-[1220px]:hidden mt-2 mb-4 mx-4 rounded-xl bg-[#10253D] shadow-lg border border-white/10 p-5 z-50 animate-in fade-in duration-200 max-h-[80vh] overflow-y-auto pointer-events-auto">
             <nav className="flex flex-col gap-1">
               {NAV_ITEMS.map((item) => {
                 const hasChildren = Boolean(item.items && item.items.length > 0);

@@ -11,10 +11,10 @@ const Complete = () => {
     <section id="complete" className="w-full py-16 lg:py-24 bg-[#10253D] overflow-hidden">
       <div className="custom-container">
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 min-[1380px]:grid-cols-12 gap-8 min-[1380px]:gap-16 items-center">
 
           {/* Left: Content (span 4 or 5) */}
-          <div className="lg:col-span-4 flex flex-col justify-start" data-aos="fade-right">
+          <div className="min-[1380px]:col-span-4 flex flex-col justify-start" data-aos="fade-right">
             <Typography variant="h2" color="white" className="mb-6 font-semibold leading-tight">
               Precision Electrosurgery<br />With Flexible Performance
             </Typography>
@@ -62,7 +62,7 @@ const Complete = () => {
           </div>
 
           {/* Right: Video Placeholder (span 7 or 8) */}
-          <div className="lg:col-span-8 w-full aspect-video relative overflow-hidden flex items-center justify-center" data-aos="fade-left">
+          <div className="min-[1380px]:col-span-8 w-full aspect-video relative overflow-hidden flex items-center justify-center" data-aos="fade-left">
             <DynamicVideoPlayer type="short-2" className="absolute inset-0 w-full h-full object-cover" />
           </div>
 

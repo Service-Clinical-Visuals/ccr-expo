@@ -454,154 +454,67 @@ span {
   }
 }
 
-/* Extra Large PC / 2K Screen (1920px - 2499px) */
-@media (min-width: 1920px) and (max-width: 2499px) {
+/* Large Screens / 2K, Ultra-wide & 4K (1920px and above) */
+/* Container width (%) and font size (vw) are both pure viewport-relative */
+/* units here, so they scale at the exact same rate as the screen — no */
+/* fixed px, no breakpoint jumps. Each vw value is calibrated so it equals */
+/* its 1080p rem size exactly at 1920px, then grows smoothly and */
+/* proportionally from there through 4K and beyond, keeping the same */
+/* container-to-text-to-margin ratio at every size. */
+@media (min-width: 1920px) {
   .custom-container {
     max-width: 95%;
   }
-}
-
-/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
-@media (min-width: 2500px) and (max-width: 3799px) {
-  .custom-container {
-    max-width: 85%;
-  }
 
   h1 {
-    font-size: 3.5625rem;
-    /* 57px */
-    line-height: 1.2;
+    font-size: 1.9792vw;
+    line-height: 1.2632;
   }
 
   h2 {
-    font-size: 3rem;
-    /* 48px */
-    line-height: 1.25;
+    font-size: 1.6667vw;
+    line-height: 1.4063;
   }
 
   h3 {
-    font-size: 2.625rem;
-    /* 42px */
-    line-height: 1.3;
+    font-size: 1.4583vw;
   }
 
   h4 {
-    font-size: 2.25rem;
-    /* 36px */
-    line-height: 1.3;
+    font-size: 1.25vw;
   }
 
   h5 {
-    font-size: 1.5rem;
-    /* 24px */
-    line-height: 1.4;
+    font-size: 0.8333vw;
   }
 
   p,
   li {
-    font-size: 1.5rem;
-    /* 24px */
+    font-size: 0.8854vw;
   }
 
   span {
-    font-size: 1.6875rem;
-    /* 27px */
+    font-size: 0.9375vw;
   }
 
   .navbar {
-    font-size: 1.625rem;
-    /* 26px */
+    font-size: 0.8854vw;
   }
 
   .footer-heading {
-    font-size: 2.25rem;
-    /* 36px */
+    font-size: 1.25vw;
   }
 
   .footer-body {
-    font-size: 1.5rem;
-    /* 24px */
+    font-size: 0.8333vw;
   }
 
   .button {
-    font-size: 1.625rem;
-    /* 26px */
+    font-size: 0.8854vw;
   }
 
   .number {
-    font-size: 12rem;
-  }
-}
-
-/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
-@media (min-width: 3800px) {
-  .custom-container {
-    max-width: 90%;
-  }
-
-  h1 {
-    font-size: 4.75rem;
-    /* 76px */
-    line-height: 1.2;
-  }
-
-  h2 {
-    font-size: 4rem;
-    /* 64px */
-    line-height: 1.25;
-  }
-
-  h3 {
-    font-size: 3.5rem;
-    /* 56px */
-    line-height: 1.3;
-  }
-
-  h4 {
-    font-size: 3rem;
-    /* 48px */
-    line-height: 1.3;
-  }
-
-  h5 {
-    font-size: 2rem;
-    /* 32px */
-    line-height: 1.4;
-  }
-
-  p,
-  li {
-    font-size: 2rem;
-    /* 32px */
-  }
-
-  span {
-    font-size: 2.25rem;
-    /* 36px */
-  }
-
-  .navbar {
-    font-size: 2.125rem;
-    /* 34px */
-  }
-
-  .footer-heading {
-    font-size: 3rem;
-    /* 48px */
-  }
-
-  .footer-body {
-    font-size: 2rem;
-    /* 32px */
-  }
-
-  .button {
-    font-size: 2.125rem;
-    /* 34px */
-  }
-
-  .number {
-    font-size: 16rem;
+    font-size: 6.6667vw;
   }
 }
 

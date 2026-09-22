@@ -25,15 +25,15 @@ const Platform = () => {
         </div>
 
         {/* Video and Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 min-[1480px]:grid-cols-12 gap-8 min-[1480px]:gap-12 items-center">
 
           {/* Left: Video Placeholder (span 8) */}
-          <div className="lg:col-span-9 w-full aspect-video relative overflow-hidden flex items-center justify-center" data-aos="fade-right">
+          <div className="order-2 min-[1480px]:order-1 min-[1480px]:col-span-9 w-full aspect-video relative overflow-hidden flex items-center justify-center" data-aos="fade-right">
             <DynamicVideoPlayer type="short-1" className="absolute inset-0 w-full h-full object-cover" />
           </div>
 
           {/* Right: Content (span 4) */}
-          <div className="lg:col-span-3 flex flex-col justify-start" data-aos="fade-left">
+          <div className="order-1 min-[1480px]:order-2 min-[1480px]:col-span-3 flex flex-col justify-start" data-aos="fade-left">
             <Typography variant="h4" color="white" className="mb-4 font-semibold text-xl lg:text-2xl">
               Modern Surgical Performance
             </Typography>

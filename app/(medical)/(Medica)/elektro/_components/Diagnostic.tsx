@@ -76,8 +76,8 @@ export default function Diagnostic() {
           <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={30}
-            slidesPerView={2}
-            slidesPerGroup={2}
+            slidesPerView={1}
+            slidesPerGroup={1}
             pagination={{ clickable: true }}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             breakpoints={{
