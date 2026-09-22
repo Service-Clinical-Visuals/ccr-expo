@@ -51,18 +51,18 @@ export default function Header() {
       }`}>
       <div className={`custom-container w-full pointer-events-auto transition-colors duration-300 ${isScrolled ? "bg-transparent" : "bg-[#10253D]"
         }`}>
-        <div className="flex items-center justify-between py-3 md:py-4 px-4 sm:px-6 md:px-10">
+        <div className="flex items-center justify-between px-4 sm:px-6 md:px-10">
           {/* Brand Logo */}
           <Link
             href="/medical/elektro"
             className="flex items-center flex-shrink-0 group focus:outline-none"
             aria-label="Elektro-mag Home"
           >
-            <div className="relative h-8 sm:h-10 md:h-25 min-[3800px]:h-24 flex items-center">
+            <div className="relative h-8 sm:h-10 md:h-20 min-[3800px]:h-24 flex items-center">
               <img
                 src="/medical/elektro/logo.png"
                 alt="Elektro-mag"
-                className="h-full w-auto object-contain transition-opacity group-hover:opacity-90"
+                className="h-full w-auto object-contain"
               />
             </div>
           </Link>

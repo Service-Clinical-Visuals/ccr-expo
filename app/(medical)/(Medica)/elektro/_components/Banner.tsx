@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Banner() {
   return (
-    <section id="banner-section" className="custom-container mt-16 sm:mt-20 md:mt-40">
+    <section id="banner-section" className="custom-container mt-16 sm:mt-20 md:mt-30">
       {/* Rounded Video Hero Container matching Screenshot */}
       <div
         className="relative w-full h-[calc(100vh-5rem)] md:h-[calc(100vh-5rem)] min-h-[500px] overflow-hidden bg-black shadow-2xl rounded-sm"
