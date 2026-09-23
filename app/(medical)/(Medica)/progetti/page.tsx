@@ -10,6 +10,7 @@ import Footer from "./_components/Footer";
 import Banner from "./_components/Banner";
 import News from "./_components/News";
 import Intelligent from "./_components/Intelligent";
+import Performance from "./_components/Performance";
 import Features from "./_components/Features";
 import Guide from "./_components/Guide";
 
@@ -22,9 +23,10 @@ export default function MeylePage() {
         <Banner />
         <AboutUs />
         <Deg360 />
+        <ProductsSlider />
+        <Performance />
         <Guide />
         <Features />
-        <ProductsSlider />
         <Intelligent />
         <News />
       </main>
