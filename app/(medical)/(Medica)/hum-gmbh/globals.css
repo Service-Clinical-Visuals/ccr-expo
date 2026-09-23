@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,300..900;1,300..900&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #212121;
+}
+
+@theme inline {
+  --color-primary-red: #A12624;
+  --color-primary-blue: #005BAA;
+  --color-dark: #212121;
+  --color-body-gray: #666666;
+  --color-nav-gray: #484848;
+  --color-bg-light: #F5F6FA;
+  --color-header-bg: #F9F9F9;
+  --font-primary: 'Exo 2', var(--font-exo2), ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: 'Alexandria', var(--font-alexandria), ui-sans-serif, system-ui, sans-serif;
+  --font-tag: 'Inter', var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-special: 'Outfit', var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-secondary);
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Explicit font-family utility enforcement */
+.font-exo2,
+[class*="font-['Exo_2']"],
+[class*="font-['Exo 2']"] {
+  font-family: 'Exo 2', var(--font-exo2), sans-serif !important;
+}
+
+.font-alexandria,
+[class*="font-['Alexandria']"] {
+  font-family: 'Alexandria', var(--font-alexandria), sans-serif !important;
+}
+
+.font-inter,
+[class*="font-['Inter']"] {
+  font-family: 'Inter', var(--font-inter), sans-serif !important;
+}
+
+.font-outfit,
+[class*="font-['Outfit']"] {
+  font-family: 'Outfit', var(--font-outfit), sans-serif !important;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+h1 { font-size: 2.125rem; /* 34px */ font-weight: 700 !important; font-family: var(--font-primary); line-height: 1.41; }
+h2 { font-size: 2rem; /* 32px */ font-weight: 700 !important; font-family: var(--font-primary); line-height: 1.5; }
+h3 { font-size: 1.75rem; /* 28px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.5; }
+h4 { font-size: 1.5rem; /* 24px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.5; }
+p, li { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary); line-height: 1.5; }
+span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
+.navbar { font-size: 1.0625rem; /* 17px */ font-weight: 500; font-family: var(--font-secondary); }
+.footer-heading { font-size: 1.5rem; /* 24px */ font-weight: 600; font-family: var(--font-primary); }
+.footer-body { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary); }
+.button { font-size: 1.0625rem; /* 17px */ font-weight: 600; font-family: var(--font-primary) !important; }
+.quote { font-size: 1.25rem; /* 20px */ font-weight: 600; font-family: var(--font-secondary); color: #005BAA; line-height: 1.5; }
+
+/* Thin Header to Hero gap */
+.hum-header-section {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+}
+
+.hum-hero-section {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Mobile Portrait Screen (up to 480px) - Multiplier: ~0.7 */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.5rem; /* 24px */ line-height: 1.3; }
+  h2 { font-size: 1.4rem; /* 22.4px */ line-height: 1.3; }
+  h3 { font-size: 1.2rem; /* 19.2px */ }
+  h4 { font-size: 1.05rem; /* 16.8px */ }
+  p, li { font-size: 0.85rem; /* 13.6px */ }
+  span { font-size: 0.7rem; }
+  .navbar { font-size: 0.85rem; }
+  .footer-heading { font-size: 1.1rem; }
+  .footer-body { font-size: 0.85rem; }
+  .button { font-size: 0.85rem; }
+  .quote { font-size: 0.95rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) - Multiplier: ~0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.7rem; /* 27px */ }
+  h2 { font-size: 1.6rem; /* 25.6px */ }
+  h3 { font-size: 1.4rem; /* 22.4px */ }
+  h4 { font-size: 1.2rem; /* 19.2px */ }
+  p, li { font-size: 0.92rem; /* 14.7px */ }
+  span { font-size: 0.75rem; }
+  .navbar { font-size: 0.92rem; }
+  .footer-heading { font-size: 1.25rem; }
+  .footer-body { font-size: 0.92rem; }
+  .button { font-size: 0.92rem; }
+  .quote { font-size: 1.05rem; }
+}
+
+/* Tablet / Tab Screen (768px - 1023px) - Multiplier: ~0.9 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.9rem; /* 30.6px */ }
+  h2 { font-size: 1.8rem; /* 28.8px */ }
+  h3 { font-size: 1.55rem; /* 25px */ }
+  h4 { font-size: 1.35rem; /* 21.6px */ }
+  p, li { font-size: 0.98rem; /* 15.6px */ }
+  span { font-size: 0.8rem; }
+  .navbar { font-size: 0.98rem; }
+  .footer-heading { font-size: 1.35rem; }
+  .footer-body { font-size: 0.98rem; }
+  .button { font-size: 0.98rem; }
+  .quote { font-size: 1.12rem; }
+}
+
+/* Laptop Screen (1024px - 1279px) - Multiplier: ~0.95 */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  .hum-hero-section { margin-top: 6px; }
+  h1 { font-size: 2.0rem; /* 32px */ }
+  h2 { font-size: 1.9rem; /* 30.4px */ }
+  h3 { font-size: 1.65rem; }
+  h4 { font-size: 1.4rem; }
+  p, li { font-size: 1rem; /* 16px */ }
+  span { font-size: 0.85rem; }
+  .navbar { font-size: 1rem; }
+  .footer-heading { font-size: 1.4rem; }
+  .footer-body { font-size: 1rem; }
+  .button { font-size: 1rem; }
+  .quote { font-size: 1.18rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) - Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  .hum-hero-section { margin-top: 8px; }
+  h1 { font-size: 3.1875rem; /* 51px */ line-height: 1.4; }
+  h2 { font-size: 3rem; /* 48px */ }
+  h3 { font-size: 2.625rem; /* 42px */ }
+  h4 { font-size: 2.25rem; /* 36px */ }
+  p, li { font-size: 1.6rem; /* 25.6px */ }
+  span { font-size: 1.3125rem; /* 21px */ }
+  .navbar { font-size: 1.6rem; /* 25.6px */ }
+  .footer-heading { font-size: 2.25rem; /* 36px */ }
+  .footer-body { font-size: 1.6rem; /* 25.6px */ }
+  .button { font-size: 1.6rem; /* 25.6px */ }
+  .quote { font-size: 1.875rem; /* 30px */ }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) - Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  .hum-hero-section { margin-top: 10px; }
+  h1 { font-size: 4.25rem; /* 68px */ line-height: 1.4; }
+  h2 { font-size: 4rem; /* 64px */ }
+  h3 { font-size: 3.5rem; /* 56px */ }
+  h4 { font-size: 3rem; /* 48px */ }
+  p, li { font-size: 2.125rem; /* 34px */ }
+  span { font-size: 1.75rem; /* 28px */ }
+  .navbar { font-size: 2.125rem; /* 34px */ }
+  .footer-heading { font-size: 3rem; /* 48px */ }
+  .footer-body { font-size: 2.125rem; /* 34px */ }
+  .button { font-size: 2.125rem; /* 34px */ }
+  .quote { font-size: 2.5rem; /* 40px */ }
+}
