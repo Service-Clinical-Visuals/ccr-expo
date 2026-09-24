@@ -14,29 +14,22 @@ const QualityProducts2 = () => {
           {/* Left: Text */}
           <div className="w-full lg:w-[35%]" data-aos="fade-right">
             <span className="text-[#C99E88]! heading tracking-wide text-sm!">
-              Quality Assurance
+              Why 3D HydrO2
             </span>
 
             <div className="mt-2 mb-6">
               <h2 className="heading inline-block">
-                Investing Wisely
+                Flexible Facial Solutions
               </h2>
               <div className="h-[3px] w-14 bg-accent mt-3" />
             </div>
 
             <div className="space-y-4 mb-8">
               <p className="content text-[15px]! leading-[24px]!">
-                When considering an investment in capital equipment for your clinic, you should only purchase from
-                reputable companies who are committed to supporting their customers. Those investing in
-                technology-based devices should be familiar with the new Medical Device Regulations, and ensure that
-                their chosen supplier or distributor is compliant with the new regulations.
+                The 3D HydrO2 Facial offers five dedicated treatment protocols designed for brightening, anti-ageing, and clearer-looking skin. Its flexible approach allows practitioners to tailor treatments to individual client needs while offering a versatile addition to existing aesthetic services. It provides a practical way to address diverse skin concerns with personalised treatment options.
               </p>
               <p className="content text-[15px]! leading-[24px]!">
-                When purchasing machines, consider what extra services manufacturers can provide, including
-                marketing support, and access to resources like business development managers, full technical
-                support, and training. Non-surgical face &amp; body systems are high-tech devices that will require
-                ongoing maintenance, so it is important to also consider the quality of the manufacturer guarantees
-                and service contracts that are offered, in addition to any ongoing costs.
+                With low consumable costs, strong cross-selling opportunities, and growing consumer interest in advanced facial treatments, the 3D HydrO2 Facial can help expand treatment offerings while creating an additional revenue opportunity for clinics and practitioners. Its versatile treatment options can support a broader service portfolio and encourage repeat bookings. The system also provides opportunities to introduce complementary treatments .
               </p>
             </div>
 

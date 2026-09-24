@@ -38,29 +38,26 @@ export default function QualityPolicy() {
             {/* Kicker */}
             <div className="flex items-center gap-2 mb-2">
               <span className="section-text font-bold text-[#ffffff] tracking-normal font-inter">
-                &mdash; Quality
+                &mdash; Size & Specifications
               </span>
             </div>
 
             {/* Heading */}
             <h2 className="section-title font-medium font-poppins text-white tracking-tight mb-5">
-              The Quality Policy
+              Flexible Catheter Options
             </h2>
 
             {/* Paragraph 1 */}
             <p className="section-text font-inter text-white font-normal mb-4 leading-relaxed">
-              Farmac Zabban was the first Italian dressing company to obtain the first CE marking for its medical devices, issued by the Istituto Superiore di Sanit&agrave; in March 1997 (Directive 93/42/EEC), and has published research and studies in international specialized journals, particularly identifying a method for calculating the bioburden of gauze.
-            </p>
+              The Farmac 2-Way Foley Catheter is available in a comprehensive range of sizes, from CH 6 to CH 24, offering suitable options for different clinical requirements. The range includes 3/5 cc and 5/15 cc balloon configurations for added flexibility in product selection and patient care.  </p>
 
             {/* Paragraph 2 */}
             <p className="section-text font-inter text-white font-normal mb-4 leading-relaxed">
-              Constant attention to quality has led to continuous improvement , as demonstrated by the ISO 9002 + EN 46002 certification, followed by UNI EN ISO 9001:2015 and EN ISO 13485:2021 standards.
-            </p>
+              Each catheter size is assigned a specific product code, making the range easy to identify and select. Clearly defined size and balloon specifications support efficient product handling and help healthcare professionals . </p>
 
             {/* Paragraph 3 */}
             <p className="section-text font-inter text-white font-normal mb-4 leading-relaxed">
-              This has led to the development, monitoring , and refinement of a series of procedures, controls, and inspections to produce and market safe medical devices that comply with all applicable laws and regulations.
-            </p>
+              For added convenience, the clearly organised size and balloon specifications make it easier to compare available options. This structured range supports quick identification, accurate product selection, and efficient handling according to requirments.</p>
 
             {/* CTA Button */}
             <div>

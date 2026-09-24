@@ -17,18 +17,18 @@ export default function AbsorbableDesign() {
             <div className="flex items-center gap-3 mb-3">
               <div className="w-6 h-[1px] bg-[#C382B4]"></div>
               <span className="font-inter text-[#C382B4] section-text font-regular tracking-wide">
-                Thoracolumbar Systems
+                Fracture Treatment
               </span>
             </div>
             <h2 className="section-title font-dm-sans font-bold text-white leading-tight">
-              Raptor Spinal System
+              Adult Femoral Fracture Fixation
             </h2>
           </div>
 
           {/* Right Description Area */}
           <div className="xl:w-1/2">
             <p className="font-inter section-text font-regular text-gray-200 leading-relaxed">
-              The Raptor Spinal System provides immobilization and stabilization of spinal segments to support thoracic, lumbar, and sacral spine fusion in skeletally mature patients.
+              The PN-1 PFNA Nail System is designed for treating femoral fractures in adult patients, supporting stable fixation across various fracture patterns and clinical applications.
             </p>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function AbsorbableDesign() {
             data-aos-duration="800"
           >
             <p className="font-inter section-text font-regular text-gray-200 leading-relaxed mb-8">
-              The Raptor Spinal System consists of a variety of shapes and sizes of rods, cannulated and solid polyaxial screws, and connecting components, which can be rigidly locked into a variety of configurations, with each construct being tailor-made for the individual case. Tasarimmed Raptor Spinal System can be used with Tasarimmed Anchor Spinal System.
+              It supports a broad range of fracture patterns and complex clinical cases, including shaft, spiral, segmental, long-oblique, subtrochanteric, intertrochanteric, and intracapsular fractures, as well as associated femoral shaft and neck fractures. The system can also be used for cases involving non-union, malunion, and other complex femoral conditions.
             </p>
 
             <h3 className="font-dm-sans font-bold text-white section-text mb-4">
@@ -55,12 +55,12 @@ export default function AbsorbableDesign() {
 
             <ul className="flex flex-col gap-3 mb-10">
               {[
-                "Dual thread profile for better bone purchase",
-                "Fully cannulated",
-                "Ovoid fenestration for bone cement injection",
-                "Colour coded screw diameters",
-                "Ø6mm System",
-                "Wide selection of accessories"
+                "Shaft and spiral fractures",
+                "Segmental and long-oblique fractures",
+                "Subtrochanteric and intertrochanteric fractures",
+                "Bone lengthening and shortening",
+                "Polytrauma and multiple fractures",
+                "Intracapsular fractures"
               ].map((feature, idx) => (
                 <li key={idx} className="flex items-center gap-3">
                   <div className="w-[16px] h-[16px] rounded-full bg-white shrink-0"></div>

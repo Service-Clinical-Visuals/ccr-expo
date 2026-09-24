@@ -38,18 +38,18 @@ export default function AdvancedMeshSolutions() {
             <div className="flex items-center gap-3 mb-3">
               <div className="w-6 h-[1px] bg-[#C382B4]"></div>
               <span className="font-inter text-[#C382B4] section-text font-regular tracking-wide">
-                Screw & Cable Systems
+                Features
               </span>
             </div>
 
             {/* Heading */}
             <h2 className="section-title font-dm-sans font-bold text-white leading-tight mb-4">
-              Compression Screws
+              Advanced Nail System Features
             </h2>
 
             {/* Paragraph */}
             <p className="font-inter section-text font-regular text-gray-200 leading-relaxed mb-6">
-              Tasarimmed Compression Screw System is designed for fixation of bone and bone fragments. System has got Ø2.5mm, Ø3.5mm, Ø4.5, Ø5.5 mm and Ø6.5mm sizes.
+              The system features a less complex procedure, radiolucent guide, LAG screw option, long nail option, dual compression options, and anti-rotation screw.
             </p>
 
             {/* Subtitle */}
@@ -62,13 +62,13 @@ export default function AdvancedMeshSolutions() {
               <li className="flex gap-4 items-start">
                 <div className="w-[16px] h-[16px] rounded-full bg-white mt-2 shrink-0"></div>
                 <p className="font-inter section-text font-regular text-gray-200 leading-relaxed">
-                  Ø2.5, Ø3.5, 4.5, and 5.5 for use as fixation for small bones, bone fragments, and osteotomies. They are not intended for interference or soft tissue fixation.
+                  Cannulated bone-cement injectable LAG screw option, two compression options to prevent Z-effect, and anti-rotation screw.
                 </p>
               </li>
               <li className="flex gap-4 items-start">
                 <div className="w-[16px] h-[16px] rounded-full bg-white mt-2 shrink-0"></div>
                 <p className="font-inter section-text font-regular text-gray-200 leading-relaxed">
-                  Ø6.5 may be used for fusions, fractures, or osteotomies of the clavicle, humerus, radius, ulna, ilium, femur, patella, fibula, tibia, talus, malleolus, and calcaneus
+                  The radiolucent guide, long nail option, and less complex procedure provide a versatile design that supports clear guidance and flexible application across different treatment requirements.
                 </p>
               </li>
             </ul>

@@ -39,15 +39,15 @@ export default function AbsorbableDesign() {
           >
             <div className="border-l-4 border-white pl-4 mb-6 rounded-sm">
               <h4 className="text-white section-text font-bold font-inter text-sm mb-1 tracking-wide">
-                Ultrasound Technology
+                Imaging & Examination
               </h4>
               <h2 className="section-title font-bold text-white tracking-tight font-dmsans leading-tight text-3xl sm:text-4xl">
-                Advanced Ultrasound Imaging
+                Clear Imaging for Examination
               </h2>
             </div>
 
             <p className="section-text text-white/90 leading-relaxed font-inter mb-6 font-regular">
-              The SLE 1100 is a PC-based Color Doppler ultrasound system designed to provide high-quality imaging, comprehensive clinical functions, and an efficient workflow. Its advanced imaging technologies help reduce image artefacts, improve clarity and colour-flow sensitivity, and support comfortable operation across a range of clinical applications.
+              The SLV-101 supports digital documentation by enabling examination videos to be captured, transferred, stored, and archived. Its Video, S-Video, and USB connections make it easy to share examination records, while integrated software supports clinical documentation, training, and research. This enables physicians to review and manage examination data.
             </p>
 
             <hr className="border-[#D9D9D9] mb-8 w-1/3 border-1" />
@@ -56,13 +56,13 @@ export default function AbsorbableDesign() {
               <li className="flex items-start gap-3">
                 <div className="w-[19px] h-[19px] rounded-full bg-white mt-1.5 flex-shrink-0"></div>
                 <p className="section-text text-white/90 font-inter  font-regular leading-snug">
-                  <strong className="text-white">Advanced Imaging Technology</strong> - Advanced imaging and Color Doppler technologies deliver clearer, more detailed diagnostic images.
+                  <strong className="text-white">Intuitive Examination Control</strong> - Convenient handle controls make magnification, focusing, and frame fixation simple and easy during examinations.
                 </p>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-[19px] h-[19px] rounded-full bg-white mt-1.5 flex-shrink-0"></div>
                 <p className="section-text text-white/90 font-regular font-inter leading-snug">
-                  <strong className="text-white">Efficient Clinical Workflow</strong> - Ergonomic controls and flexible imaging modes ensure a smooth workflow.
+                  <strong className="text-white">Clinical & Research Use</strong> - The SLV-101 supports multiple physicians across clinical and research applications.
                 </p>
               </li>
             </ul>

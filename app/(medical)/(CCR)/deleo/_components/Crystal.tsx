@@ -21,20 +21,21 @@ const Crystal = () => {
             <div className="flex items-center gap-3">
               <div className="w-[3px] h-5 bg-black"></div>
               <Typography variant="h4" color="dark" className="!font-bold">
-                Cryolipolysis x Radiofrequency :
+                Technical Performance
               </Typography>
             </div>
 
             <Typography variant="h2" color="dark">
-              CRYSTAL ULTRA®
+              Advanced Cryolipolysis Technology
             </Typography>
 
             <Typography variant="p" color="muted" className="leading-relaxed">
-              The first platform to fuse 3rd generation cryolipolysis and multipolar radiofrequency in a clinically validated tri-active protocol. MDR certified — the strictest European standard on the market. The market is evolving. Patients arrive at clinics expecting precision, with clinical benchmarks in mind, and zero tolerance for invisible results. Cristal Ultra® responds to this new reality by combining two complementary technologies in a unique sequential protocol.
+              CRISTAL Ultra® combines advanced ergonomics, enhanced safety, and an intuitive interface for precise and controlled treatment. Its compact and lightweight design, silent operation, flexible cords, pre-recorded treatment protocols, RFID-enabled consumable tracking, and real-time temperature monitoring are designed to support efficient and reliable clinical use. Together, these features provide a streamlined platform for precise treatment management and enhanced clinical control.
+
             </Typography>
 
             <Typography variant="p" color="muted" className="leading-relaxed">
-              Multipolar radiofrequency thermally prepares adipose tissue before cryolipolysis, maximizing the cellular response to cold. After cryolipolysis, it completes the process: lymphatic drainage, neocollagenesis, and skin firming.
+              The platform also integrates advanced radiofrequency technology and an optional 7.5 MHz ultrasound probe for precise treatment assessment. It offers MDR certification and versatile face-and-body treatment capabilities.
             </Typography>
 
             <div className="pt-4">

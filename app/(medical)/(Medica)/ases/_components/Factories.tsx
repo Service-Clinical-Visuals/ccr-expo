@@ -31,21 +31,17 @@ export default function Factories() {
             </div>
 
             <p className="text-[#555555] font-[Inter] text-[17px] md:text-[17px] leading-[1.8] mb-6">
-              It is a single-planned tubular fixation tool in a telescopic body
-              structure that is connected with gearbox holder clamps in ball-joint
-              structure. The fixator is indicated for the treatment of long
-              bones, joint and periarticular fractures and pelvic fractures. It is
-              mainly used in cases of acute trauma.
-            </p>
+
+              The PFNA Short system offers a range of configurations to meet different sizing requirements, with Ø10, Ø11, Ø12, and Ø13 diameter options. This range provides flexibility in selecting the appropriate nail configuration for different applications. Each diameter is available in 170 mm, 200 mm lengths.            </p>
 
             <div className="flex flex-col gap-6">
               {/* Feature 1 */}
               <div className="bg-white rounded-[6px] p-4 lg:p-5 flex gap-5 shadow-sm items-start">
                 <span className="text-[#BA0A28] font-[Manrope] font-semibold leading-none mt-1" style={{ fontSize: 'clamp(36px, 8vw, 36px)' }}>01</span>
                 <div className="flex flex-col gap-1 pt-2">
-                  <h4 className="text-[#333333] font-[Inter] font-semibold text-[18px] md:text-[20px] leading-tight">Compression & Distraction</h4>
+                  <h4 className="text-[#333333] font-[Inter] font-semibold text-[18px] md:text-[20px] leading-tight">Multiple Size Options</h4>
                   <p className="text-[#666666] font-[Inter] text-[15px] md:text-[17px] leading-relaxed">
-                    It has a unit that provides compression and distraction with axial loading.
+                    Available in 170 mm, 200 mm, and 240 mm lengths across multiple diameters.
                   </p>
                 </div>
               </div>
@@ -54,9 +50,9 @@ export default function Factories() {
               <div className="bg-white rounded-[6px] p-4 lg:p-5 flex gap-5 shadow-sm items-start">
                 <span className="text-[#BA0A28] font-[Manrope] font-semibold leading-none mt-1" style={{ fontSize: 'clamp(36px, 8vw, 36px)' }}>02</span>
                 <div className="flex flex-col gap-1 pt-2">
-                  <h4 className="text-[#333333] font-[Inter] font-semibold text-[18px] md:text-[20px] leading-tight">Stability & Early Mobilization</h4>
+                  <h4 className="text-[#333333] font-[Inter] font-semibold text-[18px] md:text-[20px] leading-tight">Precision Product Selection</h4>
                   <p className="text-[#666666] font-[Inter] text-[15px] md:text-[17px] leading-relaxed">
-                    It offers an excellent stability, enhanced mobility, and early mobilization option.
+                    Each nail configuration has a specific reference number for easy identification
                   </p>
                 </div>
               </div>

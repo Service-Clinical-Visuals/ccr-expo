@@ -23,7 +23,7 @@ const LubricationSolutions = () => {
 
           <div className="mt-2 mb-4 flex flex-col items-center" data-aos="fade-up" data-aos-delay="50">
             <Typography variant="h2" color="dark" as="h2" className="heading inline-block">
-              3D Aesthetics
+              Advanced Multi-Technology Facial
             </Typography>
             <div className="h-[3px] w-14 bg-accent mt-1.5" />
           </div>
@@ -34,9 +34,7 @@ const LubricationSolutions = () => {
             data-aos-delay="100"
             className="content"
           >
-            We specialise in the development of non-surgical devices to target an array of concerns: from body
-            contouring, fat loss &amp; muscle toning for the body, to anti-ageing and pigmentation of the face.
-          </Typography>
+            The 3D HydrO2 facial combines seven technologies to target anti-ageing, congestion, dullness, pigmentation, and hydration, supporting comprehensive treatments for different skin concerns.</Typography>
         </div>
 
         {/* 360 Experience Video */}

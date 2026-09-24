@@ -8,16 +8,16 @@ import Button from "./Button";
 export default function SurgicalTechnique() {
   const bulletPoints = [
     {
-      title: "Compatibility of sizes",
-      desc: "Each femoral component is compatible also with the next size of tibial component (one size lower or upper).",
+      title: "ComUncemented Fixation",
+      desc: "Titanium coating with a controlled porous surface is designed to support biological fixation.",
     },
     {
-      title: "Tibial base components and inserts",
-      desc: "Cemented and uncemented tibia plate versions made of Cobalt Crome are available with primary or posterior stabilized UHMWPE inserts, in different sizes.",
+      title: "Cemented Fixation",
+      desc: "Specialized surface treatment is designed to promote a strong and reliable bond between the cement and implant during secure and stable fixation.",
     },
     {
-      title: "Patella component",
-      desc: "The 1 pegged, dome-shaped patellar component is available in cemented UHMWPE version. The correct placement and long-lasting fixation are ensured by the introduction of the peg.",
+      title: " Tapered Stem Design",
+      desc: "Controlled wedge-shaped geometry is designed to support initial stability, minimize interface stresses, promote secure fixation, and maintain consistent implant positioning during implantation.",
     },
   ];
 
@@ -34,13 +34,11 @@ export default function SurgicalTechnique() {
         >
           <div className="w-full xl:max-w-[70%] min-[2500px]:max-w-[80%] min-[3800px]:max-w-[85%]">
             <Typography variant="h2" color="white" className="mb-3">
-              Future Knee Modular System Surgical Technique
+              Advanced Fixation Technology
             </Typography>
             <div className="w-[247px] min-[2500px]:w-[360px] min-[3800px]:w-[480px] h-[2px] min-[2500px]:h-[3px] min-[3800px]:h-[4px] bg-white rounded-[8px] mb-4" />
             <Typography variant="p" color="white">
-              Cruciate retaining femoral components exist in both left and right
-              anatomical designs made of Cobalt Crome raw material.
-            </Typography>
+              The BA Hip Stem is available in uncemented and cemented configurations, with a titanium-coated surface for biological fixation. </Typography>
           </div>
 
           <div className="shrink-0">
@@ -69,21 +67,15 @@ export default function SurgicalTechnique() {
           {/* Right Text Column */}
           <div className="lg:col-span-5 flex flex-col gap-6 min-[2500px]:gap-10" data-aos="fade-left">
             <Typography variant="p" color="white">
-              The condylar gilding surfaces are centralized in 5 degree angle over
-              opposite paths. Posterior stabilized femoral components are made of
-              Cobalt Crome raw material and anatomically shaped. The special
-              geometrical features of the condyles along with the central directional
-              box, guarantee the high joint stability of the special P/S tibial inlay.
-            </Typography>
+              The universal instrumentation also supports line-to-line rasping for uncemented stems, helping achieve initial stability and an optimal fit. The uncemented version is available in sizes ranging from 6.25–20.00 mm, with 1.25 mm increments. A special 6.25 mm size is available for narrow femora, including cases such as hip dysplasia, with additional revision sizes also available.           </Typography>
 
             <div className="flex flex-col gap-5 sm:gap-6 min-[2500px]:gap-8">
               {bulletPoints.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3.5 min-[2500px]:gap-5">
                   <div className="w-[9px] h-[9px] min-[2500px]:w-[14px] min-[2500px]:h-[14px] min-[3800px]:w-[18px] min-[3800px]:h-[18px] rounded-full bg-white shrink-0 mt-[9px] min-[2500px]:mt-3" />
-                  <p className="font-[var(--font-secondary)] text-[15px] sm:text-[17px] min-[2500px]:text-[22px] min-[3800px]:text-[30px] leading-[26px] sm:leading-[28px] min-[2500px]:leading-[38px] min-[3800px]:leading-[48px] text-white">
-                    <strong className="font-bold text-white">{item.title} : </strong>
-                    <span className="font-normal text-white">{item.desc}</span>
-                  </p>
+                  <Typography variant="p" className="font-[var(--font-secondary)] text-[15px] sm:text-[17px] min-[2500px]:text-[22px] min-[3800px]:text-[30px] leading-[26px] sm:leading-[28px] min-[2500px]:leading-[38px] min-[3800px]:leading-[48px] text-white">
+                    <strong className="font-bold text-white">{item.title} : </strong>{item.desc}
+                  </Typography>
                 </div>
               ))}
             </div>

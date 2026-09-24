@@ -19,11 +19,11 @@ const Deg360 = () => {
           </div>
 
           <Typography variant="h2" color="white">
-            Body - Layering
+            Advanced Body Contouring
           </Typography>
 
           <Typography variant="p" color="white" className="leading-relaxed font-medium">
-            In 2021, Deleo invented CRISTAL Body-Layering®, a comprehensive, non-invasive, and personalized treatment that<br className="hidden md:block" /> acts on the 3 layers (LAYER) of the body (BODY): the dermis, the hypodermis, and the muscle.
+            CRISTAL Ultra® combines 3rd-generation cryolipolysis and multipolar radiofrequency in a clinically validated Tri-Actif protocol, designed for localized fat reduction and skin firmness.
           </Typography>
         </div>
 

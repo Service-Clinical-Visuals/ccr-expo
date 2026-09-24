@@ -14,28 +14,25 @@ export default function ProductionAndInnovation() {
       <div className="relative z-10 custom-container">
         {/* Centered Headings & Copy */}
         <div
-          className="max-w-4xl mx-auto text-center"
+          className="xl:max-w-[70%] mx-auto text-center"
           data-aos="fade-up"
           data-aos-duration="800"
         >
           {/* Kicker */}
           <div className="flex items-center justify-center gap-2 mb-2">
             <span className="section-text font-bold text-[#ffffff] tracking-normal font-inter">
-              &mdash; Farmac Zabban&apos;s production
+              &mdash; Urology & Catheters
             </span>
           </div>
 
           {/* Title */}
           <h2 className="section-title font-medium font-poppins text-white tracking-tight mb-5 ">
-            Production and innovation
+            Precision 2-Way Foley Catheter
           </h2>
 
           {/* Description */}
           <p className="section-text text-white font-normal font-inter leading-relaxed">
-            With the know-how and experience gained over the years, Farmac Zabban offers its customers the best solution
-          </p>
-          <p className="section-text text-white font-normal font-inter leading-relaxed mt-1">
-            Farmac Zabban&apos;s production process includes technologically advanced equipment and machinery housed in a particle-controlled clean room.
+            The Farmac 2-Way Foley Catheter is designed for controlled urethral catheterisation, featuring a sterile construction and practical 2-way configuration. Available in multiple sizes and colour-coded options, it supports accurate selection for different clinical requirements.
           </p>
         </div>
 

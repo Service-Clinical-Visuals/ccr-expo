@@ -43,7 +43,7 @@ body {
 
 .custom-container {
   width: 90%;
-  max-width: 90%;
+  max-width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -409,7 +409,6 @@ span {
 /* Desktop PC Screen (1280px - 1535px) */
 @media (min-width: 1280px) and (max-width: 1535px) {
   .custom-container {
-    width: 1280px;
     max-width: 90%;
   }
 }
@@ -417,7 +416,6 @@ span {
 /* Large Desktop PC Screen (1536px - 1919px) */
 @media (min-width: 1536px) and (max-width: 1919px) {
   .custom-container {
-    width: 1440px;
     max-width: 90%;
   }
 }
@@ -425,15 +423,14 @@ span {
 /* Extra Large PC / 2K Screen (1920px - 2499px) */
 @media (min-width: 1920px) and (max-width: 2499px) {
   .custom-container {
-    width: 1536px;
-    max-width: 90%;
+    max-width: 95%;
   }
 }
 
 /* Ultra-wide Screen / Max Cover (2500px - 3799px) */
 @media (min-width: 2500px) and (max-width: 3799px) {
   .custom-container {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   h1 {

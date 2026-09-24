@@ -8,23 +8,23 @@ import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 const features = [
   {
     title: "Medical-Grade Technology",
-    desc: "Built for professionals seeking high-spec, results-driven aesthetic devices.",
+    desc: "Hydro Peel & Deep Cleansing – Deeply cleanses pores, removes impurities, and helps hydrate and smooth the skin.",
   },
   {
     title: "Multi-Platform Versatility",
-    desc: "Offer a wide range of in-demand treatments from one compact system.",
+    desc: "Exfoliation & Oxygenation – Gently exfoliates and oxygenates for brighter, refreshed skin.",
   },
   {
     title: "User-Friendly & Intelligent",
-    desc: "Smart energy delivery, adjustable settings, and intuitive interfaces for precise control.",
+    desc: "Electro-Ion & Ultrasound – Enhances product absorption while supporting skin hydration, and a firmer appearance.",
   },
   {
     title: "Training & Ongoing Support",
-    desc: "Backed by expert training and aftercare from the trusted 3D-Aesthetics team.",
+    desc: "Radio Frequency – Uses controlled RF energy to support collagen production and improve the appearance of skin firmness.",
   },
   {
     title: "Designed for Results",
-    desc: "Clinically backed results that drive satisfaction, loyalty, and word-of-mouth growth.",
+    desc: "Fire & Ice Technology – Combines warming and cooling for infusion, tightening, and refreshed skin.",
   },
 ];
 
@@ -44,12 +44,12 @@ const QualityProducts = () => {
           {/* Right: Text */}
           <div className="w-full lg:w-[35%]" data-aos="fade-left" data-aos-delay="150">
             <span className="text-[#C99E88]! heading tracking-wide text-sm!">
-              Elite Precision - Elite Technology
+              Facial Technology
             </span>
 
             <div className="mt-2 mb-6">
               <h2 className="heading inline-block">
-                Elite MD
+                Facial Technology
               </h2>
               <div className="h-[3px] w-14 bg-accent mt-3" />
             </div>

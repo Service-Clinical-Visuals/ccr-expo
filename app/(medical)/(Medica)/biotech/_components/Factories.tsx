@@ -19,15 +19,12 @@ export default function Factories() {
           data-aos="fade-up"
         >
           <Typography variant="h2" color="white" className="text-center">
-            Biotech Factories
+            Stability, Fixation & Versatility
           </Typography>
           <div className="w-[246px] min-[2500px]:w-[360px] min-[3800px]:w-[480px] h-[2px] min-[2500px]:h-[3px] min-[3800px]:h-[4px] bg-white rounded-[8px]" />
 
           <Typography variant="p" color="white" className="text-center mt-1">
-            Biotech’s manufacturing and office sites include a full production
-            line, logistic, education and development department. The facilities
-            have high tech machines, clean rooms, packaging, stocking capability
-            and well-trained staff.
+            The BA Hip Stem is designed for femoral reconstruction, combining rotational stability, secure fixation, bone preservation, and modular options to accommodate different patient needs with reliable clinical performance.
           </Typography>
         </div>
 

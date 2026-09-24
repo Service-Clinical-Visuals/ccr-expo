@@ -36,19 +36,19 @@ export default function AdvancedMeshSolutions() {
           >
             <div className="border-l-4 border-white pl-4 mb-6 rounded-sm">
               <h4 className="text-white section-text font-bold font-inter text-sm mb-1 tracking-wide">
-                Digital Ultrasound
+                Clinical Workflow
               </h4>
               <h2 className="section-title font-bold text-white tracking-tight font-dmsans leading-tight">
-                Compact Color Doppler Imaging
+                Designed for Clinical Practice
               </h2>
             </div>
 
             <div className="flex flex-col gap-5 section-text text-white/90 leading-relaxed font-inter font-regular mb-8">
               <p className="section-text">
-                The SLE 901 CD is a compact and versatile Digital Color Doppler ultrasound system designed to support a wide range of clinical applications, including abdominal, gynecological, obstetric, cardiac, vascular, orthopedic, urological, and emergency examinations. Its flexible design and reliable imaging capabilities make it suitable for different medical specialties and clinical environments.
+                Designed to support a practical and organized approach to professional colposcopy examinations, the SLV-101 fits naturally into clinical environments. Its compact configuration helps maintain a clear and focused examination setup while allowing healthcare professionals to work comfortably throughout the procedure. Its practical design also helps create a convenient and well-structured space for routine clinical examinations.
               </p>
               <p className="section-text">
-                Advanced imaging technologies such as speckle noise reduction, spatial compounding, image enhancement, and tissue harmonics deliver clear and detailed images. With a 12-inch rotating medical LED monitor, multiple connectivity options, DICOM 3.0 support, and optional battery operation, the SLE 901 CD offers flexible and convenient clinical use.
+                The system supports a smooth workflow from patient preparation and examination through to observation and review. Its practical design helps keep the examination process organized, making the SLV-101 suitable for routine clinical environments where efficient operation and a well-structured examination setup are important.
               </p>
             </div>
 

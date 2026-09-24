@@ -24,9 +24,10 @@ export default function DeleoPage() {
         <Hero />
         <AboutUs />
         <Deg360 />
+        <Treatments />
         <Origin />
         <Strength />
-        <Treatments />
+
         <Crystal />
         <News />
       </main>
