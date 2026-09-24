@@ -42,12 +42,21 @@ export default function Prednidelt() {
               <div className="w-[246px] min-[2500px]:w-[360px] min-[3800px]:w-[480px] max-w-[60%] h-[2px] min-[2500px]:h-[3px] min-[3800px]:h-[4px] bg-white rounded-full" />
             </div>
 
-            <Typography variant="p" color="white" className=" leading-relaxed">
-              Designed to accommodate diverse surgical requirements, the BA Hip Stem offers cemented sizes ranging from 6.25–20.00 mm in 1.25 mm increments. This range provides greater flexibility in selecting the appropriate stem size and preferred cement mantle thickness. Additional sizing options are also available for narrow femora and revision procedures.
+            <Typography variant="p" color="white" className="text-white/90 leading-relaxed">
+              The active substance in Prednidelt is prednisone, which has
+              glucocorticoid, anti-inflammatory, and anti-allergic properties,
+              which have been used successfully in standard medical therapy for
+              more than 40 years : glucocorticoid effect, antiexudative,
+              antiproliferative, antiflogistic, immunosuppressive, − has
+              antiallergic properties and − effects on the metabolism.
             </Typography>
 
-            <Typography variant="p" color="white" className=" leading-relaxed">
-              The universal instrumentation also supports line-to-line rasping for uncemented stems, helping achieve initial stability and an optimal fit. The uncemented version is available in sizes ranging from 6.25–20.00 mm, with 1.25 mm increments. A special 6.25 mm size is available for narrow femora, including cases such as hip dysplasia, with additional revision sizes also available.
+            <Typography variant="p" color="white" className="text-white/90 leading-relaxed">
+              This application method is particularly popular for treating infants
+              and young children because it is well absorbed and acts quickly,
+              does not cause fear, is highly effective, allows the therapy to be
+              followed accurately, and does not cause local inflammation; it is
+              also an ideal steroid therapy for adults.
             </Typography>
 
             <div className="pt-2">

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #2A2A2A;
+}
+
+@theme inline {
+  --color-primary: #006B96;
+  --color-primary-hover: #00567a;
+  --color-secondary: #1980AA;
+  --color-accent: #9F3414;
+  --color-dark: #2A2A2A;
+  --color-muted: #4A4A4A;
+  --color-card-bg: #FFFFFF;
+  --font-primary: var(--font-outfit), 'Outfit', sans-serif;
+  --font-secondary: var(--font-inter), 'Inter', sans-serif;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, span, a, button, input, div {
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carbon-bg,
+.emed-bg {
+  background-color: #006B96;
+  background-image: url('/medical/emed/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Base Typography (Desktop PC / Large Desktop: 1280px - 2499px) */
+h1 { font-size: 2.5rem; /* 40px */ font-weight: 600 !important; font-family: var(--font-primary); line-height: 1.35; }
+h2 { font-size: 2rem; /* 32px */ font-weight: 600 !important; font-family: var(--font-primary); line-height: 1.4; }
+h3 { font-size: 1.625rem; /* 26px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.45; }
+h4 { font-size: 1.375rem; /* 22px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.45; }
+p, li { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-primary); line-height: 1.5; }
+span { font-size: 0.875rem; /* 14px */ font-family: var(--font-primary); }
+.navbar { font-size: 1.0625rem; /* 17px */ font-weight: 500; font-family: var(--font-primary); }
+.footer-heading { font-size: 1.5rem; /* 24px */ font-weight: 600; font-family: var(--font-primary); }
+.footer-body { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-primary); }
+.button { font-size: 1.0625rem; /* 17px */ font-weight: 500; font-family: var(--font-primary) !important; }
+
+/* Mobile Portrait Screen (up to 480px) */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.75rem; /* 28px */ line-height: 1.3; }
+  h2 { font-size: 1.5rem; /* 24px */ line-height: 1.3; }
+  h3 { font-size: 1.25rem; /* 20px */ }
+  h4 { font-size: 1.1rem; /* 17.6px */ }
+  p, li { font-size: 0.9rem; /* 14.4px */ }
+  span { font-size: 0.75rem; }
+  .navbar { font-size: 0.95rem; }
+  .footer-heading { font-size: 1.25rem; }
+  .footer-body { font-size: 0.9rem; }
+  .button { font-size: 0.95rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 2rem; /* 32px */ }
+  h2 { font-size: 1.65rem; /* 26.4px */ }
+  h3 { font-size: 1.35rem; /* 21.6px */ }
+  h4 { font-size: 1.2rem; /* 19.2px */ }
+  p, li { font-size: 0.95rem; /* 15.2px */ }
+  span { font-size: 0.8rem; }
+  .navbar { font-size: 0.98rem; }
+  .footer-heading { font-size: 1.35rem; }
+  .footer-body { font-size: 0.95rem; }
+  .button { font-size: 0.98rem; }
+}
+
+/* Tablet Screen (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.15rem; /* 34.4px */ }
+  h2 { font-size: 1.8rem; /* 28.8px */ }
+  h3 { font-size: 1.45rem; /* 23.2px */ }
+  h4 { font-size: 1.25rem; /* 20px */ }
+  p, li { font-size: 1rem; /* 16px */ }
+  span { font-size: 0.85rem; }
+  .navbar { font-size: 1rem; }
+  .footer-heading { font-size: 1.4rem; }
+  .footer-body { font-size: 0.98rem; }
+  .button { font-size: 1rem; }
+}
+
+/* Laptop Screen (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.3rem; /* 36.8px */ }
+  h2 { font-size: 1.9rem; /* 30.4px */ }
+  h3 { font-size: 1.55rem; }
+  h4 { font-size: 1.3rem; }
+  p, li { font-size: 1.02rem; }
+  span { font-size: 0.875rem; }
+  .navbar { font-size: 1.02rem; }
+  .footer-heading { font-size: 1.45rem; }
+  .footer-body { font-size: 1rem; }
+  .button { font-size: 1.02rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Base definitions for custom responsive components */
+.header-nav-link {
+  font-size: 15.5px;
+}
+.header-logo-img {
+  height: 36px;
+}
+.card-arrow-btn {
+  width: 40px;
+  height: 40px;
+}
+.card-arrow-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* 2K Screens (1920px - 2499px) */
+@media (min-width: 1920px) {
+  .header-nav-link {
+    font-size: 18px !important;
+  }
+  .header-logo-img {
+    height: 44px !important;
+  }
+  .card-arrow-btn {
+    width: 52px !important;
+    height: 52px !important;
+  }
+  .card-arrow-btn svg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+  .footer-logo-img {
+    height: 80px !important;
+  }
+}
+
+/* Ultra-wide 2.5K Screen (2500px - 3799px) */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.75rem; /* 60px */ line-height: 1.35; }
+  h2 { font-size: 3rem; /* 48px */ line-height: 1.4; }
+  h3 { font-size: 2.4rem; /* 38.4px */ }
+  h4 { font-size: 2rem; /* 32px */ }
+  p, li { font-size: 1.6rem; /* 25.6px */ }
+  span { font-size: 1.3rem; }
+  .navbar { font-size: 1.6rem; }
+  .footer-heading { font-size: 2.25rem; }
+  .footer-body { font-size: 1.5rem; }
+  .button { font-size: 1.6rem; }
+}
+
+@media (min-width: 2500px) {
+  .header-nav-link {
+    font-size: 21px !important;
+  }
+  .header-logo-img {
+    height: 52px !important;
+  }
+  .card-arrow-btn {
+    width: 64px !important;
+    height: 64px !important;
+  }
+  .card-arrow-btn svg {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .footer-logo-img {
+    height: 110px !important;
+  }
+}
+
+/* 4K Ultra-wide Screen (3800px and above) */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 5rem; /* 80px */ line-height: 1.35; }
+  h2 { font-size: 4rem; /* 64px */ line-height: 1.4; }
+  h3 { font-size: 3.25rem; /* 52px */ }
+  h4 { font-size: 2.75rem; /* 44px */ }
+  p, li { font-size: 2.125rem; /* 34px */ }
+  span { font-size: 1.75rem; }
+  .navbar { font-size: 2.125rem; }
+  .footer-heading { font-size: 3rem; }
+  .footer-body { font-size: 2rem; }
+  .button { font-size: 2.125rem; }
+  .header-nav-link {
+    font-size: 26px !important;
+  }
+  .header-logo-img {
+    height: 64px !important;
+  }
+  .card-arrow-btn {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .card-arrow-btn svg {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .footer-logo-img {
+    height: 150px !important;
+  }
+}

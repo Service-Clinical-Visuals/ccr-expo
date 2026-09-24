@@ -8,7 +8,7 @@ import Button from "./Button";
 export default function SurgicalTechnique() {
   const bulletPoints = [
     {
-      title: "ComUncemented Fixation",
+      title: "Uncemented Fixation",
       desc: "Titanium coating with a controlled porous surface is designed to support biological fixation.",
     },
     {
@@ -67,7 +67,8 @@ export default function SurgicalTechnique() {
           {/* Right Text Column */}
           <div className="lg:col-span-5 flex flex-col gap-6 min-[2500px]:gap-10" data-aos="fade-left">
             <Typography variant="p" color="white">
-              The universal instrumentation also supports line-to-line rasping for uncemented stems, helping achieve initial stability and an optimal fit. The uncemented version is available in sizes ranging from 6.25–20.00 mm, with 1.25 mm increments. A special 6.25 mm size is available for narrow femora, including cases such as hip dysplasia, with additional revision sizes also available.           </Typography>
+              The cemented version uses a high-grade forged CoCrMo stem with a specialized surface treatment designed to promote strong and reliable bonding between the cement and implant. Its forged construction provides a durable implant structure for cemented fixation.The surface treatment is designed to support secure cement–implant interaction during implantation.
+            </Typography>
 
             <div className="flex flex-col gap-5 sm:gap-6 min-[2500px]:gap-8">
               {bulletPoints.map((item, idx) => (
