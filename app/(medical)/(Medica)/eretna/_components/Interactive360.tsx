@@ -74,13 +74,12 @@ export default function Interactive360() {
             </div>
 
             {/* Bordered Feature Box */}
-            <div className="border-2 border-[#3452A7] rounded-2xl p-5 sm:p-6 bg-white/[0.02] space-y-3.5">
+            <div className="border-2 border-[#3452A7] rounded-2xl p-5 sm:p-6 min-[2000px]:p-7 min-[2500px]:p-9 min-[3800px]:p-12 bg-white/[0.02] space-y-3.5 min-[2000px]:space-y-5 min-[2500px]:space-y-6 min-[3800px]:space-y-8">
               {features.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3">
-                  <div className="shrink-0 mt-0.5 flex items-center justify-center text-[#8FBFFA]">
+                <div key={idx} className="flex items-start gap-3 min-[2000px]:gap-4 min-[2500px]:gap-5">
+                  <div className="shrink-0 mt-0.5 min-[2000px]:mt-1 flex items-center justify-center text-[#8FBFFA]">
                     <svg
-                      width="16"
-                      height="16"
+                      className="w-4 h-4 min-[2000px]:w-5 min-[2000px]:h-5 min-[2500px]:w-6 min-[2500px]:h-6 min-[3800px]:w-8 min-[3800px]:h-8"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg"
@@ -89,9 +88,9 @@ export default function Interactive360() {
                     </svg>
                   </div>
 
-                  <p className="font-dmsans text-[14.5px] sm:text-[15.5px] min-[2500px]:text-[20px] text-white leading-snug">
-                    <strong className="font-bold text-white">{item.title}</strong> —{" "}
-                    <span className="text-white/85 font-normal">{item.desc}</span>
+                  <p className="font-dmsans text-[15px] sm:text-[16px] xl:text-[17px] min-[2000px]:text-[20px] min-[2500px]:text-[24px] min-[3800px]:text-[32px] text-white leading-snug">
+                    <strong className="font-bold text-white text-inherit">{item.title}</strong> —{" "}
+                    <span className="text-white/85 font-normal text-inherit">{item.desc}</span>
                   </p>
                 </div>
               ))}
