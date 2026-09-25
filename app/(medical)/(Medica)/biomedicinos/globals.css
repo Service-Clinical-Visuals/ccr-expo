@@ -1,0 +1,625 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+}
+
+@theme inline {
+  --breakpoint-lg: 1026px;
+  --color-primary: #197CC5;
+  --color-primary-hover: #14629c;
+  --color-secondary: #333333;
+  --color-secondary-hover: #111111;
+  --color-accent: #DBB001;
+  --color-accent-hover: #c49e00;
+  --color-muted: #404040;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-secondary: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-secondary);
+}
+
+.custom-container {
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+@layer base {
+  h1 {
+    font-size: 1.875rem;
+    font-weight: 600 !important;
+    font-family: var(--font-fraunces), ui-serif, serif;
+  }
+
+  h2 {
+    font-size: 1.625rem;
+    font-weight: 600 !important;
+    font-family: var(--font-fraunces), ui-serif, serif;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-fraunces), ui-serif, serif;
+  }
+
+  h4 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    font-family: var(--font-fraunces), ui-serif, serif;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: var(--font-inter), ui-sans-serif, sans-serif;
+  }
+
+  h6 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: var(--font-fraunces), ui-serif, serif;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-inter), ui-sans-serif, sans-serif;
+    line-height: 1.65;
+  }
+
+  span {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-fraunces), ui-serif, serif;
+  }
+}
+
+@layer components {
+  .navbar {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-fraunces), ui-serif, serif;
+  }
+
+  .footer-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: var(--font-fraunces), ui-serif, serif;
+  }
+
+  .footer-body {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-inter), ui-sans-serif, sans-serif;
+    line-height: 1.6;
+  }
+
+  .button {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-fraunces), ui-serif, serif !important;
+  }
+
+  .number {
+    font-size: 8rem;
+    font-weight: 700;
+    font-family: var(--font-fraunces), ui-serif, serif;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1;
+  }
+}
+
+
+/* Custom Swiper Pagination */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #D1D5DB !important;
+  opacity: 1 !important;
+  transition: all 0.3s;
+  margin: 0 !important;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  width: 14px !important;
+  height: 14px !important;
+  background-color: var(--color-accent) !important;
+}
+
+/* Mobile Portrait Screen (up to 480px) */
+@media (max-width: 480px) {
+  .custom-container {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.3125rem;
+    /* ~21px */
+  }
+
+  h2 {
+    font-size: 1.1375rem;
+    /* 18.2px */
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    /* 16.8px */
+  }
+
+  h4 {
+    font-size: 0.9625rem;
+    /* 15.4px */
+  }
+
+  h5 {
+    font-size: 0.875rem;
+    /* 14px */
+  }
+
+  h6 {
+    font-size: 0.7875rem;
+    /* 12.6px */
+  }
+
+  p,
+  li {
+    font-size: 0.7rem;
+    /* 11.2px */
+  }
+
+  span {
+    font-size: 0.7rem;
+    /* 11.2px */
+  }
+
+  .navbar {
+    font-size: 0.7rem;
+    /* 11.2px */
+  }
+
+  .footer-heading {
+    font-size: 0.875rem;
+    /* 14px */
+  }
+
+  .footer-body {
+    font-size: 0.7rem;
+    /* 11.2px */
+  }
+
+  .button {
+    font-size: 0.7rem;
+    /* 11.2px */
+  }
+
+  .number {
+    font-size: 5.6rem;
+  }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    /* 20.8px */
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    /* 19.2px */
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    /* 17.6px */
+  }
+
+  h5 {
+    font-size: 1rem;
+    /* 16px */
+  }
+
+  h6 {
+    font-size: 0.9rem;
+    /* 14.4px */
+  }
+
+  p,
+  li {
+    font-size: 0.8rem;
+    /* 12.8px */
+  }
+
+  span {
+    font-size: 0.8rem;
+    /* 12.8px */
+  }
+
+  .navbar {
+    font-size: 0.8rem;
+    /* 12.8px */
+  }
+
+  .footer-heading {
+    font-size: 1rem;
+    /* 16px */
+  }
+
+  .footer-body {
+    font-size: 0.8rem;
+    /* 12.8px */
+  }
+
+  .button {
+    font-size: 0.8rem;
+    /* 12.8px */
+  }
+
+  .number {
+    font-size: 6.4rem;
+  }
+}
+
+/* Tablet / Tab Screen (768px - 1025px) */
+@media (min-width: 768px) and (max-width: 1025px) {
+  .custom-container {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.6875rem;
+    /* 27px */
+  }
+
+  h2 {
+    font-size: 1.4625rem;
+    /* 23.4px */
+  }
+
+  h3 {
+    font-size: 1.35rem;
+    /* 21.6px */
+  }
+
+  h4 {
+    font-size: 1.2375rem;
+    /* 19.8px */
+  }
+
+  h5 {
+    font-size: 1.125rem;
+    /* 18px */
+  }
+
+  h6 {
+    font-size: 1.0125rem;
+    /* 16.2px */
+  }
+
+  p,
+  li {
+    font-size: 0.9rem;
+    /* 14.4px */
+  }
+
+  span {
+    font-size: 0.9rem;
+    /* 14.4px */
+  }
+
+  .navbar {
+    font-size: 0.9rem;
+    /* 14.4px */
+  }
+
+  .footer-heading {
+    font-size: 1.125rem;
+    /* 18px */
+  }
+
+  .footer-body {
+    font-size: 0.9rem;
+    /* 14.4px */
+  }
+
+  .button {
+    font-size: 0.9rem;
+    /* 14.4px */
+  }
+
+  .number {
+    font-size: 7.2rem;
+  }
+}
+
+/* Laptop Screen (1026px - 1279px) */
+@media (min-width: 1026px) and (max-width: 1279px) {
+  .custom-container {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.78125rem;
+    /* 28.5px */
+  }
+
+  h2 {
+    font-size: 1.54375rem;
+    /* 24.7px */
+  }
+
+  h3 {
+    font-size: 1.425rem;
+    /* 22.8px */
+  }
+
+  h4 {
+    font-size: 1.30625rem;
+    /* 20.9px */
+  }
+
+  h5 {
+    font-size: 1.1875rem;
+    /* 19px */
+  }
+
+  h6 {
+    font-size: 1.06875rem;
+    /* 17.1px */
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+    /* 15.2px */
+  }
+
+  span {
+    font-size: 0.95rem;
+    /* 15.2px */
+  }
+
+  .navbar {
+    font-size: 0.95rem;
+    /* 15.2px */
+  }
+
+  .footer-heading {
+    font-size: 1.1875rem;
+    /* 19px */
+  }
+
+  .footer-body {
+    font-size: 0.95rem;
+    /* 15.2px */
+  }
+
+  .button {
+    font-size: 0.95rem;
+    /* 15.2px */
+  }
+
+  .number {
+    font-size: 7.6rem;
+  }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2.8125rem;
+    /* 45px */
+  }
+
+  h2 {
+    font-size: 2.4375rem;
+    /* 39px */
+  }
+
+  h3 {
+    font-size: 2.25rem;
+    /* 36px */
+  }
+
+  h4 {
+    font-size: 2.0625rem;
+    /* 33px */
+  }
+
+  h5 {
+    font-size: 1.875rem;
+    /* 30px */
+  }
+
+  h6 {
+    font-size: 1.6875rem;
+    /* 27px */
+  }
+
+  p,
+  li {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+
+  span {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+
+  .navbar {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+
+  .footer-heading {
+    font-size: 1.875rem;
+    /* 30px */
+  }
+
+  .footer-body {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+
+  .button {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+
+  .number {
+    font-size: 12rem;
+  }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+@media (min-width: 3800px) {
+  .custom-container {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+    /* 60px */
+  }
+
+  h2 {
+    font-size: 3.25rem;
+    /* 52px */
+  }
+
+  h3 {
+    font-size: 3rem;
+    /* 48px */
+  }
+
+  h4 {
+    font-size: 2.75rem;
+    /* 44px */
+  }
+
+  h5 {
+    font-size: 2.5rem;
+    /* 40px */
+  }
+
+  h6 {
+    font-size: 2.25rem;
+    /* 36px */
+  }
+
+  p,
+  li {
+    font-size: 2rem;
+    /* 32px */
+  }
+
+  span {
+    font-size: 2rem;
+    /* 32px */
+  }
+
+  .navbar {
+    font-size: 2rem;
+    /* 32px */
+  }
+
+  .footer-heading {
+    font-size: 2.5rem;
+    /* 40px */
+  }
+
+  .footer-body {
+    font-size: 2rem;
+    /* 32px */
+  }
+
+  .button {
+    font-size: 2rem;
+    /* 32px */
+  }
+
+  .number {
+    font-size: 16rem;
+  }
+}
