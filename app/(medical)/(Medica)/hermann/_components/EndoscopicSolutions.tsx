@@ -42,11 +42,11 @@ export default function EndoscopicSolutions() {
           </Typography>
         </div>
 
-        {/* Content Body: Left Video & Right Highlights (75% | 25%) */}
-        <div className="flex flex-col xl:flex-row items-center gap-8 lg:gap-10 xl:gap-10 min-[1600px]:gap-12 w-full">
-          {/* Left Column: Short Video 2 (75%) */}
+        {/* Content Body: Left Video & Right Highlights (Stacked up to 1500px, 75% | 25% above 1500px) */}
+        <div className="flex flex-col min-[1500px]:flex-row items-center gap-8 lg:gap-10 min-[1500px]:gap-10 min-[1600px]:gap-12 w-full">
+          {/* Left Column: Short Video 2 (Full width up to 1500px, 75% above 1500px) */}
           <div
-            className="w-full xl:w-[75%] relative aspect-video rounded-[24px] sm:rounded-[30px] min-[3800px]:rounded-[48px] overflow-hidden shadow-[0px_3px_8px_rgba(0,0,0,0.24)] bg-black/5 shrink-0"
+            className="w-full min-[1500px]:w-[75%] relative aspect-video rounded-[24px] sm:rounded-[30px] min-[3800px]:rounded-[48px] overflow-hidden shadow-[0px_3px_8px_rgba(0,0,0,0.24)] bg-black/5 shrink-0"
             data-aos="fade-right"
           >
             <DynamicVideoPlayer
@@ -55,9 +55,9 @@ export default function EndoscopicSolutions() {
             />
           </div>
 
-          {/* Right Column: Features & CTA (25%) */}
+          {/* Right Column: Features & CTA (Full width up to 1500px, 25% above 1500px) */}
           <div
-            className="w-full xl:w-[25%] flex flex-col justify-between space-y-4 lg:space-y-5"
+            className="w-full min-[1500px]:w-[25%] flex flex-col justify-between space-y-4 lg:space-y-5"
             data-aos="fade-left"
           >
             {/* Heading */}

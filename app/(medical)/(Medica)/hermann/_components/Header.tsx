@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 interface NavLink {
   name: string;
@@ -158,41 +158,101 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile & Tablet Slide-Over Drawer Navigation */}
       {mobileMenuOpen && (
-        <div className={`xl:hidden fixed inset-x-4 ${isSticky ? "top-[64px]" : "top-[78px] sm:top-[86px]"} bg-white border border-[rgba(30,30,30,0.25)] rounded-[20px] shadow-2xl p-6 flex flex-col space-y-4 max-h-[calc(100vh-100px)] overflow-y-auto animate-in slide-in-from-top-3 duration-200 z-50`}>
-          {navLinks.map((link) => {
-            const isActive = activeLink === link.id;
-            return (
-              <div key={link.name} className="border-b border-gray-100 last:border-0 pb-3">
-                <a
-                  href={`#${link.id}`}
-                  className={`block py-1.5 navbar transition-colors ${
-                    isActive
-                      ? "text-[var(--color-primary)] font-semibold"
-                      : "text-[var(--color-secondary)] hover:text-[var(--color-primary)]"
-                  }`}
-                  onClick={(e) => handleScrollTo(e, link.id)}
+        <div className="xl:hidden fixed inset-0 z-50">
+          {/* Backdrop Overlay */}
+          <div
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-hidden="true"
+          />
+
+          {/* Drawer Container */}
+          <div className="fixed top-0 right-0 h-full w-[85%] max-w-[400px] sm:max-w-[420px] bg-white shadow-2xl z-50 flex flex-col justify-between p-6 sm:p-8 animate-in slide-in-from-right duration-300">
+            {/* Drawer Header */}
+            <div>
+              <div className="flex items-center justify-between pb-4 border-b border-gray-100">
+                <Link
+                  href="#home"
+                  onClick={(e) => handleScrollTo(e, "home")}
+                  className="inline-block"
                 >
-                  {link.name}
+                  <img
+                    src="/medical/hermann/logo.png"
+                    alt="Hermann Logo"
+                    className="h-6 sm:h-7 w-auto object-contain"
+                  />
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="p-2 rounded-full hover:bg-gray-100 text-[var(--color-secondary)] hover:text-[var(--color-primary)] transition-colors focus:outline-none"
+                  aria-label="Close menu"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* Navigation Links */}
+              <nav className="flex flex-col space-y-1.5 py-6">
+                {navLinks.map((link) => {
+                  const isActive = activeLink === link.id;
+                  return (
+                    <a
+                      key={link.name}
+                      href={`#${link.id}`}
+                      onClick={(e) => handleScrollTo(e, link.id)}
+                      className={`flex items-center justify-between px-4 py-3 rounded-[12px] text-base sm:text-lg transition-all ${
+                        isActive
+                          ? "bg-[#FFF3F3] text-[var(--color-primary)] font-semibold shadow-xs"
+                          : "text-[var(--color-secondary)] hover:bg-gray-50 hover:text-[var(--color-primary)] font-medium"
+                      }`}
+                    >
+                      <span>{link.name}</span>
+                      {isActive ? (
+                        <span className="w-2 h-2 rounded-full bg-[var(--color-primary)]" />
+                      ) : (
+                        <span className="text-gray-300 text-sm">→</span>
+                      )}
+                    </a>
+                  );
+                })}
+              </nav>
+            </div>
+
+            {/* Drawer Bottom: CTA & Quick Contact */}
+            <div className="pt-4 border-t border-gray-100 space-y-4">
+              <Link
+                href="#contact"
+                onClick={(e) => handleScrollTo(e, "contact")}
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-6 rounded-[12px] bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-hover)] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] transition-all group"
+              >
+                <span className="button whitespace-nowrap text-white font-medium">Get in Touch</span>
+                <img
+                  src="/medical/hermann/arrow.png"
+                  alt=""
+                  className="w-3.5 h-auto group-hover:translate-x-1 transition-transform object-contain"
+                />
+              </Link>
+
+              <div className="space-y-2 pt-1 text-xs sm:text-sm text-[#4A4A4A]">
+                <a
+                  href="tel:+49746399670"
+                  className="flex items-center gap-2 hover:text-[var(--color-primary)] transition-colors"
+                >
+                  <Phone className="w-3.5 h-3.5 text-[var(--color-primary)] shrink-0" />
+                  <span>+49 74 63 - 99 67 - 0</span>
+                </a>
+                <a
+                  href="mailto:info@hermann-medizintechnik.de"
+                  className="flex items-center gap-2 hover:text-[var(--color-primary)] transition-colors"
+                >
+                  <Mail className="w-3.5 h-3.5 text-[var(--color-primary)] shrink-0" />
+                  <span className="break-all">info@hermann-medizintechnik.de</span>
                 </a>
               </div>
-            );
-          })}
-
-          <div className="pt-2">
-            <Link
-              href="#contact"
-              onClick={(e) => handleScrollTo(e, "contact")}
-              className="w-full flex items-center justify-center px-4 py-2.5 rounded-[10px] bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-hover)] shadow-[0px_3px_8px_rgba(0,0,0,0.24)] transition-colors group"
-            >
-              <span className="button whitespace-nowrap text-white font-medium">Get in Touch</span>
-              <img
-                src="/medical/hermann/arrow.png"
-                alt=""
-                className="w-3.5 h-auto ml-2 group-hover:translate-x-1 transition-transform object-contain"
-              />
-            </Link>
+            </div>
           </div>
         </div>
       )}

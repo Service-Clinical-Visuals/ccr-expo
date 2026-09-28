@@ -25,9 +25,9 @@ export default function EndoscopicEquipment() {
   return (
     <section id="equipment" className="w-full py-14 sm:py-18 lg:py-24 min-[3800px]:py-36 bg-white overflow-hidden">
       <div className="custom-container">
-        <div className="flex flex-col xl:flex-row items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-10 min-[1600px]:gap-12 w-full">
-          {/* Mobile & Tablet Heading (First on small screens) */}
-          <div className="block xl:hidden w-full space-y-1" data-aos="fade-up">
+        <div className="flex flex-col min-[1500px]:flex-row items-center gap-6 sm:gap-8 lg:gap-10 min-[1500px]:gap-10 min-[1600px]:gap-12 w-full">
+          {/* Mobile & Tablet Heading (First on screens up to 1500px) */}
+          <div className="block min-[1500px]:hidden w-full space-y-1" data-aos="fade-up">
             <Typography variant="h3" className="!font-semibold leading-snug">
               Comprehensive Endoscopic{" "}
               <span style={{ fontSize: "inherit", fontFamily: "inherit", color: "#C00D0D" }}>
@@ -36,9 +36,9 @@ export default function EndoscopicEquipment() {
             </Typography>
           </div>
 
-          {/* Video Column (Next on small screens, Left 75% on desktop) */}
+          {/* Video Column (Next on screens up to 1500px, Left 75% above 1500px) */}
           <div
-            className="w-full xl:w-[75%] relative aspect-video rounded-[24px] sm:rounded-[30px] min-[3800px]:rounded-[48px] overflow-hidden shadow-[0px_3px_8px_rgba(0,0,0,0.24)] bg-black/5 shrink-0"
+            className="w-full min-[1500px]:w-[75%] relative aspect-video rounded-[24px] sm:rounded-[30px] min-[3800px]:rounded-[48px] overflow-hidden shadow-[0px_3px_8px_rgba(0,0,0,0.24)] bg-black/5 shrink-0"
             data-aos="fade-right"
           >
             <DynamicVideoPlayer
@@ -47,13 +47,13 @@ export default function EndoscopicEquipment() {
             />
           </div>
 
-          {/* Right Column: Information, Features & CTA (25%) */}
+          {/* Right Column: Information, Features & CTA (Full width up to 1500px, 25% above 1500px) */}
           <div
-            className="w-full xl:w-[25%] flex flex-col justify-between space-y-4 lg:space-y-5"
+            className="w-full min-[1500px]:w-[25%] flex flex-col justify-between space-y-4 lg:space-y-5"
             data-aos="fade-left"
           >
-            {/* Desktop Heading (Hidden on mobile/tablet) */}
-            <div className="hidden xl:block space-y-1">
+            {/* Desktop Heading (Hidden on screens up to 1500px) */}
+            <div className="hidden min-[1500px]:block space-y-1">
               <Typography variant="h3" className="!font-semibold leading-snug">
                 Comprehensive Endoscopic<br />
                 <span style={{ fontSize: "inherit", fontFamily: "inherit", color: "#C00D0D" }}>
