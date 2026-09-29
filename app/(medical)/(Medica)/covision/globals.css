@@ -18,6 +18,14 @@ body {
 :root {
   --background: #ffffff;
   --foreground: #333333;
+  --font-primary: var(--font-dm-sans), "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-secondary: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.covision-root {
+  --font-primary: var(--font-dm-sans), "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-secondary: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-secondary) !important;
 }
 
 @theme inline {
@@ -27,8 +35,8 @@ body {
   --color-secondary-hover: #0f2e44;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-primary: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-secondary: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-primary);
+  --font-secondary: var(--font-secondary);
 }
 
 body {
@@ -43,18 +51,28 @@ body {
   margin-right: auto;
 }
 
+/* Headings: DM Sans */
+h1, h2, h3, h4, .font-heading, .footer-heading {
+  font-family: var(--font-primary) !important;
+}
+
+/* Body text & UI: Inter */
+.covision-root p, .covision-root li, .covision-root span, .covision-root a, .navbar, .footer-body, .button {
+  font-family: var(--font-secondary) !important;
+}
+
 /* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
-h1 { font-size: 2.25rem; /* 36px */ font-weight: 700 !important; font-family: var(--font-primary); }
-h2 { font-size: 1.75rem; /* 28px */ font-weight: 700 !important; font-family: var(--font-primary); }
-h3 { font-size: 1.25rem; /* 20px */ font-weight: 700; font-family: var(--font-primary); }
-h4 { font-size: 1.0625rem; /* 17px */ font-weight: 600; font-family: var(--font-secondary); }
-p, li { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary); }
-span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
-.navbar { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary); }
-.footer-heading { font-size: 1.25rem; /* 20px */ font-weight: 700; font-family: var(--font-primary); }
-.footer-body { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary); }
+h1 { font-size: 2.25rem; /* 36px */ font-weight: 700 !important; font-family: var(--font-primary) !important; }
+h2 { font-size: 1.75rem; /* 28px */ font-weight: 700 !important; font-family: var(--font-primary) !important; }
+h3 { font-size: 1.25rem; /* 20px */ font-weight: 700 !important; font-family: var(--font-primary) !important; }
+h4 { font-size: 1.0625rem; /* 17px */ font-weight: 600; font-family: var(--font-primary) !important; }
+p, li { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary) !important; }
+span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary) !important; }
+.navbar { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary) !important; }
+.footer-heading { font-size: 1.25rem; /* 20px */ font-weight: 700; font-family: var(--font-primary) !important; }
+.footer-body { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary) !important; }
 .button { font-size: 1.0625rem; /* 17px */ font-weight: 700; font-family: var(--font-secondary) !important; }
-.number { font-size: 8rem; /* 128px */ font-weight: 700; font-family: var(--font-primary); line-height: 1; }
+.number { font-size: 8rem; /* 128px */ font-weight: 700; font-family: var(--font-primary) !important; line-height: 1; }
 
 /* Mobile Portrait Screen (up to 480px) */
 /* Multiplier: ~0.7 */

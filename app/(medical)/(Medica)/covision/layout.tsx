@@ -7,7 +7,7 @@ import SmoothAOS from "./_components/SmoothAOS";
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -31,7 +31,7 @@ export default function CovisionLayout({
 }>) {
   return (
     <div
-      className={`${dmSans.variable} ${inter.variable} min-h-screen bg-white text-[#333333] antialiased overflow-x-hidden relative w-full`}
+      className={`${dmSans.variable} ${inter.variable} ${inter.className} covision-root min-h-screen bg-white text-[#333333] antialiased overflow-x-hidden relative w-full`}
     >
       <SmoothAOS />
       <VideoProvider website="covision">{children}</VideoProvider>
