@@ -6,11 +6,11 @@ export default function AbsorbableDesign() {
   return (
     <section className="relative w-full bg-[#EFEEEF] py-16 sm:py-20 md:py-24 overflow-hidden">
       <div className="custom-container relative z-10 px-4 sm:px-6 md:px-8 xl:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-10 items-center">
 
           {/* Left Column: Video Box */}
           <div
-            className="lg:col-span-7 xl:col-span-8 w-full"
+            className="xl:col-span-7 2xl:col-span-8 w-full"
             data-aos="fade-right"
             data-aos-duration="800"
           >
@@ -27,7 +27,7 @@ export default function AbsorbableDesign() {
 
           {/* Right Column: Text Content */}
           <div
-            className="lg:col-span-5 xl:col-span-4 flex flex-col"
+            className="xl:col-span-5 2xl:col-span-4 flex flex-col"
             data-aos="fade-left"
             data-aos-duration="800"
             data-aos-delay="150"

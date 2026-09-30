@@ -10,11 +10,11 @@ export default function AdvancedMeshSolutions() {
     <section className="w-full bg-[#0C6A81] py-16 sm:py-20 md:py-24 text-[#FFFFFF] overflow-hidden">
       <div className="custom-container px-4 sm:px-6 md:px-8 xl:px-12">
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-10 items-center">
 
           {/* Left Column: Text Content and Cards */}
           <div
-            className="lg:col-span-5 xl:col-span-4 flex flex-col"
+            className="xl:col-span-5 2xl:col-span-4 flex flex-col"
             data-aos="fade-right"
             data-aos-duration="800"
           >
@@ -69,7 +69,7 @@ export default function AdvancedMeshSolutions() {
 
           {/* Right Column: Video Box */}
           <div
-            className="lg:col-span-7 xl:col-span-8 w-full flex flex-col"
+            className="xl:col-span-7 2xl:col-span-8 w-full flex flex-col"
             data-aos="fade-left"
             data-aos-duration="800"
             data-aos-delay="150"

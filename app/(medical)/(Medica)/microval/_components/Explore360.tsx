@@ -9,11 +9,11 @@ export default function Explore360() {
   return (
     <section className="w-full bg-[#0C6A81] py-14 sm:py-20 md:py-24">
       <div className="custom-container px-4 sm:px-6 md:px-8 xl:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center mb-10">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-8 items-center mb-10">
 
           {/* Left Column: Information Box */}
           <div
-            className="lg:col-span-6 flex flex-col justify-center order-2 lg:order-1"
+            className="xl:col-span-6 flex flex-col justify-center order-2 xl:order-1"
             data-aos="fade-right"
             data-aos-duration="900"
             data-aos-delay="200"
@@ -44,7 +44,7 @@ export default function Explore360() {
 
           {/* Right Column: 360 Video Player Box */}
           <div
-            className="lg:col-span-6 relative w-full overflow-hidden flex items-center justify-center bg-white rounded-md shadow-lg aspect-video order-1 lg:order-2"
+            className="xl:col-span-6 relative w-full overflow-hidden flex items-center justify-center bg-white rounded-md shadow-lg aspect-video order-1 xl:order-2"
             data-aos="fade-left"
             data-aos-duration="900"
             data-aos-delay="100"

@@ -9,7 +9,7 @@ export default function Banner() {
     <section className="w-full">
       {/* Full-width Video Hero Container */}
       <div
-        className="relative w-full aspect-video overflow-hidden bg-black"
+        className="relative w-full h-[100svh] overflow-hidden bg-black"
         data-aos="fade-in"
         data-aos-duration="1000"
       >
@@ -17,7 +17,7 @@ export default function Banner() {
         <div className="absolute inset-0 w-full h-full z-0">
           <DynamicVideoPlayer
             type="banner"
-            className="absolute inset-0 w-full h-full object-cover aspect-video"
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
 
