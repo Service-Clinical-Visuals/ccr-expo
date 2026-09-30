@@ -1,0 +1,260 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #2a2a2a;
+}
+
+@theme inline {
+  --color-primary: #003f77;
+  --color-primary-hover: #002d56;
+  --color-secondary: #2a2a2a;
+  --color-secondary-hover: #111111;
+  --color-muted: #4a4a4a;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-exo2), ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-secondary);
+}
+
+.custom-container {
+  width: 90% !important;
+  max-width: 90% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+h1 { font-size: 2.25rem; /* 36px */ font-weight: 600 !important; font-family: var(--font-primary); }
+h2 { font-size: 1.75rem; /* 28px */ font-weight: 600 !important; font-family: var(--font-primary); }
+h3 { font-size: 1.25rem; /* 20px */ font-weight: 600; font-family: var(--font-primary); }
+h4 { font-size: 1.0625rem; /* 17px */ font-weight: 700; font-family: var(--font-primary); }
+h5 { font-size: 1rem; /* 16px */ font-weight: 600; font-family: var(--font-primary); }
+p, li { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); }
+span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
+.navbar, .navbar *, a.navbar { font-size: 1rem !important; font-weight: 500; font-family: var(--font-primary); }
+.footer-heading { font-size: 1.375rem !important; /* 22px */ font-weight: 600 !important; font-family: var(--font-primary); }
+.footer-body, .footer-body * { font-size: 1rem !important; font-weight: 400; font-family: var(--font-secondary); }
+.button { font-size: 1.0625rem; /* 17px */ font-weight: 500; font-family: var(--font-primary) !important; }
+.number { font-size: 8rem; /* 128px */ font-weight: 700; font-family: var(--font-primary); line-height: 1; }
+
+/* Header & Hero Scaling */
+.header-bar { height: 72px; }
+.header-logo { height: 28px; width: auto; }
+.header-indicator { height: 5px; width: 36px; }
+.header-top, .header-hidden { top: 1rem; }
+.header-full { top: 0 !important; }
+.hero-section-padding { padding-top: 96px; }
+
+/* Why Rebstock Icon Card & Img Scaling */
+.why-icon-box { width: 90px; height: 80px; }
+.why-icon-img { width: 100% !important; height: 100% !important; max-width: 100% !important; max-height: 100% !important; object-fit: contain !important; }
+@media (min-width: 640px) {
+  .why-icon-box { width: 110px; height: 95px; }
+}
+@media (min-width: 1024px) {
+  .why-icon-box { width: 140px; height: 115px; }
+}
+@media (min-width: 1280px) {
+  .why-icon-box { width: 170px; height: 135px; }
+}
+@media (min-width: 1536px) {
+  .why-icon-box { width: 200px; height: 155px; }
+}
+
+/* Custom Swiper Pagination */
+.custom-pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 1.5rem; }
+.custom-pagination .swiper-pagination-bullet { width: 10px !important; height: 10px !important; border-radius: 50% !important; background-color: #D1D5DB !important; opacity: 1 !important; transition: all 0.3s; margin: 0 !important; }
+.custom-pagination .swiper-pagination-bullet-active { width: 14px !important; height: 14px !important; background-color: var(--color-primary) !important; }
+
+/* Custom Line Bullets */
+.custom-line-bullet {
+  width: 32px !important;
+  height: 2px !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  border: 1px solid #003F77 !important;
+  opacity: 0.5 !important;
+  display: inline-block;
+  margin: 0 4px !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.swiper-pagination-bullet-active.custom-line-bullet {
+  background-color: #003F77 !important;
+  opacity: 1 !important;
+  border-width: 2px !important;
+}
+
+@media (min-width: 2500px) {
+  .custom-line-bullet { width: 48px !important; height: 3px !important; }
+  .custom-pagination .swiper-pagination-bullet { width: 15px !important; height: 15px !important; }
+  .custom-pagination .swiper-pagination-bullet-active { width: 21px !important; height: 21px !important; }
+}
+@media (min-width: 3800px) {
+  .custom-line-bullet { width: 64px !important; height: 4px !important; }
+  .custom-pagination .swiper-pagination-bullet { width: 20px !important; height: 20px !important; }
+  .custom-pagination .swiper-pagination-bullet-active { width: 28px !important; height: 28px !important; }
+}
+
+/* Mobile Portrait Screen (up to 480px) */
+/* Multiplier: ~0.7 */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.575rem; /* ~25.2px */ }
+  h2 { font-size: 1.225rem; /* ~19.6px */ }
+  h3 { font-size: 0.875rem; /* 14px */ }
+  h4 { font-size: 0.75rem; /* 12px */ }
+  h5 { font-size: 0.75rem; /* 12px */ }
+  p, li { font-size: 0.7rem; /* ~11.2px */ }
+  span { font-size: 0.6125rem; /* 9.8px */ }
+  .navbar { font-size: 0.75rem; /* 12px */ }
+  .footer-heading { font-size: 0.875rem !important; /* 14px */ }
+  .footer-body, .footer-body * { font-size: 0.7rem !important; /* ~11.2px */ }
+  .button { font-size: 0.75rem; /* 12px */ }
+  .number { font-size: 5.6rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+/* Multiplier: ~0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.8rem; /* 28.8px */ }
+  h2 { font-size: 1.4rem; /* 22.4px */ }
+  h3 { font-size: 1rem; /* 16px */ }
+  h4 { font-size: 0.85rem; /* 13.6px */ }
+  h5 { font-size: 0.85rem; /* 13.6px */ }
+  p, li { font-size: 0.8rem; /* 12.8px */ }
+  span { font-size: 0.7rem; /* 11.2px */ }
+  .navbar { font-size: 0.85rem; /* 13.6px */ }
+  .footer-heading { font-size: 1rem !important; /* 16px */ }
+  .footer-body, .footer-body * { font-size: 0.8rem !important; /* 12.8px */ }
+  .button { font-size: 0.85rem; /* 13.6px */ }
+  .number { font-size: 6.4rem; }
+}
+
+/* Tablet / Tab Screen (768px - 1025px) */
+/* Multiplier: ~0.9 */
+@media (min-width: 768px) and (max-width: 1025px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.025rem; /* 32.4px */ }
+  h2 { font-size: 1.575rem; /* 25.2px */ }
+  h3 { font-size: 1.125rem; /* 18px */ }
+  h4 { font-size: 0.95625rem; /* 15.3px */ }
+  h5 { font-size: 0.9rem; /* 14.4px */ }
+  p, li { font-size: 0.9rem; /* 14.4px */ }
+  span { font-size: 0.7875rem; /* 12.6px */ }
+  .navbar { font-size: 0.95625rem; /* 15.3px */ }
+  .footer-heading { font-size: 1.125rem !important; /* 18px */ }
+  .footer-body, .footer-body * { font-size: 0.9rem !important; /* 14.4px */ }
+  .button { font-size: 0.95625rem; /* 15.3px */ }
+  .number { font-size: 7.2rem; }
+}
+
+/* Laptop Screen (1026px - 1279px) */
+/* Multiplier: ~0.95 */
+@media (min-width: 1026px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.1375rem; /* 34.2px */ }
+  h2 { font-size: 1.6625rem; /* 26.6px */ }
+  h3 { font-size: 1.1875rem; /* 19px */ }
+  h4 { font-size: 1rem; /* 16px */ }
+  h5 { font-size: 0.95rem; /* 15.2px */ }
+  p, li { font-size: 0.95rem; /* 15.2px */ }
+  span { font-size: 0.83rem; /* 13.3px */ }
+  .navbar { font-size: 1rem; /* 16px */ }
+  .footer-heading { font-size: 1.1875rem !important; /* 19px */ }
+  .footer-body, .footer-body * { font-size: 0.95rem !important; /* 15.2px */ }
+  .button { font-size: 1rem; /* 16px */ }
+  .number { font-size: 7.6rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+  .header-bar { height: 92px !important; }
+  .header-logo { height: 38px !important; width: auto !important; }
+  .header-indicator { height: 6px !important; width: 44px !important; }
+  .header-top, .header-hidden { top: 1.25rem !important; }
+  .hero-section-padding { padding-top: 125px !important; }
+  .why-icon-box { width: 240px !important; height: 180px !important; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+/* Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 3.375rem; /* 54px */ }
+  h2 { font-size: 2.625rem; /* 42px */ }
+  h3 { font-size: 1.875rem; /* 30px */ }
+  h4 { font-size: 1.6rem; /* 25.6px */ }
+  h5 { font-size: 1.5rem; /* 24px */ }
+  p, li { font-size: 1.5rem; /* 24px */ }
+  span { font-size: 1.3125rem; /* 21px */ }
+  .navbar, .navbar *, a.navbar { font-size: 1.5rem !important; }
+  .footer-heading { font-size: 1.875rem !important; /* 30px */ }
+  .footer-body, .footer-body * { font-size: 1.5rem !important; }
+  .button { font-size: 1.5rem; /* 24px */ }
+  .number { font-size: 12rem; }
+  .header-bar { height: 118px !important; }
+  .header-logo { height: 50px !important; width: auto !important; }
+  .header-indicator { height: 8px !important; width: 56px !important; }
+  .header-top, .header-hidden { top: 1.75rem !important; }
+  .hero-section-padding { padding-top: 160px !important; }
+  .why-icon-box { width: 330px !important; height: 250px !important; }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+/* Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.5rem; /* 72px */ }
+  h2 { font-size: 3.5rem; /* 56px */ }
+  h3 { font-size: 2.5rem; /* 40px */ }
+  h4 { font-size: 2.125rem; /* 34px */ }
+  h5 { font-size: 2rem; /* 32px */ }
+  p, li { font-size: 2rem; /* 32px */ }
+  span { font-size: 1.75rem; /* 28px */ }
+  .navbar, .navbar *, a.navbar { font-size: 2rem !important; }
+  .footer-heading { font-size: 2.5rem !important; /* 40px */ }
+  .footer-body, .footer-body * { font-size: 2rem !important; }
+  .button { font-size: 2rem; /* 32px */ }
+  .number { font-size: 16rem; }
+  .header-bar { height: 155px !important; }
+  .header-logo { height: 68px !important; width: auto !important; }
+  .header-indicator { height: 12px !important; width: 75px !important; }
+  .header-top, .header-hidden { top: 2.5rem !important; }
+  .hero-section-padding { padding-top: 210px !important; }
+  .why-icon-box { width: 480px !important; height: 360px !important; }
+}
