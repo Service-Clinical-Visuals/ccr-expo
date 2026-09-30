@@ -15,7 +15,7 @@ import Footer from "./_components/Footer";
 
 export default function RebstockPage() {
   return (
-    <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-foreground)] overflow-x-hidden">
+    <div className="min-h-screen font-secondary bg-[var(--color-background)] text-[var(--color-foreground)] overflow-x-hidden">
       <SmoothAOS />
 
       {/* 1. Header / Logo */}

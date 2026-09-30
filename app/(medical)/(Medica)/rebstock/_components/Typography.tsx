@@ -37,13 +37,19 @@ export default function Typography({
 
   if (variant === "footer-heading") {
     Component = "h3";
-    fontClass = "footer-heading";
+    fontClass = "footer-heading font-primary";
   } else if (variant === "footer-body") {
     Component = "p";
-    fontClass = "footer-body";
+    fontClass = "footer-body font-secondary";
   } else if (variant === "navbar") {
     Component = "span";
-    fontClass = "navbar";
+    fontClass = "navbar font-primary";
+  } else if (["h1", "h2", "h3", "h4"].includes(variant)) {
+    fontClass = "font-primary";
+  } else if (["h5", "h6", "p", "li"].includes(variant)) {
+    fontClass = "font-secondary";
+  } else if (variant === "span") {
+    fontClass = "font-secondary";
   }
 
   const colorClasses = {

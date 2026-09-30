@@ -36,7 +36,7 @@ const Button = ({
     <div
       className={`flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 rounded-none transition-all duration-300 ${variantStyles} ${className}`}
     >
-      <span className="button whitespace-nowrap">{text}</span>
+      <span className="button font-primary whitespace-nowrap">{text}</span>
       {showIcon && (
         <img
           src={arrowImgSrc}

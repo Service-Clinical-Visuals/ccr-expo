@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 @import "aos/dist/aos.css";
 
@@ -18,6 +19,22 @@ body {
 :root {
   --background: #ffffff;
   --foreground: #2a2a2a;
+  --font-primary: var(--font-exo2), "Exo 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-secondary: var(--font-outfit), "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.rebstock-root {
+  --font-primary: var(--font-exo2), "Exo 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-secondary: var(--font-outfit), "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-secondary) !important;
+}
+
+.font-primary {
+  font-family: var(--font-primary) !important;
+}
+
+.font-secondary {
+  font-family: var(--font-secondary) !important;
 }
 
 @theme inline {
@@ -28,8 +45,8 @@ body {
   --color-muted: #4a4a4a;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-primary: var(--font-exo2), ui-sans-serif, system-ui, sans-serif;
-  --font-secondary: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-primary);
+  --font-secondary: var(--font-secondary);
 }
 
 body {
@@ -46,18 +63,18 @@ body {
 }
 
 /* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
-h1 { font-size: 2.25rem; /* 36px */ font-weight: 600 !important; font-family: var(--font-primary); }
-h2 { font-size: 1.75rem; /* 28px */ font-weight: 600 !important; font-family: var(--font-primary); }
-h3 { font-size: 1.25rem; /* 20px */ font-weight: 600; font-family: var(--font-primary); }
-h4 { font-size: 1.0625rem; /* 17px */ font-weight: 700; font-family: var(--font-primary); }
-h5 { font-size: 1rem; /* 16px */ font-weight: 600; font-family: var(--font-primary); }
-p, li { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); }
+h1 { font-size: 2.25rem; /* 36px */ font-weight: 600 !important; font-family: var(--font-primary) !important; }
+h2 { font-size: 1.75rem; /* 28px */ font-weight: 600 !important; font-family: var(--font-primary) !important; }
+h3 { font-size: 1.25rem; /* 20px */ font-weight: 600 !important; font-family: var(--font-primary) !important; }
+h4 { font-size: 1.0625rem; /* 17px */ font-weight: 700 !important; font-family: var(--font-primary) !important; }
+h5 { font-size: 1rem; /* 16px */ font-weight: 600 !important; font-family: var(--font-primary) !important; }
+p, li { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary) !important; }
 span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
-.navbar, .navbar *, a.navbar { font-size: 1rem !important; font-weight: 500; font-family: var(--font-primary); }
-.footer-heading { font-size: 1.375rem !important; /* 22px */ font-weight: 600 !important; font-family: var(--font-primary); }
-.footer-body, .footer-body * { font-size: 1rem !important; font-weight: 400; font-family: var(--font-secondary); }
+.navbar, .navbar *, a.navbar { font-size: 1rem !important; font-weight: 500; font-family: var(--font-primary) !important; }
+.footer-heading { font-size: 1.375rem !important; /* 22px */ font-weight: 600 !important; font-family: var(--font-primary) !important; }
+.footer-body, .footer-body * { font-size: 1rem !important; font-weight: 400; font-family: var(--font-secondary) !important; }
 .button { font-size: 1.0625rem; /* 17px */ font-weight: 500; font-family: var(--font-primary) !important; }
-.number { font-size: 8rem; /* 128px */ font-weight: 700; font-family: var(--font-primary); line-height: 1; }
+.number { font-size: 8rem; /* 128px */ font-weight: 700; font-family: var(--font-primary) !important; line-height: 1; }
 
 /* Header & Hero Scaling */
 .header-bar { height: 72px; }

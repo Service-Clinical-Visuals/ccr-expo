@@ -14,7 +14,7 @@ const exo2 = Exo_2({
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -31,7 +31,7 @@ export default function RebstockLayout({
 }>) {
   return (
     <div
-      className={`${exo2.variable} ${outfit.variable} min-h-screen bg-white antialiased overflow-x-hidden relative w-full`}
+      className={`${exo2.variable} ${outfit.variable} rebstock-root font-secondary min-h-screen bg-white text-[var(--color-foreground)] antialiased overflow-x-hidden relative w-full`}
     >
       <SmoothAOS />
       <VideoProvider website="rebstock">{children}</VideoProvider>
