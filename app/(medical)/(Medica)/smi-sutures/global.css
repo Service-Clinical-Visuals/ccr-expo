@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+@layer base {
+    :root {
+        --primary: #3a5da8;
+        --primary-hover: #2f4d8f;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'Baloo Thambi 2', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    button,
+    .btn-text {
+        font-family: 'Baloo Thambi 2', sans-serif;
+    }
+
+    p,
+    span {
+        font-family: 'Baloo Thambi 2', sans-serif;
+    }
+}
+
+
+section {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.custom-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Font sizes - as requested, use only global.css */
+.custom-container {
+    max-width: 95%;
+}
+
+.header-link {
+    font-size: 17px;
+}
+
+.btn-text {
+    font-size: 17px;
+}
+
+.banner-title {
+    font-size: 30px;
+}
+
+.section-title {
+    font-size: 34px;
+}
+
+.section-text {
+    font-size: 17px;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.card-title {
+    font-size: 22px;
+}
+
+
+/* Responsive Custom Container & Font Sizes */
+
+
+@media (max-width: 480px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+}
+
+/* as per figma */
+
+@media (min-width: 1536px) and (max-width: 1920px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+
+
+/* 2k */
+
+@media (min-width: 2560px) and (max-width: 3800px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 20px;
+    }
+
+    .btn-text {
+        font-size: 20px;
+    }
+
+    .banner-title {
+        font-size: 40px;
+    }
+
+    .section-title {
+        font-size: 38px;
+    }
+
+    .section-text {
+        font-size: 20px;
+    }
+
+    .card-title {
+        font-size: 28px;
+    }
+
+    .card-title {
+        font-size: 26px;
+    }
+
+}
+
+
+
+@media (min-width: 3800px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 28px;
+    }
+
+    .btn-text {
+        font-size: 28px;
+    }
+
+    .banner-title {
+        font-size: 50px;
+    }
+
+    .section-title {
+        font-size: 46px;
+    }
+
+    .section-text {
+        font-size: 28px;
+    }
+
+    .card-title {
+        font-size: 38px;
+    }
+
+    .card-title {
+        font-size: 36px;
+    }
+}
+
+
+/* Products carousel pagination */
+.smi-products-swiper {
+    padding-bottom: 56px !important;
+}
+
+.smi-products-swiper .swiper-pagination {
+    bottom: 8px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.smi-products-swiper .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 0 !important;
+    border-radius: 9999px;
+    background-color: #d1d5db;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.smi-products-swiper .swiper-pagination-bullet-active {
+    width: 40px;
+    background-color: var(--primary);
+}
+
+/* Footer links & small text */
+.footer-link {
+    font-size: 14px;
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .footer-link {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 2560px) and (max-width: 3800px) {
+    .footer-link {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 3800px) {
+    .footer-link {
+        font-size: 26px;
+    }
+}
