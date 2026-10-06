@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #2A2A2A;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-primary: var(--font-outfit), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-outfit), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-primary: #00425E;
+  --color-primary-hover: #003147;
+  --color-secondary: #33363F;
+  --color-secondary-hover: #1e2025;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: #4A4A4A;
+  --color-gray-bg: #F1F1F1;
+  --font-primary: var(--font-outfit), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-outfit), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+html,
+body,
+.katsan-root,
+.katsan-root * {
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-outfit), 'Outfit', sans-serif !important;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 { font-size: 2.5rem; font-weight: 600 !important; font-family: var(--font-primary); line-height: 1.3; }
+h2 { font-size: 2.125rem; font-weight: 600 !important; font-family: var(--font-primary); line-height: 1.35; }
+h3 { font-size: 1.5rem; font-weight: 600; font-family: var(--font-primary); line-height: 1.4; }
+h4 { font-size: 1.375rem; font-weight: 600; font-family: var(--font-primary); line-height: 1.4; }
+p, li { font-size: 1rem; font-weight: 400; font-family: var(--font-primary); line-height: 1.6; }
+span { font-size: 0.875rem; font-family: var(--font-primary); }
+.navbar { font-size: 1rem; font-weight: 500; font-family: var(--font-primary); }
+.footer-heading { font-size: 1.375rem; font-weight: 600; font-family: var(--font-primary); }
+.footer-body { font-size: 1rem; font-weight: 400; font-family: var(--font-primary); }
+
+.button,
+.katsan-btn-pill .button,
+.katsan-main-btn-text,
+span.katsan-main-btn-text {
+  font-size: 1.0625rem !important;
+  font-weight: 600 !important;
+  font-family: var(--font-primary) !important;
+  line-height: 1 !important;
+}
+
+.katsan-btn-pill {
+  height: 50px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+.katsan-btn-circle {
+  width: 50px;
+  height: 50px;
+}
+.katsan-btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.katsan-btn-compact .katsan-btn-pill {
+  height: 40px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.katsan-btn-compact .katsan-btn-circle {
+  width: 40px !important;
+  height: 40px !important;
+}
+.katsan-btn-compact .katsan-btn-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+.katsan-btn-compact .button,
+.katsan-compact-btn-text,
+span.katsan-compact-btn-text {
+  font-size: 0.9375rem !important;
+  font-weight: 600 !important;
+  font-family: var(--font-primary) !important;
+  line-height: 1 !important;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+h1 > span, h2 > span, h3 > span, h4 > span, h5 > span, h6 > span,
+.font-semibold span:not(.button):not(.katsan-main-btn-text):not(.katsan-compact-btn-text) {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  font-family: inherit !important;
+  line-height: inherit !important;
+}
+
+.custom-pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 1.5rem; }
+.custom-pagination .swiper-pagination-bullet { width: 10px !important; height: 10px !important; border-radius: 50% !important; background-color: #D1D5DB !important; opacity: 1 !important; transition: all 0.3s; margin: 0 !important; }
+.custom-pagination .swiper-pagination-bullet-active { width: 14px !important; height: 14px !important; background-color: var(--color-primary) !important; }
+
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.4875rem; }
+  h3 { font-size: 1.05rem; }
+  h4 { font-size: 0.9625rem; }
+  p, li { font-size: 0.8125rem; }
+  span { font-size: 0.6125rem; }
+  .navbar { font-size: 0.8125rem; }
+  .footer-heading { font-size: 0.9625rem; }
+  .footer-body { font-size: 0.75rem; }
+  .button, .katsan-main-btn-text, span.katsan-main-btn-text { font-size: 0.75rem !important; }
+  .number { font-size: 5.6rem; }
+  .katsan-btn-pill { height: 38px; padding-left: 16px; padding-right: 16px; }
+  .katsan-btn-circle { width: 38px; height: 38px; }
+  .katsan-btn-icon { width: 14px; height: 14px; }
+  .katsan-btn-compact .katsan-btn-pill { height: 32px !important; padding-left: 14px !important; padding-right: 14px !important; }
+  .katsan-btn-compact .katsan-btn-circle { width: 32px !important; height: 32px !important; }
+  .katsan-btn-compact .katsan-btn-icon { width: 12px !important; height: 12px !important; }
+  .katsan-btn-compact .button, .katsan-compact-btn-text, span.katsan-compact-btn-text { font-size: 0.7rem !important; }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.7rem; }
+  h3 { font-size: 1.2rem; }
+  h4 { font-size: 1.1rem; }
+  p, li { font-size: 0.875rem; }
+  span { font-size: 0.7rem; }
+  .navbar { font-size: 0.875rem; }
+  .footer-heading { font-size: 1.1rem; }
+  .footer-body { font-size: 0.85rem; }
+  .button, .katsan-main-btn-text, span.katsan-main-btn-text { font-size: 0.85rem !important; }
+  .number { font-size: 6.4rem; }
+  .katsan-btn-pill { height: 42px; padding-left: 18px; padding-right: 18px; }
+  .katsan-btn-circle { width: 42px; height: 42px; }
+  .katsan-btn-icon { width: 15px; height: 15px; }
+  .katsan-btn-compact .katsan-btn-pill { height: 34px !important; padding-left: 15px !important; padding-right: 15px !important; }
+  .katsan-btn-compact .katsan-btn-circle { width: 34px !important; height: 34px !important; }
+  .katsan-btn-compact .katsan-btn-icon { width: 13px !important; height: 13px !important; }
+  .katsan-btn-compact .button, .katsan-compact-btn-text, span.katsan-compact-btn-text { font-size: 0.75rem !important; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.9125rem; }
+  h3 { font-size: 1.35rem; }
+  h4 { font-size: 1.2375rem; }
+  p, li { font-size: 0.9375rem; }
+  span { font-size: 0.7875rem; }
+  .navbar { font-size: 0.9375rem; }
+  .footer-heading { font-size: 1.2375rem; }
+  .footer-body { font-size: 0.95625rem; }
+  .button, .katsan-main-btn-text, span.katsan-main-btn-text { font-size: 0.95625rem !important; }
+  .number { font-size: 7.2rem; }
+  .katsan-btn-pill { height: 46px; padding-left: 22px; padding-right: 22px; }
+  .katsan-btn-circle { width: 46px; height: 46px; }
+  .katsan-btn-icon { width: 18px; height: 18px; }
+  .katsan-btn-compact .katsan-btn-pill { height: 38px !important; padding-left: 18px !important; padding-right: 18px !important; }
+  .katsan-btn-compact .katsan-btn-circle { width: 38px !important; height: 38px !important; }
+  .katsan-btn-compact .katsan-btn-icon { width: 15px !important; height: 15px !important; }
+  .katsan-btn-compact .button, .katsan-compact-btn-text, span.katsan-compact-btn-text { font-size: 0.85rem !important; }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.375rem; }
+  h2 { font-size: 2.01875rem; }
+  h3 { font-size: 1.425rem; }
+  h4 { font-size: 1.30625rem; }
+  p, li { font-size: 0.975rem; }
+  span { font-size: 0.83rem; }
+  .navbar { font-size: 0.975rem; }
+  .footer-heading { font-size: 1.30625rem; }
+  .footer-body { font-size: 1rem; }
+  .button, .katsan-main-btn-text, span.katsan-main-btn-text { font-size: 1rem !important; }
+  .number { font-size: 7.6rem; }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+  .button, .katsan-main-btn-text, span.katsan-main-btn-text { font-size: 1.125rem !important; }
+  .katsan-btn-pill:not(.katsan-btn-compact *) { height: 52px; padding-left: 28px; padding-right: 28px; }
+  .katsan-btn-circle:not(.katsan-btn-compact *) { width: 52px; height: 52px; }
+  .katsan-btn-icon:not(.katsan-btn-compact *) { width: 21px; height: 21px; }
+}
+
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+  .button, .katsan-main-btn-text, span.katsan-main-btn-text { font-size: 1.25rem !important; }
+  .katsan-btn-pill:not(.katsan-btn-compact *) { height: 56px; padding-left: 30px; padding-right: 30px; }
+  .katsan-btn-circle:not(.katsan-btn-compact *) { width: 56px; height: 56px; }
+  .katsan-btn-icon:not(.katsan-btn-compact *) { width: 23px; height: 23px; }
+}
+
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+  .button, .katsan-main-btn-text, span.katsan-main-btn-text { font-size: 1.55rem !important; }
+  .katsan-btn-pill:not(.katsan-btn-compact *) { height: 64px; padding-left: 36px; padding-right: 36px; }
+  .katsan-btn-circle:not(.katsan-btn-compact *) { width: 64px; height: 64px; }
+  .katsan-btn-icon:not(.katsan-btn-compact *) { width: 26px; height: 26px; }
+  .katsan-btn-compact .katsan-btn-pill { height: 46px !important; padding-left: 24px !important; padding-right: 24px !important; }
+  .katsan-btn-compact .katsan-btn-circle { width: 46px !important; height: 46px !important; }
+  .katsan-btn-compact .katsan-btn-icon { width: 18px !important; height: 18px !important; }
+  .katsan-btn-compact .button, .katsan-compact-btn-text, span.katsan-compact-btn-text { font-size: 1rem !important; }
+}
+
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.75rem; }
+  h2 { font-size: 3.1875rem; }
+  h3 { font-size: 2.25rem; }
+  h4 { font-size: 2.0625rem; }
+  p, li { font-size: 1.5rem; }
+  span { font-size: 1.3125rem; }
+  .navbar { font-size: 1.5rem; }
+  .footer-heading { font-size: 2.0625rem; }
+  .footer-body { font-size: 1.5rem; }
+  .button, .katsan-main-btn-text, span.katsan-main-btn-text { font-size: 2.25rem !important; }
+  .number { font-size: 12rem; }
+  .custom-pagination .swiper-pagination-bullet { width: 18px !important; height: 18px !important; }
+  .custom-pagination .swiper-pagination-bullet-active { width: 24px !important; height: 24px !important; }
+  .katsan-btn-pill:not(.katsan-btn-compact *) { height: 86px; padding-left: 48px; padding-right: 48px; }
+  .katsan-btn-circle:not(.katsan-btn-compact *) { width: 86px; height: 86px; }
+  .katsan-btn-icon:not(.katsan-btn-compact *) { width: 34px; height: 34px; }
+  .katsan-btn-compact .katsan-btn-pill { height: 58px !important; padding-left: 30px !important; padding-right: 30px !important; }
+  .katsan-btn-compact .katsan-btn-circle { width: 58px !important; height: 58px !important; }
+  .katsan-btn-compact .katsan-btn-icon { width: 24px !important; height: 24px !important; }
+  .katsan-btn-compact .button, .katsan-compact-btn-text, span.katsan-compact-btn-text { font-size: 1.1875rem !important; }
+}
+
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 5rem; }
+  h2 { font-size: 4.25rem; }
+  h3 { font-size: 3rem; }
+  h4 { font-size: 2.75rem; }
+  p, li { font-size: 2rem; }
+  span { font-size: 1.75rem; }
+  .navbar { font-size: 2rem; }
+  .footer-heading { font-size: 2.75rem; }
+  .footer-body { font-size: 2rem; }
+  .button, .katsan-main-btn-text, span.katsan-main-btn-text { font-size: 3rem !important; }
+  .number { font-size: 16rem; }
+  .custom-pagination .swiper-pagination-bullet { width: 26px !important; height: 26px !important; }
+  .custom-pagination .swiper-pagination-bullet-active { width: 36px !important; height: 36px !important; }
+  .katsan-btn-pill:not(.katsan-btn-compact *) { height: 112px; padding-left: 64px; padding-right: 64px; }
+  .katsan-btn-circle:not(.katsan-btn-compact *) { width: 112px; height: 112px; }
+  .katsan-btn-icon:not(.katsan-btn-compact *) { width: 44px; height: 44px; }
+  .katsan-btn-compact .katsan-btn-pill { height: 78px !important; padding-left: 42px !important; padding-right: 42px !important; }
+  .katsan-btn-compact .katsan-btn-circle { width: 78px !important; height: 78px !important; }
+  .katsan-btn-compact .katsan-btn-icon { width: 32px !important; height: 32px !important; }
+  .katsan-btn-compact .button, .katsan-compact-btn-text, span.katsan-compact-btn-text { font-size: 1.45rem !important; }
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+h1 > span, h2 > span, h3 > span, h4 > span, h5 > span, h6 > span,
+[class*="text-"] span:not(.button):not(.katsan-main-btn-text):not(.katsan-compact-btn-text),
+.font-semibold span:not(.button):not(.katsan-main-btn-text):not(.katsan-compact-btn-text) {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  font-family: inherit !important;
+  line-height: inherit !important;
+}
