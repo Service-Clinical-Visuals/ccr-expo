@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+/* Custom breakpoints (rem, so Tailwind orders them correctly after sm/md/xl/2xl).
+   desk: 1025px+ -> desktop layout (1024px iPad Pro keeps the tablet layout)
+   2k:   2560px+ -> 2K / 4K screens */
+@theme {
+    --breakpoint-desk: 64.0625rem;
+    --breakpoint-2k: 160rem;
+}
+
+@layer base {
+    :root {
+        --primary: #deeefa;
+        --secondary: #0071ce;
+        --secondary-hover: #005ca8;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    button,
+    .btn-text,
+    .font-heading {
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    p,
+    span,
+    .font-body {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Keep Exo 2 for text spans nested inside buttons/links */
+    button span,
+    a span.btn-text {
+        font-family: 'Exo 2', sans-serif;
+    }
+}
+
+section {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+/* Custom container */
+.custom-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+/* Custom grid */
+.custom-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+/* Font sizes - use only in global.css (default: 1536px - 1920px, as per figma) */
+.header-link {
+    font-size: 16px;
+}
+
+.btn-text {
+    font-size: 16px;
+}
+
+.banner-title {
+    font-size: 32px;
+}
+
+.section-title {
+    font-size: 32px;
+}
+
+.section-text {
+    font-size: 16px;
+}
+
+.card-title1 {
+    font-size: 24px;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+/* Responsive Custom Container, Grid & Font Sizes */
+
+@media (max-width: 480px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 14px;
+    }
+
+    .btn-text {
+        font-size: 14px;
+    }
+
+    .banner-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-text {
+        font-size: 14px;
+    }
+
+    .card-title1 {
+        font-size: 20px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 14px;
+    }
+
+    .btn-text {
+        font-size: 14px;
+    }
+
+    .banner-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-text {
+        font-size: 14px;
+    }
+
+    .card-title1 {
+        font-size: 20px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 16px;
+    }
+
+    .btn-text {
+        font-size: 16px;
+    }
+
+    .banner-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .card-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 16px;
+    }
+
+    .btn-text {
+        font-size: 16px;
+    }
+
+    .banner-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .card-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 16px;
+    }
+
+    .btn-text {
+        font-size: 16px;
+    }
+
+    .banner-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .card-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+}
+
+/* as per figma */
+
+@media (min-width: 1536px) and (max-width: 1920px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 16px;
+    }
+
+    .btn-text {
+        font-size: 16px;
+    }
+
+    .banner-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .card-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 16px;
+    }
+
+    .btn-text {
+        font-size: 16px;
+    }
+
+    .banner-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .card-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+}
+
+/* 2k */
+
+@media (min-width: 2560px) and (max-width: 3800px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 20px;
+    }
+
+    .btn-text {
+        font-size: 20px;
+    }
+
+    .banner-title {
+        font-size: 36px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .section-text {
+        font-size: 20px;
+    }
+
+    .card-title1 {
+        font-size: 28px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+}
+
+/* 4k */
+
+@media (min-width: 3800px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 30px;
+    }
+
+    .btn-text {
+        font-size: 30px;
+    }
+
+    .banner-title {
+        font-size: 46px;
+    }
+
+    .section-title {
+        font-size: 46px;
+    }
+
+    .section-text {
+        font-size: 30px;
+    }
+
+    .card-title1 {
+        font-size: 38px;
+    }
+
+    .card-title {
+        font-size: 34px;
+    }
+}
+
+/* Section label (eyebrow text above section titles) */
+.section-label {
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .section-label {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1535px) {
+    .section-label {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .section-label {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 2560px) and (max-width: 3800px) {
+    .section-label {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 3800px) {
+    .section-label {
+        font-size: 30px;
+    }
+}
+
+/* Item title (spec / list item headings) & small text (badges, captions) */
+.item-title {
+    font-size: 18px;
+}
+
+.small-text {
+    font-size: 15px;
+}
+
+@media (max-width: 767px) {
+    .item-title {
+        font-size: 16px;
+    }
+
+    .small-text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1535px) {
+    .item-title {
+        font-size: 17px;
+    }
+
+    .small-text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .item-title {
+        font-size: 20px;
+    }
+
+    .small-text {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 2560px) and (max-width: 3800px) {
+    .item-title {
+        font-size: 24px;
+    }
+
+    .small-text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 3800px) {
+    .item-title {
+        font-size: 32px;
+    }
+
+    .small-text {
+        font-size: 27px;
+    }
+}
+
+/* Product cards entrance animation (replays on tab change) */
+@keyframes lux-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lux-fade-up {
+    animation: lux-fade-up 0.6s ease-out both;
+}
+
+/* Notched product card: bottom-right corner is cut out to hold the arrow button */
+.notch-card {
+    --notch: 60px;
+    --notch-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpath d='M0 0H60A12 12 0 0 1 48 12H24A12 12 0 0 0 12 24V48A12 12 0 0 1 0 60Z'/%3E%3C/svg%3E");
+    -webkit-mask:
+        linear-gradient(#000 0 0) top left / 100% calc(100% - var(--notch)) no-repeat,
+        linear-gradient(#000 0 0) top left / calc(100% - var(--notch)) 100% no-repeat,
+        var(--notch-svg) bottom right / var(--notch) var(--notch) no-repeat;
+    mask:
+        linear-gradient(#000 0 0) top left / 100% calc(100% - var(--notch)) no-repeat,
+        linear-gradient(#000 0 0) top left / calc(100% - var(--notch)) 100% no-repeat,
+        var(--notch-svg) bottom right / var(--notch) var(--notch) no-repeat;
+}
+
+.notch-card-shadow {
+    filter: drop-shadow(0 0 1px rgba(15, 40, 80, 0.18)) drop-shadow(0 6px 14px rgba(15, 40, 80, 0.10));
+    transition: filter 0.3s ease;
+}
+
+.group:hover .notch-card-shadow {
+    filter: drop-shadow(0 0 1px rgba(0, 113, 206, 0.30)) drop-shadow(0 10px 22px rgba(0, 113, 206, 0.18));
+}
+
+/* Button fills the notch, leaving an 8px gap from the card edges */
+.notch-card-btn {
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 2560px) {
+    .notch-card {
+        --notch: 90px;
+    }
+
+    .notch-card-btn {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Caption text (feature card descriptions) */
+.caption-text {
+    font-size: 14px;
+}
+
+@media (max-width: 1535px) {
+    .caption-text {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .caption-text {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 2560px) and (max-width: 3800px) {
+    .caption-text {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 3800px) {
+    .caption-text {
+        font-size: 25px;
+    }
+}
