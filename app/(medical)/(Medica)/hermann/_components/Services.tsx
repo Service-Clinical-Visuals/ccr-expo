@@ -13,7 +13,7 @@ export default function Services() {
       {/* Background Image - Clean and natural */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/medical/hermann/bg.png"
+          src="/medical/hermann/bg.webp"
           alt="Hermann Production & Services Workshop"
           className="w-full h-full object-cover object-center"
         />

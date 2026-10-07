@@ -13,7 +13,7 @@ export default function ExperienceIntra() {
       {/* Background Image with Dark Gradient Tint */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/medical/intra-special/bg.png"
+          src="/medical/intra-special/bg.webp"
           alt="Experience INTRA"
           className="w-full h-full object-cover object-center"
         />

@@ -10,12 +10,12 @@ import "swiper/css";
 import Typography from "./Typography";
 
 const brochures = [
-  { title: "Tifix® AC Hooks & Clavicula Plates", img: "/medical/innovations/b1.png", href: "#" },
-  { title: "CubeFix Mini-Fixator", img: "/medical/innovations/b2.png", href: "#" },
-  { title: "Tifix® Distal Tibia Plates", img: "/medical/innovations/b3.png", href: "#" },
-  { title: "Dynamic Finger Joint Distractor", img: "/medical/innovations/b4.png", href: "#" },
-  { title: "Tifix® Humeral Head & Proximal Humeral Stem", img: "/medical/innovations/b5.png", href: "#" },
-  { title: "Tifix® Fibula", img: "/medical/innovations/b6.png", href: "#" },
+  { title: "Tifix® AC Hooks & Clavicula Plates", img: "/medical/innovations/b1.webp", href: "#" },
+  { title: "CubeFix Mini-Fixator", img: "/medical/innovations/b2.webp", href: "#" },
+  { title: "Tifix® Distal Tibia Plates", img: "/medical/innovations/b3.webp", href: "#" },
+  { title: "Dynamic Finger Joint Distractor", img: "/medical/innovations/b4.webp", href: "#" },
+  { title: "Tifix® Humeral Head & Proximal Humeral Stem", img: "/medical/innovations/b5.webp", href: "#" },
+  { title: "Tifix® Fibula", img: "/medical/innovations/b6.webp", href: "#" },
 ];
 
 // Swiper loop needs at least 2x slidesPerView slides, so the list is duplicated

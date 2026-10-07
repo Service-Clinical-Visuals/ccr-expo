@@ -56,11 +56,11 @@ export default function GermanProject() {
           >
             <div className="aspect-[821/585] w-full relative">
               <img
-                src="/medical/biotech/images/gm.jpg"
+                src="/medical/biotech/images/gm.webp"
                 alt="New Biotech German Project Factory in Rheinbrohl"
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  e.currentTarget.src = "/medical/biotech/images/about.jpg";
+                  e.currentTarget.src = "/medical/biotech/images/about.webp";
                 }}
               />
             </div>

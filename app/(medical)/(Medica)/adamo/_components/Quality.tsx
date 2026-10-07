@@ -9,7 +9,7 @@ const Quality = () => {
     <section id="quality" className="relative w-full py-20 lg:py-32 overflow-hidden bg-black">
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        <img src="/adamo/bg.png" alt="Quality Policy" className="w-full h-full object-cover object-right" />
+        <img src="/adamo/bg.webp" alt="Quality Policy" className="w-full h-full object-cover object-right" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#252525] via-[#252525]/15 to-transparent w-full lg:w-[70%]"></div>
       </div>
 

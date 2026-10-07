@@ -27,7 +27,7 @@ const AboutUs = () => {
         {/* Full Width Image */}
         <div className="w-full mt-10 flex justify-center" data-aos="fade-up" data-aos-delay="100">
           <img 
-            src="/medical/innovations/section2.png" 
+            src="/medical/innovations/section2.webp" 
             alt="Innovations Vision and Facilities" 
             className="w-full h-auto object-contain" 
           />

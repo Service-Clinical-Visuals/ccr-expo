@@ -8,21 +8,21 @@ const CATEGORIES = ["Lung Ventilators", "Accessories", "Anaesthesia"];
 
 const PRODUCTS = {
   "Lung Ventilators": [
-    { image: "/medical/siare/p1.png", title: "Aria 150" },
-    { image: "/medical/siare/p2.png", title: "Aria 150" },
-    { image: "/medical/siare/p3.png", title: "Aria 104" },
-    { image: "/medical/siare/p4.png", title: "ARIA 104" }
+    { image: "/medical/siare/p1.webp", title: "Aria 150" },
+    { image: "/medical/siare/p2.webp", title: "Aria 150" },
+    { image: "/medical/siare/p3.webp", title: "Aria 104" },
+    { image: "/medical/siare/p4.webp", title: "ARIA 104" }
   ],
   "Accessories": [
-    { image: "/medical/siare/p5.png", title: "Turbine Filter Kit" },
-    { image: "/medical/siare/p6.png", title: "Sonic 2" },
-    { image: "/medical/siare/p7.png", title: "PneuTest 8" },
-    { image: "/medical/siare/p8.png", title: "Expiratory valve and\nFlow-sensor" }
+    { image: "/medical/siare/p5.webp", title: "Turbine Filter Kit" },
+    { image: "/medical/siare/p6.webp", title: "Sonic 2" },
+    { image: "/medical/siare/p7.webp", title: "PneuTest 8" },
+    { image: "/medical/siare/p8.webp", title: "Expiratory valve and\nFlow-sensor" }
   ],
   "Anaesthesia": [
-    { image: "/medical/siare/p9.png", title: "Morpheus M" },
-    { image: "/medical/siare/p10.png", title: "Morpheus E" },
-    { image: "/medical/siare/p11.png", title: "Morpheus ND Hybrid" }
+    { image: "/medical/siare/p9.webp", title: "Morpheus M" },
+    { image: "/medical/siare/p10.webp", title: "Morpheus E" },
+    { image: "/medical/siare/p11.webp", title: "Morpheus ND Hybrid" }
   ]
 };
 

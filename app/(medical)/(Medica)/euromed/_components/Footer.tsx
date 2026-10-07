@@ -24,22 +24,22 @@ const FOOTER_LINKS = {
     {
       name: "LinkedIn",
       href: "",
-      icon: "/medical/euromed/in.png",
+      icon: "/medical/euromed/in.webp",
     },
     {
       name: "Instagram",
       href: "",
-      icon: "/medical/euromed/ins.png",
+      icon: "/medical/euromed/ins.webp",
     },
     {
       name: "Facebook",
       href: "",
-      icon: "/medical/euromed/fb.png",
+      icon: "/medical/euromed/fb.webp",
     },
     {
       name: "YouTube",
       href: "",
-      icon: "/medical/euromed/u.png",
+      icon: "/medical/euromed/u.webp",
     },
   ],
 };
@@ -59,7 +59,7 @@ export default function Footer() {
             <Link href="/euromed" className="inline-block group focus:outline-none">
               <div className="relativeh-10 sm:h-15 md:h-20 xl:h-20 flex items-center">
                 <img
-                  src="/medical/euromed/footerlogo.png"
+                  src="/medical/euromed/footerlogo.webp"
                   alt="Euromed - The Trusted Partner"
                   className="h-full w-auto object-contain brightness-0 invert"
                 />

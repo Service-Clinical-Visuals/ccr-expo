@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Column 1: Logo & Description */}
           <div className="sm:col-span-2 lg:col-span-4 flex flex-col gap-6 2xl:gap-8 items-start">
             <img
-              src="/medical/hydrafacial/logo1.png"
+              src="/medical/hydrafacial/logo1.webp"
               alt="Hydrafacial"
               className="h-10 2xl:h-14 w-auto object-contain object-left brightness-0 invert"
             />

@@ -80,7 +80,7 @@ export default function QualityManagement() {
         >
           <div className="w-full aspect-[16/10.2] rounded-[24px] sm:rounded-[30px] overflow-hidden shadow-xl border border-black/5 relative group">
             <img
-              src="/medical/katsan/quality.jpg"
+              src="/medical/katsan/quality.webp"
               alt="Katsan Medical Devices Team and Quality Management Celebration"
               className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-102"
               style={{ objectPosition: "top" }}

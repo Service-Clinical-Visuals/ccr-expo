@@ -90,7 +90,7 @@ export default function Header() {
           >
             <div className="relative h-10 sm:h-12 md:h-14 min-[3800px]:h-25 flex items-center">
               <img
-                src="/medical/surgival/logo.png"
+                src="/medical/surgival/logo.webp"
                 alt="Surgival"
                 className="h-full w-auto object-contain transition-opacity group-hover:opacity-90"
               />

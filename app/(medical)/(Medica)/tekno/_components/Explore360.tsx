@@ -47,19 +47,19 @@ export default function Explore360() {
 
             <div className="grid grid-cols-4 gap-2 mb-10">
               <div className="flex flex-col items-center text-center gap-3">
-                <img src="/medical/tekno/icon1.png" alt="High-Quality Optics" className="w-auto h-auto object-contain" />
+                <img src="/medical/tekno/icon1.webp" alt="High-Quality Optics" className="w-auto h-auto object-contain" />
                 <span className="text-[#FFFFFF] section-text font-outfit">High-Quality<br />Optics</span>
               </div>
               <div className="flex flex-col items-center text-center gap-3">
-                <img src="/medical/tekno/icon2.png" alt="Precision Engineering" className="w-auto h-auto object-contain" />
+                <img src="/medical/tekno/icon2.webp" alt="Precision Engineering" className="w-auto h-auto object-contain" />
                 <span className="text-[#FFFFFF] section-text font-outfit">Precision<br />Engineering</span>
               </div>
               <div className="flex flex-col items-center text-center gap-3">
-                <img src="/medical/tekno/icon3.png" alt="Robust Construction" className="w-auto h-auto object-contain" />
+                <img src="/medical/tekno/icon3.webp" alt="Robust Construction" className="w-auto h-auto object-contain" />
                 <span className="text-[#FFFFFF] section-text font-outfit">Robust<br />Construction</span>
               </div>
               <div className="flex flex-col items-center text-center gap-3">
-                <img src="/medical/tekno/icon4.png" alt="Precision Engineering" className="w-auto h-auto object-contain" />
+                <img src="/medical/tekno/icon4.webp" alt="Precision Engineering" className="w-auto h-auto object-contain" />
                 <span className="text-[#FFFFFF] section-text font-outfit">Precision<br />Engineering</span>
               </div>
             </div>

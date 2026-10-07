@@ -66,7 +66,7 @@ export default function InnovationAndTradition() {
             <div className="relative z-10 mt-8 xl:mt-0 ml-auto mr-4 sm:mr-8 xl:mr-12">
               {/* Top Right Purple Round */}
               <img
-                src="/medical/tasarimmed/about2.png"
+                src="/medical/tasarimmed/about2.webp"
                 alt=""
                 className="absolute -top-[35%] -right-[15%] object-contain -z-10 opacity-60"
                 aria-hidden="true"
@@ -74,7 +74,7 @@ export default function InnovationAndTradition() {
 
               {/* Bottom Left Purple Round */}
               <img
-                src="/medical/tasarimmed/about2.png"
+                src="/medical/tasarimmed/about2.webp"
                 alt=""
                 className="absolute -bottom-[25%] -left-[12%] object-contain -z-10 opacity-70"
                 aria-hidden="true"
@@ -82,7 +82,7 @@ export default function InnovationAndTradition() {
 
               {/* Main Image */}
               <img
-                src="/medical/tasarimmed/about.png"
+                src="/medical/tasarimmed/about.webp"
                 alt="Tasarimmed Medical Devices Surgery"
                 className="w-full h-auto object-cover  relative z-0 "
               />

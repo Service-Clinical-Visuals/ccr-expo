@@ -18,7 +18,7 @@ export default function Footer() {
             <Link href="#home" className="inline-block">
               <div className="bg-white px-5 py-3.5 sm:px-6 sm:py-4 min-[2000px]:px-10 min-[2000px]:py-6 min-[2500px]:px-14 min-[2500px]:py-8 min-[3800px]:px-20 min-[3800px]:py-10 rounded-none inline-block shadow-sm">
                 <img
-                  src="/medical/emed/logo.png"
+                  src="/medical/emed/logo.webp"
                   alt="EMED"
                   className="footer-logo-img h-10 sm:h-12 md:h-13 min-[2000px]:h-20 min-[2500px]:h-28 min-[3800px]:h-40 w-auto object-contain select-none transition-transform"
                 />

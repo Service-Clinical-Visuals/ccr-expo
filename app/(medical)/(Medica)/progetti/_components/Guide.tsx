@@ -34,7 +34,7 @@ const Guide = () => {
               <div
                 className="absolute inset-0 z-0 opacity-40 mix-blend-overlay"
                 style={{
-                  backgroundImage: "url('/medical/progetti/bg3.png')",
+                  backgroundImage: "url('/medical/progetti/bg3.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -54,7 +54,7 @@ const Guide = () => {
               <div className="md:col-span-7 relative z-10 w-full flex justify-center">
                 <div className="bg-white rounded-xl min-[3800px]:rounded-[2rem] p-6 min-[3800px]:p-12 shadow-2xl w-full aspect-[435/354] flex items-center justify-center transform transition-transform hover:scale-105 duration-300">
                   <img
-                    src="/medical/progetti/section3.png"
+                    src="/medical/progetti/section3.webp"
                     alt="AED Device"
                     className="w-full h-full object-contain"
                   />

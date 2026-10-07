@@ -6,29 +6,29 @@ import Typography from "./Typography";
 
 export default function ProductCategories() {
   // Correct image mapping matching Figma prototype:
-  // 1. Urology -> p3.png (scope with angled eyepiece in center)
-  // 2. Gynaecology -> p2.png (horizontal scopes with red ring)
-  // 3. Laparoscopy -> p1.png (instruments with scissors at top left)
-  // 4. Arthroscopy -> p4.png (instruments with ring handles & yellow component)
+  // 1. Urology -> p3.webp (scope with angled eyepiece in center)
+  // 2. Gynaecology -> p2.webp (horizontal scopes with red ring)
+  // 3. Laparoscopy -> p1.webp (instruments with scissors at top left)
+  // 4. Arthroscopy -> p4.webp (instruments with ring handles & yellow component)
   const categories = [
     {
       title: "Urology",
-      image: "/medical/rz-medizintechnik/p3.png",
+      image: "/medical/rz-medizintechnik/p3.webp",
       href: "#products",
     },
     {
       title: "Gynaecology",
-      image: "/medical/rz-medizintechnik/p2.png",
+      image: "/medical/rz-medizintechnik/p2.webp",
       href: "#products",
     },
     {
       title: "Laparoscopy",
-      image: "/medical/rz-medizintechnik/p1.png",
+      image: "/medical/rz-medizintechnik/p1.webp",
       href: "#products",
     },
     {
       title: "Arthroscopy",
-      image: "/medical/rz-medizintechnik/p4.png",
+      image: "/medical/rz-medizintechnik/p4.webp",
       href: "#products",
     },
   ];

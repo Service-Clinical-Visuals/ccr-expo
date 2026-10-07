@@ -40,7 +40,7 @@ const groups: ProductGroup[] = [
         description:
           "DLR Medical's short-term temporary hemodialysis catheter provides fast and safe venous access for patients requiring emergency hemodialysis.",
         tags: ["Dual Lumen", "Straight / Pre-Curved", "Thermosensitive PU"],
-        image: "/medical/dlr-meda/p1.png",
+        image: "/medical/dlr-meda/p1.webp",
       },
       {
         id: 2,
@@ -48,7 +48,7 @@ const groups: ProductGroup[] = [
         description:
           "The Split Tip Hemodialysis Catheter is designed to provide reliable and high-performance vascular access in long-term hemodialysis treatments.",
         tags: ["Step-Tip Pediatric", "6.5 Fr – 10.0 Fr", "Dacron Cuff"],
-        image: "/medical/dlr-meda/p2.png",
+        image: "/medical/dlr-meda/p2.webp",
       },
       {
         id: 3,
@@ -56,7 +56,7 @@ const groups: ProductGroup[] = [
         description:
           "The Long-Term Pediatric Step-Tip Hemodialysis Catheter is designed with the delicate vascular structure and long-term treatment needs of pediatric patients in mind.",
         tags: ["Flow > 450 mL/min", "Step-Tip Geometry", "Carbothane™ Resin"],
-        image: "/medical/dlr-meda/p3.png",
+        image: "/medical/dlr-meda/p3.webp",
       },
       {
         id: 4,
@@ -64,7 +64,7 @@ const groups: ProductGroup[] = [
         description:
           "The OPTIMA Step Tip Tunneled Hemodialysis Catheter is designed to provide safe and effective vascular access for patients requiring long-term hemodialysis treatment.",
         tags: ["Step-Tip Geometry", "Flow > 450 mL/min", "Carbothane™ Resin"],
-        image: "/medical/dlr-meda/p4.png",
+        image: "/medical/dlr-meda/p4.webp",
       },
       {
         id: 5,
@@ -72,7 +72,7 @@ const groups: ProductGroup[] = [
         description:
           "DLR Medical's short-term temporary hemodialysis catheter provides fast and safe venous access for patients requiring emergency hemodialysis.",
         tags: ["Flow > 450 mL/min", "Step-Tip Geometry", "Carbothane™ Resin"],
-        image: "/medical/dlr-meda/p5.png",
+        image: "/medical/dlr-meda/p5.webp",
       },
     ],
   },
@@ -88,7 +88,7 @@ const groups: ProductGroup[] = [
         description:
           "DLR Medical Double-J ureteral stent is a reliable urological implant solution used to treat ureteral strictures and blockages.",
         tags: ["Fast Clamping", "Polyurethane Body", "Kink-Resistant"],
-        image: "/medical/dlr-meda/p11.png",
+        image: "/medical/dlr-meda/p11.webp",
       },
       {
         id: 12,
@@ -96,7 +96,7 @@ const groups: ProductGroup[] = [
         description:
           "This product is designed to provide temporary internal drainage from the ureteropelvic junction to the bladder. The stent material has been specially developed for long-term indwelling use.",
         tags: ["Low Recirculation", "Split-Tip Geometry", "Flow > 450 mL/min"],
-        image: "/medical/dlr-meda/p12.png",
+        image: "/medical/dlr-meda/p12.webp",
       },
     ],
   },

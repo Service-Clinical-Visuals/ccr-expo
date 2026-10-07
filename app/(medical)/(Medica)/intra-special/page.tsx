@@ -39,7 +39,7 @@ export default function IntraSpecialPage() {
         {/* 8. Versatile Venous Access Section (4 Feature Bullets + 02 Video) */}
         <VersatileVenousAccess />
 
-        {/* 9. Experience INTRA (CTA Banner with bg.png) */}
+        {/* 9. Experience INTRA (CTA Banner with bg.webp) */}
         <ExperienceIntra />
       </main>
 

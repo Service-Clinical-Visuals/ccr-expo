@@ -16,19 +16,19 @@ const EVENTS: EventItem[] = [
     title: "MEDICA 2024",
     date: "11/11/2024",
     location: "Messe Düsseldorf",
-    image: "/medical/lux-sutures/medicalogo.png",
+    image: "/medical/lux-sutures/medicalogo.webp",
   },
   {
     title: "MEDICA 2023",
     date: "13/11/2023",
     location: "Messe Düsseldorf",
-    image: "/medical/lux-sutures/medicalogo.png",
+    image: "/medical/lux-sutures/medicalogo.webp",
   },
   {
     title: "MEDICA 2021",
     date: "15/11/2021",
     location: "Messe Düsseldorf",
-    image: "/medical/lux-sutures/medicalogo.png",
+    image: "/medical/lux-sutures/medicalogo.webp",
   },
 ];
 

@@ -97,7 +97,7 @@ const AboutUs = () => {
           >
             <div className="relative rounded-[20px] md:rounded-[25px] min-[3800px]:rounded-[40px] overflow-hidden shadow-[0px_4px_16px_rgba(0,0,0,0.18)]">
               <img
-                src="/medical/ergon/about.jpg"
+                src="/medical/ergon/about.webp"
                 alt="Ergon Sutramed Facility and Mountains"
                 className="w-full h-[320px] sm:h-[390px] md:h-[460px] min-[1026px]:h-[500px] xl:h-[570px] 2xl:h-[610px] min-[2500px]:h-[800px] min-[3500px]:h-[1550px] min-[3800px]:h-[1750px] object-cover"
               />

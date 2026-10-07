@@ -28,7 +28,7 @@ const Footer = () => {
           {/* Column 1: Logo & Description */}
           <div className="md:col-span-2 lg:col-span-4 flex flex-col gap-6 items-start">
             <img
-              src="/truemed/logo.png"
+              src="/truemed/logo.webp"
               alt="TRUEMED"
               className="h-10 xl:h-12  max-w-[65%] object-contain object-left brightness-0 invert"
             />

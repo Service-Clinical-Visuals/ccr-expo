@@ -16,7 +16,7 @@ export default function Footer() {
             {/* White Logo Container */}
             <div className="relative w-[220px] sm:w-[240px] min-[3800px]:w-[440px] aspect-[400/120] overflow-hidden shadow-md bg-white">
               <img
-                src="/medical/telemed/footer_logo.png"
+                src="/medical/telemed/footer_logo.webp"
                 alt="TELEMED Ultrasound Medical Systems"
                 className="w-full h-full object-contain"
               />

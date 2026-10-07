@@ -17,7 +17,7 @@ interface PlantItem {
 const plants: PlantItem[] = [
   {
     id: 1,
-    image: "/medical/remake-soil/m1.png",
+    image: "/medical/remake-soil/m1.webp",
     title: "The New Compact System CM15plus Hybrid",
     description:
       "Ideal for small construction sites or for private construction projects with optimal mobility.",
@@ -25,7 +25,7 @@ const plants: PlantItem[] = [
   },
   {
     id: 2,
-    image: "/medical/remake-soil/m2.png",
+    image: "/medical/remake-soil/m2.webp",
     title: "CM30plus Hybrid",
     description:
       "The system is ideal for smaller construction sites without compromise in mixing quality.",
@@ -33,7 +33,7 @@ const plants: PlantItem[] = [
   },
   {
     id: 3,
-    image: "/medical/remake-soil/m3.png",
+    image: "/medical/remake-soil/m3.webp",
     title: "CM60plus Hybrid",
     description:
       "High-performance stationary mixing plant with advanced technology and high throughput.",
@@ -41,7 +41,7 @@ const plants: PlantItem[] = [
   },
   {
     id: 4,
-    image: "/medical/remake-soil/m4.png",
+    image: "/medical/remake-soil/m4.webp",
     title: "CM90plus Hybrid",
     description:
       "Heavy-duty mixing solution designed for high output and maximum industrial efficiency.",

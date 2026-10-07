@@ -13,12 +13,12 @@ export default function Diagnostic() {
 
   // Placeholder blog data based on the images
   const blogs = [
-    { title: "How To Understand The Working Principles Of Laboratory Hot Plates", img: "/medical/elektro/i1.png" },
-    { title: "Tips For Maintaining Hot Air Sterilizers", img: "/medical/elektro/i2.png" },
-    { title: "Top 3 Types Of Laboratory Hot Plates: Ceramic, Aluminium, And Stainless Steel", img: "/medical/elektro/i3.png" },
-    { title: "Viscometers: Types, Applications, And Measurement Techniques", img: "/medical/elektro/i4.png" },
-    { title: "The Comprehensive Guide To Volumetric Flasks: Usage, Types, And Accuracy", img: "/medical/elektro/i5.png" },
-    { title: "A Complete Guide To Graduated Cylinders: Types, Usage, And Accuracy", img: "/medical/elektro/i6.png" },
+    { title: "How To Understand The Working Principles Of Laboratory Hot Plates", img: "/medical/elektro/i1.webp" },
+    { title: "Tips For Maintaining Hot Air Sterilizers", img: "/medical/elektro/i2.webp" },
+    { title: "Top 3 Types Of Laboratory Hot Plates: Ceramic, Aluminium, And Stainless Steel", img: "/medical/elektro/i3.webp" },
+    { title: "Viscometers: Types, Applications, And Measurement Techniques", img: "/medical/elektro/i4.webp" },
+    { title: "The Comprehensive Guide To Volumetric Flasks: Usage, Types, And Accuracy", img: "/medical/elektro/i5.webp" },
+    { title: "A Complete Guide To Graduated Cylinders: Types, Usage, And Accuracy", img: "/medical/elektro/i6.webp" },
   ];
 
   return (

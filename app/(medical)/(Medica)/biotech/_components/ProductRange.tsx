@@ -18,42 +18,42 @@ const biotechProducts: ProductItem[] = [
     tag: "Biotech Products",
     title: "HIP",
     category: "products",
-    image: "/medical/biotech/images/p1.png",
+    image: "/medical/biotech/images/p1.webp",
   },
   {
     id: 2,
     tag: "Biotech Products",
     title: "KNEE",
     category: "products",
-    image: "/medical/biotech/images/p2.png",
+    image: "/medical/biotech/images/p2.webp",
   },
   {
     id: 3,
     tag: "Biotech Products",
     title: "SHOULDER",
     category: "products",
-    image: "/medical/biotech/images/p3.png",
+    image: "/medical/biotech/images/p3.webp",
   },
   {
     id: 4,
     tag: "Biotech Products",
     title: "PECTUS SYSTEM",
     category: "products",
-    image: "/medical/biotech/images/p4.png",
+    image: "/medical/biotech/images/p4.webp",
   },
   {
     id: 5,
     tag: "Biotech Products",
     title: "TRAUMA",
     category: "products",
-    image: "/medical/biotech/images/p5.png",
+    image: "/medical/biotech/images/p5.webp",
   },
   {
     id: 6,
     tag: "Biotech Products",
     title: "SPINE",
     category: "products",
-    image: "/medical/biotech/images/p6.png",
+    image: "/medical/biotech/images/p6.webp",
   },
 ];
 
@@ -64,7 +64,7 @@ const pharmaceuticalProducts: ProductItem[] = [
     title: "Prednidelt® 30 mg",
     subtitle: "suppository",
     category: "pharmaceutical",
-    image: "/medical/biotech/images/p7.png",
+    image: "/medical/biotech/images/p7.webp",
   },
   {
     id: 8,
@@ -72,7 +72,7 @@ const pharmaceuticalProducts: ProductItem[] = [
     title: "Prednidelt® 30 mg",
     subtitle: "végbélkúp",
     category: "pharmaceutical",
-    image: "/medical/biotech/images/p8.png",
+    image: "/medical/biotech/images/p8.webp",
   },
   {
     id: 9,
@@ -80,7 +80,7 @@ const pharmaceuticalProducts: ProductItem[] = [
     title: "Prednidelt® 30 mg",
     subtitle: "Zäpfchen",
     category: "pharmaceutical",
-    image: "/medical/biotech/images/p9.png",
+    image: "/medical/biotech/images/p9.webp",
   },
   {
     id: 10,
@@ -88,7 +88,7 @@ const pharmaceuticalProducts: ProductItem[] = [
     title: "Prednidelt® 30 mg",
     subtitle: "supositorio",
     category: "pharmaceutical",
-    image: "/medical/biotech/images/p10.png",
+    image: "/medical/biotech/images/p10.webp",
   },
 ];
 

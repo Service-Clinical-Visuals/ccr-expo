@@ -45,7 +45,7 @@ export default function About() {
             data-aos-duration="900"
           >
             <img
-              src="/medical/geotek/images/about.png"
+              src="/medical/geotek/images/about.webp"
               alt="GEOTEK Medical Material Manufacture Facility"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
             />

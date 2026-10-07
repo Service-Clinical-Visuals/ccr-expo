@@ -7,19 +7,19 @@ import Link from "next/link";
 
 const cards = [
   {
-    image: "/medical/proimplant/c1.png",
+    image: "/medical/proimplant/c1.webp",
     title: "Knee Prosthesis",
     description: "Hipknee offers advanced knee prosthesis systems designed to support reliable joint reconstruction and restore mobility.",
     link: "#"
   },
   {
-    image: "/medical/proimplant/c2.png",
+    image: "/medical/proimplant/c2.webp",
     title: "Hip Prosthesis",
     description: "Reliable hip prosthesis components designed for stability, mobility, safety, and long-term clinical performance.",
     link: "#"
   },
   {
-    image: "/medical/proimplant/c3.png",
+    image: "/medical/proimplant/c3.webp",
     title: "Surgical Instrument Set Manufacturing",
     description: "Precision-manufactured instrument sets designed to support efficient and reliable hip and knee prosthesis procedures.",
     link: "#"

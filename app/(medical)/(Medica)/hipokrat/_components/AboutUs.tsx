@@ -91,7 +91,7 @@ export default function AboutUs() {
             <div className="relative bg-white p-3 sm:p-4 rounded-3xl shadow-[0px_2px_8px_rgba(60,64,67,0.15),0px_1px_3px_rgba(60,64,67,0.25)] border border-gray-100">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[16/11]">
                 <img
-                  src="/medical/hipokrat/about.png"
+                  src="/medical/hipokrat/about.webp"
                   alt="Hipokrat KOSBI Izmir Manufacturing Campus"
                   className="w-full h-full object-cover"
                 />

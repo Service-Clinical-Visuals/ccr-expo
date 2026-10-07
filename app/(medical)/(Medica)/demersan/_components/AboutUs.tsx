@@ -34,7 +34,7 @@ const AboutUs = () => {
               {/* Card 1 */}
               <div className="flex items-center gap-4 bg-white p-2 py-2 shadow-[0px_3px_8px_0px_#0000003D] flex-1 min-w-[140px]">
                 <div className="w-auto h-full bg-[#192B6C] p-3 flex items-center justify-center shrink-0">
-                  <img src="/medical/demersan/icon1.png" alt="Dealers Icon" className="w-auto h-auto object-contain" />
+                  <img src="/medical/demersan/icon1.webp" alt="Dealers Icon" className="w-auto h-auto object-contain" />
                 </div>
                 <div className="flex flex-col">
                   <Typography variant="h3" className="text-[#192B6C] font-bold leading-tight">1100</Typography>
@@ -45,7 +45,7 @@ const AboutUs = () => {
               {/* Card 2 */}
               <div className="flex items-center gap-4 bg-white p-2 py-2 shadow-[0px_3px_8px_0px_#0000003D] flex-1 min-w-[140px]">
                 <div className="w-auto h-full bg-[#192B6C] p-3 flex items-center justify-center shrink-0">
-                  <img src="/medical/demersan/icon2.png" alt="Dealers Icon" className="w-auto h-auto object-contain" />
+                  <img src="/medical/demersan/icon2.webp" alt="Dealers Icon" className="w-auto h-auto object-contain" />
                 </div>
                 <div className="flex flex-col">
                   <Typography variant="h3" className="text-[#192B6C] font-bold leading-tight">12</Typography>
@@ -56,7 +56,7 @@ const AboutUs = () => {
               {/* Card 3 */}
               <div className="flex items-center gap-4 bg-white p-2 py-2 shadow-[0px_3px_8px_0px_#0000003D] flex-1 min-w-[140px]">
                 <div className="w-auto h-full bg-[#192B6C] p-3 flex items-center justify-center shrink-0">
-                  <img src="/medical/demersan/icon3.png" alt="Dealers Icon" className="w-auto h-auto object-contain" />
+                  <img src="/medical/demersan/icon3.webp" alt="Dealers Icon" className="w-auto h-auto object-contain" />
                 </div>
                 <div className="flex flex-col">
                   <Typography variant="h3" className="text-[#192B6C] font-bold leading-tight">150+</Typography>
@@ -69,7 +69,7 @@ const AboutUs = () => {
 
           {/* Image */}
           <div className="w-full xl:col-span-7 relative overflow-hidden order-2 lg:order-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="/medical/demersan/about.png" alt="About Demersan" className="w-full h-auto object-cover" />
+            <img src="/medical/demersan/about.webp" alt="About Demersan" className="w-full h-auto object-cover" />
           </div>
 
         </div>

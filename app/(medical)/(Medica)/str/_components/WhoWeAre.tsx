@@ -75,7 +75,7 @@ export default function WhoWeAre() {
           >
             <div className="relative w-full aspect-[792/544] rounded-[10px] overflow-hidden shadow-md bg-gray-50">
               <img
-                src="/medical/str/about.png"
+                src="/medical/str/about.webp"
                 alt="STR Biotechnologies Manufacturing Facility"
                 className="w-full h-full object-cover rounded-[10px]"
               />

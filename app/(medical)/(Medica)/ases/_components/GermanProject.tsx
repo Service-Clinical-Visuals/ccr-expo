@@ -25,13 +25,13 @@ export default function GermanProject() {
           {/* Vision Card */}
           <div className="relative rounded-[8px] overflow-hidden group min-h-[320px] md:min-h-[380px] flex flex-col p-8 md:p-10" data-aos="fade-right">
             {/* Background Image / Pattern */}
-            <div className="absolute inset-0 z-0 bg-[url('/medical/ases/v1.png')] bg-center bg-cover
+            <div className="absolute inset-0 z-0 bg-[url('/medical/ases/v1.webp')] bg-center bg-cover
             " />
 
             <div className="relative z-10 flex flex-col h-full">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-auto h-auto flex items-center justify-center shrink-0 shadow-md">
-                  <img src="/medical/ases/i3.png" alt="Vision" className="auto h-auto object-contain" />
+                  <img src="/medical/ases/i3.webp" alt="Vision" className="auto h-auto object-contain" />
                 </div>
                 <h3 className="text-white font-[Manrope] font-bold text-[20px] md:text-[24px]">Vision</h3>
               </div>
@@ -55,12 +55,12 @@ export default function GermanProject() {
           {/* Mission Card */}
           <div className="relative rounded-[8px] overflow-hidden group min-h-[320px] md:min-h-[380px] flex flex-col p-8 md:p-10" data-aos="fade-left" data-aos-delay="100">
             {/* Background Image / Pattern */}
-            <div className="absolute inset-0 z-0 bg-[url('/medical/ases/v2.png')] bg-center bg-cover" />
+            <div className="absolute inset-0 z-0 bg-[url('/medical/ases/v2.webp')] bg-center bg-cover" />
 
             <div className="relative z-10 flex flex-col h-full">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-auto h-auto flex items-center justify-center shrink-0 shadow-md">
-                  <img src="/medical/ases/i4.png" alt="Mission" className="auto h-auto object-contain" />
+                  <img src="/medical/ases/i4.webp" alt="Mission" className="auto h-auto object-contain" />
                 </div>
                 <h3 className="text-white font-[Manrope] font-bold text-[20px] md:text-[24px]">Mission</h3>
               </div>

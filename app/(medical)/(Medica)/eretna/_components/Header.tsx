@@ -66,7 +66,7 @@ export default function Header() {
             >
               <div className="relative h-[34px] sm:h-[38px] md:h-[40px] min-[2500px]:h-[56px] min-[3800px]:h-[76px] w-[180px] sm:w-[210px] md:w-[230px] min-[2500px]:w-[320px] min-[3800px]:w-[440px]">
                 <img
-                  src="/medical/eretna/logo.png"
+                  src="/medical/eretna/logo.webp"
                   alt="ERETNA Medical Devices"
                   className="w-full h-full object-contain object-left"
                 />

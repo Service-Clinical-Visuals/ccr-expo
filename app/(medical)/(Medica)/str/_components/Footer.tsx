@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-3 lg:col-span-1 flex flex-col items-start w-full lg:w-[30%] xl:w-[28%] shrink-0">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/str/logo.png"
+                src="/medical/str/logo.webp"
                 alt="STR Biotechnologies Logo"
                 className="w-[141px] min-[2500px]:w-[190px] min-[3800px]:w-[240px] h-auto object-contain object-left"
               />

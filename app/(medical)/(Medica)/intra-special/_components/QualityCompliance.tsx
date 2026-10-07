@@ -10,17 +10,17 @@ export default function QualityCompliance() {
   const certificates = [
     {
       id: 1,
-      image: "/medical/intra-special/c1.png",
+      image: "/medical/intra-special/c1.webp",
       title: "EG-Zertifikat / EC-Certificate (gem. 93/42/EWG)",
     },
     {
       id: 2,
-      image: "/medical/intra-special/c2.png",
+      image: "/medical/intra-special/c2.webp",
       title: "Anlage / Annex (Reg.-Nr. 44 235 192153)",
     },
     {
       id: 3,
-      image: "/medical/intra-special/c3.png",
+      image: "/medical/intra-special/c3.webp",
       title: "Zertifikat / Certificate (DIN EN ISO 13485:2021)",
     },
   ];

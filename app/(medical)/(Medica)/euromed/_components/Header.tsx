@@ -128,7 +128,7 @@ export default function Header() {
           >
             <div className="relative h-7 sm:h-8 md:h-10 flex items-center">
               <img
-                src="/medical/euromed/logo.png"
+                src="/medical/euromed/logo.webp"
                 alt="Euromed - The Trusted Partner"
                 className="h-full w-auto object-contain transition-opacity group-hover:opacity-90"
               />

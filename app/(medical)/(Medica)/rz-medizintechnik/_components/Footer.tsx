@@ -82,7 +82,7 @@ export default function Footer() {
             <div className="col-span-2 md:col-span-12 lg:col-span-1 flex flex-col items-start footer-col-items w-full lg:w-[32%] xl:w-[30%] shrink-0">
               <Link href="#home" className="inline-block">
                 <img
-                  src="/medical/rz-medizintechnik/logo.png"
+                  src="/medical/rz-medizintechnik/logo.webp"
                   alt="RZ Medizintechnik"
                   className="footer-logo"
                 />

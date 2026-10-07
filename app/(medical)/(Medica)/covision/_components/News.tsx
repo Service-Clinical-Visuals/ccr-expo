@@ -48,7 +48,7 @@ const News = () => {
               {/* Image Frame */}
               <div className="w-full aspect-[2.6/1] sm:aspect-[3.1/1] rounded-lg border border-gray-200 overflow-hidden bg-gray-50">
                 <img
-                  src="/medical/covision/news1.png"
+                  src="/medical/covision/news1.webp"
                   alt="Meet Our New System"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                 />
@@ -86,7 +86,7 @@ const News = () => {
               {/* Image Frame */}
               <div className="w-full aspect-[2.6/1] sm:aspect-[3.1/1] rounded-lg border border-gray-200 overflow-hidden bg-gray-50">
                 <img
-                  src="/medical/covision/news2.png"
+                  src="/medical/covision/news2.webp"
                   alt="WHX 2026 Dubai"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                 />

@@ -35,7 +35,7 @@ const categories: Category[] = [
         title: "Polypropylene",
         description:
           "Swing-Mesh® devices are suitable for abdominal wall reinforcement of ventral or inguinal hernias treatments, via open or laparoscopic surgery.",
-        image: "/tht/p1.png",
+        image: "/tht/p1.webp",
       },
       {
         id: 2,
@@ -43,7 +43,7 @@ const categories: Category[] = [
         title: "Polyester",
         description:
           "Swing-Mesh® devices are suitable for abdominal wall reinforcement of ventral or inguinal hernias treatments, via open or laparoscopic surgery.",
-        image: "/tht/p2.png",
+        image: "/tht/p2.webp",
       },
       {
         id: 3,
@@ -51,7 +51,7 @@ const categories: Category[] = [
         title: "Self-Fixative",
         description:
           "Swing-Contact® devices are suitable for abdominal wall reinforcement of ventral or inguinal hernias treatments, via open or laparoscopic surgery.",
-        image: "/tht/p3.png",
+        image: "/tht/p3.webp",
       },
       {
         id: 4,
@@ -59,7 +59,7 @@ const categories: Category[] = [
         title: "Composite",
         description:
           "Intra-Swing® UMBI-LINK devices are suitable for abdominal wall reinforcement for umbilical hernias treatments.",
-        image: "/tht/p4.png",
+        image: "/tht/p4.webp",
       },
     ],
   },
@@ -73,7 +73,7 @@ const categories: Category[] = [
         title: "Urinary Incontinence",
         description:
           "Swing-Band® sling is suitable for the surgical treatment of female stress urinary incontinence, providing reliable support during minimally invasive procedures.",
-        image: "/tht/p5.png",
+        image: "/tht/p5.webp",
       },
       {
         id: 6,
@@ -81,7 +81,7 @@ const categories: Category[] = [
         title: "Prolapse",
         description:
           "Pro-Swing® device is suitable for female prolapse treatments, providing reliable support during minimally invasive surgical procedures.",
-        image: "/tht/p6.png",
+        image: "/tht/p6.webp",
       },
       {
         id: 7,
@@ -89,7 +89,7 @@ const categories: Category[] = [
         title: "Uterine Manipulator",
         description:
           "Hystero-Swing® device is designed for uterus manipulation, supporting controlled positioning during gynecological surgical procedures.",
-        image: "/tht/p7.png",
+        image: "/tht/p7.webp",
       },
     ],
   },

@@ -560,7 +560,7 @@ section {
 
 /* Background Utility for Production & Innovation */
 .bg-production-pills {
-  background-image: url('/medical/farmac/bg.png');
+  background-image: url('/medical/farmac/bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -568,7 +568,7 @@ section {
 
 /* Background Utility for Quality Policy */
 .bg-quality-stethoscope {
-  background-image: url('/medical/farmac/bg1.png');
+  background-image: url('/medical/farmac/bg1.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

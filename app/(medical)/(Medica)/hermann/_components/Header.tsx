@@ -99,7 +99,7 @@ export default function Header() {
             aria-label="Hermann Home"
           >
             <img
-              src="/medical/hermann/logo.png"
+              src="/medical/hermann/logo.webp"
               alt="Hermann Logo"
               className="h-5 sm:h-6 md:h-7 lg:h-8 min-[2500px]:h-[40px] min-[3800px]:h-[60px] w-auto object-contain"
             />
@@ -135,7 +135,7 @@ export default function Header() {
             >
               <span className="button whitespace-nowrap text-white font-medium">Get in Touch</span>
               <img
-                src="/medical/hermann/arrow.png"
+                src="/medical/hermann/arrow.webp"
                 alt=""
                 className="w-3.5 h-auto min-[3800px]:w-6 ml-2 min-[3800px]:ml-4 group-hover:translate-x-1 transition-transform duration-300 shrink-0 object-contain"
               />
@@ -188,7 +188,7 @@ export default function Header() {
             >
               <span className="button whitespace-nowrap text-white font-medium">Get in Touch</span>
               <img
-                src="/medical/hermann/arrow.png"
+                src="/medical/hermann/arrow.webp"
                 alt=""
                 className="w-3.5 h-auto ml-2 group-hover:translate-x-1 transition-transform object-contain"
               />

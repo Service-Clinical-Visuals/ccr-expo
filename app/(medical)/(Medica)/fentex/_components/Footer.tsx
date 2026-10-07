@@ -21,7 +21,7 @@ export default function Footer() {
           {/* Logo & Description */}
           <div className="flex flex-col gap-6 lg:col-span-2">
             <div className="flex items-center">
-              <img src="/medical/fentex/logo.png" alt="FENTEX medical" className="h-auto w-auto object-contain" />
+              <img src="/medical/fentex/logo.webp" alt="FENTEX medical" className="h-auto w-auto object-contain" />
             </div>
             <p className="font-inter section-text leading-relaxed font-regular text-[#202020] pr-4">
               FENTEXmedical is a German medical-device company specializing in precision surgical instruments and endoscopy systems for ENT and Head & Neck surgery. With a strong focus on German manufacturing, clinical collaboration, precision, reliability, and durable product design, the company serves specialized medical professionals worldwide.

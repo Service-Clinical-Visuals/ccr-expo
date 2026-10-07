@@ -17,17 +17,17 @@ export default function Advanced() {
     {
       title: "Nail Systems",
       description: "Optimized for internal fixation, our trauma nail systems provide strength, precision, and faster bone healing.",
-      image: "/medical/seles/p1.png",
+      image: "/medical/seles/p1.webp",
     },
     {
       title: "Plate Systems",
       description: "Engineered for optimal bone-plate interaction, our trauma plates ensure precise alignment and stable fracture fixation.",
-      image: "/medical/seles/p2.png",
+      image: "/medical/seles/p2.webp",
     },
     {
       title: "Screw Systems",
       description: "Designed for maximum hold and ease of insertion, our trauma screw systems provide secure fixation across various fracture patterns.",
-      image: "/medical/seles/p3.png",
+      image: "/medical/seles/p3.webp",
     },
   ];
 

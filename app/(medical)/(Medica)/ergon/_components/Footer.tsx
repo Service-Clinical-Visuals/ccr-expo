@@ -7,7 +7,7 @@ import Typography from "./Typography";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#004D7C] bg-[url('/medical/ergon/bg.png')] bg-cover bg-center text-white pt-14 sm:pt-18 xl:pt-20 pb-8 overflow-hidden">
+    <footer className="w-full bg-[#004D7C] bg-[url('/medical/ergon/bg.webp')] bg-cover bg-center text-white pt-14 sm:pt-18 xl:pt-20 pb-8 overflow-hidden">
       <div className="custom-container flex flex-col gap-10 sm:gap-12">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 xl:gap-10 items-start">
@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-col gap-4 col-span-2 md:col-span-1 lg:col-span-1">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/ergon/logo.png"
+                src="/medical/ergon/logo.webp"
                 alt="Ergon Sutramed"
                 className="h-8 sm:h-9 min-[3800px]:h-18 w-auto object-contain brightness-0 invert"
               />

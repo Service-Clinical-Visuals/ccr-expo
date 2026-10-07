@@ -7,14 +7,14 @@ import Typography from "./Typography";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#003F77] bg-[url('/medical/rebstock/bg.jpg')] bg-cover bg-center bg-no-repeat overflow-hidden pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-10 text-white">
+    <footer className="w-full bg-[#003F77] bg-[url('/medical/rebstock/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-10 text-white">
       <div className="custom-container flex flex-col gap-10 sm:gap-14">
         <div className="grid grid-cols-2 min-[1026px]:grid-cols-12 gap-8 sm:gap-8 min-[1026px]:gap-6 xl:gap-8 min-[2500px]:gap-12 min-[3800px]:gap-16 items-start w-full">
           <div className="flex flex-col gap-4 sm:gap-5 col-span-2 min-[1026px]:col-span-4">
             <Link href="#home" className="inline-block py-1" aria-label="Rebstock Home">
               {/* Rebstock Logo */}
               <img
-                src="/medical/rebstock/logo.png"
+                src="/medical/rebstock/logo.webp"
                 alt="Rebstock Logo"
                 className="h-6 sm:h-7 md:h-8 min-[2500px]:h-12 min-[3800px]:h-16 w-auto object-contain rounded-none"
               />

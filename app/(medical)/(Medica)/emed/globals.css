@@ -50,7 +50,7 @@ p, span, a, button, input, div {
 .carbon-bg,
 .emed-bg {
   background-color: #006B96;
-  background-image: url('/medical/emed/bg.png');
+  background-image: url('/medical/emed/bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

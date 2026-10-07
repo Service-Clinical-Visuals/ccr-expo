@@ -75,7 +75,7 @@ const Header = () => {
               aria-label="Deleo Home"
             >
               <img
-                src="/medical/deleo/logo.png"
+                src="/medical/deleo/logo.webp"
                 alt="Deleo Logo"
                 className="h-7 sm:h-8 md:h-9 lg:h-10 min-[2500px]:h-[52px] min-[3800px]:h-[100px] w-auto object-contain"
               />

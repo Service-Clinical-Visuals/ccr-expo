@@ -65,7 +65,7 @@ export default function Certified() {
           {/* Right Image */}
           <div className="lg:col-span-5 xl:col-span-4 w-full h-full relative min-h-full rounded-xl overflow-hidden  p-2" data-aos="fade-left">
             <Image
-              src="/medical/biomedicinos/c1.png"
+              src="/medical/biomedicinos/c1.webp"
               alt="Certificate"
               fill
               className="object-contain"

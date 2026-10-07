@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   description:
     "Since 2003, GEOTEK produces high quality medical equipment, biopsy needles, ureteral stents, and specialized healthcare solutions.",
   icons: {
-    icon: "/medical/geotek/images/logo.png",
+    icon: "/medical/geotek/images/logo.webp",
   },
 };
 

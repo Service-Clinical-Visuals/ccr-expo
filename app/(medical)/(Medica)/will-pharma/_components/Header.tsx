@@ -70,7 +70,7 @@ export default function Header() {
             aria-label="Will Pharma Home"
           >
             <img
-              src="/medical/will-pharma/logo.png"
+              src="/medical/will-pharma/logo.webp"
               alt="Will Pharma"
               className="h-9 sm:h-11 md:h-12 min-[2500px]:h-16 min-[3800px]:h-24 w-auto object-contain"
             />

@@ -44,7 +44,7 @@ export default function AboutCompany() {
         >
           <div className="rounded-[16px] sm:rounded-[22px] lg:rounded-[24px] overflow-hidden bg-gray-50 border border-gray-100 shadow-sm group aspect-[16/9] w-full">
             <img
-              src="/medical/hum-gmbh/about1.png"
+              src="/medical/hum-gmbh/about1.webp"
               alt="HUM Medical Technology Product"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
             />
@@ -52,7 +52,7 @@ export default function AboutCompany() {
 
           <div className="rounded-[16px] sm:rounded-[22px] lg:rounded-[24px] overflow-hidden bg-gray-50 border border-gray-100 shadow-sm group aspect-[16/9] w-full">
             <img
-              src="/medical/hum-gmbh/about2.png"
+              src="/medical/hum-gmbh/about2.webp"
               alt="HUM Textile Technology Systems"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
             />

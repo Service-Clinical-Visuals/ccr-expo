@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Custom Demos",
   description: "Custom demos for New businesses",
   icons: {
-    icon: '/tcp-logo.png',
+    icon: '/tcp-logo.webp',
   },
 };
 

@@ -5,13 +5,13 @@ import Link from "next/link";
 export default function QualityManagement() {
   const news = [
     {
-      image: "/medical/siare/latest1.png",
+      image: "/medical/siare/latest1.webp",
       title: "50 years of Siare Engineering International Group",
       description: "On Friday May 10th last, on the occasion of the General Assembly of Confindustria Emilia, Siare Engineering International Group, through our President and founder Giuseppe Preziosa, received the commemorative plaque for the 50th anniversary of our foundation.",
       link: "#read-more-1"
     },
     {
-      image: "/medical/siare/latest2.png",
+      image: "/medical/siare/latest2.webp",
       title: "MDR certificate",
       description: "We are proud to announce that SIARE ENGINEERING INTERNATIONAL GROUP S.p.A. has obtained CE certification in compliance with the European Regulation on medical devices 2017/745 (MDR): Kiwa Cermet Italia S.p.A. has released the new certificate No. MDR 00056-A dated 02/20/2024.",
       link: "#read-more-2"

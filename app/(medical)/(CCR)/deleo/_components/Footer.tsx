@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Column 1: Logo */}
           <div className="flex flex-col gap-6 items-start">
             <img
-              src="/medical/deleo/footer-logo.png"
+              src="/medical/deleo/footer-logo.webp"
               alt="Deleo Logo"
               className="h-16 xl:h-[120px] min-[3800px]:h-[140px] object-contain object-left"
             />

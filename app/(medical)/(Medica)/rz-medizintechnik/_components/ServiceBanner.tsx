@@ -10,9 +10,9 @@ export default function ServiceBanner() {
       id="services"
       className="relative w-full min-h-[520px] sm:min-h-[580px] lg:min-h-[677px] min-[2500px]:min-h-[920px] min-[3800px]:min-h-[1250px] py-14 sm:py-16 lg:py-0 overflow-hidden flex items-center bg-gray-900"
     >
-      {/* Background Image: Woman on phone in office (bg.png) */}
+      {/* Background Image: Woman on phone in office (bg.webp) */}
       <img
-        src="/medical/rz-medizintechnik/bg.png"
+        src="/medical/rz-medizintechnik/bg.webp"
         alt="RZ Medizintechnik customer service"
         className="absolute inset-0 w-full h-full object-cover object-center"
       />

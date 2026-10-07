@@ -29,7 +29,7 @@ const AboutUs = () => {
             {/* Icon Boxes */}
             <div className="grid grid-cols-1 min-[481px]:grid-cols-3 xl:flex xl:flex-wrap gap-4 md:gap-6 xl:gap-8 min-[2500px]:gap-12">
               <div className="flex items-center gap-4 min-[2500px]:gap-6 border border-[#2A2A2A] rounded-lg min-[2500px]:rounded-xl px-5 py-4 min-[2500px]:px-8 min-[2500px]:py-6 bg-white">
-                <img src="/tht/ic1.png" alt="Years Of Expertise" className="w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] min-[2500px]:w-[6rem] min-[2500px]:h-[6rem] min-[3800px]:w-[8rem] min-[3800px]:h-[8rem] object-contain shrink-0" />
+                <img src="/tht/ic1.webp" alt="Years Of Expertise" className="w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] min-[2500px]:w-[6rem] min-[2500px]:h-[6rem] min-[3800px]:w-[8rem] min-[3800px]:h-[8rem] object-contain shrink-0" />
                 <div className="flex flex-col gap-1">
                   <Typography variant="h3" color="dark" className="font-bold">30 +</Typography>
                   <Typography variant="span" color="dark" className="leading-snug">Years Of<br />Expertise</Typography>
@@ -37,7 +37,7 @@ const AboutUs = () => {
               </div>
 
               <div className="flex items-center gap-4 min-[2500px]:gap-6 border border-[#2A2A2A] rounded-lg min-[2500px]:rounded-xl px-5 py-4 min-[2500px]:px-8 min-[2500px]:py-6 bg-white">
-                <img src="/tht/icon1.png" alt="Million Products Sold" className="w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] min-[2500px]:w-[6rem] min-[2500px]:h-[6rem] min-[3800px]:w-[8rem] min-[3800px]:h-[8rem] object-contain shrink-0" />
+                <img src="/tht/icon1.webp" alt="Million Products Sold" className="w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] min-[2500px]:w-[6rem] min-[2500px]:h-[6rem] min-[3800px]:w-[8rem] min-[3800px]:h-[8rem] object-contain shrink-0" />
                 <div className="flex flex-col gap-1">
                   <Typography variant="h3" color="dark" className="font-bold">2.00 +</Typography>
                   <Typography variant="span" color="dark" className="leading-snug">Million<br />Products Sold</Typography>
@@ -45,7 +45,7 @@ const AboutUs = () => {
               </div>
 
               <div className="flex items-center gap-4 min-[2500px]:gap-6 border border-[#2A2A2A] rounded-lg min-[2500px]:rounded-xl px-5 py-4 min-[2500px]:px-8 min-[2500px]:py-6 bg-white">
-                <img src="/tht/icon2.png" alt="Customer Countries" className="w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] min-[2500px]:w-[6rem] min-[2500px]:h-[6rem] min-[3800px]:w-[8rem] min-[3800px]:h-[8rem] object-contain shrink-0" />
+                <img src="/tht/icon2.webp" alt="Customer Countries" className="w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] min-[2500px]:w-[6rem] min-[2500px]:h-[6rem] min-[3800px]:w-[8rem] min-[3800px]:h-[8rem] object-contain shrink-0" />
                 <div className="flex flex-col gap-1">
                   <Typography variant="h3" color="dark" className="font-bold">50 +</Typography>
                   <Typography variant="span" color="dark" className="leading-snug">Customer<br />Countries</Typography>
@@ -71,7 +71,7 @@ const AboutUs = () => {
 
             {/* Image card */}
             <div className="relative z-10 w-full max-w-[560px] lg:max-w-none bg-white rounded-2xl min-[2500px]:rounded-3xl min-[3800px]:rounded-[40px] shadow-[0_10px_30px_rgba(0,0,0,0.12)] overflow-hidden aspect-[475/430]">
-              <img src="/tht/sec2.png" alt="THT Bio-Science 3D Mesh" className="w-full h-full object-contain" />
+              <img src="/tht/sec2.webp" alt="THT Bio-Science 3D Mesh" className="w-full h-full object-contain" />
             </div>
           </div>
 

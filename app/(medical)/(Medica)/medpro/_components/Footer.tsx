@@ -35,7 +35,7 @@ export default function Footer() {
             <Link href="/" className="inline-block group focus:outline-none mb-6">
               <div className="relative flex items-center">
                 <img
-                  src="/medical/medpro/logo.png"
+                  src="/medical/medpro/logo.webp"
                   alt="MEDpro Logo"
                   className="h-[85px] w-[80px] object-contain"
                 />

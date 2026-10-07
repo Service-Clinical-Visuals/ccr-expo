@@ -47,7 +47,7 @@ export default function ExportExperience() {
             {/* World Map */}
             <div className="min-[1025px]:col-span-7 flex justify-center " data-aos="zoom-in" data-aos-delay="250">
               <img
-                src="/medical/smi-sutures/world.png"
+                src="/medical/smi-sutures/world.webp"
                 alt="SMI worldwide export network"
                 className="w-full max-w-4xl h-auto object-contain"
               />

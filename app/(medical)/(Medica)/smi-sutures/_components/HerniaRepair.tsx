@@ -12,7 +12,7 @@ const FEATURES = [
 
 export default function HerniaRepair() {
   return (
-    <section className="w-full bg-[#ececec] bg-[url('/medical/smi-sutures/whitebg.png')] bg-cover bg-center bg-no-repeat py-14 sm:py-16 min-[1025px]:py-20">
+    <section className="w-full bg-[#ececec] bg-[url('/medical/smi-sutures/whitebg.webp')] bg-cover bg-center bg-no-repeat py-14 sm:py-16 min-[1025px]:py-20">
       <div className="custom-container px-0 sm:px-2 min-[1025px]:px-4">
         <div className="grid grid-cols-1 min-[1025px]:grid-cols-12 gap-8 min-[1025px]:gap-10 items-center">
           {/* Video */}

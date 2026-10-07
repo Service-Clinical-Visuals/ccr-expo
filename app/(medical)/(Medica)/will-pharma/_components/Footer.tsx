@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4 col-span-2 md:col-span-1 xl:col-span-1">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/will-pharma/logo.png"
+                src="/medical/will-pharma/logo.webp"
                 alt="Will Pharma"
                 className="h-12 sm:h-14 md:h-16 min-[2500px]:h-24 min-[3800px]:h-36 w-auto object-contain"
               />

@@ -13,12 +13,12 @@ interface GalleryItem {
 
 // Gallery slider data and configuration
 const galleryItems: GalleryItem[] = [
-  { id: 1, image: "/medical/neurosoft/g1.png", alt: "Neurosoft Global Exhibition 1" },
-  { id: 2, image: "/medical/neurosoft/g2.jpg", alt: "Neurosoft Clinical Training 2" },
-  { id: 3, image: "/medical/neurosoft/g3.png", alt: "Neurosoft Global Exhibition 3" },
-  { id: 4, image: "/medical/neurosoft/g4.png", alt: "Neurosoft Clinical Training 4" },
-  { id: 5, image: "/medical/neurosoft/g5.png", alt: "Neurosoft Global Exhibition 5" },
-  { id: 6, image: "/medical/neurosoft/g6.png", alt: "Neurosoft Clinical Training 6" },
+  { id: 1, image: "/medical/neurosoft/g1.webp", alt: "Neurosoft Global Exhibition 1" },
+  { id: 2, image: "/medical/neurosoft/g2.webp", alt: "Neurosoft Clinical Training 2" },
+  { id: 3, image: "/medical/neurosoft/g3.webp", alt: "Neurosoft Global Exhibition 3" },
+  { id: 4, image: "/medical/neurosoft/g4.webp", alt: "Neurosoft Clinical Training 4" },
+  { id: 5, image: "/medical/neurosoft/g5.webp", alt: "Neurosoft Global Exhibition 5" },
+  { id: 6, image: "/medical/neurosoft/g6.webp", alt: "Neurosoft Clinical Training 6" },
 ];
 
 export default function Gallery() {

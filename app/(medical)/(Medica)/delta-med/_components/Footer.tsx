@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-3 flex flex-col gap-4">
             <Link href="#" className="inline-block">
               <img
-                src="/medical/delta-med/logo.png"
+                src="/medical/delta-med/logo.webp"
                 alt="Numantec"
                 className="w-[190px] sm:w-[210px] lg:w-[250px] xl:w-[350px] h-auto object-contain object-left"
               />

@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const newsItems = [
   {
     id: 1,
-    image: "/truemed/c1.png",
+    image: "/truemed/c1.webp",
     date: "02/12/2024",
     title: "We are in Moscow!",
     excerpt: "We will be in Moscow from December 2nd to 6th. We welcome all participants to visit us.",
@@ -15,7 +15,7 @@ const newsItems = [
   },
   {
     id: 2,
-    image: "/truemed/c2.png",
+    image: "/truemed/c2.webp",
     date: "30/10/2024",
     title: "We are in MEDICA 2024!",
     excerpt: "We are at MEDICA! Don't forget to visit us, thank you for your interest.",
@@ -23,7 +23,7 @@ const newsItems = [
   },
   {
     id: 3,
-    image: "/truemed/c3.png",
+    image: "/truemed/c3.webp",
     date: "28/01/2019",
     title: "Arab Health 2019",
     excerpt: 'We, as Truemed Medikal, invite you to "ARAB HEALTH 2019" between the dates of 28-31 Jan. 2019',

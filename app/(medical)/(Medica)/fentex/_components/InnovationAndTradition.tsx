@@ -17,7 +17,7 @@ export default function InnovationAndTradition() {
           data-aos-duration="800"
         >
           <img
-            src="/medical/fentex/about.png"
+            src="/medical/fentex/about.webp"
             alt="About FENTEXmedical"
             className="w-full h-auto xl:h-full object-cover"
           />

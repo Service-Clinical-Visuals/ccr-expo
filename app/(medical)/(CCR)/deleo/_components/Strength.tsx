@@ -13,27 +13,27 @@ const Strength = () => {
     {
       title: "INNOVATIONS",
       description: "The R&D department is composed of a multidisciplinary team of engineers: mechanical design, integrated electronics,",
-      image: "/medical/deleo/icon1.png",
+      image: "/medical/deleo/icon1.webp",
     },
     {
       title: "FRENCH PRODUCTION",
       description: "Founded in 2010 in Saint-Raphaël in the Var region, Deleo is the leading producer of aesthetic medicine in France.",
-      image: "/medical/deleo/icon2.png",
+      image: "/medical/deleo/icon2.webp",
     },
     {
       title: "CE MEDICAL CERTIFICATION",
       description: "All the technologies we produce have CE medical certification (with the exception of Cristal Skin®) and are intended exclusively for professionals",
-      image: "/medical/deleo/icon3.png",
+      image: "/medical/deleo/icon3.webp",
     },
     {
       title: "14 YEARS OF EXPERIENCE",
       description: "With 14 years of experience, Deleo is today a French and European leader that exports its devices to more than 35 countries.",
-      image: "/medical/deleo/icon4.png",
+      image: "/medical/deleo/icon4.webp",
     },
     {
       title: "+1 MILLION PATIENTS",
       description: "With over 2000 installations in France and around the world, Deleo devices have been offered to more than 1,000,000 patients.",
-      image: "/medical/deleo/icon5.png",
+      image: "/medical/deleo/icon5.webp",
     }
   ];
 

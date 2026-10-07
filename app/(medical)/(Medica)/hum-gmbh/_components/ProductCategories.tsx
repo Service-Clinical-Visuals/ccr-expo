@@ -12,17 +12,17 @@ interface CategoryCard {
 const categories: CategoryCard[] = [
   {
     title: "Anesthesia",
-    image: "/medical/hum-gmbh/p1.png",
+    image: "/medical/hum-gmbh/p1.webp",
     alt: "Anesthesia Equipment",
   },
   {
     title: "Ventilation",
-    image: "/medical/hum-gmbh/p2.png",
+    image: "/medical/hum-gmbh/p2.webp",
     alt: "Emergency Care",
   },
   {
     title: "Intubation",
-    image: "/medical/hum-gmbh/p4.png",
+    image: "/medical/hum-gmbh/p4.webp",
     alt: "Airway Management Products",
   },
 ];

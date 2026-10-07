@@ -8,7 +8,7 @@ import Button from "./Button";
 export default function CranioSolutions() {
   return (
     <section id="cranio-solutions" className="w-full relative overflow-hidden bg-white">
-      <div className="w-full bg-[#003F77] bg-[url('/medical/rebstock/bg.jpg')] bg-cover bg-center bg-no-repeat pt-14 sm:pt-16 lg:pt-20 pb-28 sm:pb-36 lg:pb-44">
+      <div className="w-full bg-[#003F77] bg-[url('/medical/rebstock/bg.webp')] bg-cover bg-center bg-no-repeat pt-14 sm:pt-16 lg:pt-20 pb-28 sm:pb-36 lg:pb-44">
         <div className="custom-container flex flex-col gap-6 sm:gap-8">
           <div
             className="flex flex-col min-[1026px]:flex-row min-[1026px]:items-center justify-between gap-6 sm:gap-8"

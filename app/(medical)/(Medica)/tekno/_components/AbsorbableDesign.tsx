@@ -26,13 +26,13 @@ export default function AbsorbableDesign() {
 
             <ul className="flex flex-col gap-6 mb-10">
               <li className="flex items-start gap-4">
-                <img src="/medical/tekno/icon5.png" alt="Icon" className="w-auto h-auto mt-1 object-contain flex-shrink-0" />
+                <img src="/medical/tekno/icon5.webp" alt="Icon" className="w-auto h-auto mt-1 object-contain flex-shrink-0" />
                 <p className="section-text text-[#FFFFFF] font-outfit font-light leading-relaxed">
                   <strong className="text-[#FFFFFF] font-medium">High-Quality Visualization</strong> - Delivers clear, detailed views to support accurate observation during minimally invasive procedures.
                 </p>
               </li>
               <li className="flex items-start gap-4">
-                <img src="/medical/tekno/icon5.png" alt="Icon" className="w-auto h-auto mt-1 object-contain flex-shrink-0" />
+                <img src="/medical/tekno/icon5.webp" alt="Icon" className="w-auto h-auto mt-1 object-contain flex-shrink-0" />
                 <p className="section-text text-[#FFFFFF] font-outfit font-light leading-relaxed">
                   <strong className="text-[#FFFFFF] font-medium">Precision Optical System</strong> - Advanced optical engineering provides consistent image quality and reliable visualization throughout the procedure.
                 </p>

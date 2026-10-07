@@ -20,23 +20,23 @@ type CategoryData = {
 
 const PRODUCTS: CategoryData = {
   "Medical Equipment": [
-    { name: "Neonatal Equipments", image: "/medical/elektro/p1.png", link: "#" },
-    { name: "Electrosurgical Units", image: "/medical/elektro/p2.png", link: "#" },
-    { name: "Sterilizers", image: "/medical/elektro/p3.png", link: "#" },
-    { name: "Negatoscopes (X-Ray Film...)", image: "/medical/elektro/p4.png", link: "#" },
+    { name: "Neonatal Equipments", image: "/medical/elektro/p1.webp", link: "#" },
+    { name: "Electrosurgical Units", image: "/medical/elektro/p2.webp", link: "#" },
+    { name: "Sterilizers", image: "/medical/elektro/p3.webp", link: "#" },
+    { name: "Negatoscopes (X-Ray Film...)", image: "/medical/elektro/p4.webp", link: "#" },
   ],
   "Laboratory Equipment": [
-    { name: "Bio Safety Cabinet", image: "/medical/elektro/p5.png", link: "#" },
-    { name: "Bacteriological Incubators", image: "/medical/elektro/p6.png", link: "#" },
-    { name: "Laboratory Ovens", image: "/medical/elektro/p7.png", link: "#" },
-    { name: "Laboratory Centrifuge", image: "/medical/elektro/p8.png", link: "#" },
-    { name: "Water Still", image: "/medical/elektro/p9.png", link: "#" },
+    { name: "Bio Safety Cabinet", image: "/medical/elektro/p5.webp", link: "#" },
+    { name: "Bacteriological Incubators", image: "/medical/elektro/p6.webp", link: "#" },
+    { name: "Laboratory Ovens", image: "/medical/elektro/p7.webp", link: "#" },
+    { name: "Laboratory Centrifuge", image: "/medical/elektro/p8.webp", link: "#" },
+    { name: "Water Still", image: "/medical/elektro/p9.webp", link: "#" },
   ],
   "Industrial Ovens": [
-    { name: "M 1071 P Industrial Oven", image: "/medical/elektro/p10.png", link: "#" },
-    { name: "M 1071 Industrial Oven", image: "/medical/elektro/p11.png", link: "#" },
-    { name: "M 1074 Industrial Oven", image: "/medical/elektro/p12.png", link: "#" },
-    { name: "M 1075 Industrial Oven", image: "/medical/elektro/p13.png", link: "#" },
+    { name: "M 1071 P Industrial Oven", image: "/medical/elektro/p10.webp", link: "#" },
+    { name: "M 1071 Industrial Oven", image: "/medical/elektro/p11.webp", link: "#" },
+    { name: "M 1074 Industrial Oven", image: "/medical/elektro/p12.webp", link: "#" },
+    { name: "M 1075 Industrial Oven", image: "/medical/elektro/p13.webp", link: "#" },
   ],
 };
 
@@ -122,7 +122,7 @@ const Solutions = () => {
                       src={product.image}
                       alt={product.name}
                       className="w-full h-auto object-contain"
-                      onError={(e) => (e.currentTarget.src = "/adamo/section2.png")}
+                      onError={(e) => (e.currentTarget.src = "/adamo/section2.webp")}
                     />
                   </div>
 

@@ -1,0 +1,4 @@
+#!/bin/sh
+# Block the commit unless every image in /public is webp and app/ references them.
+# Skip once with: git commit --no-verify
+node scripts/convert-to-webp.mjs --check

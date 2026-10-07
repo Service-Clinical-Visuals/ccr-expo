@@ -71,7 +71,7 @@ export default function Header() {
             aria-label="HUM Medical Home"
           >
             <img
-              src="/medical/hum-gmbh/logo.png"
+              src="/medical/hum-gmbh/logo.webp"
               alt="HUM Logo"
               className="h-8 sm:h-9 md:h-10 min-[2500px]:h-[56px] min-[3800px]:h-[80px] w-auto object-contain"
             />

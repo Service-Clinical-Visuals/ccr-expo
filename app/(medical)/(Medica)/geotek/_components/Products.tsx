@@ -18,22 +18,22 @@ const productCatalogs: ProductCatalogItem[] = [
   {
     id: 1,
     title: "Biopsy Needles",
-    image: "/medical/geotek/images/p1.png",
-    hoverImage: "/medical/geotek/images/p1_after.png",
+    image: "/medical/geotek/images/p1.webp",
+    hoverImage: "/medical/geotek/images/p1_after.webp",
     alt: "Biopsy Needles Catalog",
   },
   {
     id: 2,
     title: "Urology Catheters",
-    image: "/medical/geotek/images/p2.png",
-    hoverImage: "/medical/geotek/images/p2_after.png",
+    image: "/medical/geotek/images/p2.webp",
+    hoverImage: "/medical/geotek/images/p2_after.webp",
     alt: "Urology Catheters Catalog",
   },
   {
     id: 3,
     title: "Endocavity Needle Guides",
-    image: "/medical/geotek/images/p3.png",
-    hoverImage: "/medical/geotek/images/p3_after.png",
+    image: "/medical/geotek/images/p3.webp",
+    hoverImage: "/medical/geotek/images/p3_after.webp",
     alt: "Endocavity Needle Guides Catalog",
   },
 ];

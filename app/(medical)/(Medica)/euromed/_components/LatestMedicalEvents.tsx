@@ -18,31 +18,31 @@ const EVENTS_LIST: EventItem[] = [
     id: 1,
     title: "Africa Health ExCon2023...",
     date: "11 - 14 November 2024",
-    image: "/medical/euromed/e1.png",
+    image: "/medical/euromed/e1.webp",
   },
   {
     id: 2,
     title: "Florida International Medical Expo...",
     date: "October 16, 2022",
-    image: "/medical/euromed/e2.png",
+    image: "/medical/euromed/e2.webp",
   },
   {
     id: 3,
     title: "EGY Medica 2023 5/18/2023...",
     date: "September 14, 2022",
-    image: "/medical/euromed/e3.png",
+    image: "/medical/euromed/e3.webp",
   },
   {
     id: 4,
     title: "Negative Statin Stories Add To...",
     date: "22 Jul",
-    image: "/medical/euromed/e4.png",
+    image: "/medical/euromed/e4.webp",
   },
   {
     id: 5,
     title: "Study Finds Link Between Very...",
     date: "22 Jul",
-    image: "/medical/euromed/e5.png",
+    image: "/medical/euromed/e5.webp",
   },
 ];
 

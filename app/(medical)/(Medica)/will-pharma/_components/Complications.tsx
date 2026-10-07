@@ -80,7 +80,7 @@ export default function Complications() {
               {complicationsList.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3 min-[3800px]:gap-5">
                   <img
-                    src="/medical/will-pharma/tick.png"
+                    src="/medical/will-pharma/tick.webp"
                     alt="Check"
                     className="w-5 min-[2500px]:w-7 min-[3800px]:w-10 h-auto object-contain shrink-0 mt-1"
                   />

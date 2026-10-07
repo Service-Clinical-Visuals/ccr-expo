@@ -10,15 +10,15 @@ import "swiper/css/pagination";
 
 export default function ExpertiseGallery() {
   const gallery = [
-    { image: "/medical/rebstock/e1.jpg", alt: "Rebstock Catalogue & Brochure" },
-    { image: "/medical/rebstock/e2.jpg", alt: "Rebstock Facility & Workshop Collage" },
-    { image: "/medical/rebstock/e3.jpg", alt: "Rebstock Team EUROPA-PARK Stadium" },
-    { image: "/medical/rebstock/e4.jpg", alt: "Rebstock Cranio Implants & Screwdriver Set" },
-    { image: "/medical/rebstock/e5.jpg", alt: "Surgical Instruments Display" },
-    { image: "/medical/rebstock/e6.jpg", alt: "Precision Titanium Plates" },
-    { image: "/medical/rebstock/e7.jpg", alt: "Manufacturing & Quality Control" },
-    { image: "/medical/rebstock/e8.jpg", alt: "Spine & Neuro Surgical Kit" },
-    { image: "/medical/rebstock/e9.jpg", alt: "Clinical Visuals & Innovations" },
+    { image: "/medical/rebstock/e1.webp", alt: "Rebstock Catalogue & Brochure" },
+    { image: "/medical/rebstock/e2.webp", alt: "Rebstock Facility & Workshop Collage" },
+    { image: "/medical/rebstock/e3.webp", alt: "Rebstock Team EUROPA-PARK Stadium" },
+    { image: "/medical/rebstock/e4.webp", alt: "Rebstock Cranio Implants & Screwdriver Set" },
+    { image: "/medical/rebstock/e5.webp", alt: "Surgical Instruments Display" },
+    { image: "/medical/rebstock/e6.webp", alt: "Precision Titanium Plates" },
+    { image: "/medical/rebstock/e7.webp", alt: "Manufacturing & Quality Control" },
+    { image: "/medical/rebstock/e8.webp", alt: "Spine & Neuro Surgical Kit" },
+    { image: "/medical/rebstock/e9.webp", alt: "Clinical Visuals & Innovations" },
   ];
 
   return (

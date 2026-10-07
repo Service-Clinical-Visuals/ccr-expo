@@ -29,10 +29,10 @@ const Scientific = () => {
 
           <div className="grid grid-cols-2 gap-4 mt-4 w-full">
             <div className="w-full aspect-[534/367] overflow-hidden ">
-              <img src="/revance/d1.png" alt="Scientist" className="w-full h-full object-cover" />
+              <img src="/revance/d1.webp" alt="Scientist" className="w-full h-full object-cover" />
             </div>
             <div className="w-full aspect-[534/367] overflow-hidden ">
-              <img src="/revance/d2.png" alt="Laboratory Beakers" className="w-full h-full object-cover" />
+              <img src="/revance/d2.webp" alt="Laboratory Beakers" className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -41,7 +41,7 @@ const Scientific = () => {
         {/* Right Column (Large Image + Button) */}
         <div className="flex flex-col gap-6 lg:col-span-4 w-full order-2 lg:order-2" data-aos="fade-left" data-aos-delay="200">
           <div className="w-[90%] xl:w-full aspect-[533/573] overflow-hidden shadow-lg bg-gray-50 flex items-center justify-center">
-            <img src="/revance/d3.png" alt="3D Molecule" className="w-full h-full object-cover" />
+            <img src="/revance/d3.webp" alt="3D Molecule" className="w-full h-full object-cover" />
           </div>
           <div className="pt-2">
             <Button text="Discover Our Science" href="#science" variant="primary" />

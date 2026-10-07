@@ -35,7 +35,7 @@ export default function Explore360() {
               {/* Feature 1 */}
               <div className="bg-white rounded-xl p-4 sm:p-5 flex gap-4 items-center shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black/5">
                 <div className="flex-shrink-0">
-                  <img src="/medical/medelcom/i1.png" alt="Imaging & Examination" className="w-auto h-auto object-contain" />
+                  <img src="/medical/medelcom/i1.webp" alt="Imaging & Examination" className="w-auto h-auto object-contain" />
                 </div>
                 <p className="text-slate-700 font-inter section-text leading-snug">
                   <strong className="text-slate-900">Imaging & Examination :</strong> Natural imaging, bright LED illumination, green filtering, and easy magnification control.
@@ -45,7 +45,7 @@ export default function Explore360() {
               {/* Feature 2 */}
               <div className="bg-white rounded-xl p-4 sm:p-5 flex gap-4 items-center shadow-[-4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black/5">
                 <div className="flex-shrink-0">
-                  <img src="/medical/medelcom/i2.png" alt="Connectivity & Data" className="w-auto h-auto object-contain" />
+                  <img src="/medical/medelcom/i2.webp" alt="Connectivity & Data" className="w-auto h-auto object-contain" />
                 </div>
                 <p className="text-slate-700 font-inter section-text leading-snug">
                   <strong className="text-slate-900">Connectivity & Data :</strong> Video, S-Video, and USB connectivity for easy recording, transfer, storage, and archiving.

@@ -13,27 +13,27 @@ import "swiper/css/pagination";
 const products = [
   {
     title: "Suture",
-    image: "/medical/ergon/s1.jpg",
+    image: "/medical/ergon/s1.webp",
     link: "#suture",
   },
   {
     title: "Surgical Networks",
-    image: "/medical/ergon/s2.jpg",
+    image: "/medical/ergon/s2.webp",
     link: "#surgical-networks",
   },
   {
     title: "Hemostatics",
-    image: "/medical/ergon/s3.jpg",
+    image: "/medical/ergon/s3.webp",
     link: "#hemostatics",
   },
   {
     title: "Surgical Specialties",
-    image: "/medical/ergon/s4.jpg",
+    image: "/medical/ergon/s4.webp",
     link: "#surgical-specialties",
   },
   {
     title: "Special Products",
-    image: "/medical/ergon/s5.jpg",
+    image: "/medical/ergon/s5.webp",
     link: "#special-products",
   },
 ];

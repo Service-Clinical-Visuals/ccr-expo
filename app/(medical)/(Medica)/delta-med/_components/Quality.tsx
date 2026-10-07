@@ -88,7 +88,7 @@ const Quality = () => {
         >
           <div className="relative w-full aspect-[16/11] md:aspect-[16/10.5] bg-gray-100">
             <img
-              src="/medical/delta-med/quality.png"
+              src="/medical/delta-med/quality.webp"
               alt="Quality Assurance Team"
               className="w-full h-full object-cover"
             />

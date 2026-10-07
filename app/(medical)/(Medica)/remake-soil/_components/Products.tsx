@@ -22,37 +22,37 @@ const Products = () => {
     {
       id: 1,
       title: "RMS Gold Standard",
-      image: "/medical/remake-soil/p1.png",
+      image: "/medical/remake-soil/p1.webp",
       category: "palletized",
     },
     {
       id: 2,
       title: "RMS Red Special",
-      image: "/medical/remake-soil/p2.png",
+      image: "/medical/remake-soil/p2.webp",
       category: "palletized",
     },
     {
       id: 3,
       title: "RMS Gold Standard",
-      image: "/medical/remake-soil/p3.png",
+      image: "/medical/remake-soil/p3.webp",
       category: "palletized",
     },
     {
       id: 4,
       title: "RMS Red Special",
-      image: "/medical/remake-soil/p4.png",
+      image: "/medical/remake-soil/p4.webp",
       category: "palletized",
     },
     {
       id: 5,
       title: "RMS Gold Standard",
-      image: "/medical/remake-soil/p5.png",
+      image: "/medical/remake-soil/p5.webp",
       category: "big-bag",
     },
     {
       id: 6,
       title: "RMS Red Special",
-      image: "/medical/remake-soil/p6.png",
+      image: "/medical/remake-soil/p6.webp",
       category: "loose",
     },
   ];

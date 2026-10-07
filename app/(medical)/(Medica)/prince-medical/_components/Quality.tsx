@@ -35,7 +35,7 @@ const Quality = () => {
             data-aos-delay="200"
           >
             <img
-              src="/medical/prince-medical/quality1.jpg"
+              src="/medical/prince-medical/quality1.webp"
               alt="Prince Medical Quality Process 1"
               className="w-full h-full object-cover aspect-[820/489] transition-transform duration-500 group-hover:scale-105"
             />
@@ -60,7 +60,7 @@ const Quality = () => {
             data-aos-delay="300"
           >
             <img
-              src="/medical/prince-medical/quality2.jpg"
+              src="/medical/prince-medical/quality2.webp"
               alt="Prince Medical Quality Process 2"
               className="w-full h-full object-cover aspect-[820/489] transition-transform duration-500 group-hover:scale-105"
             />

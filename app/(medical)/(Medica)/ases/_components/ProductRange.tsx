@@ -23,7 +23,7 @@ export default function ProductRange() {
 
           {/* Card 1 */}
           <div className="w-full overflow-hidden rounded-[8px] border border-gray-200 shadow-md relative group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-            <img src="/medical/ases/p1.png" alt="Upper and Lower Extremities" className="w-full h-full object-cover" />
+            <img src="/medical/ases/p1.webp" alt="Upper and Lower Extremities" className="w-full h-full object-cover" />
 
             {/* Hover Overlay */}
             <div className="absolute inset-0 bg-[#151515]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 lg:p-6">
@@ -40,7 +40,7 @@ export default function ProductRange() {
 
           {/* Card 2 */}
           <div className="w-full overflow-hidden rounded-[8px] border border-gray-200 shadow-md relative group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-            <img src="/medical/ases/p2.png" alt="Screws" className="w-full h-full object-cover" />
+            <img src="/medical/ases/p2.webp" alt="Screws" className="w-full h-full object-cover" />
 
             {/* Hover Overlay */}
             <div className="absolute inset-0 bg-[#151515]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 lg:p-6">
@@ -57,7 +57,7 @@ export default function ProductRange() {
 
           {/* Card 3 */}
           <div className="w-full overflow-hidden rounded-[8px] border border-gray-200 shadow-md relative group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-            <img src="/medical/ases/p3.png" alt="Nails" className="w-full h-full object-cover" />
+            <img src="/medical/ases/p3.webp" alt="Nails" className="w-full h-full object-cover" />
 
             {/* Hover Overlay */}
             <div className="absolute inset-0 bg-[#151515]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 lg:p-6">

@@ -13,17 +13,17 @@ interface SpecialtyCard {
 const specialtyCards: SpecialtyCard[] = [
   {
     title: "About OEM",
-    image: "/medical/hum-gmbh/custom1.png",
+    image: "/medical/hum-gmbh/custom1.webp",
     alt: "About OEM specialty manufacturing",
   },
   {
     title: "Industrial",
-    image: "/medical/hum-gmbh/custom2.png",
+    image: "/medical/hum-gmbh/custom2.webp",
     alt: "Industrial textile and electronic solutions",
   },
   {
     title: "Tactical",
-    image: "/medical/hum-gmbh/custom3.png",
+    image: "/medical/hum-gmbh/custom3.webp",
     alt: "Tactical equipment and rescue solutions",
   },
 ];

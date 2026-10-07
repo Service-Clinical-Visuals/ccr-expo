@@ -82,7 +82,7 @@ const AboutUs = () => {
             {/* Image 1 */}
             <div className="w-[280px] xl:w-[340px] 2xl:w-[385px] shrink-0 drop-shadow-xl">
               <img
-                src="/medical/delta-med/about1.png"
+                src="/medical/delta-med/about1.webp"
                 alt="Healthcare Technology"
                 className="w-full h-auto object-contain"
               />
@@ -91,7 +91,7 @@ const AboutUs = () => {
             {/* Image 2 */}
             <div className="w-[280px] xl:w-[340px] 2xl:w-[385px] shrink-0 drop-shadow-xl">
               <img
-                src="/medical/delta-med/about2.png"
+                src="/medical/delta-med/about2.webp"
                 alt="Patient Care"
                 className="w-full h-auto object-contain"
               />
@@ -102,14 +102,14 @@ const AboutUs = () => {
           <div className="flex lg:hidden gap-4 sm:gap-6 justify-center mt-6 w-full">
             <div className="w-1/2 max-w-[320px] sm:max-w-[360px] drop-shadow-md">
               <img
-                src="/medical/delta-med/about1.png"
+                src="/medical/delta-med/about1.webp"
                 alt="Healthcare Technology"
                 className="w-full h-auto object-contain"
               />
             </div>
             <div className="w-1/2 max-w-[320px] sm:max-w-[360px] drop-shadow-md">
               <img
-                src="/medical/delta-med/about2.png"
+                src="/medical/delta-med/about2.webp"
                 alt="Patient Care"
                 className="w-full h-auto object-contain"
               />

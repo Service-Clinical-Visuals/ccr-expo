@@ -12,11 +12,11 @@ interface ProductItem {
 }
 
 const PRODUCTS: ProductItem[] = [
-  { id: 1, title: "Intramedullary Nail Systems", image: "/medical/tasarimmed/p1.png" },
-  { id: 2, title: "Cervical Systems", image: "/medical/tasarimmed/p2.png" },
-  { id: 3, title: "Screw & Cable Systems", image: "/medical/tasarimmed/p3.png" },
-  { id: 4, title: "Thoracolumbar Systems", image: "/medical/tasarimmed/p4.png" },
-  { id: 5, title: "External Fixation Systems", image: "/medical/tasarimmed/p5.png" },
+  { id: 1, title: "Intramedullary Nail Systems", image: "/medical/tasarimmed/p1.webp" },
+  { id: 2, title: "Cervical Systems", image: "/medical/tasarimmed/p2.webp" },
+  { id: 3, title: "Screw & Cable Systems", image: "/medical/tasarimmed/p3.webp" },
+  { id: 4, title: "Thoracolumbar Systems", image: "/medical/tasarimmed/p4.webp" },
+  { id: 5, title: "External Fixation Systems", image: "/medical/tasarimmed/p5.webp" },
 ];
 
 export default function ProductSolutions() {

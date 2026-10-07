@@ -43,7 +43,7 @@ export default function Footer() {
             <Link href="/serag-wiessner" className="inline-block group focus:outline-none">
               <div className="relative h-10 sm:h-15 md:h-20 xl:h-20 flex items-center">
                 <img
-                  src="/medical/serag-wiessner/footer-logo.png"
+                  src="/medical/serag-wiessner/footer-logo.webp"
                   alt="SERAG WIESSNER"
                   className="h-full w-auto object-contain"
                 />

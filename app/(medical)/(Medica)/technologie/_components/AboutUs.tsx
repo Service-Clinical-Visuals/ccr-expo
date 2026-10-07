@@ -38,7 +38,7 @@ const AboutUs = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <img src="/medical/surgival/section2.png" alt="Surgival Building" className="w-full h-auto object-cover" />
+          <img src="/medical/surgival/section2.webp" alt="Surgival Building" className="w-full h-auto object-cover" />
         </div>
       </div>
     </section>

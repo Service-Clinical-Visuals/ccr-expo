@@ -55,7 +55,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="#home" className="flex items-center shrink-0">
           <img
-            src="/medical/rz-medizintechnik/logo.png"
+            src="/medical/rz-medizintechnik/logo.webp"
             alt="RZ Medizintechnik — Progress in Surgery"
             className="header-logo"
           />

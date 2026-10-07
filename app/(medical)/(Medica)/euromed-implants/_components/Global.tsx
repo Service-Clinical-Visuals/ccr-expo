@@ -56,7 +56,7 @@ const Global = () => {
           {/* Map Image */}
           <div className="w-full xl:col-span-6 relative order-2 min-[3800px]:scale-125 min-[3800px]:origin-center" data-aos="fade-left" data-aos-delay="100">
             <img
-              src="/euromed-implants/section3.png"
+              src="/euromed-implants/section3.webp"
               alt="Global Footprint Map"
               className="w-full h-auto object-contain mix-blend-multiply"
             />
@@ -70,7 +70,7 @@ const Global = () => {
           {/* Europe */}
           <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 min-[3800px]:p-16 flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-transform duration-300">
             <div className="w-18 h-18 min-[3800px]:w-32 min-[3800px]:h-32 flex items-center justify-center">
-              <img src="/euromed-implants/icon1.png" alt="Europe Icon" className="w-full h-full object-contain" />
+              <img src="/euromed-implants/icon1.webp" alt="Europe Icon" className="w-full h-full object-contain" />
             </div>
             <Typography variant="h4" className="text-[#36679B] !font-bold mt-2 min-[3800px]:text-4xl min-[3800px]:mt-6">Europe</Typography>
             <Typography variant="p" color="dark" className="text-sm min-[3800px]:text-xl leading-relaxed">
@@ -81,7 +81,7 @@ const Global = () => {
           {/* America */}
           <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 min-[3800px]:p-16 flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-transform duration-300">
             <div className="w-18 h-18 min-[3800px]:w-32 min-[3800px]:h-32 flex items-center justify-center">
-              <img src="/euromed-implants/icon2.png" alt="America Icon" className="w-full h-full object-contain" />
+              <img src="/euromed-implants/icon2.webp" alt="America Icon" className="w-full h-full object-contain" />
             </div>
             <Typography variant="h4" className="text-[#36679B] !font-bold mt-2 min-[3800px]:text-4xl min-[3800px]:mt-6">America</Typography>
             <Typography variant="p" color="dark" className="text-sm min-[3800px]:text-xl leading-relaxed">
@@ -92,7 +92,7 @@ const Global = () => {
           {/* Africa */}
           <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 min-[3800px]:p-16 flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-transform duration-300">
             <div className="w-18 h-18 min-[3800px]:w-32 min-[3800px]:h-32 flex items-center justify-center">
-              <img src="/euromed-implants/icon3.png" alt="Africa Icon" className="w-full h-full object-contain" />
+              <img src="/euromed-implants/icon3.webp" alt="Africa Icon" className="w-full h-full object-contain" />
             </div>
             <Typography variant="h4" className="text-[#36679B] !font-bold mt-2 min-[3800px]:text-4xl min-[3800px]:mt-6">Africa</Typography>
             <Typography variant="p" color="dark" className="text-sm min-[3800px]:text-xl leading-relaxed">
@@ -103,7 +103,7 @@ const Global = () => {
           {/* Asia */}
           <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 min-[3800px]:p-16 flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-transform duration-300">
             <div className="w-18 h-18 min-[3800px]:w-32 min-[3800px]:h-32 flex items-center justify-center">
-              <img src="/euromed-implants/icon4.png" alt="Asia Icon" className="w-full h-full object-contain" />
+              <img src="/euromed-implants/icon4.webp" alt="Asia Icon" className="w-full h-full object-contain" />
             </div>
             <Typography variant="h4" className="text-[#36679B] !font-bold mt-2 min-[3800px]:text-4xl min-[3800px]:mt-6">Asia</Typography>
             <Typography variant="p" color="dark" className="text-sm min-[3800px]:text-xl leading-relaxed">

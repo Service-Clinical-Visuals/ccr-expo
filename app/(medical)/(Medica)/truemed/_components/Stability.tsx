@@ -8,7 +8,7 @@ import { Download } from "lucide-react";
 
 const Stability = () => {
   return (
-    <section className="w-full py-16 xl:py-24 bg-[url('/truemed/bg.png')] bg-cover bg-center bg-no-repeat overflow-hidden relative">
+    <section className="w-full py-16 xl:py-24 bg-[url('/truemed/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden relative">
       <div className="custom-container flex flex-col lg:grid lg:grid-cols-12 gap-10 min-[3800px]:gap-14 items-center">
 
         {/* Left Content (Video) */}

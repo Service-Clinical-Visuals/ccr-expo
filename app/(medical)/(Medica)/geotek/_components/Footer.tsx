@@ -40,7 +40,7 @@ export default function Footer() {
       id="contact"
       className="w-full relative pt-14 sm:pt-18 md:pt-22 pb-10 sm:pb-12 bg-white overflow-hidden"
       style={{
-        backgroundImage: "url('/medical/geotek/images/footer_bg.png')",
+        backgroundImage: "url('/medical/geotek/images/footer_bg.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -66,7 +66,7 @@ export default function Footer() {
               aria-label="Geotek Home"
             >
               <img
-                src="/medical/geotek/images/logo.png"
+                src="/medical/geotek/images/logo.webp"
                 alt="GEOTEK Healthcare Products"
                 width={280}
                 height={86}

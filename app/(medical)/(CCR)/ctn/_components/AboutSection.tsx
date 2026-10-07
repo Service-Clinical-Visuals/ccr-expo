@@ -74,7 +74,7 @@ export default function AboutSection() {
           >
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-md p-1">
               <Image
-                src="/medical/ctn/abt1.png"
+                src="/medical/ctn/abt1.webp"
                 alt="Our Mission"
                 width={36}
                 height={36}
@@ -98,7 +98,7 @@ export default function AboutSection() {
           >
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-md p-1">
               <Image
-                src="/medical/ctn/abt2.png"
+                src="/medical/ctn/abt2.webp"
                 alt="Built On Expertise"
                 width={36}
                 height={36}
@@ -122,7 +122,7 @@ export default function AboutSection() {
           >
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-md p-1">
               <Image
-                src="/medical/ctn/abt3.png"
+                src="/medical/ctn/abt3.webp"
                 alt="CTN Advantage"
                 width={36}
                 height={36}
@@ -149,7 +149,7 @@ export default function AboutSection() {
         >
           <div className="relative w-full h-full min-h-[380px] sm:min-h-[460px] md:min-h-[500px]">
             <Image
-              src="/medical/ctn/abt.png"
+              src="/medical/ctn/abt.webp"
               alt="CTN Innovation and Recovery Showroom"
               fill
               className="object-cover rounded-4xl"

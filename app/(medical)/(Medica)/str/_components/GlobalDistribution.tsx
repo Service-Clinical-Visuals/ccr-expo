@@ -5,11 +5,11 @@ import Typography from "./Typography";
 
 export default function GlobalDistribution() {
   const stats = [
-    { icon: "/medical/str/g1.png", number: "60+", label: "Export Countries" },
-    { icon: "/medical/str/g2.png", number: "25+", label: "OEM & Private Label Projects" },
-    { icon: "/medical/str/g3.png", number: "15+", label: "Regenerative Products" },
-    { icon: "/medical/str/g4.png", number: "15+", label: "Years Manufacturing Experience" },
-    { icon: "/medical/str/g5.png", number: "10M+", label: "Clinical usage Experience" },
+    { icon: "/medical/str/g1.webp", number: "60+", label: "Export Countries" },
+    { icon: "/medical/str/g2.webp", number: "25+", label: "OEM & Private Label Projects" },
+    { icon: "/medical/str/g3.webp", number: "15+", label: "Regenerative Products" },
+    { icon: "/medical/str/g4.webp", number: "15+", label: "Years Manufacturing Experience" },
+    { icon: "/medical/str/g5.webp", number: "10M+", label: "Clinical usage Experience" },
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function GlobalDistribution() {
           className="hidden lg:block absolute z-0 pointer-events-none top-[80px] xl:top-[100px] min-[2500px]:top-[120px] min-[3800px]:top-[150px] right-0 w-[68%] h-[557px] min-[2500px]:h-[750px] min-[3800px]:h-[980px]"
         >
           <img
-            src="/medical/str/world.png"
+            src="/medical/str/world.webp"
             alt="STR Global Distribution Network"
             className="w-full h-full object-cover object-left"
             data-aos="fade-left"
@@ -55,7 +55,7 @@ export default function GlobalDistribution() {
         {/* Mobile map */}
         <div className="block lg:hidden w-full my-8">
           <img
-            src="/medical/str/world.png"
+            src="/medical/str/world.webp"
             alt="STR Global Distribution Network"
             className="w-full h-auto object-contain max-h-[300px]"
           />

@@ -21,21 +21,21 @@ export default function ProductCategory() {
       title: "Central Venous Catheters",
       description:
         "All catheters consist of high flexible thin-walled polyurethane which ensures very high flow rates. It is anti-thrombogen and biocompatible. At body temperature it gets very soft, swims in the vessel and reduces clearly the risk of phlebitis.",
-      image: "/medical/intra-special/p1.png",
+      image: "/medical/intra-special/p1.webp",
     },
     {
       id: 2,
       title: "Catheters For Hemodialysis",
       description:
         "Hemodialysis catheters are catheters that provide temporary vascular access for hemodialysis until a permanent access is available or until another type of dialysis therapy is substituted.",
-      image: "/medical/intra-special/p2.png",
+      image: "/medical/intra-special/p2.webp",
     },
     {
       id: 3,
       title: "Thermodilution",
       description:
         "Multi lumen catheter for measuring and monitoring cardiac output and for continuous infusion, blood sampling and blood gas analysis. The catheter is made of radiopaque polyurethane.",
-      image: "/medical/intra-special/p3.png",
+      image: "/medical/intra-special/p3.webp",
     },
   ];
 

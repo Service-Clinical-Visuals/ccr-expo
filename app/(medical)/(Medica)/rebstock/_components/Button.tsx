@@ -29,8 +29,8 @@ const Button = ({
 
   const arrowImgSrc =
     variant === "white"
-      ? "/medical/rebstock/dark_arr.png"
-      : "/medical/rebstock/white_arr.png";
+      ? "/medical/rebstock/dark_arr.webp"
+      : "/medical/rebstock/white_arr.webp";
 
   const content = (
     <div

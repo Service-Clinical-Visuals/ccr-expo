@@ -8,7 +8,7 @@ const Resources = () => {
   return (
     <section
       id="resources"
-      className="w-full min-h-[500px] xl:min-h-[540px] min-[3800px]:min-h-[720px] py-16 xl:py-20 min-[3800px]:py-32 bg-[url('/medical/covision/res_bg.png')] bg-cover bg-[position:88%_center] md:bg-[position:90%_center] xl:bg-center bg-no-repeat overflow-hidden relative flex items-center"
+      className="w-full min-h-[500px] xl:min-h-[540px] min-[3800px]:min-h-[720px] py-16 xl:py-20 min-[3800px]:py-32 bg-[url('/medical/covision/res_bg.webp')] bg-cover bg-[position:88%_center] md:bg-[position:90%_center] xl:bg-center bg-no-repeat overflow-hidden relative flex items-center"
     >
       <div className="custom-container w-full">
         {/* Text Container: On mobile/tablet wrapped in a crisp high-contrast frosted white card */}

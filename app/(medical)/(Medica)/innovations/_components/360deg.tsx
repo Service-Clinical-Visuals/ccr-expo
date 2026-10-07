@@ -11,7 +11,7 @@ const Deg360 = () => {
       {/* Background Image Overlay */}
       <div
         className="absolute inset-0 w-full h-full opacity-10"
-        style={{ backgroundImage: 'url("/medical/innovations/bg.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
+        style={{ backgroundImage: 'url("/medical/innovations/bg.webp")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
       />
 
       <div className="custom-container relative z-10 flex flex-col">

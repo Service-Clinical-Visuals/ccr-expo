@@ -37,7 +37,7 @@ export default function Header() {
         {/* Left: Logo */}
         <Link href="#home" className="flex items-center shrink-0">
           <img
-            src="/medical/ases/logo.png"
+            src="/medical/ases/logo.webp"
             alt="Ases Logo"
             className="w-[160px] md:w-[200px] min-[3800px]:w-[350px] h-auto object-contain"
           />
@@ -72,7 +72,7 @@ export default function Header() {
           <div className="w-[1px] min-[3800px]:w-[2px] h-15 min-[3800px]:h-24 bg-[#D9D9D9]"></div>
 
           <div className="flex items-center gap-2 min-[3800px]:gap-4 cursor-pointer hover:opacity-80 transition-opacity">
-            <img src="/medical/ases/h-icon.png" alt="Language" className="w-auto h-auto min-[3800px]:w-[48px] min-[3800px]:h-[48px] object-contain" />
+            <img src="/medical/ases/h-icon.webp" alt="Language" className="w-auto h-auto min-[3800px]:w-[48px] min-[3800px]:h-[48px] object-contain" />
             <svg className="w-[15px] h-[10px] min-[3800px]:w-[25px] min-[3800px]:h-[18px]" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 8L0 0H10L5 8Z" fill="#BA0A28" />
             </svg>

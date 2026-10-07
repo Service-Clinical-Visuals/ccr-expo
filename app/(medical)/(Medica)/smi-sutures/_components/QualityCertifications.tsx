@@ -12,17 +12,17 @@ interface Certificate {
 const CERTIFICATES: Certificate[] = [
   {
     title: "EC CERTIFICATE - Full Quality Assurance System",
-    image: "/medical/smi-sutures/c1.png",
+    image: "/medical/smi-sutures/c1.webp",
     href: "",
   },
   {
     title: "ISO 13485",
-    image: "/medical/smi-sutures/c2.png",
+    image: "/medical/smi-sutures/c2.webp",
     href: "",
   },
   {
     title: "EC-CERTIFICATE – Notified Body Confirmation Letter",
-    image: "/medical/smi-sutures/c3.png",
+    image: "/medical/smi-sutures/c3.webp",
     href: "",
   },
 ];

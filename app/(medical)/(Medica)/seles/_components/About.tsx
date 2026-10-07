@@ -24,7 +24,7 @@ export default function About() {
             data-aos="fade-right"
           >
             <img
-              src="/medical/seles/about.png"
+              src="/medical/seles/about.webp"
               alt="oltho Facility"
               className="w-full h-full object-cover object-center grayscale"
             />

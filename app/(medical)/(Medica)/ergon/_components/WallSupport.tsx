@@ -16,7 +16,7 @@ const WallSupport = () => {
   return (
     <section className="w-full relative overflow-hidden bg-white pb-12 sm:pb-16 xl:py-24">
       {/* Top Textured Blue Background Band */}
-      <div className="absolute top-0 left-0 w-full h-[220px] sm:h-[280px] md:h-[320px] min-[1501px]:h-[260px] min-[3800px]:h-[420px] bg-[#004D7C] bg-[url('/medical/ergon/bg.png')] bg-cover bg-center pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full h-[220px] sm:h-[280px] md:h-[320px] min-[1501px]:h-[260px] min-[3800px]:h-[420px] bg-[#004D7C] bg-[url('/medical/ergon/bg.webp')] bg-cover bg-center pointer-events-none" />
 
       <div className="custom-container relative z-10 pt-6 sm:pt-10">
         {/* On Mobile & Tablets (< 1501px): Heading on top */}

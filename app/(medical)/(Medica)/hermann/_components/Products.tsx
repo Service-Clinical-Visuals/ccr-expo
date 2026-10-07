@@ -15,32 +15,32 @@ export default function Products() {
   const products = [
     {
       title: "Laparoscopy",
-      image: "/medical/hermann/p1.png",
+      image: "/medical/hermann/p1.webp",
       href: "#products",
     },
     {
       title: "Endoscopic Devices",
-      image: "/medical/hermann/p2.png",
+      image: "/medical/hermann/p2.webp",
       href: "#products",
     },
     {
       title: "Electrosurgery",
-      image: "/medical/hermann/p3.png",
+      image: "/medical/hermann/p3.webp",
       href: "#products",
     },
     {
       title: "Arthroscopy",
-      image: "/medical/hermann/p4.png",
+      image: "/medical/hermann/p4.webp",
       href: "#products",
     },
     {
       title: "Urology / Hysteroscopy",
-      image: "/medical/hermann/p5.png",
+      image: "/medical/hermann/p5.webp",
       href: "#products",
     },
     {
       title: "Titanium systems",
-      image: "/medical/hermann/p6.png",
+      image: "/medical/hermann/p6.webp",
       href: "#products",
     },
   ];

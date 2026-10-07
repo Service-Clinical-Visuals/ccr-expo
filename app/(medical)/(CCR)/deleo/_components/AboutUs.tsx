@@ -39,7 +39,7 @@ const AboutUs = () => {
           {/* Image Content (Left side on Desktop, Bottom on Mobile/Tablet) */}
           <div className="w-full xl:w-1/2 relative order-2 xl:order-1 mt-8 xl:mt-0" data-aos="fade-right">
             <div className="relative z-10 rounded-sm overflow-hidden ">
-              <img src="/medical/deleo/section2.png" alt="Deleo Work of Excellence" className="w-full h-auto object-cover grayscale" />
+              <img src="/medical/deleo/section2.webp" alt="Deleo Work of Excellence" className="w-full h-auto object-cover grayscale" />
             </div>
           </div>
 

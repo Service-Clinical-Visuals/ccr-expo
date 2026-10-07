@@ -32,7 +32,7 @@ const AboutUs = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <img src="/medical/prince-medical/section2.png" alt="Prince Medical Office" className="w-full h-auto object-cover aspect-[1680/713] " />
+          <img src="/medical/prince-medical/section2.webp" alt="Prince Medical Office" className="w-full h-auto object-cover aspect-[1680/713] " />
         </div>
       </div>
     </section>

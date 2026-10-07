@@ -51,7 +51,7 @@ export default function TotalSolutions() {
         <div className="w-full lg:w-1/2 mt-10 lg:mt-0" data-aos="fade-left" data-aos-delay="200">
           <div className="flex justify-center lg:justify-end lg:mr-[calc(100%-50vw)]">
             <img
-              src="/medical/ases/about.png"
+              src="/medical/ases/about.webp"
               alt="Ases Medikal Facility"
               className="w-full lg:w-auto lg:max-w-full h-auto object-cover object-right rounded-md lg:rounded-l-md lg:rounded-r-none"
             />

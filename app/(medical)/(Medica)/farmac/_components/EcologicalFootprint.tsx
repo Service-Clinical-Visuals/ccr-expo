@@ -76,7 +76,7 @@ export default function EcologicalFootprint() {
           >
             <div className="w-full max-w-md xl:max-w-none">
               <img
-                src="/medical/farmac/eco.png"
+                src="/medical/farmac/eco.webp"
                 alt="Ecological footprint interlocking rings"
                 className="w-full h-auto object-contain select-none"
               />

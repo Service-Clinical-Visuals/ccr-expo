@@ -13,41 +13,41 @@ const productData: Record<string, Product[]> = {
   VitaScope: [
     {
       name: "VitaScope 190",
-      image: "/medical/eretna/p1.png",
+      image: "/medical/eretna/p1.webp",
     },
     {
       name: "VitaScope 190e",
-      image: "/medical/eretna/p2.png",
+      image: "/medical/eretna/p2.webp",
     },
     {
       name: "VitaScope 120",
-      image: "/medical/eretna/p3.png",
+      image: "/medical/eretna/p3.webp",
     },
   ],
   VICU: [
     {
       name: "VitaScope 190",
-      image: "/medical/eretna/p4.png",
+      image: "/medical/eretna/p4.webp",
     },
   ],
   TCardio: [
     {
       name: "TCardio10",
-      image: "/medical/eretna/p7.png",
+      image: "/medical/eretna/p7.webp",
     },
     {
       name: "TCardio6",
-      image: "/medical/eretna/p8.png",
+      image: "/medical/eretna/p8.webp",
     },
   ],
   "Monitoring Systems": [
     {
       name: "Centro Central MS",
-      image: "/medical/eretna/p5.png",
+      image: "/medical/eretna/p5.webp",
     },
     {
       name: "Centro Mobile MS",
-      image: "/medical/eretna/p8.png",
+      image: "/medical/eretna/p8.webp",
     },
   ],
 };

@@ -27,7 +27,7 @@ export default function QualityManagement() {
           {/* Card 1 */}
           <div className="flex flex-col sm:flex-row bg-white rounded-[5px] overflow-hidden shadow-md hover:shadow-md transition-shadow gap-3">
             <div className="flex-shrink-0 relative">
-              <img src="/medical/medelcom/n1.png" alt="Sonoporosis Drugs" className="w-full sm:w-auto h-full object-cover sm:max-h-full" />
+              <img src="/medical/medelcom/n1.webp" alt="Sonoporosis Drugs" className="w-full sm:w-auto h-full object-cover sm:max-h-full" />
             </div>
             <div className="p-5 sm:py-6 sm:pr-6 sm:pl-4 flex flex-col gap-3 justify-center flex-grow">
               <div className="flex items-center gap-2 mb-5">
@@ -51,7 +51,7 @@ export default function QualityManagement() {
           {/* Card 2 */}
           <div className="flex flex-col sm:flex-row gap-3 bg-white rounded-[5px] overflow-hidden border border-slate-200 shadow-md hover:shadow-md transition-shadow">
             <div className="flex-shrink-0 relative">
-              <img src="/medical/medelcom/n2.png" alt="Sonoporosis Drugs" className="w-full sm:w-auto h-full object-cover sm:max-h-full" />
+              <img src="/medical/medelcom/n2.webp" alt="Sonoporosis Drugs" className="w-full sm:w-auto h-full object-cover sm:max-h-full" />
             </div>
             <div className="p-5 sm:py-6 sm:pr-6 sm:pl-4 flex flex-col gap-3 justify-center flex-grow">
               <div className="flex items-center gap-2 mb-5">

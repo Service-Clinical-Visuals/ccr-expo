@@ -6,17 +6,17 @@ import Typography from "./Typography";
 export default function WhyRebstock() {
   const features = [
     {
-      icon: "/medical/rebstock/icon1.png",
+      icon: "/medical/rebstock/icon1.webp",
       alt: "Brain technology icon",
       title: "Many Years\nOf Experience",
     },
     {
-      icon: "/medical/rebstock/icon2.png",
+      icon: "/medical/rebstock/icon2.webp",
       alt: "Data science precision icon",
       title: "Highest\nPrecision",
     },
     {
-      icon: "/medical/rebstock/icon3.png",
+      icon: "/medical/rebstock/icon3.webp",
       alt: "Certified quality layers icon",
       title: "Certified\nQuality",
     },
@@ -60,7 +60,7 @@ export default function WhyRebstock() {
             data-aos="fade-right"
           >
             <img
-              src="/medical/rebstock/why.png"
+              src="/medical/rebstock/why.webp"
               alt="Rebstock Instruments Dedicated Team"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-102"
             />

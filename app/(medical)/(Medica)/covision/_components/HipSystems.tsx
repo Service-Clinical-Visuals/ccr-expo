@@ -72,12 +72,12 @@ const HipSystems = () => {
               secure fixation and help prevent stem sinking.
             </Typography>
 
-            {/* Checkmark Points with tick.png image */}
+            {/* Checkmark Points with tick.webp image */}
             <div className="flex flex-col gap-5 min-[3800px]:gap-8 mt-1">
               {points.map((point, index) => (
                 <div key={index} className="flex items-start gap-3.5 sm:gap-4">
                   <img
-                    src="/medical/covision/tick.png"
+                    src="/medical/covision/tick.webp"
                     alt="Tick"
                     className="w-5 min-[2500px]:w-7 min-[3800px]:w-10 h-auto object-contain shrink-0 mt-1"
                   />

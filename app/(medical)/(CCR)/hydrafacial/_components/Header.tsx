@@ -96,7 +96,7 @@ const Header = () => {
               aria-label="Hydrafacial Home"
             >
               <img
-                src="/medical/hydrafacial/logo1.png"
+                src="/medical/hydrafacial/logo1.webp"
                 alt="Hydrafacial Logo"
                 className="h-7 sm:h-8 md:h-9 lg:h-10 min-[2500px]:h-16 min-[3800px]:h-22 w-auto object-contain"
               />

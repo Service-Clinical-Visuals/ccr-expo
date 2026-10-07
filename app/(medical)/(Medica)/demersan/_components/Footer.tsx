@@ -35,7 +35,7 @@ const Footer = () => {
 
           {/* Column 1: Logo & Description */}
           <div className="col-span-2 md:col-span-2 lg:col-span-4 flex flex-col gap-6 items-start" data-aos="fade-up">
-            <img src="/medical/demersan/f-logo.png" alt="Demersan" className="h-auto w-auto object-contain" />
+            <img src="/medical/demersan/f-logo.webp" alt="Demersan" className="h-auto w-auto object-contain" />
             <Typography variant="footer-body" color="white" className="leading-relaxed mt-2 lg:pr-8 text-sm">
               DEMERSAN develops specialised medical products designed to support healthcare professionals across urological and interventional applications. Our portfolio includes catheters, gels, and pressure management solutions.
             </Typography>

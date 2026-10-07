@@ -10,7 +10,7 @@ export default function Deg360() {
   return (
     <section
       id="explore360"
-      className="w-full py-12 md:py-16 lg:py-20 xl:py-24 min-[2500px]:py-32 min-[3800px]:py-44 bg-[url('/medical/dlr-meda/bg.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden"
+      className="w-full py-12 md:py-16 lg:py-20 xl:py-24 min-[2500px]:py-32 min-[3800px]:py-44 bg-[url('/medical/dlr-meda/bg.webp')] bg-cover bg-center bg-no-repeat relative overflow-hidden"
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-white/70 z-0 pointer-events-none" />

@@ -59,7 +59,7 @@ export default function Header() {
         {/* Logo Area */}
         <div className="flex-shrink-0 flex items-center w-[45%] sm:w-[35%] md:w-[25%] xl:w-[20%] xl:w-[15%]">
           <Link href="#" className="w-full">
-            <img src="/revance/logo.png" alt="Revance Logo" className="w-[90%] md:w-[55%] lg:w-[55%] xl:w-[60%] h-auto object-contain brightness-0 invert" />
+            <img src="/revance/logo.webp" alt="Revance Logo" className="w-[90%] md:w-[55%] lg:w-[55%] xl:w-[60%] h-auto object-contain brightness-0 invert" />
           </Link>
         </div>
 

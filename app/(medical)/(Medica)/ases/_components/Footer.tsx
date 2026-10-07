@@ -6,7 +6,7 @@ import { MapPin, Mail, Phone, Facebook, Linkedin, Instagram } from "lucide-react
 
 export default function Footer() {
   return (
-    <footer className="w-full relative overflow-hidden bg-[#18181b] bg-[url('/medical/ases/bg-footer.png')] bg-cover bg-center">
+    <footer className="w-full relative overflow-hidden bg-[#18181b] bg-[url('/medical/ases/bg-footer.webp')] bg-cover bg-center">
 
       <div className="custom-container relative z-10 pt-16 pb-12">
         <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-4 xl:gap-6">
@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="flex flex-col gap-6 lg:w-[26%]" data-aos="fade-up">
             <Link href="#home">
               {/* Removed invert filter to keep the red 'a'. Added a subtle white drop shadow in case the text is dark. */}
-              <img src="/medical/ases/logo.png" alt="Ases Logo" className="w-[360px] h-[96px] object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]" />
+              <img src="/medical/ases/logo.webp" alt="Ases Logo" className="w-[360px] h-[96px] object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]" />
             </Link>
             <p className="text-white font-[Inter] text-[15px] md:text-[17px] leading-relaxed mt-2">
               With extensive industry experience, we manufacture
@@ -78,7 +78,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4 lg:w-[14%]" data-aos="fade-up" data-aos-delay="400">
             <h4 className="text-white font-[Inter] font-medium text-[18px] md:text-[20px] mb-2">E-Catalog</h4>
             <Link href="#catalog" className="group mt-1 flex justify-end lg:justify-start">
-              <img src="/medical/ases/img-footer.png" alt="E-Catalog" className="w-auto h-auto object-contain drop-shadow-lg group-hover:scale-105 transition-transform duration-300" />
+              <img src="/medical/ases/img-footer.webp" alt="E-Catalog" className="w-auto h-auto object-contain drop-shadow-lg group-hover:scale-105 transition-transform duration-300" />
             </Link>
           </div>
 

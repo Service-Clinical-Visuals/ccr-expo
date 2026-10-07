@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-12 lg:col-span-1 flex flex-col items-start gap-4 sm:gap-5 w-full lg:w-[30%] xl:w-[28%] shrink-0">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/intra-special/logo_weiss.png"
+                src="/medical/intra-special/logo_weiss.webp"
                 alt="intra special catheters"
                 className="w-[140px] sm:w-[160px] min-[2500px]:w-[210px] min-[3800px]:w-[270px] h-auto object-contain"
               />

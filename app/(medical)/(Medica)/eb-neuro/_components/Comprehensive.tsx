@@ -23,7 +23,7 @@ const Comprehensive = () => {
       <div
         className="absolute inset-0 w-full h-full opacity-30 z-0"
         style={{
-          backgroundImage: "url('/medical/eb-neuro/bg.png')",
+          backgroundImage: "url('/medical/eb-neuro/bg.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

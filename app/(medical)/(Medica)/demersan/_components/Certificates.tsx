@@ -10,8 +10,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import type { Swiper as SwiperType } from 'swiper';
 
 const sliderImages = [
-  "/medical/demersan/s1.png",
-  "/medical/demersan/s2.png",
+  "/medical/demersan/s1.webp",
+  "/medical/demersan/s2.webp",
 ];
 
 const Certificates = () => {

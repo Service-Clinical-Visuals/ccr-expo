@@ -7,13 +7,13 @@ import { Calendar } from "lucide-react";
 
 const articles = [
   {
-    image: "/moto/3d-aesthetics/news1.png",
+    image: "/moto/3d-aesthetics/news1.webp",
     date: "December 11, 2023",
     title: "Sally Dynevor and Helen Skelton – the latest celebrities loving 3D EMlift",
     desc: "Sally Dynevor, who plays Sally Webster in Coronation Street and Helen Skelton, Countryfile host, visited One Aesthetics Studio in Alderley Edge, owned by Dr Jonquille,",
   },
   {
-    image: "/moto/3d-aesthetics/news2.png",
+    image: "/moto/3d-aesthetics/news2.webp",
     date: "May 20, 2024",
     title: "What are the benefits of introducing 3D Vjuve into your business?",
     desc: "CO2 fractional laser skin resurfacing is a cutting-edge treatment that is becoming increasingly popular in the beauty industry. If you own a clinic, this treatment could be a valuable addition to your offering",

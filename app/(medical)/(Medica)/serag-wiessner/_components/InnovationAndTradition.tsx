@@ -103,7 +103,7 @@ export default function InnovationAndTradition() {
         >
           <div className="relative w-full h-full overflow-hidden ">
             <img
-              src="/medical/serag-wiessner/abt.png"
+              src="/medical/serag-wiessner/abt.webp"
               alt="SERAG-WIESSNER Headquarters and Production Plant in Naila"
               className="w-full h-full object-contain "
             />

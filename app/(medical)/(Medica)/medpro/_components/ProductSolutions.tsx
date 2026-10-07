@@ -7,49 +7,49 @@ const PRODUCTS = [
   {
     title: "Stents",
     desc: "Reliable support for optimal urinary flow.",
-    icon: "/medical/medpro/q1.png",
+    icon: "/medical/medpro/q1.webp",
     color: "#728FBC4D", // Slate blue
   },
   {
     title: "Catheters",
     desc: "Safe, comfortable and efficient drainage solutions.",
-    icon: "/medical/medpro/q2.png",
+    icon: "/medical/medpro/q2.webp",
     color: "#C4CD4B4D", // Lime green
   },
   {
     title: "Dilators",
     desc: "Precision tools for smooth access.",
-    icon: "/medical/medpro/q3.png",
+    icon: "/medical/medpro/q3.webp",
     color: "#8B41994D", // Purple
   },
   {
     title: "Guide Wires",
     desc: "Enhanced control and flexibility.",
-    icon: "/medical/medpro/q4.png",
+    icon: "/medical/medpro/q4.webp",
     color: "#359B9B4D", // Teal
   },
   {
     title: "Stone Retriever",
     desc: "For safer and more effective stone management.",
-    icon: "/medical/medpro/q5.png",
+    icon: "/medical/medpro/q5.webp",
     color: "#00A1E44D", // Cyan
   },
   {
     title: "Electrodes",
     desc: "Reliable power for precise results.",
-    icon: "/medical/medpro/q6.png",
+    icon: "/medical/medpro/q6.webp",
     color: "#2C5DAB4D", // Dark blue
   },
   {
     title: "General Purpose",
     desc: "Versatile products for diverse urology needs.",
-    icon: "/medical/medpro/q7.png",
+    icon: "/medical/medpro/q7.webp",
     color: "#C54F954D", // Magenta
   },
   {
     title: "Innovation",
     desc: "Advancing urology with tomorrow's solutions.",
-    icon: "/medical/medpro/q8.png",
+    icon: "/medical/medpro/q8.webp",
     color: "#E4A8184D", // Orange
   }
 ];
@@ -58,8 +58,8 @@ export default function ProductSolutions() {
   return (
     <section id="product-solutions" className="relative w-full bg-white pb-24 pt-10 overflow-hidden">
       {/* Background Decoratives */}
-      <img src="/medical/medpro/bg1.png" alt="Background decoration left" className="absolute top-0 left-0 w-auto h-auto object-contain pointer-events-none z-0" />
-      <img src="/medical/medpro/bg2.png" alt="Background decoration right" className="absolute bottom-0 right-0 w-auto h-auto object-contain pointer-events-none z-0" />
+      <img src="/medical/medpro/bg1.webp" alt="Background decoration left" className="absolute top-0 left-0 w-auto h-auto object-contain pointer-events-none z-0" />
+      <img src="/medical/medpro/bg2.webp" alt="Background decoration right" className="absolute bottom-0 right-0 w-auto h-auto object-contain pointer-events-none z-0" />
 
       <div className="custom-container relative z-10 px-4 sm:px-6 md:px-8 xl:px-20">
         {/* Section Heading & Subtitle */}

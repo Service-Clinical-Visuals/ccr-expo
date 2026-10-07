@@ -18,27 +18,27 @@ interface ProductItem {
 const products: ProductItem[] = [
   {
     title: "Surgical Sutures",
-    image: "/medical/katsan/s1.png",
+    image: "/medical/katsan/s1.webp",
     link: "#products",
   },
   {
     title: "Laparoscopic Surgery",
-    image: "/medical/katsan/s2.png",
+    image: "/medical/katsan/s2.webp",
     link: "#products",
   },
   {
     title: "Sports Medicine",
-    image: "/medical/katsan/s3.png",
+    image: "/medical/katsan/s3.webp",
     link: "#products",
   },
   {
     title: "Hemostats",
-    image: "/medical/katsan/s4.png",
+    image: "/medical/katsan/s4.webp",
     link: "#products",
   },
   {
     title: "Meshes",
-    image: "/medical/katsan/s5.png",
+    image: "/medical/katsan/s5.webp",
     link: "#products",
   },
 ];

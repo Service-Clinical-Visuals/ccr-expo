@@ -58,7 +58,7 @@ export default function Header() {
         {/* Logo Area */}
         <div className="flex-shrink-0 flex items-center w-[45%] sm:w-[35%] md:w-[25%] xl:w-[20%] xl:w-[15%]">
           <Link href="#" className="w-full">
-            <img src="/medical/proimplant/logo.png" alt="Proimplant Logo" className="w-[90%] md:w-[70%] lg:w-[60%] xl:w-[60%] h-auto object-contain" />
+            <img src="/medical/proimplant/logo.webp" alt="Proimplant Logo" className="w-[90%] md:w-[70%] lg:w-[60%] xl:w-[60%] h-auto object-contain" />
           </Link>
         </div>
 

@@ -9,7 +9,7 @@ export default function Footer() {
       id="contacts"
       className="w-full text-white pt-16 sm:pt-20 min-[2500px]:pt-28 pb-10 min-[2500px]:pb-16 overflow-hidden select-none"
       style={{
-        backgroundImage: "url('/medical/neurosoft/bg.png')",
+        backgroundImage: "url('/medical/neurosoft/bg.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-3 lg:col-span-4 space-y-5 sm:space-y-6 min-[2500px]:space-y-8">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/neurosoft/footer_logo.png"
+                src="/medical/neurosoft/footer_logo.webp"
                 alt="Neurosoft"
                 className="h-[40px] sm:h-[48px] min-[2500px]:h-[75px] min-[3800px]:h-[100px] w-auto object-contain"
               />

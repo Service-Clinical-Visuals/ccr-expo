@@ -37,7 +37,7 @@ export default function AboutIntra() {
           data-aos-duration="900"
         >
           <img
-            src="/medical/intra-special/about.png"
+            src="/medical/intra-special/about.webp"
             alt="INTRA special catheters facility"
             className="w-full h-auto max-h-[543px] min-[2500px]:max-h-[720px] min-[3800px]:max-h-[950px] object-cover"
           />

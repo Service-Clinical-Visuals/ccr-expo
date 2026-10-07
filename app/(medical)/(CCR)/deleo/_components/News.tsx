@@ -8,7 +8,7 @@ import Link from "next/link";
 const News = () => {
   const newsItems = [
     {
-      image: "/medical/deleo/n1.png",
+      image: "/medical/deleo/n1.webp",
       category: "News",
       title: "Comprehensive facial treatment has...",
       date: "14.07.2026",
@@ -16,7 +16,7 @@ const News = () => {
       link: "#"
     },
     {
-      image: "/medical/deleo/n2.png",
+      image: "/medical/deleo/n2.webp",
       category: "General",
       title: "Cristal Ultra: the cryolipolysis platform that ...",
       date: "29.07.2026",
@@ -24,7 +24,7 @@ const News = () => {
       link: "#"
     },
     {
-      image: "/medical/deleo/n3.png",
+      image: "/medical/deleo/n3.webp",
       category: "General",
       title: "Cryolipolysis vs. Liposuction",
       date: "24.07.2026",

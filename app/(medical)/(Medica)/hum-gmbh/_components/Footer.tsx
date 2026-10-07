@@ -81,7 +81,7 @@ export default function Footer() {
             <Link href="#home" className="inline-block transition-transform hover:scale-105">
               <div className="bg-white px-7 sm:px-9 lg:px-10 xl:px-11 min-[2500px]:px-18 min-[3800px]:px-24 py-4 sm:py-5 lg:py-6 min-[2500px]:py-9 min-[3800px]:py-14 flex items-center justify-center shadow-lg">
                 <img
-                  src="/medical/hum-gmbh/footer_logo.jpg"
+                  src="/medical/hum-gmbh/footer_logo.webp"
                   alt="HUM Logo"
                   className="h-11 sm:h-13 lg:h-15 xl:h-[70px] min-[2500px]:h-[125px] min-[3800px]:h-[175px] w-auto object-contain select-none"
                 />

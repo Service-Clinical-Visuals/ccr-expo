@@ -37,7 +37,7 @@ export default function About() {
             data-aos="fade-right"
           >
             <img
-              src="/medical/dlr-meda/section2.png"
+              src="/medical/dlr-meda/section2.webp"
               alt="DLR Medikal manufacturing facility"
               className="w-full h-full object-cover"
             />

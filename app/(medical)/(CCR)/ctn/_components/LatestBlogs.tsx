@@ -14,46 +14,46 @@ interface BlogPost {
 const BLOG_POSTS: BlogPost[] = [
   {
     id: "blog-1",
-    image: "/medical/ctn/b1.png",
+    image: "/medical/ctn/b1.webp",
     title: "Accessibility in Sports: Recovery Technology For Every Athlete",
     href: "#blog-accessibility-in-sports",
   },
   {
     id: "blog-2",
-    image: "/medical/ctn/b2.png",
+    image: "/medical/ctn/b2.webp",
     title: "CTN Powers Cryotherapy at Policlinic Torreblanca",
     href: "#blog-policlinic-torreblanca",
   },
   {
     id: "blog-3",
-    image: "/medical/ctn/b3.png",
+    image: "/medical/ctn/b3.webp",
     title:
       "Prepare Your Wellness Business for a Profitable Summer Season with CTN tech",
     href: "#blog-profitable-summer-season",
   },
   {
     id: "blog-4",
-    image: "/medical/ctn/b4.png",
+    image: "/medical/ctn/b4.webp",
     title: "How to Refresh Your Wellness Offering with CTN Devices",
     href: "#blog-refresh-wellness-offering",
   },
   {
     id: "blog-5",
-    image: "/medical/ctn/b5.png",
+    image: "/medical/ctn/b5.webp",
     title:
       "5 Reasons Top Athletes Use Mild Hyperbaric Oxygen Therapy for Peak Performance",
     href: "#blog-athletes-hyperbaric-oxygen",
   },
   {
     id: "blog-6",
-    image: "/medical/ctn/b6.png",
+    image: "/medical/ctn/b6.webp",
     title:
       "Beyond Cryotherapy: Combining Recovery Technologies for Maximum Results",
     href: "#blog-beyond-cryotherapy",
   },
   {
     id: "blog-7",
-    image: "/medical/ctn/b7.png",
+    image: "/medical/ctn/b7.webp",
     title: "Why CTN is Your Partner in Recovery & Wellness for 2025",
     href: "#blog-partner-in-recovery-2025",
   },

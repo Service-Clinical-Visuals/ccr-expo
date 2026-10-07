@@ -106,7 +106,7 @@ export default function Header() {
             aria-label="Ergon Sutramed Home"
           >
             <img
-              src="/medical/ergon/logo.png"
+              src="/medical/ergon/logo.webp"
               alt="Ergon Sutramed"
               className="h-5 sm:h-6 md:h-7 min-[3800px]:h-14 w-auto object-contain"
             />

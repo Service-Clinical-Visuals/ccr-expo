@@ -8,7 +8,7 @@ const Deg360 = () => {
   return (
     <section
       id="experience-360"
-      className="w-full py-16 xl:py-24 bg-[#164160] bg-[url('/medical/covision/bg.png')] bg-cover bg-center bg-no-repeat overflow-hidden relative"
+      className="w-full py-16 xl:py-24 bg-[#164160] bg-[url('/medical/covision/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden relative"
     >
       <div className="custom-container flex flex-col items-center text-center gap-8 min-[3800px]:gap-12">
         {/* Top Content: Heading and Description - xl:max-w-[70%] Deleo pattern */}

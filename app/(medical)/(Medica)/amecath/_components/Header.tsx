@@ -73,7 +73,7 @@ export default function Header() {
         <Link href="/amecath" className="flex items-center gap-2 select-none group flex-shrink-0">
           <div className="relative w-28 sm:w-36 md:w-44 lg:w-48 h-7 sm:h-8 md:h-10">
             <Image
-              src="/medical/amecath/logo.png"
+              src="/medical/amecath/logo.webp"
               alt="AMECATH Logo"
               fill
               className="object-contain object-left transition-transform duration-200 group-hover:scale-[1.02]"

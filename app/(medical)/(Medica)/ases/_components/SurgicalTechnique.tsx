@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function SurgicalTechnique() {
   return (
-    <section id="surgical-technique" className="relative w-full py-20 overflow-hidden bg-[url('/medical/ases/bg1.png')] ">
+    <section id="surgical-technique" className="relative w-full py-20 overflow-hidden bg-[url('/medical/ases/bg1.webp')] ">
 
       <div className="custom-container relative z-10">
         {/* Header */}
@@ -31,7 +31,7 @@ export default function SurgicalTechnique() {
             <div className="bg-white rounded-md p-5 lg:p-8 flex flex-col shadow-lg">
               <div className="flex items-start gap-4 border-b border-gray-100 pb-4">
                 <div className="w-auto h-auto flex items-center justify-center shrink-0 mt-1">
-                  <img src="/medical/ases/i1.png" alt="Upper Extremity" className="w-full h-full object-contain" />
+                  <img src="/medical/ases/i1.webp" alt="Upper Extremity" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex flex-col gap-2 flex-1">
                   <h3 className="text-[#333333] font-[Inter] font-bold text-[20px] md:text-[24px] leading-tight">Flexible Configuration</h3>
@@ -49,7 +49,7 @@ export default function SurgicalTechnique() {
             <div className="bg-white rounded-md p-5 lg:p-8 flex flex-col shadow-lg">
               <div className="flex items-start gap-4 border-b border-gray-100 pb-4">
                 <div className="w-auto h-auto flex items-center justify-center shrink-0 mt-1">
-                  <img src="/medical/ases/i2.png" alt="Lower Extremity" className="w-full h-full object-contain" />
+                  <img src="/medical/ases/i2.webp" alt="Lower Extremity" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex flex-col gap-2 flex-1">
                   <h3 className="text-[#333333] font-[Inter] font-bold text-[20px] md:text-[24px] leading-tight">Versatile Fixation</h3>

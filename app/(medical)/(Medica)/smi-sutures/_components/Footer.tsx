@@ -52,7 +52,7 @@ function LinkList({ links }: { links: FooterLink[] }) {
 export default function Footer() {
   return (
     <footer
-      className="pt-14 sm:pt-16 min-[1025px]:pt-15 w-full bg-[#3a5da8] bg-[url('/medical/smi-sutures/bg.png')] bg-cover bg-center bg-no-repeat text-white"
+      className="pt-14 sm:pt-16 min-[1025px]:pt-15 w-full bg-[#3a5da8] bg-[url('/medical/smi-sutures/bg.webp')] bg-cover bg-center bg-no-repeat text-white"
     >
       <div className="custom-container px-0 sm:px-2 min-[1025px]:px-4">
         <div className="grid grid-cols-2 min-[1025px]:grid-cols-12 gap-x-6 gap-y-10 sm:gap-10">
@@ -60,7 +60,7 @@ export default function Footer() {
           <div className="col-span-2 min-[1025px]:col-span-4">
             <Link href="/smi-sutures" className="inline-block">
               <img
-                src="/medical/smi-sutures/footerlogo.png"
+                src="/medical/smi-sutures/footerlogo.webp"
                 alt="SMI - www.sutures.be"
                 className="h-20 sm:h-28 min-[1025px]:h-35 xl:h-40 w-auto object-contain"
               />

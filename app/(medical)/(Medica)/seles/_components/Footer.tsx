@@ -23,7 +23,7 @@ export default function Footer() {
         {/* Left: Full Height Image */}
         <div className="w-full lg:w-[25%] xl:w-[20%] relative shrink-0">
           <img
-            src="/medical/seles/footerimg.png"
+            src="/medical/seles/footerimg.webp"
             alt="Oltho Building"
             className="absolute inset-0 object-cover object-center grayscale"
           />
@@ -100,7 +100,7 @@ export default function Footer() {
             {/* Column 4: Logo & Brand Description */}
             <div className="flex flex-col gap-4 min-[2000px]:gap-6 min-[3000px]:gap-8">
               <img
-                src="/medical/seles/logo.png"
+                src="/medical/seles/logo.webp"
                 alt="oltho logo"
                 className="w-auto h-[90px] min-[2000px]:h-[130px] min-[3000px]:h-[170px] object-contain object-left mb-2 min-[2000px]:mb-4 brightness-[5] grayscale"
               />

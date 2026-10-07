@@ -40,7 +40,7 @@ const Expertise = () => {
             className="xl:col-span-7 relative w-full aspect-[1107/676] overflow-hidden rounded-xl md:rounded-2xl min-[2500px]:rounded-3xl min-[3800px]:rounded-[40px] bg-white shadow-[0_10px_30px_rgba(0,0,0,0.15)]"
             data-aos="fade-right"
           >
-            <img src="/tht/section4.png" alt="THT Bio-Science cleanroom manufacturing" className="absolute inset-0 w-full h-full object-cover" />
+            <img src="/tht/section4.webp" alt="THT Bio-Science cleanroom manufacturing" className="absolute inset-0 w-full h-full object-cover" />
           </div>
 
           {/* Content */}

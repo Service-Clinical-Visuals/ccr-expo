@@ -45,7 +45,7 @@ const AboutUs = () => {
 
               {/* Foreground Image */}
               <div className="relative z-10 shadow-2xl rounded-2xl min-[3800px]:rounded-[3rem] overflow-hidden aspect-[682/700]">
-                <img src="/euromed-implants/section22.png" alt="About Euromed Implants" className="w-full shadow-2xl h-full object-cover" />
+                <img src="/euromed-implants/section22.webp" alt="About Euromed Implants" className="w-full shadow-2xl h-full object-cover" />
               </div>
             </div>
 

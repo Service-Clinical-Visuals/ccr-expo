@@ -11,11 +11,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const trademarks = [
-  { id: 1, src: "/medical/demersan/t1.png", alt: "Primagel" },
-  { id: 2, src: "/medical/demersan/t2.png", alt: "Primacath" },
-  { id: 3, src: "/medical/demersan/t3.png", alt: "GoldCath" },
-  { id: 4, src: "/medical/demersan/t4.png", alt: "GoldCath Kit" },
-  { id: 5, src: "/medical/demersan/t5.png", alt: "Goldpad" },
+  { id: 1, src: "/medical/demersan/t1.webp", alt: "Primagel" },
+  { id: 2, src: "/medical/demersan/t2.webp", alt: "Primacath" },
+  { id: 3, src: "/medical/demersan/t3.webp", alt: "GoldCath" },
+  { id: 4, src: "/medical/demersan/t4.webp", alt: "GoldCath Kit" },
+  { id: 5, src: "/medical/demersan/t5.webp", alt: "Goldpad" },
 ];
 
 const Anatomical = () => {

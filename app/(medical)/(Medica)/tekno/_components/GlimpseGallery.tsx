@@ -14,7 +14,7 @@ export default function GlimpseGallery() {
             data-aos-duration="800"
           >
             <img
-              src="/medical/tekno/tekno-medical.png"
+              src="/medical/tekno/tekno-medical.webp"
               alt="50 Years of Tekno-Medical"
               className="w-full xl:w-auto h-auto xl:h-full object-contain"
             />
@@ -46,7 +46,7 @@ export default function GlimpseGallery() {
             {/* Stats Row */}
             <div className="grid grid-cols-4 gap-4 pt-4">
               <div className="flex flex-col items-center justify-center text-center gap-2 border-r border-[#3C40434D] last:border-r-0">
-                <img src="/medical/tekno/icon6.png" alt="Calendar" className="w-auto h-auto object-contain" />
+                <img src="/medical/tekno/icon6.webp" alt="Calendar" className="w-auto h-auto object-contain" />
                 <div className="flex flex-col mt-1">
                   <span className="font-outfit font-semibold text-[#111111] card-title leading-tight">50+</span>
                   <span className="font-outfit text-[#111111] font-regular section-text">Years</span>
@@ -54,7 +54,7 @@ export default function GlimpseGallery() {
               </div>
 
               <div className="flex flex-col items-center justify-center text-center gap-2 border-r border-[#3C40434D] last:border-r-0">
-                <img src="/medical/tekno/icon7.png" alt="Globe" className="w-auto h-auto object-contain" />
+                <img src="/medical/tekno/icon7.webp" alt="Globe" className="w-auto h-auto object-contain" />
                 <div className="flex flex-col mt-1">
                   <span className="font-outfit card-title font-semibold text-[#111111] text-base sm:text-lg leading-tight">130+</span>
                   <span className="font-outfit text-[#111111] font-regular section-text">Countries</span>
@@ -62,7 +62,7 @@ export default function GlimpseGallery() {
               </div>
 
               <div className="flex flex-col items-center justify-center text-center gap-2 border-r border-[#3C40434D] last:border-r-0">
-                <img src="/medical/tekno/icon8.png" alt="Users" className="w-auto h-auto object-contain" />
+                <img src="/medical/tekno/icon8.webp" alt="Users" className="w-auto h-auto object-contain" />
                 <div className="flex flex-col mt-1">
                   <span className="font-outfit card-title font-semibold text-[#111111] text-base sm:text-lg leading-tight">100+</span>
                   <span className="font-outfit text-[#111111] font-regular section-text">Employees</span>
@@ -70,7 +70,7 @@ export default function GlimpseGallery() {
               </div>
 
               <div className="flex flex-col items-center justify-center text-center gap-2 border-r border-[#3C40434D] last:border-r-0">
-                <img src="/medical/tekno/icon9.png" alt="Location" className="w-auto h-auto object-contain" />
+                <img src="/medical/tekno/icon9.webp" alt="Location" className="w-auto h-auto object-contain" />
                 <div className="flex flex-col mt-1">
                   <span className="font-outfit card-title font-semibold text-[#111111] text-base sm:text-lg leading-tight">1976</span>
                   <span className="font-outfit text-[#111111] font-regular section-text">Tuttlingen</span>

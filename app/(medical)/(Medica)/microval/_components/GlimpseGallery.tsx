@@ -4,7 +4,7 @@ import Button from "./Button";
 export default function GlimpseGallery() {
   return (
     <section
-      className="relative w-full py-24 sm:py-32 lg:py-30 flex items-center justify-center bg-[url('/medical/microval/bg.png')] bg-cover bg-center bg-no-repeat"
+      className="relative w-full py-24 sm:py-32 lg:py-30 flex items-center justify-center bg-[url('/medical/microval/bg.webp')] bg-cover bg-center bg-no-repeat"
     >
 
       <div className="custom-container relative z-10 px-4 sm:px-6 md:px-8 xl:px-12 flex flex-col items-center text-center">

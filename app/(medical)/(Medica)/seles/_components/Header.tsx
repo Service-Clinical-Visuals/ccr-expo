@@ -129,7 +129,7 @@ export default function Header() {
             aria-label="Geotek Home"
           >
             <img
-              src="/medical/seles/logo.png"
+              src="/medical/seles/logo.webp"
               alt="oltho Healthcare"
               width={175}
               height={46}

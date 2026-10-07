@@ -80,7 +80,7 @@ const Header = () => {
               aria-label="Covision Home"
             >
               <img
-                src="/medical/covision/logo.png"
+                src="/medical/covision/logo.webp"
                 alt="Covision Medical Technologies"
                 className="header-logo-4k h-10 sm:h-12 md:h-14 lg:h-16 min-[2000px]:h-[80px] min-[2500px]:h-[105px] min-[3500px]:h-[160px] min-[3800px]:h-[180px] w-auto object-contain transition-all duration-300"
               />

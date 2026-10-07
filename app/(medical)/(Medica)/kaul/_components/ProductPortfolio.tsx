@@ -6,7 +6,7 @@ import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 
 export default function ProductPortfolio() {
   return (
-    <section className="w-full bg-[#2A3338] py-14 sm:py-18 md:py-24 overflow-hidden bg-[url('/medical/kaul/bg.png')] bg-cover bg-center bg-no-repeat relative">
+    <section className="w-full bg-[#2A3338] py-14 sm:py-18 md:py-24 overflow-hidden bg-[url('/medical/kaul/bg.webp')] bg-cover bg-center bg-no-repeat relative">
       <div className="custom-container">
         <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-stretch">
           

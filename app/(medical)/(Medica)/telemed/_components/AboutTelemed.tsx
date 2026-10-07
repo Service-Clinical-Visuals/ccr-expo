@@ -63,7 +63,7 @@ export default function AboutTelemed() {
             data-aos-delay="100"
           >
             <img
-              src="/medical/telemed/a1.jpg"
+              src="/medical/telemed/a1.webp"
               alt="Telemed 1992 Pioneering Ultrasound System and Probe"
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
             />
@@ -77,7 +77,7 @@ export default function AboutTelemed() {
             data-aos-delay="200"
           >
             <img
-              src="/medical/telemed/a2.jpg"
+              src="/medical/telemed/a2.webp"
               alt="Telemed Diagnostic Microcircuitry and Hardware Architecture"
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
             />

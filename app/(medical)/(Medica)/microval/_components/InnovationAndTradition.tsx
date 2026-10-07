@@ -20,7 +20,7 @@ export default function InnovationAndTradition() {
           {/* Image */}
           <div className="relative z-10 w-full overflow-hidden">
             <img
-              src="/medical/microval/about.png"
+              src="/medical/microval/about.webp"
               alt="About Microval"
               className="w-full h-auto object-cover"
             />

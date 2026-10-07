@@ -131,7 +131,7 @@ export default function Header() {
             aria-label="Geotek Home"
           >
             <img
-              src="/medical/geotek/images/logo.png"
+              src="/medical/geotek/images/logo.webp"
               alt="GEOTEK Healthcare Products"
               width={175}
               height={46}

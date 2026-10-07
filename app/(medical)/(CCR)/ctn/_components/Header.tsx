@@ -134,7 +134,7 @@ export default function Header() {
             <Link href="/ctn" className="flex items-center gap-2 flex-shrink-0 group">
               <div className="relative h-7 w-20 sm:h-8 sm:w-24 md:h-9 md:w-28 flex items-center">
                 <img
-                  src="/medical/ctn/logo.png"
+                  src="/medical/ctn/logo.webp"
                   alt="CTN Logo"
                   className="h-full w-auto object-contain group-hover:opacity-90 transition-opacity"
                 />

@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Column 1: Logo & Description (spans 2 columns on large screens) */}
           <div className="col-span-2 lg:col-span-2 flex flex-col gap-6 items-start" data-aos="fade-up">
             <img
-              src="/medical/prince-medical/logo.png"
+              src="/medical/prince-medical/logo.webp"
               alt="Prince Medical Logo"
               className="h-10 xl:h-12 min-[3800px]:h-40 w-auto object-contain object-left"
             />

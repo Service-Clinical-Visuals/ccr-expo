@@ -6,21 +6,21 @@ import Link from "next/link";
 
 const NEWS_DATA = [
   {
-    image: "/medical/microval/news1.png",
+    image: "/medical/microval/news1.webp",
     alt: "MEDICA",
     date: "Nov 16-19, 2026",
     location: "Düsseldorf, Germany",
     description: "Microval will be present at MEDICA Düsseldorf, one of the largest international events in the medical sector.",
   },
   {
-    image: "/medical/microval/news2.png",
+    image: "/medical/microval/news2.webp",
     alt: "MEDICAL FAIR ASIA",
     date: "Sept 9-11, 2026",
     location: "Marina Bay Sands, Singapore",
     description: "Microval will be present at Medical Fair Asia 2026, the unmissable event for the medical sector in Southeast Asia.",
   },
   {
-    image: "/medical/microval/news3.png",
+    image: "/medical/microval/news3.webp",
     alt: "WHX Dubai",
     date: "Jan 25-28, 2027",
     location: "Dubai Exhibition Centre",

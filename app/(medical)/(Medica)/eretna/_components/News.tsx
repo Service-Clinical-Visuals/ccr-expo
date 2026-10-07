@@ -62,7 +62,7 @@ export default function News() {
                 {/* Card Image on left (50%) */}
                 <div className="relative w-full sm:w-[50%] aspect-[16/10] sm:aspect-auto sm:min-h-[444px] min-[2500px]:sm:min-h-[560px] bg-gray-100 shrink-0">
                   <img
-                    src="/medical/eretna/news1.png"
+                    src="/medical/eretna/news1.webp"
                     alt="EXPOMED 2026 - Istanbul Eurasia"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
@@ -105,7 +105,7 @@ export default function News() {
                 <div className="bg-white rounded-2xl min-[2500px]:rounded-3xl figma-card-shadow overflow-hidden flex flex-col sm:flex-row group transition-all duration-300 hover:shadow-xl border border-gray-100 flex-1 min-h-[207px] min-[2500px]:min-h-[270px]">
                   <div className="relative w-full sm:w-[40%] aspect-[16/10] sm:aspect-auto sm:min-h-full shrink-0 bg-[#E8EEF7]">
                     <img
-                      src="/medical/eretna/news2.png"
+                      src="/medical/eretna/news2.webp"
                       alt="23rd National Intensive Care Congress"
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     />
@@ -140,7 +140,7 @@ export default function News() {
                 <div className="bg-white rounded-2xl min-[2500px]:rounded-3xl figma-card-shadow overflow-hidden flex flex-col sm:flex-row group transition-all duration-300 hover:shadow-xl border border-gray-100 flex-1 min-h-[207px] min-[2500px]:min-h-[270px]">
                   <div className="relative w-full sm:w-[40%] aspect-[16/10] sm:aspect-auto sm:min-h-full shrink-0 bg-gray-100">
                     <img
-                      src="/medical/eretna/news3.png"
+                      src="/medical/eretna/news3.webp"
                       alt="TASHKON 2026 Congress"
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     />

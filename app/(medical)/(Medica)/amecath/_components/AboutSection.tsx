@@ -53,7 +53,7 @@ export default function AboutSection() {
         >
           <div className="relative w-full h-[280px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[680px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-md">
             <Image
-              src="/medical/amecath/abt.png"
+              src="/medical/amecath/abt.webp"
               alt="AMECATH Leadership and Team"
               fill
               className="object-cover object-center "

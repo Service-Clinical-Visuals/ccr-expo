@@ -47,7 +47,7 @@ const Deg360 = () => {
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 mt-16 min-[3800px]:mt-24">
           <div className="bg-white rounded-[2em] py-6 px-6 flex items-center gap-6 border-b-4 border-[var(--color-secondary)]">
             <div className="w-25 h-25  min-[3800px]:w-32 min-[3800px]:h-32 shrink-0 rounded-full border-2 border-[var(--color-primary)] min-[3800px]:border-4 flex items-center justify-center p-5 min-[3800px]:p-6">
-              <img src="/medical/eb-neuro/icon1.png" alt="Compact & Portable" className="w-full h-full object-contain" />
+              <img src="/medical/eb-neuro/icon1.webp" alt="Compact & Portable" className="w-full h-full object-contain" />
             </div>
             <div>
               <Typography variant="h3" color="dark" className="mb-1">Compact & Portable</Typography>
@@ -57,7 +57,7 @@ const Deg360 = () => {
 
           <div className="bg-white rounded-[2em] py-6 px-6 flex items-center gap-6 border-b-4 border-[var(--color-secondary)]">
             <div className="w-25 h-25 min-[3800px]:w-32 min-[3800px]:h-32 shrink-0 rounded-full border-2 border-[var(--color-primary)] min-[3800px]:border-4 flex items-center justify-center p-5 min-[3800px]:p-6">
-              <img src="/medical/eb-neuro/icon2.png" alt="Compact & Portable" className="w-full h-full object-contain" />
+              <img src="/medical/eb-neuro/icon2.webp" alt="Compact & Portable" className="w-full h-full object-contain" />
             </div>
             <div>
               <Typography variant="h3" color="dark" className="mb-1">Advanced Monitoring</Typography>
@@ -67,7 +67,7 @@ const Deg360 = () => {
 
           <div className="bg-white rounded-[2em] py-6 px-6 flex items-center gap-6 border-b-4 border-[var(--color-secondary)]">
             <div className="w-25 h-25 min-[3800px]:w-32 min-[3800px]:h-32 shrink-0 rounded-full border-2 border-[var(--color-primary)] min-[3800px]:border-4 flex items-center justify-center p-5 min-[3800px]:p-6">
-              <img src="/medical/eb-neuro/icon3.png" alt="Compact & Portable" className="w-full h-full object-contain" />
+              <img src="/medical/eb-neuro/icon3.webp" alt="Compact & Portable" className="w-full h-full object-contain" />
             </div>
             <div>
               <Typography variant="h3" color="dark" className="mb-1">Clear & Reliable</Typography>

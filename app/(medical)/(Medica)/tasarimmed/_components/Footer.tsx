@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="flex flex-col gap-6 xl:col-span-4 xl:pr-4">
             <Link href="/" className="inline-block">
               <img
-                src="/medical/tasarimmed/logo.png"
+                src="/medical/tasarimmed/logo.webp"
                 alt="Tasarimmed Logo"
                 className="h-[104px] w-auto object-contain mb-2"
               />

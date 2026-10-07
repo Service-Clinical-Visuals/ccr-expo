@@ -9,7 +9,7 @@ export default function OurQuality() {
   return (
     <section
       id="quality"
-      className="relative w-full py-16 sm:py-20 lg:py-24 min-[3800px]:py-36 bg-[#6D1010] bg-[url('/medical/hermann/q-bg.png')] bg-cover bg-center overflow-hidden"
+      className="relative w-full py-16 sm:py-20 lg:py-24 min-[3800px]:py-36 bg-[#6D1010] bg-[url('/medical/hermann/q-bg.webp')] bg-cover bg-center overflow-hidden"
     >
       {/* Dark Wine Overlay for Contrast */}
       <div className="absolute inset-0 bg-[#6D1010]/60 mix-blend-multiply pointer-events-none" />
@@ -60,7 +60,7 @@ export default function OurQuality() {
             data-aos-delay="150"
           >
             <img
-              src="/medical/hermann/q1.png"
+              src="/medical/hermann/q1.webp"
               alt="Hermann Surgical Shears Precision Inspection"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
@@ -78,7 +78,7 @@ export default function OurQuality() {
             data-aos-delay="200"
           >
             <img
-              src="/medical/hermann/q2.png"
+              src="/medical/hermann/q2.webp"
               alt="Hermann High Precision Microscopic Quality Check"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />

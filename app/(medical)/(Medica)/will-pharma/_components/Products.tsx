@@ -19,7 +19,7 @@ const dutchProducts: Product[] = [
     title: "AXHIDROX",
     category: "Dermatologie",
     tag: "Medical Products",
-    image: "/medical/will-pharma/p1.jpg",
+    image: "/medical/will-pharma/p1.webp",
     link: "#products",
   },
   {
@@ -27,7 +27,7 @@ const dutchProducts: Product[] = [
     title: "SPREEMYK",
     category: "Dermatologie",
     tag: "Cosmetica",
-    image: "/medical/will-pharma/p2.jpg",
+    image: "/medical/will-pharma/p2.webp",
     link: "#products",
   },
   {
@@ -35,7 +35,7 @@ const dutchProducts: Product[] = [
     title: "CaD 1000/880 CITROEN",
     category: "Reumatologie",
     tag: "Medical Products",
-    image: "/medical/will-pharma/p3.jpg",
+    image: "/medical/will-pharma/p3.webp",
     link: "#products",
   },
 ];
@@ -46,7 +46,7 @@ const belgiumProducts: Product[] = [
     title: "TRIANAL ZETPIL",
     category: "Dermatologie",
     tag: "Medical Products",
-    image: "/medical/will-pharma/p4.png",
+    image: "/medical/will-pharma/p4.webp",
     link: "#products",
   },
   {
@@ -54,7 +54,7 @@ const belgiumProducts: Product[] = [
     title: "C-WILL",
     category: "Vitaminen, mineralen en tonica",
     tag: "Medical Products",
-    image: "/medical/will-pharma/p5.jpg",
+    image: "/medical/will-pharma/p5.webp",
     link: "#products",
   },
   {
@@ -62,7 +62,7 @@ const belgiumProducts: Product[] = [
     title: "DONNAFYTA MENO",
     category: "Gynaecologie",
     tag: "Medical Products",
-    image: "/medical/will-pharma/p6.jpg",
+    image: "/medical/will-pharma/p6.webp",
     link: "#products",
   },
 ];

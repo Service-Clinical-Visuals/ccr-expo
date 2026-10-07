@@ -47,7 +47,7 @@ export default function Interactive360() {
         className="absolute top-0 left-0 w-full pointer-events-none z-0 transition-[height] duration-200"
         style={{
           height: bannerHeight ? `${bannerHeight}px` : "400px",
-          backgroundImage: "url('/medical/neurosoft/bg.png')",
+          backgroundImage: "url('/medical/neurosoft/bg.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

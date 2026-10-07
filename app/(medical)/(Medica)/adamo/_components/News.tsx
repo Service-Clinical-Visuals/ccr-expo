@@ -12,27 +12,27 @@ const newsItems = [
   {
     title: "Arab Health",
     date: "February 9-12, 2026",
-    image: "/adamo/n1.jpg"
+    image: "/adamo/n1.webp"
   },
   {
     title: "EFC - IX SATELLITE MEETING",
     date: "November 27-28",
-    image: "/adamo/n2.jpg"
+    image: "/adamo/n2.webp"
   },
   {
     title: "62nd National Congress Of The Italian...",
     date: "November 26-29, 2026",
-    image: "/adamo/n3.jpg"
+    image: "/adamo/n3.webp"
   },
   {
     title: "WID - 16th Edition",
     date: "November 21-22, 2025",
-    image: "/adamo/n4.jpg"
+    image: "/adamo/n4.webp"
   },
   {
     title: "Medica 2025, Düsseldorf",
     date: "November 17-20",
-    image: "/adamo/n5.jpg"
+    image: "/adamo/n5.webp"
   },
 ];
 

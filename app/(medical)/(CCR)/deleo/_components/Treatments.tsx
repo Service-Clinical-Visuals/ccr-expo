@@ -15,37 +15,37 @@ const Treatments = () => {
     {
       title: "ACNE",
       description: "Acne is the most common skin condition and affects teenagers as well as some adults. It most often appears on the face and chest,...",
-      image: "/medical/deleo/d1.png",
+      image: "/medical/deleo/d1.webp",
       link: "#"
     },
     {
       title: "SCARS",
       description: "Scars result from trauma related to surgery, an accident, or illness. When the top layer of skin is damaged, the regeneration process begins,...",
-      image: "/medical/deleo/d2.png",
+      image: "/medical/deleo/d2.webp",
       link: "#"
     },
     {
       title: "SKIN LEANING",
       description: "Skin laxity is a natural process that occurs with age or significant weight loss. This is due to both internal factor sand external factors...",
-      image: "/medical/deleo/d3.png",
+      image: "/medical/deleo/d3.webp",
       link: "#"
     },
     {
       title: "ALOPECIA",
       description: "Losing hair every day is a normal phenomenon; an adult loses an average of 50 to 100 hairs per day. Hair loss becomes pathological when the hairs that fall out ...",
-      image: "/medical/deleo/d4.png",
+      image: "/medical/deleo/d4.webp",
       link: "#"
     },
     {
       title: "WRINKLES & FINE LINES",
       description: "A wrinkle is a break in the skin caused by a decrease in collagen and elastin, two proteins essential for skin elasticity...",
-      image: "/medical/deleo/d5.png",
+      image: "/medical/deleo/d5.webp",
       link: "#"
     },
     {
       title: "BLEPHAROPLASTY",
       description: "Laser blepharoplasty uses laser technology instead of surgery. The goal of this procedure is the same as that of traditional blepharoplasty...",
-      image: "/medical/deleo/d6.png",
+      image: "/medical/deleo/d6.webp",
       link: "#"
     }
   ];

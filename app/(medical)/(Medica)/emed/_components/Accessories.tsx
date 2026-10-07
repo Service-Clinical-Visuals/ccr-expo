@@ -18,52 +18,52 @@ interface AccessoryItem {
 const accessoryItems: AccessoryItem[] = [
   {
     title: "ThermoStapler®",
-    image: "/medical/emed/a1.png",
+    image: "/medical/emed/a1.webp",
     alt: "ThermoStapler accessory",
   },
   {
     title: "Handle For Laparoscopic Instrument",
-    image: "/medical/emed/a2.png",
+    image: "/medical/emed/a2.webp",
     alt: "Handle for laparoscopic instrument",
   },
   {
     title: "Laparoscopic Insert",
-    image: "/medical/emed/a3.png",
+    image: "/medical/emed/a3.webp",
     alt: "Laparoscopic insert",
   },
   {
     title: "MultiSwitch, Two-Pedal Footswitch",
-    image: "/medical/emed/a4.png",
+    image: "/medical/emed/a4.webp",
     alt: "MultiSwitch two-pedal footswitch",
   },
   {
     title: "Bipolar Cable For Scissor-Clamp",
-    image: "/medical/emed/a5.png",
+    image: "/medical/emed/a5.webp",
     alt: "Bipolar cable for scissor-clamp",
   },
   {
     title: "Electrode For Argon Coagulation",
-    image: "/medical/emed/a6.png",
+    image: "/medical/emed/a6.webp",
     alt: "Electrode for argon coagulation",
   },
   {
     title: "Argon Electrodes Handle",
-    image: "/medical/emed/a7.png",
+    image: "/medical/emed/a7.webp",
     alt: "Argon electrodes handle",
   },
   {
     title: "Argon Flexible Probe GIT",
-    image: "/medical/emed/a8.jpg",
+    image: "/medical/emed/a8.webp",
     alt: "Argon flexible probe GIT",
   },
   {
     title: "Irrigation Tubing-EMED",
-    image: "/medical/emed/a9.jpg",
+    image: "/medical/emed/a9.webp",
     alt: "Irrigation tubing EMED",
   },
   {
     title: "Single Use One-Way Water Jet",
-    image: "/medical/emed/a10.jpg",
+    image: "/medical/emed/a10.webp",
     alt: "Single use one-way water jet",
   },
 ];

@@ -81,7 +81,7 @@ export default function Header() {
               className="flex items-center block py-1 cursor-pointer relative z-10"
             >
               <img
-                src="/medical/neurosoft/logo.png"
+                src="/medical/neurosoft/logo.webp"
                 alt="Neurosoft Logo"
                 className="h-[36px] sm:h-[40px] min-[1026px]:h-[44px] min-[2500px]:h-[48px] min-[3800px]:h-[52px] w-auto object-contain mr-2"
               />

@@ -72,7 +72,7 @@ const Header = () => {
               aria-label="TRUEMED Home"
             >
               <img
-                src="/truemed/logo.png"
+                src="/truemed/logo.webp"
                 alt="TRUEMED Logo"
                 className="h-7 sm:h-8 md:h-9 lg:h-10 min-[2500px]:h-13 min-[3800px]:h-22 w-[70%]  object-contain"
               />

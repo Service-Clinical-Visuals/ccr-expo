@@ -102,7 +102,7 @@ export default function Header() {
           >
             <div className="relative flex items-center">
               <img
-                src="/medical/fentex/logo.png"
+                src="/medical/fentex/logo.webp"
                 alt="Fentex"
                 className="h-auto w-auto object-contain"
               />
@@ -168,7 +168,7 @@ export default function Header() {
               <Button href="#language" showArrow={false} className="!bg-white !text-[#004080] border !border-[#004080] hover:!bg-slate-50">
                 <span className="flex items-center gap-2 font-inter font-semibold btn-text text-[#006AB3]">
                   <img
-                    src="/medical/fentex/flag.png"
+                    src="/medical/fentex/flag.webp"
                     alt="Fentex"
                     className="h-auto w-auto object-contain"
                   />

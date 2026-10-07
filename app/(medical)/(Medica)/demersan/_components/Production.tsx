@@ -10,14 +10,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const galleryImages = [
-  { id: 1, src: "/medical/demersan/g1.png", alt: "Gallery 1" },
-  { id: 2, src: "/medical/demersan/g2.png", alt: "Gallery 2" },
-  { id: 3, src: "/medical/demersan/g3.png", alt: "Gallery 3" },
-  { id: 4, src: "/medical/demersan/g4.png", alt: "Gallery 4" },
-  { id: 5, src: "/medical/demersan/g5.png", alt: "Gallery 5" },
-  { id: 6, src: "/medical/demersan/g6.png", alt: "Gallery 6" },
-  { id: 7, src: "/medical/demersan/g7.png", alt: "Gallery 7" },
-  { id: 8, src: "/medical/demersan/g8.png", alt: "Gallery 8" },
+  { id: 1, src: "/medical/demersan/g1.webp", alt: "Gallery 1" },
+  { id: 2, src: "/medical/demersan/g2.webp", alt: "Gallery 2" },
+  { id: 3, src: "/medical/demersan/g3.webp", alt: "Gallery 3" },
+  { id: 4, src: "/medical/demersan/g4.webp", alt: "Gallery 4" },
+  { id: 5, src: "/medical/demersan/g5.webp", alt: "Gallery 5" },
+  { id: 6, src: "/medical/demersan/g6.webp", alt: "Gallery 6" },
+  { id: 7, src: "/medical/demersan/g7.webp", alt: "Gallery 7" },
+  { id: 8, src: "/medical/demersan/g8.webp", alt: "Gallery 8" },
 ];
 
 const Production = () => {

@@ -103,7 +103,7 @@ export default function Header() {
           >
             <div className="relative flex items-center">
               <img
-                src="/medical/tekno/logo.png"
+                src="/medical/tekno/logo.webp"
                 alt="Tekno"
                 className="h-auto w-auto object-contain"
               />

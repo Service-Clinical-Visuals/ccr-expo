@@ -11,42 +11,42 @@ import "swiper/css/pagination";
 const PRODUCTS = [
   {
     title: "Nutraceuticals",
-    image: "/medical/farmac/1.png",
+    image: "/medical/farmac/1.webp",
     href: "#nutraceuticals",
   },
   {
     title: "Electromedical equipment",
-    image: "/medical/farmac/2.png",
+    image: "/medical/farmac/2.webp",
     href: "#electromedical",
   },
   {
     title: "Oftamed's Line",
-    image: "/medical/farmac/3.png",
+    image: "/medical/farmac/3.webp",
     href: "#oftamed",
   },
   {
     title: "Orthopedics",
-    image: "/medical/farmac/4.png",
+    image: "/medical/farmac/4.webp",
     href: "#orthopedics",
   },
   {
     title: "Healthcare & Thermocare",
-    image: "/medical/farmac/5.png",
+    image: "/medical/farmac/5.webp",
     href: "#healthcare",
   },
   {
     title: "Medical Dressings",
-    image: "/medical/farmac/6.png",
+    image: "/medical/farmac/6.webp",
     href: "#dressings",
   },
   {
     title: "Diagnostic Instruments",
-    image: "/medical/farmac/7.png",
+    image: "/medical/farmac/7.webp",
     href: "#diagnostic",
   },
   {
     title: "Surgical & Operating Room",
-    image: "/medical/farmac/8.png",
+    image: "/medical/farmac/8.webp",
     href: "#surgical",
   },
 ];

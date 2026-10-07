@@ -57,7 +57,7 @@ export default function GlimpseGallery() {
             data-aos-duration="800"
           >
             <img
-              src="/medical/medelcom/advance.png"
+              src="/medical/medelcom/advance.webp"
               alt="Advanced Engineering"
               className="w-auto h-full object-cover"
             />

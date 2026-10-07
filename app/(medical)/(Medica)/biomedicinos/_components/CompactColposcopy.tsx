@@ -13,7 +13,7 @@ export default function CompactColposcopy() {
   ];
 
   return (
-    <section className="py-16 md:py-24 w-full relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/medical/biomedicinos/bg.png')" }}>
+    <section className="py-16 md:py-24 w-full relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/medical/biomedicinos/bg.webp')" }}>
       <div className="custom-container flex flex-col">
         {/* Header Section */}
         <div className="text-center    mx-auto mb-12 md:mb-16">

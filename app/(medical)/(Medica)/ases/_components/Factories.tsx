@@ -5,7 +5,7 @@ import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 
 export default function Factories() {
   return (
-    <section id="factories" className="w-full py-16 md:py-24 bg-[#E5E5E5] bg-[url('/medical/ases/bg2.png')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
+    <section id="factories" className="w-full py-16 md:py-24 bg-[#E5E5E5] bg-[url('/medical/ases/bg2.webp')] bg-cover bg-center bg-no-repeat relative overflow-hidden">
 
       <div className="custom-container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 items-center lg:items-stretch">

@@ -61,7 +61,7 @@ export default function EuromedOverview() {
           >
             <div className="relative w-full h-full overflow-hidden shadow-lg group">
               <img
-                src="/medical/euromed/abt.png"
+                src="/medical/euromed/abt.webp"
 
                 alt="Euromed Corporate Facilities and Architectural Vision"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

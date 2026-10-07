@@ -130,7 +130,7 @@ export default function Header() {
           >
             <div className="relative h-7 sm:h-8 md:h-9 flex items-center">
               <img
-                src="/medical/serag-wiessner/logo.png"
+                src="/medical/serag-wiessner/logo.webp"
                 onError={(e) => {
                   const target = e.currentTarget;
                   if (!target.src.includes("/moto/")) {

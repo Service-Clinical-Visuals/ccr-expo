@@ -41,7 +41,7 @@ const Footer = () => {
           {/* Column 1: Logo & Description */}
           <div className="sm:col-span-2 lg:col-span-4 flex flex-col gap-6 items-start" data-aos="fade-up">
             <img
-              src="/medical/surgival/logo.png"
+              src="/medical/surgival/logo.webp"
               alt="Surgival"
               className="h-10 lg:h-30 w-auto object-contain object-left brightness-0 invert"
             />

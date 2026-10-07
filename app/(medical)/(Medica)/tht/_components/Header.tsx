@@ -57,7 +57,7 @@ export default function Header() {
         {/* Logo Area */}
         <div className="flex-shrink-0 flex items-center w-[45%] sm:w-[35%] md:w-[25%] xl:w-[20%] xl:w-[15%] min-[2500px]:w-[12%]">
           <Link href="#" className="w-full">
-            <img src="/tht/logo.png" alt="THT Logo" className="w-[90%] md:w-[55%] lg:w-[55%] xl:w-[70%] min-[2500px]:w-[80%] h-auto object-contain brightness-0" />
+            <img src="/tht/logo.webp" alt="THT Logo" className="w-[90%] md:w-[55%] lg:w-[55%] xl:w-[70%] min-[2500px]:w-[80%] h-auto object-contain brightness-0" />
           </Link>
         </div>
 

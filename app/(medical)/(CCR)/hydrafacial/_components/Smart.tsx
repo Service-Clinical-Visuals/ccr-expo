@@ -16,7 +16,7 @@ const Smart = () => {
   return (
     <section id="smart" className="w-full py-16 bg-white overflow-hidden relative">
       <img
-        src="/medical/hydrafacial/bg.png"
+        src="/medical/hydrafacial/bg.webp"
         alt=""
         aria-hidden="true"
         className="pointer-events-none select-none absolute bottom-0 right-0 w-[60%] max-w-[520px] hidden sm:block opacity-80 z-0"
@@ -63,7 +63,7 @@ const Smart = () => {
         {/* Image */}
         <div className="w-full order-2 lg:order-1 lg:col-span-5" data-aos="fade-right">
           <img
-            src="/medical/hydrafacial/smart.png"
+            src="/medical/hydrafacial/smart.webp"
             alt="HydraFacial smart device"
             className="w-full h-auto object-contain"
           />

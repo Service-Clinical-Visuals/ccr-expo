@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="lg:col-span-4 flex flex-col gap-5 min-[2500px]:gap-7 min-[3800px]:gap-10 pr-0 lg:pr-6">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/remake-soil/logo.png"
+                src="/medical/remake-soil/logo.webp"
                 alt="Remake Soil Logo"
                 className="h-7 sm:h-8 min-[2000px]:h-10 min-[2500px]:h-12 min-[3800px]:h-18 w-auto object-contain"
               />

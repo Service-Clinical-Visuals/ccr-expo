@@ -40,7 +40,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="#home" className="flex items-center shrink-0">
           <img
-            src="/medical/intra-special/logo.png"
+            src="/medical/intra-special/logo.webp"
             alt="intra special catheters"
             className="w-[120px] sm:w-[135px] lg:w-[155px] min-[2500px]:w-[210px] min-[3800px]:w-[280px] h-auto object-contain"
           />

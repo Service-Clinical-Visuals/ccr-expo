@@ -13,7 +13,7 @@ export default function Footer() {
           {/* 1. Logos & Tagline */}
           <div className="lg:col-span-4 flex flex-col">
             <img
-              src="/medical/microval/f-logo1.png"
+              src="/medical/microval/f-logo1.webp"
               alt="MicroVal France"
               className="w-auto h-auto object-contain self-start"
             />
@@ -72,7 +72,7 @@ export default function Footer() {
             <h4 className="font-inter footer-text font-bold text-[#FFFFFF] tracking-wide leading-snug mb-1">ISO 13485:2016 certification</h4>
             <div className="inline-block">
               <img
-                src="/medical/microval/f-logo2.png"
+                src="/medical/microval/f-logo2.webp"
                 alt="ISO Certification SGS"
                 className="w-auto h-auto object-contain self-start"
               />

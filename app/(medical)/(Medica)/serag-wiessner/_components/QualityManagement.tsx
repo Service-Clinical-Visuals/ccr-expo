@@ -56,7 +56,7 @@ export default function QualityManagement() {
           >
             <div className="relative w-full h-full overflow-hidden group">
               <img
-                src="/medical/serag-wiessner/Quality.png"
+                src="/medical/serag-wiessner/Quality.webp"
                 alt="SERAG-WIESSNER Quality and Environmental Management Laboratory Spectrometer"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />

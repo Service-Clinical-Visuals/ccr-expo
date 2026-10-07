@@ -15,19 +15,19 @@ interface StoryCard {
 const SUCCESS_STORIES: StoryCard[] = [
   {
     id: "story-1",
-    image: "/medical/ctn/r1.png",
+    image: "/medical/ctn/r1.webp",
     alt: "Luxury wellness resort and spa recovery facility",
     href: "#resort-recovery",
   },
   {
     id: "story-2",
-    image: "/medical/ctn/r2.png",
+    image: "/medical/ctn/r2.webp",
     alt: "European medical clinic offering CTN cryotherapy",
     href: "#clinic-partners",
   },
   {
     id: "story-3",
-    image: "/medical/ctn/r3.png",
+    image: "/medical/ctn/r3.webp",
     alt: "Elite athlete UFC champion recovery celebration",
     href: "#athlete-recovery",
   },
