@@ -58,18 +58,31 @@ for (const [i, file] of images.entries()) {
   if ((i + 1) % 100 === 0) console.log(`  converted ${i + 1}/${images.length}`);
 }
 
-// 2. Rewrite references. A reference is only changed when its path matches the
-//    tail of a converted /public file, so remote URLs and missing files are left alone
-//    (this also covers short paths like /ahg/x.png -> public/moto/ahg/x.png).
-const publicPaths = images.map((f) => "/" + path.relative(PUBLIC_DIR, f).split(path.sep).join("/"));
+// 2. Rewrite references. A reference is only changed when its .webp version matches the
+//    tail of a /public .webp file (converted now or in an earlier run), so remote URLs and
+//    missing files are left alone (this also covers short paths like /ahg/x.png -> public/moto/ahg/x.webp).
+const toPublicPath = (f) => "/" + path.relative(PUBLIC_DIR, f).split(path.sep).join("/");
+const webpPaths = [
+  ...new Set([
+    ...images.map((f) => toWebp(toPublicPath(f))),
+    ...(await walk(PUBLIC_DIR, (n) => /\.webp$/i.test(n))).map(toPublicPath),
+  ]),
+];
+const TEMPLATE_EXPR = /\$\{[^{}]*\}/g;
+const escapeRegex = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const isConverted = (ref) => {
   let decoded = ref;
   try { decoded = decodeURI(ref); } catch {}
-  const tail = "/" + decoded.replace(/^\.?\//, "");
-  return publicPaths.some((p) => p === tail || p.endsWith(tail));
+  const tail = toWebp("/" + decoded.replace(/^\.?\//, ""));
+  if (!tail.includes("${")) return webpPaths.some((p) => p === tail || p.endsWith(tail));
+  // Template literal like /moto/x/icon${num}.png: each ${...} matches one path segment part
+  const re = new RegExp(tail.split(TEMPLATE_EXPR).map(escapeRegex).join("[^/]*") + "$");
+  return webpPaths.some((p) => re.test(p));
 };
 
-const REF = /[^"'`()\s{}$]*\.(?:png|jpe?g)(?=["'`)\s?#])/gi;
+// Also matches template literals with ${...} inside, e.g. `/moto/airstal/icon${num}.png`,
+// and filenames with spaces/parentheses, e.g. "/moto/emka/logo 1 (1).png"
+const REF = /(?:[^"'`()\s{}$]|\$\{[^{}`]*\}|\([^"'`()\s]*\)| (?=[^"'`\s]))*\.(?:png|jpe?g)(?=["'`)\s?#])/gi;
 const sources = (await Promise.all(SOURCE_DIRS.map((d) => walk(d, (n) => SOURCE_EXT.test(n))))).flat();
 let refsChanged = 0;
 const unmatched = new Set();
