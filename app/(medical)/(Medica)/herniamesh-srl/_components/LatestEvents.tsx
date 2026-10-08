@@ -54,7 +54,7 @@ export default function LatestEvents() {
       <div className="custom-container xl:px-6 2xl:px-8">
         {/* Top Header Row */}
         <div className="grid grid-cols-12 gap-6 items-center" data-aos="fade-up">
-          <div className="col-span-12 min-[1025px]:col-span-9 xl:col-span-8">
+          <div className="col-span-12 min-[64.0625rem]:col-span-9 xl:col-span-8">
             <h2 className="section-title font-semibold text-slate-900">Our Latest Events</h2>
             <p className="section-text mt-3 ">
               Stay informed about Herniamesh®&apos;s upcoming congresses, training courses, trade
@@ -63,7 +63,7 @@ export default function LatestEvents() {
             </p>
           </div>
 
-          <div className="col-span-12 min-[1025px]:col-span-3 xl:col-span-4 flex min-[1025px]:justify-end">
+          <div className="col-span-12 min-[64.0625rem]:col-span-3 xl:col-span-4 flex min-[64.0625rem]:justify-end">
             <Button href="" variant="primary">
               View All Events
             </Button>

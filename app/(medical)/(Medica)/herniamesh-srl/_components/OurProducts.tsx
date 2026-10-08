@@ -23,7 +23,7 @@ export default function OurProducts() {
       <div className="custom-container xl:px-6 2xl:px-8">
         {/* Heading */}
         <div className="grid grid-cols-12" data-aos="fade-up">
-          <div className="col-span-12 min-[1025px]:col-start-2 min-[1025px]:col-span-10 xl:col-start-3 xl:col-span-8 text-center">
+          <div className="col-span-12 min-[64.0625rem]:col-start-2 min-[64.0625rem]:col-span-10 xl:col-start-3 xl:col-span-8 text-center">
             <h2 className="section-title font-semibold ">
               Herniamesh® Products
             </h2>
@@ -52,14 +52,14 @@ export default function OurProducts() {
               <img
                 src={product.image}
                 alt={product.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover "
               />
 
               {/* Hover Overlay (always visible on touch screens below lg) */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/20 transition-opacity duration-300 opacity-100 min-[1025px]:opacity-0 min-[1025px]:group-hover:opacity-100 min-[1025px]:group-focus-visible:opacity-100" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/20 transition-opacity duration-300 opacity-100 min-[64.0625rem]:opacity-0 min-[64.0625rem]:group-hover:opacity-100 min-[64.0625rem]:group-focus-visible:opacity-100" />
 
               {/* Title + Arrow */}
-              <div className="absolute inset-x-0 bottom-0 grid grid-cols-12 items-end gap-4 p-5 sm:p-8 xl:p-10 transition-all duration-300 opacity-100 translate-y-0 min-[1025px]:opacity-0 min-[1025px]:translate-y-4 min-[1025px]:group-hover:opacity-100 min-[1025px]:group-hover:translate-y-0 min-[1025px]:group-focus-visible:opacity-100 min-[1025px]:group-focus-visible:translate-y-0">
+              <div className="absolute inset-x-0 bottom-0 grid grid-cols-12 items-end gap-4 p-5 sm:p-8 xl:p-10 transition-all duration-300 opacity-100 translate-y-0 min-[64.0625rem]:opacity-0 min-[64.0625rem]:translate-y-4 min-[64.0625rem]:group-hover:opacity-100 min-[64.0625rem]:group-hover:translate-y-0 min-[64.0625rem]:group-focus-visible:opacity-100 min-[64.0625rem]:group-focus-visible:translate-y-0">
                 <h3 className="col-span-10 sm:col-span-9 xl:col-span-8 card-title font-semibold text-white leading-snug">
                   {product.title}
                 </h3>

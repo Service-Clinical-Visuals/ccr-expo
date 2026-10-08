@@ -28,7 +28,7 @@ export default function AboutSection() {
       <div className="custom-container grid grid-cols-12 gap-6 xl:gap-8 items-center">
         {/* Intro Text */}
         <div
-          className="col-span-12 min-[1025px]:col-span-4 xl:pl-6 2xl:pl-8"
+          className="col-span-12 min-[64.0625rem]:col-span-4 xl:pl-6 2xl:pl-8"
           data-aos="fade-right"
         >
           <h2 className="section-title font-semibold text-slate-900">
@@ -62,7 +62,7 @@ export default function AboutSection() {
 
         {/* image */}
         <div
-          className="col-span-12 md:col-span-6 min-[1025px]:col-span-4 self-stretch"
+          className="col-span-12 md:max-[64.0625rem]:col-span-6 min-[64.0625rem]:col-span-4 self-stretch"
           data-aos="fade-up"
         >
           <div className="group relative w-full h-full min-h-[320px] sm:min-h-[400px] rounded-tl-3xl rounded-br-3xl overflow-hidden">
@@ -75,7 +75,7 @@ export default function AboutSection() {
         </div>
 
         {/* Feature Cards */}
-        <div className="col-span-12 md:col-span-6 min-[1025px]:col-span-4 grid grid-cols-1 gap-4 sm:gap-5 ">
+        <div className="col-span-12 md:max-[64.0625rem]:col-span-6 min-[64.0625rem]:col-span-4 grid grid-cols-1 gap-4 sm:gap-5 ">
           {FEATURES.map((feature, index) => (
             <div
               key={feature.title}

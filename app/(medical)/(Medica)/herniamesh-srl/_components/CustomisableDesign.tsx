@@ -26,7 +26,7 @@ export default function CustomisableDesign() {
       {/* Heading on full-width blue band */}
       <div className="bg-[#0055A6] pt-10 sm:pt-12 pb-8 sm:pb-10">
         <div className="custom-container xl:px-6 2xl:px-8 grid grid-cols-12" data-aos="fade-up">
-          <div className="col-span-12 min-[1025px]:col-start-2 min-[1025px]:col-span-10 text-center">
+          <div className="col-span-12 min-[64.0625rem]:col-start-2 min-[64.0625rem]:col-span-10 text-center">
             <h2 className="section-title font-semibold text-white">
               Customisable Design For Surgical Applications
             </h2>
@@ -43,13 +43,13 @@ export default function CustomisableDesign() {
       {/* Card + Video (top part sits on the blue band) */}
       <div className="relative">
         <div
-          className="absolute inset-x-0 top-0 h-16 sm:h-20 min-[1025px]:h-[23%] bg-[#0055A6] -z-10"
+          className="absolute inset-x-0 top-0 h-16 sm:h-20 min-[64.0625rem]:h-[23%] bg-[#0055A6] -z-10"
           aria-hidden="true"
         />
 
-        <div className="custom-container xl:px-6 2xl:px-8 grid grid-cols-12 gap-y-10 gap-x-0 min-[1025px]:gap-x-10 xl:gap-12 items-stretch">
+        <div className="custom-container xl:px-6 2xl:px-8 grid grid-cols-12 gap-y-10 gap-x-0 min-[64.0625rem]:gap-x-10 xl:gap-12 items-stretch">
           {/* Left: Design Card */}
-          <div className="col-span-12 min-[1025px]:col-span-4 " data-aos="fade-right">
+          <div className="col-span-12 min-[64.0625rem]:col-span-4 " data-aos="fade-right">
             <div className="h-full rounded-tl-3xl rounded-br-3xl bg-white border border-slate-100 shadow-[0_6px_20px_rgba(0,0,0,0.14)] p-6 sm:p-7 xl:p-8">
               <h3 className="card-title font-semibold ">
                 Adaptable Design For Surgical Needs
@@ -92,7 +92,7 @@ export default function CustomisableDesign() {
 
           {/* Right: Video */}
           <div
-            className="col-span-12 min-[1025px]:col-span-8"
+            className="col-span-12 min-[64.0625rem]:col-span-8"
             data-aos="zoom-in"
             data-aos-duration="900"
             data-aos-delay="150"

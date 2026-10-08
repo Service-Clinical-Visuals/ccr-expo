@@ -16,7 +16,7 @@ export default function OurGallery() {
       <div className="custom-container xl:px-6 2xl:px-8">
         {/* Heading */}
         <div className="grid grid-cols-12" data-aos="fade-up">
-          <div className="col-span-12 min-[1025px]:col-start-2 min-[1025px]:col-span-10 xl:col-start-3 xl:col-span-8 text-center">
+          <div className="col-span-12 min-[64.0625rem]:col-start-2 min-[64.0625rem]:col-span-10 xl:col-start-3 xl:col-span-8 text-center">
             <h2 className="section-title font-semibold text-slate-900">Our Gallery</h2>
             <p className="section-text mt-3 ">
               Discover our gallery showcasing Herniamesh® products, mesh designs, surgical

@@ -8,7 +8,7 @@ export default function Explore360() {
   return (
     <section
       id="view-360"
-      className="w-full bgimage py-14 sm:py-16 min-[1025px]:py-20"
+      className="w-full bgimage py-14 sm:py-16 min-[64.0625rem]:py-20"
     >
       <div className="custom-container xl:px-6 2xl:px-8">
         {/* Top Header Row */}
@@ -18,7 +18,7 @@ export default function Explore360() {
           data-aos-duration="800"
         >
           {/* Left: Heading & Description */}
-          <div className="col-span-12 min-[1025px]:col-span-9 xl:col-span-8">
+          <div className="col-span-12 min-[64.0625rem]:col-span-9 xl:col-span-8">
             <h2 className="section-title font-semibold text-white">
               Explore Hermesh 3 In 360°
             </h2>
@@ -31,7 +31,7 @@ export default function Explore360() {
           </div>
 
           {/* Right: View in 360° CTA */}
-          <div className="col-span-12 min-[1025px]:col-span-3 xl:col-span-4 flex min-[1025px]:justify-end">
+          <div className="col-span-12 min-[64.0625rem]:col-span-3 xl:col-span-4 flex min-[64.0625rem]:justify-end">
             <Button href="" variant="white">
               View in 360°
             </Button>
@@ -44,7 +44,7 @@ export default function Explore360() {
         {/* 360 Video Player Box */}
         <div className="grid grid-cols-12">
           <div
-            className="col-span-12 min-[1025px]:col-start-2 min-[1025px]:col-span-10 relative w-full aspect-video rounded-tl-[28px] rounded-br-[28px] sm:rounded-tl-[40px] sm:rounded-br-[40px] overflow-hidden bg-white/10"
+            className="col-span-12 min-[64.0625rem]:col-start-2 min-[64.0625rem]:col-span-10 relative w-full aspect-video rounded-tl-[28px] rounded-br-[28px] sm:rounded-tl-[40px] sm:rounded-br-[40px] overflow-hidden bg-white/10"
             data-aos="zoom-in"
             data-aos-duration="900"
             data-aos-delay="150"

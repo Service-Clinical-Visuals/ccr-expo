@@ -2,6 +2,12 @@
 @import "tailwindcss";
 @import "aos/dist/aos.css";
 
+/* Desktop layout starts at 1025px (so 1024px iPad Pro gets the tablet layout).
+   Defined in rem so Tailwind orders it correctly after md: */
+@theme {
+    --breakpoint-desktop: 64.0625rem;
+}
+
 @layer base {
     :root {
         --primary: #0055A6;

@@ -17,13 +17,13 @@ export default function Banner() {
         <div className="absolute inset-0 w-full h-full z-0">
           <DynamicVideoPlayer
             type="banner"
-            className="absolute inset-0 w-full h-full object-cover lg:object-fill min-[1025px]:object-fill"
+            className="absolute inset-0 w-full h-full object-cover lg:object-fill min-[64.0625rem]:object-fill"
           />
         </div>
 
         {/* Banner Content (bottom-left) */}
         <div className="relative z-20 h-full grid grid-cols-12 items-end p-6 sm:p-10 xl:px-12 pb-12 sm:pb-16 xl:pb-24">
-          <div className="col-span-12 sm:col-span-10 md:col-span-8 min-[1025px]:col-span-6 xl:col-span-5">
+          <div className="col-span-12 sm:col-span-10 md:col-span-8 min-[64.0625rem]:col-span-6 xl:col-span-5">
             <h1
               className="banner-title font-semibold text-white"
               data-aos="fade-up"
