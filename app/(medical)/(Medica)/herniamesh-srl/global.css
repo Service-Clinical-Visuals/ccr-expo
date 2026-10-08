@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+@layer base {
+    :root {
+        --primary: #0055A6;
+        --primary-hover: #00448a;
+        --font-heading: 'Baloo Thambi 2', sans-serif;
+        --font-body: 'Baloo Thambi 2', sans-serif;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: var(--font-body);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    button,
+    .btn-text {
+        font-family: var(--font-heading);
+    }
+
+    p,
+    span {
+        font-family: var(--font-body);
+    }
+}
+
+
+section {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+.custom-container {
+    width: 100%;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Font sizes - as requested, use only global.css */
+.header-link {
+    font-size: 17px;
+}
+
+.btn-text {
+    font-size: 17px;
+}
+
+.banner-title {
+    font-size: 34px;
+}
+
+.section-title {
+    font-size: 32px;
+}
+
+.section-text {
+    font-size: 17px;
+}
+
+.section-title1 {
+    font-size: 24px;
+}
+
+.card-title {
+    font-size: 22px;
+}
+
+
+/* Responsive Custom Container & Font Sizes */
+
+@media (max-width: 480px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .section-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .section-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .section-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .section-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .section-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+/* as per figma */
+
+@media (min-width: 1536px) and (max-width: 1920px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .section-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .custom-container {
+        max-width: 90%;
+    }
+
+    .header-link {
+        font-size: 17px;
+    }
+
+    .btn-text {
+        font-size: 17px;
+    }
+
+    .banner-title {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 17px;
+    }
+
+    .section-title1 {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+}
+
+/* 2k */
+
+@media (min-width: 2560px) and (max-width: 3800px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 21px;
+    }
+
+    .btn-text {
+        font-size: 21px;
+    }
+
+    .banner-title {
+        font-size: 38px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .section-text {
+        font-size: 21px;
+    }
+
+    .section-title1 {
+        font-size: 28px;
+    }
+
+    .card-title {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 3800px) {
+    .custom-container {
+        max-width: 95%;
+    }
+
+    .header-link {
+        font-size: 30px;
+    }
+
+    .btn-text {
+        font-size: 30px;
+    }
+
+    .banner-title {
+        font-size: 48px;
+    }
+
+    .section-title {
+        font-size: 45px;
+    }
+
+    .section-text {
+        font-size: 30px;
+    }
+
+    .section-title1 {
+        font-size: 38px;
+    }
+
+    .card-title {
+        font-size: 35px;
+    }
+}
+
+/* Card description text */
+.card-text {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .card-text {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1536px) and (max-width: 1920px) {
+    .card-text {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .card-text {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 2560px) and (max-width: 3800px) {
+    .card-text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 3800px) {
+    .card-text {
+        font-size: 28px;
+    }
+}
+
+/* Carousel pagination (gallery, events) */
+.herniamesh-swiper {
+    padding-bottom: 56px !important;
+}
+
+.herniamesh-swiper .swiper-pagination {
+    bottom: 8px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.herniamesh-swiper .swiper-pagination-bullet {
+    width: 20px;
+    height: 5px;
+    margin: 0 !important;
+    border-radius: 9999px;
+    background-color: #d9d9d9;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.herniamesh-swiper .swiper-pagination-bullet-active {
+    width: 46px;
+    background-color: var(--primary);
+}
+
+/* Footer headings, links & small text */
+.footer-title {
+    font-size: 18px;
+}
+
+.footer-link {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (min-width: 1536px) and (max-width: 1920px) {
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer-link {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .footer-title {
+        font-size: 22px;
+    }
+
+    .footer-link {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 2560px) and (max-width: 3800px) {
+    .footer-title {
+        font-size: 26px;
+    }
+
+    .footer-link {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 3800px) {
+    .footer-title {
+        font-size: 34px;
+    }
+
+    .footer-link {
+        font-size: 28px;
+    }
+}
+
+
+.bgimage {
+    background-color: var(--primary);
+    background-image: url('/medical/herniamesh-srl/bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
