@@ -6,7 +6,7 @@ import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 
 const FEATURES = [
   {
-    icon: "/medical/herniamesh-srl/i1.webp",
+    icon: "/medical/herniamesh-srl/i1.png",
     title: "Innovation",
     text: "R&D and design of surgical medical devices in response to the demand for a better quality of life.",
   },
