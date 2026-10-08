@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+  --font-dm-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-dm-sans), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-dm-sans), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-primary: #C40C10;
+  --color-primary-hover: #a00a0d;
+  --color-secondary: #191919;
+  --color-secondary-hover: #000000;
+  --color-accent: #EDF9FF;
+  --color-dark: #333333;
+  --color-muted: #4B5563;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-dm-sans), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-dm-sans), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-dm-sans), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-primary), 'DM Sans', sans-serif !important;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+h1 { font-size: 2.125rem; /* 34px */ font-weight: 700 !important; font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+h2 { font-size: 1.75rem; /* 28px */ font-weight: 700 !important; font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+h3 { font-size: 1.25rem; /* 20px */ font-weight: 700; font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+h4 { font-size: 1.0625rem; /* 17px */ font-weight: 700; font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+p, li { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+span { font-size: 0.875rem; /* 14px */ font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+p span, li span, a span, button span { font-size: inherit; font-family: inherit; }
+.navbar { font-size: 1.0625rem; /* 17px */ font-weight: 500; font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+.footer-heading { font-size: 1.25rem; /* 20px */ font-weight: 700; font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+.footer-body { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+.button { font-size: 1.0625rem; /* 17px */ font-weight: 700; font-family: var(--font-primary), 'DM Sans', sans-serif !important; }
+.number { font-size: 8rem; /* 128px */ font-weight: 700; font-family: var(--font-primary), 'DM Sans', sans-serif !important; line-height: 1; }
+
+/* Custom Swiper Pagination */
+.custom-pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 1.5rem; }
+.custom-pagination .swiper-pagination-bullet { width: 10px !important; height: 10px !important; border-radius: 50% !important; background-color: #D1D5DB !important; opacity: 1 !important; transition: all 0.3s; margin: 0 !important; }
+.custom-pagination .swiper-pagination-bullet-active { width: 14px !important; height: 14px !important; background-color: var(--color-primary) !important; }
+
+/* Products Slider Pagination */
+.products-pagination .swiper-pagination-bullet { width: 12px !important; height: 12px !important; border-radius: 5px !important; background-color: #E5E7EB !important; opacity: 1 !important; transition: all 0.3s; margin: 0 4px !important; }
+.products-pagination .swiper-pagination-bullet-active { width: 28px !important; height: 12px !important; background-color: var(--color-primary) !important; }
+
+/* Mobile Portrait Screen (up to 480px) */
+/* Multiplier: ~0.7 */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.5rem; /* ~24px */ }
+  h2 { font-size: 1.35rem; /* ~21.6px */ }
+  h3 { font-size: 0.95rem; /* ~15px */ }
+  h4 { font-size: 0.8rem; /* ~12.8px */ }
+  p, li { font-size: 0.85rem; /* ~13.6px */ }
+  span { font-size: 0.65rem; }
+  .navbar { font-size: 0.85rem; }
+  .footer-heading { font-size: 0.95rem; }
+  .footer-body { font-size: 0.85rem; }
+  .button { font-size: 0.85rem; }
+  .number { font-size: 5.6rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+/* Multiplier: ~0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.45rem; }
+  h3 { font-size: 1.05rem; }
+  h4 { font-size: 0.85rem; }
+  p, li { font-size: 0.9rem; }
+  span { font-size: 0.72rem; }
+  .navbar { font-size: 0.9rem; }
+  .footer-heading { font-size: 1.05rem; }
+  .footer-body { font-size: 0.9rem; }
+  .button { font-size: 0.9rem; }
+  .number { font-size: 6.4rem; }
+}
+
+/* Tablet / Tab Screen (768px - 1023px) */
+/* Multiplier: ~0.9 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.15rem; }
+  h4 { font-size: 0.95rem; }
+  p, li { font-size: 0.95rem; }
+  span { font-size: 0.8rem; }
+  .navbar { font-size: 0.95rem; }
+  .footer-heading { font-size: 1.15rem; }
+  .footer-body { font-size: 0.95rem; }
+  .button { font-size: 0.95rem; }
+  .number { font-size: 7.2rem; }
+}
+
+/* Laptop Screen (1024px - 1279px) */
+/* Multiplier: ~0.95 */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.05rem; }
+  h2 { font-size: 1.68rem; }
+  h3 { font-size: 1.2rem; }
+  h4 { font-size: 1.02rem; }
+  p, li { font-size: 1.02rem; }
+  span { font-size: 0.84rem; }
+  .navbar { font-size: 1.02rem; }
+  .footer-heading { font-size: 1.2rem; }
+  .footer-body { font-size: 1.02rem; }
+  .button { font-size: 1.02rem; }
+  .number { font-size: 7.6rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+/* Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.18rem; }
+  h2 { font-size: 2.625rem; }
+  h3 { font-size: 1.875rem; }
+  h4 { font-size: 1.6rem; }
+  p, li { font-size: 1.6rem; }
+  span { font-size: 1.3125rem; }
+  .navbar { font-size: 1.6rem; }
+  .footer-heading { font-size: 1.875rem; }
+  .footer-body { font-size: 1.6rem; }
+  .button { font-size: 1.6rem; }
+  .number { font-size: 12rem; }
+  .custom-pagination .swiper-pagination-bullet { width: 16px !important; height: 16px !important; }
+  .custom-pagination .swiper-pagination-bullet-active { width: 22px !important; height: 22px !important; }
+  .products-pagination .swiper-pagination-bullet { width: 18px !important; height: 18px !important; }
+  .products-pagination .swiper-pagination-bullet-active { width: 42px !important; height: 18px !important; }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+/* Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.25rem; }
+  h2 { font-size: 3.5rem; }
+  h3 { font-size: 2.5rem; }
+  h4 { font-size: 2.125rem; }
+  p, li { font-size: 2.125rem; }
+  span { font-size: 1.75rem; }
+  .navbar { font-size: 2.125rem; }
+  .footer-heading { font-size: 2.5rem; }
+  .footer-body { font-size: 2.125rem; }
+  .button { font-size: 2.125rem; }
+  .number { font-size: 16rem; }
+  .custom-pagination .swiper-pagination-bullet { width: 22px !important; height: 22px !important; }
+  .custom-pagination .swiper-pagination-bullet-active { width: 30px !important; height: 30px !important; }
+  .products-pagination .swiper-pagination-bullet { width: 24px !important; height: 24px !important; }
+  .products-pagination .swiper-pagination-bullet-active { width: 56px !important; height: 24px !important; }
+}
