@@ -54,7 +54,7 @@ export default function Solutions() {
       {
         title: "TRUE LOCK Superior Distal Clavicle Anatomic Plate",
         desc: "Indicated include fractures of the clavicle shaft and lateral clavicle, as well as malunions and non-unions of the clavicle.",
-        img: "/truemed/S2.webp"
+        img: "/truemed/S-2.webp"
       },
       {
         title: "TRUE LOCK Proximal Humerus Anatomic Plate",

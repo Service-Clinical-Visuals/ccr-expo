@@ -23,10 +23,10 @@ const AboutUs = () => {
         {/* Images Grid */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-8" data-aos="fade-up" data-aos-delay="100">
           <div className="overflow-hidden shadow-sm rounded-2xl w-full">
-            <img src="/truemed/s1.webp" alt="TRUEMED Team and Facility" className="w-full h-full object-cover aspect-[792/500]" />
+            <img src="/truemed/l-1.webp" alt="TRUEMED Team and Facility" className="w-full h-full object-cover aspect-[792/500]" />
           </div>
           <div className="overflow-hidden shadow-sm rounded-2xl w-full">
-            <img src="/truemed/s2.webp" alt="TRUEMED Office" className="w-full h-full object-cover aspect-[792/500]" />
+            <img src="/truemed/l-2.webp" alt="TRUEMED Office" className="w-full h-full object-cover aspect-[792/500]" />
           </div>
         </div>
 
