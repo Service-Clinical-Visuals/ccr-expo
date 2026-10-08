@@ -32,7 +32,7 @@ export default function Footer() {
             <Link href="/amecath" className="inline-block mb-5">
               <div className="relative w-40 sm:w-44 h-9 sm:h-10">
                 <Image
-                  src="/medical/amecath/logo.png"
+                  src="/medical/amecath/logo.webp"
                   alt="AMECATH Logo"
                   fill
                   className="object-contain object-left brightness-0 invert"

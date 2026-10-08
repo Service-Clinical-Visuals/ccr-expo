@@ -6,7 +6,7 @@ import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 
 const Deg360 = () => {
   return (
-    <section id="360" className="w-full py-16 xl:py-24 bg-cover bg-center bg-no-repeat overflow-hidden relative" style={{ backgroundImage: "url('/medical/progetti/bg.png')" }}>
+    <section id="360" className="w-full py-16 xl:py-24 bg-cover bg-center bg-no-repeat overflow-hidden relative" style={{ backgroundImage: "url('/medical/progetti/bg.webp')" }}>
 
       {/* Background Overlay (Optional if image needs darkening) */}
       <div className="absolute inset-0 bg-white/10"></div>

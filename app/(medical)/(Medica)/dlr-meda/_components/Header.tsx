@@ -31,7 +31,7 @@ export default function Header() {
         {/* Left: Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <img
-            src="/medical/dlr-meda/logo.png"
+            src="/medical/dlr-meda/logo.webp"
             alt="DLR Medikal Logo"
             className="w-[180px] sm:w-[210px] lg:w-[240px] min-[2500px]:w-[320px] min-[3800px]:w-[450px] h-auto max-h-[50px] min-[2500px]:max-h-[60px] min-[3800px]:max-h-[75px] object-contain"
           />

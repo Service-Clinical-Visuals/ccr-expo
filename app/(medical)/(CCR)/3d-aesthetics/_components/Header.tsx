@@ -76,7 +76,7 @@ const Header = () => {
             {/* Logo Section */}
             <Link href="/" className="flex items-center shrink-0 rounded-xl p-1 hover:opacity-90 transition-opacity">
               <img
-                src="/moto/3d-aesthetics/logo.png"
+                src="/moto/3d-aesthetics/logo.webp"
                 alt="3D Aesthetics Logo"
                 className="h-14 w-auto object-contain"
               />

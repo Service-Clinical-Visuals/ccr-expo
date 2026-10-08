@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="w-full lg:col-span-4 xl:col-span-4 flex items-start shrink-0">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/biotech/images/logo.png"
+                src="/medical/biotech/images/logo.webp"
                 alt="Biotech Logo"
                 className="w-[240px] sm:w-[300px] lg:w-[415px] min-[2500px]:w-[560px] min-[3800px]:w-[720px] h-auto max-h-[64px] lg:max-h-[72px] min-[2500px]:max-h-[100px] min-[3800px]:max-h-[130px] object-contain select-none"
               />

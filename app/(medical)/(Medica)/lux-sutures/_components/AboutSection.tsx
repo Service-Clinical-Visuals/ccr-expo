@@ -14,7 +14,7 @@ export default function AboutSection() {
     <section
       id="about"
       className="relative w-full bg-[#deeefa] bg-cover bg-center bg-no-repeat py-12 sm:py-16 desk:py-20 2xl:py-24"
-      style={{ backgroundImage: "url('/medical/lux-sutures/bg.png')" }}
+      style={{ backgroundImage: "url('/medical/lux-sutures/bg.webp')" }}
     >
       {/* Light overlay on small screens so the card stands out over the busy image */}
       <div className="absolute inset-0 bg-white/40 desk:bg-transparent pointer-events-none" />

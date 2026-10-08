@@ -192,7 +192,7 @@ export default function Header() {
             >
               <span>Get in Touch</span>
               <img
-                src="/medical/telemed/arrow.png"
+                src="/medical/telemed/arrow.webp"
                 alt="Arrow"
                 className="header-cta-arrow shrink-0 object-contain group-hover:translate-x-0.5 transition-transform duration-200"
               />
@@ -251,7 +251,7 @@ export default function Header() {
               >
                 <span>Get in Touch</span>
                 <img
-                  src="/medical/telemed/arrow.png"
+                  src="/medical/telemed/arrow.webp"
                   alt="Arrow"
                   className="w-4 h-auto shrink-0 object-contain"
                 />

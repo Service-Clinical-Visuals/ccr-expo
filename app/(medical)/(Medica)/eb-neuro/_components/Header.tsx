@@ -60,7 +60,7 @@ export default function Header() {
         {/* Logo Area */}
         <div className="flex-shrink-0 flex items-center w-[45%] sm:w-[35%] md:w-[25%] xl:w-[20%] min-[3800px]:w-[25%]">
           <Link href="#" className="w-full">
-            <img src="/medical/eb-neuro/logo.png" alt="EB Neuro Logo" className="w-[90%] md:w-[70%] lg:w-[60%] xl:w-[60%] min-[3800px]:w-[80%] h-auto object-contain" />
+            <img src="/medical/eb-neuro/logo.webp" alt="EB Neuro Logo" className="w-[90%] md:w-[70%] lg:w-[60%] xl:w-[60%] min-[3800px]:w-[80%] h-auto object-contain" />
           </Link>
         </div>
 

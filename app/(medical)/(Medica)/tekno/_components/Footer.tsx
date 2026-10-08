@@ -16,7 +16,7 @@ export default function Footer() {
             {/* Logo & Description */}
             <div className="flex flex-col gap-10">
               <div className="flex items-center gap-4 -mt-[100px] lg:-mt-[140px]">
-                <img src="/medical/tekno/f-logo.png" alt="Tekno Medical" className="w-auto h-auto object-contain" />
+                <img src="/medical/tekno/f-logo.webp" alt="Tekno Medical" className="w-auto h-auto object-contain" />
               </div>
               <p className="font-outfit section-text text-[#FFFFFF] leading-relaxed font-light -mt-[40px] lg:-mt-[80px]">
                 TEKNO-MEDICAL is a German medical technology company, founded in 1976, delivering precision-engineered medical solutions worldwide. Its expertise combines quality, innovation, and reliable performance.

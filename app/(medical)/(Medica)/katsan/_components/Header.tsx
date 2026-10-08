@@ -109,7 +109,7 @@ export default function Header() {
               aria-label="Katsan Home"
             >
               <img
-                src="/medical/katsan/logo.png"
+                src="/medical/katsan/logo.webp"
                 alt="Katsan Medical Devices"
                 className="h-8 sm:h-9 md:h-10 lg:h-11 min-[1920px]:h-13 min-[2500px]:h-18 min-[3800px]:h-24 w-auto object-contain"
               />

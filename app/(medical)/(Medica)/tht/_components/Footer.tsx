@@ -31,7 +31,7 @@ const Footer = () => {
           >
             <Link href="/tht" aria-label="THT Bio-Science home">
               <img
-                src="/tht/footer-logo.png"
+                src="/tht/footer-logo.webp"
                 alt="THT Bio-Science"
                 className="w-[200px] sm:w-[240px] lg:w-[293px] min-[2500px]:w-[440px] min-[3800px]:w-[600px] h-auto object-contain"
               />

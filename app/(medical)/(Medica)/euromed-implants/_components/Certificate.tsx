@@ -98,7 +98,7 @@ const Certificate = () => {
           <div className="w-full xl:col-span-6 flex justify-center order-2" data-aos="fade-left" data-aos-delay="100">
             <div className="w-full max-w-md xl:max-w-lg min-[3800px]:max-w-3xl aspect-[483/701] relative shadow-2xl rounded-sm overflow-hidden">
               <img
-                src="/euromed-implants/section4.png"
+                src="/euromed-implants/section4.webp"
                 alt="Quality Certificate"
                 className="absolute inset-0 w-full h-full object-cover"
               />

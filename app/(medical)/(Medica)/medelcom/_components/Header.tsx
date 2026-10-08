@@ -112,7 +112,7 @@ export default function Header() {
           >
             <div className="relative flex items-center">
               <img
-                src="/medical/medelcom/logo.png"
+                src="/medical/medelcom/logo.webp"
                 alt="Medelkom"
                 className="h-auto w-auto object-contain"
               />

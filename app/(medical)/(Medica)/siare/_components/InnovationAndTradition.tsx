@@ -5,10 +5,10 @@ import Button from "./Button";
 
 export default function InnovationAndTradition() {
   const features = [
-    { icon: "/medical/siare/icon1.png", title: "Italian Engineering &\nManufacturing" },
-    { icon: "/medical/siare/icon2.png", title: "Anaesthesia &\nRespiratory Care" },
-    { icon: "/medical/siare/icon3.png", title: "Advanced Medical\nTechnology" },
-    { icon: "/medical/siare/icon4.png", title: "Global Healthcare\nPresence" }
+    { icon: "/medical/siare/icon1.webp", title: "Italian Engineering &\nManufacturing" },
+    { icon: "/medical/siare/icon2.webp", title: "Anaesthesia &\nRespiratory Care" },
+    { icon: "/medical/siare/icon3.webp", title: "Advanced Medical\nTechnology" },
+    { icon: "/medical/siare/icon4.webp", title: "Global Healthcare\nPresence" }
   ];
 
   return (
@@ -67,7 +67,7 @@ export default function InnovationAndTradition() {
             {/* Image */}
             <div className="absolute inset-0 z-10 w-full h-full overflow-hidden">
               <img
-                src="/medical/siare/about.png"
+                src="/medical/siare/about.webp"
                 alt="Siare"
                 className="w-full h-full object-cover"
               />

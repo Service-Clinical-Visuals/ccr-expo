@@ -13,7 +13,7 @@ export default function Divisions() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 min-[2500px]:gap-24 items-center">
           <div className="lg:col-span-6 overflow-hidden shadow-sm group order-2 lg:order-1" data-aos="fade-right">
             <img
-              src="/medical/hum-gmbh/more1.png"
+              src="/medical/hum-gmbh/more1.webp"
               alt="HUM Medizintechnik"
               className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.02]"
             />
@@ -22,7 +22,7 @@ export default function Divisions() {
           <div className="lg:col-span-6 flex flex-col space-y-6 min-[2500px]:space-y-8 order-1 lg:order-2" data-aos="fade-left">
             <div className="pb-1">
               <img
-                src="/medical/hum-gmbh/hum1.png"
+                src="/medical/hum-gmbh/hum1.webp"
                 alt="HUM Systems for Life® – MEDIZINTECHNIK –"
                 className="w-[140px] sm:w-[170px] lg:w-[195px] min-[2500px]:w-[270px] min-[3800px]:w-[360px] h-auto object-contain select-none"
               />
@@ -43,7 +43,7 @@ export default function Divisions() {
           <div className="lg:col-span-6 flex flex-col space-y-6 min-[2500px]:space-y-8 order-1 lg:order-1" data-aos="fade-right">
             <div className="pb-1">
               <img
-                src="/medical/hum-gmbh/hum2.png"
+                src="/medical/hum-gmbh/hum2.webp"
                 alt="HUM Textiles for Life – TEXTILTECHNIK –"
                 className="w-[140px] sm:w-[170px] lg:w-[195px] min-[2500px]:w-[270px] min-[3800px]:w-[360px] h-auto object-contain select-none"
               />
@@ -60,7 +60,7 @@ export default function Divisions() {
 
           <div className="lg:col-span-6 overflow-hidden shadow-sm group order-2 lg:order-2" data-aos="fade-left">
             <img
-              src="/medical/hum-gmbh/more2.png"
+              src="/medical/hum-gmbh/more2.webp"
               alt="HUM Textiltechnik"
               className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.02]"
             />

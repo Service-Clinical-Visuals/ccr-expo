@@ -8,13 +8,13 @@ import "swiper/css";
 import Typography from "./Typography";
 
 const galleryItems = [
-  { image: "/medical/innovations/g1.png", alt: "Innovations Medical office interior" },
-  { image: "/medical/innovations/g2.png", alt: "Innovations Medical building exterior" },
-  { image: "/medical/innovations/g3.png", alt: "Innovations Medical production hall" },
-  { image: "/medical/innovations/g4.png", alt: "Innovations Medical manufacturing facility" },
-  { image: "/medical/innovations/g5.png", alt: "Innovations Medical gallery image 5" },
-  { image: "/medical/innovations/g6.png", alt: "Innovations Medical gallery image 6" },
-  { image: "/medical/innovations/g7.png", alt: "Innovations Medical gallery image 7" },
+  { image: "/medical/innovations/g1.webp", alt: "Innovations Medical office interior" },
+  { image: "/medical/innovations/g2.webp", alt: "Innovations Medical building exterior" },
+  { image: "/medical/innovations/g3.webp", alt: "Innovations Medical production hall" },
+  { image: "/medical/innovations/g4.webp", alt: "Innovations Medical manufacturing facility" },
+  { image: "/medical/innovations/g5.webp", alt: "Innovations Medical gallery image 5" },
+  { image: "/medical/innovations/g6.webp", alt: "Innovations Medical gallery image 6" },
+  { image: "/medical/innovations/g7.webp", alt: "Innovations Medical gallery image 7" },
 ];
 
 // Swiper loop needs at least 2x slidesPerView slides, so the list is duplicated

@@ -17,37 +17,37 @@ const newsData: NewsItem[] = [
     id: 1,
     title: "Neuro-Audio Study: New Pediatric...",
     date: "15 July 2026",
-    image: "/medical/neurosoft/n1.png",
+    image: "/medical/neurosoft/n1.webp",
   },
   {
     id: 2,
     title: "Neurosoft In Scientific Collaboration...",
     date: "24 June 2026",
-    image: "/medical/neurosoft/n2.png",
+    image: "/medical/neurosoft/n2.webp",
   },
   {
     id: 3,
     title: "TMS Course Is Back This Fall...",
     date: "23 April 2026",
-    image: "/medical/neurosoft/n3.png",
+    image: "/medical/neurosoft/n3.webp",
   },
   {
     id: 4,
     title: "Neurosoft Designated as Official...",
     date: "4 February 2026",
-    image: "/medical/neurosoft/n4.png",
+    image: "/medical/neurosoft/n4.webp",
   },
   {
     id: 5,
     title: "EMG Workshop in Singapore – Hands...",
     date: "1 December 2025",
-    image: "/medical/neurosoft/n5.png",
+    image: "/medical/neurosoft/n5.webp",
   },
   {
     id: 6,
     title: "PBSF Unified Data Center: a new...",
     date: "24 November 2025",
-    image: "/medical/neurosoft/n6.png",
+    image: "/medical/neurosoft/n6.webp",
   },
 ];
 

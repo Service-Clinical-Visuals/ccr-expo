@@ -24,19 +24,19 @@ const Features = () => {
 
           {[
             {
-              image: "/medical/progetti/feature1.png",
+              image: "/medical/progetti/feature1.webp",
               text: "Automatically detects a wide range of arrhythmias and recognizes shockable ones, acting quickly and safely."
             },
             {
-              image: "/medical/progetti/feature2.png",
+              image: "/medical/progetti/feature2.webp",
               text: "The AED must be intuitive and the commands issued must be clear to best support the rescuer."
             },
             {
-              image: "/medical/progetti/feature3.png",
+              image: "/medical/progetti/feature3.webp",
               text: "The AED must be provided with all the certifications and requirements required for electro-medical devices."
             },
             {
-              image: "/medical/progetti/feature4.png",
+              image: "/medical/progetti/feature4.webp",
               text: "The company must guarantee the product also in the following years with maintenance plans and software updates."
             },
           ].map((feature, idx) => (

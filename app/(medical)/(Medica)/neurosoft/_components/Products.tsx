@@ -16,32 +16,32 @@ const products: Product[] = [
   {
     id: 1,
     title: "Electro\nEncephalography",
-    image: "/medical/neurosoft/p1.png",
+    image: "/medical/neurosoft/p1.webp",
   },
   {
     id: 2,
     title: "Sleep\nDiagnostics",
-    image: "/medical/neurosoft/p2.png",
+    image: "/medical/neurosoft/p2.webp",
   },
   {
     id: 3,
     title: "ElectroMyography",
-    image: "/medical/neurosoft/p3.png",
+    image: "/medical/neurosoft/p3.webp",
   },
   {
     id: 4,
     title: "Magnetic\nStimulation",
-    image: "/medical/neurosoft/p4.png",
+    image: "/medical/neurosoft/p4.webp",
   },
   {
     id: 5,
     title: "Peripheral Magnetic\nStimulation",
-    image: "/medical/neurosoft/p5.png",
+    image: "/medical/neurosoft/p5.webp",
   },
   {
     id: 6,
     title: "Audiology",
-    image: "/medical/neurosoft/p6.png",
+    image: "/medical/neurosoft/p6.webp",
   },
 ];
 

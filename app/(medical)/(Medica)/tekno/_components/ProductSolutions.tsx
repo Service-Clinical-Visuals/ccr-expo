@@ -3,10 +3,10 @@
 import Link from "next/link";
 
 const PRODUCTS = [
-  { image: "/medical/tekno/p1.png", alt: "Open surgery", title: "Open surgery" },
-  { image: "/medical/tekno/p2.png", alt: "Endoscopy", title: "Endoscopy" },
-  { image: "/medical/tekno/p3.png", alt: "OR Equipment", title: "OR Equipment" },
-  { image: "/medical/tekno/p4.png", alt: "HF Surgery", title: "HF Surgery" },
+  { image: "/medical/tekno/p1.webp", alt: "Open surgery", title: "Open surgery" },
+  { image: "/medical/tekno/p2.webp", alt: "Endoscopy", title: "Endoscopy" },
+  { image: "/medical/tekno/p3.webp", alt: "OR Equipment", title: "OR Equipment" },
+  { image: "/medical/tekno/p4.webp", alt: "HF Surgery", title: "HF Surgery" },
 ];
 
 export default function ProductSolutions() {
@@ -50,7 +50,7 @@ export default function ProductSolutions() {
                     {product.title}
                   </h3>
                   <div className="w-auto h-auto flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
-                    <img src="/medical/tekno/arrow.png" alt="View" className="w-auto h-auto object-contain" />
+                    <img src="/medical/tekno/arrow.webp" alt="View" className="w-auto h-auto object-contain" />
                   </div>
                 </div>
               </div>

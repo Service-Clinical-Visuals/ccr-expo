@@ -42,7 +42,7 @@ const Footer = () => {
           {/* Column 1: Logo & Description */}
           <div className="sm:col-span-2 lg:col-span-4 flex flex-col gap-6 2xl:gap-8 items-start" data-aos="fade-up">
             <img
-              src="/revance/logo.png"
+              src="/revance/logo.webp"
               alt="Revance"
               className="h-8 2xl:h-12 w-auto object-contain object-left brightness-0 invert"
             />

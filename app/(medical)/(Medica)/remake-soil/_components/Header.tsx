@@ -99,7 +99,7 @@ const Header = () => {
             aria-label="Remake Soil Home"
           >
             <img
-              src="/medical/remake-soil/logo.png"
+              src="/medical/remake-soil/logo.webp"
               alt="Remake Soil Logo"
               className="h-6 sm:h-7 md:h-8 min-[2500px]:h-11 min-[3800px]:h-16 w-auto object-contain"
             />

@@ -23,7 +23,7 @@ const AboutUs = () => {
           {/* Left: Image (Mobile: order-2, Desktop: order-1) */}
           <div className="lg:col-span-5 order-2 lg:order-1 flex justify-center" data-aos="fade-right">
             <div className="w-full max-w-lg aspect-square relative">
-              <img src="/adamo/section2.png" alt="Adamo Medical Imaging" className="w-full h-full object-contain" />
+              <img src="/adamo/section2.webp" alt="Adamo Medical Imaging" className="w-full h-full object-contain" />
             </div>
           </div>
 

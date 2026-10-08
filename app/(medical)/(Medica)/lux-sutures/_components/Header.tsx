@@ -63,7 +63,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/lux-sutures" className="flex items-center shrink-0 group">
             <img
-              src="/medical/lux-sutures/logo.png"
+              src="/medical/lux-sutures/logo.webp"
               alt="LUX Sutures Logo"
               className="h-10 sm:h-12 2xl:h-14 2k:h-20 w-auto object-contain group-hover:opacity-90 transition-opacity"
             />

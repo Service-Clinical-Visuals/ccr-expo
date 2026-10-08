@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col gap-5">
             <Link href="#home" aria-label="Katsan Medical Devices Home">
               <img
-                src="/medical/katsan/logo.png"
+                src="/medical/katsan/logo.webp"
                 alt="Katsan Medical Devices Logo"
                 className="h-16 sm:h-20 md:h-24 lg:h-28 min-[1920px]:h-32 min-[2500px]:h-44 min-[3800px]:h-60 w-auto object-contain object-left"
               />

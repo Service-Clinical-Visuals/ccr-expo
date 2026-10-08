@@ -7,13 +7,13 @@ import { FiArrowRight } from "react-icons/fi";
 
 const newsItems = [
   {
-    image: "/medical/eb-neuro/n1.png",
+    image: "/medical/eb-neuro/n1.webp",
     title: "EB Neuro S.p.A. Joins Forces with Hanix Group - A New Era of Innovation in Neurology",
     excerpt: "Florence, Italy, March 28, 2024 - Today, the Hanix group has announced its total acquisition of the shares of EB Neuro S.p.A. EB Neuro S.p.A. is an Italian leading manufacturer of medical devices in the neurological field [...]",
     link: "#",
   },
   {
-    image: "/medical/eb-neuro/n2.png",
+    image: "/medical/eb-neuro/n2.webp",
     title: "The EMG System of the Future!",
     excerpt: "NExT is the revolution shaping a new world of electromyography, electroneurography, and evoked potentials, breaking the mold of traditional EMG systems with groundbreaking performance. The future is here, the future is Made in Italy, and the future is NExT—Towards NExT Evolution!",
     link: "#",

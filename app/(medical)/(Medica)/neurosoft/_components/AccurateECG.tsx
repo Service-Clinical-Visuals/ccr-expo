@@ -10,7 +10,7 @@ export default function AccurateECG() {
       id="accurate-ecg"
       className="w-full py-16 sm:py-20 lg:py-24 min-[2500px]:py-36 overflow-hidden select-none"
       style={{
-        backgroundImage: "url('/medical/neurosoft/bg.png')",
+        backgroundImage: "url('/medical/neurosoft/bg.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

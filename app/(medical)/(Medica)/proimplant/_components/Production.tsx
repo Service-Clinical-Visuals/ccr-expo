@@ -11,9 +11,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const productionImages = [
-  { id: 1, src: "/medical/proimplant/p1.png", alt: "Production Line 1" },
-  { id: 2, src: "/medical/proimplant/p2.png", alt: "Production Line 2" },
-  { id: 3, src: "/medical/proimplant/p3.png", alt: "Production Line 3" },
+  { id: 1, src: "/medical/proimplant/p1.webp", alt: "Production Line 1" },
+  { id: 2, src: "/medical/proimplant/p2.webp", alt: "Production Line 2" },
+  { id: 3, src: "/medical/proimplant/p3.webp", alt: "Production Line 3" },
 ];
 
 const Production = () => {

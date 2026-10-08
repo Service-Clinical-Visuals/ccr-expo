@@ -7,7 +7,7 @@ export default function GlimpseGallery() {
   return (
     <section
       className="w-full relative py-16 sm:py-24 lg:py-32 bg-cover bg-center bg-no-repeat my-12 sm:my-20"
-      style={{ backgroundImage: "url('/medical/medpro/bg3.png')" }}
+      style={{ backgroundImage: "url('/medical/medpro/bg3.webp')" }}
     >
       <div className="custom-container px-4 sm:px-6 md:px-8 xl:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -40,7 +40,7 @@ export default function GlimpseGallery() {
               {/* Feature 1 */}
               <div className="flex items-center gap-3.5">
                 <div className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.06)]">
-                  <img src="/medical/medpro/i1.png" alt="Countries" className="w-auto h-auto object-contain" />
+                  <img src="/medical/medpro/i1.webp" alt="Countries" className="w-auto h-auto object-contain" />
                 </div>
                 <div className="flex flex-col">
                   <span className="card-title font-bold text-[#3BB3C3] font-fraunces leading-tight">35+</span>
@@ -54,7 +54,7 @@ export default function GlimpseGallery() {
               {/* Feature 2 */}
               <div className="flex items-center gap-3.5">
                 <div className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.06)]">
-                  <img src="/medical/medpro/i2.png" alt="Countries" className="w-auto h-auto object-contain" />
+                  <img src="/medical/medpro/i2.webp" alt="Countries" className="w-auto h-auto object-contain" />
                 </div>
                 <div className="flex flex-col">
                   <span className="card-title font-bold text-[#3BB3C3] font-fraunces leading-tight">High Quality</span>
@@ -68,7 +68,7 @@ export default function GlimpseGallery() {
               {/* Feature 3 */}
               <div className="flex items-center gap-3.5">
                 <div className="w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.06)]">
-                  <img src="/medical/medpro/i3.png" alt="Countries" className="w-auto h-auto object-contain" />
+                  <img src="/medical/medpro/i3.webp" alt="Countries" className="w-auto h-auto object-contain" />
                 </div>
                 <div className="flex flex-col">
                   <span className="card-title font-bold text-[#3BB3C3] font-fraunces leading-tight">Competitive</span>
@@ -86,7 +86,7 @@ export default function GlimpseGallery() {
           </div>
 
           {/* Right Content */}
-          {/* Leaving this empty assuming the globe is part of the bg3.png background image. If the globe is a separate image, we can add it here. */}
+          {/* Leaving this empty assuming the globe is part of the bg3.webp background image. If the globe is a separate image, we can add it here. */}
           <div className="hidden lg:block h-[400px]"></div>
 
         </div>

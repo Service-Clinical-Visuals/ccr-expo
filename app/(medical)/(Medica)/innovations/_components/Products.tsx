@@ -5,9 +5,9 @@ import Typography from "./Typography";
 
 const Products = () => {
   const products = [
-    { name: "Sterilization Containers", image: "/medical/innovations/p1.jpg" },
-    { name: "Implant-Systems", image: "/medical/innovations/p2.jpg" },
-    { name: "External Fixators", image: "/medical/innovations/p3.jpg" },
+    { name: "Sterilization Containers", image: "/medical/innovations/p1.webp" },
+    { name: "Implant-Systems", image: "/medical/innovations/p2.webp" },
+    { name: "External Fixators", image: "/medical/innovations/p3.webp" },
   ];
 
   return (

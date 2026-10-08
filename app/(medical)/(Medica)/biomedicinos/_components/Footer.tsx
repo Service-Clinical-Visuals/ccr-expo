@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="w-full lg:col-span-3 xl:col-span-3 flex flex-col items-start gap-4 min-[2500px]:gap-6" data-aos="fade-up" data-aos-delay="100">
             <Link href="#home" className="inline-block mb-2">
               <img
-                src="/medical/biomedicinos/logo.png"
+                src="/medical/biomedicinos/logo.webp"
                 alt="Biomedicinos Logo"
                 className="w-[200px] sm:w-[240px] min-[2500px]:w-[320px] min-[3800px]:w-[400px] h-auto object-contain select-none"
               />

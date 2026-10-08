@@ -19,33 +19,33 @@ interface PartnerColumnPair {
 const ORIGINAL_PAIRS: PartnerColumnPair[] = [
   {
     id: 1,
-    top: { id: 1, name: "WEGO", logo: "/medical/euromed/p1.png" },
-    bottom: { id: 5, name: "Quilaban", logo: "/medical/euromed/p5.png" },
+    top: { id: 1, name: "WEGO", logo: "/medical/euromed/p1.webp" },
+    bottom: { id: 5, name: "Quilaban", logo: "/medical/euromed/p5.webp" },
   },
   {
     id: 2,
-    top: { id: 2, name: "HYOSUNG", logo: "/medical/euromed/p2.png" },
-    bottom: { id: 6, name: "IMS", logo: "/medical/euromed/p6.png" },
+    top: { id: 2, name: "HYOSUNG", logo: "/medical/euromed/p2.webp" },
+    bottom: { id: 6, name: "IMS", logo: "/medical/euromed/p6.webp" },
   },
   {
     id: 3,
-    top: { id: 3, name: "amcor", logo: "/medical/euromed/p3.png" },
-    bottom: { id: 7, name: "IGAR", logo: "/medical/euromed/p7.png" },
+    top: { id: 3, name: "amcor", logo: "/medical/euromed/p3.webp" },
+    bottom: { id: 7, name: "IGAR", logo: "/medical/euromed/p7.webp" },
   },
   {
     id: 4,
-    top: { id: 4, name: "Medix", logo: "/medical/euromed/p4.png" },
-    bottom: { id: 8, name: "NATPET", logo: "/medical/euromed/p8.png" },
+    top: { id: 4, name: "Medix", logo: "/medical/euromed/p4.webp" },
+    bottom: { id: 8, name: "NATPET", logo: "/medical/euromed/p8.webp" },
   },
   {
     id: 5,
-    top: { id: 9, name: "BILLERUDKORSNÄS", logo: "/medical/euromed/p10.png" },
-    bottom: { id: 10, name: "NATPET", logo: "/medical/euromed/p9.png" },
+    top: { id: 9, name: "BILLERUDKORSNÄS", logo: "/medical/euromed/p10.webp" },
+    bottom: { id: 10, name: "NATPET", logo: "/medical/euromed/p9.webp" },
   },
   {
     id: 6,
-    top: { id: 11, name: "WEGO Global", logo: "/medical/euromed/p1.png" },
-    bottom: { id: 12, name: "Quilaban Care", logo: "/medical/euromed/p5.png" },
+    top: { id: 11, name: "WEGO Global", logo: "/medical/euromed/p1.webp" },
+    bottom: { id: 12, name: "Quilaban Care", logo: "/medical/euromed/p5.webp" },
   },
 ];
 

@@ -40,7 +40,7 @@ export default function Header() {
         {/* Left: Logo */}
         <Link href="#home" className="flex items-center shrink-0">
           <img
-            src="/medical/biotech/images/logo.png"
+            src="/medical/biotech/images/logo.webp"
             alt="Biotech Logo"
             className="w-[180px] sm:w-[210px] lg:w-[238px] min-[2500px]:w-[320px] min-[3800px]:w-[400px] h-auto max-h-[41px] min-[2500px]:max-h-[60px] min-[3800px]:max-h-[75px] object-contain"
           />

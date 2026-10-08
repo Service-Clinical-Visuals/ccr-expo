@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="col-span-12 md:col-span-6 desk:col-span-4 flex flex-col">
             <Link href="/lux-sutures" className="inline-block w-fit">
               <img
-                src="/medical/lux-sutures/logo.png"
+                src="/medical/lux-sutures/logo.webp"
                 alt="LUX Sutures Logo"
                 className="h-10 sm:h-12 2xl:h-14 2k:h-20 w-auto object-contain"
               />

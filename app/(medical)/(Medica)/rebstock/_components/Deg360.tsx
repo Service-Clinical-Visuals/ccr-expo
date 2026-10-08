@@ -8,7 +8,7 @@ export default function Deg360() {
   return (
     <section
       id="experience-360"
-      className="w-full py-16 sm:py-20 lg:py-24 bg-[#003F77] bg-[url('/medical/rebstock/bg.jpg')] bg-cover bg-center bg-no-repeat overflow-hidden relative"
+      className="w-full py-16 sm:py-20 lg:py-24 bg-[#003F77] bg-[url('/medical/rebstock/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden relative"
     >
       <div className="custom-container flex flex-col items-center text-center gap-8 sm:gap-10 min-[3800px]:gap-16">
         <div

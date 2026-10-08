@@ -103,7 +103,7 @@ export default function Header() {
           >
             <div className="relative flex items-center">
               <img
-                src="/medical/siare/logo.png"
+                src="/medical/siare/logo.webp"
                 alt="Siare"
                 className="h-auto w-auto object-contain"
               />

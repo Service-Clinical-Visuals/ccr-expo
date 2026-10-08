@@ -53,7 +53,7 @@ export default function AboutSection() {
         >
           <div className="relative max-w-7xl mx-auto w-full h-[300px] sm:h-[400px] md:h-[500px] h-auto rounded-[10px] sm:rounded-[10px] overflow-hidden">
             <Image
-              src="/medical/kaul/about.png"
+              src="/medical/kaul/about.webp"
               alt="KAULMED Surgery"
               fill
               className="object-cover object-center"

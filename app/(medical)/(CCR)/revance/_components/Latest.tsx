@@ -53,7 +53,7 @@ const Latest = () => {
           {/* Left Large Image */}
           <div className="w-full h-full min-h-[300px] lg:min-h-[500px] overflow-hidden shadow-md" data-aos="fade-right" data-aos-delay="200">
             {/* Aspect ratio requested 820/581 */}
-            <img src="/revance/image.png" alt="Latest News Feature" className="w-full h-full object-cover object-center aspect-[820/581]" />
+            <img src="/revance/image.webp" alt="Latest News Feature" className="w-full h-full object-cover object-center aspect-[820/581]" />
           </div>
 
           {/* Right Cards list */}

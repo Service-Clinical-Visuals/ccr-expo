@@ -32,7 +32,7 @@ const Mission = () => {
           <div className="w-full xl:w-1/2 order-2 xl:order-1" data-aos="fade-right">
             <div className="relative w-full overflow-hidden shadow-md bg-gray-100" style={{ aspectRatio: '820/626' }}>
               <img
-                src="/medical/surgival/section3.png"
+                src="/medical/surgival/section3.webp"
                 alt="Mission and Vision"
                 className="absolute inset-0 w-full h-full object-cover"
               />

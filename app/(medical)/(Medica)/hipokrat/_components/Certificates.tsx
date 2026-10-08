@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 export default function Certificates() {
   const cards = [
     {
-      image: "/medical/hipokrat/u1.png",
+      image: "/medical/hipokrat/u1.webp",
       title: "Hipokrat's 50+ Year Journey: Pioneering Domestic Orthopedic Implants",
       description:
         "Founded in 1972 by three visionary orthopedic surgeons and a technician, Hipokrat has transformed an ambitious domestic goal into a globally respected medical engineering enterprise.",
@@ -15,7 +15,7 @@ export default function Certificates() {
       href: "#news",
     },
     {
-      image: "/medical/hipokrat/u2.png",
+      image: "/medical/hipokrat/u2.webp",
       title: "Successful Transition to European Union MDR 2017/745 CE Certification",
       description:
         "Our entire orthopedic implant and surgical instrumentation portfolio has achieved full compliance with the European Union Medical Device Regulation (MDR), ensuring top-tier clinical safety.",
@@ -23,7 +23,7 @@ export default function Certificates() {
       href: "#news",
     },
     {
-      image: "/medical/hipokrat/u3.png",
+      image: "/medical/hipokrat/u3.webp",
       title: "2005 Patent Registration Achievement",
       description:
         "Hipokrat was recognized for its innovation and patent development in biomedical engineering, marking an important milestone in its journey of advancing orthopedic technologies.",

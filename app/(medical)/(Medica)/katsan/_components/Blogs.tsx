@@ -20,25 +20,25 @@ const blogPosts: BlogPost[] = [
   {
     id: 1,
     title: "Best Practices for Using PDO Barbed Sutures",
-    image: "/medical/katsan/blog.png",
+    image: "/medical/katsan/blog.webp",
     link: "#",
   },
   {
     id: 2,
     title: "Innovations in Synthetic Surgical Sutures",
-    image: "/medical/katsan/blog.png",
+    image: "/medical/katsan/blog.webp",
     link: "#",
   },
   {
     id: 3,
     title: "Minimally Invasive Laparoscopic Surgical Techniques",
-    image: "/medical/katsan/blog.png",
+    image: "/medical/katsan/blog.webp",
     link: "#",
   },
   {
     id: 4,
     title: "Tissue Interaction and Non-Absorbable Meshes",
-    image: "/medical/katsan/blog.png",
+    image: "/medical/katsan/blog.webp",
     link: "#",
   },
 ];

@@ -10,7 +10,7 @@ const First = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/medical/surgival/bg.png"
+          src="/medical/surgival/bg.webp"
           alt="Surgival Headquarters"
           className="w-full h-full object-cover"
         />

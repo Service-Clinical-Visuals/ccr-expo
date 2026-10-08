@@ -28,17 +28,17 @@ const AboutUs = () => {
           {/* Column 2: Vertical Image */}
           <div className="lg:col-span-6 xl:col-span-3 order-2" data-aos="fade-up" data-aos-delay="100">
             <div className="w-full h-full aspect-[407/543] min-[3800px]:aspect-[407/543] overflow-hidden rounded-md min-[3800px]:rounded-2xl">
-              <img src="/medical/progetti/section21.png" alt="Progetti Doctor" className="w-full h-full object-cover" />
+              <img src="/medical/progetti/section21.webp" alt="Progetti Doctor" className="w-full h-full object-cover" />
             </div>
           </div>
 
           {/* Column 3: Stacked Horizontal Images */}
           <div className="lg:col-span-6 xl:col-span-3 flex flex-col justify-between gap-6 min-[3800px]:gap-12 order-3" data-aos="fade-up" data-aos-delay="200">
             <div className="w-full aspect-[390/260] overflow-hidden rounded-md min-[3800px]:rounded-2xl">
-              <img src="/medical/progetti/section22.png" alt="Ambulance Team" className="w-full h-full object-cover" />
+              <img src="/medical/progetti/section22.webp" alt="Ambulance Team" className="w-full h-full object-cover" />
             </div>
             <div className="w-full aspect-[390/260] overflow-hidden rounded-md min-[3800px]:rounded-2xl">
-              <img src="/medical/progetti/section23.png" alt="Engineers" className="w-full h-full object-cover" />
+              <img src="/medical/progetti/section23.webp" alt="Engineers" className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -48,7 +48,7 @@ const AboutUs = () => {
             {/* Mission Card */}
             <div className="group flex flex-col items-center justify-center p-6 min-[3800px]:p-12 border border-[var(--color-primary)] rounded-xl min-[3800px]:rounded-[2rem] text-center bg-white hover:bg-[var(--color-primary)] transition-colors duration-300 cursor-pointer h-full">
               <div className="flex items-center gap-2 min-[3800px]:gap-4 mb-4 min-[3800px]:mb-8">
-                <img src="/medical/progetti/icon1.png" alt="Mission Icon" className="w-14 h-14 min-[3800px]:w-18 min-[3800px]:h-18 object-contain group-hover:brightness-0 group-hover:invert transition-all duration-300" />
+                <img src="/medical/progetti/icon1.webp" alt="Mission Icon" className="w-14 h-14 min-[3800px]:w-18 min-[3800px]:h-18 object-contain group-hover:brightness-0 group-hover:invert transition-all duration-300" />
                 <Typography variant="h3" color="none" className="text-[#333333] group-hover:text-white transition-colors duration-300">Mission</Typography>
               </div>
               <Typography variant="p" color="none" className="text-[#333333] group-hover:text-white transition-colors duration-300 text-sm min-[3800px]:text-3xl leading-relaxed">
@@ -59,7 +59,7 @@ const AboutUs = () => {
             {/* Vision Card */}
             <div className="group flex flex-col items-center justify-center p-6 min-[3800px]:p-12 border border-[var(--color-primary)] rounded-xl min-[3800px]:rounded-[2rem] text-center bg-white hover:bg-[var(--color-primary)] transition-colors duration-300 cursor-pointer h-full">
               <div className="flex items-center gap-2 min-[3800px]:gap-4 mb-4 min-[3800px]:mb-8">
-                <img src="/medical/progetti/icon2.png" alt="Vision Icon" className="w-16 h-16 min-[3800px]:w-18 min-[3800px]:h-18 object-contain group-hover:brightness-0 group-hover:invert transition-all duration-300" />
+                <img src="/medical/progetti/icon2.webp" alt="Vision Icon" className="w-16 h-16 min-[3800px]:w-18 min-[3800px]:h-18 object-contain group-hover:brightness-0 group-hover:invert transition-all duration-300" />
                 <Typography variant="h3" color="none" className="text-[#333333] group-hover:text-white transition-colors duration-300">Vision</Typography>
               </div>
               <Typography variant="p" color="none" className="text-[#333333] group-hover:text-white transition-colors duration-300 text-sm min-[3800px]:text-3xl leading-relaxed">

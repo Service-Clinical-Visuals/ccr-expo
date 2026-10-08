@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-4 flex flex-col space-y-4 pr-0 lg:pr-6">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/hermann/logo.png"
+                src="/medical/hermann/logo.webp"
                 alt="Hermann Medizintechnik Logo"
                 className="h-7 sm:h-8 min-[2500px]:h-12 min-[3800px]:h-16 w-auto object-contain"
               />

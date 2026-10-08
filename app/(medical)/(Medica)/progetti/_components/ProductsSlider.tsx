@@ -9,22 +9,22 @@ const products = [
   {
     title: "Defibrillators",
     desc: "Reliable defibrillation technology designed for rapid, safe, and effective cardiac emergency care.",
-    image: "/medical/progetti/product1.png"
+    image: "/medical/progetti/product1.webp"
   },
   {
     title: "Multi-Parameter Monitors",
     desc: "Reliable monitoring systems designed to support continuous patient assessment.",
-    image: "/medical/progetti/product2.png"
+    image: "/medical/progetti/product2.webp"
   },
   {
     title: "Infusion Pumps",
     desc: "Precise and controlled solutions for safe medication and fluid delivery.",
-    image: "/medical/progetti/product3.png"
+    image: "/medical/progetti/product3.webp"
   },
   {
     title: "Ventilators",
     desc: "Advanced respiratory support systems for critical care environments.",
-    image: "/medical/progetti/product4.png"
+    image: "/medical/progetti/product4.webp"
   }
 ];
 

@@ -12,37 +12,37 @@ interface GalleryItem {
 const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 1,
-    src: "/medical/telemed/gp1.jpg",
+    src: "/medical/telemed/gp1.webp",
     alt: "Telemed MicrUs Handheld Ultrasound Scanner with Laptop and Clinical Reference",
   },
   {
     id: 2,
-    src: "/medical/telemed/gp2.jpg",
+    src: "/medical/telemed/gp2.webp",
     alt: "Telemed Array of Multifrequency Diagnostic Ultrasound Probes and Transducers",
   },
   {
     id: 3,
-    src: "/medical/telemed/gp3.jpg",
+    src: "/medical/telemed/gp3.webp",
     alt: "Telemed Clinical Ultrasound Imaging Scanner System",
   },
   {
     id: 4,
-    src: "/medical/telemed/gp4.jpg",
+    src: "/medical/telemed/gp4.webp",
     alt: "Telemed Point-of-Care Portable Transducer Architecture",
   },
   {
     id: 5,
-    src: "/medical/telemed/gp5.jpg",
+    src: "/medical/telemed/gp5.webp",
     alt: "Telemed OEM Ultrasound Digital Beamformer Architecture",
   },
   {
     id: 6,
-    src: "/medical/telemed/gp6.jpg",
+    src: "/medical/telemed/gp6.webp",
     alt: "Telemed Advanced Telemedicine Diagnostic Scanner Integration",
   },
   {
     id: 7,
-    src: "/medical/telemed/gp7.jpg",
+    src: "/medical/telemed/gp7.webp",
     alt: "Telemed Compact Ultrasound Research & Diagnostic Unit",
   },
 ];

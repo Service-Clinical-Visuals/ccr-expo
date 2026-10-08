@@ -9,7 +9,7 @@ export default function Updates() {
   const posts = [
     {
       id: 1,
-      image: "/medical/biomedicinos/d1.png",
+      image: "/medical/biomedicinos/d1.webp",
       date: "11.11.2025",
       title: "MEDICA 2025, GERMANY, DUSSELDORF, HALL 9 / C50",
       content: "By good tradition, our company will take part in the MEDICA exhibition in Dusseldorf from November 17 to 20, 2025,",
@@ -17,7 +17,7 @@ export default function Updates() {
     },
     {
       id: 2,
-      image: "/medical/biomedicinos/d2.png",
+      image: "/medical/biomedicinos/d2.webp",
       date: "03.10.2024",
       title: "MEDICA 2024, GERMANY, DUSSELDORF, HALL 9 / C50",
       content: "By good tradition, our company will take part in the MEDICA exhibition in Dusseldorf from November 11 to 14, 2024",
@@ -25,7 +25,7 @@ export default function Updates() {
     },
     {
       id: 3,
-      image: "/medical/biomedicinos/d3.png",
+      image: "/medical/biomedicinos/d3.webp",
       date: "15.03.2024",
       title: "Arab Health 2024 Exhibition results",
       content: "Thank you to everyone who visited us at Arab Health 2024 in Dubai. We were glad to meet with our partners, discuss our plans for this year.",

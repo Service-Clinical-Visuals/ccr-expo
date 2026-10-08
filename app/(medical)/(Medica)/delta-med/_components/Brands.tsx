@@ -5,14 +5,14 @@ import Button from "./Button";
 import Typography from "./Typography";
 
 const brandList = [
-  { name: "Delta Med", src: "/medical/delta-med/g1.png" },
-  { name: "PentaFerte", src: "/medical/delta-med/g2.png" },
-  { name: "Adriamed", src: "/medical/delta-med/g3.png" },
-  { name: "Securmed", src: "/medical/delta-med/g4.png" },
-  { name: "D.B.M.", src: "/medical/delta-med/g5.png" },
-  { name: "BEL", src: "/medical/delta-med/g6.png" },
-  { name: "PHS Medical", src: "/medical/delta-med/g7.png" },
-  { name: "Health Line", src: "/medical/delta-med/g8.png" },
+  { name: "Delta Med", src: "/medical/delta-med/g1.webp" },
+  { name: "PentaFerte", src: "/medical/delta-med/g2.webp" },
+  { name: "Adriamed", src: "/medical/delta-med/g3.webp" },
+  { name: "Securmed", src: "/medical/delta-med/g4.webp" },
+  { name: "D.B.M.", src: "/medical/delta-med/g5.webp" },
+  { name: "BEL", src: "/medical/delta-med/g6.webp" },
+  { name: "PHS Medical", src: "/medical/delta-med/g7.webp" },
+  { name: "Health Line", src: "/medical/delta-med/g8.webp" },
 ];
 
 const Brands = () => {

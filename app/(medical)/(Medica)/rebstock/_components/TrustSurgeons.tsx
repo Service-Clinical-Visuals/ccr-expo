@@ -6,22 +6,22 @@ import Typography from "./Typography";
 export default function TrustSurgeons() {
   const slides = [
     {
-      image: "/medical/rebstock/w1.png",
+      image: "/medical/rebstock/w1.webp",
       alt: "Surgical Instruments Rack",
       title: "Neuro Surgery",
     },
     {
-      image: "/medical/rebstock/w2.png",
+      image: "/medical/rebstock/w2.webp",
       alt: "Precision Micro Tools",
       title: "Spine Surgery",
     },
     {
-      image: "/medical/rebstock/w3.png",
+      image: "/medical/rebstock/w3.webp",
       alt: "Surgical Fixation on Cranial Model",
       title: "Cranio-Maxillofacial Plating Systems",
     },
     {
-      image: "/medical/rebstock/w4.png",
+      image: "/medical/rebstock/w4.webp",
       alt: "Cranio-Maxillofacial Systems",
       title: "General Surgery",
     },
@@ -267,7 +267,7 @@ export default function TrustSurgeons() {
                           <div className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 min-[1920px]:w-12 min-[1920px]:h-12 min-[2500px]:w-16 min-[2500px]:h-16 min-[3800px]:w-22 min-[3800px]:h-22 rounded-full bg-white flex items-center justify-center shadow-lg shrink-0 transition-transform duration-300 group-hover:scale-105">
                             {/* Arrow image */}
                             <img
-                              src="/medical/rebstock/arrow.png"
+                              src="/medical/rebstock/arrow.webp"
                               alt="Arrow"
                               className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-4.5 lg:h-4.5 min-[1920px]:w-5.5 min-[1920px]:h-5.5 min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-10 min-[3800px]:h-10 object-contain"
                             />

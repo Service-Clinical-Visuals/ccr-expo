@@ -6,7 +6,7 @@ import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 
 export default function PrecisionMesh() {
   return (
-    <section className="w-full bg-[#3a5da8] bg-[url('/medical/smi-sutures/bg.png')] bg-cover bg-center bg-no-repeat py-14 sm:py-16 min-[1025px]:py-20">
+    <section className="w-full bg-[#3a5da8] bg-[url('/medical/smi-sutures/bg.webp')] bg-cover bg-center bg-no-repeat py-14 sm:py-16 min-[1025px]:py-20">
       <div className="custom-container px-0 sm:px-2 min-[1025px]:px-4">
         {/* Top Header Row */}
         <div

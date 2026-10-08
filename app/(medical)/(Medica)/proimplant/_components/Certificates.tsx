@@ -5,9 +5,9 @@ import Typography from "./Typography";
 import Button from "./Button";
 
 const certificates = [
-  { image: "/medical/proimplant/a1.png", alt: "HTCert EC-Certificate" },
-  { image: "/medical/proimplant/a2.png", alt: "ISO 13485:2016" },
-  { image: "/medical/proimplant/a3.png", alt: "ISO 9001:2015" },
+  { image: "/medical/proimplant/a1.webp", alt: "HTCert EC-Certificate" },
+  { image: "/medical/proimplant/a2.webp", alt: "ISO 13485:2016" },
+  { image: "/medical/proimplant/a3.webp", alt: "ISO 9001:2015" },
 ];
 
 const Certificates = () => {

@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Column 1: Logo & Description & Socials */}
           <div className="col-span-2 md:col-span-4 lg:col-span-4 flex flex-col gap-6 items-start">
             <img
-              src="/euromed-implants/footer-logo.png"
+              src="/euromed-implants/footer-logo.webp"
               alt="Euromed Implants Logo"
               className="h-12 2xl:h-16 min-[3800px]:h-48 w-auto object-contain object-left"
             />

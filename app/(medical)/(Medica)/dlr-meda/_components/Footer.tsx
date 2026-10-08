@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="col-span-2 xl:col-span-1 flex flex-col items-start md:pr-[8%] xl:pr-[6%]" data-aos="fade-up">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/dlr-meda/logo.png"
+                src="/medical/dlr-meda/logo.webp"
                 alt="DLR Medikal"
                 className="w-[180px] sm:w-[205px] min-[2500px]:w-[300px] min-[3800px]:w-[600px] h-auto object-contain select-none"
               />

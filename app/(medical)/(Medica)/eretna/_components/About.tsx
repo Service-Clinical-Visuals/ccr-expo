@@ -65,7 +65,7 @@ export default function About() {
               {/* Main Booth Image Container */}
               <div className="relative w-full h-full rounded-2xl min-[2500px]:rounded-3xl overflow-hidden shadow-xl figma-card-shadow z-10">
                 <img
-                  src="/medical/eretna/about.png"
+                  src="/medical/eretna/about.webp"
                   alt="Engineering Better Healthcare - Eretna Medical Booth"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                 />

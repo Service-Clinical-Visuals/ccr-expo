@@ -47,7 +47,7 @@ const Footer = () => {
           {/* Column 1: Logo & Description & Socials */}
           <div className="xl:col-span-4 flex flex-col gap-6 items-start pr-0 xl:pr-12" data-aos="fade-up" data-aos-delay="0">
             <img
-              src="/medical/progetti/logo.png"
+              src="/medical/progetti/logo.webp"
               alt="Progetti Logo"
               className="h-25 min-[3800px]:h-40 w-auto object-contain object-left mb-2"
             />

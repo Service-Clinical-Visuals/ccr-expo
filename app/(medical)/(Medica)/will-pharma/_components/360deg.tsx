@@ -8,7 +8,7 @@ const Deg360 = () => {
   return (
     <section
       id="experience-360"
-      className="w-full py-16 sm:py-20 xl:py-28 bg-[#698A7F] bg-[url('/medical/will-pharma/bg.png')] bg-cover bg-center bg-no-repeat overflow-hidden relative"
+      className="w-full py-16 sm:py-20 xl:py-28 bg-[#698A7F] bg-[url('/medical/will-pharma/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden relative"
     >
       <div className="custom-container flex flex-col items-center text-center gap-8 sm:gap-10 min-[3800px]:gap-16">
         {/* Header */}

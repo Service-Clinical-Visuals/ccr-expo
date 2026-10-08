@@ -7,9 +7,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const cards = [
-  { image: "/revance/i1.png", title: "Aesthetics", link: "#" },
-  { image: "/revance/i2.png", title: "Consumer skincare", link: "#" },
-  { image: "/revance/i3.png", title: "Therapeutics", link: "#" },
+  { image: "/revance/i1.webp", title: "Aesthetics", link: "#" },
+  { image: "/revance/i2.webp", title: "Consumer skincare", link: "#" },
+  { image: "/revance/i3.webp", title: "Therapeutics", link: "#" },
 ];
 
 const Empowering = () => {

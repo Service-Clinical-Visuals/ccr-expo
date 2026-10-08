@@ -15,18 +15,18 @@ interface Product {
 }
 
 const PRODUCTS: Product[] = [
-  { name: "Polypropylene Mesh", image: "/medical/smi-sutures/1.png", href: "" },
-  { name: "Surgical Blades", image: "/medical/smi-sutures/2.png", href: "" },
-  { name: "Scalpel Handles", image: "/medical/smi-sutures/3.png", href: "" },
-  { name: "Flex – Bandage", image: "/medical/smi-sutures/4.png", href: "" },
-  { name: "Pilomat", image: "/medical/smi-sutures/5.png", href: "" },
-  { name: "Skin Marker", image: "/medical/smi-sutures/6.png", href: "" },
-  { name: "Bone Wax", image: "/medical/smi-sutures/7.png", href: "" },
-  { name: "SMI Spon", image: "/medical/smi-sutures/8.png", href: "" },
-  { name: "Hoof Care", image: "/medical/smi-sutures/9.png", href: "" },
-  { name: "Stitch Cutter", image: "/medical/smi-sutures/10.png", href: "" },
-  { name: "Tablet Introducer", image: "/medical/smi-sutures/11.png", href: "" },
-  { name: "Cassette Holder", image: "/medical/smi-sutures/12.png", href: "" },
+  { name: "Polypropylene Mesh", image: "/medical/smi-sutures/1.webp", href: "" },
+  { name: "Surgical Blades", image: "/medical/smi-sutures/2.webp", href: "" },
+  { name: "Scalpel Handles", image: "/medical/smi-sutures/3.webp", href: "" },
+  { name: "Flex – Bandage", image: "/medical/smi-sutures/4.webp", href: "" },
+  { name: "Pilomat", image: "/medical/smi-sutures/5.webp", href: "" },
+  { name: "Skin Marker", image: "/medical/smi-sutures/6.webp", href: "" },
+  { name: "Bone Wax", image: "/medical/smi-sutures/7.webp", href: "" },
+  { name: "SMI Spon", image: "/medical/smi-sutures/8.webp", href: "" },
+  { name: "Hoof Care", image: "/medical/smi-sutures/9.webp", href: "" },
+  { name: "Stitch Cutter", image: "/medical/smi-sutures/10.webp", href: "" },
+  { name: "Tablet Introducer", image: "/medical/smi-sutures/11.webp", href: "" },
+  { name: "Cassette Holder", image: "/medical/smi-sutures/12.webp", href: "" },
 ];
 
 function ProductCard({ product }: { product: Product }) {

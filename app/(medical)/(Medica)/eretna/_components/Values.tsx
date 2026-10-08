@@ -7,22 +7,22 @@ const valueCards = [
   {
     title: "Quality",
     desc: "With our production approach that conforms to international standards, we always prioritize high quality and reliability.",
-    image: "/medical/eretna/v1.png",
+    image: "/medical/eretna/v1.webp",
   },
   {
     title: "Trust",
     desc: "We consider the trust of our customers, business partners, and healthcare professionals to be our most valuable asset.",
-    image: "/medical/eretna/v2.png",
+    image: "/medical/eretna/v2.webp",
   },
   {
     title: "Innovation",
     desc: "We closely follow developing technologies and produce innovative and value-added solutions.",
-    image: "/medical/eretna/v3.png",
+    image: "/medical/eretna/v3.webp",
   },
   {
     title: "Sustainability",
     desc: "We develop solutions that add value to the future by acting with environmental and social responsibility awareness.",
-    image: "/medical/eretna/v4.png",
+    image: "/medical/eretna/v4.webp",
   },
 ];
 

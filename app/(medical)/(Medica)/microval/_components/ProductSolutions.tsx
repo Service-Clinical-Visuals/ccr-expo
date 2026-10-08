@@ -9,11 +9,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const PRODUCTS = [
-  { image: "/medical/microval/p1.png", alt: "HERNIES COELIO", title: "HERNIES COELIO" },
-  { image: "/medical/microval/p2.png", alt: "HERNIES LAPARO", title: "HERNIES LAPARO" },
-  { image: "/medical/microval/p3.png", alt: "HERNIES EVENTRATIONS", title: "HERNIES EVENTRATIONS" },
-  { image: "/medical/microval/p4.png", alt: "FIXATIONS SUTURES", title: "FIXATIONS SUTURES" },
-  { image: "/medical/microval/p5.png", alt: "NOTICES", title: "NOTICES" },
+  { image: "/medical/microval/p1.webp", alt: "HERNIES COELIO", title: "HERNIES COELIO" },
+  { image: "/medical/microval/p2.webp", alt: "HERNIES LAPARO", title: "HERNIES LAPARO" },
+  { image: "/medical/microval/p3.webp", alt: "HERNIES EVENTRATIONS", title: "HERNIES EVENTRATIONS" },
+  { image: "/medical/microval/p4.webp", alt: "FIXATIONS SUTURES", title: "FIXATIONS SUTURES" },
+  { image: "/medical/microval/p5.webp", alt: "NOTICES", title: "NOTICES" },
 ];
 
 export default function ProductSolutions() {

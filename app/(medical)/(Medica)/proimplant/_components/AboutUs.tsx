@@ -47,7 +47,7 @@ const AboutUs = () => {
 
           {/* Image */}
           <div className="w-full xl:col-span-7 relative shadow-sm overflow-hidden  order-2 lg:order-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="/medical/proimplant/section2.png" alt="About Hipknee" className="w-full h-auto object-cover aspect-[963/548]" />
+            <img src="/medical/proimplant/section2.webp" alt="About Hipknee" className="w-full h-auto object-cover aspect-[963/548]" />
           </div>
 
         </div>

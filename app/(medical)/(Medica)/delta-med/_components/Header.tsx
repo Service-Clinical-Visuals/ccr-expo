@@ -67,7 +67,7 @@ export default function Header() {
         <div className="flex-shrink-0 flex items-center">
           <Link href="#" className="block">
             <img
-              src="/medical/delta-med/logo.png"
+              src="/medical/delta-med/logo.webp"
               alt="NUMANTEC Logo"
               className="w-[130px] sm:w-[150px] lg:w-[160px] min-[3800px]:w-[380px] h-auto object-contain"
             />

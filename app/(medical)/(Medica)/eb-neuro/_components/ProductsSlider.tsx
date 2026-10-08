@@ -11,19 +11,19 @@ import { FiArrowRight } from "react-icons/fi";
 
 const allProducts = [
   // Neurology
-  { category: 'Neurology', name: 'BE Plus PRO', badge: 'ROUTINE EEG/vEEG', desc: 'BE Plus PRO is a versatile amplifier for EEG, PSG, ICU/NICU monitoring, EP/ERP, and TMS applications.', image: '/medical/eb-neuro/f11.png' },
-  { category: 'Neurology', name: 'NeMus 1', badge: 'ELECTROMYOGRAPHY', desc: 'NeMus 1 is the system designed specifically for electromyography (EMG) and Evoked Potentials (EP).', image: '/medical/eb-neuro/f12.png' },
-  { category: 'Neurology', name: 'GALILEO TMS M Series', badge: 'TMS & NEURONAVIGATION', desc: 'A powerful transcranial magnetic stimulator for the treatment of central nervous system and peripheral nerve disorders.', image: '/medical/eb-neuro/f13.png' },
+  { category: 'Neurology', name: 'BE Plus PRO', badge: 'ROUTINE EEG/vEEG', desc: 'BE Plus PRO is a versatile amplifier for EEG, PSG, ICU/NICU monitoring, EP/ERP, and TMS applications.', image: '/medical/eb-neuro/f11.webp' },
+  { category: 'Neurology', name: 'NeMus 1', badge: 'ELECTROMYOGRAPHY', desc: 'NeMus 1 is the system designed specifically for electromyography (EMG) and Evoked Potentials (EP).', image: '/medical/eb-neuro/f12.webp' },
+  { category: 'Neurology', name: 'GALILEO TMS M Series', badge: 'TMS & NEURONAVIGATION', desc: 'A powerful transcranial magnetic stimulator for the treatment of central nervous system and peripheral nerve disorders.', image: '/medical/eb-neuro/f13.webp' },
 
   // Gastroenterology & Urology
-  { category: 'Gastroenterology & Urology', name: 'Solar GI Solid State', badge: 'ESOPHAGEAL MANOMETRY', desc: 'Solar GI is an advanced high-resolution manometry system offering all the tools needed for modern manometry', image: '/medical/eb-neuro/f21.png' },
-  { category: 'Gastroenterology & Urology', name: 'Flowmaster NS', badge: 'UROFLOMETRY', desc: 'FLOWMASTER is a computer based wireless flowmeter designed for practical, everyday flow studies', image: '/medical/eb-neuro/f22.png' },
-  { category: 'Gastroenterology & Urology', name: 'Solar Blue', badge: 'URODYNAMICS', desc: 'The Solar Blue is a modular and wireless urodynamic testing system for assessing lower urinary tract function', image: '/medical/eb-neuro/f23.png' },
+  { category: 'Gastroenterology & Urology', name: 'Solar GI Solid State', badge: 'ESOPHAGEAL MANOMETRY', desc: 'Solar GI is an advanced high-resolution manometry system offering all the tools needed for modern manometry', image: '/medical/eb-neuro/f21.webp' },
+  { category: 'Gastroenterology & Urology', name: 'Flowmaster NS', badge: 'UROFLOMETRY', desc: 'FLOWMASTER is a computer based wireless flowmeter designed for practical, everyday flow studies', image: '/medical/eb-neuro/f22.webp' },
+  { category: 'Gastroenterology & Urology', name: 'Solar Blue', badge: 'URODYNAMICS', desc: 'The Solar Blue is a modular and wireless urodynamic testing system for assessing lower urinary tract function', image: '/medical/eb-neuro/f23.webp' },
 
   // Cardiology
-  { category: 'Cardiology', name: 'Rest ECG Smart', badge: 'ECG', desc: 'Easy ECG Smart transforms your PC into a powerful 12 leads electrocardiograph.', image: '/medical/eb-neuro/f31.png' },
-  { category: 'Cardiology', name: 'Easy ECG Holter', badge: 'ECG', desc: 'The LCD display provides an on-demand ECG review of all channels and visual confirmation of patient hook up.', image: '/medical/eb-neuro/f32.png' },
-  { category: 'Cardiology', name: 'ABP Blood pressureHolter', badge: 'ECG', desc: 'A simple one-button operation makes the recorder very easy to use.', image: '/medical/eb-neuro/f33.png' },
+  { category: 'Cardiology', name: 'Rest ECG Smart', badge: 'ECG', desc: 'Easy ECG Smart transforms your PC into a powerful 12 leads electrocardiograph.', image: '/medical/eb-neuro/f31.webp' },
+  { category: 'Cardiology', name: 'Easy ECG Holter', badge: 'ECG', desc: 'The LCD display provides an on-demand ECG review of all channels and visual confirmation of patient hook up.', image: '/medical/eb-neuro/f32.webp' },
+  { category: 'Cardiology', name: 'ABP Blood pressureHolter', badge: 'ECG', desc: 'A simple one-button operation makes the recorder very easy to use.', image: '/medical/eb-neuro/f33.webp' },
 ];
 
 const ProductsSlider = () => {

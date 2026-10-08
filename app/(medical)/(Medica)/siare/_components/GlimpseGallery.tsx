@@ -5,19 +5,19 @@ import { Calendar, MapPin } from "lucide-react";
 export default function GlimpseGallery() {
   const events = [
     {
-      image: "/medical/siare/event1.png",
+      image: "/medical/siare/event1.webp",
       title: "AARC Congress 2025",
       date: "06/12/2025",
       location: "Phoenix Convention Center"
     },
     {
-      image: "/medical/siare/event2.png",
+      image: "/medical/siare/event2.webp",
       title: "MEDICA 2025",
       date: "17/11/2025",
       location: "Messe Düsseldorf"
     },
     {
-      image: "/medical/siare/event3.png",
+      image: "/medical/siare/event3.webp",
       title: "SMART 2025",
       date: "07/05/2025",
       location: "Milan, Italy"

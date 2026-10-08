@@ -112,7 +112,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/smi-sutures" className="flex items-center flex-shrink-0 group">
               <img
-                src="/medical/smi-sutures/logo.png"
+                src="/medical/smi-sutures/logo.webp"
                 alt="SMI Logo"
                 className="h-auto w-auto object-contain group-hover:opacity-90 transition-opacity"
               />

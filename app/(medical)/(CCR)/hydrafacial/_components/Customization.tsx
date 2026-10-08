@@ -4,13 +4,13 @@ import React from "react";
 import Typography from "./Typography";
 
 const steps = [
-  { image: "/medical/hydrafacial/c1.png", title: "Lymphatic Drainage", body: "Creates a more sculpted lifted appearance." },
-  { image: "/medical/hydrafacial/c2.png", title: "Microdermabrasion", body: "A crystal-free tip for smoother, brighter skin." },
-  { image: "/medical/hydrafacial/c3.png", title: "Peel", body: "Pain-free, customisable and no downtime." },
-  { image: "/medical/hydrafacial/c4.png", title: "Extract", body: "Cleanses pores without discomfort or redness." },
-  { image: "/medical/hydrafacial/c5.png", title: "Booster", body: "Fully customised to target your skin's needs." },
-  { image: "/medical/hydrafacial/c6.png", title: "LED", body: "Red and blue light to firm and clarify skin." },
-  { image: "/medical/hydrafacial/c7.png", title: "Hydrate", body: "Nourishing serums restore glow." },
+  { image: "/medical/hydrafacial/c1.webp", title: "Lymphatic Drainage", body: "Creates a more sculpted lifted appearance." },
+  { image: "/medical/hydrafacial/c2.webp", title: "Microdermabrasion", body: "A crystal-free tip for smoother, brighter skin." },
+  { image: "/medical/hydrafacial/c3.webp", title: "Peel", body: "Pain-free, customisable and no downtime." },
+  { image: "/medical/hydrafacial/c4.webp", title: "Extract", body: "Cleanses pores without discomfort or redness." },
+  { image: "/medical/hydrafacial/c5.webp", title: "Booster", body: "Fully customised to target your skin's needs." },
+  { image: "/medical/hydrafacial/c6.webp", title: "LED", body: "Red and blue light to firm and clarify skin." },
+  { image: "/medical/hydrafacial/c7.webp", title: "Hydrate", body: "Nourishing serums restore glow." },
 ];
 
 const Customization = () => {
@@ -19,7 +19,7 @@ const Customization = () => {
 
       {/* Decorative water splash background - positioned outside container to bleed to screen edge */}
       <img
-        src="/medical/hydrafacial/bg2.png"
+        src="/medical/hydrafacial/bg2.webp"
         alt=""
         aria-hidden="true"
         className="pointer-events-none select-none absolute bottom-0 left-0 w-[350px] lg:w-[450px] 2xl:w-[550px] max-w-none hidden lg:block opacity-90 z-0"

@@ -14,7 +14,7 @@ const AboutUs = () => {
           <div className="w-full xl:col-span-6 relative order-2 xl:order-1 flex justify-center xl:justify-start mt-8 xl:mt-0" data-aos="fade-right" data-aos-delay="100">
             <div className="relative w-[90%] md:w-[80%] xl:w-full min-[3800px]:w-full">
               <div className="relative z-10 rounded-2xl min-[3800px]:rounded-[3rem] overflow-hidden">
-                <img src="/medical/eb-neuro/section2.png" alt="EB Neuro Since 1998" className="w-full h-auto object-contain" />
+                <img src="/medical/eb-neuro/section2.webp" alt="EB Neuro Since 1998" className="w-full h-auto object-contain" />
               </div>
             </div>
           </div>
@@ -42,25 +42,25 @@ const AboutUs = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 min-[3800px]:gap-y-12 py-8 min-[3800px]:py-16 my-4 min-[3800px]:my-10 md:divide-x md:divide-gray-200 min-[3800px]:divide-x-[4px]">
               <div className="flex items-center gap-3 min-[3800px]:gap-8 justify-start md:pr-4 min-[3800px]:pr-10">
                 <div className="w-14 h-14 min-[3800px]:w-32 min-[3800px]:h-32 shrink-0">
-                  <img src="/medical/eb-neuro/a1.png" alt="Innovation" className="w-full h-full object-contain" />
+                  <img src="/medical/eb-neuro/a1.webp" alt="Innovation" className="w-full h-full object-contain" />
                 </div>
                 <Typography variant="span" color="dark" className="text-sm min-[3800px]:text-3xl font-semibold whitespace-nowrap">Innovation</Typography>
               </div>
               <div className="flex items-center gap-3 min-[3800px]:gap-8 justify-start md:px-4 min-[3800px]:px-10">
                 <div className="w-14 h-14 min-[3800px]:w-32 min-[3800px]:h-32 shrink-0">
-                  <img src="/medical/eb-neuro/a2.png" alt="Quality" className="w-full h-full object-contain" />
+                  <img src="/medical/eb-neuro/a2.webp" alt="Quality" className="w-full h-full object-contain" />
                 </div>
                 <Typography variant="span" color="dark" className="text-sm min-[3800px]:text-3xl font-semibold whitespace-nowrap">Quality</Typography>
               </div>
               <div className="flex items-center gap-3 min-[3800px]:gap-8 justify-start md:px-4 min-[3800px]:px-10">
                 <div className="w-14 h-14 min-[3800px]:w-32 min-[3800px]:h-32 shrink-0">
-                  <img src="/medical/eb-neuro/a3.png" alt="Security" className="w-full h-full object-contain" />
+                  <img src="/medical/eb-neuro/a3.webp" alt="Security" className="w-full h-full object-contain" />
                 </div>
                 <Typography variant="span" color="dark" className="text-sm min-[3800px]:text-3xl font-semibold whitespace-nowrap">Security</Typography>
               </div>
               <div className="flex items-center gap-3 min-[3800px]:gap-8 justify-start md:pl-4 min-[3800px]:pl-10">
                 <div className="w-14 h-14 min-[3800px]:w-32 min-[3800px]:h-32 shrink-0">
-                  <img src="/medical/eb-neuro/a4.png" alt="Support" className="w-full h-full object-contain" />
+                  <img src="/medical/eb-neuro/a4.webp" alt="Support" className="w-full h-full object-contain" />
                 </div>
                 <Typography variant="span" color="dark" className="text-sm min-[3800px]:text-3xl font-semibold whitespace-nowrap">Support</Typography>
               </div>

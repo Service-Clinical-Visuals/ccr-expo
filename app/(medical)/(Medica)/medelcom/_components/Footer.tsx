@@ -22,7 +22,7 @@ export default function Footer() {
           {/* Logo & Description */}
           <div className="flex flex-col gap-6 lg:col-span-2">
             <div className="flex items-center gap-4">
-              <img src="/medical/medelcom/f-logo.png" alt="EU Programme" className="h-auto w-auto object-contain" />
+              <img src="/medical/medelcom/f-logo.webp" alt="EU Programme" className="h-auto w-auto object-contain" />
             </div>
             <p className="font-inter footer-text text-white/90 leading-relaxed font-regular">
               MEDELCOM International provides ultrasound <br /> systems, transducers, videocolposcopes, and OEM <br /> solutions with decades of engineering expertise.

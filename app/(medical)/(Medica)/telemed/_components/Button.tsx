@@ -47,7 +47,7 @@ export default function Button({
       <span>{children}</span>
       {showArrow && (
         <img
-          src="/medical/telemed/arrow.png"
+          src="/medical/telemed/arrow.webp"
           alt="Arrow"
           className={`w-3.5 sm:w-4 min-[3800px]:w-8 h-auto shrink-0 object-contain ${arrowFilterClasses[variant]}`}
         />

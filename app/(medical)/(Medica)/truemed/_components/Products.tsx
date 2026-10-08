@@ -16,24 +16,24 @@ export default function Products() {
       id: 1,
       title: "Distal Tibia Medial Anatomic Locking Plate",
       desc: "It is designed to stabilize fractures and deformities occurring in the distal part of the tibia.",
-      img: "/truemed/s3.png",
+      img: "/truemed/s3.webp",
       features: [
-        { icon: "/truemed/icon1.png", label: "Anatomic Design" },
-        { icon: "/truemed/icon2.png", label: "Locking Stability" },
-        { icon: "/truemed/icon3.png", label: "Enhance Fixation" },
-        { icon: "/truemed/icon4.png", label: "Reliable Outcome" },
+        { icon: "/truemed/icon1.webp", label: "Anatomic Design" },
+        { icon: "/truemed/icon2.webp", label: "Locking Stability" },
+        { icon: "/truemed/icon3.webp", label: "Enhance Fixation" },
+        { icon: "/truemed/icon4.webp", label: "Reliable Outcome" },
       ]
     },
     {
       id: 2,
       title: "Proximal Humerus Anatomic Locking Plate",
       desc: "It is designed to stabilize fractures and deformities in the proximal part of the humeral bone.",
-      img: "/truemed/s3.png",
+      img: "/truemed/s3.webp",
       features: [
-        { icon: "/truemed/icon1.png", label: "Anatomic Design" },
-        { icon: "/truemed/icon2.png", label: "Locking Stability" },
-        { icon: "/truemed/icon3.png", label: "Enhance Fixation" },
-        { icon: "/truemed/icon4.png", label: "Reliable Outcome" },
+        { icon: "/truemed/icon1.webp", label: "Anatomic Design" },
+        { icon: "/truemed/icon2.webp", label: "Locking Stability" },
+        { icon: "/truemed/icon3.webp", label: "Enhance Fixation" },
+        { icon: "/truemed/icon4.webp", label: "Reliable Outcome" },
       ]
     }
   ];

@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Logo & Text */}
           <div className="md:col-span-2 lg:col-span-3 flex flex-col gap-6" data-aos="fade-right">
             <Link href="/" className="inline-block">
-              <img src="/medical/elektro/f-logo.png" alt="Elektro-mag Logo" className="w-auto h-auto object-contain brightness-0 invert" />
+              <img src="/medical/elektro/f-logo.webp" alt="Elektro-mag Logo" className="w-auto h-auto object-contain brightness-0 invert" />
             </Link>
             <Typography variant="p" color="white" className="leading-relaxed lg:pr-4 text-sm opacity-90">
               Founded in 1968, Elektro-mag operates in the laboratory, medical, and industrial sectors worldwide, supported by hundreds of distributors and a strong reputation in Turkish and international markets.

@@ -19,7 +19,7 @@ export default function InnovationAndTradition() {
           {/* Back Image */}
           <div className="absolute top-0 left-0 shadow-[#3BB3C3]/100 bg-transparent overflow-hidden transform -rotate-3 z-10 transition-transform hover:rotate-0 hover:z-30 duration-300">
             <img
-              src="/medical/medpro/about1.png" // Placeholder or composite source
+              src="/medical/medpro/about1.webp" // Placeholder or composite source
               alt="Medpro Office"
               className="w-auto h-auto object-cover"
             />
@@ -27,7 +27,7 @@ export default function InnovationAndTradition() {
           {/* Front Image */}
           <div className="absolute top-[50%] right-0 overflow-hidden transform rotate-3 z-20 transition-transform hover:rotate-0 duration-300">
             <img
-              src="/medical/medpro/about.png" // Placeholder or composite source
+              src="/medical/medpro/about.webp" // Placeholder or composite source
               alt="Medpro Facility"
               className="w-auto h-auto object-cover"
             />

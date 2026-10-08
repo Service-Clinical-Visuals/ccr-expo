@@ -114,7 +114,7 @@ export default function Header() {
           <Link href="/farmac" className="flex items-center flex-shrink-0 mr-2 sm:mr-4 group">
             <div className="relative flex items-center">
               <img
-                src="/medical/farmac/logo.png"
+                src="/medical/farmac/logo.webp"
                 alt="Farmac-Zabban Logo"
                 className="h-full w-auto object-contain"
               />
@@ -190,7 +190,7 @@ export default function Header() {
               aria-label="Change Language"
               className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-[#24a6a8] hover:bg-[#1f8e90] text-white flex items-center justify-center transition-all duration-200 shadow-sm active:scale-95 flex-shrink-0"
             >
-              <img src="/medical/farmac/globe.png" alt="globe" className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white object-contain" />
+              <img src="/medical/farmac/globe.webp" alt="globe" className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white object-contain" />
             </button>
 
             {/* Contact Us CTA Button - hidden on mobile (<md), visible on tablet and desktop */}

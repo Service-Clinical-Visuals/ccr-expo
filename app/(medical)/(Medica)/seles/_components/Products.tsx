@@ -13,30 +13,30 @@ interface ProductItem {
 }
 
 const traumaProducts: ProductItem[] = [
-  { id: 1, title: "Locking LCP Superior Anterior Clavicle Plate, With Lateral Extension", image: "/medical/seles/o1.png" },
-  { id: 2, title: "Locking LCP Superior Anterior Clavicle Plate", image: "/medical/seles/o2.png" },
-  { id: 3, title: "Locking LCP Clavicle Hook Plate", image: "/medical/seles/o3.png" },
-  { id: 4, title: "Locking Proximal Humerus Plate (1)", image: "/medical/seles/o4.png" },
-  { id: 5, title: "Locking Proximal Humerus Plate V2", image: "/medical/seles/o5.png" },
-  { id: 6, title: "Locking Distal Lateral Dorsal Humerus Plate", image: "/medical/seles/o6.png" },
+  { id: 1, title: "Locking LCP Superior Anterior Clavicle Plate, With Lateral Extension", image: "/medical/seles/o1.webp" },
+  { id: 2, title: "Locking LCP Superior Anterior Clavicle Plate", image: "/medical/seles/o2.webp" },
+  { id: 3, title: "Locking LCP Clavicle Hook Plate", image: "/medical/seles/o3.webp" },
+  { id: 4, title: "Locking Proximal Humerus Plate (1)", image: "/medical/seles/o4.webp" },
+  { id: 5, title: "Locking Proximal Humerus Plate V2", image: "/medical/seles/o5.webp" },
+  { id: 6, title: "Locking Distal Lateral Dorsal Humerus Plate", image: "/medical/seles/o6.webp" },
 ];
 
 const spineProducts: ProductItem[] = [
-  { id: 1, title: "Spine Fixation System", image: "/medical/seles/s1.png" },
-  { id: 2, title: "Pedicle Screw System", image: "/medical/seles/s2.png" },
-  { id: 3, title: "Cervical Plate System", image: "/medical/seles/s3.png" },
-  { id: 4, title: "PEEK Cage Lumbar", image: "/medical/seles/s4.png" },
-  { id: 5, title: "PEEK Cage Cervical", image: "/medical/seles/s5.png" },
-  { id: 6, title: "Transpedicular Screw", image: "/medical/seles/s6.png" },
+  { id: 1, title: "Spine Fixation System", image: "/medical/seles/s1.webp" },
+  { id: 2, title: "Pedicle Screw System", image: "/medical/seles/s2.webp" },
+  { id: 3, title: "Cervical Plate System", image: "/medical/seles/s3.webp" },
+  { id: 4, title: "PEEK Cage Lumbar", image: "/medical/seles/s4.webp" },
+  { id: 5, title: "PEEK Cage Cervical", image: "/medical/seles/s5.webp" },
+  { id: 6, title: "Transpedicular Screw", image: "/medical/seles/s6.webp" },
 ];
 
 const instrumentsProducts: ProductItem[] = [
-  { id: 1, title: "Surgical Drill", image: "/medical/seles/i1.png" },
-  { id: 2, title: "Bone Rongeur", image: "/medical/seles/i2.png" },
-  { id: 3, title: "Orthopedic Mallet", image: "/medical/seles/i3.png" },
-  { id: 4, title: "Bone Rasp", image: "/medical/seles/i4.png" },
-  { id: 5, title: "Screwdriver Set", image: "/medical/seles/i5.png" },
-  { id: 6, title: "Plate Bender", image: "/medical/seles/i6.png" },
+  { id: 1, title: "Surgical Drill", image: "/medical/seles/i1.webp" },
+  { id: 2, title: "Bone Rongeur", image: "/medical/seles/i2.webp" },
+  { id: 3, title: "Orthopedic Mallet", image: "/medical/seles/i3.webp" },
+  { id: 4, title: "Bone Rasp", image: "/medical/seles/i4.webp" },
+  { id: 5, title: "Screwdriver Set", image: "/medical/seles/i5.webp" },
+  { id: 6, title: "Plate Bender", image: "/medical/seles/i6.webp" },
 ];
 
 export default function Products() {

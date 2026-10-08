@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Column 1: Logo & Description & Socials */}
           <div className="xl:col-span-3 flex flex-col gap-6 items-start" data-aos="fade-up">
             <img
-              src="/medical/eb-neuro/logo.png"
+              src="/medical/eb-neuro/logo.webp"
               alt="EB Neuro Logo"
               className="h-25 min-[3800px]:h-35 w-auto object-contain object-left mb-2"
             />

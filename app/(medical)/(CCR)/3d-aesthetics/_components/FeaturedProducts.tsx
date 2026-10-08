@@ -12,17 +12,17 @@ const products = [
   {
     title: "3D EMlift",
     desc: "Give your clients the ultimate #fivestarfacial treatment with our advanced multi-technology facial device",
-    image: "/moto/3d-aesthetics/products/1.png",
+    image: "/moto/3d-aesthetics/products/1.webp",
   },
   {
     title: "3D Powerform V",
     desc: "3D Visage is a comprehensive face scanner designed to complement all cosmetic facial treatments",
-    image: "/moto/3d-aesthetics/products/2.png",
+    image: "/moto/3d-aesthetics/products/2.webp",
   },
   {
     title: "3D Visage",
     desc: "Boost your client's confidence with a significant new technology proven to provide accelerated muscle stimulation",
-    image: "/moto/3d-aesthetics/products/3.png",
+    image: "/moto/3d-aesthetics/products/3.webp",
   },
 ];
 

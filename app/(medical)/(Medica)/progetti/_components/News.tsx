@@ -39,7 +39,7 @@ const News = () => {
             <div className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-sm shadow-sm overflow-hidden h-full" data-aos="fade-right">
               {/* Image side */}
               <div className="w-full md:w-1/2 aspect-[338/444] min-[3800px]:aspect-[338/444] shrink-0">
-                <img src="/medical/progetti/news1.png" alt="WHX Nairobi" className="w-full h-full object-cover" />
+                <img src="/medical/progetti/news1.webp" alt="WHX Nairobi" className="w-full h-full object-cover" />
               </div>
               {/* Text side */}
               <div className="p-6 min-[3800px]:p-12 flex flex-col justify-between w-full">
@@ -70,7 +70,7 @@ const News = () => {
               {/* Top Right Card */}
               <div className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-sm shadow-sm overflow-hidden flex-1">
                 <div className="w-full md:w-2/5 aspect-[246/207] min-[3800px]:aspect-[246/207] shrink-0">
-                  <img src="/medical/progetti/news2.png" alt="Rescue SAM 4.0" className="w-full h-full object-cover" />
+                  <img src="/medical/progetti/news2.webp" alt="Rescue SAM 4.0" className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6 min-[3800px]:p-12 flex flex-col justify-between w-full">
                   <div className="flex flex-col gap-3 min-[3800px]:gap-6">
@@ -94,7 +94,7 @@ const News = () => {
               {/* Bottom Right Card */}
               <div className="flex flex-col md:flex-row bg-white border border-gray-200 rounded-sm shadow-sm overflow-hidden flex-1">
                 <div className="w-full md:w-2/5 aspect-[246/207] min-[3800px]:aspect-[246/207] shrink-0">
-                  <img src="/medical/progetti/news3.png" alt="10 Year Partnership" className="w-full h-full object-cover" />
+                  <img src="/medical/progetti/news3.webp" alt="10 Year Partnership" className="w-full h-full object-cover" />
                 </div>
                 <div className="p-6 min-[3800px]:p-12 flex flex-col justify-between w-full">
                   <div className="flex flex-col gap-3 min-[3800px]:gap-6">

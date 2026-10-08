@@ -11,52 +11,52 @@ import "swiper/css/pagination";
 const products = [
   {
     title: "VASCULAR ACCESS",
-    image: "/medical/delta-med/1.png",
+    image: "/medical/delta-med/1.webp",
     link: "#",
   },
   {
     title: "INFUSION",
-    image: "/medical/delta-med/2.png",
+    image: "/medical/delta-med/2.webp",
     link: "#",
   },
   {
     title: "PRE-FILLED SYRINGES",
-    image: "/medical/delta-med/3.png",
+    image: "/medical/delta-med/3.webp",
     link: "#",
   },
   {
     title: "SYRINGES",
-    image: "/medical/delta-med/4.png",
+    image: "/medical/delta-med/4.webp",
     link: "#",
   },
   {
     title: "OPERATION ROOM",
-    image: "/medical/delta-med/5.png",
+    image: "/medical/delta-med/5.webp",
     link: "#",
   },
   {
     title: "UROLOGY",
-    image: "/medical/delta-med/6.png",
+    image: "/medical/delta-med/6.webp",
     link: "#",
   },
   {
     title: "URODYNAMICS",
-    image: "/medical/delta-med/7.png",
+    image: "/medical/delta-med/7.webp",
     link: "#",
   },
   {
     title: "GINECOLOGY",
-    image: "/medical/delta-med/8.png",
+    image: "/medical/delta-med/8.webp",
     link: "#",
   },
   {
     title: "SUBCUTANEOUS INFUSION",
-    image: "/medical/delta-med/9.png",
+    image: "/medical/delta-med/9.webp",
     link: "#",
   },
   {
     title: "BABY BOTTLE",
-    image: "/medical/delta-med/10.png",
+    image: "/medical/delta-med/10.webp",
     link: "#",
   },
 ];

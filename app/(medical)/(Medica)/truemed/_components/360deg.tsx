@@ -7,7 +7,7 @@ import Button from "./Button";
 
 const Deg360 = () => {
   return (
-    <section id="choose" className="w-full py-16 xl:py-24 bg-[url('/truemed/bg.png')] bg-cover bg-center bg-no-repeat overflow-hidden relative">
+    <section id="choose" className="w-full py-16 xl:py-24 bg-[url('/truemed/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden relative">
       <div className="custom-container flex flex-col items-center text-center gap-8 xl:gap-10">
 
         {/* Top Content: Heading and Text */}

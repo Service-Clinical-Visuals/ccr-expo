@@ -36,7 +36,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="#home" className="flex items-center shrink-0">
           <img
-            src="/medical/biomedicinos/logo.png"
+            src="/medical/biomedicinos/logo.webp"
             alt="Biomedicinos Logo"
             className="w-[180px] sm:w-[210px] lg:w-[260px] min-[2500px]:w-[320px] min-[3800px]:w-[400px] h-auto object-contain"
           />

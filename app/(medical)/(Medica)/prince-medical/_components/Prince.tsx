@@ -11,37 +11,37 @@ import Link from "next/link";
 
 const cards = [
   {
-    image: "/medical/prince-medical/a1.jpg",
+    image: "/medical/prince-medical/a1.webp",
     text: "ENDOLINE® Medical Devices For Digestive And Bronchial Endoscopy",
     link: "Learn More >>",
     href: "#",
   },
   {
-    image: "/medical/prince-medical/a2.jpg",
+    image: "/medical/prince-medical/a2.webp",
     text: "PM-CARE® Medical Devices For Gynecology",
     link: "Learn More >>",
     href: "#",
   },
   {
-    image: "/medical/prince-medical/a3.jpg",
+    image: "/medical/prince-medical/a3.webp",
     text: "ECHO HOOD® Balloons With 1 Or 2 Openings For Echo-Endoscope",
     link: "Learn More >>",
     href: "#",
   },
   {
-    image: "/medical/prince-medical/a4.jpg",
+    image: "/medical/prince-medical/a4.webp",
     text: "CLEANBRUSH® Cleaning Swabs And Brushes",
     link: "Learn More >>",
     href: "#",
   },
   {
-    image: "/medical/prince-medical/a5.jpg",
+    image: "/medical/prince-medical/a5.webp",
     text: "PM-LIFE® Medical Devices For Intrauterine Insemination And Oocyte Retrieval",
     link: "Learn More >>",
     href: "#",
   },
   {
-    image: "/medical/prince-medical/a6.jpg",
+    image: "/medical/prince-medical/a6.webp",
     text: "OXYCAP® Mouth Openers And Accessories Used In Upper Digestive Endoscopies",
     link: "Learn More >>",
     href: "#",

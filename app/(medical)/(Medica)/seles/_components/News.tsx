@@ -10,19 +10,19 @@ export default function News() {
   const catalogs = [
     {
       title: "Cranio Maxillofacial System",
-      image: "/medical/seles/p5.png",
+      image: "/medical/seles/p5.webp",
     },
     {
       title: "Mini Fragment Plating System",
-      image: "/medical/seles/p6.png",
+      image: "/medical/seles/p6.webp",
     },
     {
       title: "Upper Extremity Trauma Plates",
-      image: "/medical/seles/p7.png",
+      image: "/medical/seles/p7.webp",
     },
     {
       title: "Lower Extremity Trauma Plates",
-      image: "/medical/seles/p8.png",
+      image: "/medical/seles/p8.webp",
     },
   ];
 

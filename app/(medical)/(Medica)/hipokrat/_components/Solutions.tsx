@@ -19,28 +19,28 @@ const tabData: Record<string, ProductItem[]> = {
       title: "Primary & Revision Systems",
       description:
         "High-stability design preserving anatomical kinematics in both primary and complex revision procedures.",
-      image: "/medical/hipokrat/s11.png",
+      image: "/medical/hipokrat/s11.webp",
     },
     {
       category: "HIP ARTHROPLASTY",
       title: "Primary Hip Replacement",
       description:
         "Bipolar and dual-mobility articulations with hydroxyapatite-coated titanium femoral stems.",
-      image: "/medical/hipokrat/s12.png",
+      image: "/medical/hipokrat/s12.webp",
     },
     {
       category: "SHOULDER ARTHROPLASTY",
       title: "Standard Shoulder Prosthesis",
       description:
         "Designed to restore shoulder function and stability, and improved mobility for patients requiring shoulder joint replacement.",
-      image: "/medical/hipokrat/s13.png",
+      image: "/medical/hipokrat/s13.webp",
     },
     {
       category: "ELBOW ARTHROPLASTY",
       title: "Elbow Prosthesis",
       description:
         "Designed to restore elbow stability and mobility and improved movement after joint replacement.",
-      image: "/medical/hipokrat/s14.png",
+      image: "/medical/hipokrat/s14.webp",
     },
   ],
   "Trauma Systems": [
@@ -49,21 +49,21 @@ const tabData: Record<string, ProductItem[]> = {
       title: "Anatomical Plating Systems",
       description:
         "Low-profile locking compression plates providing rigid fixation for complex long-bone fractures.",
-      image: "/medical/hipokrat/s21.png",
+      image: "/medical/hipokrat/s21.webp",
     },
     {
       category: "INTRAMEDULLARY NAILING",
       title: "Femoral & Tibial Nails",
       description:
         "Advanced titanium intramedullary nails engineered for minimally invasive insertion and dynamic locking.",
-      image: "/medical/hipokrat/s22.png",
+      image: "/medical/hipokrat/s22.webp",
     },
     {
       category: "EXTERNAL FIXATION",
       title: "Modular Fixator Frame",
       description:
         "Multi-planar external fixation assemblies ensuring stability during severe soft tissue compromise.",
-      image: "/medical/hipokrat/s23.png",
+      image: "/medical/hipokrat/s23.webp",
     },
   ],
   "Spine Surgery": [
@@ -72,14 +72,14 @@ const tabData: Record<string, ProductItem[]> = {
       title: "Pedicle Screw Spinal System",
       description:
         "High-strength polyaxial pedicle screws offering comprehensive correction in spinal deformities.",
-      image: "/medical/hipokrat/s31.png",
+      image: "/medical/hipokrat/s31.webp",
     },
     {
       category: "INTERBODY FUSION",
       title: "Cervical & Lumbar PEEK Cages",
       description:
         "Radiolucent interbody spacers with micro-textured titanium endplates promoting osseointegration.",
-      image: "/medical/hipokrat/s32.png",
+      image: "/medical/hipokrat/s32.webp",
     },
   ],
   "Tumor Resection": [
@@ -88,14 +88,14 @@ const tabData: Record<string, ProductItem[]> = {
       title: "Modular Limb Salvage System",
       description:
         "Segmental defect reconstruction implants engineered to restore limb function after radical tumor resection.",
-      image: "/medical/hipokrat/s41.png",
+      image: "/medical/hipokrat/s41.webp",
     },
     {
       category: "PELVIC RECONSTRUCTION",
       title: "Custom Acetabular Cages",
       description:
         "Patient-matched structural solutions offering secure anchorage in massive oncological bone loss.",
-      image: "/medical/hipokrat/s42.png",
+      image: "/medical/hipokrat/s42.webp",
     },
   ],
   "Patient-Specific": [
@@ -104,14 +104,14 @@ const tabData: Record<string, ProductItem[]> = {
       title: "Patient-Specific Implants (PSI)",
       description:
         "Custom-manufactured implants built from high-resolution CT scans to match unique patient anatomy.",
-      image: "/medical/hipokrat/s43.png",
+      image: "/medical/hipokrat/s43.webp",
     },
     {
       category: "SURGICAL GUIDES",
       title: "Custom Resection Jigs",
       description:
         "Single-use surgical cutting guides designed to optimize surgical precision and reduce operating time.",
-      image: "/medical/hipokrat/s44.png",
+      image: "/medical/hipokrat/s44.webp",
     },
   ],
 };

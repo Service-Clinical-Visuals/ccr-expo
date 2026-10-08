@@ -36,7 +36,7 @@ const Button = ({
       <span className="button whitespace-nowrap">{text}</span>
       {showIcon && (
         <img
-          src="/medical/hermann/arrow.png"
+          src="/medical/hermann/arrow.webp"
           alt=""
           className={`w-3.5 h-auto min-[3800px]:w-6 ml-2.5 min-[3800px]:ml-5 group-hover:translate-x-1 transition-transform duration-300 shrink-0 object-contain ${
             variant === "secondary"

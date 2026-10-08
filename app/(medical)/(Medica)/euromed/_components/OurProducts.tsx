@@ -26,38 +26,38 @@ const PRODUCT_CATEGORIES: ProductCategory[] = [
       {
         title: "Coagulation Tube",
         category: "Coagulation Tube",
-        image: "/medical/euromed/1.png",
-        hoverImage: "/medical/euromed/1.1.png",
+        image: "/medical/euromed/1.webp",
+        hoverImage: "/medical/euromed/1.1.webp",
       },
       {
         title: "Edta Tube",
         category: "BLood collection tubes",
-        image: "/medical/euromed/2.png",
-        hoverImage: "/medical/euromed/2.1.png",
+        image: "/medical/euromed/2.webp",
+        hoverImage: "/medical/euromed/2.1.webp",
       },
       {
         title: "Fluoride Oxalate Tube",
         category: "BLood collection tubes",
-        image: "/medical/euromed/3.png",
-        hoverImage: "/medical/euromed/3.1.png",
+        image: "/medical/euromed/3.webp",
+        hoverImage: "/medical/euromed/3.1.webp",
       },
       {
         title: "Heparin Plasma Tube",
         category: "BLood collection tubes",
-        image: "/medical/euromed/4.png",
-        hoverImage: "/medical/euromed/4.1.png",
+        image: "/medical/euromed/4.webp",
+        hoverImage: "/medical/euromed/4.1.webp",
       },
       {
         title: "Serum Clot Activator Tube",
         category: "BLood collection tubes",
-        image: "/medical/euromed/5.png",
-        hoverImage: "/medical/euromed/5.1.png",
+        image: "/medical/euromed/5.webp",
+        hoverImage: "/medical/euromed/5.1.webp",
       },
       {
         title: "Gel & Clot Activator Tube",
         category: "BLood collection tubes",
-        image: "/medical/euromed/6.png",
-        hoverImage: "/medical/euromed/6.1.png",
+        image: "/medical/euromed/6.webp",
+        hoverImage: "/medical/euromed/6.1.webp",
       },
     ],
   },
@@ -68,38 +68,38 @@ const PRODUCT_CATEGORIES: ProductCategory[] = [
       {
         title: "Surgical Drape",
         category: "Infection Control",
-        image: "/medical/euromed/7.png",
-        hoverImage: "/medical/euromed/7.1.png",
+        image: "/medical/euromed/7.webp",
+        hoverImage: "/medical/euromed/7.1.webp",
       },
       {
         title: "Protective Coverall",
         category: "Infection Control",
-        image: "/medical/euromed/8.png",
-        hoverImage: "/medical/euromed/8.1.png",
+        image: "/medical/euromed/8.webp",
+        hoverImage: "/medical/euromed/8.1.webp",
       },
       {
         title: "Scrub Suits",
         category: "Infection Control",
-        image: "/medical/euromed/9.png",
-        hoverImage: "/medical/euromed/9.1.png",
+        image: "/medical/euromed/9.webp",
+        hoverImage: "/medical/euromed/9.1.webp",
       },
       {
         title: "Surgical Gown",
         category: "Infection Control",
-        image: "/medical/euromed/10.png",
-        hoverImage: "/medical/euromed/10.1.png",
+        image: "/medical/euromed/10.webp",
+        hoverImage: "/medical/euromed/10.1.webp",
       },
       {
         title: "Shoe & Boot Covers",
         category: "Infection Control",
-        image: "/medical/euromed/11.png",
-        hoverImage: "/medical/euromed/11.1.png",
+        image: "/medical/euromed/11.webp",
+        hoverImage: "/medical/euromed/11.1.webp",
       },
       {
         title: "Bouffant Cap",
         category: "Infection Control",
-        image: "/medical/euromed/12.png",
-        hoverImage: "/medical/euromed/12.1.png",
+        image: "/medical/euromed/12.webp",
+        hoverImage: "/medical/euromed/12.1.webp",
       },
     ],
   },
@@ -110,38 +110,38 @@ const PRODUCT_CATEGORIES: ProductCategory[] = [
       {
         title: "Hypodermic Needles",
         category: "Infusion Therapy",
-        image: "/medical/euromed/13.png",
-        hoverImage: "/medical/euromed/13.1.png",
+        image: "/medical/euromed/13.webp",
+        hoverImage: "/medical/euromed/13.1.webp",
       },
       {
         title: "IV Cannula",
         category: "Infusion Therapy",
-        image: "/medical/euromed/14.png",
-        hoverImage: "/medical/euromed/14.1.png",
+        image: "/medical/euromed/14.webp",
+        hoverImage: "/medical/euromed/14.1.webp",
       },
       {
         title: "Infusion Set",
         category: "Infusion Therapy",
-        image: "/medical/euromed/15.png",
-        hoverImage: "/medical/euromed/15.1.png",
+        image: "/medical/euromed/15.webp",
+        hoverImage: "/medical/euromed/15.1.webp",
       },
       {
         title: "Auto-Disable Syringe",
         category: "Infusion Therapy",
-        image: "/medical/euromed/16.png",
-        hoverImage: "/medical/euromed/16.1.png",
+        image: "/medical/euromed/16.webp",
+        hoverImage: "/medical/euromed/16.1.webp",
       },
       {
         title: "Standard Syringe",
         category: "Infusion Therapy",
-        image: "/medical/euromed/17.png",
-        hoverImage: "/medical/euromed/17.1.png",
+        image: "/medical/euromed/17.webp",
+        hoverImage: "/medical/euromed/17.1.webp",
       },
       {
         title: "3-Way Stopcock",
         category: "Infusion Therapy",
-        image: "/medical/euromed/18.png",
-        hoverImage: "/medical/euromed/18.1.png",
+        image: "/medical/euromed/18.webp",
+        hoverImage: "/medical/euromed/18.1.webp",
       },
     ],
   },
@@ -152,38 +152,38 @@ const PRODUCT_CATEGORIES: ProductCategory[] = [
       {
         title: "Spirometer / Exerciser",
         category: "Respiratory & Anesthesia",
-        image: "/medical/euromed/19.png",
-        hoverImage: "/medical/euromed/19.1.png",
+        image: "/medical/euromed/19.webp",
+        hoverImage: "/medical/euromed/19.1.webp",
       },
       {
         title: "Endotracheal Tube",
         category: "Respiratory & Anesthesia",
-        image: "/medical/euromed/20.png",
-        hoverImage: "/medical/euromed/20.1.png",
+        image: "/medical/euromed/20.webp",
+        hoverImage: "/medical/euromed/20.1.webp",
       },
       {
         title: "Manual Resuscitator",
         category: "Respiratory & Anesthesia",
-        image: "/medical/euromed/21.png",
-        hoverImage: "/medical/euromed/21.1.png",
+        image: "/medical/euromed/21.webp",
+        hoverImage: "/medical/euromed/21.1.webp",
       },
       {
         title: "Oxygen Mask with Reservoir",
         category: "Respiratory & Anesthesia",
-        image: "/medical/euromed/22.png",
-        hoverImage: "/medical/euromed/22.1.png",
+        image: "/medical/euromed/22.webp",
+        hoverImage: "/medical/euromed/22.1.webp",
       },
       {
         title: "Venturi Mask Kit",
         category: "Respiratory & Anesthesia",
-        image: "/medical/euromed/23.png",
-        hoverImage: "/medical/euromed/23.1.png",
+        image: "/medical/euromed/23.webp",
+        hoverImage: "/medical/euromed/23.1.webp",
       },
       {
         title: "Guedel Airway",
         category: "Respiratory & Anesthesia",
-        image: "/medical/euromed/24.png",
-        hoverImage: "/medical/euromed/24.1.png",
+        image: "/medical/euromed/24.webp",
+        hoverImage: "/medical/euromed/24.1.webp",
       },
     ],
   },
@@ -316,14 +316,14 @@ export default function OurProducts() {
                   <div className="bg-white border border-slate-200/90 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col h-full overflow-hidden group/card">
                     {/* Product Image Box: Cross-fades from image to hoverImage */}
                     <div className="relative w-full aspect-square overflow-hidden flex items-center justify-center p-6">
-                      {/* Default Image (e.g. 1.png) */}
+                      {/* Default Image (e.g. 1.webp) */}
                       <img
                         src={product.image}
                         alt={product.title}
                         className="w-full h-full object-contain absolute inset-0 p-6  group-hover/card:opacity-0 group-hover/card:scale-95"
                       />
 
-                      {/* Hover Image (e.g. 1.1.png) */}
+                      {/* Hover Image (e.g. 1.1.webp) */}
                       <img
                         src={product.hoverImage}
 

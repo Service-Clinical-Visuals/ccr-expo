@@ -95,7 +95,7 @@ export default function Header() {
             aria-label="EMED Home"
           >
             <img
-              src="/medical/emed/logo.png"
+              src="/medical/emed/logo.webp"
               alt="EMED — Confidence in Performance"
               className="header-logo-img w-auto object-contain select-none transform scale-115 sm:scale-120 md:scale-125 lg:scale-130 min-[2000px]:scale-135 min-[2500px]:scale-145 min-[3800px]:scale-160 origin-left transition-transform"
             />

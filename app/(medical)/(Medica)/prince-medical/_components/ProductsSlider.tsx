@@ -13,28 +13,28 @@ const categories = [
   {
     name: "Digestive and bronchial endoscopy",
     products: [
-      { title: "CPRE, Balloon Catheter", image: "/medical/prince-medical/f1.jpg", href: "#" },
-      { title: "ERCP, Nasobiliary Kit", image: "/medical/prince-medical/f2.jpg", href: "#" },
-      { title: "Hemostasis, Injection Needle", image: "/medical/prince-medical/f3.jpg", href: "#" },
-      { title: "Hemostasis, Polypectomy", image: "/medical/prince-medical/f4.jpg", href: "#" },
-      { title: "Cytological Sampling", image: "/medical/prince-medical/f5.jpg", href: "#" },
+      { title: "CPRE, Balloon Catheter", image: "/medical/prince-medical/f1.webp", href: "#" },
+      { title: "ERCP, Nasobiliary Kit", image: "/medical/prince-medical/f2.webp", href: "#" },
+      { title: "Hemostasis, Injection Needle", image: "/medical/prince-medical/f3.webp", href: "#" },
+      { title: "Hemostasis, Polypectomy", image: "/medical/prince-medical/f4.webp", href: "#" },
+      { title: "Cytological Sampling", image: "/medical/prince-medical/f5.webp", href: "#" },
     ]
   },
   {
     name: "Gynaecology",
     products: [
-      { title: "Sampling, Smear And Biopsy", image: "/medical/prince-medical/d1.jpg", href: "#" },
-      { title: "Intra-Uterine Device...", image: "/medical/prince-medical/d2.jpg", href: "#" },
-      { title: "Hysterography And...", image: "/medical/prince-medical/d3.jpg", href: "#" },
-      { title: "Functional Exploration", image: "/medical/prince-medical/c4.jpg", href: "#" },
+      { title: "Sampling, Smear And Biopsy", image: "/medical/prince-medical/d1.webp", href: "#" },
+      { title: "Intra-Uterine Device...", image: "/medical/prince-medical/d2.webp", href: "#" },
+      { title: "Hysterography And...", image: "/medical/prince-medical/d3.webp", href: "#" },
+      { title: "Functional Exploration", image: "/medical/prince-medical/c4.webp", href: "#" },
     ]
   },
   {
     name: "Medically Assisted Reproduction",
     products: [
-      { title: "Intrauterine Insemination", image: "/medical/prince-medical/c1.jpg", href: "#" },
-      { title: "Oocytepuncture", image: "/medical/prince-medical/c2.jpg", href: "#" },
-      { title: "Embryo Transfer", image: "/medical/prince-medical/c3.jpg", href: "#" },
+      { title: "Intrauterine Insemination", image: "/medical/prince-medical/c1.webp", href: "#" },
+      { title: "Oocytepuncture", image: "/medical/prince-medical/c2.webp", href: "#" },
+      { title: "Embryo Transfer", image: "/medical/prince-medical/c3.webp", href: "#" },
     ]
   }
 ];

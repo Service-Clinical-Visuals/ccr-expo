@@ -51,7 +51,7 @@ export default function AboutUs() {
             data-aos-delay="100"
           >
             <img
-              src="/medical/rebstock/about1.png"
+              src="/medical/rebstock/about1.webp"
               alt="Rebstock Workshop Engineering"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -64,7 +64,7 @@ export default function AboutUs() {
             data-aos-delay="200"
           >
             <img
-              src="/medical/rebstock/about2.png"
+              src="/medical/rebstock/about2.webp"
               alt="Sebastian Rebstock Leadership"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />

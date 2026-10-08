@@ -70,7 +70,7 @@ export default function Explore360() {
             data-aos-delay="300"
           >
             <div className="w-[101px] h-[101px] rounded-full bg-[#65B5A0] flex items-center justify-center flex-shrink-0">
-              <img src="/medical/microval/icon2.png" alt="Anatomical Configuration" className="w-auto h-auto object-contain" />
+              <img src="/medical/microval/icon2.webp" alt="Anatomical Configuration" className="w-auto h-auto object-contain" />
             </div>
             <div>
               <h3 className="font-dmsans font-semibold text-[#111111] card-title mb-2">Anatomical Configuration</h3>
@@ -88,7 +88,7 @@ export default function Explore360() {
             data-aos-delay="400"
           >
             <div className="w-[101px] h-[101px] rounded-full bg-[#65B5A0] flex items-center justify-center flex-shrink-0">
-              <img src="/medical/microval/icon3.png" alt="Available Dimensions" className="w-auto h-auto object-contain" />
+              <img src="/medical/microval/icon3.webp" alt="Available Dimensions" className="w-auto h-auto object-contain" />
             </div>
             <div>
               <h3 className="font-dmsans font-semibold text-[#111111] card-title mb-2">Available Dimensions</h3>

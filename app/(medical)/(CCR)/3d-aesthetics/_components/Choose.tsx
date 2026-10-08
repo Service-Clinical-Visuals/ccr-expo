@@ -5,27 +5,27 @@ import Container from "./Container";
 
 const reasons = [
   {
-    icon: "/moto/3d-aesthetics/choose/1.png",
+    icon: "/moto/3d-aesthetics/choose/1.webp",
     text: "Fantastic results to ensure best patient outcomes.",
   },
   {
-    icon: "/moto/3d-aesthetics/choose/2.png",
+    icon: "/moto/3d-aesthetics/choose/2.webp",
     text: "Value for money with advanced technology, at affordable prices.",
   },
   {
-    icon: "/moto/3d-aesthetics/choose/3.png",
+    icon: "/moto/3d-aesthetics/choose/3.webp",
     text: "Fast return on investment, with potential to earn £1000's in additional revenue.",
   },
   {
-    icon: "/moto/3d-aesthetics/choose/4.png",
+    icon: "/moto/3d-aesthetics/choose/4.webp",
     text: "Comprehensive & unrivalled support package from customer service, to training,",
   },
   {
-    icon: "/moto/3d-aesthetics/choose/5.png",
+    icon: "/moto/3d-aesthetics/choose/5.webp",
     text: "Quality Assurance- we are an EN ISO13485: 2016 certified company,",
   },
   {
-    icon: "/moto/3d-aesthetics/choose/6.png",
+    icon: "/moto/3d-aesthetics/choose/6.webp",
     text: "Become part of our diverse and growing community championing the best practice in result",
   },
 ];

@@ -9,17 +9,17 @@ export default function NewsUpdates() {
   const newsItems = [
     {
       title: "Platelet-Derived Exosomes vs. Extracellular Vesicles...",
-      image: "/medical/str/news1.png",
+      image: "/medical/str/news1.webp",
       alt: "Platelet-Derived Exosomes vs. Extracellular Vesicles",
     },
     {
       title: "Cell Recovery in BMAC: Why Total Cell Yield Matters?",
-      image: "/medical/str/news2.png",
+      image: "/medical/str/news2.webp",
       alt: "Cell Recovery in BMAC: Why Total Cell Yield Matters?",
     },
     {
       title: "Orthobiologics Manufacturer: PRP, BMAC, SVF &...",
-      image: "/medical/str/news3.png",
+      image: "/medical/str/news3.webp",
       alt: "Orthobiologics Manufacturer: PRP, BMAC, SVF &...",
     },
   ];

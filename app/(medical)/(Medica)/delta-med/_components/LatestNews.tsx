@@ -15,7 +15,7 @@ const newsItems = [
     title: "When Is The Mini-Midline Most...",
     date: "4 September 2026",
     desc: "A mini-Midline may be used when peripheral venous access needs to be more stable and durable than with a short...",
-    image: "/medical/delta-med/n1.png",
+    image: "/medical/delta-med/n1.webp",
     link: "#",
   },
   {
@@ -23,7 +23,7 @@ const newsItems = [
     title: "Delta Midline And Midline Health Line...",
     date: "1 September 2026",
     desc: "The choice of a Midline catheter must take several parameters into account, from the characteristics of the...",
-    image: "/medical/delta-med/n2.png",
+    image: "/medical/delta-med/n2.webp",
     link: "#",
   },
   {
@@ -31,7 +31,7 @@ const newsItems = [
     title: "When To Choose Prefilled Syringes...",
     date: "24 August 2026",
     desc: "Drug preparation is a critical step in the administration process. Any manipulation of the device or solution requires...",
-    image: "/medical/delta-med/n3.png",
+    image: "/medical/delta-med/n3.webp",
     link: "#",
   },
   {
@@ -39,7 +39,7 @@ const newsItems = [
     title: "Urine Output Monitoring With A...",
     date: "18 August 2026",
     desc: "Urine output monitoring makes it possible to collect objective information on the patient's fluid balance and renal...",
-    image: "/medical/delta-med/n4.png",
+    image: "/medical/delta-med/n4.webp",
     link: "#",
   },
   {
@@ -47,7 +47,7 @@ const newsItems = [
     title: "Elastomeric Pumps: Continuity Of...",
     date: "11 August 2026",
     desc: "In recent years, the development of infusion devices has made it possible to deliver certain treatments outside...",
-    image: "/medical/delta-med/n5.png",
+    image: "/medical/delta-med/n5.webp",
     link: "#",
   },
   {
@@ -55,7 +55,7 @@ const newsItems = [
     title: "Amber Syringes: When Light Protection...",
     date: "4 August 2026",
     desc: "In healthcare settings, syringe selection does not depend solely on volume or the method of administration. In some cases, it...",
-    image: "/medical/delta-med/n6.png",
+    image: "/medical/delta-med/n6.webp",
     link: "#",
   },
 ];

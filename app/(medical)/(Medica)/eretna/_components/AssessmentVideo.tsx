@@ -78,7 +78,7 @@ export default function AssessmentVideo() {
                   <div key={idx} className="flex items-center gap-3">
                     <div className="shrink-0 flex items-center justify-center w-[26px] h-[26px]">
                       <img
-                        src="/medical/eretna/key.png"
+                        src="/medical/eretna/key.webp"
                         alt="Key feature"
                         className="w-full h-full object-contain"
                       />

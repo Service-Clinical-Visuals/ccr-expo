@@ -96,7 +96,7 @@ export default function About() {
           >
             <div className="w-full aspect-[820/513] rounded-[22px_0px] sm:rounded-[26px_0px] min-[1500px]:rounded-[30px_0px] min-[2500px]:rounded-[44px_0px] min-[3800px]:rounded-[56px_0px] overflow-hidden border border-[#006B96]/25 shadow-[0px_3px_8px_rgba(0,0,0,0.24)] bg-neutral-100 group">
               <img
-                src="/medical/emed/about.jpg"
+                src="/medical/emed/about.webp"
                 alt="EMED — Twój partner w elektrochirurgii"
                 className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />

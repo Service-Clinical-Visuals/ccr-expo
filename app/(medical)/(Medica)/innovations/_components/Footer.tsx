@@ -41,7 +41,7 @@ const Footer = () => {
     <footer className="relative w-full mt-auto overflow-hidden text-white">
       {/* Background image + overlay */}
       <div className="absolute inset-0 z-0">
-        <img src="/medical/innovations/bg.png" alt="" aria-hidden="true" className="w-full h-full object-cover" />
+        <img src="/medical/innovations/bg.webp" alt="" aria-hidden="true" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-[#575656]/90" />
       </div>
 
@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-4 lg:col-span-1 flex flex-col gap-6 min-[3800px]:gap-10 lg:pr-10 min-[3800px]:pr-20" data-aos="fade-right">
             <Link href="/" className="inline-block w-fit">
               <img
-                src="/medical/innovations/footer-logo.png"
+                src="/medical/innovations/footer-logo.webp"
                 alt="Innovations Medical"
                 className="w-[220px] lg:w-[260px] xl:w-[300px] min-[2500px]:w-[420px] min-[3800px]:w-[800px] h-auto object-contain"
               />

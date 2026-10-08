@@ -10,7 +10,7 @@ const Advancing = () => {
       id="advancing"
       className="w-full py-20 xl:py-28 relative overflow-hidden flex items-center"
       style={{
-        backgroundImage: "url('/medical/eb-neuro/bg2.png')",
+        backgroundImage: "url('/medical/eb-neuro/bg2.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center right",
       }}

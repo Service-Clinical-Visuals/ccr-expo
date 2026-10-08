@@ -51,7 +51,7 @@ const About = () => {
           {/* Right: Image */}
           <div className="w-full lg:w-1/2" data-aos="fade-left" data-aos-delay="150">
             <img
-              src="/moto/3d-aesthetics/about.png"
+              src="/moto/3d-aesthetics/about.webp"
               alt="3D Aesthetics Devices"
               className="w-full h-auto object-contain rounded"
             />

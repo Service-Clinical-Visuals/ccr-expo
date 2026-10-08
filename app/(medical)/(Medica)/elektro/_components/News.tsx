@@ -13,37 +13,37 @@ const newsItems = [
     title: "Elektro-Mag To Present Innovative...",
     date: "22.08.2024",
     excerpt: "Dear business partners and sector followers, As Elektro-mag, we proudly announce that we will participate in Turab...",
-    image: "/medical/elektro/n1.png"
+    image: "/medical/elektro/n1.webp"
   },
   {
     title: "Conclusion Of Arab Health 2024...",
     date: "20.02.2024",
     excerpt: "Hello Valued Elektro-mag Community, Arab Health 2024 has come to a close with great enthusiasm...",
-    image: "/medical/elektro/n2.png"
+    image: "/medical/elektro/n2.webp"
   },
   {
     title: "Elektro-Mag To Showcase Innovations At",
     date: "23.11.2023",
     excerpt: "Dear Valued Customers and Business Partners, We are delighted to announce that Elektro-mag...",
-    image: "/medical/elektro/n3.png"
+    image: "/medical/elektro/n3.webp"
   },
   {
     title: "Medica 2023 Reflections: Unveiling...",
     date: "20.10.2023",
     excerpt: "We extend our heartfelt gratitude to everyone who graced our Elektro-mag booth at Medica 2023...",
-    image: "/medical/elektro/n4.png"
+    image: "/medical/elektro/n4.webp"
   },
   {
     title: "Join Us At MEDICA 2023",
     date: "10.10.2023",
     excerpt: "We are excited to announce that Elektro-mag will be participating in MEDICA 2023! The prominent medical...",
-    image: "/medical/elektro/n5.png"
+    image: "/medical/elektro/n5.webp"
   },
   {
     title: "Elektro-Mag To Showcase At Turab Expo...",
     date: "14.01.2023",
     excerpt: "Dear valued partners and sector enthusiasts, We are delighted to announce that Elektro-mag, a renowned...",
-    image: "/medical/elektro/n6.png" // reused image for 6th item
+    image: "/medical/elektro/n6.webp" // reused image for 6th item
   },
 ];
 

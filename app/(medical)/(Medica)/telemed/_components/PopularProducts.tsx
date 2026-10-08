@@ -25,7 +25,7 @@ const PRODUCTS: Product[] = [
     name: "ArtUs OEM-1H",
     description:
       "ArtUs OEM-1H is an ultrasound medical beamformer designed for developers, manufacturers and researchers.",
-    image: "/medical/telemed/pp1.png",
+    image: "/medical/telemed/pp1.webp",
     link: "#products",
   },
   {
@@ -33,7 +33,7 @@ const PRODUCTS: Product[] = [
     name: "ArtUs EXT-1H",
     description:
       "ArtUs EXT-1H is a compact and highly powerful application-based ultrasound device.",
-    image: "/medical/telemed/pp2.png",
+    image: "/medical/telemed/pp2.webp",
     link: "#products",
   },
   {
@@ -41,7 +41,7 @@ const PRODUCTS: Product[] = [
     name: "SmartUs EXT-1M",
     description:
       "SmartUs EXT-1M is a new generation of portable ultrasound color Doppler scanners. It employs the latest technologies...",
-    image: "/medical/telemed/pp3.png",
+    image: "/medical/telemed/pp3.webp",
     link: "#products",
   },
   {
@@ -49,7 +49,7 @@ const PRODUCTS: Product[] = [
     name: "MicrUs Pro-L40S",
     description:
       "MicrUs Pro-L40S, Point of Care USB Smart probe for tablet and smartphone. Telemedicine applications, training...",
-    image: "/medical/telemed/pp4.png",
+    image: "/medical/telemed/pp4.webp",
     link: "#products",
   },
   {
@@ -57,7 +57,7 @@ const PRODUCTS: Product[] = [
     name: "MicrUs Pro-C60S",
     description:
       "High-definition portable convex smart probe designed for deep abdominal and general clinical diagnostic imaging.",
-    image: "/medical/telemed/pp5.png",
+    image: "/medical/telemed/pp5.webp",
     link: "#products",
   },
   {
@@ -65,7 +65,7 @@ const PRODUCTS: Product[] = [
     name: "ClarUs EXT-1M",
     description:
       "Versatile open-architecture ultrasound imaging platform engineered for high-throughput clinical workflows.",
-    image: "/medical/telemed/pp6.jpg",
+    image: "/medical/telemed/pp6.webp",
     link: "#products",
   },
 ];

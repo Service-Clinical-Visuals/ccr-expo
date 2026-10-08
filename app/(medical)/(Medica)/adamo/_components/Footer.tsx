@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Logo & Text (4 columns) */}
           <div className="col-span-2 md:col-span-4 lg:col-span-4 flex flex-col gap-6" data-aos="fade-right">
             <Link href="/" className="inline-block">
-              <img src="/adamo/logo.png" alt="Adamo Logo" className="w-[120px] lg:w-[150px] min-[3800px]:w-[350px] h-auto object-contain" />
+              <img src="/adamo/logo.webp" alt="Adamo Logo" className="w-[120px] lg:w-[150px] min-[3800px]:w-[350px] h-auto object-contain" />
             </Link>
             <Typography variant="footer-body" color="muted" className="leading-relaxed lg:pr-8 text-sm min-[3800px]:text-2xl min-[3800px]:leading-loose">
               Adamo S.r.l. develops innovative diagnostic technologies designed to support healthcare professionals with precision, reliability, and advanced imaging solutions across a range of clinical applications.

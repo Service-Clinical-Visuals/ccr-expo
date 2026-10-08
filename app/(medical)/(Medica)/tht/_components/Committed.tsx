@@ -4,8 +4,8 @@ import React from "react";
 import Typography from "./Typography";
 
 const images = [
-  { src: "/tht/section31.png", alt: "Surgeons performing a procedure" },
-  { src: "/tht/section32.png", alt: "Scanning packaged medical devices" },
+  { src: "/tht/section31.webp", alt: "Surgeons performing a procedure" },
+  { src: "/tht/section32.webp", alt: "Scanning packaged medical devices" },
 ];
 
 const Committed = () => {

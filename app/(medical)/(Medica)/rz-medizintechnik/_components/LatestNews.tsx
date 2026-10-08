@@ -13,14 +13,14 @@ export default function LatestNews() {
       title: "Traveling together,\ncelebrating together",
       description:
         "Our annual RZ summer party took place last weekend under brilliant sunshine. Together, we hiked from RZ Medizintechnik to the Bumbishütte in Immendingen, where a relaxing day awaited us with good food, lots of conversation, and plenty of fun. The grill offered not only classic barbecue fare but also delicious shish kebabs.",
-      image: "/medical/rz-medizintechnik/news1.png",
+      image: "/medical/rz-medizintechnik/news1.webp",
       href: "#news",
     },
     {
       title: "Licensed packaging – reduced environmental impact.",
       description:
         'RZ Medizintechnik GmbH is registered in the LUCID packaging register and participates in the dual system "Der Grüne Punkt" for its sales packaging subject to mandatory participation. In doing so, we contribute to the legally compliant collection and recycling of packaging in Germany.',
-      image: "/medical/rz-medizintechnik/news2.png",
+      image: "/medical/rz-medizintechnik/news2.webp",
       href: "#news",
     },
   ];

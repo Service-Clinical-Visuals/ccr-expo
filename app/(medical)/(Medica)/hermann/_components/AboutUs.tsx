@@ -49,7 +49,7 @@ export default function AboutUs() {
             data-aos-delay="150"
           >
             <img
-              src="/medical/hermann/about1.png"
+              src="/medical/hermann/about1.webp"
               alt="Hermann Production & Engineering Team"
               className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />
@@ -62,7 +62,7 @@ export default function AboutUs() {
             data-aos-delay="200"
           >
             <img
-              src="/medical/hermann/about2.png"
+              src="/medical/hermann/about2.webp"
               alt="Hermann Leadership & Quality Direction"
               className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
             />

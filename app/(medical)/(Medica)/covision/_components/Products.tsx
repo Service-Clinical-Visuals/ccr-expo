@@ -9,25 +9,25 @@ const Products = () => {
     {
       title: "Knee Systems",
       description: "Proven knee implant solutions for diverse surgical needs.",
-      image: "/medical/covision/p1.png",
+      image: "/medical/covision/p1.webp",
       link: "#products",
     },
     {
       title: "Hip Systems",
       description: "Versatile cemented and cementless hip systems.",
-      image: "/medical/covision/p2.png",
+      image: "/medical/covision/p2.webp",
       link: "#products",
     },
     {
       title: "Trauma Systems",
       description: "Titanium trauma plates, screws, and instruments.",
-      image: "/medical/covision/p3.png",
+      image: "/medical/covision/p3.webp",
       link: "#products",
     },
     {
       title: "Spine Systems",
       description: "Proven spinal solutions with pedicle screws, connectors, and bars.",
-      image: "/medical/covision/p4.png",
+      image: "/medical/covision/p4.webp",
       link: "#products",
     },
   ];

@@ -104,7 +104,7 @@ export default function WhoWeAre() {
             {/* Top Large Facility Image */}
             <div className="w-full whoweare-img-wrapper shadow-md border border-gray-100 bg-[#E5E7EB]">
               <img
-                src="/medical/rz-medizintechnik/about1.png"
+                src="/medical/rz-medizintechnik/about1.webp"
                 alt="RZ Medizintechnik facility"
                 className="whoweare-img-top hover:scale-[1.02]"
               />
@@ -114,7 +114,7 @@ export default function WhoWeAre() {
             <div className="grid grid-cols-2 whoweare-img-bottom-grid w-full">
               <div className="w-full whoweare-img-wrapper shadow-md border border-gray-100 bg-[#E5E7EB]">
                 <img
-                  src="/medical/rz-medizintechnik/about2.png"
+                  src="/medical/rz-medizintechnik/about2.webp"
                   alt="RZ Medizintechnik company team"
                   className="whoweare-img-bottom hover:scale-[1.03]"
                 />
@@ -122,7 +122,7 @@ export default function WhoWeAre() {
 
               <div className="w-full whoweare-img-wrapper shadow-md border border-gray-100 bg-[#E5E7EB]">
                 <img
-                  src="/medical/rz-medizintechnik/about3.png"
+                  src="/medical/rz-medizintechnik/about3.webp"
                   alt="RZ Medizintechnik booth team"
                   className="whoweare-img-bottom hover:scale-[1.03]"
                 />

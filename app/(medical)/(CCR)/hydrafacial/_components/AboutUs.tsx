@@ -6,27 +6,27 @@ import Button from "./Button";
 
 const commitments = [
   {
-    icon: "/medical/hydrafacial/icon1.png",
+    icon: "/medical/hydrafacial/icon1.webp",
     title: "Committed to Skin",
     body: "Only Hydrafacial uses patented technology to cleanse, extract, and hydrate. Hydrafacial super serums are made with nourishing ingredients that create an instantly gratifying glow.",
   },
   {
-    icon: "/medical/hydrafacial/icon2.png",
+    icon: "/medical/hydrafacial/icon2.webp",
     title: "Committed to Our Customers",
     body: "From the moment you walk out, your skin looks dewy, plump, and glowing. But the true power of Hydrafacial treatments is what happens over time—the more you go, the more you glow. Each session builds on the last, and because it's customisable, you can update your skin ritual as your needs change.",
   },
   {
-    icon: "/medical/hydrafacial/icon3.png",
+    icon: "/medical/hydrafacial/icon3.webp",
     title: "Committed to Our Partners",
     body: "Support Hydrafacial providers to help make their business grow, with world class training and patented technology to cleanse, extract, and hydrate.",
   },
 ];
 
 const images = [
-  { src: "/medical/hydrafacial/1.png", alt: "Hydrafacial provider with device" },
-  { src: "/medical/hydrafacial/2.png", alt: "Provider performing a Hydrafacial treatment" },
-  { src: "/medical/hydrafacial/3.png", alt: "Client receiving a Hydrafacial treatment" },
-  { src: "/medical/hydrafacial/4.png", alt: "Happy client after a Hydrafacial treatment" },
+  { src: "/medical/hydrafacial/1.webp", alt: "Hydrafacial provider with device" },
+  { src: "/medical/hydrafacial/2.webp", alt: "Provider performing a Hydrafacial treatment" },
+  { src: "/medical/hydrafacial/3.webp", alt: "Client receiving a Hydrafacial treatment" },
+  { src: "/medical/hydrafacial/4.webp", alt: "Happy client after a Hydrafacial treatment" },
 ];
 
 const AboutUs = () => {

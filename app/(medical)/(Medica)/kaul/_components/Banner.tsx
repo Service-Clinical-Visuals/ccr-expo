@@ -44,7 +44,7 @@ export default function Banner() {
               data-aos-duration="800"
               data-aos-delay="350"
             >
-              <Button href="#quote" variant="outline-white" className="font-semibold section-text" icon={<img src="/medical/kaul/mail.png" alt="icon" className="w-auto h-auto pl-2 object-contain" />}>
+              <Button href="#quote" variant="outline-white" className="font-semibold section-text" icon={<img src="/medical/kaul/mail.webp" alt="icon" className="w-auto h-auto pl-2 object-contain" />}>
                 Get a Quote
               </Button>
             </div>

@@ -109,7 +109,7 @@ export default function Header() {
             aria-label="Rebstock Home"
           >
             <img
-              src="/medical/rebstock/logo.png"
+              src="/medical/rebstock/logo.webp"
               alt="Rebstock Logo"
               className="header-logo object-contain"
             />

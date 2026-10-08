@@ -29,7 +29,7 @@ const Footer = () => {
           {/* Column 1: Logo & Description */}
           <div className="col-span-2 md:col-span-4 lg:col-span-4 flex flex-col gap-6 items-start" data-aos="fade-up">
             <img
-              src="/medical/proimplant/logo.png"
+              src="/medical/proimplant/logo.webp"
               alt="Hipknee Logo"
               className="h-16 2xl:h-20 w-auto object-contain object-left"
             />

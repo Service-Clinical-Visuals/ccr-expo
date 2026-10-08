@@ -48,7 +48,7 @@ export default function Header() {
         >
           <Link href="/tasarimmed" className="flex items-center gap-3 relative z-10">
             <img
-              src="/medical/tasarimmed/logo.png"
+              src="/medical/tasarimmed/logo.webp"
               alt="tasarimmed"
               className="max-h-[35px] sm:max-h-[40px] lg:max-h-[50px] w-auto object-contain"
             />

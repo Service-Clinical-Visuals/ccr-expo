@@ -21,7 +21,7 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-12">
           <div className="w-full relative aspect-[792/600] rounded-2xl overflow-hidden shadow-sm" data-aos="fade-right">
             <Image
-              src="/medical/biomedicinos/section23.png"
+              src="/medical/biomedicinos/section23.webp"
               alt="About BM Technica 1"
               fill
               className="object-cover"
@@ -29,7 +29,7 @@ export default function AboutUs() {
           </div>
           <div className="w-full relative aspect-[792/600] rounded-2xl overflow-hidden shadow-sm" data-aos="fade-left">
             <Image
-              src="/medical/biomedicinos/section21.png"
+              src="/medical/biomedicinos/section21.webp"
               alt="About BM Technica 2"
               fill
               className="object-cover"

@@ -27,8 +27,8 @@ export default function Button({
     : "bg-white text-[#2A2A2A] hover:bg-neutral-100";
 
   const arrowSrc = isPrimary
-    ? "/medical/hum-gmbh/white_arrow.png"
-    : "/medical/hum-gmbh/black_arrow.png";
+    ? "/medical/hum-gmbh/white_arrow.webp"
+    : "/medical/hum-gmbh/black_arrow.webp";
 
   const content = (
     <div

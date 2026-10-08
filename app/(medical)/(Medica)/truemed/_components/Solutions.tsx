@@ -10,9 +10,9 @@ import { ArrowRight } from "lucide-react";
 
 export default function Solutions() {
   const categories = [
-    { name: "Elbow", icon: "/truemed/vector1.png" },
-    { name: "Shoulder", icon: "/truemed/vector2.png" },
-    { name: "Hand & Wrist", icon: "/truemed/vector3.png" },
+    { name: "Elbow", icon: "/truemed/vector1.webp" },
+    { name: "Shoulder", icon: "/truemed/vector2.webp" },
+    { name: "Hand & Wrist", icon: "/truemed/vector3.webp" },
     { name: "Others", icon: "/truemed/vector4.png" }
   ];
   const [activeCategory, setActiveCategory] = useState("Elbow");
@@ -22,83 +22,83 @@ export default function Solutions() {
       {
         title: "TRUE LOCK Distal Humerus Medial Plate",
         desc: "Indicated for intra-articular and supracondylar fractures of the distal humerus, as well as nonunions and osteotomies. Distal humerus fractures account for approximately 2% of all fractures and nearly one-third of humerus fractures.",
-        img: "/truemed/E1.png"
+        img: "/truemed/E1.webp"
       },
       {
         title: "TRUE LOCK Olecranon Anatomic Plate",
         desc: "Indicates for complex extra- and intra-articular olecranon fractures, simple olecranon fractures, pseudoarthrosis of the proximal ulna, and osteotomies.",
-        img: "/truemed/E2.png"
+        img: "/truemed/E2.webp"
       },
       {
         title: "TRUE LOCK Distal Humerus Lateral Anatomic Plate",
         desc: "Indicates for intra-articular and supracondylar fractures of the distal humerus, along with nonunions and osteotomies. Distal humerus fractures account for approximately 2% of all fractures and nearly one-third of humerus fractures.",
-        img: "/truemed/E3.png"
+        img: "/truemed/E3.webp"
       },
       {
         title: "TRUE LOCK Distal Humerus Posterolateral Anatomic Plate",
         desc: "Indicates for intra-articular and supracondylar fractures of the distal humerus, as well as nonunions and osteotomies of the distal humerus.",
-        img: "/truemed/E4.png"
+        img: "/truemed/E4.webp"
       },
       {
         title: "TRUE LOCK Proximal Radius Plate",
         desc: "indicated for extra- and intra-articular fractures of the proximal radius, including multifragmented radial neck fractures. Radial head fractures account for approximately 1.7-5.4% of all fractures and around 33% of adult elbow fractures.",
-        img: "/truemed/E5.png"
+        img: "/truemed/E5.webp"
       }
     ],
     "Shoulder": [
       {
         title: "TRUE LOCK Clavicle Anatomic Plate",
         desc: "Indicated for malunions, nonunions and osteotomies of the clavicle.",
-        img: "/truemed/S1.png"
+        img: "/truemed/S1.webp"
       },
       {
         title: "TRUE LOCK Superior Distal Clavicle Anatomic Plate",
         desc: "Indicated include fractures of the clavicle shaft and lateral clavicle, as well as malunions and non-unions of the clavicle.",
-        img: "/truemed/S2.png"
+        img: "/truemed/S2.webp"
       },
       {
         title: "TRUE LOCK Proximal Humerus Anatomic Plate",
         desc: "For fractures and fracture dislocations, osteotomies, and nonunions of the proximal humerus, particularly for patients with osteopenic bone. Proximal humerus fractures are 4-5% of all fracture types.",
-        img: "/truemed/S3.png"
+        img: "/truemed/S3.webp"
       },
       {
         title: "TRUE LOCK 3.5 mm Humerus Straight Plate",
         desc: "Indicates for fractures and deformities in the shaft (middle, diaphyseal) part of the humerus bone.",
-        img: "/truemed/S4.png"
+        img: "/truemed/S4.webp"
       }
     ],
     "Hand & Wrist": [
       {
         title: "TRUE LOCK Distal Radius Dorsal Anatomic Plate",
         desc: "Indicated for Dorsally displaced fractures. Extra-articular fractures with metaphyseal defect. Open joint reconstruction.",
-        img: "/truemed/H1.png"
+        img: "/truemed/H1.webp"
       },
       {
         title: "TRUE LOCK Distal Radius Volar Anatomic Plate",
         desc: "Indicated for fixation of complex intra and extra-articular fractures and corrective osteotomies of the distal radius. Distal Radius fractures constitute 8-15% of all fractures.",
-        img: "/truemed/H2.png"
+        img: "/truemed/H2.webp"
       },
       {
         title: "TRUE LOCK 1/3 Tubular Straight Plates",
         desc: "Indicated for fractures of ulna, radius and fibula shaft. Radius and ulna body fractures differ from other diaphyseal fractures due to the relationship between both bones and the fractures can affect the elbow and wrist joints.",
-        img: "/truemed/H3.png"
+        img: "/truemed/H3.webp"
       },
       {
         title: "TRUE LOCK 3.5mm Ulna Radius Plate",
         desc: "Indicated for fractures of ulna, radius and fibula shaft. Radius and ulna body fractures differ from other diaphyseal fractures due to the relationship between both bones.",
-        img: "/truemed/H4.png"
+        img: "/truemed/H4.webp"
       },
       {
         title: "TRUE LOCK Distal Ulna Anatomic Plate",
         desc: "Indicated for fixation of fractures, osteotomies, nonunions, replantations, and fusions of small bones and small bone fragments, particularly in osteopenic bone.",
-        img: "/truemed/H5.png"
+        img: "/truemed/H5.webp"
       }
     ],
     "Others": [
       {
         title: "TRUE LOCK Dynamic Hip Screw Plate",
         desc: "Indicated for the treatment of intertrochanteric, subtrochanteric and basilar neck fractures of the femur.",
-        img: "/truemed/E1.png"
+        img: "/truemed/E1.webp"
       }
     ]
   };

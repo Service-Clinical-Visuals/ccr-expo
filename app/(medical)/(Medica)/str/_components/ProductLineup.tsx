@@ -11,48 +11,48 @@ export default function ProductLineup() {
       description:
         "Advanced therapies designed to activate the body's natural healing processes.",
       color: "#4B95FB",
-      icon: "/medical/str/l1.png",
-      image: "/medical/str/p1.jpg",
+      icon: "/medical/str/l1.webp",
+      image: "/medical/str/p1.webp",
     },
     {
       title: "Regenerative Orthobiology",
       description:
         "Harnessing biology to support bone, cartilage and joint regeneration.",
       color: "#05C99F",
-      icon: "/medical/str/l2.png",
-      image: "/medical/str/p2.png",
+      icon: "/medical/str/l2.webp",
+      image: "/medical/str/p2.webp",
     },
     {
       title: "Regenerative Aesthetics",
       description:
         "Natural-looking rejuvenation for healthier, younger-looking skin—restoring radiance, freshness, and a beautifully refreshed appearance.",
       color: "#C66978",
-      icon: "/medical/str/l3.png",
-      image: "/medical/str/p3.png",
+      icon: "/medical/str/l3.webp",
+      image: "/medical/str/p3.webp",
     },
     {
       title: "Major Ozone Therapies",
       description:
         "Ozone based therapies for improved oxygenation and cellular health.",
       color: "#594BCD",
-      icon: "/medical/str/l4.png",
-      image: "/medical/str/p4.png",
+      icon: "/medical/str/l4.webp",
+      image: "/medical/str/p4.webp",
     },
     {
       title: "Regenerative Urogynecology",
       description:
         "Restoring function and confidence through advanced regenerative solutions.",
       color: "#03A0A9",
-      icon: "/medical/str/l5.png",
-      image: "/medical/str/p5.png",
+      icon: "/medical/str/l5.webp",
+      image: "/medical/str/p5.webp",
     },
     {
       title: "Orthopedic Implant Technologies",
       description:
         "Next-generation implants for better mobility, stability and long-term outcomes.",
       color: "#014393",
-      icon: "/medical/str/l6.png",
-      image: "/medical/str/p6.png",
+      icon: "/medical/str/l6.webp",
+      image: "/medical/str/p6.webp",
     },
   ];
 

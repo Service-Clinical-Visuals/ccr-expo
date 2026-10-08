@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="lg:col-span-4 flex flex-col items-start gap-5 min-[2500px]:gap-8">
               <Link href="#home" aria-label="Hipokrat">
                 <img
-                  src="/medical/hipokrat/logo.png"
+                  src="/medical/hipokrat/logo.webp"
                   alt="Hipokrat Logo"
                   className="w-[200px] sm:w-[220px] md:w-[230px] min-[2500px]:w-[360px] min-[3800px]:w-[480px] h-auto brightness-0 invert object-contain"
                 />

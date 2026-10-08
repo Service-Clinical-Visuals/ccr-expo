@@ -22,7 +22,7 @@ export default function QualityManagement() {
           {/* Card 1 */}
           <div className="flex flex-col sm:flex-row bg-white overflow-hidden shadow-[0px_2px_6px_2px_#3C404326,0px_1px_2px_0px_#3C40434D]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
             <div className="flex-shrink-0 relative w-full sm:w-auto sm:h-full">
-              <img src="/medical/tekno/tekno-medical1.png" alt="Medica 2026" className="w-full sm:w-auto h-[250px] sm:h-full object-cover" />
+              <img src="/medical/tekno/tekno-medical1.webp" alt="Medica 2026" className="w-full sm:w-auto h-[250px] sm:h-full object-cover" />
             </div>
             <div className="p-8 sm:p-10 flex flex-col justify-center relative">
               <div className="absolute top-6 sm:top-8 right-5 w-2 h-1/4 bg-[#D22840] rounded-full"></div>
@@ -46,7 +46,7 @@ export default function QualityManagement() {
           {/* Card 2 */}
           <div className="flex flex-col sm:flex-row bg-white overflow-hidden shadow-[0px_2px_6px_2px_#3C404326,0px_1px_2px_0px_#3C40434D]" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
             <div className="flex-shrink-0 relative w-full sm:w-auto sm:h-full">
-              <img src="/medical/tekno/tekno-medical2.png" alt="WHX Dubai" className="w-full sm:w-auto h-[250px] sm:h-full object-cover" />
+              <img src="/medical/tekno/tekno-medical2.webp" alt="WHX Dubai" className="w-full sm:w-auto h-[250px] sm:h-full object-cover" />
             </div>
             <div className="p-8 sm:p-10 flex flex-col justify-center relative">
               <div className="absolute top-6 sm:top-8 right-5 w-2 h-1/4 bg-[#D22840] rounded-full"></div>

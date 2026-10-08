@@ -35,7 +35,7 @@ export default function AboutSection() {
             data-aos="fade-right"
           >
             <img
-              src="/medical/smi-sutures/abt.png"
+              src="/medical/smi-sutures/abt.webp"
               alt="SMI surgical suture manufacturing"
               className="w-full h-full aspect-[3/2] object-cover"
             />

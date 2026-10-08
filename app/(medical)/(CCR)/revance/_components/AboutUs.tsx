@@ -32,7 +32,7 @@ const AboutUs = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <img src="/revance/section2.png" alt="Revance Office" className="w-full h-auto object-cover aspect-[1680/713] " />
+          <img src="/revance/section2.webp" alt="Revance Office" className="w-full h-auto object-cover aspect-[1680/713] " />
         </div>
       </div>
     </section>

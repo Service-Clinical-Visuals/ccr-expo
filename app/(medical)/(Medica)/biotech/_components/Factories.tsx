@@ -8,7 +8,7 @@ export default function Factories() {
   return (
     <section
       id="factories"
-      className="w-full py-16 lg:py-24 xl:py-28 bg-[#003470] bg-[url('/medical/biotech/images/bg.png')] bg-cover bg-center bg-no-repeat text-white relative overflow-hidden"
+      className="w-full py-16 lg:py-24 xl:py-28 bg-[#003470] bg-[url('/medical/biotech/images/bg.webp')] bg-cover bg-center bg-no-repeat text-white relative overflow-hidden"
     >
       <div className="absolute inset-0 bg-[#003470]/75 pointer-events-none -z-0" />
 

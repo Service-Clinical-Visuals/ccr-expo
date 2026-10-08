@@ -12,32 +12,32 @@ interface GalleryItem {
 const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 1,
-    image: "/medical/serag-wiessner/b1.png",
+    image: "/medical/serag-wiessner/b1.webp",
     alt: "Precision Needle and Suture Assembly",
   },
   {
     id: 2,
-    image: "/medical/serag-wiessner/b2.png",
+    image: "/medical/serag-wiessner/b2.webp",
     alt: "Automated Robotic Suture Manufacturing Technology",
   },
   {
     id: 3,
-    image: "/medical/serag-wiessner/b3.png",
+    image: "/medical/serag-wiessner/b3.webp",
     alt: "Sterile Cleanroom and High Standard Quality Control",
   },
   {
     id: 4,
-    image: "/medical/serag-wiessner/b4.png",
+    image: "/medical/serag-wiessner/b4.webp",
     alt: "Advanced Pharmaceutical Solutions Bottling Plant",
   },
   {
     id: 5,
-    image: "/medical/serag-wiessner/b5.png",
+    image: "/medical/serag-wiessner/b5.webp",
     alt: "Surgical Team and Clinical Applications in Operation Theater",
   },
   {
     id: 6,
-    image: "/medical/serag-wiessner/b6.png",
+    image: "/medical/serag-wiessner/b6.webp",
     alt: "Modern Training, Education, and Exhibition Center",
   },
 ];

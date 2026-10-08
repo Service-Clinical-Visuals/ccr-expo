@@ -12,19 +12,19 @@ export default function MedicaExhibition() {
   // Desktop & Tablet (>= 768px): 2 images visible per slide
   const twoImageSlides = [
     [
-      { src: "/medical/biotech/images/m1.jpg", alt: "MEDICA 2025 meeting 1" },
-      { src: "/medical/biotech/images/m2.jpg", alt: "MEDICA 2025 meeting 2" },
+      { src: "/medical/biotech/images/m1.webp", alt: "MEDICA 2025 meeting 1" },
+      { src: "/medical/biotech/images/m2.webp", alt: "MEDICA 2025 meeting 2" },
     ],
     [
-      { src: "/medical/biotech/images/m2.jpg", alt: "MEDICA 2025 meeting 3" },
-      { src: "/medical/biotech/images/m1.jpg", alt: "MEDICA 2025 meeting 4" },
+      { src: "/medical/biotech/images/m2.webp", alt: "MEDICA 2025 meeting 3" },
+      { src: "/medical/biotech/images/m1.webp", alt: "MEDICA 2025 meeting 4" },
     ],
   ];
 
   // Mobile (< 768px): 1 image per slide
   const singleImageSlides = [
-    { src: "/medical/biotech/images/m1.jpg", alt: "MEDICA 2025 meeting 1" },
-    { src: "/medical/biotech/images/m2.jpg", alt: "MEDICA 2025 meeting 2" },
+    { src: "/medical/biotech/images/m1.webp", alt: "MEDICA 2025 meeting 1" },
+    { src: "/medical/biotech/images/m2.webp", alt: "MEDICA 2025 meeting 2" },
   ];
 
   // Auto-scroll loop effect
@@ -148,13 +148,13 @@ export default function MedicaExhibition() {
             </div>
           </div>
 
-          {/* Right Column: FIXED "fixed.png" Image without border or container card style */}
+          {/* Right Column: FIXED "fixed.webp" Image without border or container card style */}
           <div
             className="w-full flex justify-center items-center"
             data-aos="fade-left"
           >
             <img
-              src="/medical/biotech/images/fixed.png"
+              src="/medical/biotech/images/fixed.webp"
               alt="MEDICA 2025 Discussion with State Secretary"
               className="w-full max-w-[500px] lg:max-w-full h-auto object-contain select-none pointer-events-none"
             />

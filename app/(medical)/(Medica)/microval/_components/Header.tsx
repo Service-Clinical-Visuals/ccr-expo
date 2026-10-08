@@ -110,7 +110,7 @@ export default function Header() {
           >
             <div className="relative flex items-center">
               <img
-                src="/medical/microval/logo.png"
+                src="/medical/microval/logo.webp"
                 alt="Microval"
                 className="h-auto w-auto object-contain"
               />
@@ -179,7 +179,7 @@ export default function Header() {
           <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
             <div className="hidden sm:flex items-center">
               <div className="flex items-center gap-2 cursor-pointer">
-                <img src="/medical/microval/icon1.png" alt="Globe" className="w-auto h-auto object-contain" />
+                <img src="/medical/microval/icon1.webp" alt="Globe" className="w-auto h-auto object-contain" />
                 <svg width="14" height="14" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 2.5L5 7.5L10 2.5H0Z" fill="#4B5563" />
                 </svg>

@@ -57,7 +57,7 @@ export default function TotalSolutions() {
 
             <div className="relative z-10 w-full aspect-[776/516] rounded-[5px] overflow-hidden border border-[#E4E4E4] bg-white shadow-md">
               <img
-                src="/medical/biotech/images/about.jpg"
+                src="/medical/biotech/images/about.webp"
                 alt="Welcome to Biotech Group Total Solutions"
                 className="w-full h-full object-cover"
               />

@@ -60,7 +60,7 @@ export default function Header() {
           >
             <div className="relative h-8 sm:h-10 md:h-25 min-[3800px]:h-24 flex items-center">
               <img
-                src="/medical/elektro/logo.png"
+                src="/medical/elektro/logo.webp"
                 alt="Elektro-mag"
                 className="h-full w-auto object-contain transition-opacity group-hover:opacity-90"
               />

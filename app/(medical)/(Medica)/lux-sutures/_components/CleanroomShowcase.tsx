@@ -15,13 +15,13 @@ const FEATURES: Feature[] = [
     title: "Automated Ultrasonic Cut & Border Seal",
     description:
       "High-frequency acoustic energy fuses periphery filaments, ensuring smooth rounded edges that never fray during laparoscopic cannula passage.",
-    icon: "/medical/lux-sutures/8.png",
+    icon: "/medical/lux-sutures/8.webp",
   },
   {
     title: "Ball Burst Strength & Tear Testing",
     description:
       "Every production lot is measured across bidirectional tensile axes with automated strain gauges, certifying resilience above physiological abdominal pressures.",
-    icon: "/medical/lux-sutures/9.png",
+    icon: "/medical/lux-sutures/9.webp",
   },
 ];
 

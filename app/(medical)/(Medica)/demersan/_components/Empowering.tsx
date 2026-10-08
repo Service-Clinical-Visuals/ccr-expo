@@ -13,31 +13,31 @@ import 'swiper/css/pagination';
 
 const cards = [
   {
-    image: "/medical/demersan/p1.png",
+    image: "/medical/demersan/p1.webp",
     title: "Primagel®",
     description: "Sterile, Single-Use Lubricating Gel For Smooth Urethral Procedures And Clear Visualization During Examinations.",
     link: "#"
   },
   {
-    image: "/medical/demersan/p2.png",
+    image: "/medical/demersan/p2.webp",
     title: "Primacath®",
     description: "Designed To Improve The Standard Of Living And Is Manufactured With Medical Grade Raw Materials.",
     link: "#"
   },
   {
-    image: "/medical/demersan/p3.jpg",
+    image: "/medical/demersan/p3.webp",
     title: "Goldcath® (Ringed)",
     description: "Designed To Improve The Standard Of Living And Is Manufactured With Medical Grade Raw Materials.",
     link: "#"
   },
   {
-    image: "/medical/demersan/p4.jpg",
+    image: "/medical/demersan/p4.webp",
     title: "Goldcath® Kit",
     description: "The Urine Collection Bag And The Hydrophilic Urinary Catheter Were Combined In A Single Product To Provide The Highest Level Of Patient Comfort.",
     link: "#"
   },
   {
-    image: "/medical/demersan/p5.jpg",
+    image: "/medical/demersan/p5.webp",
     title: "Goldpad® (Anjio Pad)",
     description: "Goldpad® Enables Fast Pressure Adaptation And Consistent Pressure During Recovery And Walking While Supporting The Treated Area.",
     link: "#"

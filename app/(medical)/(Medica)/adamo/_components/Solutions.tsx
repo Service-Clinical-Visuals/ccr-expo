@@ -6,11 +6,11 @@ import Button from "./Button";
 
 const Solutions = () => {
   const cards = [
-    { title: "Dermatoscopy", icon: "/adamo/icon1.png" },
-    { title: "Videodermatoscopy", icon: "/adamo/icon2.png" },
-    { title: "Dermatoscopy", icon: "/adamo/icon3.png" },
-    { title: "Dermatoscopy", icon: "/adamo/icon4.png" },
-    { title: "Dermatoscopy", icon: "/adamo/icon5.png" },
+    { title: "Dermatoscopy", icon: "/adamo/icon1.webp" },
+    { title: "Videodermatoscopy", icon: "/adamo/icon2.webp" },
+    { title: "Dermatoscopy", icon: "/adamo/icon3.webp" },
+    { title: "Dermatoscopy", icon: "/adamo/icon4.webp" },
+    { title: "Dermatoscopy", icon: "/adamo/icon5.webp" },
   ];
 
   return (

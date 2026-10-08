@@ -43,7 +43,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="#home" className="flex items-center shrink-0">
           <img
-            src="/medical/str/logo.png"
+            src="/medical/str/logo.webp"
             alt="STR Biotechnologies Logo"
             className="w-[100px] sm:w-[120px] lg:w-[135px] min-[2500px]:w-[180px] min-[3800px]:w-[240px] h-auto max-h-[65px] lg:max-h-[80px] min-[2500px]:max-h-[110px] min-[3800px]:max-h-[140px] object-contain"
           />

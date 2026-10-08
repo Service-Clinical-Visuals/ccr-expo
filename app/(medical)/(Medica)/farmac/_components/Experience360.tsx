@@ -52,7 +52,7 @@ export default function Experience360() {
               <div className="bg-white rounded-xl p-3.5 sm:p-4 flex items-center gap-3.5 sm:gap-4 shadow-sm transition-transform duration-200 hover:-translate-y-0.5">
                 <div className="w-10 h-10 sm:w-11 sm:h-11 flex-shrink-0 flex items-center justify-center">
                   <img
-                    src="/medical/farmac/i1.png"
+                    src="/medical/farmac/i1.webp"
                     alt="CE and EN Certified"
                     className="w-full h-full object-contain select-none"
                   />
@@ -66,7 +66,7 @@ export default function Experience360() {
               <div className="bg-white rounded-xl p-3.5 sm:p-4 flex items-center gap-3.5 sm:gap-4 shadow-sm transition-transform duration-200 hover:-translate-y-0.5">
                 <div className="w-10 h-10 sm:w-11 sm:h-11 flex-shrink-0 flex items-center justify-center">
                   <img
-                    src="/medical/farmac/i2.png"
+                    src="/medical/farmac/i2.webp"
                     alt="Medical Equipment"
                     className="w-full h-full object-contain select-none"
                   />

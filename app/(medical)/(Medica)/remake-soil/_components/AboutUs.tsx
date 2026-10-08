@@ -49,7 +49,7 @@ const AboutUs = () => {
           <div className="w-full min-[1301px]:w-1/2 flex items-center justify-center shrink-0" data-aos="fade-right">
             <div className="relative w-full aspect-[16/11] sm:aspect-[16/10] min-[1301px]:aspect-auto min-[1301px]:h-[440px] 2xl:h-[480px] min-[2500px]:h-[640px] min-[3800px]:h-[860px] rounded-[20px] overflow-hidden border border-white/15 shadow-[0px_3px_8px_rgba(0,0,0,0.24)]">
               <img
-                src="/medical/remake-soil/about.png"
+                src="/medical/remake-soil/about.webp"
                 alt="RMS Remake Soil Operations"
                 className="w-full h-full object-cover object-center"
               />

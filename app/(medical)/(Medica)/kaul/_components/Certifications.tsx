@@ -33,7 +33,7 @@ export default function Certifications() {
 
           {/* Card 1 */}
           <div className="relative rounded-2xl overflow-hidden group cursor-pointer border border-white/5">
-            <img src="/medical/kaul/p1.png" alt="Product 1" className="w-full h-auto object-cover" />
+            <img src="/medical/kaul/p1.webp" alt="Product 1" className="w-full h-auto object-cover" />
 
             {/* Hover Text */}
             <div className="absolute top-6 left-6 right-8 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 pointer-events-none">
@@ -50,7 +50,7 @@ export default function Certifications() {
 
           {/* Card 2 */}
           <div className="relative rounded-2xl overflow-hidden group cursor-pointer border border-white/5">
-            <img src="/medical/kaul/p2.png" alt="Product 2" className="w-full h-auto object-cover" />
+            <img src="/medical/kaul/p2.webp" alt="Product 2" className="w-full h-auto object-cover" />
 
             {/* Hover Text */}
             <div className="absolute top-6 left-6 right-8 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 pointer-events-none">
@@ -67,7 +67,7 @@ export default function Certifications() {
 
           {/* Card 3 */}
           <div className="relative rounded-2xl overflow-hidden group cursor-pointer border border-white/5">
-            <img src="/medical/kaul/p3.png" alt="Product 3" className="w-full h-auto object-cover" />
+            <img src="/medical/kaul/p3.webp" alt="Product 3" className="w-full h-auto object-cover" />
 
             {/* Hover Text */}
             <div className="absolute top-6 left-6 right-8 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-20 pointer-events-none">

@@ -36,7 +36,7 @@ export default function AdvancedMeshSolutions() {
               {/* Feature Card 1 */}
               <div className="flex bg-white rounded-[8px] overflow-hidden w-full">
                 <div className="w-[130px] bg-[#65B5A0]  rounded-r-[8px] flex items-center justify-center flex-shrink-0">
-                  <img src="/medical/microval/icon4.png" alt="Sterilization" className="w-auto h-auto object-contain" />
+                  <img src="/medical/microval/icon4.webp" alt="Sterilization" className="w-auto h-auto object-contain" />
                 </div>
                 <div className="p-4 sm:p-5 flex flex-col justify-center">
                   <h3 className="font-dmsans font-bold text-[#111111] card-title mb-1">Ethylene Oxide Sterilization</h3>
@@ -49,7 +49,7 @@ export default function AdvancedMeshSolutions() {
               {/* Feature Card 2 */}
               <div className="flex bg-white rounded-[8px] overflow-hidden w-full">
                 <div className="w-[130px] bg-[#65B5A0] flex items-center justify-center flex-shrink-0">
-                  <img src="/medical/microval/icon5.png" alt="Single Use" className="w-auto h-auto object-contain" />
+                  <img src="/medical/microval/icon5.webp" alt="Single Use" className="w-auto h-auto object-contain" />
                 </div>
                 <div className="p-4 sm:p-5 flex flex-col justify-center">
                   <h3 className="font-dmsans font-bold text-[#111111] card-title mb-1">Single-Use Only</h3>

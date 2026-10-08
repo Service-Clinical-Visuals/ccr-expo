@@ -16,7 +16,7 @@ export default function Footer() {
             {/* Logo & Description */}
             <div className="flex flex-col gap-8">
               <div className="flex items-center gap-4">
-                <img src="/medical/siare/f-logo.png" alt="SIARE Engineering International Group" className="w-auto h-auto object-contain brightness-0 invert" />
+                <img src="/medical/siare/f-logo.webp" alt="SIARE Engineering International Group" className="w-auto h-auto object-contain brightness-0 invert" />
               </div>
               <p className="font-dm-sans section-text text-[#FFFFFF] leading-relaxed font-light">
                 SIARE Engineering International Group is an Italian medical technology company specializing in advanced anaesthesia and respiratory-care solutions. With decades of engineering expertise, SIARE develops reliable medical equipment designed to support healthcare professionals in critical-care environments.

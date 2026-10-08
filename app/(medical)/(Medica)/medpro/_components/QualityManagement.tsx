@@ -4,9 +4,9 @@ import React from "react";
 import { Download } from "lucide-react";
 
 const CERTIFICATES = [
-  { id: 1, src: "/medical/medpro/c1.png", alt: "ISO 13485:2016 Certificate" },
-  { id: 2, src: "/medical/medpro/c2.png", alt: "EC Certificate Annex" },
-  { id: 3, src: "/medical/medpro/c3.png", alt: "EC Certificate" },
+  { id: 1, src: "/medical/medpro/c1.webp", alt: "ISO 13485:2016 Certificate" },
+  { id: 2, src: "/medical/medpro/c2.webp", alt: "EC Certificate Annex" },
+  { id: 3, src: "/medical/medpro/c3.webp", alt: "EC Certificate" },
 ];
 
 export default function QualityManagement() {

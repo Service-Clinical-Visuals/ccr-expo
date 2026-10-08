@@ -19,31 +19,31 @@ const productSolutions: ProductSolution[] = [
   {
     title: "Spectrum",
     subtitle: "Result Oriented Performance",
-    image: "/medical/emed/p1.jpg",
+    image: "/medical/emed/p1.webp",
     alt: "Spectrum electrosurgical unit",
   },
   {
     title: "ThermoStapler®",
     subtitle: "Time Oriented Performance",
-    image: "/medical/emed/p2.jpg",
+    image: "/medical/emed/p2.webp",
     alt: "ThermoStapler vessel sealing system",
   },
   {
     title: "Argon",
     subtitle: "Efficiency Oriented Performance",
-    image: "/medical/emed/p3.jpg",
+    image: "/medical/emed/p3.webp",
     alt: "Argon coagulation system",
   },
   {
     title: "Waterfall",
     subtitle: "Endoscopic Irrigation Pump",
-    image: "/medical/emed/p4.jpg",
+    image: "/medical/emed/p4.webp",
     alt: "Waterfall endoscopic irrigation pump",
   },
   {
     title: "Aria",
     subtitle: "Smoke Evacuation System",
-    image: "/medical/emed/p5.jpg",
+    image: "/medical/emed/p5.webp",
     alt: "Aria smoke evacuation system",
   },
 ];

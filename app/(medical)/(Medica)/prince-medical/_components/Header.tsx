@@ -54,7 +54,7 @@ export default function Header() {
         <div className="flex-shrink-0 flex items-center w-[45%] sm:w-[35%] md:w-[25%] xl:w-[20%]">
           <Link href="/" className="flex items-center">
             <img
-              src="/medical/prince-medical/logo.png"
+              src="/medical/prince-medical/logo.webp"
               alt="Prince Medical Logo"
               className="h-8 xl:h-10 min-[3800px]:h-20 w-auto object-contain object-left"
             />

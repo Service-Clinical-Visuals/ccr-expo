@@ -20,7 +20,7 @@ export default function About() {
             data-aos-duration="900"
           >
             <img
-              src="/medical/neurosoft/about.png"
+              src="/medical/neurosoft/about.webp"
               alt="About Neurosoft Healthcare Solutions"
               className="w-full about-img-height h-[320px] sm:h-[420px] md:h-[500px] min-[1026px]:h-[580px] xl:h-[660px] min-[2500px]:h-[1050px] min-[3800px]:h-[1350px] object-cover object-center"
             />

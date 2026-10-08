@@ -13,7 +13,7 @@ const bestSellers = [
     description:
       "The OPTIMA Step Tip Tunneled Hemodialysis Catheter is designed to provide safe and effective vascular access for patients requiring long-term hemodialysis treatment.",
     tags: ["Step-Tip Geometry", "Flow > 450 mL/min", "Carbothane™ Resin"],
-    image: "/medical/dlr-meda/p3.png",
+    image: "/medical/dlr-meda/p3.webp",
     categoryLabel: "Hemodialysis Group Products",
     icon: FlaskConical,
     status: "In Stock",
@@ -25,7 +25,7 @@ const bestSellers = [
     description:
       "DLR Medical Double-J ureteral stent is a reliable urological implant solution used to treat ureteral strictures and blockages.",
     tags: ["Hydrophilic Coating", "12-Month In-Dwelling", "Radiopaque PU"],
-    image: "/medical/dlr-meda/p11.png",
+    image: "/medical/dlr-meda/p11.webp",
     categoryLabel: "Urology Group Products",
     icon: Heart,
     status: "High Demand",

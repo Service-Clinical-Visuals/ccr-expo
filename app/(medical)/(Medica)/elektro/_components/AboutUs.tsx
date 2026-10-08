@@ -35,7 +35,7 @@ const AboutUs = () => {
           <div className="col-span-12 lg:col-span-5 flex justify-center" data-aos="fade-right">
             <div className="w-full relative">
               {/* Assuming the image exists, otherwise keeping a structured container */}
-              <img src="/medical/elektro/about.png" alt="Global Expertise" className="w-auto h-auto object-contain" onError={(e) => (e.currentTarget.src = "/adamo/section2.png")} />
+              <img src="/medical/elektro/about.webp" alt="Global Expertise" className="w-auto h-auto object-contain" onError={(e) => (e.currentTarget.src = "/adamo/section2.webp")} />
             </div>
           </div>
 

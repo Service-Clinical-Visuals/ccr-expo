@@ -62,7 +62,7 @@ export default function QualityCertifications() {
               >
                 <div className="flex items-center gap-2.5">
                   <img
-                    src="/medical/lux-sutures/10.png"
+                    src="/medical/lux-sutures/10.webp"
                     alt=""
                     aria-hidden="true"
                     className="h-auto w-6 2k:w-10 shrink-0 object-contain"
@@ -86,7 +86,7 @@ export default function QualityCertifications() {
         >
           <div className="rounded-xl p-1.5 sm:p-2 ">
             <img
-              src="/medical/lux-sutures/certificate.png"
+              src="/medical/lux-sutures/certificate.webp"
               alt="LUX Sutures EN ISO 13485:2016 Certificate"
               className="h-auto w-full rounded-lg object-contain"
             />

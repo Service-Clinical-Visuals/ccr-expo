@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="flex flex-col items-center sm:items-start xl:items-center text-center sm:text-left xl:text-center gap-4 sm:gap-6 w-full">
               <Link href="#home" className="inline-flex justify-center xl:justify-center shrink-0">
                 <img
-                  src="/medical/covision/logo.png"
+                  src="/medical/covision/logo.webp"
                   alt="Covision Medical Technologies"
                   className="h-12 sm:h-14 xl:h-24 2xl:h-28 min-[2500px]:h-36 min-[3800px]:h-48 w-auto object-contain"
                 />

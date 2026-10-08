@@ -3,9 +3,9 @@
 import React from "react";
 
 const PRODUCTS = [
-  { image: "/medical/medelcom/p1.png", alt: "Ultrasound Probe" },
-  { image: "/medical/medelcom/p2.png", alt: "Ultrasound Machine" },
-  { image: "/medical/medelcom/p3.png", alt: "Video Colposcope Setup" },
+  { image: "/medical/medelcom/p1.webp", alt: "Ultrasound Probe" },
+  { image: "/medical/medelcom/p2.webp", alt: "Ultrasound Machine" },
+  { image: "/medical/medelcom/p3.webp", alt: "Video Colposcope Setup" },
 ];
 
 export default function ProductSolutions() {

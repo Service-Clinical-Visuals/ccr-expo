@@ -70,7 +70,7 @@ export default function Explore360() {
               {features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="mt-1 flex-shrink-0">
-                    <img src="/medical/siare/icon5.png" alt="Icon" className="w-auto h-auto object-contain" />
+                    <img src="/medical/siare/icon5.webp" alt="Icon" className="w-auto h-auto object-contain" />
                   </div>
                   <p className="section-text text-[#111111] font-regular leading-tight mt-2">
                     <span className="font-semibold">{feature.title}</span> — {feature.description}

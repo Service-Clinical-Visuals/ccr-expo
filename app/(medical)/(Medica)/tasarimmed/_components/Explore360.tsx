@@ -58,7 +58,7 @@ export default function Explore360() {
             <ul className="flex flex-col gap-4 sm:gap-5 mt-1">
               <li className="flex gap-4 items-center">
                 <div className="w-[73px] h-[73px] rounded-full bg-white flex items-center justify-center shrink-0">
-                  <img src="/medical/tasarimmed/icon1.png" alt="Simple shaft fracture" className="w-auto h-auto object-contain" />
+                  <img src="/medical/tasarimmed/icon1.webp" alt="Simple shaft fracture" className="w-auto h-auto object-contain" />
                 </div>
                 <p className="font-inter section-text text-gray-100 leading-relaxed">
                   <strong className="text-white font-bold">Simple shaft fracture:</strong> A clean break through the shaft of a long bone, typically forming a single fracture line.
@@ -66,7 +66,7 @@ export default function Explore360() {
               </li>
               <li className="flex gap-4 items-center">
                 <div className="w-[73px] h-[73px] rounded-full bg-white flex items-center justify-center shrink-0">
-                  <img src="/medical/tasarimmed/icon2.png" alt="Fragmented shaft fracture" className="w-6 h-6 object-contain" />
+                  <img src="/medical/tasarimmed/icon2.webp" alt="Fragmented shaft fracture" className="w-6 h-6 object-contain" />
                 </div>
                 <p className="font-inter section-text text-gray-100 leading-relaxed">
                   <strong className="text-white font-bold">Fragmented shaft fracture:</strong> A fracture where the shaft of a long bone breaks into multiple fragments.
@@ -74,7 +74,7 @@ export default function Explore360() {
               </li>
               <li className="flex gap-4 items-center">
                 <div className="w-[73px] h-[73px] rounded-full bg-white flex items-center justify-center shrink-0">
-                  <img src="/medical/tasarimmed/icon3.png" alt="Spiral Shaft Fractures" className="w-6 h-6 object-contain" />
+                  <img src="/medical/tasarimmed/icon3.webp" alt="Spiral Shaft Fractures" className="w-6 h-6 object-contain" />
                 </div>
                 <p className="font-inter section-text text-gray-100 leading-relaxed">
                   <strong className="text-white font-bold">Spiral Shaft Fractures:</strong> A twisting injury causing a spiral-shaped break along the shaft of a long bone.

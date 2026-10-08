@@ -18,7 +18,7 @@ interface NewsItem {
 const newsItems: NewsItem[] = [
   {
     id: "tempocol",
-    image: "/medical/will-pharma/news1.png",
+    image: "/medical/will-pharma/news1.webp",
     date: "FEB 12 , 2022",
     title: "RESEARCH RESULTS ON THE EFFECTIVENESS OF TEMPOCOL",
     excerpt:
@@ -27,7 +27,7 @@ const newsItems: NewsItem[] = [
   },
   {
     id: "d-vital",
-    image: "/medical/will-pharma/news2.png",
+    image: "/medical/will-pharma/news2.webp",
     date: "JAN 01 , 2020",
     title: "NEW: D-VITAL CALCIUM K 180 CAPS",
     excerpt:

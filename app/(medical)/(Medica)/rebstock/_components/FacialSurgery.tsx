@@ -9,7 +9,7 @@ export default function FacialSurgery() {
   return (
     <section
       id="science"
-      className="w-full py-16 sm:py-20 lg:py-24 bg-[#003F77] bg-[url('/medical/rebstock/bg.jpg')] bg-cover bg-center bg-no-repeat overflow-hidden relative"
+      className="w-full py-16 sm:py-20 lg:py-24 bg-[#003F77] bg-[url('/medical/rebstock/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden relative"
     >
       <div className="custom-container flex flex-col gap-6">
         <div className="min-[1501px]:hidden flex flex-col gap-3 text-white" data-aos="fade-up">
@@ -59,7 +59,7 @@ export default function FacialSurgery() {
               <li className="flex gap-3 items-start">
                 {/* Tick image */}
                 <img
-                  src="/medical/rebstock/tick.png"
+                  src="/medical/rebstock/tick.webp"
                   alt="Tick"
                   className="w-5 h-5 min-[1920px]:w-6 min-[1920px]:h-6 min-[2500px]:w-8 min-[2500px]:h-8 min-[3800px]:w-11 min-[3800px]:h-11 shrink-0 mt-0.5 object-contain"
                 />
@@ -75,7 +75,7 @@ export default function FacialSurgery() {
               <li className="flex gap-3 items-start">
                 {/* Tick image */}
                 <img
-                  src="/medical/rebstock/tick.png"
+                  src="/medical/rebstock/tick.webp"
                   alt="Tick"
                   className="w-5 h-5 min-[1920px]:w-6 min-[1920px]:h-6 min-[2500px]:w-8 min-[2500px]:h-8 min-[3800px]:w-11 min-[3800px]:h-11 shrink-0 mt-0.5 object-contain"
                 />

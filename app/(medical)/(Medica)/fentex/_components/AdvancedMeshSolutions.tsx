@@ -66,7 +66,7 @@ export default function AdvancedMeshSolutions() {
         {/* Support Banner CTA */}
         <div className="bg-[#F8FAFC] rounded-[10px] p-4 sm:p-6 mb-16 sm:mb-20 flex flex-col sm:flex-row items-center justify-between gap-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
           <div className="flex items-center gap-4 sm:gap-6 w-full sm:w-auto">
-            <img src="/medical/fentex/icon1.png" alt="Support" className="w-auto h-auto object-contain" />
+            <img src="/medical/fentex/icon1.webp" alt="Support" className="w-auto h-auto object-contain" />
             <div>
               <h4 className="font-poppins font-bold text-[#202020] card-title leading-tight mb-1">Need an immediate service quote?</h4>
               <p className="font-inter text-[#666666] section-text">Provide model and serial number for a binding quotation within 4 hours.</p>

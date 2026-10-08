@@ -14,7 +14,7 @@ export default function HipReplacement() {
       {/* Background Graphic */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
-          src="/medical/str/bg.png"
+          src="/medical/str/bg.webp"
           alt=""
           className="w-full h-full object-cover opacity-40"
         />

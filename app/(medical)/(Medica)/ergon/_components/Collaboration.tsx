@@ -37,7 +37,7 @@ const Collaboration = () => {
             data-aos="fade-right"
           >
             <img
-              src="/medical/ergon/c1.jpg"
+              src="/medical/ergon/c1.webp"
               alt="Ergon Sutramed Production and Laboratory"
               className="w-full aspect-[16/10] object-cover transition-transform duration-500 group-hover:scale-105"
             />
@@ -49,7 +49,7 @@ const Collaboration = () => {
             data-aos="fade-left"
           >
             <img
-              src="/medical/ergon/c2.jpg"
+              src="/medical/ergon/c2.webp"
               alt="Medical and Surgical Innovation"
               className="w-full aspect-[16/10] object-cover transition-transform duration-500 group-hover:scale-105"
             />

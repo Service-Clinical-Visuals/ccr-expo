@@ -12,25 +12,25 @@ const productCards = [
   {
     title: "KNEE",
     description: "Discover All The Solutions In Surgival Knee Systems",
-    image: "/medical/surgival/a1.png",
+    image: "/medical/surgival/a1.webp",
     link: "#knee"
   },
   {
     title: "HIP",
     description: "Discover All The Solutions In Hip Systems From Surgival",
-    image: "/medical/surgival/a2.png",
+    image: "/medical/surgival/a2.webp",
     link: "#hip"
   },
   {
     title: "TRAUMA",
     description: "Discover All The Solutions In Traumatology At Surgival",
-    image: "/medical/surgival/a3.png",
+    image: "/medical/surgival/a3.webp",
     link: "#trauma"
   },
   {
     title: "CEMENTS AND OTHERS",
     description: "Discover The Full Range Of Biomaterials And Cements From Surgival",
-    image: "/medical/surgival/a4.png",
+    image: "/medical/surgival/a4.webp",
     link: "#cements"
   }
 ];
@@ -83,7 +83,7 @@ const Advanced = () => {
                     alt={card.title}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     onError={(e) => {
-                      e.currentTarget.src = "/medical/surgival/a1.png";
+                      e.currentTarget.src = "/medical/surgival/a1.webp";
                     }}
                   />
 

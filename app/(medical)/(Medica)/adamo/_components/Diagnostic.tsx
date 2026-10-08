@@ -14,25 +14,25 @@ export default function Diagnostic() {
 
   const categoryData: Record<string, { title: string, desc: string, img: string }[]> = {
     "Colposcopy Line": [
-      { title: "Colposcope Isis Hub", desc: "The future of colposcopy has arrived. A unique system that integrates ergonomic seating...", img: "/adamo/a1.png" },
-      { title: "Colposcope Kolpoview", desc: "A product line that can respond to all those who need simple and reliable systems...", img: "/adamo/a2.png" },
-      { title: "Colposcope Isis Alpha", desc: "An ergonomic and attractively designed colposcope that allows comfortable....", img: "/adamo/a3.png" },
-      { title: "Colposcope Isis Beta", desc: "A complete and innovative videocolposcopy system, it integrates a videocolposcopy...", img: "/adamo/a4.png" },
-      { title: "Colposcope Isis Gamma", desc: "A platform for videocolposcopy that supports the gynecologist in a 360-degree...", img: "/adamo/a5.png" },
+      { title: "Colposcope Isis Hub", desc: "The future of colposcopy has arrived. A unique system that integrates ergonomic seating...", img: "/adamo/a1.webp" },
+      { title: "Colposcope Kolpoview", desc: "A product line that can respond to all those who need simple and reliable systems...", img: "/adamo/a2.webp" },
+      { title: "Colposcope Isis Alpha", desc: "An ergonomic and attractively designed colposcope that allows comfortable....", img: "/adamo/a3.webp" },
+      { title: "Colposcope Isis Beta", desc: "A complete and innovative videocolposcopy system, it integrates a videocolposcopy...", img: "/adamo/a4.webp" },
+      { title: "Colposcope Isis Gamma", desc: "A platform for videocolposcopy that supports the gynecologist in a 360-degree...", img: "/adamo/a5.webp" },
     ],
     "Capillaroscopy Line": [
-      { title: "Capillaroscope Horus HS650", desc: "The first system with 4K ULTRA-HD resolution. Ergonomic and compact...", img: "/adamo/b1.png" },
-      { title: "Capillaroscope Horus HS150", desc: "HORUS Hs150 is the only full HD definition videocapillaroscope in the capillaroscopy...", img: "/adamo/b2.png" },
-      { title: "Capillaroscope Horus HS450", desc: "HORUS Hs450 is the most compact wheeled system of high-definition...", img: "/adamo/b3.png" },
+      { title: "Capillaroscope Horus HS650", desc: "The first system with 4K ULTRA-HD resolution. Ergonomic and compact...", img: "/adamo/b1.webp" },
+      { title: "Capillaroscope Horus HS150", desc: "HORUS Hs150 is the only full HD definition videocapillaroscope in the capillaroscopy...", img: "/adamo/b2.webp" },
+      { title: "Capillaroscope Horus HS450", desc: "HORUS Hs450 is the most compact wheeled system of high-definition...", img: "/adamo/b3.webp" },
     ],
     "Dermatoscopy line": [
-      { title: "Dermatoscope Aton 100", desc: "Aton 100 allows for non-contact examinations, but it can be equipped with a contact...", img: "/adamo/c1.png" },
-      { title: "Dermatoscope Aton 1000 Lite", desc: "Aton dermatoscopes are synonymous with Reliability, Quality, Ergonomics and...", img: "/adamo/c2.png" },
-      { title: "Dermatoscope Aton 1000 Plus", desc: "Aton dermatoscopes are synonymous with Reliability, Quality, Ergonomics and...", img: "/adamo/c3.png" },
+      { title: "Dermatoscope Aton 100", desc: "Aton 100 allows for non-contact examinations, but it can be equipped with a contact...", img: "/adamo/c1.webp" },
+      { title: "Dermatoscope Aton 1000 Lite", desc: "Aton dermatoscopes are synonymous with Reliability, Quality, Ergonomics and...", img: "/adamo/c2.webp" },
+      { title: "Dermatoscope Aton 1000 Plus", desc: "Aton dermatoscopes are synonymous with Reliability, Quality, Ergonomics and...", img: "/adamo/c3.webp" },
     ],
     "Hysteroscopy Line": [
-      { title: "Hysteroscope Iside Endo...", desc: "The New Endoscopy System ISIDE ENDO Integrated was designed with the...", img: "/adamo/d1.png" },
-      { title: "Hysteroscope Iside Endo", desc: "The New Endoscopy System ISIDE ENDO was designed and built to meet the needs...", img: "/adamo/d2.png" },
+      { title: "Hysteroscope Iside Endo...", desc: "The New Endoscopy System ISIDE ENDO Integrated was designed with the...", img: "/adamo/d1.webp" },
+      { title: "Hysteroscope Iside Endo", desc: "The New Endoscopy System ISIDE ENDO was designed and built to meet the needs...", img: "/adamo/d2.webp" },
     ],
   };
 

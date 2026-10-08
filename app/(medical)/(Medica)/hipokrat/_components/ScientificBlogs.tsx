@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 export default function ScientificBlogs() {
   const blogs = [
     {
-      image: "/medical/hipokrat/b1.png",
+      image: "/medical/hipokrat/b1.webp",
       title: "Bone & Soft Tissue Tumors – Basic Course",
       description:
         "Sponsored by Hipokrat, a basic course on bone and soft tissue tumors was held in Ankara with the participation of Türkiye's leading orthopedic surgeons.",
@@ -15,7 +15,7 @@ export default function ScientificBlogs() {
       href: "#news",
     },
     {
-      image: "/medical/hipokrat/b2.png",
+      image: "/medical/hipokrat/b2.webp",
       title: "World Arthritis Day Symposium",
       description:
         "The World Arthritis Day Symposium, which we sponsored, was held on October 12, 2019, at Almana General Hospitals Dammam, Saudi Arabia.",
@@ -23,7 +23,7 @@ export default function ScientificBlogs() {
       href: "#news",
     },
     {
-      image: "/medical/hipokrat/b3.png",
+      image: "/medical/hipokrat/b3.webp",
       title: "Commemoration Meeting",
       description:
         "We held a memorial meeting for Dr. Cevdet Alptekin, the founder of the Hippocratic Orthodontics Association and one of Turkey's first orthopedic specialists.",

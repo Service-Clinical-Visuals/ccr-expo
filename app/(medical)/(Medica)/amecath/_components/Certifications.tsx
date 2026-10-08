@@ -15,19 +15,19 @@ const CERTIFICATES: CertificateItem[] = [
   {
     id: 1,
     title: "FDA 510(k) Premarket Notification",
-    image: "/medical/amecath/c1.png",
+    image: "/medical/amecath/c1.webp",
     aspectRatio: "aspect-[1/1.42]",
   },
   {
     id: 2,
     title: "ISO 14001:2015 Environmental Management",
-    image: "/medical/amecath/c2.png",
+    image: "/medical/amecath/c2.webp",
     aspectRatio: "aspect-[1/1.45]",
   },
   {
     id: 3,
     title: "Health Canada Medical Device Licence",
-    image: "/medical/amecath/c3.png",
+    image: "/medical/amecath/c3.webp",
     aspectRatio: "aspect-[1/1.42]",
   },
 ];

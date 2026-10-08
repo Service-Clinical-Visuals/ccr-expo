@@ -15,35 +15,35 @@ const blogPosts = [
     title: "Global Presence, Real Closeness: This Is...",
     date: "Jul 28, 2026",
     excerpt: "Four destinations. Four different realities. One shared approach to internationalization: being close to the professionals who...",
-    image: "/medical/surgival/c1.jpg",
+    image: "/medical/surgival/c1.webp",
     link: "#"
   },
   {
     title: "Time Makers: Why Arthroplasty Is The...",
     date: "Jul 13, 2026",
     excerpt: "Looking back just a few decades, the image of a 75-year-old was radically different from today's. Aging used to entail...",
-    image: "/medical/surgival/c2.jpg",
+    image: "/medical/surgival/c2.webp",
     link: "#"
   },
   {
     title: "What Does The Karey Primary Stem...",
     date: "June 29, 2026",
     excerpt: "A few days ago, we outlined the key factors for choosing a versatile acetabular system and not failing miserably...",
-    image: "/medical/surgival/c3.jpg",
+    image: "/medical/surgival/c3.webp",
     link: "#"
   },
   {
     title: "First Total Knee Replacement Surgery...",
     date: "June 10, 2026",
     excerpt: "In this era we live in, we sometimes become obsessed with acquiring the latest technology or testing experimental...",
-    image: "/medical/surgival/c4.jpg",
+    image: "/medical/surgival/c4.webp",
     link: "#"
   },
   {
     title: "How To Choose A Versatile Acetabular...",
     date: "May 15, 2026",
     excerpt: "In hip arthroplasty, certain decisions influence the entire procedure. Choosing a versatile acetabular system for hip surgery...",
-    image: "/medical/surgival/c5.jpg",
+    image: "/medical/surgival/c5.webp",
     link: "#"
   }
 ];
@@ -102,7 +102,7 @@ const Latest = () => {
                       alt={post.title}
                       className="w-full h-full object-cover"
                       onError={(e) => {
-                        e.currentTarget.src = "/medical/surgival/c1.jpg"; // Fallback
+                        e.currentTarget.src = "/medical/surgival/c1.webp"; // Fallback
                       }}
                     />
                   </div>

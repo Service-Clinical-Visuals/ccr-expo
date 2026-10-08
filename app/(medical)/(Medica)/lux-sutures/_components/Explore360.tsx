@@ -13,27 +13,27 @@ const SPECS: Spec[] = [
   {
     label: "Base Polymer:",
     value: "100% Medical Grade Polypropylene (Homopolymer)",
-    icon: "/medical/lux-sutures/1.png",
+    icon: "/medical/lux-sutures/1.webp",
   },
   {
     label: "Filament Diameter:",
     value: "0.15 mm (150 µm Monofilament)",
-    icon: "/medical/lux-sutures/2.png",
+    icon: "/medical/lux-sutures/2.webp",
   },
   {
     label: "Areal Density:",
     value: "Lightweight (48 g/m²) or Standard (80 g/m²)",
-    icon: "/medical/lux-sutures/3.png",
+    icon: "/medical/lux-sutures/3.webp",
   },
   {
     label: "Macroporosity:",
     value: "> 1.5 mm allows optimal fibroblastic infiltration",
-    icon: "/medical/lux-sutures/4.png",
+    icon: "/medical/lux-sutures/4.webp",
   },
   {
     label: "Sterilization Method:",
     value: "Ethylene Oxide (EO) validated to ISO 11135",
-    icon: "/medical/lux-sutures/5.png",
+    icon: "/medical/lux-sutures/5.webp",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Explore360() {
           <div className="col-span-12 desk:col-span-4 flex flex-wrap gap-3 desk:justify-end">
             <span className="section-text inline-flex items-center gap-1.5 rounded-lg bg-white px-3 py-2 font-semibold text-[#0071ce] shadow-sm">
               <img
-                src="/medical/lux-sutures/7.png"
+                src="/medical/lux-sutures/7.webp"
                 alt=""
                 aria-hidden="true"
                 className="w-3.5 h-auto 2k:w-6 shrink-0 object-contain"
@@ -76,7 +76,7 @@ export default function Explore360() {
             </span>
             <span className="section-text inline-flex items-center gap-1.5 rounded-lg bg-white px-3 py-2 font-semibold text-emerald-600 shadow-sm">
               <img
-                src="/medical/lux-sutures/6.png"
+                src="/medical/lux-sutures/6.webp"
                 alt=""
                 aria-hidden="true"
                 className="w-3.5 h-auto 2k:w-6 shrink-0 object-contain"

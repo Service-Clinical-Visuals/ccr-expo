@@ -16,7 +16,7 @@ const PILLARS: PillarItem[] = [
     title: "Vision",
     description:
       "Euromed aims to provide its customers a value -added services and exceed their expectations through the consistent delivery of world-class products",
-    image: "/medical/euromed/b1.png",
+    image: "/medical/euromed/b1.webp",
     alt: "Euromed Sterile Manufacturing Cleanroom and Assembly Line",
   },
   {
@@ -24,7 +24,7 @@ const PILLARS: PillarItem[] = [
     title: "Mission",
     description:
       "Euromed is maintaining its advanced edge by investing in human resources, research & development in order to deliver world solutions and high-standard products at competitive price.",
-    image: "/medical/euromed/b2.png",
+    image: "/medical/euromed/b2.webp",
     alt: "Euromed Automated Production Machinery and Quality Inspection",
   },
 ];

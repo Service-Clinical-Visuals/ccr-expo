@@ -57,7 +57,7 @@ export default function About() {
             <div className="flex items-center gap-4 sm:gap-5">
               <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-[74px] md:h-[74px] rounded-full bg-white shadow-[0px_3px_8px_rgba(0,0,0,0.24)] flex items-center justify-center shrink-0 p-3 sm:p-3.5">
                 <img
-                  src="/medical/katsan/icon1.png"
+                  src="/medical/katsan/icon1.webp"
                   alt="Quality And Innovation"
                   className="w-full h-full object-contain"
                 />
@@ -75,7 +75,7 @@ export default function About() {
             <div className="flex items-center gap-4 sm:gap-5">
               <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-[74px] md:h-[74px] rounded-full bg-white shadow-[0px_3px_8px_rgba(0,0,0,0.24)] flex items-center justify-center shrink-0 p-3 sm:p-3.5">
                 <img
-                  src="/medical/katsan/icon2.png"
+                  src="/medical/katsan/icon2.webp"
                   alt="Global Reach"
                   className="w-full h-full object-contain"
                 />
@@ -93,7 +93,7 @@ export default function About() {
             <div className="flex items-center gap-4 sm:gap-5">
               <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-[74px] md:h-[74px] rounded-full bg-white shadow-[0px_3px_8px_rgba(0,0,0,0.24)] flex items-center justify-center shrink-0 p-3 sm:p-3.5">
                 <img
-                  src="/medical/katsan/icon3.png"
+                  src="/medical/katsan/icon3.webp"
                   alt="Environmental Responsibility"
                   className="w-full h-full object-contain"
                 />
@@ -115,7 +115,7 @@ export default function About() {
             data-aos-duration="1000"
           >
             <img
-              src="/medical/katsan/about.jpg"
+              src="/medical/katsan/about.webp"
               alt="Katsan Medical Devices Exhibition Booth"
               className="absolute inset-0 w-full h-full object-cover object-top"
               style={{ objectPosition: "top" }}

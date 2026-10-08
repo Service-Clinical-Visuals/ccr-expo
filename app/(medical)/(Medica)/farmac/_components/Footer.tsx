@@ -14,7 +14,7 @@ export default function Footer() {
             <Link href="/farmac" className="inline-block mb-4">
               <div className="relative flex items-center">
                 <img
-                  src="/medical/farmac/footerlogo.png"
+                  src="/medical/farmac/footerlogo.webp"
                   alt="Farmac-Zabban Logo"
                   className="h-full w-40 sm:w-48 xl:w-86 object-contain"
                 />
@@ -49,7 +49,7 @@ export default function Footer() {
               {/* Phone */}
               <div className="flex items-center gap-2.5">
                 <img
-                  src="/medical/farmac/f1.png"
+                  src="/medical/farmac/f1.webp"
                   alt="Phone"
                   className="w-4 h-4 object-contain flex-shrink-0"
                 />
@@ -64,7 +64,7 @@ export default function Footer() {
               {/* Fax */}
               <div className="flex items-center gap-2.5">
                 <img
-                  src="/medical/farmac/f2.png"
+                  src="/medical/farmac/f2.webp"
                   alt="Fax"
                   className="w-4 h-4 object-contain flex-shrink-0"
                 />
@@ -76,7 +76,7 @@ export default function Footer() {
               {/* Email */}
               <div className="flex items-center gap-2.5">
                 <img
-                  src="/medical/farmac/f3.png"
+                  src="/medical/farmac/f3.webp"
                   alt="Email"
                   className="w-4 h-4 object-contain flex-shrink-0"
                 />
@@ -91,7 +91,7 @@ export default function Footer() {
               {/* Address */}
               <div className="flex items-start gap-2.5">
                 <img
-                  src="/medical/farmac/f4.png"
+                  src="/medical/farmac/f4.webp"
                   alt="Address"
                   className="w-4 h-5 object-contain flex-shrink-0 mt-0.5"
                 />

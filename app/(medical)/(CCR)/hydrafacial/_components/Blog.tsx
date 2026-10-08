@@ -6,13 +6,13 @@ import Typography from "./Typography";
 
 const posts = [
   {
-    image: "/medical/hydrafacial/d2.png",
+    image: "/medical/hydrafacial/d2.webp",
     title: "Good Hair Days Ahead: The Causes and Treatments for Poor Scalp Health",
     body: "So, what's going on in that head of yours? Or, more to the point, underneath that head of hair? If you've started to notice hair loss and thinning hair, don't worry — you're not alone.",
     href: "#",
   },
   {
-    image: "/medical/hydrafacial/d1.png",
+    image: "/medical/hydrafacial/d1.webp",
     title: "Let's Demystify Dry Skin and Oily Skin",
     body: "Oily. Dry. Dehydrated. When it comes to your skin, what are you working with? It can be complicated to figure out exactly what's going on there, we know. Because each skin type has different needs, it's important to assess and determine your skin.",
     href: "#",
@@ -24,13 +24,13 @@ const Blog = () => {
     <section id="blog" className="w-full py-16 md:py-20 bg-white overflow-hidden relative">
       {/* Decorative blobs */}
       <img
-        src="/medical/hydrafacial/bg.png"
+        src="/medical/hydrafacial/bg.webp"
         alt=""
         aria-hidden="true"
         className="pointer-events-none select-none absolute top-0 left-0 w-64 lg:w-80 max-w-[45%] rotate-180 opacity-70 hidden sm:block"
       />
       <img
-        src="/medical/hydrafacial/bg.png"
+        src="/medical/hydrafacial/bg.webp"
         alt=""
         aria-hidden="true"
         className="pointer-events-none select-none absolute bottom-0 right-0 w-64 lg:w-80 max-w-[45%] opacity-70 hidden sm:block"

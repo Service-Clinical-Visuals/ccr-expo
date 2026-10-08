@@ -47,7 +47,7 @@ export default function WhoWeAre() {
           >
             <div className="relative w-full max-w-lg xl:max-w-none">
               <img
-                src="/medical/farmac/abt.png"
+                src="/medical/farmac/abt.webp"
                 alt="Farmac Zabban Headquarters"
                 className="w-full h-auto object-contain select-none"
               />

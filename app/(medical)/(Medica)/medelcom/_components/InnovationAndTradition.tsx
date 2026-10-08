@@ -17,7 +17,7 @@ export default function InnovationAndTradition() {
           data-aos-duration="800"
         >
           <img
-            src="/medical/medelcom/about.png"
+            src="/medical/medelcom/about.webp"
             alt="Medelkom Diagnostics"
             className="w-full h-auto xl:h-full object-cover"
           />

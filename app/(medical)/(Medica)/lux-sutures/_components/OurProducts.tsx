@@ -24,28 +24,28 @@ const TABS: ProductTab[] = [
         name: "Luxcryl 910 (Polyglactin 910)",
         description:
           "Luxcryl 910 sutures are intended for use in general soft tissue closing and/or ligation.",
-        image: "/medical/lux-sutures/p5.png",
+        image: "/medical/lux-sutures/p5.webp",
         href: "",
       },
       {
         name: "Catgut Chrom (Chromic Catgut)",
         description:
           "Catgut chrom sutures are intended for use in general soft tissue closing and/or ligation.",
-        image: "/medical/lux-sutures/p6.png",
+        image: "/medical/lux-sutures/p6.webp",
         href: "",
       },
       {
         name: "Catgut Plain (Plain Catgut)",
         description:
           "Catgut plain sutures are intended for use in general soft tissue closing and/or ligation.",
-        image: "/medical/lux-sutures/p7.png",
+        image: "/medical/lux-sutures/p7.webp",
         href: "",
       },
       {
         name: "Luxcryl PDO (Polydioxanone)",
         description:
           "Luxcryl PDO sutures are intended for use in general soft tissue closing and/or ligation.",
-        image: "/medical/lux-sutures/p8.png",
+        image: "/medical/lux-sutures/p8.webp",
         href: "",
       },
     ],
@@ -57,28 +57,28 @@ const TABS: ProductTab[] = [
         name: "Luxylene (Polypropylene)",
         description:
           "Luxylene sutures are intended for use in general soft tissue closing and/or ligation.",
-        image: "/medical/lux-sutures/p1.png",
+        image: "/medical/lux-sutures/p1.webp",
         href: "",
       },
       {
         name: "Luxamid (Nylon – Polyamid)",
         description:
           "Luxamid sutures are intended for use in general soft tissue closing and/or ligation.",
-        image: "/medical/lux-sutures/p2.png",
+        image: "/medical/lux-sutures/p2.webp",
         href: "",
       },
       {
         name: "Supramid (Polyamide 6)",
         description:
           "Supramid sutures are intended for use in general soft tissue closing and/or ligation; especially in skin closure.",
-        image: "/medical/lux-sutures/p3.png",
+        image: "/medical/lux-sutures/p3.webp",
         href: "",
       },
       {
         name: "Luxpet (Polyester braided)",
         description:
           "Luxpet sutures are intended for use in general soft tissue closing and/or ligation; especially in ophthalmic surgery.",
-        image: "/medical/lux-sutures/p4.png",
+        image: "/medical/lux-sutures/p4.webp",
         href: "",
       },
     ],
@@ -89,27 +89,27 @@ const TABS: ProductTab[] = [
       {
         name: "Surgical meshes",
         description: "Monofilament polypropylene knitted into an elastic, durable mesh",
-        image: "/medical/lux-sutures/p9.png",
+        image: "/medical/lux-sutures/p9.webp",
         href: "",
       },
       {
         name: "Bone Wax",
         description:
           "Used in the control of bleeding from bone surfaces by acting as a mechanical barrier",
-        image: "/medical/lux-sutures/p10.png",
+        image: "/medical/lux-sutures/p10.webp",
         href: "",
       },
       {
         name: "Flex-bandages",
         description:
           "Complete range of flexible, self adhesive and comfortable bandages. Suitable for all types of animals.",
-        image: "/medical/lux-sutures/11.png",
+        image: "/medical/lux-sutures/11.webp",
         href: "",
       },
       {
         name: "Luxbond",
         description: "Luxbond Tissue Adhesive provides quality wound management",
-        image: "/medical/lux-sutures/12.png",
+        image: "/medical/lux-sutures/12.webp",
         href: "",
       },
     ],

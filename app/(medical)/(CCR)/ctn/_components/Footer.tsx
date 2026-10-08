@@ -37,22 +37,22 @@ const PARTNERS_LINKS = [
 const SOCIAL_LINKS = [
   {
     name: "LinkedIn",
-    icon: "/medical/ctn/f1.png",
+    icon: "/medical/ctn/f1.webp",
     href: "",
   },
   {
     name: "Instagram",
-    icon: "/medical/ctn/f2.png",
+    icon: "/medical/ctn/f2.webp",
     href: "",
   },
   {
     name: "Facebook",
-    icon: "/medical/ctn/g3.png",
+    icon: "/medical/ctn/g3.webp",
     href: "",
   },
   {
     name: "X (Twitter)",
-    icon: "/medical/ctn/f4.png",
+    icon: "/medical/ctn/f4.webp",
     href: "",
   },
 ];
@@ -74,7 +74,7 @@ export default function Footer() {
             <Link href="/ctn" className="inline-block mb-4 sm:mb-6">
               <div className="relative h-9 w-28 sm:h-10 sm:w-32">
                 <Image
-                  src="/medical/ctn/logo.png"
+                  src="/medical/ctn/logo.webp"
                   alt="CTN Logo"
                   width={140}
                   height={44}

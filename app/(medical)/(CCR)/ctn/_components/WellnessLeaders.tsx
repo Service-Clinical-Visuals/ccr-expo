@@ -116,7 +116,7 @@ export default function WellnessLeaders() {
           >
             <div className="relative w-full rounded-4xl overflow-hidden ">
               <Image
-                src="/medical/ctn/wllness.png"
+                src="/medical/ctn/wllness.webp"
                 alt="Global Leaders In Wellness Technology - CTN Innovation"
                 width={960}
                 height={640}

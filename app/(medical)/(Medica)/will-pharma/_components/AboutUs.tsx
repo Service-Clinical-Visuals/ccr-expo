@@ -63,7 +63,7 @@ const AboutUs = () => {
             data-aos="fade-left"
           >
             <img
-              src="/medical/will-pharma/about.png"
+              src="/medical/will-pharma/about.webp"
               alt="Will Pharma Excellence"
               className="w-full h-auto object-contain drop-shadow-sm rounded-[10px] md:rounded-[14px] min-[3800px]:rounded-[24px]"
             />

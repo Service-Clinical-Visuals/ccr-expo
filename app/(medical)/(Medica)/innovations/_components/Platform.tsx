@@ -28,7 +28,7 @@ const Platform = () => {
               <div className="absolute top-0 -bottom-20 min-[2500px]:-bottom-28 min-[3800px]:-bottom-40 -left-[100vw] -right-[100vw] min-[1281px]:-right-[7rem] min-[2500px]:-right-[10rem] min-[3800px]:-right-[14rem] bg-[#575656] min-[1281px]:rounded-tr-[2rem] min-[3800px]:rounded-tr-[4rem] overflow-hidden">
                 <div
                   className="absolute inset-0 opacity-10"
-                  style={{ backgroundImage: 'url("/medical/innovations/bg.png")', backgroundSize: "cover", backgroundPosition: "center" }}
+                  style={{ backgroundImage: 'url("/medical/innovations/bg.webp")', backgroundSize: "cover", backgroundPosition: "center" }}
                 />
               </div>
 

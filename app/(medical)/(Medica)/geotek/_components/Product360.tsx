@@ -10,7 +10,7 @@ export default function Product360() {
       id="stent-360"
       className="w-full relative py-14 sm:py-20 md:py-24 bg-[#468A28] text-white overflow-hidden"
       style={{
-        backgroundImage: "url('/medical/geotek/images/bg.jpg')",
+        backgroundImage: "url('/medical/geotek/images/bg.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

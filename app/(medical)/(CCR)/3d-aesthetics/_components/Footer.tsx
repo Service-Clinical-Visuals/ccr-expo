@@ -22,7 +22,7 @@ const Footer = () => {
             {/* Col 1: Logo + description */}
             <div data-aos="fade-up" className="flex flex-col gap-4 items-start">
               <img
-                src="/moto/3d-aesthetics/logo.png"
+                src="/moto/3d-aesthetics/logo.webp"
                 alt="3D Aesthetics Logo"
                 className="h-25 w-auto object-contain"
               />

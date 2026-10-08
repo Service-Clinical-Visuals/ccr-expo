@@ -24,7 +24,7 @@ const AboutUs = () => {
               {/* Facility Image: Scales proportionally with the column across 1080p, 2K and 4K */}
               <div className="relative z-10 w-full rounded-lg min-[2500px]:rounded-xl min-[3800px]:rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white">
                 <img
-                  src="/medical/covision/about.png"
+                  src="/medical/covision/about.webp"
                   alt="Covision Headquarters and Production Facility"
                   className="w-full h-auto aspect-[770/516] object-cover"
                 />

@@ -58,7 +58,7 @@ export default function InnovationAndTradition() {
             {/* Image */}
             <div className="relative z-10 w-full overflow-hidden rounded-[4px]">
               <img
-                src="/medical/tekno/about.png"
+                src="/medical/tekno/about.webp"
                 alt="Tekno"
                 className="w-full h-auto object-cover"
               />
