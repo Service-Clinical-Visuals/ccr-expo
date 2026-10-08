@@ -74,7 +74,7 @@ export default function Header() {
           aria-label="Duzey Medikal Home"
         >
           <img
-            src="/medical/altaylar-medikal/logo.webp"
+            src="/medical/duzey-medikal/logo.webp"
             alt="Duzey Medikal Logo"
             className="h-10 sm:h-12 md:h-14 lg:h-16 min-[2500px]:h-20 min-[3800px]:h-28 w-auto object-contain"
           />
@@ -113,7 +113,7 @@ export default function Header() {
         <div className="hidden xl:flex items-center gap-2 cursor-pointer py-1 px-2 rounded-md hover:bg-gray-100 transition-colors">
           <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-11 lg:h-11 min-[2500px]:w-18 min-[2500px]:h-18 min-[3800px]:w-28 min-[3800px]:h-28 rounded-full overflow-hidden flex items-center justify-center shadow-sm border border-gray-200 shrink-0">
             <img
-              src="/medical/altaylar-medikal/flag.webp"
+              src="/medical/duzey-medikal/flag.webp"
               alt="Language Flag"
               className="w-full h-full object-cover"
             />
@@ -163,7 +163,7 @@ export default function Header() {
           <div className="pt-2 flex items-center gap-2">
             <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full overflow-hidden border border-gray-200 shrink-0">
               <img
-                src="/medical/altaylar-medikal/flag.webp"
+                src="/medical/duzey-medikal/flag.webp"
                 alt="Language Flag"
                 className="w-full h-full object-cover"
               />

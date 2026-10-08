@@ -12,27 +12,27 @@ export default function Products() {
   const products = [
     {
       title: "DUZEY SURGICAL BRAIN PAD",
-      image: "/medical/altaylar-medikal/p1.webp",
+      image: "/medical/duzey-medikal/p1.webp",
     },
     {
       title: "DUZEY DUAL MESH",
-      image: "/medical/altaylar-medikal/p2.webp",
+      image: "/medical/duzey-medikal/p2.webp",
     },
     {
       title: "DUZEY SVT PROLAPSE MESH",
-      image: "/medical/altaylar-medikal/p3.webp",
+      image: "/medical/duzey-medikal/p3.webp",
     },
     {
       title: "DUZEY PRE-SHAPED MESH",
-      image: "/medical/altaylar-medikal/p4.webp",
+      image: "/medical/duzey-medikal/p4.webp",
     },
     {
       title: "DUZEY POLYPROPYLENE MESH",
-      image: "/medical/altaylar-medikal/p5.webp",
+      image: "/medical/duzey-medikal/p5.webp",
     },
     {
       title: "DUZEY SVT VAGINAL TAPE MESH",
-      image: "/medical/altaylar-medikal/p6.webp",
+      image: "/medical/duzey-medikal/p6.webp",
     },
   ];
 

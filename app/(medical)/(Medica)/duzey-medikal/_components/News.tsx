@@ -18,7 +18,7 @@ interface NewsItem {
 const newsData: NewsItem[] = [
   {
     id: 1,
-    image: "/medical/altaylar-medikal/news1.webp",
+    image: "/medical/duzey-medikal/news1.webp",
     alt: "Medica Trade Fair",
     date: "13 Oct 2023",
     title: "We are at Medica Fair from November 15 to November 18, 2021",
@@ -26,7 +26,7 @@ const newsData: NewsItem[] = [
   },
   {
     id: 2,
-    image: "/medical/altaylar-medikal/news2.webp",
+    image: "/medical/duzey-medikal/news2.webp",
     alt: "Arab Health Fair",
     date: "09 Aug 2019",
     title: "We are at Arab Health Fair from January 25 to January 28, 2016",

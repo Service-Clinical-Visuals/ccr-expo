@@ -20,7 +20,7 @@ export default function AboutUs() {
 
               <div className="relative z-10 rounded-[8px] min-[2500px]:rounded-[16px] min-[3800px]:rounded-[24px] overflow-hidden shadow-lg border border-gray-100 bg-white">
                 <img
-                  src="/medical/altaylar-medikal/about.webp"
+                  src="/medical/duzey-medikal/about.webp"
                   alt="Duzey Medical Healthcare Interface"
                   className="w-full h-[360px] sm:h-[440px] md:h-[480px] lg:h-[520px] xl:h-[580px] min-[2500px]:h-[850px] min-[3800px]:h-[1150px] object-cover"
                 />

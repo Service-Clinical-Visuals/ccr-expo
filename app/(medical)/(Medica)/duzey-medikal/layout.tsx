@@ -12,7 +12,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Altaylar Medikal | Quality Medical Solutions",
+  title: "Duzey Medikal | Quality Medical Solutions",
   description:
     "Advancing Healthcare Through Quality Medical Solutions. Reliable surgical products for Urology, Urogynecology, and Hernia Repair.",
 };

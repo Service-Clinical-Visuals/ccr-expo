@@ -34,7 +34,7 @@ export default function Purpose() {
               <div className="flex flex-col sm:flex-row items-center sm:items-start xl:items-center gap-4 sm:gap-5 p-6 bg-white rounded-[10px] shadow-[0_3px_12px_rgba(0,0,0,0.08)] border border-gray-100 transition-shadow hover:shadow-md text-center sm:text-left">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#191919] flex items-center justify-center shrink-0 mx-auto sm:mx-0">
                   <img
-                    src="/medical/altaylar-medikal/icon1.webp"
+                    src="/medical/duzey-medikal/icon1.webp"
                     alt="Vision Icon"
                     className="w-7 h-7 object-contain"
                   />
@@ -52,7 +52,7 @@ export default function Purpose() {
               <div className="flex flex-col sm:flex-row items-center sm:items-start xl:items-center gap-4 sm:gap-5 p-6 bg-white rounded-[10px] shadow-[0_3px_12px_rgba(0,0,0,0.08)] border border-gray-100 transition-shadow hover:shadow-md text-center sm:text-left">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#191919] flex items-center justify-center shrink-0 mx-auto sm:mx-0">
                   <img
-                    src="/medical/altaylar-medikal/icon2.webp"
+                    src="/medical/duzey-medikal/icon2.webp"
                     alt="Mission Icon"
                     className="w-7 h-7 object-contain"
                   />
@@ -90,7 +90,7 @@ export default function Purpose() {
 
               <div className="relative z-10 rounded-[8px] min-[2500px]:rounded-[16px] min-[3800px]:rounded-[24px] overflow-hidden shadow-lg border border-gray-100 bg-white">
                 <img
-                  src="/medical/altaylar-medikal/purpose.webp"
+                  src="/medical/duzey-medikal/purpose.webp"
                   alt="Duzey Medical Vision and Workspace"
                   className="w-full h-[360px] sm:h-[440px] md:h-[480px] lg:h-[520px] xl:h-[580px] min-[2500px]:h-[850px] min-[3800px]:h-[1150px] object-cover"
                 />

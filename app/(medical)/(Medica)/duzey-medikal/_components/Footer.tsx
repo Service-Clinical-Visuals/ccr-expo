@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="flex flex-col gap-6 lg:col-span-1">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/altaylar-medikal/logo.webp"
+                src="/medical/duzey-medikal/logo.webp"
                 alt="Duzey Medikal Logo"
                 className="h-14 sm:h-16 md:h-18 lg:h-22 min-[2500px]:h-36 min-[3800px]:h-52 w-auto object-contain"
               />
