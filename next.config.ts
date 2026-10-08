@@ -21,10 +21,41 @@ const getPublicSubfolders = (subfolder: string) => {
 };
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  // @ts-ignore - explicitly allowed by Next.js 16 version message
-  // output: "standalone",
+  // Ship only traced files in .next/standalone instead of the full node_modules
+  output: "standalone",
   allowedDevOrigins: [...localIps, "localhost", "127.0.0.1"],
+
+  // Source maps are only for debugging; they make up most of .next/server
+  productionBrowserSourceMaps: false,
+  enablePrerenderSourceMaps: false,
+
+  experimental: {
+    serverSourceMaps: false,
+    turbopackSourceMaps: false,
+    // Prune unreachable entries from .next/cache/turbopack instead of letting it grow forever
+    turbopackGc: { rootTtlMs: 24 * 60 * 60 * 1000 },
+  },
+
+  images: {
+    // Public images aren't content-hashed, so keep optimized copies for 7 days
+    minimumCacheTTL: 60 * 60 * 24 * 7,
+    // Cap the on-disk optimized image cache (.next/cache/images)
+    maximumDiskCacheSize: 200_000_000,
+  },
+
+  async headers() {
+    return [
+      {
+        source: "/:path*.:ext(webp|png|jpg|jpeg|svg|ico|mp4|woff2)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=604800, stale-while-revalidate=86400",
+          },
+        ],
+      },
+    ];
+  },
 
   async rewrites() {
     const medicalFolders = getPublicSubfolders("medical");
