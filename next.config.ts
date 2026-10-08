@@ -32,8 +32,6 @@ const nextConfig: NextConfig = {
   experimental: {
     serverSourceMaps: false,
     turbopackSourceMaps: false,
-    // Prune unreachable entries from .next/cache/turbopack instead of letting it grow forever
-    turbopackGc: { rootTtlMs: 24 * 60 * 60 * 1000 },
   },
 
   images: {
