@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Header from "./_components/Header";
 import SmoothAOS from "./_components/SmoothAOS";
@@ -10,7 +9,6 @@ import Committed from "./_components/Committed";
 import Optimise from "./_components/Optimise";
 import Expertise from "./_components/Expertise";
 import Products from "./_components/Products";
-
 import Footer from "./_components/Footer";
 import Banner from "./_components/Banner";
 
@@ -18,9 +16,7 @@ export default function MeylePage() {
   return (
     <div className="min-h-screen bg-[var(--color-background)] text-[var(--color-secondary)] overflow-x-hidden">
       <SmoothAOS />
-
       <Header />
-
       <main className="relative flex flex-col">
         <Banner />
         <AboutUs />
@@ -30,12 +26,8 @@ export default function MeylePage() {
         <Committed />
         <Optimise />
         <Expertise />
-
-
       </main>
-
       <Footer />
-
     </div>
   );
 }
