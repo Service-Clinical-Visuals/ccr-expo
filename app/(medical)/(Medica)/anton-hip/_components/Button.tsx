@@ -53,9 +53,8 @@ const Button = ({
       "bg-[#003470] text-white hover:bg-[#002654] border border-transparent shadow-sm",
   };
 
-  const buttonClasses = `button inline-flex items-center justify-center gap-3.5 sm:gap-4 min-[2500px]:gap-6 min-[3800px]:gap-8 px-6 py-3 sm:px-8 sm:py-3.5 min-[2500px]:px-12 min-[2500px]:py-5 min-[3800px]:px-16 min-[3800px]:py-7 rounded-[8px] min-[2500px]:rounded-[12px] min-[3800px]:rounded-[16px] transition-all duration-300 select-none group cursor-pointer active:scale-[0.98] outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 ${
-    variantStyles[variant] || variantStyles.primary
-  } ${disabled ? "opacity-50 cursor-not-allowed pointer-events-none" : ""} ${className}`.trim();
+  const buttonClasses = `button inline-flex items-center justify-center gap-3.5 sm:gap-4 min-[2500px]:gap-6 min-[3800px]:gap-8 px-6 py-3 sm:px-6 sm:py-3 min-[3800px]:px-16 min-[3800px]:py-7 rounded-[8px] min-[2500px]:rounded-[12px] min-[3800px]:rounded-[16px] transition-all duration-300 select-none group cursor-pointer active:scale-[0.98] outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 ${variantStyles[variant] || variantStyles.primary
+    } ${disabled ? "opacity-50 cursor-not-allowed pointer-events-none" : ""} ${className}`.trim();
 
   const innerContent = (
     <>
