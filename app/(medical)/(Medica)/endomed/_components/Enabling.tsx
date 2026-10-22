@@ -9,7 +9,7 @@ export default function Enabling() {
   return (
     <section
       id="laparoscopic"
-      className="w-full bg-[#F9F9FA] bg-[url('/medical/endomed/bg1.png')] bg-cover bg-center bg-no-repeat py-14 md:py-20 2xl:py-24 min-[2500px]:py-32 min-[3800px]:py-44"
+      className="w-full bg-[#F9F9FA] bg-[url('/medical/endomed/bg1.webp')] bg-cover bg-center bg-no-repeat py-14 md:py-20 2xl:py-24 min-[2500px]:py-32 min-[3800px]:py-44"
     >
       <div className="custom-container grid grid-cols-1 lg:grid-cols-12 items-center gap-8 2xl:gap-10 min-[2500px]:gap-14 min-[3800px]:gap-20">
         {/* Video */}

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #121111;
+  --foreground: #FFFFFF;
+}
+
+@theme inline {
+  --color-primary: #EC6707;
+  --color-primary-hover: #d25904;
+  --color-secondary: #121111;
+  --color-secondary-hover: #1c1c1c;
+  --color-card: #272727;
+  --color-card-dark: #121111;
+  --color-border: rgba(255, 255, 255, 0.24);
+  --color-border-subtle: rgba(255, 255, 255, 0.14);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-anton), 'Anton', sans-serif;
+  --font-secondary: var(--font-oswald), 'Oswald', sans-serif;
+}
+
+body,
+.lasotronix-root {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-secondary), 'Oswald', sans-serif;
+}
+
+.font-primary {
+  font-family: var(--font-primary), 'Anton', sans-serif !important;
+}
+
+.font-secondary {
+  font-family: var(--font-secondary), 'Oswald', sans-serif !important;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) - Reduced 1px */
+h1, h2, h3, h4, h5, h6, .footer-heading, .font-primary {
+  font-family: var(--font-primary), 'Anton', sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.5;
+}
+h1 { font-size: 2.1875rem; /* 35px */ letter-spacing: 0.8px; }
+h2 { font-size: 1.9375rem; /* 31px */ letter-spacing: 0.8px; }
+h3 { font-size: 1.3125rem; /* 21px */ letter-spacing: 0.8px; }
+h4 { font-size: 1.125rem; /* 18px */ letter-spacing: 0.8px; }
+h5 { font-size: 1rem; /* 16px */ letter-spacing: 0.8px; }
+h6 { font-size: 0.875rem; /* 14px */ letter-spacing: 0.8px; }
+p, li { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary), 'Oswald', sans-serif !important; line-height: 1.5; }
+span { font-size: 0.8125rem; /* 13px */ font-family: var(--font-secondary), 'Oswald', sans-serif !important; }
+.navbar { font-size: 0.9375rem; /* 15px */ font-weight: 400; font-family: var(--font-primary), 'Anton', sans-serif !important; letter-spacing: 0.8px; }
+.footer-heading { font-size: 1.3125rem; /* 21px */ letter-spacing: 0.8px; }
+.footer-body { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary), 'Oswald', sans-serif !important; }
+.button { font-size: 1rem; /* 16px */ font-weight: 500; font-family: var(--font-secondary), 'Oswald', sans-serif !important; }
+.number { font-size: 7.9375rem; /* ~127px */ font-weight: 700; font-family: var(--font-primary), 'Anton', sans-serif !important; color: rgba(255, 255, 255, 0.6); line-height: 1; }
+
+/* Swiper Pagination - Custom Line Bullets */
+.custom-line-bullet {
+  width: 32px !important;
+  height: 3px !important;
+  border-radius: 9999px !important;
+  background-color: #D9D9D9 !important;
+  opacity: 0.5 !important;
+  display: inline-block;
+  margin: 0 4px !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.swiper-pagination-bullet-active.custom-line-bullet {
+  width: 64px !important;
+  background-color: var(--color-primary) !important;
+  opacity: 1 !important;
+}
+
+/* Mobile Portrait Screen (up to 480px) */
+/* Multiplier: ~0.7 */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.53125rem; /* ~24.5px */ }
+  h2 { font-size: 1.35625rem; /* ~21.7px */ }
+  h3 { font-size: 0.91875rem; /* ~14.7px */ }
+  h4 { font-size: 0.7rem; /* ~11.2px */ }
+  p, li { font-size: 0.7rem; /* ~11.2px */ }
+  span { font-size: 0.56875rem; /* ~9.1px */ }
+  .navbar { font-size: 0.7rem; /* ~11.2px */ }
+  .footer-heading { font-size: 0.91875rem; /* ~14.7px */ }
+  .footer-body { font-size: 0.7rem; /* ~11.2px */ }
+  .button { font-size: 0.7rem; /* ~11.2px */ }
+  .number { font-size: 5.5rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+/* Multiplier: ~0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.75rem; /* 28px */ }
+  h2 { font-size: 1.55rem; /* 24.8px */ }
+  h3 { font-size: 1.05rem; /* 16.8px */ }
+  h4 { font-size: 0.8rem; /* 12.8px */ }
+  p, li { font-size: 0.8rem; /* 12.8px */ }
+  span { font-size: 0.65rem; /* 10.4px */ }
+  .navbar { font-size: 0.8rem; /* 12.8px */ }
+  .footer-heading { font-size: 1.05rem; /* 16.8px */ }
+  .footer-body { font-size: 0.8rem; /* 12.8px */ }
+  .button { font-size: 0.8rem; /* 12.8px */ }
+  .number { font-size: 6.35rem; }
+}
+
+/* Tablet / Tab Screen (768px - 1023px) */
+/* Multiplier: ~0.9 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.96875rem; /* 31.5px */ }
+  h2 { font-size: 1.74375rem; /* 27.9px */ }
+  h3 { font-size: 1.18125rem; /* 18.9px */ }
+  h4 { font-size: 0.9rem; /* 14.4px */ }
+  p, li { font-size: 0.9rem; /* 14.4px */ }
+  span { font-size: 0.73125rem; /* 11.7px */ }
+  .navbar { font-size: 0.9rem; /* 14.4px */ }
+  .footer-heading { font-size: 1.18125rem; /* 18.9px */ }
+  .footer-body { font-size: 0.9rem; /* 14.4px */ }
+  .button { font-size: 0.9rem; /* 14.4px */ }
+  .number { font-size: 7.15rem; }
+}
+
+/* Laptop Screen (1024px - 1279px) */
+/* Multiplier: ~0.95 */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.078125rem; /* 33.25px */ }
+  h2 { font-size: 1.840625rem; /* 29.45px */ }
+  h3 { font-size: 1.246875rem; /* 19.95px */ }
+  h4 { font-size: 0.95rem; /* 15.2px */ }
+  p, li { font-size: 0.95rem; /* 15.2px */ }
+  span { font-size: 0.771875rem; /* 12.35px */ }
+  .navbar { font-size: 0.95rem; /* 15.2px */ }
+  .footer-heading { font-size: 1.246875rem; /* 19.95px */ }
+  .footer-body { font-size: 0.95rem; /* 15.2px */ }
+  .button { font-size: 0.95rem; /* 15.2px */ }
+  .number { font-size: 7.55rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+/* Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.28125rem; /* 52.5px */ }
+  h2 { font-size: 2.90625rem; /* 46.5px */ }
+  h3 { font-size: 1.96875rem; /* 31.5px */ }
+  h4 { font-size: 1.5rem; /* 24px */ }
+  p, li { font-size: 1.5rem; /* 24px */ }
+  span { font-size: 1.21875rem; /* 19.5px */ }
+  .navbar { font-size: 1.5rem; /* 24px */ }
+  .footer-heading { font-size: 1.96875rem; /* 31.5px */ }
+  .footer-body { font-size: 1.5rem; /* 24px */ }
+  .button { font-size: 1.5rem; /* 24px */ }
+  .number { font-size: 11.9rem; }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+/* Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.375rem; /* 70px */ }
+  h2 { font-size: 3.875rem; /* 62px */ }
+  h3 { font-size: 2.625rem; /* 42px */ }
+  h4 { font-size: 2rem; /* 32px */ }
+  p, li { font-size: 2rem; /* 32px */ }
+  span { font-size: 1.625rem; /* 26px */ }
+  .navbar { font-size: 2rem; /* 32px */ }
+  .footer-heading { font-size: 2.625rem; /* 42px */ }
+  .footer-body { font-size: 2rem; /* 32px */ }
+  .button { font-size: 2rem; /* 32px */ }
+  .number { font-size: 15.875rem; }
+}

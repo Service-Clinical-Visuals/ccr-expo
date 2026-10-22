@@ -6,17 +6,17 @@ import SectionTag from "./SectionTag";
 const news = [
   {
     title: "Exposanità",
-    image: "/medical/endomed/n1.png",
+    image: "/medical/endomed/n1.webp",
     text: "Endomed Participates In Exposanità To Showcase Innovative Solutions For Minimally Invasive Surgery, Connect With Healthcare Professionals, And Highlight Its Commitment To Quality And Medical Technology.",
   },
   {
     title: "Medica",
-    image: "/medical/endomed/n2.png",
+    image: "/medical/endomed/n2.webp",
     text: "Endomed Takes Part In MEDICA, The Leading International Medical Trade Fair, Showcasing Advanced Surgical Solutions And Strengthening Connections With Healthcare Professionals ....",
   },
   {
     title: "Arab Health",
-    image: "/medical/endomed/n3.png",
+    image: "/medical/endomed/n3.webp",
     text: "Endomed Participates In Arab Health To Present Its Innovative Surgical Solutions, Connect With Healthcare Professionals, And Strengthen Its Commitment To Quality And .....",
   },
 ];

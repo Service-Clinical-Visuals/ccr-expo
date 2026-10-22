@@ -21,37 +21,37 @@ const PRODUCTS: Product[] = [
   {
     id: "surgical-instruments",
     title: "Surgical Instruments",
-    image: "/medical/anton-hip/p1.png",
+    image: "/medical/anton-hip/p1.webp",
     href: "#contact",
   },
   {
     id: "patient-specific-implants",
     title: "Patient Specific Implants",
-    image: "/medical/anton-hip/p2.png",
+    image: "/medical/anton-hip/p2.webp",
     href: "#contact",
   },
   {
     id: "sterilization-container",
     title: "Sterilization Container",
-    image: "/medical/anton-hip/p3.png",
+    image: "/medical/anton-hip/p3.webp",
     href: "#contact",
   },
   {
     id: "implants-and-implants-systems",
     title: "Implants and Implants Systems",
-    image: "/medical/anton-hip/p4.png",
+    image: "/medical/anton-hip/p4.webp",
     href: "#contact",
   },
   {
     id: "endoscopic-ymj-surgery ",
     title: "Endoscopic YMJ Surgery ",
-    image: "/medical/anton-hip/p5.png",
+    image: "/medical/anton-hip/p5.webp",
     href: "#contact",
   },
   {
     id: "surgi-tec-products",
     title: "Surgi-Tec Products",
-    image: "/medical/anton-hip/p6.png",
+    image: "/medical/anton-hip/p6.webp",
     href: "#contact",
   },
 ];

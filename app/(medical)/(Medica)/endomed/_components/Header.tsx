@@ -22,7 +22,7 @@ export default function Header() {
         {/* Left: Logo */}
         <Link href="#home" className="flex items-center shrink-0">
           <img
-            src="/medical/endomed/logo.png"
+            src="/medical/endomed/logo.webp"
             alt="Medici by Endomed"
             className="w-[120px] md:w-[140px] lg:w-[150px] 2xl:w-[180px] min-[2500px]:w-[240px] min-[3800px]:w-[320px] h-auto object-contain"
           />

@@ -62,7 +62,7 @@ export default function About() {
         >
           <div className="relative w-full rounded-[16px] min-[3800px]:rounded-[28px] overflow-hidden shadow-lg border border-gray-100 group">
             <img
-              src="/medical/anton-hip/section2.png"
+              src="/medical/anton-hip/section2.webp"
               alt="Anton Hipp Facility in Fridingen"
               className="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />

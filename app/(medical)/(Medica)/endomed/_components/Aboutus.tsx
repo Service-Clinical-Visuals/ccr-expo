@@ -17,7 +17,7 @@ export default function Aboutus() {
         {/* Image */}
         <div className="lg:col-span-7 w-full aspect-[930/617] overflow-hidden" data-aos="fade-right">
           <img
-            src="/medical/endomed/section2.png"
+            src="/medical/endomed/section2.webp"
             alt="Endomed at a medical exhibition"
             className="w-full h-full object-cover"
           />

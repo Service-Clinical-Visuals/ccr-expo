@@ -19,7 +19,7 @@ const NEWS_ITEMS: NewsItem[] = [
     title: "28th EACMFS Pre Congress Day Advanced Workshop in TMJ Arthroscopy",
     description:
       "Anton Hipp highlights the importance of advanced surgical techniques and medical innovation at the 28th EACMFS Pre-Congress Day Advanced Workshop in TMJ Arthroscopy.",
-    image: "/medical/anton-hip/n1.png",
+    image: "/medical/anton-hip/n1.webp",
     href: "#contact",
   },
   {
@@ -27,7 +27,7 @@ const NEWS_ITEMS: NewsItem[] = [
     title: "28th EACMFS Congress",
     description:
       "The 28th EACMFS Congress brings together experts in oral and maxillofacial surgery to share knowledge, explore clinical advancements, and discuss emerging technologies in the field. Discover the latest developments in surgical practice and connect with professionals dedicated to advancing patient care.",
-    image: "/medical/anton-hip/n1.png",
+    image: "/medical/anton-hip/n1.webp",
     href: "#contact",
   },
 ];
