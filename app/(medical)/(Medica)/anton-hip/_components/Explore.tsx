@@ -36,7 +36,7 @@ export default function Explore() {
               <div className="flex items-start gap-4 sm:gap-5 min-[3800px]:gap-7">
                 <div className="w-11 h-11 sm:w-12 sm:h-12 min-[3800px]:w-20 min-[3800px]:h-20 rounded-full bg-white/10 border border-white/15 flex items-center justify-center shrink-0 mt-1">
                   <img
-                    src="/medical/anton-hip/icon1.png"
+                    src="/medical/anton-hip/icon1.webp"
                     alt="Precision Icon"
                     className="w-5 h-5 sm:w-6 sm:h-6 min-[3800px]:w-10 min-[3800px]:h-10 object-contain"
                   />
@@ -59,7 +59,7 @@ export default function Explore() {
               <div className="flex items-start gap-4 sm:gap-5 min-[3800px]:gap-7">
                 <div className="w-11 h-11 sm:w-12 sm:h-12 min-[3800px]:w-20 min-[3800px]:h-20 rounded-full bg-white/10 border border-white/15 flex items-center justify-center shrink-0 mt-1">
                   <img
-                    src="/medical/anton-hip/icon2.png"
+                    src="/medical/anton-hip/icon2.webp"
                     alt="Facial Reconstruction Icon"
                     className="w-5 h-5 sm:w-6 sm:h-6 min-[3800px]:w-10 min-[3800px]:h-10 object-contain"
                   />

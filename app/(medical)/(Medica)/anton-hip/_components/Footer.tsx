@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-1 lg:pr-16 xl:pr-20 min-[3800px]:pr-40 flex flex-col justify-start" data-aos="fade-up">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/anton-hip/footer-logo.png"
+                src="/medical/anton-hip/footer-logo.webp"
                 alt="Anton Hipp - Instruments & Implants"
                 className="h-8 sm:h-9 min-[3800px]:h-[50%] w-auto object-contain"
               />

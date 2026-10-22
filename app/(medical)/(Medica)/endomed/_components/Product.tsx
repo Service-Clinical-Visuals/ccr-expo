@@ -13,42 +13,42 @@ import SectionTag from "./SectionTag";
 const products = [
   {
     title: "Arthroscopy",
-    image: "/medical/endomed/p1.png",
+    image: "/medical/endomed/p1.webp",
     text: "Endomed Provides Reliable, High-Quality Arthroscopy Instruments And Advanced Surgical Solutions Developed To Meet The Evolving Needs Of Surgeons.",
   },
   {
     title: "Laparoscopy",
-    image: "/medical/endomed/p2.png",
+    image: "/medical/endomed/p2.webp",
     text: "Endomed Offers High-Quality Laparoscopic Instruments And Accessories Designed To Support Precision, Reliability, And Efficiency In Minimally Invasive Surgical Procedures.",
   },
   {
     title: "Hysteroscopy",
-    image: "/medical/endomed/p3.png",
+    image: "/medical/endomed/p3.webp",
     text: "Endomed Provides Reliable Hysteroscopy Instruments & Advanced Endoscopic Solutions Designed To Support Precision & Efficiency In Minimally Invasive Gynecological Procedures.",
   },
   {
     title: "Cystoscopy",
-    image: "/medical/endomed/p4.png",
+    image: "/medical/endomed/p4.webp",
     text: "Endomed Offers High-Quality Cystoscopy Instruments & Endoscopic Systems Designed To Support Precision, Reliability, & Efficiency In Urological Diagnosis And Treatment.",
   },
   {
     title: "Equipment",
-    image: "/medical/endomed/p5.png",
+    image: "/medical/endomed/p5.webp",
     text: "ENDOMED Offers High-Performance Medical Equipment Which, Thanks To Their Advanced Technology, Represent A Valid Support In All Endoscopic Disciplines.",
   },
   {
     title: "General Surgery",
-    image: "/medical/endomed/p6.png",
+    image: "/medical/endomed/p6.webp",
     text: "Our Italian-Made Instruments Meet Surgical Needs. We Offer Individual Instruments And Complete Kits Of Trays And Containers, Assembled To The Customer's Specifications.",
   },
   {
     title: "Bipolar Resector",
-    image: "/medical/endomed/p7.png",
+    image: "/medical/endomed/p7.webp",
     text: "Endomed Provides Bipolar Resectoscopes & Electrodes Designed To Support Precision & Efficiency In Urological And Gynecological Procedures.",
   },
   {
     title: "Ultrasound",
-    image: "/medical/endomed/p8.png",
+    image: "/medical/endomed/p8.webp",
     text: "Endomed Offers Ultrasound Solutions Designed To Support Accuracy And Efficiency In Modern Medical Procedures.",
   },
 ];

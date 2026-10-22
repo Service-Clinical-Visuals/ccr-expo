@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="w-full relative overflow-hidden bg-[#0F1A26] bg-[url('/medical/endomed/bg.png')] bg-cover bg-center"
+      className="w-full relative overflow-hidden bg-[#0F1A26] bg-[url('/medical/endomed/bg.webp')] bg-cover bg-center"
     >
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-[#0F1A26]/85" />
@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="col-span-2 md:max-lg:col-span-4 lg:col-span-1 flex flex-col items-center text-center lg:items-start lg:text-left gap-6 lg:gap-8 2xl:gap-10 min-[2500px]:gap-14 min-[3800px]:gap-20 lg:pr-[25%]" data-aos="fade-up">
             <Link href="#home" className="inline-block">
               <img
-                src="/medical/endomed/logo-white.png"
+                src="/medical/endomed/logo-white.webp"
                 alt="Medici by Endomed"
                 className="w-[160px] md:w-[180px] 2xl:w-[205px] min-[2500px]:w-[280px] min-[3800px]:w-[400px] h-auto object-contain"
               />
