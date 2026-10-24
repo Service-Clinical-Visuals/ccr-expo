@@ -61,7 +61,7 @@ export default function Purpose() {
             >
               <span className="flex items-center justify-center shrink-0 rounded-full bg-[#1A6AFF] w-16 h-16 sm:w-20 sm:h-20 2xl:w-[92px] 2xl:h-[92px] min-[2500px]:w-32 min-[2500px]:h-32 min-[3800px]:w-44 min-[3800px]:h-44">
                 <img
-                  src={`/(WHX-Dubai-2027)/rudolf/${item.icon}`}
+                  src={`/medical/rudolf/${item.icon}`}
                   alt=""
                   className="w-8 h-8 sm:w-10 sm:h-10 2xl:w-12 2xl:h-12 min-[2500px]:w-16 min-[2500px]:h-16 min-[3800px]:w-22 min-[3800px]:h-22 object-contain"
                 />

@@ -58,7 +58,7 @@ export default function AboutUs() {
 
             <div className="relative w-full aspect-[715/605] overflow-hidden rounded-[10px] min-[2500px]:rounded-[15px] min-[3800px]:rounded-[20px]">
               <img
-                src="/(WHX-Dubai-2027)/rudolf/s1.webp"
+                src="/medical/rudolf/s1.webp"
                 alt="Healthcare professionals in a modern clinic"
                 className="w-full h-full object-cover object-[70%_center]"
               />

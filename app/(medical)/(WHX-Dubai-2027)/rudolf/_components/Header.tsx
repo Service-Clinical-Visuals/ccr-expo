@@ -81,7 +81,7 @@ export default function Header() {
           aria-label="Riester Home"
         >
           <img
-            src="/(WHX-Dubai-2027)/rudolf/logo.webp"
+            src="/medical/rudolf/logo.webp"
             alt="Riester Logo"
             className="w-[140px] sm:w-[160px] xl:w-[180px] 2xl:w-[200px] min-[2500px]:w-[280px] min-[3800px]:w-[390px] h-auto object-contain"
           />

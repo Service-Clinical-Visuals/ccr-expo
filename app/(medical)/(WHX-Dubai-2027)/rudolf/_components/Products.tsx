@@ -79,7 +79,7 @@ export default function Products() {
                 <div className="group h-full flex flex-col bg-white border border-[#E5E5E5] p-3 2xl:p-3.5 min-[2500px]:p-5 min-[3800px]:p-7">
                   <div className="w-full aspect-[386/220] overflow-hidden">
                     <img
-                      src={`/(WHX-Dubai-2027)/rudolf/${item.image}`}
+                      src={`/medical/rudolf/${item.image}`}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
                     />

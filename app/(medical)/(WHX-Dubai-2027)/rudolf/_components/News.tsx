@@ -59,7 +59,7 @@ export default function News() {
             >
               <div className="w-full sm:w-[43%] shrink-0 aspect-[355/424] sm:aspect-auto sm:min-h-full overflow-hidden">
                 <img
-                  src={`/(WHX-Dubai-2027)/rudolf/${item.image}`}
+                  src={`/medical/rudolf/${item.image}`}
                   alt={item.title}
                   className={`w-full h-full object-cover ${item.position} group-hover:scale-[1.03] transition-transform duration-500`}
                 />

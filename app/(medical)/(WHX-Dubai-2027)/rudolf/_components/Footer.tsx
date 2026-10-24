@@ -45,7 +45,7 @@ export default function Footer() {
             <div className="flex flex-col gap-6 2xl:gap-7 min-[2500px]:gap-10 min-[3800px]:gap-14">
               <Link href="#home" aria-label="Riester Home">
                 <img
-                  src="/(WHX-Dubai-2027)/rudolf/logo.webp"
+                  src="/medical/rudolf/logo.webp"
                   alt="Riester Logo"
                   className="w-[180px] 2xl:w-[232px] min-[2500px]:w-[330px] min-[3800px]:w-[460px] h-auto object-contain"
                 />
