@@ -6,8 +6,8 @@ import { ArrowUpRight } from "lucide-react";
 import Typography from "./Typography";
 
 const news = [
-  { title: "Open House 2026", image: "/medical/medical-econet/n1.png", href: "#media" },
-  { title: "Donation For Cameroon", image: "/medical/medical-econet/n2.png", href: "#media" },
+  { title: "Open House 2026", image: "/medical/medical-econet/n1.webp", href: "#media" },
+  { title: "Donation For Cameroon", image: "/medical/medical-econet/n2.webp", href: "#media" },
 ];
 
 export default function News() {

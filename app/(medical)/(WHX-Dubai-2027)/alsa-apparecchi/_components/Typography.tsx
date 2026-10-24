@@ -1,0 +1,79 @@
+import React from "react";
+
+type Variant =
+  | "h1"
+  | "h2"
+  | "h3"
+  | "h4"
+  | "h5"
+  | "h6"
+  | "p"
+  | "span"
+  | "footer-heading"
+  | "footer-body";
+type Color = "primary" | "secondary" | "dark" | "white" | "muted" | "slate" | "none";
+type Weight = "light" | "normal" | "medium" | "semibold" | "bold" | "extrabold";
+
+interface TypographyProps {
+  variant?: Variant;
+  color?: Color;
+  weight?: Weight;
+  className?: string;
+  children: React.ReactNode;
+}
+
+export default function Typography({
+  variant = "p",
+  color = "dark",
+  weight,
+  className = "",
+  children,
+  outline = false,
+  ...props
+}: TypographyProps & { outline?: boolean } & React.HTMLAttributes<HTMLElement>) {
+  let Component: React.ElementType = variant as React.ElementType;
+  let fontClass = "";
+
+  if (variant === "footer-heading") {
+    Component = "h3";
+    fontClass = "footer-heading font-primary";
+  } else if (variant === "footer-body") {
+    Component = "p";
+    fontClass = "footer-body font-secondary";
+  } else if (["h1", "h2", "h3", "h4", "h5", "h6"].includes(variant)) {
+    fontClass = "font-primary";
+  } else {
+    fontClass = "font-secondary";
+  }
+
+  const colorClasses: Record<Color, string> = {
+    primary: "text-[var(--color-primary)]",
+    secondary: "text-[var(--color-secondary)]",
+    dark: "text-[#000000]",
+    white: "text-white",
+    muted: "text-[#4A4A4A]",
+    slate: "text-[#334155]",
+    none: "",
+  };
+
+  const weightClasses: Record<Weight, string> = {
+    light: "font-light",
+    normal: "font-normal",
+    medium: "font-medium",
+    semibold: "font-semibold",
+    bold: "font-bold",
+    extrabold: "font-extrabold",
+  };
+
+  const outlineClass = outline
+    ? color === "dark" || color === "primary"
+      ? "text-outline-dark"
+      : "text-outline"
+    : "";
+
+  const finalClassName = `${fontClass} ${colorClasses[color] || ""} ${
+    weight ? weightClasses[weight] : ""
+  } ${outlineClass} ${className}`.trim();
+
+  return React.createElement(Component, { className: finalClassName, ...props }, children);
+}

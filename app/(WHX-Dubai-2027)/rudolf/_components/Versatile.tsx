@@ -8,7 +8,7 @@ export default function Versatile() {
   return (
     <section
       id="laryngoscope"
-      className="w-full bg-[#F4F8F9] bg-[url('/(WHX-Dubai-2027)/rudolf/bg.png')] bg-cover bg-center bg-no-repeat py-12 sm:py-16 lg:py-[70px] 2xl:py-20 min-[2500px]:py-28 min-[3800px]:py-40 overflow-hidden"
+      className="w-full bg-[#F4F8F9] bg-[url('/(WHX-Dubai-2027)/rudolf/bg.webp')] bg-cover bg-center bg-no-repeat py-12 sm:py-16 lg:py-[70px] 2xl:py-20 min-[2500px]:py-28 min-[3800px]:py-40 overflow-hidden"
     >
       <div className="custom-container flex flex-col items-center">
         {/* Heading */}

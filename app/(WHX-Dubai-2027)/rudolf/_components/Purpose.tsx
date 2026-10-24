@@ -6,22 +6,22 @@ import Typography from "./Typography";
 const items = [
   {
     title: "Our Purpose",
-    icon: "icon1.png",
+    icon: "icon1.webp",
     text: "We are committed to improving productivity and effectiveness for all clinicians, some of whom are increasingly underfunded and understaffed. Our products are used globally and change people's lives - this provides a real sense of responsibility which extends throughout the company.",
   },
   {
     title: "Our Mission",
-    icon: "icon2.png",
+    icon: "icon2.webp",
     text: "We are proud of our German engineering heritage—our processes support and drive the excellence we demand from our products. Confidence in our products is reflected in our warranty periods. This commitment ensures dependable performance for healthcare professionals.",
   },
   {
     title: "Our Vision",
-    icon: "icon3.png",
+    icon: "icon3.webp",
     text: "The bar of excellence is set high at Riester. Our aim is to keep pushing boundaries to remain at the forefront of global healthcare product offerings. Our focus on the medical diagnostic market underpins all our processes and everything we do.",
   },
   {
     title: "Our Values",
-    icon: "icon4.png",
+    icon: "icon4.webp",
     text: "Our values are built on customer-centric partnerships, excellence in quality and reliability, continuous innovation for better diagnosis, trust in our partners and employees, and the passion that drives our purpose and inspires everything we do.",
   },
 ];

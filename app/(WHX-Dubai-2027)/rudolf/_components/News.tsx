@@ -11,14 +11,14 @@ const news = [
     date: "9–12 February 2026",
     title: "Riester at WHX Dubai 2026 – Advancing Clinical Excellence",
     text: "Riester is proud to announce our participation at World health expo Dubai 2026 (formerly Arab Health), taking place from 9–12 February at the new Dubai Exhibition Centre (DEC). Visit us at Stand N29.C19 and experience the future of medical diagnostics.",
-    image: "news1.png",
+    image: "news1.webp",
     position: "object-left",
   },
   {
     date: "19 April 2023",
     title: "Rudolf Riester GmbH Celebrates Its 75th Anniversary",
     text: "As Rudolf Riester GmbH celebrates its 75th company anniversary this year, it is a time to reflect on the remarkable journey of Riester and the significant milestones it has achieved through decades of innovation and excellence over the years.",
-    image: "news2.png",
+    image: "news2.webp",
     position: "object-[62%_center]",
   },
 ];

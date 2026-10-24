@@ -25,7 +25,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="relative w-full overflow-hidden bg-primary bg-[url('/medical/medical-econet/bg.png')] bg-cover bg-center"
+      className="relative w-full overflow-hidden bg-primary bg-[url('/medical/medical-econet/bg.webp')] bg-cover bg-center"
     >
       {/* Primary overlay over the texture */}
       <div className="absolute inset-0 bg-primary/90" />
@@ -41,7 +41,7 @@ export default function Footer() {
             >
               {/* Show only the rectangular top of the logo mark */}
               <img
-                src="/medical/medical-econet/logo.png"
+                src="/medical/medical-econet/logo.webp"
                 alt="Medical Econet Logo"
                 className="w-full h-full object-cover object-top"
               />

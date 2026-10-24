@@ -30,7 +30,7 @@ export default function AboutUs() {
           data-aos-delay="100"
         >
           <img
-            src="/medical/medical-econet/section2.png"
+            src="/medical/medical-econet/section2.webp"
             alt="Medical ECONET GmbH headquarters"
             className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
           />

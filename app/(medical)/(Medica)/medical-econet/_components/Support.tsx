@@ -4,9 +4,9 @@ import React from "react";
 import Typography from "./Typography";
 
 const images = [
-  { src: "/medical/medical-econet/support1.png", alt: "Online customer support" },
-  { src: "/medical/medical-econet/support2.png", alt: "Secure data and cloud services" },
-  { src: "/medical/medical-econet/support3.png", alt: "Device maintenance and repair" },
+  { src: "/medical/medical-econet/support1.webp", alt: "Online customer support" },
+  { src: "/medical/medical-econet/support2.webp", alt: "Secure data and cloud services" },
+  { src: "/medical/medical-econet/support3.webp", alt: "Device maintenance and repair" },
 ];
 
 export default function Support() {

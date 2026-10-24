@@ -11,14 +11,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const products = [
-  { title: "Fetal Monitoring", image: "/medical/medical-econet/p1.png" },
-  { title: "ECG", image: "/medical/medical-econet/p2.png" },
-  { title: "Pulse Oxymetry", image: "/medical/medical-econet/p3.png" },
-  { title: "Patient Monitoring", image: "/medical/medical-econet/p4.png" },
-  { title: "BDM", image: "/medical/medical-econet/p5.png" },
-  { title: "Emergency Care", image: "/medical/medical-econet/p6.png" },
-  { title: "Digital Radiography", image: "/medical/medical-econet/p7.png" },
-  { title: "Veterinary Imaging", image: "/medical/medical-econet/p8.png" },
+  { title: "Fetal Monitoring", image: "/medical/medical-econet/p1.webp" },
+  { title: "ECG", image: "/medical/medical-econet/p2.webp" },
+  { title: "Pulse Oxymetry", image: "/medical/medical-econet/p3.webp" },
+  { title: "Patient Monitoring", image: "/medical/medical-econet/p4.webp" },
+  { title: "BDM", image: "/medical/medical-econet/p5.webp" },
+  { title: "Emergency Care", image: "/medical/medical-econet/p6.webp" },
+  { title: "Digital Radiography", image: "/medical/medical-econet/p7.webp" },
+  { title: "Veterinary Imaging", image: "/medical/medical-econet/p8.webp" },
 ];
 
 // Bullet styles live on the pagination container so no global CSS is needed

@@ -12,12 +12,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const products = [
-  { title: "Vital Signs Devices", text: "Riester offers vital signs monitors, diagnostic stations, and more.", image: "s2.png" },
-  { title: "Eye and ENT Devices", text: "Advanced EENT instruments for everyday clinical use.", image: "s3.png" },
-  { title: "Medical Camera System", text: "Versatile camera for ear, throat, and skin examinations.", image: "s4.png" },
-  { title: "Diagnostic Stations", text: "Modular stations with integrated vital signs and handles.", image: "s5.png" },
-  { title: "Thermometry", text: "Precise digital temperature measurement.", image: "s6.png" },
-  { title: "Stethoscopes", text: "Stethoscopes for heart, lung, and bowel assessment.", image: "s7.png" },
+  { title: "Vital Signs Devices", text: "Riester offers vital signs monitors, diagnostic stations, and more.", image: "s2.webp" },
+  { title: "Eye and ENT Devices", text: "Advanced EENT instruments for everyday clinical use.", image: "s3.webp" },
+  { title: "Medical Camera System", text: "Versatile camera for ear, throat, and skin examinations.", image: "s4.webp" },
+  { title: "Diagnostic Stations", text: "Modular stations with integrated vital signs and handles.", image: "s5.webp" },
+  { title: "Thermometry", text: "Precise digital temperature measurement.", image: "s6.webp" },
+  { title: "Stethoscopes", text: "Stethoscopes for heart, lung, and bowel assessment.", image: "s7.webp" },
 ];
 
 // Pill bullets: filled when active, outlined otherwise

@@ -1,0 +1,298 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --font-palanquin: "Palanquin", "Palanquin Fallback", sans-serif;
+  --font-dm-sans: "DM Sans", "DM Sans Fallback", sans-serif;
+}
+
+@theme inline {
+  --color-primary: #24AEE7;
+  --color-primary-hover: #1c9cd1;
+  --color-secondary: #0B192C;
+  --color-secondary-hover: #07101d;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-palanquin), "Palanquin", sans-serif;
+  --font-secondary: var(--font-dm-sans), "DM Sans", sans-serif;
+  --breakpoint-lg: 64.4375rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-secondary);
+}
+
+.font-primary {
+  font-family: var(--font-palanquin), "Palanquin", sans-serif !important;
+}
+
+.font-secondary {
+  font-family: var(--font-dm-sans), "DM Sans", sans-serif !important;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+h1 { font-size: 2.25rem; /* 36px */ font-weight: 700 !important; font-family: var(--font-primary) !important; }
+h2 { font-size: 2rem; /* 32px */ font-weight: 700 !important; font-family: var(--font-primary) !important; }
+h3 { font-size: 1.25rem; /* 20px */ font-weight: 600; font-family: var(--font-primary) !important; }
+h4 { font-size: 1.0625rem; /* 17px */ font-weight: 700; font-family: var(--font-primary) !important; }
+p, li, .para-text, input, select, textarea, label { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); }
+input::placeholder, textarea::placeholder { font-size: 1rem; font-family: var(--font-secondary); }
+span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
+.navbar { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); }
+.footer-heading { font-size: 1.25rem; /* 20px */ font-weight: 600; font-family: var(--font-primary) !important; }
+.footer-body { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); }
+.button { font-size: 1rem; /* 16px */ font-weight: 600; font-family: var(--font-primary) !important; }
+.number { font-size: 8rem; /* 128px */ font-weight: 700; font-family: var(--font-primary) !important; color: rgba(255, 255, 255, 0.6); line-height: 1; }
+
+/* Custom Swiper Pagination */
+.custom-pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 1.5rem; }
+.custom-pagination .swiper-pagination-bullet { width: 10px !important; height: 10px !important; border-radius: 50% !important; background-color: #D1D5DB !important; opacity: 1 !important; transition: all 0.3s; margin: 0 !important; }
+.custom-pagination .swiper-pagination-bullet-active { width: 14px !important; height: 14px !important; background-color: var(--color-primary) !important; }
+
+/* Custom Line Bullet Pagination */
+.custom-line-bullet {
+  width: 32px !important;
+  height: 2px !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  border: 1px solid #000 !important;
+  opacity: 0.5 !important;
+  display: inline-block;
+  margin: 0 4px !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.swiper-pagination-bullet-active.custom-line-bullet {
+  background-color: #000 !important;
+  opacity: 1 !important;
+  border-width: 2px !important;
+}
+
+/* Mobile Portrait Screen (up to 480px) */
+/* Multiplier: ~0.7 */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.575rem; /* ~25.2px */ }
+  h2 { font-size: 1.4rem; /* 22.4px */ }
+  h3 { font-size: 0.875rem; /* 14px */ }
+  h4 { font-size: 0.75rem; /* 12px */ }
+  p, li, .para-text, input, select, textarea, label { font-size: 0.75rem; /* 12px */ }
+  input::placeholder, textarea::placeholder { font-size: 0.75rem; }
+  span { font-size: 0.6125rem; /* 9.8px */ }
+  .navbar { font-size: 0.75rem; /* 12px */ }
+  .footer-heading { font-size: 0.875rem; /* 14px */ }
+  .footer-body { font-size: 0.75rem; /* 12px */ }
+  .button { font-size: 0.75rem; /* 12px */ }
+  .number { font-size: 5.6rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+/* Multiplier: ~0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.8rem; /* 28.8px */ }
+  h2 { font-size: 1.6rem; /* 25.6px */ }
+  h3 { font-size: 1rem; /* 16px */ }
+  h4 { font-size: 0.85rem; /* 13.6px */ }
+  p, li, .para-text, input, select, textarea, label { font-size: 0.85rem; /* 13.6px */ }
+  input::placeholder, textarea::placeholder { font-size: 0.85rem; }
+  span { font-size: 0.7rem; /* 11.2px */ }
+  .navbar { font-size: 0.85rem; /* 13.6px */ }
+  .footer-heading { font-size: 1rem; /* 16px */ }
+  .footer-body { font-size: 0.85rem; /* 13.6px */ }
+  .button { font-size: 0.85rem; /* 13.6px */ }
+  .number { font-size: 6.4rem; }
+}
+
+/* Tablet / Tab Screen (768px - 1030px) */
+/* Multiplier: ~0.9 */
+@media (min-width: 768px) and (max-width: 1030px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.025rem; /* 32.4px */ }
+  h2 { font-size: 1.8rem; /* 28.8px */ }
+  h3 { font-size: 1.125rem; /* 18px */ }
+  h4 { font-size: 0.95625rem; /* 15.3px */ }
+  p, li, .para-text, input, select, textarea, label { font-size: 0.95625rem; /* 15.3px */ }
+  input::placeholder, textarea::placeholder { font-size: 0.95625rem; }
+  span { font-size: 0.7875rem; /* 12.6px */ }
+  .navbar { font-size: 0.95625rem; /* 15.3px */ }
+  .footer-heading { font-size: 1.125rem; /* 18px */ }
+  .footer-body { font-size: 0.95625rem; /* 15.3px */ }
+  .button { font-size: 0.95625rem; /* 15.3px */ }
+  .number { font-size: 7.2rem; }
+}
+
+/* Laptop Screen (1031px - 1279px) */
+/* Multiplier: ~0.95 */
+@media (min-width: 1031px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.1375rem; /* 34.2px */ }
+  h2 { font-size: 1.9rem; /* 30.4px */ }
+  h3 { font-size: 1.1875rem; /* 19px */ }
+  h4 { font-size: 1rem; /* 16px */ }
+  p, li, .para-text, input, select, textarea, label { font-size: 1rem; /* 16px */ }
+  input::placeholder, textarea::placeholder { font-size: 1rem; }
+  span { font-size: 0.83rem; /* 13.3px */ }
+  .navbar { font-size: 1rem; /* 16px */ }
+  .footer-heading { font-size: 1.1875rem; /* 19px */ }
+  .footer-body { font-size: 1rem; /* 16px */ }
+  .button { font-size: 1rem; /* 16px */ }
+  .number { font-size: 7.6rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+/* Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.375rem; /* 54px */ }
+  h2 { font-size: 3rem; /* 48px */ }
+  h3 { font-size: 1.875rem; /* 30px */ }
+  h4 { font-size: 1.6rem; /* 25.6px */ }
+  p, li, .para-text, input, select, textarea, label { font-size: 1.6rem; /* 25.6px */ }
+  input::placeholder, textarea::placeholder { font-size: 1.6rem; }
+  span { font-size: 1.3125rem; /* 21px */ }
+  .navbar { font-size: 1.6rem; /* 25.6px */ }
+  .footer-heading { font-size: 1.875rem; /* 30px */ }
+  .footer-body { font-size: 1.6rem; /* 25.6px */ }
+  .button { font-size: 1.6rem; /* 25.6px */ }
+  .number { font-size: 12rem; }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+/* Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.5rem; /* 72px */ }
+  h2 { font-size: 4rem; /* 64px */ }
+  h3 { font-size: 2.5rem; /* 40px */ }
+  h4 { font-size: 2.125rem; /* 34px */ }
+  p, li, .para-text, input, select, textarea, label { font-size: 2.125rem; /* 34px */ }
+  input::placeholder, textarea::placeholder { font-size: 2.125rem; }
+  span { font-size: 1.75rem; /* 28px */ }
+  .navbar { font-size: 2.125rem; /* 34px */ }
+  .footer-heading { font-size: 2.5rem; /* 40px */ }
+  .footer-body { font-size: 2.125rem; /* 34px */ }
+  .button { font-size: 2.125rem; /* 34px */ }
+  .number { font-size: 16rem; }
+}
+
+/* Responsive Icons & Feature Badges across Screen Sizes (Mobile through 2K, 2.5K, and 4K) */
+.responsive-icon-box {
+  width: 2.75rem !important;
+  height: 2.75rem !important;
+}
+.responsive-icon {
+  width: 1.35rem !important;
+  height: 1.35rem !important;
+}
+
+@media (min-width: 768px) {
+  .responsive-icon-box {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  .responsive-icon {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-icon-box {
+    width: 3.25rem !important;
+    height: 3.25rem !important;
+  }
+  .responsive-icon {
+    width: 1.65rem !important;
+    height: 1.65rem !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .responsive-icon-box {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+  .responsive-icon {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+  }
+}
+
+/* 2K Screens (1920px - 2499px) */
+@media (min-width: 1920px) {
+  .responsive-icon-box {
+    width: 4.75rem !important;
+    height: 4.75rem !important;
+    border-radius: 1.1rem !important;
+  }
+  .responsive-icon {
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+  }
+}
+
+/* Ultra-wide 2.5K Screens (2500px - 3799px) */
+@media (min-width: 2500px) {
+  .responsive-icon-box {
+    width: 6rem !important;
+    height: 6rem !important;
+    border-radius: 1.35rem !important;
+  }
+  .responsive-icon {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+}
+
+/* 4K Screens (3800px and above) */
+@media (min-width: 3800px) {
+  .responsive-icon-box {
+    width: 8rem !important;
+    height: 8rem !important;
+    border-radius: 1.75rem !important;
+  }
+  .responsive-icon {
+    width: 4.25rem !important;
+    height: 4.25rem !important;
+  }
+}

@@ -99,7 +99,7 @@ export default function Header() {
           >
             {/* The blue mark fills the bar height; the transparent area below it is cropped */}
             <img
-              src="/medical/medical-econet/logo.png"
+              src="/medical/medical-econet/logo.webp"
               alt="Medical Econet Logo"
               className="w-full h-full object-cover object-left-top"
             />
