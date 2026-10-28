@@ -8,17 +8,17 @@ const products = [
   {
     title: "NeedleVue Lite Cart",
     text: "FDA cleared NeedleVue LC1 Ultrasound System - stand-alone ultrasound cart system delivering powerful ultrasound imaging plus the potential to support advanced NeedleVue and OnPoint guidance capabilities.",
-    image: "p1.jpg",
+    image: "p1.webp",
   },
   {
     title: "NeedleVue Embedded",
     text: "Full-featured ultrasound system with or without advanced NeedleVue guidance that can be integrated into any medical or surgical device.",
-    image: "p2.jpg",
+    image: "p2.webp",
   },
   {
     title: "NeedleVue Lite Cart",
     text: "FDA cleared NeedleVue LC1 Ultrasound System - stand-alone ultrasound cart system delivering powerful ultrasound imaging plus the potential to support advanced NeedleVue and OnPoint guidance capabilities.",
-    image: "p3.jpg",
+    image: "p3.webp",
   },
 ];
 

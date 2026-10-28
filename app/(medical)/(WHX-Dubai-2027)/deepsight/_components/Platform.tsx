@@ -11,21 +11,21 @@ interface Application {
 
 const columns: Application[][] = [
   [
-    { title: "Biopsy", lines: ["Abdominal (first FDA indication)", "Breast | Thyroid | Prostate"], icon: "n1.png" },
-    { title: "Ablation", lines: ["(RF/Microwave/EP/Cryo)", "Tumor | Cardiac"], icon: "n2.png" },
+    { title: "Biopsy", lines: ["Abdominal (first FDA indication)", "Breast | Thyroid | Prostate"], icon: "n1.webp" },
+    { title: "Ablation", lines: ["(RF/Microwave/EP/Cryo)", "Tumor | Cardiac"], icon: "n2.webp" },
     {
       title: "Targeted Drug/ Therapeutic Deliveries",
       lines: ["Brachytherapy", "Fiducial/Marker Placement"],
-      icon: "n3.png",
+      icon: "n3.webp",
     },
   ],
   [
-    { title: "Vascular Access / Procedures", lines: ["TIPS | PAD"], icon: "n4.png" },
-    { title: "Drainages", lines: ["Thoracentesis, Paracentesis, Biliary etc."], icon: "n5.png" },
+    { title: "Vascular Access / Procedures", lines: ["TIPS | PAD"], icon: "n4.webp" },
+    { title: "Drainages", lines: ["Thoracentesis, Paracentesis, Biliary etc."], icon: "n5.webp" },
     {
       title: "Contrast Enhanced Ultrasound",
       lines: ["Neurosurgical applications", "Ventricular drainage, etc."],
-      icon: "n6.png",
+      icon: "n6.webp",
     },
   ],
 ];
@@ -66,7 +66,7 @@ export default function Platform() {
             data-aos="fade-right"
           >
             <img
-              src="/(WHX-Dubai-2027)/deepsight/section3.png"
+              src="/(WHX-Dubai-2027)/deepsight/section3.webp"
               alt="Ultrasound-guided needle procedure visualization"
               className="w-full h-full object-cover object-left"
             />

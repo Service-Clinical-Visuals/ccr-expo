@@ -6,9 +6,9 @@ import Typography from "./Typography";
 import Button from "./Button";
 
 const news = [
-  { title: "DeepSight Technology Appoints Scott Huennekens to Board of Directors", image: "i1.png" },
-  { title: "Dr. Alyssa Abo, MD Presentation at LSI 2026", image: "i2.png" },
-  { title: "DeepSight™ Technology Unveils its Comprehensive NeedleVue™ Platform at SIR 2026", image: "i3.png" },
+  { title: "DeepSight Technology Appoints Scott Huennekens to Board of Directors", image: "i1.webp" },
+  { title: "Dr. Alyssa Abo, MD Presentation at LSI 2026", image: "i2.webp" },
+  { title: "DeepSight™ Technology Unveils its Comprehensive NeedleVue™ Platform at SIR 2026", image: "i3.webp" },
 ];
 
 export default function News() {

@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-3 xl:col-span-1 flex flex-col items-start gap-6 2xl:gap-7 min-[2500px]:gap-10 min-[3800px]:gap-14 xl:pr-[14%]" data-aos="fade-up">
             <Link href="#home" aria-label="Deep Sight Home">
               <img
-                src="/(WHX-Dubai-2027)/deepsight/logo.png"
+                src="/(WHX-Dubai-2027)/deepsight/logo.webp"
                 alt="Deep Sight Technology Logo"
                 className="w-[120px] sm:w-[130px] 2xl:w-[138px] min-[2500px]:w-[200px] min-[3800px]:w-[276px] h-auto object-contain brightness-0 invert"
               />
