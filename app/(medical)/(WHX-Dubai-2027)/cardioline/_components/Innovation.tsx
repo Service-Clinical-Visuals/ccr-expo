@@ -5,11 +5,11 @@ import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 import Typography from "./Typography";
 
 const features = [
-  { title: "Intuitive Android Interface", icon: "icon1.png" },
-  { title: "Advanced ECG Recording", icon: "icon2.png" },
-  { title: "Efficient Workflow Controls", icon: "icon3.png" },
-  { title: "Clear ECG Visualization", icon: "icon4.png" },
-  { title: "Digital Data Management", icon: "icon5.png" },
+  { title: "Intuitive Android Interface", icon: "icon1.webp" },
+  { title: "Advanced ECG Recording", icon: "icon2.webp" },
+  { title: "Efficient Workflow Controls", icon: "icon3.webp" },
+  { title: "Clear ECG Visualization", icon: "icon4.webp" },
+  { title: "Digital Data Management", icon: "icon5.webp" },
 ];
 
 export default function Innovation() {

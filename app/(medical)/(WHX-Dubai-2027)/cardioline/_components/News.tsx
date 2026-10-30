@@ -14,19 +14,19 @@ interface NewsItem {
 const featured: NewsItem = {
   title: "Innovation and growth: our story on Valore Medico",
   text: "We are happy to share that Cardioline was featured in the Valore Medico magazine, published by RCS Corriere della Sera, with an article dedicated to our journey and the innovative solutions we bring to cardiac diagnostics.",
-  image: "n1.png",
+  image: "n1.webp",
 };
 
 const news: NewsItem[] = [
   {
     title: "Cardioline Acquires Cardios",
     text: "The strategic combination combines Cardioline’s global reach and proven cardiac technology with Cardios’ expertise in remote cardiac monitoring.",
-    image: "n2.png",
+    image: "n2.webp",
   },
   {
     title: "From Devices to Solutions: Innovating Cardiac Diagnostics",
     text: "Cardioline was featured in Business Focus Magazine, an international magazine, with the article “The Beating Heart of Better Cardiac Care”.",
-    image: "n3.png",
+    image: "n3.webp",
   },
 ];
 

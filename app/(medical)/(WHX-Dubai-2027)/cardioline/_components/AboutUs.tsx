@@ -36,7 +36,7 @@ export default function AboutUs() {
           <div className="w-1/2 aspect-[270/66] bg-primary rounded-t-[8px] min-[2500px]:rounded-t-[12px] min-[3800px]:rounded-t-[16px]" />
           <div className="w-full aspect-[535/358] overflow-hidden rounded-[8px] min-[2500px]:rounded-[12px] min-[3800px]:rounded-[16px]">
             <img
-              src="/(WHX-Dubai-2027)/cardioline/section2.png"
+              src="/(WHX-Dubai-2027)/cardioline/section2.webp"
               alt="Clinician reviewing a digital cardiac diagnostic interface"
               className="w-full h-full object-cover"
             />

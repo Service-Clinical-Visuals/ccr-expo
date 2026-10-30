@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-3 xl:col-span-1 flex flex-col items-start gap-6 min-[2500px]:gap-10 min-[3800px]:gap-14 xl:pr-[14%]" data-aos="fade-up">
             <Link href="#home" aria-label="Cardioline Home">
               <img
-                src="/(WHX-Dubai-2027)/cardioline/logo.png"
+                src="/(WHX-Dubai-2027)/cardioline/logo.webp"
                 alt="Cardioline Logo"
                 className="w-[160px] sm:w-[175px] xl:min-w-[280px] min-[2500px]:w-[280px] min-[3800px]:w-[350px] h-auto object-contain"
               />

@@ -9,22 +9,22 @@ const products = [
   {
     title: "Electrocardiographs",
     text: "Advanced features with unmatched ease of use for seamless, efficient, and high-quality patient care.",
-    image: "p1.png",
+    image: "p1.webp",
   },
   {
     title: "ECG Workstation",
     text: "Reliable, versatile, and scalable, Cardioline’s ECG solutions meet the needs of hospital departments and specialized outpatient clinics.",
-    image: "p2.png",
+    image: "p2.webp",
   },
   {
     title: "Electrocardiographs",
     text: "Compact, intuitive, and lightweight, Cardioline’s digital ECG solutions are ideal for telemedicine and a wide range of clinical settings.",
-    image: "p3.png",
+    image: "p3.webp",
   },
   {
     title: "Holter Monitoring",
     text: "Next-generation Holter monitoring solutions featuring advanced analysis software for fast, precise reviews of 24/48h or 7 days.",
-    image: "p4.png",
+    image: "p4.webp",
   },
 ];
 

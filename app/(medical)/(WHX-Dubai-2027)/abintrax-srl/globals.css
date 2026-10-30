@@ -1,0 +1,218 @@
+@import "./fonts.css";
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1E1E1E;
+}
+
+@theme inline {
+  --color-primary: #3AA5DD;
+  --color-primary-hover: #298bbd;
+  --color-secondary: #17181C;
+  --color-secondary-hover: #000000;
+  --color-didact: #3AA5DD;
+  --color-health: #DC64A1;
+  --color-accent-yellow: #FFCC00;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: 'DM Sans', sans-serif;
+  --font-secondary: 'Outfit', sans-serif;
+  --font-sora: 'Sora', sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-primary {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+.font-secondary {
+  font-family: 'Outfit', sans-serif !important;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Secondary Container for maintaining bg image / bg colour box in Deg360, SmartECG, Connectivity */
+.custom-box-container,
+.custom-container-box {
+  width: 100% !important;
+  max-width: 95% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+h1 { font-size: 2.1875rem; /* 35px */ font-weight: 700 !important; font-family: var(--font-primary); }
+h2 { font-size: 1.6875rem; /* 27px */ font-weight: 700 !important; font-family: var(--font-primary); }
+h3 { font-size: 1.4375rem; /* 23px */ font-weight: 700; font-family: var(--font-primary); }
+h4 { font-size: 1.1875rem; /* 19px */ font-weight: 600; font-family: var(--font-primary); }
+p, li { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary); }
+input, textarea, input::placeholder, textarea::placeholder { font-size: 1.0625rem; font-family: var(--font-secondary); }
+input::placeholder, textarea::placeholder { color: rgba(51, 51, 51, 0.5); opacity: 1; }
+span { font-size: 0.8125rem; /* 13px */ font-family: var(--font-secondary); }
+.navbar { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary); }
+.footer-heading { font-size: 1.1875rem; /* 19px */ font-weight: 600; font-family: var(--font-primary); }
+.footer-body { font-size: 1.0625rem; /* 17px */ font-weight: 400; font-family: var(--font-secondary); }
+.button { font-size: 1.0625rem; /* 17px */ font-weight: 500; font-family: var(--font-primary) !important; }
+.number { font-size: 5.9375rem; /* 95px */ font-weight: 700; font-family: var(--font-primary); line-height: 1; }
+
+/* Mobile Portrait Screen (up to 480px) */
+/* Multiplier: ~0.7 */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.5125rem; /* ~24.2px */ }
+  h2 { font-size: 1.2875rem; /* ~20.6px */ }
+  h3 { font-size: 1.0375rem; /* ~16.6px */ }
+  h4 { font-size: 0.8875rem; /* ~14.2px */ }
+  p, li { font-size: 0.7875rem; /* ~12.6px */ }
+  input, textarea, input::placeholder, textarea::placeholder { font-size: 0.7875rem; }
+  span { font-size: 0.5875rem; /* ~9.4px */ }
+  .navbar { font-size: 0.7875rem; }
+  .footer-heading { font-size: 0.8875rem; }
+  .footer-body { font-size: 0.7875rem; }
+  .button { font-size: 0.7875rem; }
+  .number { font-size: 4.1375rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+/* Multiplier: ~0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.7375rem; /* ~27.8px */ }
+  h2 { font-size: 1.3875rem; /* ~22.2px */ }
+  h3 { font-size: 1.1375rem; /* ~18.2px */ }
+  h4 { font-size: 0.9375rem; /* 15px */ }
+  p, li { font-size: 0.8875rem; /* ~14.2px */ }
+  input, textarea, input::placeholder, textarea::placeholder { font-size: 0.8875rem; }
+  span { font-size: 0.6625rem; /* ~10.6px */ }
+  .navbar { font-size: 0.8875rem; }
+  .footer-heading { font-size: 0.9375rem; }
+  .footer-body { font-size: 0.8875rem; }
+  .button { font-size: 0.8875rem; }
+  .number { font-size: 4.7375rem; }
+}
+
+/* Tablet / Tab Screen (768px - 1023px) */
+/* Multiplier: ~0.9 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.9625rem; /* ~31.4px */ }
+  h2 { font-size: 1.5125rem; /* ~24.2px */ }
+  h3 { font-size: 1.2875rem; /* ~20.6px */ }
+  h4 { font-size: 1.0625rem; /* 17px */ }
+  p, li { font-size: 0.9375rem; /* 15px */ }
+  input, textarea, input::placeholder, textarea::placeholder { font-size: 0.9375rem; }
+  span { font-size: 0.7375rem; /* ~11.8px */ }
+  .navbar { font-size: 0.9375rem; }
+  .footer-heading { font-size: 1.0625rem; }
+  .footer-body { font-size: 0.9375rem; }
+  .button { font-size: 0.9375rem; }
+  .number { font-size: 5.3375rem; }
+}
+
+/* Laptop Screen (1024px - 1279px) */
+/* Multiplier: ~0.95 */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.075rem; /* ~33.2px */ }
+  h2 { font-size: 1.6rem; /* ~25.6px */ }
+  h3 { font-size: 1.3625rem; /* ~21.8px */ }
+  h4 { font-size: 1.125rem; /* 18px */ }
+  p, li { font-size: 0.9875rem; /* ~15.8px */ }
+  input, textarea, input::placeholder, textarea::placeholder { font-size: 0.9875rem; }
+  span { font-size: 0.7675rem; /* ~12.3px */ }
+  .navbar { font-size: 0.9875rem; }
+  .footer-heading { font-size: 1.125rem; }
+  .footer-body { font-size: 0.9875rem; }
+  .button { font-size: 0.9875rem; }
+  .number { font-size: 5.6375rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+/* Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.3125rem; /* 53px */ }
+  h2 { font-size: 2.5625rem; /* 41px */ }
+  h3 { font-size: 2.1875rem; /* 35px */ }
+  h4 { font-size: 1.8125rem; /* 29px */ }
+  p, li { font-size: 1.625rem; /* 26px */ }
+  input, textarea, input::placeholder, textarea::placeholder { font-size: 1.625rem; }
+  span { font-size: 1.25rem; /* 20px */ }
+  .navbar { font-size: 1.625rem; }
+  .footer-heading { font-size: 1.8125rem; }
+  .footer-body { font-size: 1.625rem; }
+  .button { font-size: 1.625rem; }
+  .number { font-size: 8.9375rem; }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+/* Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.4375rem; /* 71px */ }
+  h2 { font-size: 3.4375rem; /* 55px */ }
+  h3 { font-size: 2.9375rem; /* 47px */ }
+  h4 { font-size: 2.4375rem; /* 39px */ }
+  p, li { font-size: 2.1875rem; /* 35px */ }
+  input, textarea, input::placeholder, textarea::placeholder { font-size: 2.1875rem; }
+  span { font-size: 1.6875rem; /* 27px */ }
+  .navbar { font-size: 2.1875rem; }
+  .footer-heading { font-size: 2.4375rem; }
+  .footer-body { font-size: 2.1875rem; }
+  .button { font-size: 2.1875rem; }
+  .number { font-size: 11.9375rem; }
+}
+
+/* Footer tablet layout preserved up to 1030px */
+@media (min-width: 768px) and (max-width: 1030px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .footer-grid > div {
+    grid-column: span 1 / span 1 !important;
+  }
+}

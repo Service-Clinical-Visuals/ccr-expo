@@ -90,7 +90,7 @@ export default function Header() {
             aria-label="Cardioline Home"
           >
             <img
-              src="/(WHX-Dubai-2027)/cardioline/logo.png"
+              src="/(WHX-Dubai-2027)/cardioline/logo.webp"
               alt="Cardioline Logo"
               className="w-[130px] sm:w-[150px] 2xl:w-[175px] min-[2500px]:w-[250px] min-[3800px]:w-[350px] h-auto object-contain"
             />
