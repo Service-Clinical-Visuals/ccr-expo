@@ -66,7 +66,7 @@ export default function Platform() {
             data-aos="fade-right"
           >
             <img
-              src="/(WHX-Dubai-2027)/deepsight/section3.webp"
+              src="/medical/deepsight/section3.webp"
               alt="Ultrasound-guided needle procedure visualization"
               className="w-full h-full object-cover object-left"
             />
@@ -83,7 +83,7 @@ export default function Platform() {
                 <div key={item.title} className="flex items-start gap-4 2xl:gap-5 min-[2500px]:gap-7 min-[3800px]:gap-10">
                   <span className="flex items-center justify-center shrink-0 w-14 h-14 2xl:w-16 2xl:h-16 min-[2500px]:w-24 min-[2500px]:h-24 min-[3800px]:w-32 min-[3800px]:h-32 rounded-full bg-[#E9F8FF]">
                     <img
-                      src={`/(WHX-Dubai-2027)/deepsight/${item.icon}`}
+                      src={`/medical/deepsight/${item.icon}`}
                       alt=""
                       className="w-8 h-8 2xl:w-11 2xl:h-11 min-[2500px]:w-14 min-[2500px]:h-14 min-[3800px]:w-[72px] min-[3800px]:h-[72px] object-contain"
                     />

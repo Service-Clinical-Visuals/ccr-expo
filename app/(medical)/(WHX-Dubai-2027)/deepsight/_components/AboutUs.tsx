@@ -47,7 +47,7 @@ export default function AboutUs() {
             <div className="absolute top-[11%] bottom-[-7%] left-[10%] right-0 bg-secondary rounded-[8px] min-[2500px]:rounded-[12px] min-[3800px]:rounded-[16px]" />
             <div className="relative w-full aspect-[600/445] overflow-hidden rounded-[8px] min-[2500px]:rounded-[12px] min-[3800px]:rounded-[16px]">
               <img
-                src="/(WHX-Dubai-2027)/deepsight/section2.webp"
+                src="/medical/deepsight/section2.webp"
                 alt="The DeepSight Technology team"
                 className="w-full h-full object-cover"
               />

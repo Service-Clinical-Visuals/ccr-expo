@@ -63,7 +63,7 @@ export default function Products() {
 
               <div className="relative z-10 ml-[21%] w-[54.5%] aspect-[178/187] transition-transform duration-500 group-hover:-translate-y-2 min-[2500px]:group-hover:-translate-y-3 min-[3800px]:group-hover:-translate-y-4 rounded-full border-[5px] min-[2500px]:border-[7px] min-[3800px]:border-[10px] border-secondary bg-white overflow-hidden">
                 <img
-                  src={`/(WHX-Dubai-2027)/cardioline/${item.image}`}
+                  src={`/medical/cardioline/${item.image}`}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform duration-500"
                 />

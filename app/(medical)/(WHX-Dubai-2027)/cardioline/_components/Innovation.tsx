@@ -56,7 +56,7 @@ export default function Innovation() {
               >
                 <div className="flex items-center justify-center w-[65px] h-[65px] min-[2500px]:w-[76px] min-[2500px]:h-[76px] min-[3800px]:w-[100px] min-[3800px]:h-[100px] rounded-full bg-white/15 border border-white/30">
                   <img
-                    src={`/(WHX-Dubai-2027)/cardioline/${item.icon}`}
+                    src={`/medical/cardioline/${item.icon}`}
                     alt=""
                     aria-hidden="true"
                     className="w-9 h-9 min-[2500px]:w-9 min-[2500px]:h-9 min-[3800px]:w-12 min-[3800px]:h-12 object-contain"

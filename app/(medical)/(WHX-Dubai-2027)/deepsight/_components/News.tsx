@@ -49,7 +49,7 @@ export default function News() {
             >
               <div className="w-full aspect-[364/167] overflow-hidden rounded-[6px] min-[2500px]:rounded-[9px] min-[3800px]:rounded-[12px] border border-[#EEEEEE]">
                 <img
-                  src={`/(WHX-Dubai-2027)/deepsight/${item.image}`}
+                  src={`/medical/deepsight/${item.image}`}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
                 />

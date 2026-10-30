@@ -45,7 +45,7 @@ function CardImage({ item }: { item: NewsItem }) {
   return (
     <div className="w-full aspect-[600/471] sm:aspect-auto sm:h-full overflow-hidden">
       <img
-        src={`/(WHX-Dubai-2027)/cardioline/${item.image}`}
+        src={`/medical/cardioline/${item.image}`}
         alt={item.title}
         className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
       />

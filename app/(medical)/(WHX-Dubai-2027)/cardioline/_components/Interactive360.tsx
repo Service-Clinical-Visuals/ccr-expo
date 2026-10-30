@@ -38,7 +38,7 @@ export default function Interactive360() {
             {features.map(({ title, text }) => (
               <li key={title} className="grid grid-cols-[auto_1fr] items-start gap-1.5 min-[2500px]:gap-3 min-[3800px]:gap-4">
                 <img
-                  src="/(WHX-Dubai-2027)/cardioline/Vector.webp"
+                  src="/medical/cardioline/Vector.webp"
                   alt=""
                   aria-hidden="true"
                   className="w-[18px] h-[18px] min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-9 min-[3800px]:h-9 mt-0.5 min-[2500px]:mt-1 object-contain"

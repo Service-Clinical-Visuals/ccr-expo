@@ -8,7 +8,7 @@ export default function Intelligent() {
   return (
     <section
       id="solutions"
-      className="w-full bg-[#E9F8FF] bg-[url('/(WHX-Dubai-2027)/deepsight/bg.webp')] bg-cover bg-bottom bg-no-repeat py-12 sm:py-16 lg:py-[60px] 2xl:py-[64px] min-[2500px]:py-28 min-[3800px]:py-40 overflow-hidden"
+      className="w-full bg-[#E9F8FF] bg-[url('/medical/deepsight/bg.webp')] bg-cover bg-bottom bg-no-repeat py-12 sm:py-16 lg:py-[60px] 2xl:py-[64px] min-[2500px]:py-28 min-[3800px]:py-40 overflow-hidden"
     >
       <div className="custom-container flex flex-col items-center">
         {/* Heading */}

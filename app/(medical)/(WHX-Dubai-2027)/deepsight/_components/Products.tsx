@@ -60,7 +60,7 @@ export default function Products() {
             >
               <div className="w-full h-[220px] sm:h-[240px] 2xl:h-[260px] min-[2500px]:h-[370px] min-[3800px]:h-[520px] flex items-center justify-center">
                 <img
-                  src={`/(WHX-Dubai-2027)/deepsight/${item.image}`}
+                  src={`/medical/deepsight/${item.image}`}
                   alt={item.title}
                   className="max-w-[85%] max-h-full object-contain mix-blend-multiply group-hover:scale-[1.04] transition-transform duration-500"
                 />

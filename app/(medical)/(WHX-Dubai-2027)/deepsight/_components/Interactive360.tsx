@@ -16,7 +16,7 @@ export default function Interactive360() {
   return (
     <section
       id="experience-360"
-      className="w-full bg-[#E9F8FF] bg-[url('/(WHX-Dubai-2027)/deepsight/bg.webp')] bg-cover bg-bottom bg-no-repeat py-12 sm:py-16 lg:py-[70px] 2xl:py-[70px] min-[2500px]:py-28 min-[3800px]:py-40 overflow-hidden"
+      className="w-full bg-[#E9F8FF] bg-[url('/medical/deepsight/bg.webp')] bg-cover bg-bottom bg-no-repeat py-12 sm:py-16 lg:py-[70px] 2xl:py-[70px] min-[2500px]:py-28 min-[3800px]:py-40 overflow-hidden"
     >
       <div className="custom-container grid grid-cols-1 lg:grid-cols-12 items-center gap-10 lg:gap-8 min-[2500px]:gap-14 min-[3800px]:gap-20">
         {/* Content (first on mobile/tablet) */}

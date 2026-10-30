@@ -65,7 +65,7 @@ export default function Platform() {
         {/* Globe (last on mobile/tablet) */}
         <div className="order-2 xl:col-span-5 flex justify-center xl:justify-end" data-aos="fade-left">
           <img
-            src="/(WHX-Dubai-2027)/cardioline/world.webp"
+            src="/medical/cardioline/world.webp"
             alt="Globe showing Cardioline's offices and export markets"
             className="w-full max-w-[420px] xl:max-w-none h-auto object-contain"
           />

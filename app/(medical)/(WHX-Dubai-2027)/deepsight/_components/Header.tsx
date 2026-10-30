@@ -73,7 +73,7 @@ export default function Header() {
           aria-label="Deep Sight Home"
         >
           <img
-            src="/(WHX-Dubai-2027)/deepsight/logo.webp"
+            src="/medical/deepsight/logo.webp"
             alt="Deep Sight Technology Logo"
             className="w-[76px] sm:w-[84px] 2xl:w-[100px] min-[2500px]:w-[134px] min-[3800px]:w-[184px] h-auto object-contain"
           />
