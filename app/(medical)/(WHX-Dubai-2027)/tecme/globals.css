@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #2A2A2A;
+  --color-primary: #005EAC;
+  --color-primary-hover: #004d8c;
+  --color-secondary: #2A2A2A;
+  --color-accent: #3EC19F;
+  --color-text-body: #4A4A4A;
+  --font-primary: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-primary: #005EAC;
+  --color-primary-hover: #004d8c;
+  --color-secondary: #2A2A2A;
+  --color-accent: #3EC19F;
+  --color-text-body: #4A4A4A;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+.tecme-fonts {
+  --font-primary: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-secondary) !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-secondary);
+}
+
+.tecme-fonts h1, h1 { font-family: var(--font-primary) !important; }
+.tecme-fonts h2, h2 { font-family: var(--font-primary) !important; }
+.tecme-fonts h3, h3 { font-family: var(--font-primary) !important; }
+.tecme-fonts h4, h4 { font-family: var(--font-primary) !important; }
+.tecme-fonts p, p, li { font-family: var(--font-secondary) !important; }
+.tecme-fonts span, span { font-family: var(--font-secondary); }
+.navbar { font-family: var(--font-primary) !important; }
+.footer-heading { font-family: var(--font-primary) !important; }
+.footer-body { font-family: var(--font-secondary) !important; }
+.button { font-family: var(--font-primary) !important; }
+.stat-number { font-family: var(--font-primary) !important; }
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Gradient Utilities */
+.gradient-accent {
+  background: linear-gradient(90deg, #3EC19F 0%, #2B7AB7 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(180deg, #3EC19F 0%, #0060AE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+h1 { font-size: 2.25rem; /* 36px */ font-weight: 600 !important; font-family: var(--font-primary); }
+h2 { font-size: 1.875rem; /* 30px */ font-weight: 600 !important; font-family: var(--font-primary); }
+h3 { font-size: 1.5rem; /* 24px */ font-weight: 600; font-family: var(--font-primary); }
+h4 { font-size: 1.0625rem; /* 17px */ font-weight: 600; font-family: var(--font-primary); }
+p, li { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); line-height: 1.5; }
+span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
+.navbar { font-size: 1rem; /* 16px */ font-weight: 500; font-family: var(--font-primary); }
+.footer-heading { font-size: 1.375rem; /* 22px */ font-weight: 600; font-family: var(--font-primary); }
+.footer-body { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); }
+.button { font-size: 1rem; /* 16px - matches normal para texts */ font-weight: 600; font-family: var(--font-primary) !important; }
+.stat-number { font-size: 3.125rem; /* 50px */ font-weight: 700; font-family: var(--font-primary); line-height: 1.2; }
+
+/* Custom Swiper Pagination */
+.custom-pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 1.5rem; }
+.custom-pagination .swiper-pagination-bullet { width: 10px !important; height: 10px !important; border-radius: 50% !important; background-color: #D1D5DB !important; opacity: 1 !important; transition: all 0.3s; margin: 0 !important; }
+.custom-pagination .swiper-pagination-bullet-active { width: 14px !important; height: 14px !important; background-color: var(--color-primary) !important; }
+
+/* Mobile Portrait Screen (up to 480px) */
+/* Multiplier: ~0.7 */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.575rem; }
+  h2 { font-size: 1.3125rem; }
+  h3 { font-size: 1.05rem; }
+  h4 { font-size: 0.75rem; }
+  p, li { font-size: 0.75rem; }
+  span { font-size: 0.6125rem; }
+  .navbar { font-size: 0.75rem; }
+  .footer-heading { font-size: 0.95rem; }
+  .footer-body { font-size: 0.75rem; }
+  .button { font-size: 0.75rem; }
+  .stat-number { font-size: 2.2rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+/* Multiplier: ~0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+  h4 { font-size: 0.85rem; }
+  p, li { font-size: 0.85rem; }
+  span { font-size: 0.7rem; }
+  .navbar { font-size: 0.85rem; }
+  .footer-heading { font-size: 1.1rem; }
+  .footer-body { font-size: 0.85rem; }
+  .button { font-size: 0.85rem; }
+  .stat-number { font-size: 2.5rem; }
+}
+
+/* Tablet / Tab Screen (768px - 1023px) */
+/* Multiplier: ~0.9 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.025rem; }
+  h2 { font-size: 1.6875rem; }
+  h3 { font-size: 1.35rem; }
+  h4 { font-size: 0.95625rem; }
+  p, li { font-size: 0.9rem; }
+  span { font-size: 0.7875rem; }
+  .navbar { font-size: 0.9rem; }
+  .footer-heading { font-size: 1.24rem; }
+  .footer-body { font-size: 0.9rem; }
+  .button { font-size: 0.9rem; }
+  .stat-number { font-size: 2.8rem; }
+}
+
+/* Laptop Screen (1024px - 1279px) */
+/* Multiplier: ~0.95 */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.1375rem; }
+  h2 { font-size: 1.78rem; }
+  h3 { font-size: 1.425rem; }
+  h4 { font-size: 1rem; }
+  p, li { font-size: 0.95rem; }
+  span { font-size: 0.83rem; }
+  .navbar { font-size: 0.95rem; }
+  .footer-heading { font-size: 1.3rem; }
+  .footer-body { font-size: 0.95rem; }
+  .button { font-size: 0.95rem; }
+  .stat-number { font-size: 2.95rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+/* Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.375rem; }
+  h2 { font-size: 2.8125rem; }
+  h3 { font-size: 2.25rem; }
+  h4 { font-size: 1.6rem; }
+  p, li { font-size: 1.5rem; }
+  span { font-size: 1.3125rem; }
+  .navbar { font-size: 1.5rem; }
+  .footer-heading { font-size: 2.06rem; }
+  .footer-body { font-size: 1.5rem; }
+  .button { font-size: 1.5rem; }
+  .stat-number { font-size: 4.7rem; }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+/* Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.5rem; }
+  h2 { font-size: 3.75rem; }
+  h3 { font-size: 3rem; }
+  h4 { font-size: 2.125rem; }
+  p, li { font-size: 2rem; }
+  span { font-size: 1.75rem; }
+  .navbar { font-size: 2rem; }
+  .footer-heading { font-size: 2.75rem; }
+  .footer-body { font-size: 2rem; }
+  .button { font-size: 2rem; }
+  .stat-number { font-size: 6.25rem; }
+}
+
