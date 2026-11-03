@@ -9,9 +9,9 @@ export default function Prednidelt() {
   return (
     <section
       id="pharmaceutical"
-      className="w-full py-16 lg:py-24 bg-[#003470] text-white overflow-hidden"
+      className="w-full py-16 lg:py-24 bg-[#003470] bg-[url('/medical/biotech/images/bg1.webp')] bg-cover bg-center bg-no-repeat text-white relative overflow-hidden"
     >
-      <div className="custom-container flex flex-col gap-6 sm:gap-8 lg:gap-12">
+      <div className="custom-container relative z-10 flex flex-col gap-6 sm:gap-8 lg:gap-12">
         {/* Mobile & Tablet Heading Block (visible up to 1025px, hidden on desktop) */}
         <div className="block lg:hidden" data-aos="fade-up">
           <Typography variant="h2" color="white" className="mb-3">

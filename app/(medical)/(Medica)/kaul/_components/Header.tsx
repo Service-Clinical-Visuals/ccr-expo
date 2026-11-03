@@ -115,7 +115,7 @@ export default function Header() {
             type="button"
             onClick={() => setSearchOpen(!searchOpen)}
             aria-label="Search"
-            className="sm:hidden w-9 h-9 rounded-full border border-slate-600 text-[#FCC100] hover:bg-[#FCC100]/5 active:scale-95 flex items-center justify-center transition-colors cursor-pointer"
+            className="sm:hidden w-9 h-9 rounded-full border border-slate-600 text-[#FCC100] hover:bg-[#FCC100] hover:text-white hover:border-[#FCC100] active:scale-95 flex items-center justify-center transition-colors cursor-pointer"
           >
             <Search className="w-4 h-4 stroke-[2.2]" />
           </button>
@@ -184,9 +184,9 @@ export default function Header() {
                   setMobileMenuOpen(false);
                   setSearchOpen(true);
                 }}
-                className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 border border-[#FCC100] text-[#FCC100] rounded-lg hover:bg-[#FCC100]/5 transition-colors font-poppins search-btn-text font-medium cursor-pointer"
+                className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 border border-[#FCC100] text-[#FCC100] rounded-lg hover:bg-[#FCC100] hover:text-white transition-colors font-poppins search-btn-text font-medium cursor-pointer group"
               >
-                <Search className="w-4 h-4 text-[#FCC100]" />
+                <Search className="w-4 h-4 text-[#FCC100] group-hover:text-white transition-colors" />
                 <span>Search</span>
               </button>
             </div>

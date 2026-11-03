@@ -35,14 +35,21 @@ export default function Button({
 }: ButtonProps) {
   const isDarkBg = variant === "white" || variant === "outline-white";
 
-  // Variant styles matching the user's screenshots
-  const variantStyles = isDarkBg
-    ? "border border-white text-white hover:bg-white/10"
-    : "border border-[#FCC100] text-[#FCC100] hover:bg-[#FCC100]/10";
+  // Variant styles matching the user's requirement: hover bg #FCC100, hover text white
+  let variantStyles =
+    "border border-[#FCC100] text-[#FCC100] hover:bg-[#FCC100] hover:text-white hover:border-[#FCC100]";
+
+  if (isDarkBg) {
+    variantStyles =
+      "border border-white text-white hover:bg-[#FCC100] hover:text-white hover:border-[#FCC100]";
+  } else if (variant === "primary") {
+    variantStyles =
+      "border border-[#FCC100] bg-[#FCC100] text-white hover:bg-[#FCC100] hover:text-white hover:border-[#FCC100]";
+  }
 
   const buttonContent = (
     <div
-      className={`inline-flex items-center gap-2 px-6 py-2.5 rounded-[10px] transition-colors duration-300 font-poppins font-semibold group active:scale-95 select-none ${variantStyles} ${className}`}
+      className={`inline-flex items-center gap-2 px-6 py-2.5 rounded-[10px] transition-all duration-300 font-poppins font-semibold group active:scale-95 select-none ${variantStyles} ${className}`}
     >
       <span className="btn-text whitespace-nowrap">
         {children || text}

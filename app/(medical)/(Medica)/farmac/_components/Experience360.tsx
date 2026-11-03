@@ -39,12 +39,13 @@ export default function Experience360() {
 
             {/* Heading */}
             <h2 className="section-title font-medium font-poppins text-white tracking-tight mb-5">
-              Safe & Reliable Urinary Drainage
+              Electromedical equipment
             </h2>
 
             {/* Subtext */}
             <p className="section-text text-white font-inter font-normal leading-relaxed mb-6">
-              The Farmac 2-Way Silicone Foley Catheter provides safe, comfortable urinary drainage. Made from 100% silicone and latex-free.          </p>
+              Farmac Zabban's experience has allowed the creation of a highly technological line of electromedical devices that fully satisfy user needs.
+            </p>
 
             {/* Feature Cards */}
             <div className="flex flex-col gap-3.5 sm:gap-4 mb-6">
@@ -58,8 +59,8 @@ export default function Experience360() {
                   />
                 </div>
                 <p className="section-text text-slate-700 font-inter font-normal leading-snug">
-                  Supports gentle catheterisation with a smooth design that
-                  helps provide comfortable and dependable use.             </p>
+                  The products are highly effective and safe, tested and certified
+                  according to the relevant CE and EN standards             </p>
               </div>
 
               {/* Feature Card 2 */}
@@ -72,8 +73,8 @@ export default function Experience360() {
                   />
                 </div>
                 <p className="section-text text-slate-700 font-inter font-normal leading-snug">
-                  Secure positioning helps maintain reliable catheter placement
-                  while supporting effective and consistent urinary drainage.</p>
+                  The products are highly effective and safe, tested and certified
+                  according to the relevant CE and EN standards</p>
               </div>
             </div>
 
