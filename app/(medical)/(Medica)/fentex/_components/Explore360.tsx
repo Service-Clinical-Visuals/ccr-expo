@@ -53,7 +53,7 @@ export default function Explore360() {
             <div className="absolute inset-0 w-full h-full z-10">
               <DynamicVideoPlayer
                 type="360"
-                className="absolute inset-0 w-full h-full object-cover object-center aspect-video"
+                className="absolute inset-0 w-full h-full object-contain aspect-video"
               />
             </div>
           </div>

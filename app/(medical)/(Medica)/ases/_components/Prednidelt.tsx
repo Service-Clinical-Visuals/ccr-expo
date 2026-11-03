@@ -13,8 +13,7 @@ export default function Prednidelt() {
           {/* Left Column: Video Placeholder */}
           <div className="w-full relative order-2 lg:order-1" data-aos="fade-right">
             <div className="w-full aspect-video rounded flex items-center justify-center relative overflow-hidden shadow-sm border border-gray-200 group">
-              <DynamicVideoPlayer type="short-2" className="absolute inset-0 w-full h-full object-cover" />
-
+              <DynamicVideoPlayer type="short-2" className="absolute inset-0 w-full h-full object-contain" />
             </div>
           </div>
 
@@ -22,20 +21,20 @@ export default function Prednidelt() {
           <div className="flex flex-col items-start gap-3 order-1 lg:order-2" data-aos="fade-left">
             <div className="flex flex-col gap-2 w-full">
               <span className="text-[#BA0A28] font-[Inter] font-bold text-[16px] md:text-[18px]">
-                SCREW COMPONENTS
+                Orthopedic Fixation
               </span>
               <h2 className="text-[#333333] font-[Manrope] text-[24px] md:text-[28px] font-bold leading-tight">
-                Integrated Fixation Components
+                Kirschner Wire for Precision Fixation
               </h2>
-              <div className="w-[180px] h-[2px] bg-[#BA0A28] rounded-sm mb-2" />
+              <div className="w-[80px] h-[2px] bg-[#BA0A28] rounded-sm mb-2" />
             </div>
 
             <p className="text-[#404040] font-[Inter] text-[14px] leading-relaxed">
-              The PFNA system includes a range of dedicated components, including the integrated compression lag screw and PFNA compression screw, designed to complement the overall nail system. These components offer different options within the PFNA fixation configuration and form an important part of the complete component range. Their dedicated design allows them to be used as part of the PFNA system according to the selected configuration. Together, these components provide a comprehensive range of options within the PFNA system.
+              Kirschner wire is available in four different types: trocar-ended, bayonet-ended, olive-tipped, and grooved Kirschner wire, and is used for fixation in bone fractures. The trocar-ended Kirschner wire comes in two length options: Ø 0.8 mm (150 mm and 300 mm), Ø 1.0 mm (250, 275, 300, 400 mm), and Ø 1.2 mm (250, 300, 400mm). There is one length option of 150 mm for Ø 1.4 mm, and 5 different length options for Ø 1.5 mm: 150, 250, 275, 300, and 400 mm. There are 3 length options for Ø 1.8 mm: 275, 300, and 400 mm.
             </p>
 
             <p className="text-[#404040] font-[Inter] text-[14px] leading-relaxed">
-              Additional components include the Ø4.8 Proximal-Distal Locking Screw, PFNA Nail Head Screw, and PFNA End Cap, providing a complete range of dedicated components for the PFNA system. These components complement the nail and complete its overall configuration.
+              There are 6 length options for Ø 2 mm: 200, 250, 275, 300, 400, and 440 mm. There is only one length option of 300 mm for Ø 2.2 mm. There are 4 length options for Ø2.5 mm: 250, 275, 300, and 400 mm. There is only one length option for Ø2.6 mm: 300 mm. There are 3 length options for Ø3.0 mm: 275, 300, and 400 mm.
             </p>
 
             <Link

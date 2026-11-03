@@ -18,11 +18,12 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Euromed Implants",
-  description: "Euromed Implants develops high-quality implant systems and surgical instruments for modern orthopaedic care.",
+  title: "Progetti S.r.l. — Defibrillators & Medical Equipment",
+  description:
+    "Progetti S.r.l. is an Italian manufacturer of advanced defibrillators, infusion pumps, and medical devices.",
 };
 
-export default function MeyleLayout({
+export default function ProgettiLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -30,7 +31,7 @@ export default function MeyleLayout({
   return (
     <div className={`${dmSans.variable} ${openSans.variable} font-primary min-h-screen bg-white antialiased overflow-x-hidden relative w-full`}>
       <SmoothAOS />
-      <VideoProvider >
+      <VideoProvider website="progetti">
         {children}
       </VideoProvider>
     </div>

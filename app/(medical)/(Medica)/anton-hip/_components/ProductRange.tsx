@@ -113,13 +113,13 @@ export default function ProductRange() {
           >
             {PRODUCTS.map((product) => (
               <SwiperSlide key={product.id} className="h-auto pb-4">
-                <div className="w-full h-full rounded-[14px] min-[3800px]:rounded-[24px] overflow-hidden border border-gray-200/90 shadow-md flex flex-col group transition-all duration-300 hover:shadow-xl bg-white">
+                <div className="w-full h-full rounded-[14px] min-[3800px]:rounded-[24px] overflow-hidden border border-gray-200/90 hover:border-[#111111] shadow-md flex flex-col group transition-all duration-300 hover:shadow-xl bg-[#111111]">
                   {/* Top Image Container: aspect-[533/236] as specified */}
-                  <div className="w-full  bg-white flex items-center justify-center  overflow-hidden">
+                  <div className="w-full bg-[#111111] flex items-center justify-center overflow-hidden">
                     <img
                       src={product.image}
                       alt={product.title}
-                      className="w-full h-full aspect-[533/236] object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      className="w-full h-full aspect-[533/236] object-cover rounded-t-[14px] min-[3800px]:rounded-t-[24px] group-hover:scale-95 transition-transform duration-500 ease-out"
                     />
                   </div>
 

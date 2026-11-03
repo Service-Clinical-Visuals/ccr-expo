@@ -35,7 +35,7 @@ export default function Explore360() {
 
           {/* Left Column: 360 Video Player Box */}
           <div
-            className="xl:col-span-6 relative w-full h-full overflow-hidden flex items-center justify-center bg-transparent aspect-video"
+            className="xl:col-span-6 relative w-full aspect-video overflow-hidden flex items-center justify-center bg-transparent"
             data-aos="fade-right"
             data-aos-duration="900"
             data-aos-delay="100"
@@ -44,7 +44,7 @@ export default function Explore360() {
             <div className="absolute inset-0 w-full h-full z-10">
               <DynamicVideoPlayer
                 type="360"
-                className="absolute inset-0 w-full h-full object-cover object-center"
+                className="absolute inset-0 w-full h-full object-contain"
               />
             </div>
           </div>

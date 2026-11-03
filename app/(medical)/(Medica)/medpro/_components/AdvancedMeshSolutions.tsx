@@ -73,7 +73,7 @@ export default function AdvancedMeshSolutions() {
             </div>
 
             <div className="pt-2">
-              <Button href="#product-details" variant="white-outline" showArrow={false} className="!w-auto !px-8">
+              <Button href="#product-details" variant="white-outline" showArrow={true} className="!w-auto !px-8">
                 View Product Details
               </Button>
             </div>

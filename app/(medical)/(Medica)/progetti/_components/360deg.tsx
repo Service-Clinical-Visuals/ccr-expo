@@ -3,6 +3,7 @@
 import React from "react";
 import Typography from "./Typography";
 import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
+import { ArrowUpRight } from "lucide-react";
 
 const Deg360 = () => {
   return (
@@ -30,13 +31,22 @@ const Deg360 = () => {
         {/* Video Area */}
         <div className="w-full flex justify-center" data-aos="fade-up" data-aos-delay="100">
           {/* We create a massive bounding box for the player */}
-          <div className="w-[90%] lg:w-[80%] aspect-video  backdrop-blur-sm rounded-xl min-[3800px]:rounded-[3rem]  shadow-xl overflow-hidden flex items-center justify-center relative min-h-[400px]">
+          <div className="group cursor-pointer w-[90%] lg:w-[80%] aspect-video backdrop-blur-sm rounded-xl min-[3800px]:rounded-[3rem] shadow-xl overflow-hidden flex items-center justify-center relative">
 
             {/* Note: DynamicVideoPlayer usually expects a URL, assuming default prop setup handles the 360 viewer */}
             <div className="absolute inset-0 w-full h-full">
-              <DynamicVideoPlayer type="360" />
+              <DynamicVideoPlayer type="360" className="absolute inset-0 w-full h-full object-contain" />
             </div>
 
+            {/* Slight grey gradient overlay on hover */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-black/25 to-black/35 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10" />
+
+            {/* Center hover badge with ArrowUpRight */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 min-[3800px]:w-36 min-[3800px]:h-36 rounded-full bg-[var(--color-primary)] shadow-2xl flex items-center justify-center text-white opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-out">
+                <ArrowUpRight className="w-7 h-7 sm:w-9 sm:h-9 lg:w-11 lg:h-11 min-[3800px]:w-16 min-[3800px]:h-16 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" strokeWidth={2} />
+              </div>
+            </div>
 
           </div>
         </div>

@@ -63,7 +63,7 @@ const Complete = () => {
 
           {/* Right: Video Placeholder (span 7 or 8) */}
           <div className="min-[1380px]:col-span-8 w-full aspect-video relative overflow-hidden flex items-center justify-center" data-aos="fade-left">
-            <DynamicVideoPlayer type="short-2" className="absolute inset-0 w-full h-full object-cover" />
+            <DynamicVideoPlayer type="short-2" className="absolute inset-0 w-full h-full object-contain" />
           </div>
 
         </div>

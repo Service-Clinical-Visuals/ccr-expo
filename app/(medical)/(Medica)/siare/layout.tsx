@@ -16,12 +16,12 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SIARE ENGINEERING - 160 Years Of Experience. Forward-Looking By Nature.",
+  title: "SIARE ENGINEERING INTERNATIONAL GROUP S.p.A.",
   description:
-    "Siare Engineering is an established German manufacturer of high quality surgical sutures, textile implants, and medical irrigation solutions with 160 years of experience.",
+    "Siare Engineering International Group is a leader in intensive care ventilation, anesthesia, and medical equipment.",
 };
 
-export default function SeragWiessnerLayout({
+export default function SiareLayout({
   children,
 }: {
   children: React.ReactNode;

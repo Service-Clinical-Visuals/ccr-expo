@@ -26,12 +26,12 @@ const overpass = Overpass({
 });
 
 export const metadata: Metadata = {
-  title: "Hermann Medizintechnik | Solutions for Modern Medical Applications",
+  title: "Medical Econet GmbH — Innovative Medical Products & Diagnostic Solutions",
   description:
-    "Hermann Medizintechnik stands for absolute quality standards, innovative medical instruments and systems for laparoscopy, endoscopy, electrosurgery, and arthroscopy.",
+    "Medical Econet GmbH develops innovative medical products, ECG systems, and diagnostic solutions for hospitals, clinics, and mobile healthcare.",
 };
 
-export default function HermannLayout({
+export default function MedicalEconetLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -41,7 +41,7 @@ export default function HermannLayout({
       className={`${exo2.variable} ${outfit.variable} ${overpass.variable} econet-fonts min-h-screen bg-white text-[#2A2A2A] antialiased overflow-x-hidden relative w-full`}
     >
       <SmoothAOS />
-      <VideoProvider website="hermann">{children}</VideoProvider>
+      <VideoProvider website="medical-econet">{children}</VideoProvider>
     </div>
   );
 }

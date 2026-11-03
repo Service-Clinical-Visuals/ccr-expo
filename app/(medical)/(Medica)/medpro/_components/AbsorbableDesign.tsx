@@ -42,7 +42,7 @@ export default function AbsorbableDesign() {
             </div>
 
             <div className="pt-2">
-              <Button href="#product-details" variant="white-outline" showArrow={false} className="!w-auto !px-7">
+              <Button href="#product-details" variant="white-outline" showArrow={true} className="!w-auto !px-7">
                 View Product Details
               </Button>
             </div>

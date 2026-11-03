@@ -46,11 +46,11 @@ export default function QualityManagement() {
             data-aos="fade-left"
             data-aos-duration="800"
           >
-            <div className="relative w-full h-full aspect-video overflow-hidden flex items-center justify-center bg-gray-200 rounded-md">
+            <div className="relative w-full aspect-video overflow-hidden flex items-center justify-center bg-gray-200 rounded-md">
               <div className="absolute inset-0 w-full h-full z-10">
                 <DynamicVideoPlayer
                   type="short-2"
-                  className="absolute inset-0 w-full h-full object-cover object-center aspect-video"
+                  className="absolute inset-0 w-full h-full object-contain aspect-video"
                 />
               </div>
             </div>

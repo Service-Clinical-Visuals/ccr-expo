@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section id="about" className="w-full py-10 sm:py-14 lg:py-20 bg-white overflow-hidden">
       <div className="custom-container flex flex-col gap-6 sm:gap-8">
-        
+
 
         <div
           className="w-full bg-[#00425E] border border-white/25 rounded-[30px] md:rounded-[50px] p-6 sm:p-10 min-[1301px]:p-14 text-white shadow-md flex flex-col min-[1301px]:flex-row items-start min-[1301px]:items-center justify-between gap-8"
@@ -46,7 +46,7 @@ export default function About() {
         </div>
 
         <div className="w-full flex flex-col min-[1301px]:flex-row items-stretch gap-6 sm:gap-8">
-          
+
 
           <div
             className="w-full min-[1301px]:w-[38%] bg-[#00425E] border border-white/25 rounded-[30px] md:rounded-[50px] p-6 sm:p-10 flex flex-col justify-center gap-7 sm:gap-9 text-white shadow-md"

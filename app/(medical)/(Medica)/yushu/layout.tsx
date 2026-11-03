@@ -40,7 +40,7 @@ export default function YushuLayout({
         style={{ fontFamily: "'Outfit', var(--font-secondary), sans-serif" }}
       >
         <SmoothAOS />
-        <VideoProvider>
+        <VideoProvider website="yushu">
           {children}
         </VideoProvider>
       </div>

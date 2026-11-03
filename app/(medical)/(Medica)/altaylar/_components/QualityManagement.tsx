@@ -61,7 +61,7 @@ export default function QualityManagement() {
             </div>
 
             <div>
-              <Button href="#explore-mesh" variant="outline" showArrow={false} className="!w-auto !px-8 border !border-[#07A1A8] !text-[#07A1A8] hover:!bg-[#07A1A8] hover:!text-white rounded-[8px]">
+              <Button href="#explore-mesh" variant="outline" showArrow={true} className="!w-auto !px-8 border !border-[#07A1A8] !text-[#07A1A8] hover:!bg-[#07A1A8] hover:!text-white rounded-[8px]">
                 <span className="font-raleway font-semibold btn-text">Explore Mesh Technology</span>
               </Button>
             </div>

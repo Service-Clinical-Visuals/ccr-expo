@@ -32,7 +32,7 @@ export default function AdvancedMeshSolutions() {
             <div className="w-full md:w-auto flex-shrink-0 mt-2 md:mt-0">
               <Button
                 href="#download"
-                showArrow={false}
+                showArrow={true}
                 className="w-full md:w-auto !bg-[#07A1A8] hover:!bg-[#006769] !text-white !px-6 py-3 rounded-[8px]"
               >
                 <span className="font-raleway font-semibold btn-text">Download Full Catalogue</span>

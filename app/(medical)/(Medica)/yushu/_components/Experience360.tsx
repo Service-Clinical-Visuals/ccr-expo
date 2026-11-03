@@ -52,7 +52,7 @@ export default function Experience360() {
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <DynamicVideoPlayer type="360" className="absolute inset-0 w-full h-full object-cover" />
+          <DynamicVideoPlayer type="360" className="absolute inset-0 w-full h-full object-contain" />
         </div>
       </div>
     </section>

@@ -40,7 +40,7 @@ export default function Banner() {
               data-aos-duration="900"
               data-aos-delay="300"
             >
-              <Button href="#products" showArrow={false} variant="white-outline">
+              <Button href="#products" showArrow={true} variant="white-outline">
                 <span className="font-raleway font-semibold btn-text">Explore Our Products</span>
               </Button>
             </div>

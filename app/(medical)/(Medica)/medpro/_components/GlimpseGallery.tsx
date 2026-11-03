@@ -79,7 +79,7 @@ export default function GlimpseGallery() {
 
             {/* Button */}
             <div className="pt-15">
-              <Button href="#about" variant="outline" showArrow={false} className="!w-auto !px-8 border !border-[#3BB3C3] section-text">
+              <Button href="#about" variant="outline" showArrow={true} className="!w-auto !px-8 border !border-[#3BB3C3] section-text">
                 More About Us
               </Button>
             </div>

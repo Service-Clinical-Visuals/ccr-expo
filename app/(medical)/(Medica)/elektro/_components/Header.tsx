@@ -58,11 +58,11 @@ export default function Header() {
             className="flex items-center flex-shrink-0 group focus:outline-none"
             aria-label="Elektro-mag Home"
           >
-            <div className="relative h-8 sm:h-10 md:h-25 min-[3800px]:h-24 flex items-center">
+            <div className="relative h-7 sm:h-8 md:h-9 lg:h-10 min-[3800px]:h-20 flex items-center">
               <img
                 src="/medical/elektro/logo.webp"
                 alt="Elektro-mag"
-                className="h-full w-auto object-contain transition-opacity group-hover:opacity-90"
+                className="h-full w-auto object-contain transition-all group-hover:opacity-90 transform scale-115 sm:scale-120 origin-left"
               />
             </div>
           </Link>

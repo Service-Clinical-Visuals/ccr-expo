@@ -25,7 +25,7 @@ const Deg360 = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <DynamicVideoPlayer type="360" className="absolute inset-0 w-full h-full object-cover" />
+          <DynamicVideoPlayer type="360" className="absolute inset-0 w-full h-full object-contain" />
         </div>
 
       </div>

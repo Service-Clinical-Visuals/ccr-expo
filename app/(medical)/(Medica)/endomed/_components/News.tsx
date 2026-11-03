@@ -2,6 +2,7 @@
 
 import Typography from "./Typography";
 import SectionTag from "./SectionTag";
+import { ArrowRight } from "lucide-react";
 
 const news = [
   {
@@ -60,13 +61,20 @@ export default function News() {
               </div>
 
               {/* Content card overlapping the frame */}
-              <div className="relative z-10 flex-1 -mt-16 2xl:-mt-20 min-[2500px]:-mt-24 min-[3800px]:-mt-36 mx-6 2xl:mx-7 min-[2500px]:mx-10 min-[3800px]:mx-14 bg-white border border-[#EEEEEE] rounded-[8px] min-[2500px]:rounded-[12px] min-[3800px]:rounded-[16px] shadow-[0_4px_16px_rgba(0,0,0,0.04)] text-center px-5 pt-5 pb-14 2xl:px-6 2xl:pt-6 2xl:pb-20 min-[2500px]:px-9 min-[2500px]:pt-9 min-[2500px]:pb-24 min-[3800px]:px-14 min-[3800px]:pt-14 min-[3800px]:pb-36">
+              <div className="relative z-10 flex-1 -mt-16 2xl:-mt-20 min-[2500px]:-mt-24 min-[3800px]:-mt-36 mx-6 2xl:mx-7 min-[2500px]:mx-10 min-[3800px]:mx-14 bg-white border border-[#EEEEEE] group-hover:border-[#701E1E] rounded-[8px] min-[2500px]:rounded-[12px] min-[3800px]:rounded-[16px] shadow-[0_4px_16px_rgba(0,0,0,0.04)] group-hover:shadow-[0_4px_20px_rgba(112,30,30,0.12)] text-center px-5 pt-5 pb-16 2xl:px-6 2xl:pt-6 2xl:pb-22 min-[2500px]:px-9 min-[2500px]:pt-9 min-[2500px]:pb-26 min-[3800px]:px-14 min-[3800px]:pt-14 min-[3800px]:pb-38 transition-all duration-300">
                 <Typography variant="h3" color="dark" weight="semibold" className="font-primary mb-4 2xl:mb-6 min-[3800px]:mb-10">
                   {item.title}
                 </Typography>
                 <Typography variant="p" color="dark">
                   {item.text}
                 </Typography>
+
+                {/* Circular hover arrow button */}
+                <div className="absolute bottom-4 2xl:bottom-6 left-1/2 -translate-x-1/2 flex items-center justify-center">
+                  <div className="w-9 h-9 2xl:w-11 2xl:h-11 min-[3800px]:w-14 min-[3800px]:h-14 rounded-full border border-[#999999]/60 group-hover:border-[#701E1E] group-hover:text-[#701E1E] flex items-center justify-center text-[#1A1A1A] bg-white shadow-xs transition-all duration-300 ease-out opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0">
+                    <ArrowRight className="w-4 h-4 2xl:w-5 2xl:h-5 min-[3800px]:w-7 min-[3800px]:h-7 transition-transform duration-300 group-hover:translate-x-0.5" strokeWidth={1.5} />
+                  </div>
+                </div>
               </div>
             </article>
           ))}

@@ -17,12 +17,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Biotech GmbH — Advancing Medical Care Through Innovation",
+  title: "ASES Medikal — Orthopedic & Trauma Surgery Solutions",
   description:
-    "Biotech Group is a leading German manufacturer and distributor of medical products, orthopedics joint reconstruction, and pharmaceuticals.",
+    "ASES Medikal manufactures innovative orthopedic fixation systems, trauma implants, and surgical instruments.",
 };
 
-export default function BiotechLayout({
+export default function AsesLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -32,7 +32,7 @@ export default function BiotechLayout({
       className={`${manrope.variable} ${inter.variable} min-h-screen bg-white antialiased overflow-x-hidden relative w-full`}
     >
       <SmoothAOS />
-      <VideoProvider website="biotech">{children}</VideoProvider>
+      <VideoProvider website="ases">{children}</VideoProvider>
     </div>
   );
 }

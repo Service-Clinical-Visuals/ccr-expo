@@ -77,7 +77,7 @@ export default function Explore360() {
             </ul>
 
             <div>
-              <Button href="#product-details" variant="outline" className="!w-auto" showArrow={false}>
+              <Button href="#product-details" variant="outline" className="!w-auto" showArrow={true}>
                 View Product Details
               </Button>
             </div>

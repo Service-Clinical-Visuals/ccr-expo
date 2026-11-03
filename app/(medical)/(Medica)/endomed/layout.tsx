@@ -19,9 +19,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Endomed GmbH — Advancing Medical Care Through Innovation",
+  title: "Endomed S.r.l. — Specialists In Advanced Minimally Invasive Surgery Systems",
   description:
-    "Endomed is a leading German manufacturer and distributor of medical products, orthopedics joint reconstruction, and pharmaceuticals.",
+    "Endomed is an Italian manufacturer of endoscopic equipment and minimally invasive surgical instruments under the MEDICI brand.",
 };
 
 export default function EndomedLayout({
@@ -34,7 +34,7 @@ export default function EndomedLayout({
       className={`${newsreader.variable} ${dmSans.variable} endomed-fonts min-h-screen bg-white antialiased overflow-x-hidden relative w-full`}
     >
       <SmoothAOS />
-      <VideoProvider website="biotech">{children}</VideoProvider>
+      <VideoProvider website="endomed">{children}</VideoProvider>
     </div>
   );
 }

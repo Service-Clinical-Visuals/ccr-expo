@@ -16,12 +16,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SERAG WIESSNER - 160 Years Of Experience. Forward-Looking By Nature.",
+  title: "MED pro medical BV - Urology Solutions Built on Experience & Innovation",
   description:
-    "Serag-Wiessner is an established German manufacturer of high quality surgical sutures, textile implants, and medical irrigation solutions with 160 years of experience.",
+    "MEDpro Medical has been manufacturing high-quality disposable urology products since 2010 with strong connections to medical specialists.",
 };
 
-export default function SeragWiessnerLayout({
+export default function MedproLayout({
   children,
 }: {
   children: React.ReactNode;

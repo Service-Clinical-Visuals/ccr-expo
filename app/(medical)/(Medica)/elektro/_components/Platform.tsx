@@ -29,7 +29,7 @@ const Platform = () => {
 
           {/* Left: Video Placeholder (span 8) */}
           <div className="order-2 min-[1480px]:order-1 min-[1480px]:col-span-9 w-full aspect-video relative overflow-hidden flex items-center justify-center" data-aos="fade-right">
-            <DynamicVideoPlayer type="short-1" className="absolute inset-0 w-full h-full object-cover" />
+            <DynamicVideoPlayer type="short-1" className="absolute inset-0 w-full h-full object-contain" />
           </div>
 
           {/* Right: Content (span 4) */}

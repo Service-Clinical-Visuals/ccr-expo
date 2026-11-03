@@ -11,11 +11,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Adamo S.r.l.",
-  description: "Leader in the production of medical imaging systems.",
+  title: "ELEKTRO-MAG A.S. — Electrosurgical & Laboratory Equipment",
+  description:
+    "ELEKTRO-MAG A.S. is a manufacturer of electrosurgical units, medical devices, and laboratory equipment.",
 };
 
-export default function AdamoLayout({
+export default function ElektroMagLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -23,7 +24,7 @@ export default function AdamoLayout({
   return (
     <div className={`${outfit.variable} font-primary min-h-screen bg-white antialiased overflow-x-hidden relative w-full`}>
       <SmoothAOS />
-      <VideoProvider >
+      <VideoProvider website="elektro">
         {children}
       </VideoProvider>
     </div>

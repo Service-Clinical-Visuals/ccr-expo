@@ -45,7 +45,7 @@ export default function AbsorbableDesign() {
             </div>
 
             <div>
-              <Button href="#discover" variant="outline" showArrow={false} className="!w-auto !px-8 border !border-[#07A1A8] !text-[#07A1A8] hover:!bg-[#07A1A8] hover:!text-white rounded-[8px]">
+              <Button href="#discover" variant="outline" showArrow={true} className="!w-auto !px-8 border !border-[#07A1A8] !text-[#07A1A8] hover:!bg-[#07A1A8] hover:!text-white rounded-[8px]">
                 <span className="font-inter font-semibold btn-text">Discover PAHA Mesh</span>
               </Button>
             </div>

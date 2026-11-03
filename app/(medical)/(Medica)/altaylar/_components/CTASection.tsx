@@ -92,7 +92,7 @@ export default function CTASection() {
           <Button
             href="#all-updates"
             variant="outline"
-            showArrow={false}
+            showArrow={true}
             className="!w-auto !px-8 border !border-[#07A1A8] !text-[#07A1A8] hover:!bg-[#07A1A8] hover:!text-white rounded-[8px]"
           >
             <span className="font-raleway font-semibold btn-text">View All Latest Updates</span>

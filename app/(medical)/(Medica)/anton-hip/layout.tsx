@@ -19,12 +19,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Biotech GmbH — Advancing Medical Care Through Innovation",
+  title: "Anton Hipp GmbH — Surgical Instruments & Medical Technology",
   description:
-    "Biotech Group is a leading German manufacturer and distributor of medical products, orthopedics joint reconstruction, and pharmaceuticals.",
+    "Anton Hipp GmbH is a manufacturer of high-quality surgical instruments, implant systems, and specialized medical technology.",
 };
 
-export default function BiotechLayout({
+export default function AntonHippLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -34,7 +34,7 @@ export default function BiotechLayout({
       className={`${exo2.variable} ${inter.variable} min-h-screen bg-white antialiased overflow-x-hidden relative w-full`}
     >
       <SmoothAOS />
-      <VideoProvider website="biotech">{children}</VideoProvider>
+      <VideoProvider website="anton-hip">{children}</VideoProvider>
     </div>
   );
 }

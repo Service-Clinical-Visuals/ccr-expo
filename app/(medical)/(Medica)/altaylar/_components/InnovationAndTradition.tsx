@@ -58,7 +58,7 @@ export default function InnovationAndTradition() {
             </div>
 
             <div className="pt-2">
-              <Button href="#about" variant="outline" className="!w-auto !border-[#07A1A8] !text-[#07A1A8] hover:!bg-[#07A1A8] hover:!text-white" showArrow={false}>
+              <Button href="#about" variant="outline" className="!w-auto !border-[#07A1A8] !text-[#07A1A8] hover:!bg-[#07A1A8] hover:!text-white" showArrow={true}>
                 Learn More About Us
               </Button>
             </div>
