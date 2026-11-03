@@ -24,8 +24,6 @@ const Hero = () => {
               className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
               type="banner"
             />
-            {/* Subtle Gradient Overlay for Text Legibility */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/30 z-10" />
           </div>
 
           {/* Top Left Tag */}
@@ -34,10 +32,8 @@ const Hero = () => {
             data-aos="fade-down"
             data-aos-delay="200"
           >
-            <div className="w-[3px] min-[2500px]:w-[5px] min-[3800px]:w-[8px] h-5 sm:h-6 min-[2500px]:h-10 min-[3800px]:h-14 bg-white/80 rounded-full" />
-            <span className="text-white font-medium text-sm sm:text-base lg:text-lg min-[2500px]:text-2xl min-[3800px]:text-4xl tracking-wide drop-shadow-sm">
-              Treatment procedure
-            </span>
+
+
           </div>
 
           {/* Bottom Left Content (xl:max-w-[40%] max-w-[90%]) */}

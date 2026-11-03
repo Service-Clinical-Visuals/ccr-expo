@@ -52,12 +52,7 @@ const AirwayVisualization = () => {
               className="absolute inset-0 w-full h-full object-cover"
             />
 
-            {/* Fallback Label if video is loading or fallback */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none -z-0">
-              <span className="text-[#33363F]/40 font-bold text-xl sm:text-3xl md:text-4xl min-[2500px]:text-5xl min-[3800px]:text-7xl tracking-wider uppercase select-none">
-                Video Clip - 01
-              </span>
-            </div>
+
           </div>
 
           {/* Right Column: 30% Width at 1500px+ (Information & Features) */}
