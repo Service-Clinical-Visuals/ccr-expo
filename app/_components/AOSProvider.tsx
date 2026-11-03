@@ -13,7 +13,7 @@ export default function AOSProvider({ children }: { children: React.ReactNode })
       delay: 50,
       mirror: true,
     });
-    
+
     // Refresh AOS after a short delay to ensure dynamic content positions are captured
     const timer = setTimeout(() => {
       AOS.refresh();
