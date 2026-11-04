@@ -1,21 +1,6 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import { VideoProvider } from "@/app/_context/VideoContext";
 import "./global.css";
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-plus-jakarta",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "COSMED - The Metabolic Company | Diagnostic Solutions",
@@ -29,12 +14,30 @@ export default function CosmedLayout({
   children: React.ReactNode;
 }) {
   return (
-    <VideoProvider website="cosmed">
-      <div
-        className={`${plusJakartaSans.variable} ${inter.variable} font-inter min-h-screen bg-white text-slate-900 antialiased selection:bg-[#0066B2] selection:text-white`}
-      >
-        {children}
-      </div>
-    </VideoProvider>
+    <>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <VideoProvider website="cosmed">
+        <div
+          className="font-inter min-h-screen bg-white text-slate-900 antialiased selection:bg-[#0066B2] selection:text-white"
+          style={{
+            ["--font-plus-jakarta" as string]: "'Plus Jakarta Sans', sans-serif",
+            ["--font-inter" as string]: "'Inter', sans-serif",
+          }}
+        >
+          {children}
+        </div>
+      </VideoProvider>
+    </>
   );
 }
