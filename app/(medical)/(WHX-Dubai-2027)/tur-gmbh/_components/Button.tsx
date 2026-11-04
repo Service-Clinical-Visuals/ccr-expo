@@ -32,7 +32,7 @@ const Button = ({
       <span className="button whitespace-nowrap">{text}</span>
       {showIcon && (
         <img
-          src="/medical/tum-gmbh/arrow.webp"
+          src="/medical/tur-gmbh/arrow.webp"
           alt="arrow"
           className="w-[11px] h-auto sm:w-[13px] min-[1920px]:w-[14px] min-[2500px]:w-[19px] min-[3800px]:w-[27px] ml-2 sm:ml-2.5 min-[1920px]:ml-3 min-[2500px]:ml-4 min-[3800px]:ml-6 group-hover:translate-x-1 transition-transform duration-300 shrink-0 object-contain"
         />

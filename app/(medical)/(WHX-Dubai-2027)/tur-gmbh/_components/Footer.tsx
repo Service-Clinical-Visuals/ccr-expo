@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-col gap-6">
             <Link href="#home" className="flex items-center" aria-label="TUR Logo">
               <img
-                src="/medical/tum-gmbh/logo.webp"
+                src="/medical/tur-gmbh/logo.webp"
                 alt="TUR Logo"
                 className="h-10 sm:h-12 min-[1920px]:h-14 min-[2500px]:h-20 min-[3800px]:h-28 w-auto object-contain brightness-0 invert transform scale-110 sm:scale-125 origin-left transition-transform duration-300"
               />

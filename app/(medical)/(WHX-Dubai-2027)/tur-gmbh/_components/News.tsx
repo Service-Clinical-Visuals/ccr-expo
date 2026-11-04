@@ -6,14 +6,14 @@ import Button from "./Button";
 
 const newsItems = [
   {
-    image: "/medical/tum-gmbh/news1.webp",
+    image: "/medical/tur-gmbh/news1.webp",
     title: "TUR Isokinetik CUP",
     description: "The Chemnitz Crashers start with the Isokinetik to succeed in the season 2019/20",
     bgClass: "bg-black",
     imgClass: "w-full h-full object-cover",
   },
   {
-    image: "/medical/tum-gmbh/news2.webp",
+    image: "/medical/tur-gmbh/news2.webp",
     title: "TUR recently established cooperation ‘ProAnimal life’",
     description:
       "TUR is founding member of the recently established cooperation ‘ProAnimal life’ that internationally networks rehabilitation innovation for veterinary medicine.",

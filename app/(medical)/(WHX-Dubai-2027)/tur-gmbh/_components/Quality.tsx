@@ -7,32 +7,32 @@ import Button from "./Button";
 
 const qualityItems = [
   {
-    icon: "/medical/tum-gmbh/icon1.webp",
+    icon: "/medical/tur-gmbh/icon1.webp",
     title: "Physiotherapy and Rehabilitation",
     link: "#",
   },
   {
-    icon: "/medical/tum-gmbh/icon2.webp",
+    icon: "/medical/tur-gmbh/icon2.webp",
     title: "Inhalation therapy",
     link: "#",
   },
   {
-    icon: "/medical/tum-gmbh/icon3.webp",
+    icon: "/medical/tur-gmbh/icon3.webp",
     title: "Medical aesthetic",
     link: "#",
   },
   {
-    icon: "/medical/tum-gmbh/icon4.webp",
+    icon: "/medical/tur-gmbh/icon4.webp",
     title: "Isokinetic therapy",
     link: "#",
   },
   {
-    icon: "/medical/tum-gmbh/icon5.webp",
+    icon: "/medical/tur-gmbh/icon5.webp",
     title: "Software & hardware development",
     link: "#",
   },
   {
-    icon: "/medical/tum-gmbh/icon6.webp",
+    icon: "/medical/tur-gmbh/icon6.webp",
     title: "User interface technology",
     link: "#",
   },

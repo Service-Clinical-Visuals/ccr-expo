@@ -44,7 +44,7 @@ const Overview = () => {
           data-aos-delay="150"
         >
           <img
-            src="/medical/tum-gmbh/about.webp"
+            src="/medical/tur-gmbh/about.webp"
             alt="TUR GmbH Overview"
             className="w-full h-auto max-h-[565px] min-[2500px]:max-h-[850px] min-[3800px]:max-h-[1250px] object-cover"
           />

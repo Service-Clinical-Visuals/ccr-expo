@@ -93,7 +93,7 @@ const Header = () => {
             aria-label="TUR Home"
           >
             <img
-              src="/medical/tum-gmbh/logo.webp"
+              src="/medical/tur-gmbh/logo.webp"
               alt="TUR Logo"
               className="h-8 sm:h-9 md:h-10 lg:h-11 min-[2500px]:h-16 min-[3800px]:h-24 w-auto object-contain"
             />

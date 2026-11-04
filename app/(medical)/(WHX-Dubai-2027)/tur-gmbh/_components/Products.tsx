@@ -22,34 +22,34 @@ const categories: Category[] = [
     id: "shockwave",
     name: "Shockwave",
     products: [
-      { id: "p11", name: "kimatur PRIME", image: "/medical/tum-gmbh/p11.webp", link: "#" },
-      { id: "p12", name: "kimatur DUO", image: "/medical/tum-gmbh/p12.webp", link: "#" },
-      { id: "p13", name: "kimatur GO", image: "/medical/tum-gmbh/p13.webp", link: "#" },
-      { id: "p14", name: "kimatur DOUBLE", image: "/medical/tum-gmbh/p14.webp", link: "#" },
+      { id: "p11", name: "kimatur PRIME", image: "/medical/tur-gmbh/p11.webp", link: "#" },
+      { id: "p12", name: "kimatur DUO", image: "/medical/tur-gmbh/p12.webp", link: "#" },
+      { id: "p13", name: "kimatur GO", image: "/medical/tur-gmbh/p13.webp", link: "#" },
+      { id: "p14", name: "kimatur DOUBLE", image: "/medical/tur-gmbh/p14.webp", link: "#" },
     ],
   },
   {
     id: "electrotherapy",
     name: "Electrotherapy & Ultrasound",
     products: [
-      { id: "p21", name: "curatur", image: "/medical/tum-gmbh/p21.webp", link: "#" },
-      { id: "p22", name: "sonotur", image: "/medical/tum-gmbh/p22.webp", link: "#" },
-      { id: "p23", name: "sonotur lite", image: "/medical/tum-gmbh/p23.webp", link: "#" },
-      { id: "p24", name: "stimutur", image: "/medical/tum-gmbh/p24.webp", link: "#" },
+      { id: "p21", name: "curatur", image: "/medical/tur-gmbh/p21.webp", link: "#" },
+      { id: "p22", name: "sonotur", image: "/medical/tur-gmbh/p22.webp", link: "#" },
+      { id: "p23", name: "sonotur lite", image: "/medical/tur-gmbh/p23.webp", link: "#" },
+      { id: "p24", name: "stimutur", image: "/medical/tur-gmbh/p24.webp", link: "#" },
     ],
   },
   {
     id: "isokinetic",
     name: "Isokinetic",
     products: [
-      { id: "p31", name: "isoforce", image: "/medical/tum-gmbh/p31.webp", link: "#" },
+      { id: "p31", name: "isoforce", image: "/medical/tur-gmbh/p31.webp", link: "#" },
     ],
   },
   {
     id: "cryotherapy",
     name: "Cryotherapy",
     products: [
-      { id: "p41", name: "cryotur Stream", image: "/medical/tum-gmbh/p41.webp", link: "#" },
+      { id: "p41", name: "cryotur Stream", image: "/medical/tur-gmbh/p41.webp", link: "#" },
     ],
   },
 ];
