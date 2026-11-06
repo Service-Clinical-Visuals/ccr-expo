@@ -1,0 +1,246 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+@theme inline {
+  /* Breakpoints in px so they sort correctly against min-[2500px] / min-[3800px] variants */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --color-primary: #006BA3;
+  --color-primary-hover: #00557F;
+  --color-secondary: #A05EB5;
+  --color-secondary-hover: #874A9A;
+  --color-heading: #111111;
+  --color-body: #4A4A4A;
+  --font-outfit-family: var(--font-outfit, 'Outfit'), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Scoped to the layout wrapper (where the next/font variable exists) so other
+   sites' global values can't override this site's colours and font */
+.ib-root {
+  --color-primary: #006BA3;
+  --color-primary-hover: #00557F;
+  --color-secondary: #A05EB5;
+  --color-secondary-hover: #874A9A;
+  --color-heading: #111111;
+  --color-body: #4A4A4A;
+  --font-primary: var(--font-outfit), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-primary);
+  color: var(--color-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Custom container ---------- */
+.custom-container {
+  width: 100%;
+  max-width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Custom responsive grid ----------
+   .custom-grid          → 1 / 2 / 3 / 4 columns
+   .custom-grid-2        → 1 / 2 columns
+   .custom-grid-3        → 1 / 2 / 3 columns            */
+.custom-grid,
+.custom-grid-2,
+.custom-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .custom-grid,
+  .custom-grid-2,
+  .custom-grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+}
+
+/* Tablet layout continues up to 1279px (iPad Mini and iPad Pro look the same) */
+@media (min-width: 1280px) {
+  .custom-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; }
+  .custom-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+  .custom-grid-2 { gap: 2rem; }
+}
+
+@media (min-width: 2500px) {
+  .custom-grid,
+  .custom-grid-2,
+  .custom-grid-3 { gap: 3rem; }
+}
+
+@media (min-width: 3800px) {
+  .custom-grid,
+  .custom-grid-2,
+  .custom-grid-3 { gap: 4.5rem; }
+}
+
+/* ---------- Base Typography (Desktop 1280px – 2499px) ---------- */
+.ib-root h1 { font-size: 2.25rem; /* 36px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.4; }
+.ib-root h2 { font-size: 2rem; /* 32px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.3; color: var(--color-heading); }
+.ib-root h3 { font-size: 1.5rem; /* 24px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.35; color: var(--color-heading); }
+.ib-root h4 { font-size: 1.25rem; /* 20px */ font-weight: 500; font-family: var(--font-primary); line-height: 1.4; color: var(--color-heading); }
+.ib-root h5 { font-size: 1.125rem; /* 18px */ font-weight: 500; font-family: var(--font-primary); line-height: 1.45; }
+.ib-root h6 { font-size: 1rem; /* 16px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.45; }
+.ib-root p,
+.ib-root li { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-primary); line-height: 1.6; }
+.ib-root h1 span, .ib-root h2 span, .ib-root h3 span,
+.ib-root h4 span, .ib-root h5 span, .ib-root h6 span {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.ib-root .navbar { font-size: 0.9375rem; /* 15px */ font-weight: 400; font-family: var(--font-primary); }
+.ib-root .button { font-size: 0.9375rem; /* 15px */ font-weight: 500; font-family: var(--font-primary); line-height: 1; }
+.ib-root .banner-title { font-size: 2.25rem; /* 36px */ font-weight: 600; line-height: 1.4; }
+.ib-root .card-text { font-size: 0.9375rem; /* 15px */ font-weight: 400; line-height: 1.6; color: var(--color-body); }
+.ib-root .link-text { font-size: 1.0625rem; /* 17px */ font-weight: 600; font-family: var(--font-primary); }
+.ib-root .footer-heading { font-size: 1.25rem; /* 20px */ font-weight: 500; font-family: var(--font-primary); color: #ffffff; line-height: 1.4; }
+.ib-root .footer-body { font-size: 0.875rem; /* 14px */ font-weight: 400; font-family: var(--font-primary); line-height: 1.6; }
+
+/* ---------- Swiper pill pagination ---------- */
+.ib-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 1.5rem;
+}
+.ib-pagination .swiper-pagination-bullet {
+  width: 18px !important;
+  height: 4px !important;
+  margin: 0 !important;
+  border-radius: 9999px !important;
+  background-color: #D9D9D9 !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+.ib-pagination .swiper-pagination-bullet-active {
+  width: 44px !important;
+  background-color: #1A1A1A !important;
+}
+@media (min-width: 2500px) {
+  .ib-pagination { gap: 10px; margin-top: 2.5rem; }
+  .ib-pagination .swiper-pagination-bullet { width: 28px !important; height: 6px !important; }
+  .ib-pagination .swiper-pagination-bullet-active { width: 68px !important; }
+}
+@media (min-width: 3800px) {
+  .ib-pagination { gap: 14px; margin-top: 3.5rem; }
+  .ib-pagination .swiper-pagination-bullet { width: 40px !important; height: 9px !important; }
+  .ib-pagination .swiper-pagination-bullet-active { width: 96px !important; }
+}
+
+/* Mobile Portrait (up to 480px) */
+@media (max-width: 480px) {
+  .custom-container { max-width: 92%; }
+  .ib-root h1 { font-size: 1.625rem; }
+  .ib-root h2 { font-size: 1.5rem; }
+  .ib-root h3 { font-size: 1.1875rem; }
+  .ib-root h4 { font-size: 1.0625rem; }
+  .ib-root h5 { font-size: 0.9375rem; }
+  .ib-root h6 { font-size: 0.875rem; }
+  .ib-root p, .ib-root li { font-size: 0.875rem; }
+  .ib-root .navbar { font-size: 0.9375rem; }
+  .ib-root .button { font-size: 0.875rem; }
+  .ib-root .banner-title { font-size: 1.5rem; }
+  .ib-root .card-text { font-size: 0.875rem; }
+  .ib-root .link-text { font-size: 0.9375rem; }
+  .ib-root .footer-heading { font-size: 1.125rem; }
+  .ib-root .footer-body { font-size: 0.8125rem; }
+}
+
+/* Mobile Landscape (481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .ib-root h1 { font-size: 1.75rem; }
+  .ib-root h2 { font-size: 1.625rem; }
+  .ib-root h3 { font-size: 1.25rem; }
+  .ib-root h4 { font-size: 1.125rem; }
+  .ib-root h5 { font-size: 1rem; }
+  .ib-root h6 { font-size: 0.9375rem; }
+  .ib-root p, .ib-root li { font-size: 0.9375rem; }
+  .ib-root .navbar { font-size: 0.9375rem; }
+  .ib-root .button { font-size: 0.875rem; }
+  .ib-root .banner-title { font-size: 1.75rem; }
+  .ib-root .card-text { font-size: 0.875rem; }
+  .ib-root .link-text { font-size: 1rem; }
+}
+
+/* Tablet – iPad Mini & iPad Pro (768px – 1279px) */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .ib-root h1 { font-size: 1.875rem; }
+  .ib-root h2 { font-size: 1.75rem; }
+  .ib-root h3 { font-size: 1.3125rem; }
+  .ib-root h4 { font-size: 1.125rem; }
+  .ib-root h5 { font-size: 1rem; }
+  .ib-root h6 { font-size: 0.9375rem; }
+  .ib-root p, .ib-root li { font-size: 0.9375rem; }
+  .ib-root .navbar { font-size: 0.9375rem; }
+  .ib-root .button { font-size: 0.875rem; }
+  .ib-root .banner-title { font-size: 2rem; }
+  .ib-root .card-text { font-size: 0.875rem; }
+  .ib-root .link-text { font-size: 1rem; }
+}
+
+/* Large Desktop (1536px – 2499px) */
+@media (min-width: 1536px) and (max-width: 2499px) {
+  .ib-root .navbar { font-size: 1rem; }
+  .ib-root .button { font-size: 1rem; }
+  .ib-root .banner-title { font-size: 2.5rem; }
+  .ib-root .card-text { font-size: 1rem; }
+}
+
+/* Ultra-wide (2500px – 3799px) */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 88%; }
+  .ib-root h1 { font-size: 3.375rem; }
+  .ib-root h2 { font-size: 3rem; }
+  .ib-root h3 { font-size: 2.25rem; }
+  .ib-root h4 { font-size: 1.875rem; }
+  .ib-root h5 { font-size: 1.625rem; }
+  .ib-root h6 { font-size: 1.5rem; }
+  .ib-root p, .ib-root li { font-size: 1.5rem; }
+  .ib-root .navbar { font-size: 1.5rem; }
+  .ib-root .button { font-size: 1.5rem; }
+  .ib-root .banner-title { font-size: 3.5rem; }
+  .ib-root .card-text { font-size: 1.4375rem; }
+  .ib-root .link-text { font-size: 1.625rem; }
+  .ib-root .footer-heading { font-size: 1.875rem; }
+  .ib-root .footer-body { font-size: 1.3125rem; }
+}
+
+/* 4K (3800px and above) */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  .ib-root h1 { font-size: 4.5rem; }
+  .ib-root h2 { font-size: 4rem; }
+  .ib-root h3 { font-size: 3rem; }
+  .ib-root h4 { font-size: 2.5rem; }
+  .ib-root h5 { font-size: 2.125rem; }
+  .ib-root h6 { font-size: 2rem; }
+  .ib-root p, .ib-root li { font-size: 2rem; }
+  .ib-root .navbar { font-size: 2rem; }
+  .ib-root .button { font-size: 2rem; }
+  .ib-root .banner-title { font-size: 4.75rem; }
+  .ib-root .card-text { font-size: 1.875rem; }
+  .ib-root .link-text { font-size: 2.125rem; }
+  .ib-root .footer-heading { font-size: 2.5rem; }
+  .ib-root .footer-body { font-size: 1.75rem; }
+}
