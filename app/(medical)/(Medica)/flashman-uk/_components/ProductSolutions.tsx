@@ -2,12 +2,11 @@
 
 import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, EffectCoverflow } from "swiper/modules";
+import { Autoplay, EffectCreative } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/effect-coverflow";
+import "swiper/css/effect-creative";
 
 const PRODUCTS = {
   devices: [
@@ -30,7 +29,8 @@ export default function ProductSolutions() {
   const [activeCategory, setActiveCategory] = useState<"devices" | "implants">("devices");
   const swiperRef = useRef<SwiperType | null>(null);
 
-  const currentProducts = PRODUCTS[activeCategory];
+  // Duplicate the list so loop mode always has enough slides on both sides of the active card
+  const currentProducts = [...PRODUCTS[activeCategory], ...PRODUCTS[activeCategory]];
 
   return (
     <section
@@ -104,28 +104,19 @@ export default function ProductSolutions() {
           </div>
         </div>
 
-        {/* Custom styling for Coverflow-like 3D card scale and depth */}
+        {/* Stacked carousel: the Swiper container is one card wide; side cards are
+            translated outward and scaled down by the creative effect */}
         <style>{`
           .flashman-product-swiper {
-            padding: 30px 0 50px 0 !important;
+            width: min(60vw, 490px);
+            margin: 0 auto;
+            padding: 20px 0 !important;
             overflow: visible !important;
           }
           .flashman-product-swiper .swiper-slide {
-            transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-            transform: scale(0.85);
-            opacity: 0.75;
-            z-index: 10;
-          }
-          .flashman-product-swiper .swiper-slide-prev,
-          .flashman-product-swiper .swiper-slide-next {
-            transform: scale(0.95);
-            opacity: 0.92;
-            z-index: 20;
-          }
-          .flashman-product-swiper .swiper-slide-active {
-            transform: scale(1.12);
-            opacity: 1;
-            z-index: 30;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         `}</style>
 
@@ -158,44 +149,25 @@ export default function ProductSolutions() {
 
           <Swiper
             key={activeCategory}
-            modules={[Autoplay, Pagination, Navigation]}
+            modules={[Autoplay, EffectCreative]}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
+            effect="creative"
+            creativeEffect={{
+              limitProgress: 2,
+              prev: { translate: ["-56%", 0, -1], scale: 0.85 },
+              next: { translate: ["56%", 0, -1], scale: 0.85 },
+            }}
+            slidesPerView={1}
             centeredSlides={true}
             initialSlide={2}
             loop={true}
+            loopAdditionalSlides={3}
+            speed={700}
             slideToClickedSlide={true}
             grabCursor={true}
-            allowTouchMove={true}
-            spaceBetween={16}
-            slidesPerView={1.3}
-            breakpoints={{
-              320: {
-                slidesPerView: 1.3,
-                spaceBetween: 12,
-              },
-              480: {
-                slidesPerView: 1.8,
-                spaceBetween: 16,
-              },
-              640: {
-                slidesPerView: 2.6,
-                spaceBetween: 20,
-              },
-              1024: {
-                slidesPerView: 3.8,
-                spaceBetween: 24,
-              },
-              1280: {
-                slidesPerView: 4.8,
-                spaceBetween: 24,
-              },
-              1536: {
-                slidesPerView: 5,
-                spaceBetween: 28,
-              },
-            }}
+            watchSlidesProgress={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
@@ -204,8 +176,8 @@ export default function ProductSolutions() {
             className="w-full flashman-product-swiper"
           >
             {currentProducts.map((product, idx) => (
-              <SwiperSlide key={idx} className="flex items-center justify-center">
-                <div className="group relative w-full max-w-[340px] flex flex-col items-center justify-center rounded-2xl cursor-pointer overflow-hidden transition-all duration-300">
+              <SwiperSlide key={idx}>
+                <div className="group relative w-full flex flex-col items-center justify-center rounded-2xl cursor-pointer overflow-hidden transition-all duration-300">
                   {/* Product Card Image */}
                   <img
                     src={product.image}
