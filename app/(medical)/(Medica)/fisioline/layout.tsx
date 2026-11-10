@@ -1,7 +1,22 @@
 import type { Metadata } from "next";
+import { Exo_2, Outfit } from "next/font/google";
 import "./globals.css";
 import { VideoProvider } from "@/app/_context/VideoContext";
 import SmoothAOS from "./_components/SmoothAOS";
+
+const exo2 = Exo_2({
+  subsets: ["latin"],
+  variable: "--font-exo2",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Fisioline | Advanced Surgical Laser Technology",
@@ -24,16 +39,12 @@ export default function FisiolineLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
           rel="stylesheet"
         />
       </head>
       <div
-        className="fisioline-root min-h-screen bg-white antialiased overflow-x-hidden relative w-full"
-        style={{
-          ["--font-poppins" as string]: "'Poppins', sans-serif",
-          fontFamily: "var(--font-poppins), 'Poppins', sans-serif",
-        }}
+        className={`${exo2.variable} ${outfit.variable} fisioline-root font-secondary min-h-screen bg-white text-[var(--color-foreground)] antialiased overflow-x-hidden relative w-full`}
       >
         <SmoothAOS />
         <VideoProvider website="fisioline">{children}</VideoProvider>

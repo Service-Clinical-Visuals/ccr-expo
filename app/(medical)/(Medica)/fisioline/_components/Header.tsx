@@ -130,7 +130,7 @@ const Header = () => {
             <a
               href="#contact"
               onClick={(e) => handleScrollTo(e, "contact")}
-              className="bg-[#222D83] hover:bg-[#1A2368] text-white font-medium px-5 py-2.5 min-[1920px]:px-7 min-[1920px]:py-3 min-[2500px]:px-10 min-[2500px]:py-4 min-[3800px]:px-14 min-[3800px]:py-6 rounded-lg min-[2500px]:rounded-xl min-[3800px]:rounded-2xl flex items-center gap-2.5 min-[1920px]:gap-3 min-[2500px]:gap-4 min-[3800px]:gap-6 text-sm sm:text-sm min-[1920px]:text-base min-[2500px]:text-xl min-[3800px]:text-3xl transition-all shadow-sm group"
+              className="bg-[#222D83] hover:bg-[#1A2368] text-white font-primary font-medium px-5 py-2.5 min-[1920px]:px-7 min-[1920px]:py-3 min-[2500px]:px-10 min-[2500px]:py-4 min-[3800px]:px-14 min-[3800px]:py-6 rounded-lg min-[2500px]:rounded-xl min-[3800px]:rounded-2xl flex items-center gap-2.5 min-[1920px]:gap-3 min-[2500px]:gap-4 min-[3800px]:gap-6 text-sm sm:text-sm min-[1920px]:text-base min-[2500px]:text-xl min-[3800px]:text-3xl transition-all shadow-sm group"
             >
               <span>Get In Touch</span>
               <img
@@ -185,7 +185,7 @@ const Header = () => {
               <a
                 href="#contact"
                 onClick={(e) => handleScrollTo(e, "contact")}
-                className="w-full bg-[#222D83] hover:bg-[#1A2368] text-white font-medium py-2.5 rounded-lg flex items-center justify-center gap-2 text-base transition-colors group"
+                className="w-full bg-[#222D83] hover:bg-[#1A2368] text-white font-primary font-medium py-2.5 rounded-lg flex items-center justify-center gap-2 text-base transition-colors group"
               >
                 <span>Get In Touch</span>
                 <img

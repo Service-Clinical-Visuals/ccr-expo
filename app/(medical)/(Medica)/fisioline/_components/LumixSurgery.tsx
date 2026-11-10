@@ -93,7 +93,7 @@ const LumixSurgery = () => {
             <div className="pt-2 min-[1920px]:pt-3 min-[2500px]:pt-4 min-[3800px]:pt-6">
               <Link
                 href="#technologies"
-                className="h-[44px] sm:h-[48px] md:h-[50px] lg:h-[52px] min-[1920px]:h-[68px] min-[2500px]:h-[84px] min-[3800px]:h-[116px] px-5 sm:px-6 md:px-7 min-[1920px]:px-9 min-[2500px]:px-12 min-[3800px]:px-16 rounded-lg min-[2500px]:rounded-xl min-[3800px]:rounded-2xl bg-white hover:bg-gray-100 text-[#222D83] font-semibold flex items-center gap-2.5 min-[1920px]:gap-3 min-[2500px]:gap-4 min-[3800px]:gap-6 text-sm sm:text-base min-[1920px]:text-lg min-[2500px]:text-2xl min-[3800px]:text-3xl transition-all w-fit shadow-md group"
+                className="h-[44px] sm:h-[48px] md:h-[50px] lg:h-[52px] min-[1920px]:h-[68px] min-[2500px]:h-[84px] min-[3800px]:h-[116px] px-5 sm:px-6 md:px-7 min-[1920px]:px-9 min-[2500px]:px-12 min-[3800px]:px-16 rounded-lg min-[2500px]:rounded-xl min-[3800px]:rounded-2xl bg-white hover:bg-gray-100 text-[#222D83] font-primary font-semibold flex items-center gap-2.5 min-[1920px]:gap-3 min-[2500px]:gap-4 min-[3800px]:gap-6 text-sm sm:text-base min-[1920px]:text-lg min-[2500px]:text-2xl min-[3800px]:text-3xl transition-all w-fit shadow-md group"
               >
                 <span>View Technical Specifications</span>
                 <img
