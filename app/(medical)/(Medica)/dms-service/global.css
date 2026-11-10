@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Mulish:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+/* ==========================================================================
+   DMS-Service theme
+   Rule: font sizes live ONLY here (as CSS variables per breakpoint).
+   ========================================================================== */
+
+@layer base {
+  :root {
+    --primary: #35C0E4;
+    --primary-hover: #1C6F87;
+    --primary-light: #D3F1F9;
+    --dark-section: #4F4F4F;
+    --footer-bg: #3A3A3A;
+    --heading: #111111;
+    --body: #333333;
+    --font-mulish: 'Mulish', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+
+    /* Font scale (defaults = mobile portrait) */
+    --fs-header-link: 15px;
+    --fs-btn: 15px;
+    --fs-eyebrow: 13px;
+    --fs-banner-title: 26px;
+    --fs-section-title: 24px;
+    --fs-section-text: 15px;
+    --fs-card-title: 20px;
+    --fs-footer-title: 18px;
+    --fs-footer-text: 15px;
+  }
+
+  html {
+    overflow-x: clip;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    color: var(--body);
+    background-color: #ffffff;
+    overflow-x: clip;
+    margin: 0;
+  }
+
+  section[id],
+  footer[id] {
+    scroll-margin-top: 80px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-mulish);
+  }
+}
+
+.font-mulish {
+  font-family: var(--font-mulish) !important;
+}
+
+.font-inter {
+  font-family: var(--font-inter) !important;
+}
+
+/* ---------- Container ---------- */
+.custom-container {
+  width: calc(100% - 32px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    width: 92%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-container {
+    width: 88%;
+  }
+}
+
+/* ---------- Typography classes ---------- */
+.header-link {
+  font-size: var(--fs-header-link);
+  line-height: 1.5;
+}
+
+.btn-text {
+  font-size: var(--fs-btn);
+  line-height: 1.4;
+}
+
+.eyebrow {
+  font-size: var(--fs-eyebrow);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.banner-title {
+  font-size: var(--fs-banner-title);
+  line-height: 1.3;
+}
+
+.section-title {
+  font-size: var(--fs-section-title);
+  line-height: 1.4;
+}
+
+.section-text {
+  font-size: var(--fs-section-text);
+  line-height: 1.65;
+}
+
+.card-title {
+  font-size: var(--fs-card-title);
+  line-height: 1.3;
+}
+
+.footer-title {
+  font-size: var(--fs-footer-title);
+  line-height: 1.4;
+}
+
+.footer-text {
+  font-size: var(--fs-footer-text);
+  line-height: 1.65;
+}
+
+/* ---------- Breakpoints (9) ---------- */
+
+/* 2. Mobile Landscape (481px - 767px) */
+@media (min-width: 481px) {
+  :root {
+    --fs-banner-title: 30px;
+    --fs-section-title: 26px;
+  }
+}
+
+/* 3. Tablet (768px - 1023px) */
+@media (min-width: 768px) {
+  :root {
+    --fs-header-link: 16px;
+    --fs-btn: 16px;
+    --fs-eyebrow: 14px;
+    --fs-banner-title: 32px;
+    --fs-section-title: 28px;
+    --fs-section-text: 16px;
+    --fs-card-title: 22px;
+    --fs-footer-title: 20px;
+    --fs-footer-text: 16px;
+  }
+}
+
+/* 4. Desktop Small (1024px - 1279px) & 5. Desktop Standard (1280px - 1535px) */
+@media (min-width: 1280px) {
+  :root {
+    --fs-eyebrow: 15px;
+    --fs-banner-title: 34px;
+    --fs-section-title: 30px;
+  }
+}
+
+/* iPad Pro 13" (portrait 1024px / landscape 1366px) — slightly larger text */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  :root {
+    --fs-header-link: 18px;
+    --fs-btn: 18px;
+    --fs-eyebrow: 16px;
+    --fs-banner-title: 40px;
+    --fs-section-title: 34px;
+    --fs-section-text: 18px;
+    --fs-card-title: 24px;
+    --fs-footer-title: 22px;
+    --fs-footer-text: 17px;
+  }
+}
+
+/* 6. Desktop Large / Full HD (1536px - 1920px) — Figma reference */
+@media (min-width: 1536px) {
+  :root {
+    --fs-eyebrow: 16px;
+    --fs-banner-title: 36px;
+    --fs-section-title: 32px;
+    --fs-card-title: 24px;
+  }
+}
+
+/* 7. Extra Large (1921px - 2559px) */
+@media (min-width: 1921px) {
+  :root {
+    --fs-header-link: 18px;
+    --fs-btn: 18px;
+    --fs-eyebrow: 18px;
+    --fs-banner-title: 42px;
+    --fs-section-title: 38px;
+    --fs-section-text: 18px;
+    --fs-card-title: 26px;
+    --fs-footer-title: 22px;
+    --fs-footer-text: 18px;
+  }
+}
+
+/* 8. 2K Screens (2560px - 3800px) */
+@media (min-width: 2560px) {
+  :root {
+    --fs-header-link: 24px;
+    --fs-btn: 24px;
+    --fs-eyebrow: 22px;
+    --fs-banner-title: 56px;
+    --fs-section-title: 50px;
+    --fs-section-text: 24px;
+    --fs-card-title: 34px;
+    --fs-footer-title: 30px;
+    --fs-footer-text: 24px;
+  }
+}
+
+/* 9. 4K / Ultra-wide (> 3800px) */
+@media (min-width: 3801px) {
+  :root {
+    --fs-header-link: 34px;
+    --fs-btn: 34px;
+    --fs-eyebrow: 34px;
+    --fs-banner-title: 84px;
+    --fs-section-title: 76px;
+    --fs-section-text: 36px;
+    --fs-card-title: 50px;
+    --fs-footer-title: 44px;
+    --fs-footer-text: 36px;
+  }
+}
+
+/* ---------- Button hover texture (Figma "Frame 5" hover state) ---------- */
+.dms-btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.dms-btn-primary:hover {
+  background-color: var(--primary-hover);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='120' height='120' filter='url(%23n)' opacity='0.18'/></svg>");
+}
+
+/* ---------- Product card corner accent ---------- */
+.product-corner {
+  clip-path: polygon(100% 0, 100% 20%, 94% 15%, 94% 5.5%, 80% 5.5%, 75% 0);
+  transition: clip-path 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: clip-path;
+}
+
+.group:hover .product-corner,
+.group:focus-visible .product-corner {
+  clip-path: polygon(100% 0, 100% 74%, 87% 66%, 87% 9%, 25% 9%, 18% 0);
+}
+
+/* ---------- Footer curved top ---------- */
+.footer-curve {
+  clip-path: ellipse(75% 100% at 50% 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
