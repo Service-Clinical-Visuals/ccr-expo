@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1E1E1E;
+  --font-primary: var(--font-poppins, 'Poppins'), 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-poppins, 'Poppins'), 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-primary: #222D83;
+  --color-primary-hover: #1A2368;
+  --color-secondary: #111115;
+  --color-secondary-hover: #000000;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-poppins, 'Poppins'), 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-poppins, 'Poppins'), 'Poppins', ui-sans-serif, system-ui, sans-serif;
+
+  /* Font sizes reduced by 1px (0.0625rem) according to rem */
+  --text-xs: 0.6875rem; /* 11px, was 12px (0.75rem) */
+  --text-sm: 0.8125rem; /* 13px, was 14px (0.875rem) */
+  --text-base: 0.9375rem; /* 15px, was 16px (1rem) */
+  --text-lg: 1.0625rem; /* 17px, was 18px (1.125rem) */
+  --text-xl: 1.1875rem; /* 19px, was 20px (1.25rem) */
+  --text-2xl: 1.4375rem; /* 23px, was 24px (1.5rem) */
+  --text-3xl: 1.8125rem; /* 29px, was 30px (1.875rem) */
+  --text-4xl: 2.1875rem; /* 35px, was 36px (2.25rem) */
+  --text-5xl: 2.9375rem; /* 47px, was 48px (3rem) */
+  --text-6xl: 3.6875rem; /* 59px, was 60px (3.75rem) */
+  --text-7xl: 4.4375rem; /* 71px, was 72px (4.5rem) */
+  --text-8xl: 5.9375rem; /* 95px, was 96px (6rem) */
+  --text-9xl: 7.9375rem; /* 127px, was 128px (8rem) */
+}
+
+body,
+.fisioline-root {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins, 'Poppins'), 'Poppins', ui-sans-serif, system-ui, sans-serif !important;
+}
+
+.fisioline-root * {
+  font-family: inherit;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) - Reduced by 1px (0.0625rem) */
+h1 { font-size: 2.1875rem; /* 35px, was 36px */ font-weight: 600 !important; font-family: var(--font-primary) !important; }
+h2 { font-size: 1.9375rem; /* 31px, was 32px */ font-weight: 600 !important; font-family: var(--font-primary) !important; }
+h3 { font-size: 1.1875rem; /* 19px, was 20px */ font-weight: 600; font-family: var(--font-primary) !important; }
+h4 { font-size: 1rem; /* 16px, was 17px */ font-weight: 700; font-family: var(--font-secondary) !important; }
+p, li { font-size: 1rem; /* 16px, was 17px */ font-weight: 400; font-family: var(--font-secondary) !important; }
+span { font-size: 0.8125rem; /* 13px, was 14px */ font-family: var(--font-secondary) !important; }
+.navbar { font-size: 1rem; /* 16px, was 17px */ font-weight: 400; font-family: var(--font-secondary) !important; }
+.footer-heading { font-size: 1.1875rem; /* 19px, was 20px */ font-weight: 600; font-family: var(--font-primary) !important; }
+.footer-body { font-size: 1rem; /* 16px, was 17px */ font-weight: 400; font-family: var(--font-secondary) !important; }
+.button { font-size: 1rem; /* 16px, was 17px */ font-weight: 600; font-family: var(--font-primary) !important; }
+.number { font-size: 7.9375rem; /* 127px, was 128px */ font-weight: 700; font-family: var(--font-primary) !important; color: rgba(255, 255, 255, 0.6); line-height: 1; }
+
+/* Custom Swiper Pagination - Tecme Technique */
+.custom-fisioline-bullet,
+.fisioline-pagination .swiper-pagination-bullet,
+.indications-pagination .swiper-pagination-bullet,
+.news-pagination .swiper-pagination-bullet {
+  width: 9px !important;
+  height: 9px !important;
+  border-radius: 9px !important;
+  background-color: #d9d9d9 !important;
+  opacity: 1 !important;
+  display: inline-block;
+  margin: 0 4px !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.swiper-pagination-bullet-active.custom-fisioline-bullet,
+.fisioline-pagination .swiper-pagination-bullet-active,
+.indications-pagination .swiper-pagination-bullet-active,
+.news-pagination .swiper-pagination-bullet-active {
+  width: 48px !important;
+  height: 9px !important;
+  background-color: #222D83 !important;
+  border-radius: 9px !important;
+}
+
+/* Mobile Portrait Screen (up to 480px) - Reduced by 1px (0.0625rem) */
+/* Multiplier: ~0.7 */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.5125rem; /* ~24.2px, was 25.2px */ }
+  h2 { font-size: 1.3375rem; /* ~21.4px, was 22.4px */ }
+  h3 { font-size: 0.8125rem; /* 13px, was 14px */ }
+  h4 { font-size: 0.6875rem; /* 11px, was 12px */ }
+  p, li { font-size: 0.6875rem; /* 11px, was 12px */ }
+  span { font-size: 0.55rem; /* ~8.8px, was 9.8px */ }
+  .navbar { font-size: 0.6875rem; /* 11px, was 12px */ }
+  .footer-heading { font-size: 0.8125rem; /* 13px, was 14px */ }
+  .footer-body { font-size: 0.6875rem; /* 11px, was 12px */ }
+  .button { font-size: 0.6875rem; /* 11px, was 12px */ }
+  .number { font-size: 5.5375rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) - Reduced by 1px (0.0625rem) */
+/* Multiplier: ~0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.7375rem; /* ~27.8px, was 28.8px */ }
+  h2 { font-size: 1.5375rem; /* ~24.6px, was 25.6px */ }
+  h3 { font-size: 0.9375rem; /* 15px, was 16px */ }
+  h4 { font-size: 0.7875rem; /* ~12.6px, was 13.6px */ }
+  p, li { font-size: 0.7875rem; /* ~12.6px, was 13.6px */ }
+  span { font-size: 0.6375rem; /* ~10.2px, was 11.2px */ }
+  .navbar { font-size: 0.7875rem; /* ~12.6px, was 13.6px */ }
+  .footer-heading { font-size: 0.9375rem; /* 15px, was 16px */ }
+  .footer-body { font-size: 0.7875rem; /* ~12.6px, was 13.6px */ }
+  .button { font-size: 0.7875rem; /* ~12.6px, was 13.6px */ }
+  .number { font-size: 6.3375rem; }
+}
+
+/* Tablet / Tab Screen (768px - 1035px) - Reduced by 1px (0.0625rem) */
+/* Multiplier: ~0.9 */
+@media (min-width: 768px) and (max-width: 1035px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.9625rem; /* ~31.4px, was 32.4px */ }
+  h2 { font-size: 1.7375rem; /* ~27.8px, was 28.8px */ }
+  h3 { font-size: 1.0625rem; /* 17px, was 18px */ }
+  h4 { font-size: 0.89375rem; /* ~14.3px, was 15.3px */ }
+  p, li { font-size: 0.89375rem; /* ~14.3px, was 15.3px */ }
+  span { font-size: 0.725rem; /* ~11.6px, was 12.6px */ }
+  .navbar { font-size: 0.89375rem; /* ~14.3px, was 15.3px */ }
+  .footer-heading { font-size: 1.0625rem; /* 17px, was 18px */ }
+  .footer-body { font-size: 0.89375rem; /* ~14.3px, was 15.3px */ }
+  .button { font-size: 0.89375rem; /* ~14.3px, was 15.3px */ }
+  .number { font-size: 7.1375rem; }
+}
+
+/* Laptop Screen (1036px - 1279px) - Reduced by 1px (0.0625rem) */
+/* Multiplier: ~0.95 */
+@media (min-width: 1036px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.075rem; /* ~33.2px, was 34.2px */ }
+  h2 { font-size: 1.8375rem; /* ~29.4px, was 30.4px */ }
+  h3 { font-size: 1.125rem; /* 18px, was 19px */ }
+  h4 { font-size: 0.9375rem; /* 15px, was 16px */ }
+  p, li { font-size: 0.9375rem; /* 15px, was 16px */ }
+  span { font-size: 0.7675rem; /* ~12.3px, was 13.3px */ }
+  .navbar { font-size: 0.9375rem; /* 15px, was 16px */ }
+  .footer-heading { font-size: 1.125rem; /* 18px, was 19px */ }
+  .footer-body { font-size: 0.9375rem; /* 15px, was 16px */ }
+  .button { font-size: 0.9375rem; /* 15px, was 16px */ }
+  .number { font-size: 7.5375rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) - Reduced by 1px (0.0625rem) */
+/* Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.3125rem; /* 53px, was 54px */ }
+  h2 { font-size: 2.9375rem; /* 47px, was 48px */ }
+  h3 { font-size: 1.8125rem; /* 29px, was 30px */ }
+  h4 { font-size: 1.5375rem; /* ~24.6px, was 25.6px */ }
+  p, li { font-size: 1.5375rem; /* ~24.6px, was 25.6px */ }
+  span { font-size: 1.25rem; /* 20px, was 21px */ }
+  .navbar { font-size: 1.5375rem; /* ~24.6px, was 25.6px */ }
+  .footer-heading { font-size: 1.8125rem; /* 29px, was 30px */ }
+  .footer-body { font-size: 1.5375rem; /* ~24.6px, was 25.6px */ }
+  .button { font-size: 1.5375rem; /* ~24.6px, was 25.6px */ }
+  .number { font-size: 11.9375rem; }
+
+  /* 2.5K Pagination dots - Tecme Technique */
+  .custom-fisioline-bullet,
+  .fisioline-pagination .swiper-pagination-bullet,
+  .indications-pagination .swiper-pagination-bullet,
+  .news-pagination .swiper-pagination-bullet {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 14px !important;
+    margin: 0 6px !important;
+  }
+  .swiper-pagination-bullet-active.custom-fisioline-bullet,
+  .fisioline-pagination .swiper-pagination-bullet-active,
+  .indications-pagination .swiper-pagination-bullet-active,
+  .news-pagination .swiper-pagination-bullet-active {
+    width: 72px !important;
+    height: 14px !important;
+    border-radius: 14px !important;
+  }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) - Reduced by 1px (0.0625rem) */
+/* Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.4375rem; /* 71px, was 72px */ }
+  h2 { font-size: 3.9375rem; /* 63px, was 64px */ }
+  h3 { font-size: 2.4375rem; /* 39px, was 40px */ }
+  h4 { font-size: 2.0625rem; /* 33px, was 34px */ }
+  p, li { font-size: 2.0625rem; /* 33px, was 34px */ }
+  span { font-size: 1.6875rem; /* 27px, was 28px */ }
+  .navbar { font-size: 2.0625rem; /* 33px, was 34px */ }
+  .footer-heading { font-size: 2.4375rem; /* 39px, was 40px */ }
+  .footer-body { font-size: 2.0625rem; /* 33px, was 34px */ }
+  .button { font-size: 2.0625rem; /* 33px, was 34px */ }
+  .number { font-size: 15.9375rem; }
+
+  /* 4K Pagination dots - Tecme Technique */
+  .custom-fisioline-bullet,
+  .fisioline-pagination .swiper-pagination-bullet,
+  .indications-pagination .swiper-pagination-bullet,
+  .news-pagination .swiper-pagination-bullet {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 20px !important;
+    margin: 0 8px !important;
+  }
+  .swiper-pagination-bullet-active.custom-fisioline-bullet,
+  .fisioline-pagination .swiper-pagination-bullet-active,
+  .indications-pagination .swiper-pagination-bullet-active,
+  .news-pagination .swiper-pagination-bullet-active {
+    width: 100px !important;
+    height: 20px !important;
+    border-radius: 20px !important;
+  }
+}
