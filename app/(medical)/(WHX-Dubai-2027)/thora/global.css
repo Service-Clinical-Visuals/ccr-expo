@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+/* ==========================================================================
+   Thora Tech theme
+   Rule: font sizes live ONLY here (as CSS variables per breakpoint).
+   ========================================================================== */
+
+@layer base {
+  :root {
+    --primary: #38BDF8;          /* eyebrow pill */
+    --accent: #F59E0B;           /* orange CTA / active nav */
+    --accent-hover: #D97706;
+    --c-blue: #0B5F8C;
+    --c-green: #10B981;
+    --c-orange: #F59E0B;
+    --c-red: #B91C1C;
+    --nav: #3F4A54;
+    --heading: #1F1F1F;
+    --body: #4A4A4A;
+    --border: #8C8C8C;
+    --footer-bg: #333333;
+    --font-plex: 'IBM Plex Sans', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+
+    /* Font scale (defaults = mobile portrait) */
+    --fs-header-link: 15px;
+    --fs-btn: 15px;
+    --fs-eyebrow: 12px;
+    --fs-banner-title: 22px;
+    --fs-section-title: 22px;
+    --fs-section-text: 15px;
+    --fs-card-label: 15px;
+    --fs-card-title: 20px;
+    --fs-card-text: 15px;
+    --fs-stat-title: 18px;
+    --fs-stat-text: 15px;
+    --fs-news-title: 17px;
+    --fs-footer-title: 18px;
+    --fs-footer-text: 15px;
+  }
+
+  html {
+    overflow-x: clip;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    color: var(--body);
+    background-color: #ffffff;
+    overflow-x: clip;
+    margin: 0;
+  }
+
+  section[id],
+  footer[id] {
+    scroll-margin-top: 90px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-plex);
+  }
+}
+
+.font-plex {
+  font-family: var(--font-plex) !important;
+}
+
+.font-inter {
+  font-family: var(--font-inter) !important;
+}
+
+/* ---------- Container ---------- */
+.custom-container {
+  width: calc(100% - 32px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    width: 92%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-container {
+    width: 84.4%; /* 1620 / 1920 */
+  }
+}
+
+/* ---------- Typography classes ---------- */
+.header-link { font-size: var(--fs-header-link); line-height: 1.5; }
+.btn-text { font-size: var(--fs-btn); line-height: 1.4; }
+.eyebrow { font-size: var(--fs-eyebrow); line-height: 1.4; letter-spacing: 0.02em; text-transform: uppercase; }
+.banner-title { font-size: var(--fs-banner-title); line-height: 1.5; }
+.section-title { font-size: var(--fs-section-title); line-height: 1.35; }
+.section-text { font-size: var(--fs-section-text); line-height: 1.65; }
+.card-label { font-size: var(--fs-card-label); line-height: 1.4; letter-spacing: 0.05em; text-transform: uppercase; }
+.card-title { font-size: var(--fs-card-title); line-height: 1.3; }
+.card-text { font-size: var(--fs-card-text); line-height: 1.65; }
+.stat-title { font-size: var(--fs-stat-title); line-height: 1.3; }
+.stat-text { font-size: var(--fs-stat-text); line-height: 1.4; text-transform: uppercase; }
+.news-title { font-size: var(--fs-news-title); line-height: 1.5; }
+.footer-title { font-size: var(--fs-footer-title); line-height: 1.4; }
+.footer-text { font-size: var(--fs-footer-text); line-height: 1.65; }
+
+/* ---------- Breakpoints ---------- */
+
+/* Mobile Landscape */
+@media (min-width: 481px) {
+  :root {
+    --fs-banner-title: 24px;
+    --fs-section-title: 24px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  :root {
+    --fs-header-link: 16px;
+    --fs-btn: 16px;
+    --fs-eyebrow: 13px;
+    --fs-banner-title: 26px;
+    --fs-section-title: 26px;
+    --fs-section-text: 16px;
+    --fs-card-label: 16px;
+    --fs-card-title: 22px;
+    --fs-card-text: 16px;
+    --fs-stat-title: 19px;
+    --fs-stat-text: 16px;
+    --fs-news-title: 18px;
+    --fs-footer-title: 19px;
+    --fs-footer-text: 16px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  :root {
+    --fs-header-link: 17px;
+    --fs-btn: 15px;
+    --fs-banner-title: 24px;
+    --fs-section-title: 25px;
+    --fs-card-label: 17px;
+    --fs-card-title: 23px;
+    --fs-stat-title: 19px;
+    --fs-stat-text: 17px;
+    --fs-news-title: 19px;
+  }
+}
+
+/* Full HD (Figma reference 1920) */
+@media (min-width: 1536px) {
+  :root {
+    --fs-header-link: 18px;
+    --fs-btn: 16px;
+    --fs-eyebrow: 14px;
+    --fs-banner-title: 26px;
+    --fs-section-title: 27px;
+    --fs-section-text: 16px;
+    --fs-card-label: 18px;
+    --fs-card-title: 24px;
+    --fs-card-text: 16px;
+    --fs-stat-title: 20px;
+    --fs-stat-text: 18px;
+    --fs-news-title: 20px;
+    --fs-footer-title: 20px;
+    --fs-footer-text: 16px;
+  }
+}
+
+/* Extra Large */
+@media (min-width: 1921px) {
+  :root {
+    --fs-header-link: 20px;
+    --fs-btn: 18px;
+    --fs-eyebrow: 16px;
+    --fs-banner-title: 30px;
+    --fs-section-title: 32px;
+    --fs-section-text: 18px;
+    --fs-card-label: 20px;
+    --fs-card-title: 27px;
+    --fs-card-text: 18px;
+    --fs-stat-title: 23px;
+    --fs-stat-text: 20px;
+    --fs-news-title: 22px;
+    --fs-footer-title: 22px;
+    --fs-footer-text: 18px;
+  }
+}
+
+/* 2K */
+@media (min-width: 2560px) {
+  :root {
+    --fs-header-link: 26px;
+    --fs-btn: 24px;
+    --fs-eyebrow: 22px;
+    --fs-banner-title: 40px;
+    --fs-section-title: 42px;
+    --fs-section-text: 24px;
+    --fs-card-label: 26px;
+    --fs-card-title: 36px;
+    --fs-card-text: 24px;
+    --fs-stat-title: 30px;
+    --fs-stat-text: 26px;
+    --fs-news-title: 30px;
+    --fs-footer-title: 30px;
+    --fs-footer-text: 24px;
+  }
+}
+
+/* 4K */
+@media (min-width: 3801px) {
+  :root {
+    --fs-header-link: 38px;
+    --fs-btn: 34px;
+    --fs-eyebrow: 32px;
+    --fs-banner-title: 60px;
+    --fs-section-title: 62px;
+    --fs-section-text: 36px;
+    --fs-card-label: 38px;
+    --fs-card-title: 54px;
+    --fs-card-text: 36px;
+    --fs-stat-title: 44px;
+    --fs-stat-text: 38px;
+    --fs-news-title: 44px;
+    --fs-footer-title: 44px;
+    --fs-footer-text: 36px;
+  }
+}
+
+/* ---------- Light "medical" section backgrounds ---------- */
+.thora-bg1,
+.thora-bg2,
+.thora-bg3 {
+  background-color: #F7FAFE;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.thora-bg1 { background-image: url("/medical/thora/bg1.webp"); }
+.thora-bg2 { background-image: url("/medical/thora/bg2.webp"); }
+.thora-bg3 { background-image: url("/medical/thora/bg3.webp"); }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
