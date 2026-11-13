@@ -1,34 +1,22 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React from "react";
+import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 import Typography from "./Typography";
 import Button from "./Button";
 
 export default function Hero() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 1.0;
-      videoRef.current.play().catch(() => { });
-    }
-  }, []);
 
   return (
     <section
       id="hero"
       className="w-full h-screen h-[100dvh] min-h-[100dvh] relative overflow-hidden flex flex-col justify-end pb-[8%] md:pb-[6%] bg-[#0c1017]"
     >
-      {/* Background Video */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <video
-          ref={videoRef}
-          src="/medical/eretna/banner.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover object-center pointer-events-none"
+      {/* Background Video using DynamicVideoPlayer */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <DynamicVideoPlayer
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
+          type="banner"
         />
       </div>
 
