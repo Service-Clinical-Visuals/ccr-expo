@@ -15,7 +15,7 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-  { name: "Home", id: "home" },
+  { name: "Home", id: "home", isLink: true, href: "/" },
   { name: "About Us", id: "about", isLink: true, href: "/zinnanti-surgical-1/about" },
   { name: "Products", id: "products", hasDropdown: true },
   { name: "Videos", id: "videos" },

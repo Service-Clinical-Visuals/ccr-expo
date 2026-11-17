@@ -6,9 +6,9 @@ import { Phone, Printer, ArrowRight } from "lucide-react";
 import Typography from "./Typography";
 import Logo from "./Logo";
 
-// Only "About Us" is an active link; the rest render as plain text.
+// Only "Home" and "About Us" are active links; the rest render as plain text.
 const quickLinks: { name: string; href?: string }[] = [
-  { name: "Home" },
+  { name: "Home", href: "/" },
   { name: "About Us", href: "/zinnanti-surgical-1/about" },
   { name: "Products" },
   { name: "Videos" },
