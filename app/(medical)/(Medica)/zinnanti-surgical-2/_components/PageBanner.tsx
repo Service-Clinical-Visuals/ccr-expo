@@ -15,12 +15,6 @@ const PageBanner = ({ title }: PageBannerProps) => {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-navy)] pt-[calc(var(--zs-header-h,110px)+3.5rem)] lg:pt-[calc(var(--zs-header-h,110px)+5rem)] min-[2500px]:pt-[calc(var(--zs-header-h,110px)+8rem)] pb-14 sm:pb-16 lg:pb-20 min-[2500px]:pb-28 min-[3800px]:pb-40">
       <div className="custom-container relative z-10 flex flex-col items-start gap-4 min-[2500px]:gap-6">
-        {eyebrow && (
-          <div data-aos="fade-up">
-            <Eyebrow text={eyebrow} tone="light" />
-          </div>
-        )}
-
         <Typography
           variant="h1"
           color="white"
@@ -47,8 +41,7 @@ const PageBanner = ({ title }: PageBannerProps) => {
           <span className="navbar text-white">{title}</span>
         </nav>
       </div>
-    </div>
-    </section >
+    </section>
   );
 };
 
