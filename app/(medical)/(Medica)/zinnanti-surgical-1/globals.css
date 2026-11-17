@@ -71,12 +71,12 @@ button, input, select, textarea {
 /* Base Typography (Desktop: 1280px - 2499px) */
 h1 { font-size: 1.75rem; /* 28px */ font-weight: 700 !important; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.7143; /* 48px */ letter-spacing: 0; }
 h2 { font-size: 1.75rem; /* 28px */ font-weight: 700 !important; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.7143; /* 48px */ }
-h3 { font-size: 1.25rem; font-weight: 600; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.4; }
-h4 { font-size: 1.0625rem; font-weight: 600; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.5; }
+h3 { font-size: 1.25rem; font-weight: 700 !important; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.4; }
+h4 { font-size: 1.0625rem; font-weight: 700 !important; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.5; }
 p, li { font-size: 1.0625rem; font-weight: 400; font-family: "DM Sans", var(--font-primary), sans-serif; line-height: 1.6; }
 span { font-size: 0.875rem; font-family: "DM Sans", var(--font-primary), sans-serif; }
 .navbar { font-size: 1.0625rem; font-weight: 400; font-family: "Outfit", var(--font-secondary), sans-serif !important; }
-.footer-heading { font-size: 1.125rem; /* 18px */ font-weight: 800 !important; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1; letter-spacing: 0; text-transform: uppercase; }
+.footer-heading { font-size: 1.125rem; /* 18px */ font-weight: 600 !important; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1; letter-spacing: 0; text-transform: uppercase; }
 .footer-body { font-size: 1.0625rem; font-weight: 400; font-family: "DM Sans", var(--font-primary), sans-serif !important; }
 .badge-text { font-size: 0.8125rem; /* 13px */ font-weight: 500; font-family: "DM Sans", var(--font-primary), sans-serif !important; letter-spacing: 0.02em; }
 .product-label { display: block; max-width: 22ch; margin: 0 auto; font-size: 1rem; font-weight: 600; line-height: 1.4; font-family: "DM Sans", var(--font-primary), sans-serif !important; }
