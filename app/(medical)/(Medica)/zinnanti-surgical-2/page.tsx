@@ -6,6 +6,11 @@ import SmoothAOS from "./_components/SmoothAOS";
 import Banner from "./_components/Banner";
 import AboutUs from "./_components/AboutUs";
 import Deg360 from "./_components/360deg";
+import ProductCategories from "./_components/ProductCategories";
+import SmokeEvacuator from "./_components/SmokeEvacuator";
+import SmokeSafety from "./_components/SmokeSafety";
+import Filtration from "./_components/Filtration";
+import VideoLibrary from "./_components/VideoLibrary";
 import Quote from "./_components/Quote";
 import Footer from "./_components/Footer";
 
@@ -20,7 +25,12 @@ export default function ZinnantiSurgicalPage() {
         <Banner />
         <AboutUs />
         <Deg360 />
-        {/* Add remaining page sections here */}
+        <ProductCategories />
+        <SmokeEvacuator />
+        <SmokeSafety />
+        <Quote text="Advancing Evacuation Technology for Clearer Visibility, Reduced Smoke Exposure, and Safer Surgical Environments." />
+        <Filtration />
+        <VideoLibrary />
         <Quote />
       </main>
 

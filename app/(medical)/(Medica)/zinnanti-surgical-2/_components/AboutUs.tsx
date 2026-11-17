@@ -9,35 +9,44 @@ const AboutUs = () => {
   return (
     <section
       id="about"
-      className="w-full bg-[var(--color-quote-bg)] pt-16 xl:pt-24 min-[2500px]:pt-36 min-[3800px]:pt-48 overflow-hidden"
+      className="w-full bg-[var(--color-quote-bg)] py-12 xl:py-16 min-[2500px]:py-24 min-[3800px]:py-32 overflow-hidden"
     >
       <div className="custom-container">
-        <div className="flex flex-col lg:flex-row items-stretch lg:items-center">
-          {/* Left: Image */}
+        {/* Image + card sit flush side by side; the card extends above and below the image */}
+        <div className="flex flex-col lg:flex-row lg:items-stretch">
+          {/* Left: Image (only top-left corner rounded) */}
           <div
-            className="w-full lg:w-[52%] relative z-0 rounded-2xl min-[2500px]:rounded-3xl overflow-hidden shadow-md"
+            className="relative w-full lg:w-[51%] aspect-[4/3] lg:aspect-auto lg:my-8 min-[2500px]:my-12 min-[3800px]:my-16 overflow-hidden rounded-tl-[2.5rem] min-[2500px]:rounded-tl-[4rem] min-[3800px]:rounded-tl-[5rem]"
             data-aos="fade-right"
           >
             <img
               src="/medical/zinnanti-surgical-2/about.webp"
               alt="Zinnanti Surgical engineer refining a surgical instrument"
-              className="w-full h-full object-cover aspect-[4/3] lg:aspect-[5/4]"
+              className="absolute inset-0 w-full h-full object-cover object-left"
             />
           </div>
 
-          {/* Right: Overlapping Blue Card */}
+          {/* Right: Blue Card (top-left + bottom-right rounded) */}
           <div
-            className="w-full lg:w-[52%] lg:-ml-[4%] -mt-10 lg:mt-0 relative z-10 bg-[var(--color-navy)] text-white rounded-2xl lg:rounded-[2rem] min-[2500px]:rounded-[3rem] shadow-xl p-6 sm:p-8 xl:p-12 min-[2500px]:p-16 min-[3800px]:p-24 flex flex-col items-start gap-4 sm:gap-5 min-[2500px]:gap-8 lg:self-stretch lg:justify-center lg:-my-6"
+            className="w-full lg:w-[49%] bg-[var(--color-navy)] text-white rounded-br-[2.5rem] lg:rounded-tl-[3.5rem] lg:rounded-br-[3.5rem] min-[2500px]:rounded-tl-[5rem] min-[2500px]:rounded-br-[5rem] min-[3800px]:rounded-tl-[7rem] min-[3800px]:rounded-br-[7rem] px-6 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-20 xl:px-14 xl:py-24 min-[2500px]:px-24 min-[2500px]:py-36 min-[3800px]:px-32 min-[3800px]:py-48 flex flex-col items-start justify-center"
             data-aos="fade-left"
             data-aos-delay="150"
           >
             <Eyebrow text="Our Heritage & Mission" tone="light" />
 
-            <Typography variant="h2" color="white" className="leading-tight">
+            <Typography
+              variant="h2"
+              color="white"
+              className="leading-snug mt-4 sm:mt-5 min-[2500px]:mt-8"
+            >
               Advancing Surgical Innovation Across Multiple Medical Specialties
             </Typography>
 
-            <Typography variant="p" color="white" className="text-white/90 leading-relaxed font-normal">
+            <Typography
+              variant="p"
+              color="white"
+              className="text-white/95 leading-[1.9] font-normal mt-5 sm:mt-6 min-[2500px]:mt-10"
+            >
               We are proud to serve a diverse range of medical specialties including
               High-Res Anoscopy (HRA), Dermatology, Gynecology, Otolaryngology, and
               Plastic Surgery. Our comprehensive offerings provide enhancements rather
@@ -52,7 +61,7 @@ const AboutUs = () => {
               improving healthcare outcomes.
             </Typography>
 
-            <div className="pt-2 sm:pt-3">
+            <div className="mt-8 sm:mt-10 min-[2500px]:mt-14">
               <Button text="Request Samples" variant="outline" />
             </div>
           </div>

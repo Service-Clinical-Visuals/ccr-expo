@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -67,15 +67,65 @@ const NavItem = ({
 };
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+  /**
+   * initial — at the top: top bar + nav bar over the banner video
+   * hidden  — scrolling through the banner: whole header slides away, video is full screen
+   * fixed   — past the banner: only the white nav bar is shown, pinned to the top
+   */
+  const [headerState, setHeaderState] = useState<"initial" | "hidden" | "fixed">("initial");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      // First section of the page (home banner / inner-page banner) decides when the nav returns
+      const hero = document.querySelector<HTMLElement>("main > section");
+      const threshold = (hero ? hero.offsetHeight : window.innerHeight) - 100;
+
+      if (scrollY <= 30) setHeaderState("initial");
+      else if (scrollY < threshold) setHeaderState("hidden");
+      else setHeaderState("fixed");
+    };
+
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, []);
+
+  /**
+   * Publish the full header height (top bar + nav bar) as --zs-header-h so the
+   * first section can sit *below* the header instead of underneath it.
+   * Measures the inner rows, so collapsing the top bar or opening the mobile
+   * drawer doesn't change the value.
+   */
+  const topBarRef = useRef<HTMLDivElement>(null);
+  const navRowRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    const measure = () => {
+      const top = topBarRef.current?.offsetHeight ?? 0;
+      const nav = navRowRef.current?.offsetHeight ?? 0;
+      root.style.setProperty("--zs-header-h", `${top + nav + 1}px`); // +1 for nav border
+    };
+
+    measure();
+    const observer = new ResizeObserver(measure);
+    if (topBarRef.current) observer.observe(topBarRef.current);
+    if (navRowRef.current) observer.observe(navRowRef.current);
+    return () => {
+      observer.disconnect();
+      root.style.removeProperty("--zs-header-h");
+    };
+  }, []);
+
+  // Keep the header on screen while the mobile menu is open
+  const isHidden = headerState === "hidden" && !mobileMenuOpen;
+  const isFixed = headerState === "fixed";
 
   // Lock body scroll when mobile menu is active
   useEffect(() => {
@@ -88,13 +138,21 @@ const Header = () => {
   const closeMenu = () => setMobileMenuOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full z-50">
-      {/* Top Bar (collapses on scroll) */}
+    <header
+      className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-500 ease-in-out ${isHidden
+        ? "-translate-y-full opacity-0 pointer-events-none"
+        : "translate-y-0 opacity-100 pointer-events-auto"
+        }`}
+    >
+      {/* Top Bar — only in the initial state */}
       <div
-        className={`w-full bg-[var(--color-secondary)] text-white overflow-hidden transition-all duration-500 ease-in-out ${scrolled ? "max-h-0 opacity-0" : "max-h-40 opacity-100"
+        className={`w-full bg-[var(--color-secondary)] text-white overflow-hidden transition-all duration-500 ease-in-out ${isFixed ? "max-h-0 opacity-0" : "max-h-40 opacity-100"
           }`}
       >
-        <div className="custom-container flex items-center justify-between gap-4 py-2.5 sm:py-3 min-[2500px]:py-5 min-[3800px]:py-7">
+        <div
+          ref={topBarRef}
+          className="custom-container flex items-center justify-between gap-4 py-2.5 sm:py-3 min-[2500px]:py-5 min-[3800px]:py-7"
+        >
           <p className="navbar !font-medium text-white truncate">
             News : Anchor Trial New England Journal Of Medicine
           </p>
@@ -114,10 +172,13 @@ const Header = () => {
 
       {/* Main Navigation Bar */}
       <div
-        className={`w-full bg-white border-b border-gray-200 transition-shadow duration-300 ${scrolled ? "shadow-md" : ""
+        className={`w-full bg-white border-b border-gray-200 transition-shadow duration-300 ${isFixed ? "shadow-md" : ""
           }`}
       >
-        <div className="custom-container flex items-center justify-between gap-4 py-3 sm:py-3.5 min-[2500px]:py-6 min-[3800px]:py-8">
+        <div
+          ref={navRowRef}
+          className="custom-container flex items-center justify-between gap-4 py-3 sm:py-3.5 min-[2500px]:py-6 min-[3800px]:py-8"
+        >
           {/* Logo */}
           <Link
             href={BASE_PATH}
