@@ -1,20 +1,7 @@
 import type { Metadata } from "next";
-import { DM_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 import { VideoProvider } from "@/app/_context/VideoContext";
 import SmoothAOS from "./_components/SmoothAOS";
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
-  weight: ["400", "500", "600", "700"],
-});
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   title: "YŪSHŪ Healthcare - Innovative Medical Devices",
@@ -36,7 +23,7 @@ export default function YushuLayout({
         rel="stylesheet"
       />
       <div
-        className={`${dmSans.variable} ${outfit.variable} font-secondary min-h-screen bg-white antialiased overflow-x-hidden relative w-full`}
+        className={`font-secondary min-h-screen bg-white antialiased overflow-x-hidden relative w-full`}
         style={{ fontFamily: "'Outfit', var(--font-secondary), sans-serif" }}
       >
         <SmoothAOS />

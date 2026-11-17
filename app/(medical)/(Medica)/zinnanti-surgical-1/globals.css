@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-primary: "DM Sans", var(--font-dm-sans), sans-serif;
+  --font-secondary: "Outfit", var(--font-outfit), sans-serif;
+}
+
+@theme inline {
+  --color-primary: #0a9fdc;
+  --color-primary-hover: #0784bb;
+  --color-primary-dark: #0b5e94;
+  --color-secondary: #1f2937;
+  --color-secondary-hover: #111827;
+  --color-muted: #4b5563;
+  --color-footer: #d9ebf7;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "DM Sans", var(--font-dm-sans), sans-serif;
+  --font-primary: "DM Sans", var(--font-dm-sans), sans-serif;
+  --font-secondary: "Outfit", var(--font-outfit), sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "DM Sans", var(--font-primary), sans-serif;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+.font-primary { font-family: "DM Sans", var(--font-primary), sans-serif !important; }
+.font-secondary { font-family: "Outfit", var(--font-secondary), sans-serif !important; }
+.font-sans { font-family: "DM Sans", var(--font-primary), sans-serif !important; }
+
+.custom-container {
+  width: 100%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zin-gradient {
+  background-image: linear-gradient(135deg, #22b4e8 0%, #0b6fa8 100%);
+}
+
+/* Base Typography (Desktop: 1280px - 2499px) */
+h1 { font-size: 1.75rem; /* 28px */ font-weight: 700 !important; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.7143; /* 48px */ letter-spacing: 0; }
+h2 { font-size: 1.625rem; font-weight: 700 !important; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.4; }
+h3 { font-size: 1.25rem; font-weight: 600; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.4; }
+h4 { font-size: 1.0625rem; font-weight: 600; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1.5; }
+p, li { font-size: 1.0625rem; font-weight: 400; font-family: "DM Sans", var(--font-primary), sans-serif; line-height: 1.6; }
+span { font-size: 0.875rem; font-family: "DM Sans", var(--font-primary), sans-serif; }
+.navbar { font-size: 1.0625rem; font-weight: 400; font-family: "Outfit", var(--font-secondary), sans-serif !important; }
+.footer-heading { font-size: 1.125rem; /* 18px */ font-weight: 800 !important; font-family: "Outfit", var(--font-secondary), sans-serif !important; line-height: 1; letter-spacing: 0; text-transform: uppercase; }
+.footer-body { font-size: 1.0625rem; font-weight: 400; font-family: "DM Sans", var(--font-primary), sans-serif !important; }
+.button { font-size: 1.0625rem; font-weight: 600; font-family: "DM Sans", var(--font-primary), sans-serif !important; }
+
+/* Mobile Portrait (up to 480px) */
+@media (max-width: 480px) {
+  h1 { font-size: 1.3rem; }
+  h2 { font-size: 1.1375rem; }
+  h3 { font-size: 0.875rem; }
+  h4 { font-size: 0.75rem; }
+  p, li { font-size: 0.75rem; }
+  span { font-size: 0.65rem; }
+  .navbar { font-size: 0.75rem; }
+  .footer-heading { font-size: 0.8rem; }
+  .footer-body { font-size: 0.75rem; }
+  .button { font-size: 0.75rem; }
+}
+
+/* Mobile Landscape (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.45rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1rem; }
+  h4 { font-size: 0.85rem; }
+  p, li { font-size: 0.85rem; }
+  span { font-size: 0.7rem; }
+  .navbar { font-size: 0.85rem; }
+  .footer-heading { font-size: 0.9rem; }
+  .footer-body { font-size: 0.85rem; }
+  .button { font-size: 0.85rem; }
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.4625rem; }
+  h3 { font-size: 1.125rem; }
+  h4 { font-size: 0.95625rem; }
+  p, li { font-size: 0.95625rem; }
+  span { font-size: 0.7875rem; }
+  .navbar { font-size: 0.95625rem; }
+  .footer-heading { font-size: 1rem; }
+  .footer-body { font-size: 0.95625rem; }
+  .button { font-size: 0.95625rem; }
+}
+
+/* Laptop (1024px - 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  h1 { font-size: 1.6625rem; }
+  h2 { font-size: 1.54375rem; }
+  h3 { font-size: 1.1875rem; }
+  h4 { font-size: 1rem; }
+  p, li { font-size: 1rem; }
+  span { font-size: 0.83rem; }
+  .navbar { font-size: 1rem; }
+  .footer-heading { font-size: 1.0625rem; }
+  .footer-body { font-size: 1rem; }
+  .button { font-size: 1rem; }
+}
+
+/* Ultra-wide (2500px - 3799px) */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 2.625rem; }
+  h2 { font-size: 2.4375rem; }
+  h3 { font-size: 1.875rem; }
+  h4 { font-size: 1.6rem; }
+  p, li { font-size: 1.6rem; }
+  span { font-size: 1.3125rem; }
+  .navbar { font-size: 1.6rem; }
+  .footer-heading { font-size: 1.6875rem; }
+  .footer-body { font-size: 1.6rem; }
+  .button { font-size: 1.6rem; }
+}
+
+/* 4K (3800px and above) */
+@media (min-width: 3800px) {
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 3.25rem; }
+  h3 { font-size: 2.5rem; }
+  h4 { font-size: 2.125rem; }
+  p, li { font-size: 2.125rem; }
+  span { font-size: 1.75rem; }
+  .navbar { font-size: 2.125rem; }
+  .footer-heading { font-size: 2.25rem; }
+  .footer-body { font-size: 2.125rem; }
+  .button { font-size: 2.125rem; }
+}
+
+/* Footer Responsive Layout (1280px+) */
+@media (min-width: 1280px) {
+  .footer-row-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: 0 !important;
+  }
+  .footer-col-1 { width: 28% !important; max-width: 28% !important; flex-shrink: 0 !important; }
+  .footer-divider-col { display: flex !important; width: 6% !important; flex-shrink: 0 !important; }
+  .footer-col-2 { width: 10% !important; flex-shrink: 0 !important; }
+  .footer-col-3 { width: 15% !important; flex-shrink: 0 !important; }
+  .footer-col-4 { width: 15% !important; flex-shrink: 0 !important; }
+  .footer-col-5 { width: 22% !important; flex-shrink: 0 !important; }
+}
+
+/* Footer intro paragraph uses Outfit */
+.footer-about { font-family: "Outfit", var(--font-secondary), sans-serif !important; }
