@@ -4,7 +4,12 @@ import React from "react";
 import Header from "../_components/Header";
 import SmoothAOS from "../_components/SmoothAOS";
 import PageBanner from "../_components/PageBanner";
-import AboutUs from "../_components/AboutUs";
+import AboutMissionVision from "../_components/AboutMissionVision";
+import LeadershipTeam from "../_components/LeadershipTeam";
+import OurImpact from "../_components/OurImpact";
+import OurCommitment from "../_components/OurCommitment";
+import OurInnovation from "../_components/OurInnovation";
+import Testimonials from "../_components/Testimonials";
 import Quote from "../_components/Quote";
 import Footer from "../_components/Footer";
 
@@ -16,10 +21,13 @@ export default function ZinnantiSurgicalAboutPage() {
       <Header />
 
       <main className="relative flex flex-col">
-        <PageBanner title="About Us" eyebrow="Zinnanti Surgical Design Group" />
-        <AboutUs />
-        {/* Add remaining about-page sections here */}
-        <Quote />
+        <PageBanner title="About Us" />
+        <AboutMissionVision />
+        <LeadershipTeam />
+        <OurImpact />
+        <OurCommitment />
+        <OurInnovation />
+        <Testimonials />
       </main>
 
       <Footer />

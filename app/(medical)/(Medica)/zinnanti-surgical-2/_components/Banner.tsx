@@ -20,8 +20,6 @@ const Banner = () => {
         />
       </div>
 
-      {/* Dark gradient overlay for readability */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-tr from-black/80 via-black/40 to-transparent pointer-events-none" />
 
       {/* Bottom-left Content */}
       <div className="custom-container relative z-20 pb-12 sm:pb-16 lg:pb-20 min-[2500px]:pb-28 min-[3800px]:pb-40">
