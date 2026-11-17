@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+/* ==========================================================================
+   HEBUmedical theme
+   Rule: font sizes live ONLY here (as CSS variables per breakpoint).
+   ========================================================================== */
+
+@layer base {
+  :root {
+    --primary: #FFD500;          /* brand yellow: eyebrow dot, active nav, CTA */
+    --primary-hover: #E6C000;
+    --dark: #121212;             /* header, dark sections, footer */
+    --heading: #1F1F1F;
+    --body: #3A3A3A;
+    --border: #8F8F8F;
+    --muted-bg: #F0F0F0;
+    --card-bg: #F7F7F7;
+    --font-head: 'Outfit', sans-serif;
+    --font-body: 'Crimson Pro', Georgia, serif;
+
+    /* Font scale (defaults = mobile portrait) */
+    --fs-header-link: 16px;
+    --fs-btn: 15px;
+    --fs-eyebrow: 15px;
+    --fs-banner-title: 20px;
+    --fs-section-title: 22px;
+    --fs-section-text: 17px;
+    --fs-quote: 18px;
+    --fs-card-title: 18px;
+    --fs-overlay-text: 16px;
+    --fs-news-title: 19px;
+    --fs-news-date: 16px;
+    --fs-news-text: 17px;
+    --fs-footer-title: 19px;
+    --fs-footer-text: 16px;
+    --fs-logo: 22px;
+  }
+
+  html {
+    overflow-x: clip;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--body);
+    background-color: #ffffff;
+    overflow-x: clip;
+    margin: 0;
+  }
+
+  section[id],
+  footer[id] {
+    scroll-margin-top: 90px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-head);
+  }
+}
+
+.font-head {
+  font-family: var(--font-head) !important;
+}
+
+.font-body {
+  font-family: var(--font-body) !important;
+}
+
+/* ---------- Container ---------- */
+.custom-container {
+  width: calc(100% - 32px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    width: 92%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-container {
+    width: 84.4%; /* 1620 / 1920 */
+  }
+}
+
+/* ---------- Typography classes ---------- */
+.header-link { font-size: var(--fs-header-link); line-height: 1.5; }
+.btn-text { font-size: var(--fs-btn); line-height: 1.4; }
+.eyebrow { font-size: var(--fs-eyebrow); line-height: 1.4; }
+.banner-title { font-size: var(--fs-banner-title); line-height: 1.6; }
+.section-title { font-size: var(--fs-section-title); line-height: 1.3; }
+.section-text { font-size: var(--fs-section-text); line-height: 1.5; }
+.quote-text { font-size: var(--fs-quote); line-height: 1.5; }
+.card-title { font-size: var(--fs-card-title); line-height: 1.3; }
+.overlay-text { font-size: var(--fs-overlay-text); line-height: 1.5; }
+.news-title { font-size: var(--fs-news-title); line-height: 1.35; }
+.news-date { font-size: var(--fs-news-date); line-height: 1.4; }
+.news-text { font-size: var(--fs-news-text); line-height: 1.5; }
+.footer-title { font-size: var(--fs-footer-title); line-height: 1.4; }
+.footer-text { font-size: var(--fs-footer-text); line-height: 1.6; }
+.logo-text { font-size: var(--fs-logo); }
+
+/* ---------- Breakpoints ---------- */
+
+/* Mobile Landscape */
+@media (min-width: 481px) {
+  :root {
+    --fs-banner-title: 22px;
+    --fs-section-title: 24px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  :root {
+    --fs-header-link: 16px;
+    --fs-btn: 16px;
+    --fs-eyebrow: 16px;
+    --fs-banner-title: 24px;
+    --fs-section-title: 25px;
+    --fs-section-text: 18px;
+    --fs-quote: 19px;
+    --fs-card-title: 19px;
+    --fs-overlay-text: 17px;
+    --fs-news-title: 20px;
+    --fs-news-date: 17px;
+    --fs-news-text: 18px;
+    --fs-footer-title: 20px;
+    --fs-footer-text: 17px;
+    --fs-logo: 24px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  :root {
+    --fs-header-link: 16px;
+    --fs-btn: 16px;
+    --fs-eyebrow: 16px;
+    --fs-banner-title: 24px;
+    --fs-section-title: 24px;
+    --fs-section-text: 18px;
+    --fs-quote: 18px;
+    --fs-card-title: 18px;
+    --fs-overlay-text: 17px;
+    --fs-news-title: 19px;
+    --fs-news-date: 17px;
+    --fs-news-text: 18px;
+    --fs-footer-title: 19px;
+    --fs-footer-text: 17px;
+    --fs-logo: 22px;
+  }
+}
+
+/* Full HD (Figma reference 1920) */
+@media (min-width: 1536px) {
+  :root {
+    --fs-header-link: 18px;
+    --fs-btn: 18px;
+    --fs-eyebrow: 18px;
+    --fs-banner-title: 28px;
+    --fs-section-title: 26px;
+    --fs-section-text: 20px;
+    --fs-quote: 20px;
+    --fs-card-title: 20px;
+    --fs-overlay-text: 18px;
+    --fs-news-title: 20px;
+    --fs-news-date: 18px;
+    --fs-news-text: 20px;
+    --fs-footer-title: 20px;
+    --fs-footer-text: 18px;
+    --fs-logo: 26px;
+  }
+}
+
+/* Extra Large */
+@media (min-width: 1921px) {
+  :root {
+    --fs-header-link: 21px;
+    --fs-btn: 21px;
+    --fs-eyebrow: 21px;
+    --fs-banner-title: 33px;
+    --fs-section-title: 31px;
+    --fs-section-text: 23px;
+    --fs-quote: 23px;
+    --fs-card-title: 23px;
+    --fs-overlay-text: 21px;
+    --fs-news-title: 23px;
+    --fs-news-date: 21px;
+    --fs-news-text: 23px;
+    --fs-footer-title: 23px;
+    --fs-footer-text: 21px;
+    --fs-logo: 30px;
+  }
+}
+
+/* 2K */
+@media (min-width: 2560px) {
+  :root {
+    --fs-header-link: 26px;
+    --fs-btn: 26px;
+    --fs-eyebrow: 26px;
+    --fs-banner-title: 42px;
+    --fs-section-title: 40px;
+    --fs-section-text: 30px;
+    --fs-quote: 30px;
+    --fs-card-title: 30px;
+    --fs-overlay-text: 27px;
+    --fs-news-title: 30px;
+    --fs-news-date: 26px;
+    --fs-news-text: 30px;
+    --fs-footer-title: 30px;
+    --fs-footer-text: 26px;
+    --fs-logo: 40px;
+  }
+}
+
+/* 4K */
+@media (min-width: 3801px) {
+  :root {
+    --fs-header-link: 38px;
+    --fs-btn: 38px;
+    --fs-eyebrow: 38px;
+    --fs-banner-title: 62px;
+    --fs-section-title: 58px;
+    --fs-section-text: 44px;
+    --fs-quote: 44px;
+    --fs-card-title: 44px;
+    --fs-overlay-text: 40px;
+    --fs-news-title: 44px;
+    --fs-news-date: 38px;
+    --fs-news-text: 44px;
+    --fs-footer-title: 44px;
+    --fs-footer-text: 38px;
+    --fs-logo: 60px;
+  }
+}
+
+/* ---------- Section backgrounds ---------- */
+.hebu-bg-tech {
+  background-color: #F7F8FA;
+  background-image: url("/medical/hebu/bg.webp");
+  /* Full-width strip pinned to the bottom (the light band). `cover` would
+     scale the 1920x296 strip up to the whole section height and crop the
+     decorations off the sides, so size by width instead. */
+  background-size: max(100%, 1100px) auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+/* ---------- Bulleted lists ---------- */
+.hebu-list {
+  list-style: disc;
+  padding-left: 1.8em;
+}
+
+.hebu-list li::marker {
+  font-size: 0.8em;
+}
+
+.hebu-list li + li {
+  margin-top: 0.8em;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
