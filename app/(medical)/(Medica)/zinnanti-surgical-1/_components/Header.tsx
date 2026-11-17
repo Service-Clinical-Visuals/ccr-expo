@@ -25,13 +25,19 @@ const navLinks: NavLink[] = [
 ];
 
 const iconBtn =
-  "zin-gradient flex items-center justify-center w-10 h-10 min-[2500px]:w-16 min-[2500px]:h-16 min-[3800px]:w-24 min-[3800px]:h-24 rounded-full text-white shadow-md hover:brightness-110 transition cursor-pointer";
+  "zin-gradient flex items-center justify-center w-10 h-10 2k:w-16 2k:h-16 4k:w-24 4k:h-24 rounded-full text-white shadow-md hover:brightness-110 transition cursor-pointer";
 
 const iconSize =
-  "w-[18px] h-[18px] min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-10 min-[3800px]:h-10";
+  "w-[18px] h-[18px] 2k:w-7 2k:h-7 4k:w-10 4k:h-10";
 
-export default function Header() {
+interface HeaderProps {
+  /** Home page: keep the header hidden over the hero banner and slide it in once scrolled past. */
+  hideUntilScroll?: boolean;
+}
+
+export default function Header({ hideUntilScroll = false }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [visible, setVisible] = useState(!hideUntilScroll);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
 
@@ -48,11 +54,23 @@ export default function Header() {
   };
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+      if (!hideUntilScroll) return;
+      const hero = document.getElementById("home");
+      const heroBottom = hero ? hero.offsetTop + hero.offsetHeight : window.innerHeight;
+      const show = window.scrollY >= heroBottom - 80;
+      setVisible(show);
+      if (!show) setMobileMenuOpen(false);
+    };
     handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, [hideUntilScroll]);
 
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "";
@@ -63,11 +81,11 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 bg-white transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300 ease-in-out ${
         isScrolled ? "shadow-md" : "shadow-xs"
-      }`}
+      } ${visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"}`}
     >
-      <div className="h-[72px] sm:h-[80px] lg:h-[86px] min-[2500px]:h-[130px] min-[3800px]:h-[180px] flex items-center relative z-10">
+      <div className="h-[72px] sm:h-[80px] lg:h-[86px] 2k:h-[130px] 4k:h-[180px] flex items-center relative z-10">
         <div className="custom-container flex items-center justify-between gap-4 xl:gap-6 w-full">
           {/* Logo */}
           <Link
@@ -76,11 +94,11 @@ export default function Header() {
             className="flex items-center shrink-0"
             aria-label="Zinnanti Surgical Home"
           >
-            <Logo className="h-10 sm:h-11 lg:h-12 min-[2500px]:h-[76px] min-[3800px]:h-[110px] w-auto" />
+            <Logo className="h-10 sm:h-11 lg:h-12 2k:h-[76px] 4k:h-[110px] w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden xl:flex items-center gap-7 2xl:gap-9 min-[2500px]:gap-14 min-[3800px]:gap-20">
+          <nav className="hidden xl:flex items-center gap-7 2xl:gap-9 2k:gap-14 4k:gap-20">
             {navLinks.map((link) => {
               const isActive = activeLink === link.id;
               const cls = `inline-flex items-center gap-1 py-2 transition-colors ${
@@ -93,7 +111,7 @@ export default function Header() {
                   <span className="navbar text-[inherit] font-[inherit] leading-none">{link.name}</span>
                   {link.hasDropdown && (
                     <ChevronDown
-                      className="w-4 h-4 min-[2500px]:w-6 min-[2500px]:h-6 min-[3800px]:w-8 min-[3800px]:h-8"
+                      className="w-4 h-4 2k:w-6 2k:h-6 4k:w-8 4k:h-8"
                       fill="currentColor"
                     />
                   )}
@@ -117,7 +135,7 @@ export default function Header() {
           </nav>
 
           {/* Right: Cart & Search */}
-          <div className="flex items-center gap-3 sm:gap-4 min-[2500px]:gap-6 shrink-0">
+          <div className="flex items-center gap-3 sm:gap-4 2k:gap-6 shrink-0">
             <button type="button" aria-label="Cart" className={`${iconBtn} hidden sm:flex`}>
               <ShoppingCart className={iconSize} fill="currentColor" />
             </button>

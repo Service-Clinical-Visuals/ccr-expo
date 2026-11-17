@@ -21,7 +21,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="custom-container relative z-20 w-full">
-        <div className="max-w-[90%] xl:max-w-[60%] text-left space-y-5 md:space-y-6">
+        <div className="max-w-[90%] xl:max-w-[60%] text-left space-y-5 md:space-y-6 2k:space-y-10 4k:space-y-14">
           <Typography
             variant="h1"
             color="white"
@@ -33,7 +33,7 @@ const Hero = () => {
           </Typography>
 
           <div data-aos="fade-right" data-aos-delay="200">
-            <Button text="Request a Sample" href="#contact" />
+            <Button text="Request a Sample" />
           </div>
         </div>
       </div>

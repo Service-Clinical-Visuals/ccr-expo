@@ -15,12 +15,12 @@ interface ButtonProps {
 const Button = ({ text, href, onClick, className = "" }: ButtonProps) => {
   const content = (
     <div
-      className={`flex items-center gap-3 sm:gap-4 min-[2500px]:gap-6 pl-5 sm:pl-6 min-[2500px]:pl-10 pr-1.5 min-[2500px]:pr-2.5 py-1.5 min-[2500px]:py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white shadow-md transition-colors duration-300 ${className}`}
+      className={`flex items-center gap-3 sm:gap-4 2k:gap-6 pl-5 sm:pl-6 2k:pl-10 pr-1.5 2k:pr-2.5 py-1.5 2k:py-2.5 rounded-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white shadow-md transition-colors duration-300 ${className}`}
     >
       <span className="button whitespace-nowrap">{text}</span>
-      <span className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 min-[2500px]:w-14 min-[2500px]:h-14 min-[3800px]:w-20 min-[3800px]:h-20 rounded-full bg-white text-[#0b1a3a] shrink-0">
+      <span className="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 2k:w-14 2k:h-14 4k:w-20 4k:h-20 rounded-full bg-white text-[#0b1a3a] shrink-0">
         <ArrowUpRight
-          className="w-4 h-4 sm:w-5 sm:h-5 min-[2500px]:w-8 min-[2500px]:h-8 min-[3800px]:w-11 min-[3800px]:h-11 transition-transform duration-300 group-hover:rotate-45"
+          className="w-4 h-4 sm:w-5 sm:h-5 2k:w-8 2k:h-8 4k:w-11 4k:h-11 transition-transform duration-300 group-hover:rotate-45"
           strokeWidth={2.5}
         />
       </span>

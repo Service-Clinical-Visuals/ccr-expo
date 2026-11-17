@@ -30,20 +30,20 @@ const linkCls =
   "footer-body text-[var(--color-secondary)] hover:text-[var(--color-primary)] transition-colors leading-relaxed";
 const textCls = "footer-body text-[var(--color-secondary)] leading-relaxed cursor-default";
 const iconCls =
-  "w-4 h-4 min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-10 min-[3800px]:h-10 text-[var(--color-primary-dark)] shrink-0";
+  "w-4 h-4 2k:w-7 2k:h-7 4k:w-10 4k:h-10 text-[var(--color-primary-dark)] shrink-0";
 
 export default function Footer() {
   return (
     <footer
       id="contact"
-      className="w-full bg-[var(--color-footer)] text-[var(--color-secondary)] pt-10 sm:pt-12 xl:pt-16 pb-6 overflow-hidden"
+      className="w-full bg-[var(--color-footer)] text-[var(--color-secondary)] pt-10 sm:pt-12 xl:pt-16 2k:pt-24 4k:pt-32 pb-6 2k:pb-10 4k:pb-14 overflow-hidden"
     >
-      <div className="custom-container flex flex-col gap-8 sm:gap-10 w-full">
+      <div className="custom-container flex flex-col gap-8 sm:gap-10 2k:gap-16 4k:gap-20 w-full">
         <div className="footer-row-container grid grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 w-full">
           {/* Col 1: Logo & About */}
-          <div className="footer-col-1 col-span-2 md:col-span-3 w-full min-w-0 flex flex-col gap-5 xl:gap-6 items-start">
+          <div className="footer-col-1 col-span-2 md:col-span-3 w-full min-w-0 flex flex-col gap-5 xl:gap-6 2k:gap-10 4k:gap-12 items-start">
             <Link href="#home" aria-label="Zinnanti Surgical Home" className="block max-w-full">
-              <Logo className="w-[220px] sm:w-[260px] xl:w-[280px] min-[2500px]:w-[440px] min-[3800px]:w-[620px] max-w-full h-auto" />
+              <Logo className="mix-blend-multiply w-[220px] sm:w-[260px] xl:w-[280px] 2k:w-[440px] 4k:w-[620px] max-w-full h-auto" />
             </Link>
             <Typography variant="footer-body" color="secondary" className="footer-about leading-relaxed">
               Zinnanti Surgical combines medical expertise and engineering innovation to develop
@@ -54,11 +54,11 @@ export default function Footer() {
 
           {/* Vertical Divider */}
           <div className="hidden footer-divider-col justify-center self-stretch">
-            <div className="w-px bg-[#b9d3e4] h-full min-h-[200px]" />
+            <div className="w-px 4k:w-0.5 bg-[#b9d3e4] h-full min-h-[200px]" />
           </div>
 
           {/* Col 2: Links */}
-          <div className="footer-col-2 w-full min-w-0 flex flex-col gap-4">
+          <div className="footer-col-2 w-full min-w-0 flex flex-col gap-4 2k:gap-7 4k:gap-9">
             <Typography variant="footer-heading" color="none" className={headingCls}>
               Links :
             </Typography>
@@ -78,7 +78,7 @@ export default function Footer() {
           </div>
 
           {/* Col 3: Products */}
-          <div className="footer-col-3 w-full min-w-0 flex flex-col gap-4">
+          <div className="footer-col-3 w-full min-w-0 flex flex-col gap-4 2k:gap-7 4k:gap-9">
             <Typography variant="footer-heading" color="none" className={headingCls}>
               Products :
             </Typography>
@@ -92,11 +92,11 @@ export default function Footer() {
           </div>
 
           {/* Col 4: Contact */}
-          <div className="footer-col-4 w-full min-w-0 flex flex-col gap-4">
+          <div className="footer-col-4 col-span-2 md:col-span-1 w-full min-w-0 flex flex-col gap-4 2k:gap-7 4k:gap-9">
             <Typography variant="footer-heading" color="none" className={headingCls}>
               Contact Us :
             </Typography>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 2k:gap-5 4k:gap-6">
               {contacts.map(({ icon: Icon, label }) => (
                 <div key={label} className={`${textCls} flex items-center gap-3`}>
                   <Icon className={iconCls} fill="currentColor" strokeWidth={1.5} />
@@ -107,7 +107,7 @@ export default function Footer() {
           </div>
 
           {/* Col 5: Subscribe */}
-          <div className="footer-col-5 col-span-2 md:col-span-1 w-full min-w-0 flex flex-col gap-4">
+          <div className="footer-col-5 col-span-2 md:col-span-3 w-full min-w-0 flex flex-col gap-4 2k:gap-7 4k:gap-9">
             <Typography variant="footer-heading" color="none" className={headingCls.replace(" whitespace-nowrap", "")}>
               Subscribe for More Information
             </Typography>
@@ -116,27 +116,27 @@ export default function Footer() {
             </Typography>
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="relative flex items-center w-full max-w-[360px] min-[2500px]:max-w-[560px] min-[3800px]:max-w-[760px]"
+              className="relative flex items-center w-full max-w-[360px] 2k:max-w-[560px] 4k:max-w-[760px]"
             >
               <input
                 type="email"
                 required
                 placeholder="Email Address..."
-                className="footer-body w-full bg-white text-gray-800 placeholder-gray-400 rounded-lg px-4 py-2.5 min-[2500px]:py-4 pr-12 min-[2500px]:pr-20 shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]/40"
+                className="footer-body w-full bg-white text-gray-800 placeholder-gray-400 rounded-lg 2k:rounded-xl 4k:rounded-2xl px-4 2k:px-6 py-2.5 2k:py-4 4k:py-6 pr-12 2k:pr-20 4k:pr-28 shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]/40"
               />
               <button
                 type="submit"
                 aria-label="Subscribe"
-                className="zin-gradient absolute right-2 flex items-center justify-center w-7 h-7 min-[2500px]:w-12 min-[2500px]:h-12 min-[3800px]:w-16 min-[3800px]:h-16 rounded-full text-white hover:brightness-110 transition cursor-pointer"
+                className="zin-gradient absolute right-2 2k:right-3 4k:right-4 flex items-center justify-center w-7 h-7 2k:w-12 2k:h-12 4k:w-16 4k:h-16 rounded-full text-white hover:brightness-110 transition cursor-pointer"
               >
-                <ArrowRight className="w-4 h-4 min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-9 min-[3800px]:h-9" strokeWidth={2.5} />
+                <ArrowRight className="w-4 h-4 2k:w-7 2k:h-7 4k:w-9 4k:h-9" strokeWidth={2.5} />
               </button>
             </form>
           </div>
         </div>
 
         {/* Horizontal Divider */}
-        <div className="w-full h-px bg-[#b9d3e4]" />
+        <div className="w-full h-px 4k:h-0.5 bg-[#b9d3e4]" />
 
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
