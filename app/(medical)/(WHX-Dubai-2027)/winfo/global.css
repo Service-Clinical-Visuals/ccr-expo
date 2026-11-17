@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Instrument+Sans:wght@500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+/* ==========================================================================
+   WINFO Europa theme
+   Rule: font sizes live ONLY here (as CSS variables per breakpoint).
+   ========================================================================== */
+
+@layer base {
+  :root {
+    --primary: #A3004F;          /* magenta: buttons, links, carousel line */
+    --primary-hover: #85003F;
+    --accent: #2D9CDB;           /* blue: eyebrows, underline bars, active nav */
+    --accent-light: #E0EFFA;     /* newsletter bg, icon circles, card waves */
+    --dark: #55565A;             /* video section + footer bg */
+    --soft: #F3F4F6;             /* 360 section bg */
+    --nav: #1F1F1F;
+    --heading: #111111;
+    --body: #2B2B2B;
+    --border: #CBCED3;
+    --font-head: 'Instrument Sans', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --header-h: 64px;
+
+    /* Font scale (defaults = mobile) */
+    --fs-header-link: 15px;
+    --fs-btn: 15px;
+    --fs-eyebrow: 15px;
+    --fs-banner-eyebrow: 14px;
+    --fs-banner-title: 24px;
+    --fs-section-title: 22px;
+    --fs-section-text: 15px;
+    --fs-card-title: 19px;
+    --fs-card-num: 44px;
+    --fs-card-text: 15px;
+    --fs-product-title: 17px;
+    --fs-stat: 18px;
+    --fs-footer-title: 18px;
+    --fs-footer-text: 15px;
+  }
+
+  html {
+    overflow-x: clip;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--body);
+    background-color: #ffffff;
+    overflow-x: clip;
+    margin: 0;
+  }
+
+  section[id],
+  footer[id] {
+    scroll-margin-top: var(--header-h);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-head);
+  }
+}
+
+.font-head {
+  font-family: var(--font-head) !important;
+}
+
+.font-body {
+  font-family: var(--font-body) !important;
+}
+
+/* ---------- Container (1682 / 1920) ---------- */
+.custom-container {
+  width: calc(100% - 32px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    width: 92%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-container {
+    width: 87.6%;
+  }
+}
+
+/* ---------- Typography classes ---------- */
+.header-link { font-size: var(--fs-header-link); line-height: 1.5; }
+.btn-text { font-size: var(--fs-btn); line-height: 1.4; }
+.eyebrow { font-size: var(--fs-eyebrow); line-height: 1.4; }
+.banner-eyebrow { font-size: var(--fs-banner-eyebrow); line-height: 1.4; }
+.banner-title { font-size: var(--fs-banner-title); line-height: 1.3; }
+.section-title { font-size: var(--fs-section-title); line-height: 1.3; }
+.section-text { font-size: var(--fs-section-text); line-height: 1.65; }
+.card-title { font-size: var(--fs-card-title); line-height: 1.3; }
+.card-num { font-size: var(--fs-card-num); line-height: 1; }
+.card-text { font-size: var(--fs-card-text); line-height: 1.65; }
+.card-text-loose { font-size: var(--fs-card-text); line-height: 1.95; }
+.product-title { font-size: var(--fs-product-title); line-height: 1.25; }
+.stat-text { font-size: var(--fs-stat); line-height: 1.3; }
+.footer-title { font-size: var(--fs-footer-title); line-height: 1.4; }
+.footer-text { font-size: var(--fs-footer-text); line-height: 1.65; }
+
+/* Shared vertical padding for every content section */
+.section-py { padding-top: 68px; padding-bottom: 68px; }
+@media (min-width: 640px) { .section-py { padding-top: 88px; padding-bottom: 88px; } }
+@media (min-width: 1280px) { .section-py { padding-top: 5.2vw; padding-bottom: 5.2vw; } }
+
+.header-h { height: var(--header-h); }
+.banner-h { height: calc(100svh - var(--header-h)); }
+
+/* ---------- Breakpoints ---------- */
+
+/* Tablet */
+@media (min-width: 768px) {
+  :root {
+    --header-h: 70px;
+    --fs-header-link: 16px;
+    --fs-eyebrow: 16px;
+    --fs-banner-eyebrow: 15px;
+    --fs-banner-title: 28px;
+    --fs-section-title: 26px;
+    --fs-card-title: 20px;
+    --fs-card-num: 50px;
+    --fs-product-title: 18px;
+    --fs-stat: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  :root {
+    --fs-banner-eyebrow: 16px;
+    --fs-banner-title: 30px;
+    --fs-section-title: 28px;
+    --fs-card-title: 21px;
+    --fs-card-num: 52px;
+    --fs-stat: 21px;
+    --fs-footer-title: 19px;
+  }
+}
+
+/* Tablet body text bump (iPad / iPad Pro portrait + landscape, 768–1535):
+   titles are fine here but 15px body copy reads too small. */
+@media (min-width: 768px) and (max-width: 1535px) {
+  :root {
+    --fs-btn: 17px;
+    --fs-section-text: 17px;
+    --fs-card-text: 17px;
+    --fs-footer-text: 17px;
+    --fs-footer-title: 20px;
+    --fs-eyebrow: 18px;
+    --fs-banner-eyebrow: 17px;
+    --fs-header-link: 18px;
+    --fs-product-title: 20px;
+    --fs-card-title: 22px;
+    --fs-stat: 22px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1535px) {
+  :root {
+    --fs-btn: 18px;
+    --fs-section-text: 20px;
+    --fs-card-text: 18px;
+    --fs-footer-text: 18px;
+    --fs-footer-title: 21px;
+    --fs-eyebrow: 19px;
+    --fs-banner-eyebrow: 18px;
+    --fs-header-link: 18px;
+    --fs-product-title: 21px;
+    --fs-card-title: 24px;
+    --fs-card-num: 58px;
+    --fs-stat: 24px;
+  }
+}
+
+/* Full HD (Figma reference 1920) */
+@media (min-width: 1536px) {
+  :root {
+    --fs-header-link: 17px;
+    --fs-btn: 16px;
+    --fs-eyebrow: 18px;
+    --fs-banner-eyebrow: 17px;
+    --fs-banner-title: 34px;
+    --fs-section-title: 32px;
+    --fs-section-text: 16px;
+    --fs-card-title: 24px;
+    --fs-card-num: 60px;
+    --fs-card-text: 16px;
+    --fs-product-title: 20px;
+    --fs-stat: 24px;
+    --fs-footer-title: 20px;
+    --fs-footer-text: 16px;
+  }
+}
+
+/* Extra Large */
+@media (min-width: 1921px) {
+  :root {
+    --header-h: 84px;
+    --fs-header-link: 19px;
+    --fs-btn: 18px;
+    --fs-eyebrow: 20px;
+    --fs-banner-eyebrow: 19px;
+    --fs-banner-title: 38px;
+    --fs-section-title: 36px;
+    --fs-section-text: 18px;
+    --fs-card-title: 27px;
+    --fs-card-num: 68px;
+    --fs-card-text: 18px;
+    --fs-product-title: 22px;
+    --fs-stat: 27px;
+    --fs-footer-title: 22px;
+    --fs-footer-text: 18px;
+  }
+}
+
+/* 2K */
+@media (min-width: 2560px) {
+  :root {
+    --header-h: 112px;
+    --fs-header-link: 26px;
+    --fs-btn: 24px;
+    --fs-eyebrow: 27px;
+    --fs-banner-eyebrow: 26px;
+    --fs-banner-title: 52px;
+    --fs-section-title: 48px;
+    --fs-section-text: 24px;
+    --fs-card-title: 36px;
+    --fs-card-num: 90px;
+    --fs-card-text: 24px;
+    --fs-product-title: 30px;
+    --fs-stat: 36px;
+    --fs-footer-title: 30px;
+    --fs-footer-text: 24px;
+  }
+}
+
+/* 4K */
+@media (min-width: 3801px) {
+  :root {
+    --header-h: 168px;
+    --fs-header-link: 38px;
+    --fs-btn: 36px;
+    --fs-eyebrow: 40px;
+    --fs-banner-eyebrow: 38px;
+    --fs-banner-title: 76px;
+    --fs-section-title: 72px;
+    --fs-section-text: 36px;
+    --fs-card-title: 54px;
+    --fs-card-num: 136px;
+    --fs-card-text: 36px;
+    --fs-product-title: 45px;
+    --fs-stat: 54px;
+    --fs-footer-title: 45px;
+    --fs-footer-text: 36px;
+  }
+}
+
+/* ---------- Product arch card ---------- */
+.arch-card {
+  border-radius: 50% 50% 6px 6px / 23% 23% 6px 6px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
