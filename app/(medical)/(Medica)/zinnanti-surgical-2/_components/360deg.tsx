@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 import Typography from "./Typography";
 import Button from "./Button";
@@ -12,6 +12,8 @@ const specs = [
 ];
 
 const Deg360 = () => {
+  const [show360, setShow360] = useState(false);
+
   return (
     <section
       id="experience-360"
@@ -55,16 +57,30 @@ const Deg360 = () => {
           data-aos-delay="100"
         >
           <div className="grid grid-cols-1 xl:grid-cols-[57fr_43fr] gap-5 xl:gap-5 min-[2500px]:gap-8">
-            {/* Video — large top-left / bottom-right corners */}
-            <div className="relative w-full aspect-video overflow-hidden bg-gray-100 shadow-[0_4px_10px_rgba(0,0,0,0.08)] rounded-tl-[2.5rem] rounded-br-[2.5rem] xl:rounded-tl-[3.5rem] xl:rounded-br-[3.5rem] min-[2500px]:rounded-tl-[5rem] min-[2500px]:rounded-br-[5rem]">
-              <DynamicVideoPlayer
-                type="360"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
+            {/* Media — product image; swaps to the 360° video on "Launch" */}
+            <div
+              className="order-2 xl:order-none self-center relative w-full aspect-[969/577] overflow-hidden rounded-xl min-[2500px]:rounded-2xl min-[3800px]:rounded-3xl "
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              {show360 ? (
+                <DynamicVideoPlayer
+                  type="360"
+                  className="absolute inset-0 w-full h-full object-contain bg-black"
+                />
+              ) : (
+                <img
+                  src="/medical/zinnanti-surgical-2/l1.webp"
+                  alt="Bovie Smoke Shark smoke evacuator unit"
+                  width={969}
+                  height={577}
+                  className="absolute inset-0 w-full h-full object-contain"
+                />
+              )}
             </div>
 
             {/* Blueprint Card — large top-right / bottom-right corners */}
-            <div className="bg-[var(--color-card-bg)] rounded-tl-[2.5rem] rounded-br-[2.5rem] xl:rounded-tl-[3.5rem] xl:rounded-br-[3.5rem] min-[2500px]:rounded-tl-[5rem] min-[2500px]:rounded-br-[5rem] px-5 py-6 sm:px-6 xl:px-5 xl:py-7 min-[2500px]:px-10 min-[2500px]:py-12 flex flex-col items-start justify-center">
+            <div className="order-1 xl:order-none bg-[var(--color-card-bg)] rounded-tl-[2.5rem] rounded-br-[2.5rem] xl:rounded-tl-[3.5rem] xl:rounded-br-[3.5rem] min-[2500px]:rounded-tl-[5rem] min-[2500px]:rounded-br-[5rem] px-5 py-6 sm:px-6 xl:px-5 xl:py-7 min-[2500px]:px-10 min-[2500px]:py-12 flex flex-col items-start justify-center">
               <Eyebrow text="Component Blueprint" />
 
               <Typography
@@ -114,7 +130,10 @@ const Deg360 = () => {
               </div>
 
               <div className="mt-6 min-[2500px]:mt-10">
-                <Button text="Launch Full 360° Simulation" />
+                <Button
+                  text={show360 ? "Show Product Image" : "Launch Full 360° Simulation"}
+                  onClick={() => setShow360((v) => !v)}
+                />
               </div>
             </div>
           </div>
