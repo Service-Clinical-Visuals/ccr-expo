@@ -35,7 +35,7 @@ const SpecializedTechnology = () => {
             <Typography
               variant="h2"
               color="dark"
-              className="text-2xl sm:text-3xl lg:text-4xl min-[2500px]:text-5xl min-[3800px]:text-7xl font-bold tracking-tight text-[#333333] leading-snug"
+              className="text-2xl sm:text-3xl lg:text-4xl min-[2500px]:text-5xl min-[3800px]:text-7xl font-bold tracking-tight text-[#333333] leading-snug w-full max-w-full xl:max-w-[70%]"
             >
               Engineered for Cleaner, More Controlled Surgical Procedures
             </Typography>
@@ -44,7 +44,7 @@ const SpecializedTechnology = () => {
             <Typography
               variant="p"
               color="dark"
-              className="leading-relaxed text-[#333333] text-justify"
+              className="leading-relaxed text-[#333333] text-justify w-full max-w-full xl:max-w-[70%]"
             >
               The Zinnanti Surgical Smoke Evacuator Unit combines advanced smoke evacuation technology with specialized functionality to support modern surgical environments. Designed for effective smoke management during procedures, it helps healthcare professionals maintain visibility, improve procedural conditions, and focus on delivering quality patient care.
             </Typography>
