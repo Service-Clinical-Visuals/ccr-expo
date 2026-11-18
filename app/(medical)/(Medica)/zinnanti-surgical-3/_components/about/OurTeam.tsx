@@ -41,7 +41,7 @@ const OurTeam = () => {
   return (
     <section className="w-full py-16 xl:py-24 bg-white overflow-hidden">
       <div className="custom-container flex flex-col items-center gap-12 sm:gap-16">
-        
+
         {/* Section Header: Centered */}
         <div
           className="text-center w-full max-w-full xl:max-w-[70%] mx-auto space-y-4"
@@ -68,11 +68,10 @@ const OurTeam = () => {
           {teamData.map((member, idx) => (
             <div
               key={member.name}
-              className={`w-full bg-white rounded-[20px] min-[3800px]:rounded-[36px] p-5 sm:p-6 border border-gray-200/90 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group ${
-                idx === 2
-                  ? "md:col-span-2 md:w-full md:max-w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0 min-[1036px]:col-span-1 min-[1036px]:max-w-none min-[1036px]:mx-0"
-                  : ""
-              }`}
+              className={`w-full bg-white rounded-[20px] min-[3800px]:rounded-[36px] p-5 sm:p-6 border border-gray-200/90 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group ${idx === 2
+                ? "md:col-span-2 md:w-full md:max-w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0 min-[1036px]:col-span-1 min-[1036px]:max-w-none min-[1036px]:mx-0"
+                : ""
+                }`}
               data-aos="fade-up"
               data-aos-delay={idx * 150}
             >
