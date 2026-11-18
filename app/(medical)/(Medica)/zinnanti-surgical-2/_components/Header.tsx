@@ -220,7 +220,7 @@ const Header = () => {
         {mobileMenuOpen && (
           <div className="xl:hidden bg-white border-t border-gray-100 shadow-2xl max-h-[calc(100dvh-120px)] overflow-y-auto">
             <div className="custom-container flex flex-col py-4">
-              {[...mainLinks, ...topLinks].map((link) => (
+              {[...topLinks, ...mainLinks].map((link) => (
                 <NavItem
                   key={link.name}
                   link={link}

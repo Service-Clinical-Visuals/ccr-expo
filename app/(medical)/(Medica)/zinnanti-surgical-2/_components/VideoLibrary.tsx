@@ -72,9 +72,11 @@ const VideoLibrary = () => {
       className="w-full bg-white py-16 xl:py-24 min-[2500px]:py-36 min-[3800px]:py-48 overflow-hidden"
     >
       <div className="custom-container flex flex-col gap-8 xl:gap-10 min-[2500px]:gap-16">
-        <div className="grid grid-cols-1 xl:grid-cols-[22fr_78fr] gap-6 xl:gap-8 min-[2500px]:gap-14 items-center">
-          {/* Left: Heading + Thumbnails */}
-          <div className="flex flex-col" data-aos="fade-right">
+        {/* Below desktop: heading → main video → thumbnails. Desktop: heading + thumbnails
+            vertically centred in the left column, main video spanning the right column. */}
+        <div className="grid grid-cols-1 xl:grid-cols-[22fr_78fr] xl:grid-rows-[1fr_auto_auto_1fr] gap-6 xl:gap-x-8 xl:gap-y-0 min-[2500px]:gap-x-14">
+          {/* Heading */}
+          <div className="flex flex-col xl:col-start-1 xl:row-start-2" data-aos="fade-right">
             <Eyebrow text="Video Library" />
             <Typography variant="h3" color="dark" className="leading-snug mt-3 min-[2500px]:mt-5">
               Inside our Innovations
@@ -82,8 +84,11 @@ const VideoLibrary = () => {
             <Typography variant="h4" color="secondary" className="leading-snug mt-2 min-[2500px]:mt-3">
               High-Resolution Anoscopy Videos
             </Typography>
+          </div>
 
-            <div className="grid grid-cols-2 xl:grid-cols-1 gap-4 min-[2500px]:gap-6 mt-5 min-[2500px]:mt-8">
+          {/* Thumbnails */}
+          <div className="order-last xl:order-none xl:col-start-1 xl:row-start-3" data-aos="fade-right">
+            <div className="grid grid-cols-2 xl:grid-cols-1 gap-4 min-[2500px]:gap-6 xl:mt-5 min-[2500px]:mt-8">
               {upNext.map((index) => {
                 const item = libraryItems[index];
                 return (
@@ -108,9 +113,9 @@ const VideoLibrary = () => {
             </div>
           </div>
 
-          {/* Right: Main Image */}
+          {/* Main video */}
           <div
-            className="relative w-full aspect-[1600/869] overflow-hidden bg-gray-100 border-t-2 border-l-2 border-[var(--color-primary)] rounded-tl-[2rem] rounded-br-[2rem] xl:rounded-tl-[2.5rem] xl:rounded-br-[2.5rem] min-[2500px]:rounded-tl-[4rem] min-[2500px]:rounded-br-[4rem] shadow-[0_4px_12px_rgba(0,0,0,0.08)]"
+            className="xl:col-start-2 xl:row-[1/-1] self-center relative w-full aspect-[1600/869] overflow-hidden bg-gray-100 border-t-2 border-l-2 border-[var(--color-primary)] rounded-tl-[2rem] rounded-br-[2rem] xl:rounded-tl-[2.5rem] xl:rounded-br-[2.5rem] min-[2500px]:rounded-tl-[4rem] min-[2500px]:rounded-br-[4rem] shadow-[0_4px_12px_rgba(0,0,0,0.08)]"
             data-aos="fade-left"
             data-aos-delay="100"
           >

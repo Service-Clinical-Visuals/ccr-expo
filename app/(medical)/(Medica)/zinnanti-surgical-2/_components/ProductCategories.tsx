@@ -36,14 +36,14 @@ const ProductCategories = () => {
         </div>
 
         {/* Category Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 sm:gap-6 xl:gap-8 min-[2500px]:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-6 md:gap-4 lg:gap-6 xl:gap-8 min-[2500px]:gap-12">
           {categories.map((cat, index) => (
             <div
               key={cat.title}
               className={`flex flex-col items-center group ${
-                // Odd last card: centre it on the 2-column (iPad) layout
+                // Odd last card: centre it on the 2-column (large phone) layout
                 categories.length % 2 === 1 && index === categories.length - 1
-                  ? "sm:col-span-2 sm:justify-self-center sm:w-[calc(50%-0.75rem)] xl:col-span-1 xl:w-auto xl:justify-self-stretch"
+                  ? "sm:col-span-2 sm:justify-self-center sm:w-[calc(50%-0.75rem)] md:col-span-1 md:w-auto md:justify-self-stretch"
                   : ""
               }`}
               data-aos="fade-up"

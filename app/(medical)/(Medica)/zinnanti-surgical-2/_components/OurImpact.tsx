@@ -75,7 +75,9 @@ const OurImpact = () => {
           <img
             src="/medical/zinnanti-surgical-2/innovative.webp"
             alt="Clinicians reviewing an X-ray and a digital healthcare innovation concept"
-            className="w-full h-auto object-contain"
+            width={820}
+            height={636}
+            className="block w-full max-w-[820px] mx-auto xl:max-w-full h-auto object-contain"
           />
         </div>
       </div>

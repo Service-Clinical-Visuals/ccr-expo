@@ -16,7 +16,7 @@ const AboutUs = () => {
         <div className="flex flex-col xl:flex-row xl:items-stretch">
           {/* Left: Image (only top-left corner rounded) */}
           <div
-            className="relative w-full xl:w-[51%] aspect-[4/3] xl:aspect-auto xl:my-8 min-[2500px]:my-12 min-[3800px]:my-16 overflow-hidden rounded-tl-[2.5rem] min-[2500px]:rounded-tl-[4rem] min-[3800px]:rounded-tl-[5rem]"
+            className="relative hidden xl:block xl:w-[51%] xl:my-8 min-[2500px]:my-12 min-[3800px]:my-16 overflow-hidden rounded-tl-[2.5rem] min-[2500px]:rounded-tl-[4rem] min-[3800px]:rounded-tl-[5rem]"
             data-aos="fade-right"
           >
             <img
@@ -41,6 +41,15 @@ const AboutUs = () => {
             >
               Advancing Surgical Innovation Across Multiple Medical Specialties
             </Typography>
+
+            {/* Below desktop: image sits under the heading at its natural aspect ratio */}
+            <img
+              src="/medical/zinnanti-surgical-2/about.webp"
+              alt="Zinnanti Surgical engineer refining a surgical instrument"
+              width={1254}
+              height={1254}
+              className="xl:hidden block self-center w-auto h-auto max-w-full max-h-[70svh] mt-6 sm:mt-8 rounded-tl-[2.5rem]"
+            />
 
             <Typography
               variant="p"

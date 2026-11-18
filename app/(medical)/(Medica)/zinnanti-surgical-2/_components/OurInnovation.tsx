@@ -32,7 +32,9 @@ const OurInnovation = () => {
           <img
             src="/medical/zinnanti-surgical-2/surgical.webp"
             alt="Researcher working with a pipette in a medical laboratory"
-            className="w-full h-auto object-contain"
+            width={838}
+            height={570}
+            className="block w-full max-w-[838px] mx-auto xl:max-w-full h-auto object-contain"
           />
         </div>
 

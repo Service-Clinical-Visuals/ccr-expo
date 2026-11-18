@@ -47,14 +47,14 @@ const LeadershipTeam = () => {
           </div>
 
           {/* Cards */}
-          <div className="mt-10 sm:mt-12 xl:mt-14 min-[2500px]:mt-20 min-[3800px]:mt-28 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-8 min-[2500px]:gap-12 min-[3800px]:gap-16">
+          <div className="mt-10 sm:mt-12 xl:mt-14 min-[2500px]:mt-20 min-[3800px]:mt-28 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-4 lg:gap-6 xl:gap-8 min-[2500px]:gap-12 min-[3800px]:gap-16">
             {team.map((member, i) => (
               <div
                 key={member.name}
                 className={`group flex flex-col ${
-                  // Odd last card: centre it on the 2-column (tablet) layout
+                  // Odd last card: centre it on the 2-column (large phone) layout
                   team.length % 2 === 1 && i === team.length - 1
-                    ? "sm:col-span-2 sm:justify-self-center sm:w-[calc(50%-0.75rem)] xl:col-span-1 xl:w-auto xl:justify-self-stretch"
+                    ? "sm:col-span-2 sm:justify-self-center sm:w-[calc(50%-0.75rem)] md:col-span-1 md:w-auto md:justify-self-stretch"
                     : ""
                 } bg-white/[0.06] border border-[#4FA3D9]/70 rounded-tl-[1.5rem] rounded-br-[1.5rem] rounded-tr-md rounded-bl-md min-[2500px]:rounded-tl-[2.5rem] min-[2500px]:rounded-br-[2.5rem] p-2.5 sm:p-3 min-[2500px]:p-5 min-[3800px]:p-7 transition-colors duration-300 hover:bg-white/[0.12]`}
                 data-aos="fade-up"

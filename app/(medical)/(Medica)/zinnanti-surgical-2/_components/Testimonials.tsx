@@ -68,7 +68,9 @@ const Testimonials = () => {
             key={current.image}
             src={current.image}
             alt={`${current.name} with a Zinnanti Surgical treatment system`}
-            className="w-full h-auto object-contain"
+            width={693}
+            height={731}
+            className="block w-full max-w-[693px] mx-auto xl:max-w-full h-auto object-contain"
           />
         </div>
 
