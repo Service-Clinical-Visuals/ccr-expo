@@ -50,9 +50,14 @@ const Experience360 = () => {
           data-aos="zoom-in"
           data-aos-delay="150"
         >
-          <DynamicVideoPlayer
+          {/* <DynamicVideoPlayer
             type="360"
             className="absolute inset-0 w-full h-full object-cover"
+          /> */}
+          <img
+            src="/medical/zinnanti-surgical-3/360.webp"
+            alt="360 Experience"
+            className="w-full h-full object-cover"
           />
         </div>
 
