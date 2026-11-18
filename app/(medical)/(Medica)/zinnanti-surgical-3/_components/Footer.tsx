@@ -67,7 +67,7 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white text-white hover:text-[#00578E] flex items-center justify-center transition-all duration-300"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#00578E] hover:bg-[#01ADEF] hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm"
                 aria-label="LinkedIn"
               >
                 <FaLinkedinIn className="w-4 h-4" />
@@ -76,7 +76,7 @@ const Footer = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white text-white hover:text-[#00578E] flex items-center justify-center transition-all duration-300"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#00578E] hover:bg-[#01ADEF] hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm"
                 aria-label="Facebook"
               >
                 <FaFacebookF className="w-4 h-4" />
@@ -159,7 +159,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Copyright Bar: White background spanning full-width */}
-      <div className="w-full bg-white py-4 sm:py-5 mt-12 sm:mt-16 text-center border-t border-gray-100">
+      <div className="w-full bg-white py-2.5 sm:py-3 mt-6 sm:mt-8 text-center border-t border-gray-100">
         <p className="text-xs sm:text-sm min-[2500px]:text-lg min-[3800px]:text-2xl font-medium text-[#111111]">
           © 2025 Zinnanti Surgical Design Group, Inc. All Rights Reserved.
         </p>

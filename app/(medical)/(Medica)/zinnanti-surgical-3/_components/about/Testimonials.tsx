@@ -40,7 +40,7 @@ const Testimonials = () => {
           data-aos-delay="150"
         >
           <div className="flex flex-col min-[1036px]:flex-row items-center gap-8 lg:gap-12 w-full">
-            
+
             {/* Left: Testimonial Photo */}
             <div className="w-full min-[1036px]:w-1/2 rounded-[20px] min-[3800px]:rounded-[36px] overflow-hidden shadow-sm bg-gray-100 flex-shrink-0">
               <div className="w-full h-[280px] sm:h-[360px] lg:h-[400px] min-[2500px]:h-[520px] min-[3800px]:h-[700px] overflow-hidden">
@@ -54,7 +54,7 @@ const Testimonials = () => {
 
             {/* Right: Quote Content */}
             <div className="w-full min-[1036px]:w-1/2 flex flex-col justify-between space-y-4 sm:space-y-5">
-              
+
               {/* Quote Mark Icon */}
               <div className="text-[#00578E] select-none leading-none mb-1 sm:mb-2">
                 <svg
