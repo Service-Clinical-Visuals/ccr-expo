@@ -37,7 +37,7 @@ const SmokeEvacuator = () => {
           data-aos-delay="100"
         >
           <DynamicVideoPlayer
-            type="short-0"
+            type="short-2"
             className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
