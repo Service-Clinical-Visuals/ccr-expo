@@ -9,10 +9,10 @@ import Typography from "./Typography";
 export default function ProductInAction() {
   return (
     <section id="videos" className="w-full bg-[#045a92] py-12 sm:py-16 xl:py-[3.75rem] 2k:py-24 4k:py-32">
-      <div className="custom-container xl:!max-w-[85%] flex flex-col lg:flex-row lg:items-center">
+      <div className="custom-container flex flex-col split:flex-row split:items-center">
         {/* Video */}
         <div
-          className="relative w-full lg:w-[66%] shrink-0 aspect-video rounded-md 2k:rounded-xl 4k:rounded-2xl overflow-hidden bg-white shadow-xl"
+          className="relative order-2 split:order-1 mt-6 split:mt-0 w-full split:w-[60%] 2xl:w-[66%] shrink-0 aspect-video split:aspect-auto split:self-stretch 2xl:aspect-video 2xl:self-auto rounded-md 2k:rounded-xl 4k:rounded-2xl overflow-hidden bg-white shadow-xl"
           data-aos="fade-right"
         >
           <DynamicVideoPlayer type="short-2" className="absolute inset-0 w-full h-full object-cover" />
@@ -20,7 +20,7 @@ export default function ProductInAction() {
 
         {/* Text card */}
         <div
-          className="w-full lg:flex-1 mt-6 lg:mt-0 bg-white rounded-2xl 2k:rounded-3xl 4k:rounded-[2.5rem] lg:rounded-l-none px-6 sm:px-7 2k:px-10 4k:px-14 py-7 xl:py-8 2k:py-10 4k:py-14 flex flex-col items-start gap-3 xl:gap-4 2k:gap-5 4k:gap-6"
+          className="order-1 split:order-2 w-full split:flex-1 split:my-8 2xl:my-0 bg-white rounded-2xl 2k:rounded-3xl 4k:rounded-[2.5rem] split:rounded-l-none px-6 sm:px-7 2k:px-10 4k:px-14 py-7 xl:py-8 2k:py-10 4k:py-14 flex flex-col items-start gap-3 xl:gap-4 2k:gap-5 4k:gap-6"
           data-aos="fade-left"
         >
           <Badge text="Product in Action" />

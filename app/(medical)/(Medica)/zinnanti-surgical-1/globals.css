@@ -36,6 +36,8 @@ body {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   /* Large-screen breakpoints in rem so they sort after Tailwind's built-in (rem) ones */
+  /* Video sections switch from stacked to side-by-side here */
+  --breakpoint-split: 86.875rem; /* 1390px */
   --breakpoint-2k: 156.25rem; /* 2500px */
   --breakpoint-4k: 237.5rem; /* 3800px */
   --font-sans: "DM Sans", var(--font-dm-sans), sans-serif;
@@ -62,6 +64,11 @@ button, input, select, textarea {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* One content width for every section, header and footer on desktop (matches the design's ~85%). */
+@media (min-width: 1280px) {
+  .custom-container { max-width: 85%; }
 }
 
 .zin-gradient {

@@ -27,13 +27,13 @@ export default function Products() {
 
   return (
     <section id="products" className="w-full bg-white py-12 sm:py-16 xl:py-20 2k:py-32 4k:py-44">
-      <div className="custom-container xl:!max-w-[85%] flex flex-col gap-8 xl:gap-10 2k:gap-16 4k:gap-20">
+      <div className="custom-container flex flex-col gap-8 xl:gap-10 2k:gap-16 4k:gap-20">
         {/* Heading row */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 2k:gap-10">
-          <div className="flex flex-col items-start gap-3 xl:gap-4 2k:gap-6 4k:gap-8 lg:max-w-[40%]" data-aos="fade-right">
+        <div className="flex flex-col xl:flex-row xl:items-end xl:justify-between gap-6 2k:gap-10">
+          <div className="flex flex-col items-start gap-3 xl:gap-4 2k:gap-6 4k:gap-8 xl:max-w-[48%] 2xl:max-w-[40%]" data-aos="fade-right">
             <Badge text="Products" />
             <Typography variant="h2" color="none" className="text-[var(--color-heading)]">
-              Innovative Surgical Devices for Better <br className="hidden lg:block" />
+              Innovative Surgical Devices for Better <br className="hidden 2xl:block" />
               Clinical Outcomes
             </Typography>
             <Typography variant="p" color="muted">
@@ -44,7 +44,7 @@ export default function Products() {
 
           {/* Category tabs */}
           <div
-            className="self-start lg:self-center max-w-full overflow-x-auto flex flex-nowrap items-center gap-x-5 xl:gap-x-6 2k:gap-x-10 4k:gap-x-14 bg-white rounded-xl 2k:rounded-2xl 4k:rounded-3xl border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.14)] px-4 sm:px-6 2k:px-10 4k:px-14 py-3 2k:py-5 4k:py-7"
+            className="self-start xl:self-center max-w-full overflow-x-auto flex flex-nowrap items-center gap-x-5 xl:gap-x-6 2k:gap-x-10 4k:gap-x-14 bg-white rounded-xl 2k:rounded-2xl 4k:rounded-3xl border border-gray-100 shadow-[0_4px_16px_rgba(0,0,0,0.14)] px-4 sm:px-6 2k:px-10 4k:px-14 py-3 2k:py-5 4k:py-7"
             role="tablist"
             data-aos="fade-left"
           >

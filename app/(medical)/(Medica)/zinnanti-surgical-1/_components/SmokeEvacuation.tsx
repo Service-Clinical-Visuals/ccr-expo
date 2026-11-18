@@ -52,10 +52,10 @@ export default function SmokeEvacuation() {
       <Waves className="top-0 right-0 w-[30%] h-auto opacity-90 rotate-180" />
       <Waves className="bottom-0 left-0 w-[45%] h-auto" />
 
-      <div className="custom-container xl:!max-w-[85%] relative z-10 flex flex-col lg:flex-row lg:items-center">
+      <div className="custom-container relative z-10 flex flex-col lg:flex-row lg:items-center">
         {/* Text card */}
         <div
-          className="w-full lg:w-[34%] shrink-0 bg-white rounded-2xl 2k:rounded-3xl 4k:rounded-[2.5rem] lg:rounded-r-none px-6 sm:px-7 2k:px-10 4k:px-14 py-7 xl:py-8 2k:py-10 4k:py-14 flex flex-col items-start gap-3 xl:gap-4 2k:gap-5 4k:gap-6"
+          className="w-full lg:w-[46%] xl:w-[44%] 2xl:w-[40%] lg:my-8 2xl:my-0 shrink-0 bg-white rounded-2xl 2k:rounded-3xl 4k:rounded-[2.5rem] lg:rounded-r-none px-6 sm:px-7 2k:px-10 4k:px-14 py-7 xl:py-8 2k:py-10 4k:py-14 flex flex-col items-start gap-3 xl:gap-4 2k:gap-5 4k:gap-6"
           data-aos="fade-right"
         >
           <Badge text="Engineered for Performance" />
@@ -81,7 +81,7 @@ export default function SmokeEvacuation() {
 
         {/* Video */}
         <div
-          className="relative w-full lg:flex-1 mt-6 lg:mt-0 aspect-video rounded-lg 2k:rounded-2xl overflow-hidden bg-white shadow-xl"
+          className="relative w-full lg:flex-1 mt-6 lg:mt-0 aspect-video lg:aspect-auto lg:self-stretch 2xl:aspect-video 2xl:self-auto rounded-lg 2k:rounded-2xl overflow-hidden bg-white shadow-xl"
           data-aos="fade-left"
         >
           <DynamicVideoPlayer type="short-1" className="absolute inset-0 w-full h-full object-cover" />

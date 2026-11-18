@@ -8,7 +8,7 @@ import Typography from "./Typography";
 export default function AboutSection() {
   return (
     <section id="about" className="w-full bg-white py-12 sm:py-16 xl:py-20 2k:py-32 4k:py-44 overflow-hidden">
-      <div className="custom-container xl:!max-w-[85%] flex flex-col lg:flex-row lg:items-center">
+      <div className="custom-container flex flex-col lg:flex-row lg:items-center">
         {/* Image (overlaps the bordered card on large screens) */}
         <div
           className="relative z-10 w-full lg:w-[49%] shrink-0 rounded-xl 2k:rounded-2xl 4k:rounded-3xl overflow-hidden shadow-sm aspect-[4/3] lg:aspect-auto lg:self-stretch lg:my-4 2k:my-6 4k:my-8"
@@ -29,7 +29,7 @@ export default function AboutSection() {
           <div className="flex flex-col items-start gap-4 xl:gap-5 2k:gap-8 4k:gap-10">
             <Badge text="Who We Are" />
             <Typography variant="h2" color="none" className="text-[var(--color-heading)]">
-              Innovating Surgical Solutions Through <br className="hidden lg:block" />
+              Innovating Surgical Solutions Through <br className="hidden 2xl:block" />
               Experience &amp; Expertise
             </Typography>
             <Typography variant="p" color="muted">

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Search, ShoppingCart, ChevronDown, Menu, X } from "lucide-react";
 import Logo from "./Logo";
+import { useSitePathname } from "@/app/_hooks/useSitePathname";
 
 interface NavLink {
   name: string;
@@ -39,11 +40,12 @@ export default function Header({ hideUntilScroll = false }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [visible, setVisible] = useState(!hideUntilScroll);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("home");
+  // Highlight the nav item for the current page: /zinnanti-surgical-1/about -> "/about" -> About Us.
+  const pathname = useSitePathname();
+  const activeLink = pathname === "/about" || pathname.startsWith("/about/") ? "about" : "home";
 
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
-    setActiveLink(id);
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
@@ -121,7 +123,6 @@ export default function Header({ hideUntilScroll = false }: HeaderProps) {
                 <Link
                   key={link.name}
                   href={link.href ?? `#${link.id}`}
-                  onClick={() => setActiveLink(link.id)}
                   className={`${cls} cursor-pointer hover:text-[var(--color-primary)]`}
                 >
                   {inner}
@@ -174,10 +175,7 @@ export default function Header({ hideUntilScroll = false }: HeaderProps) {
               <Link
                 key={link.name}
                 href={link.href ?? `#${link.id}`}
-                onClick={() => {
-                  setActiveLink(link.id);
-                  setMobileMenuOpen(false);
-                }}
+                onClick={() => setMobileMenuOpen(false)}
                 className={`${cls} hover:text-[var(--color-primary)]`}
               >
                 {inner}
