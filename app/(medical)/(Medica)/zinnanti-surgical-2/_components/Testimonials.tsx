@@ -34,7 +34,7 @@ const Testimonials = () => {
         {/* Blue band (row 1, full width) */}
         <div
           aria-hidden
-          className="row-start-1 col-[1/-1] bg-[url('/medical/zinnanti-surgical-2/bg1.webp')] bg-cover bg-center bg-no-repeat rounded-tl-[2rem] rounded-br-[2rem] sm:rounded-tl-[2.5rem] sm:rounded-br-[2.5rem] xl:rounded-tl-[3.5rem] xl:rounded-br-[3.5rem] min-[2500px]:rounded-tl-[5.5rem] min-[2500px]:rounded-br-[5.5rem]"
+          className="row-start-1 col-[1/-1] bg-[url('/medical/zinnanti-surgical-2/bg44.webp')] bg-cover bg-center bg-no-repeat rounded-tl-[2rem] rounded-br-[2rem] sm:rounded-tl-[2.5rem] sm:rounded-br-[2.5rem] xl:rounded-tl-[3.5rem] xl:rounded-br-[3.5rem] min-[2500px]:rounded-tl-[5.5rem] min-[2500px]:rounded-br-[5.5rem]"
         />
 
         {/* Heading content inside the band */}

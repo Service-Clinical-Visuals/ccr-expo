@@ -17,7 +17,7 @@ interface PageBannerProps {
 const PageBanner = ({ title }: PageBannerProps) => {
   return (
     <section className="w-full bg-white pt-[calc(var(--zs-header-h,110px)+0.375rem)] min-[2500px]:pt-[calc(var(--zs-header-h,110px)+0.75rem)] px-3 sm:px-5 lg:px-8 min-[2500px]:px-12 min-[3800px]:px-16">
-      <div className="relative w-full overflow-hidden bg-[var(--color-secondary)] bg-[url('/medical/zinnanti-surgical-2/bg1.webp')] bg-cover bg-center bg-no-repeat py-12 sm:py-14 lg:py-16 xl:py-20 min-[2500px]:py-28 min-[3800px]:py-40">
+      <div className="relative w-full overflow-hidden bg-[var(--color-secondary)] bg-[url('/medical/zinnanti-surgical-2/bg11.webp')] bg-cover bg-center bg-no-repeat py-12 sm:py-14 lg:py-16 xl:py-20 min-[2500px]:py-28 min-[3800px]:py-40">
         <div className="custom-container relative z-10 flex flex-col items-center justify-center text-center gap-3 sm:gap-4 min-[2500px]:gap-6">
           <Typography
             variant="h1"
