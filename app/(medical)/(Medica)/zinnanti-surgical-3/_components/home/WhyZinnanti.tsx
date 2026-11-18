@@ -38,7 +38,7 @@ const WhyZinnanti = () => {
     <section id="why" className="w-full overflow-hidden">
       
       {/* 1. Top Section: Blue Patterned Background */}
-      <div className="w-full py-16 xl:py-24 bg-[#00578E] bg-[url('/medical/zinnanti-surgical-3/bg.webp')] bg-cover bg-center bg-no-repeat text-white relative">
+      <div className="w-full py-16 xl:py-24 bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/bg.webp')] bg-cover bg-center bg-no-repeat text-white relative">
         <div className="custom-container flex flex-col gap-12 sm:gap-16">
           
           {/* Section Header */}
@@ -145,7 +145,7 @@ const WhyZinnanti = () => {
                   data-aos-delay={idx * 150}
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-14 h-14 min-[2500px]:w-20 min-[2500px]:h-20 min-[3800px]:w-28 min-[3800px]:h-28 rounded-full bg-[#00578E] shadow-[4px_6px_8px_rgba(0,0,0,0.2)] flex items-center justify-center shrink-0 text-white group-hover:scale-105 transition-transform">
+                    <div className="w-14 h-14 min-[2500px]:w-20 min-[2500px]:h-20 min-[3800px]:w-28 min-[3800px]:h-28 rounded-full bg-[#4F6744] shadow-[4px_6px_8px_rgba(0,0,0,0.2)] flex items-center justify-center shrink-0 text-white group-hover:scale-105 transition-transform">
                       <Icon className="w-7 h-7 min-[2500px]:w-10 min-[2500px]:h-10 min-[3800px]:w-14 min-[3800px]:h-14 stroke-[2.2]" />
                     </div>
                     <h4 className="text-lg sm:text-xl min-[2500px]:text-2xl min-[3800px]:text-4xl font-bold text-[#333333]">

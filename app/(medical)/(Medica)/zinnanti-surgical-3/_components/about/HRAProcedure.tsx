@@ -34,7 +34,7 @@ const hraFeatures = [
  */
 const HRAProcedure = () => {
   return (
-    <section className="w-full py-16 xl:py-24 bg-[#00578E] bg-[url('/medical/zinnanti-surgical-3/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden text-white relative">
+    <section className="w-full py-16 xl:py-24 bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden text-white relative">
       <div className="custom-container flex flex-col items-center gap-10 sm:gap-14">
         
         {/* 1. Section Header: Centered */}
@@ -43,7 +43,7 @@ const HRAProcedure = () => {
           data-aos="fade-up"
         >
           <div className="flex items-center justify-center gap-2.5">
-            <span className="w-7 sm:w-8 h-1 bg-[#01ADEF] rounded-full inline-block shrink-0" />
+            <span className="w-7 sm:w-8 h-1 bg-[#38315E] rounded-full inline-block shrink-0" />
             <span className="heading-blue text-white">
               Precancerous Lesion Treatment
             </span>
@@ -86,10 +86,10 @@ const HRAProcedure = () => {
             >
               {/* Badge & Title Row */}
               <div className="flex items-center gap-3.5 sm:gap-4">
-                <div className="w-11 h-11 sm:w-12 sm:h-12 min-[2500px]:w-16 min-[2500px]:h-16 rounded-full bg-[#01ADEF] text-white font-bold text-sm sm:text-base min-[2500px]:text-xl flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 min-[2500px]:w-16 min-[2500px]:h-16 rounded-full bg-[#38315E] text-white font-bold text-sm sm:text-base min-[2500px]:text-xl flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-transform">
                   {item.number}
                 </div>
-                <h3 className="text-base sm:text-lg min-[2500px]:text-xl font-bold text-[#00578E] leading-snug">
+                <h3 className="text-base sm:text-lg min-[2500px]:text-xl font-bold text-[#4F6744] leading-snug">
                   {item.title}
                 </h3>
               </div>

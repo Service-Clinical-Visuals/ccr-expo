@@ -25,14 +25,14 @@ body {
 }
 
 @theme inline {
-  --color-primary: #02acee;
-  --color-primary-hover: #0096d1;
-  --color-primary-dark: #0b5e94;
+  --color-primary: #38315E;
+  --color-primary-hover: #2d274c;
+  --color-primary-dark: #4F6744;
   --color-secondary: #1f2937;
   --color-secondary-hover: #111827;
   --color-muted: #555b62;
   --color-heading: #4a4a4a;
-  --color-footer: #d9ebf7;
+  --color-footer: #e8ede6;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   /* Large-screen breakpoints in rem so they sort after Tailwind's built-in (rem) ones */
@@ -72,7 +72,7 @@ button, input, select, textarea {
 }
 
 .zin-gradient {
-  background-image: linear-gradient(135deg, #02acee 0%, #0b6fa8 100%);
+  background-image: linear-gradient(135deg, #38315E 0%, #4F6744 100%);
 }
 
 /* Base Typography (Desktop: 1280px - 2499px) */

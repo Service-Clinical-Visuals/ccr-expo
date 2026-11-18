@@ -54,7 +54,7 @@ export default function Footer() {
 
           {/* Vertical Divider */}
           <div className="hidden footer-divider-col justify-center self-stretch">
-            <div className="w-px 4k:w-0.5 bg-[#b9d3e4] h-full min-h-[200px]" />
+            <div className="w-px 4k:w-0.5 bg-[#c9d5c5] h-full min-h-[200px]" />
           </div>
 
           {/* Col 2: Links */}
@@ -136,7 +136,7 @@ export default function Footer() {
         </div>
 
         {/* Horizontal Divider */}
-        <div className="w-full h-px 4k:h-0.5 bg-[#b9d3e4]" />
+        <div className="w-full h-px 4k:h-0.5 bg-[#c9d5c5]" />
 
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">

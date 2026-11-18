@@ -13,10 +13,10 @@ export default function Explore360() {
     >
       {/* Blue photo backdrop covering the top part of the section */}
       <div
-        className="absolute inset-x-0 top-0 h-[300px] sm:h-[360px] lg:h-[400px] xl:h-[46%] 2k:h-[46%] bg-[#0b5e94] bg-[url('/medical/zinnanti-surgical-1/360-bg.webp')] bg-cover bg-center"
+        className="absolute inset-x-0 top-0 h-[300px] sm:h-[360px] lg:h-[400px] xl:h-[46%] 2k:h-[46%] bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-1/360-bg.webp')] bg-cover bg-center"
         aria-hidden="true"
       >
-        <div className="absolute inset-0 bg-[#0b5e94]/55" />
+        <div className="absolute inset-0 bg-[#4F6744]/55" />
       </div>
 
       <div className="custom-container relative z-10 flex flex-col items-center text-center pt-10 sm:pt-12 xl:pt-14 2k:pt-20 4k:pt-28 gap-4 2k:gap-6 4k:gap-8">

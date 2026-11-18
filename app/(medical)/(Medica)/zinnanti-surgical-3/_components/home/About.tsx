@@ -25,8 +25,8 @@ const About = () => {
           >
             {/* Tagline Pill */}
             <div className="flex items-center gap-2.5">
-              <span className="w-7 sm:w-8 h-1 bg-[#00578E] rounded-full inline-block shrink-0" />
-              <span className="heading-blue text-[#00578E]">
+              <span className="w-7 sm:w-8 h-1 bg-[#4F6744] rounded-full inline-block shrink-0" />
+              <span className="heading-blue text-[#4F6744]">
                 About Zinnanti Surgical
               </span>
             </div>
@@ -53,7 +53,7 @@ const About = () => {
             <div className="flex flex-col gap-3 sm:gap-4 mt-1">
               
               {/* Feature 1: Comprehensive Surgical Solutions */}
-              <div className="group rounded-[16px] min-[3800px]:rounded-[28px] p-4 sm:p-5 transition-all duration-300 bg-white border border-[#E5E7EB] hover:bg-[#00578E] hover:border-[#00578E] hover:shadow-lg cursor-pointer flex items-start gap-4 sm:gap-5">
+              <div className="group rounded-[16px] min-[3800px]:rounded-[28px] p-4 sm:p-5 transition-all duration-300 bg-white border border-[#E5E7EB] hover:bg-[#4F6744] hover:border-[#4F6744] hover:shadow-lg cursor-pointer flex items-start gap-4 sm:gap-5">
                 <div className="relative w-12 h-12 sm:w-14 sm:h-14 min-[2500px]:w-20 min-[2500px]:h-20 min-[3800px]:w-28 min-[3800px]:h-28 shrink-0">
                   <img
                     src="/medical/zinnanti-surgical-3/about_white_icon1.webp"
@@ -78,7 +78,7 @@ const About = () => {
               </div>
 
               {/* Feature 2: Trusted Innovation & Proven Excellence */}
-              <div className="group rounded-[16px] min-[3800px]:rounded-[28px] p-4 sm:p-5 transition-all duration-300 bg-white border border-[#E5E7EB] hover:bg-[#00578E] hover:border-[#00578E] hover:shadow-lg cursor-pointer flex items-start gap-4 sm:gap-5">
+              <div className="group rounded-[16px] min-[3800px]:rounded-[28px] p-4 sm:p-5 transition-all duration-300 bg-white border border-[#E5E7EB] hover:bg-[#4F6744] hover:border-[#4F6744] hover:shadow-lg cursor-pointer flex items-start gap-4 sm:gap-5">
                 <div className="relative w-12 h-12 sm:w-14 sm:h-14 min-[2500px]:w-20 min-[2500px]:h-20 min-[3800px]:w-28 min-[3800px]:h-28 shrink-0">
                   <img
                     src="/medical/zinnanti-surgical-3/about_white_icon2.webp"

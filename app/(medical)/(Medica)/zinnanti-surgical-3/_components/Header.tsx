@@ -155,8 +155,8 @@ const Header = () => {
                   onClick={(e) => handleNavClick(e, link)}
                   className={`navbar relative cursor-pointer py-1.5 transition-colors select-none flex items-center gap-1.5 ${
                     isActive
-                      ? "text-[#00578E] !font-bold"
-                      : "text-[#333333] hover:text-[#00578E] font-medium"
+                      ? "text-[#4F6744] !font-bold"
+                      : "text-[#333333] hover:text-[#4F6744] font-medium"
                   }`}
                 >
                   <span>{link.name}</span>
@@ -192,7 +192,7 @@ const Header = () => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-gray-800 hover:text-[#00578E] focus:outline-none"
+              className="p-2 text-gray-800 hover:text-[#4F6744] focus:outline-none"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             >
               {mobileMenuOpen ? (
@@ -217,8 +217,8 @@ const Header = () => {
                     onClick={(e) => handleNavClick(e, link)}
                     className={`navbar font-medium py-1.5 transition-colors flex items-center justify-between ${
                       isActive
-                        ? "text-[#00578E] font-bold border-l-4 border-[#00578E] pl-3"
-                        : "text-gray-700 hover:text-[#00578E] pl-3"
+                        ? "text-[#4F6744] font-bold border-l-4 border-[#4F6744] pl-3"
+                        : "text-gray-700 hover:text-[#4F6744] pl-3"
                     }`}
                   >
                     <span>{link.name}</span>

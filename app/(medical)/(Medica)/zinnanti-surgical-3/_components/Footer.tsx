@@ -37,7 +37,7 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="w-full bg-[#00578E] text-white pt-8 sm:pt-10 xl:pt-12 overflow-hidden">
+    <footer id="contact" className="w-full bg-[#4F6744] text-white pt-8 sm:pt-10 xl:pt-12 overflow-hidden">
       <div className="custom-container flex flex-col gap-8 sm:gap-10">
         
         {/* Main Footer Columns */}
@@ -67,7 +67,7 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#00578E] hover:bg-[#01ADEF] hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#4F6744] hover:bg-[#38315E] hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm"
                 aria-label="LinkedIn"
               >
                 <FaLinkedinIn className="w-4 h-4" />
@@ -76,7 +76,7 @@ const Footer = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#00578E] hover:bg-[#01ADEF] hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#4F6744] hover:bg-[#38315E] hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm"
                 aria-label="Facebook"
               >
                 <FaFacebookF className="w-4 h-4" />
@@ -145,7 +145,7 @@ const Footer = () => {
                 />
                 <button
                   type="submit"
-                  className="shrink-0 bg-[#01ADEF] hover:bg-[#0098d4] text-white font-bold text-xs sm:text-sm min-[2500px]:text-lg min-[3800px]:text-2xl px-4 sm:px-5 py-2.5 sm:py-3 rounded-[12px] min-[3800px]:rounded-[20px] transition-all flex items-center gap-1.5 cursor-pointer shadow-sm"
+                  className="shrink-0 bg-[#38315E] hover:bg-[#2d274c] text-white font-bold text-xs sm:text-sm min-[2500px]:text-lg min-[3800px]:text-2xl px-4 sm:px-5 py-2.5 sm:py-3 rounded-[12px] min-[3800px]:rounded-[20px] transition-all flex items-center gap-1.5 cursor-pointer shadow-sm"
                 >
                   <span>Request Quote</span>
                   <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.5]" />

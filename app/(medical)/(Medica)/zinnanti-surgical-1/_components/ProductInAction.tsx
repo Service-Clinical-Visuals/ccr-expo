@@ -8,7 +8,7 @@ import Typography from "./Typography";
 
 export default function ProductInAction() {
   return (
-    <section id="videos" className="w-full bg-[#045a92] py-12 sm:py-16 xl:py-[3.75rem] 2k:py-24 4k:py-32">
+    <section id="videos" className="w-full bg-[#4F6744] py-12 sm:py-16 xl:py-[3.75rem] 2k:py-24 4k:py-32">
       <div className="custom-container flex flex-col split:flex-row split:items-center">
         {/* Video */}
         <div

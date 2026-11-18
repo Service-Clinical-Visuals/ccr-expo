@@ -25,8 +25,8 @@ const SpecializedTechnology = () => {
           >
             {/* Tagline */}
             <div className="flex items-center gap-2.5">
-              <span className="w-7 sm:w-8 h-1 bg-[#01ADEF] rounded-full inline-block shrink-0" />
-              <span className="heading-blue text-[#00578E]">
+              <span className="w-7 sm:w-8 h-1 bg-[#38315E] rounded-full inline-block shrink-0" />
+              <span className="heading-blue text-[#4F6744]">
                 Specialized Technology
               </span>
             </div>
@@ -50,8 +50,8 @@ const SpecializedTechnology = () => {
             </Typography>
 
             {/* Numbered Feature Card 01 with Diamond Badge */}
-            <div className="w-full bg-white border border-[#00578E] rounded-[16px] min-[3800px]:rounded-[28px] p-4 sm:p-5 flex items-center gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-11 h-11 sm:w-12 sm:h-12 min-[2500px]:w-16 min-[2500px]:h-16 min-[3800px]:w-22 min-[3800px]:h-22 rotate-45 rounded-[5px] bg-[#00578E] text-white flex items-center justify-center shrink-0 shadow-sm my-1 mx-2">
+            <div className="w-full bg-white border border-[#4F6744] rounded-[16px] min-[3800px]:rounded-[28px] p-4 sm:p-5 flex items-center gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 min-[2500px]:w-16 min-[2500px]:h-16 min-[3800px]:w-22 min-[3800px]:h-22 rotate-45 rounded-[5px] bg-[#4F6744] text-white flex items-center justify-center shrink-0 shadow-sm my-1 mx-2">
                 <span className="-rotate-45 font-bold text-base sm:text-lg min-[2500px]:text-xl min-[3800px]:text-3xl">
                   01
                 </span>
@@ -67,8 +67,8 @@ const SpecializedTechnology = () => {
             </div>
 
             {/* Numbered Feature Card 02 with Diamond Badge */}
-            <div className="w-full bg-white border border-[#00578E] rounded-[16px] min-[3800px]:rounded-[28px] p-4 sm:p-5 flex items-center gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-11 h-11 sm:w-12 sm:h-12 min-[2500px]:w-16 min-[2500px]:h-16 min-[3800px]:w-22 min-[3800px]:h-22 rotate-45 rounded-[5px] bg-[#00578E] text-white flex items-center justify-center shrink-0 shadow-sm my-1 mx-2">
+            <div className="w-full bg-white border border-[#4F6744] rounded-[16px] min-[3800px]:rounded-[28px] p-4 sm:p-5 flex items-center gap-4 sm:gap-5 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 min-[2500px]:w-16 min-[2500px]:h-16 min-[3800px]:w-22 min-[3800px]:h-22 rotate-45 rounded-[5px] bg-[#4F6744] text-white flex items-center justify-center shrink-0 shadow-sm my-1 mx-2">
                 <span className="-rotate-45 font-bold text-base sm:text-lg min-[2500px]:text-xl min-[3800px]:text-3xl">
                   02
                 </span>

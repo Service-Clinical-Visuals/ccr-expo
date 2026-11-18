@@ -45,7 +45,7 @@ export default function SmokeEvacuation() {
   return (
     <section
       id="smoke-evacuation"
-      className="relative w-full overflow-hidden bg-gradient-to-br from-[#35bdf2] via-[var(--color-primary)] to-[#0aa4e6] py-12 sm:py-16 xl:py-[4.5rem] 2k:py-28 4k:py-40"
+      className="relative w-full overflow-hidden bg-gradient-to-br from-[#4a4175] via-[var(--color-primary)] to-[#2d274c] py-12 sm:py-16 xl:py-[4.5rem] 2k:py-28 4k:py-40"
     >
       <Dots className="top-4 left-6" />
       <Dots className="bottom-4 right-6" />
