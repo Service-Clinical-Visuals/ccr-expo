@@ -32,7 +32,7 @@ const SmokeEvacuator = () => {
 
         {/* Video */}
         <div
-          className="w-full lg:max-w-[80%] aspect-video relative overflow-hidden rounded-2xl min-[2500px]:rounded-3xl shadow-lg bg-gray-100"
+          className="w-full xl:max-w-[80%] aspect-video relative overflow-hidden rounded-2xl min-[2500px]:rounded-3xl shadow-lg bg-gray-100"
           data-aos="zoom-in"
           data-aos-delay="100"
         >

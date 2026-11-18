@@ -26,9 +26,9 @@ const features = [
 const OurInnovation = () => {
   return (
     <section className="w-full bg-white py-14 sm:py-16 xl:py-20 min-[2500px]:py-32 min-[3800px]:py-44 overflow-hidden">
-      <div className="custom-container flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-8 xl:gap-10 min-[2500px]:gap-20">
+      <div className="custom-container flex flex-col xl:flex-row xl:items-center gap-10 xl:gap-10 min-[2500px]:gap-20">
         {/* Left: image */}
-        <div className="w-full lg:w-[46%] shrink-0 order-2 lg:order-none" data-aos="fade-right">
+        <div className="w-full xl:w-[46%] shrink-0 order-2 xl:order-none" data-aos="fade-right">
           <img
             src="/medical/zinnanti-surgical-2/surgical.webp"
             alt="Researcher working with a pipette in a medical laboratory"
@@ -37,7 +37,7 @@ const OurInnovation = () => {
         </div>
 
         {/* Right: content */}
-        <div className="w-full lg:flex-1 flex flex-col items-start order-1 lg:order-none" data-aos="fade-left" data-aos-delay="100">
+        <div className="w-full xl:flex-1 flex flex-col items-start order-1 xl:order-none" data-aos="fade-left" data-aos-delay="100">
           <span className="inline-flex items-center gap-2 min-[2500px]:gap-3 rounded-full border border-gray-200 bg-white shadow-sm px-3 py-1 sm:px-4 sm:py-1.5 min-[2500px]:px-6 min-[2500px]:py-2.5 text-[#121C22]">
             <span aria-hidden className="block w-1.5 h-1.5 min-[2500px]:w-2.5 min-[2500px]:h-2.5 rounded-full bg-[var(--color-secondary)]" />
             Our Innovation
@@ -71,7 +71,7 @@ const OurInnovation = () => {
                 </span>
 
                 <div className="h-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.10)] rounded-tr-2xl rounded-br-[1.75rem] rounded-tl-md rounded-bl-md min-[2500px]:rounded-tr-3xl min-[2500px]:rounded-br-[2.75rem] py-4 pr-4 pl-8 sm:py-5 sm:pr-5 sm:pl-9 min-[2500px]:py-8 min-[2500px]:pr-8 min-[2500px]:pl-14 min-[3800px]:pl-20">
-                  <p className="!font-normal leading-relaxed text-[#4A5568] lg:!text-[0.875rem] xl:!text-[0.9375rem] min-[2500px]:!text-[1.4rem] min-[3800px]:!text-[1.85rem]">
+                  <p className="!font-normal leading-relaxed text-[#4A5568] xl:!text-[0.9375rem] min-[2500px]:!text-[1.4rem] min-[3800px]:!text-[1.85rem]">
                     <strong className="font-semibold text-[#121C22]">{feature.title}</strong> – {feature.text}
                   </p>
                 </div>

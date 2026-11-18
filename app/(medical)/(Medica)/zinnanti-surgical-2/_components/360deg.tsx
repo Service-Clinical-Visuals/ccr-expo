@@ -20,10 +20,10 @@ const Deg360 = () => {
       {/* Header Row */}
       <div className="custom-container">
         <div
-          className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 lg:gap-10"
+          className="flex flex-col xl:flex-row xl:items-center justify-between gap-6 xl:gap-10"
           data-aos="fade-up"
         >
-          <div className="flex flex-col gap-3 min-[2500px]:gap-5 lg:max-w-[64%]">
+          <div className="flex flex-col gap-3 min-[2500px]:gap-5 xl:max-w-[64%]">
             <Eyebrow text="Interactive Spatial Inspection" />
             <Typography variant="h2" color="dark" className="leading-tight">
               Explore Every Angle of Smoke Evacuation
@@ -54,7 +54,7 @@ const Deg360 = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-[57fr_43fr] gap-5 xl:gap-5 min-[2500px]:gap-8">
+          <div className="grid grid-cols-1 xl:grid-cols-[57fr_43fr] gap-5 xl:gap-5 min-[2500px]:gap-8">
             {/* Video — large top-left / bottom-right corners */}
             <div className="relative w-full aspect-video overflow-hidden bg-gray-100 shadow-[0_4px_10px_rgba(0,0,0,0.08)] rounded-tl-[2.5rem] rounded-br-[2.5rem] xl:rounded-tl-[3.5rem] xl:rounded-br-[3.5rem] min-[2500px]:rounded-tl-[5rem] min-[2500px]:rounded-br-[5rem]">
               <DynamicVideoPlayer
@@ -89,7 +89,7 @@ const Deg360 = () => {
               </Typography>
 
               {/* Spec Bars */}
-              <div className="w-full lg:max-w-[85%] flex flex-col gap-3 min-[2500px]:gap-5 mt-5 min-[2500px]:mt-8">
+              <div className="w-full xl:max-w-[85%] flex flex-col gap-3 min-[2500px]:gap-5 mt-5 min-[2500px]:mt-8">
                 {specs.map((spec) => (
                   <div
                     key={spec.label}

@@ -40,8 +40,8 @@ const AboutMissionVision = () => {
         </div>
 
         {/* Image + overlapping card */}
-        <div className="mt-10 sm:mt-12 xl:mt-14 min-[2500px]:mt-20 min-[3800px]:mt-28 flex flex-col lg:flex-row lg:items-center">
-          <div className="w-full lg:w-[57%] relative z-0 order-2 lg:order-none mt-8 lg:mt-0" data-aos="fade-right">
+        <div className="mt-10 sm:mt-12 xl:mt-14 min-[2500px]:mt-20 min-[3800px]:mt-28 flex flex-col xl:flex-row xl:items-center">
+          <div className="w-full xl:w-[57%] relative z-0 order-2 xl:order-none mt-8 xl:mt-0" data-aos="fade-right">
             <img
               src="/medical/zinnanti-surgical-2/abt1.webp"
               alt="Zinnanti Surgical engineer refining a surgical instrument"
@@ -50,7 +50,7 @@ const AboutMissionVision = () => {
           </div>
 
           <div
-            className="order-1 lg:order-none w-full lg:w-[48%] lg:-ml-[5%] relative z-10 bg-white shadow-[0_6px_28px_rgba(0,0,0,0.14)] p-6 sm:p-8 xl:p-10 min-[2500px]:p-16 min-[3800px]:p-24"
+            className="order-1 xl:order-none w-full xl:w-[48%] xl:-ml-[5%] relative z-10 bg-white shadow-[0_6px_28px_rgba(0,0,0,0.14)] p-6 sm:p-8 xl:p-10 min-[2500px]:p-16 min-[3800px]:p-24"
             data-aos="fade-left"
             data-aos-delay="150"
           >

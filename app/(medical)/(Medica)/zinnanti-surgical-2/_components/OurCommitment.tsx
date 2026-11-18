@@ -29,14 +29,14 @@ const OurCommitment = () => {
         {/* Desktop: blue panel running from the viewport edge to just past the content */}
         <div
           aria-hidden
-          className={`hidden lg:block absolute inset-y-0 left-0 w-[58%] ${PANEL_BG}`}
+          className={`hidden xl:block absolute inset-y-0 left-0 w-[58%] ${PANEL_BG}`}
           data-aos="fade-right"
         />
 
-        <div className="custom-container relative z-10 flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-0">
+        <div className="custom-container relative z-10 flex flex-col xl:flex-row xl:items-center gap-8 xl:gap-0">
           {/* Content (carries its own panel background below lg) */}
           <div
-            className={`w-full lg:w-[32%] shrink-0 text-white ${PANEL_BG} lg:bg-none p-6 sm:p-8 lg:p-0 lg:py-14 xl:py-16 min-[2500px]:py-28 min-[3800px]:py-40`}
+            className={`w-full xl:w-[32%] shrink-0 text-white ${PANEL_BG} xl:bg-none p-6 sm:p-8 xl:p-0 xl:py-16 min-[2500px]:py-28 min-[3800px]:py-40`}
             data-aos="fade-up"
           >
             <Typography variant="h2" color="white" className="leading-snug">
@@ -75,7 +75,7 @@ const OurCommitment = () => {
           </div>
 
           {/* Image overlapping the panel */}
-          <div className="w-full lg:w-[65%] lg:ml-auto" data-aos="fade-left" data-aos-delay="150">
+          <div className="w-full xl:w-[65%] xl:ml-auto" data-aos="fade-left" data-aos-delay="150">
             <img
               src="/medical/zinnanti-surgical-2/commitment.webp"
               alt="Two medical professionals shaking hands"

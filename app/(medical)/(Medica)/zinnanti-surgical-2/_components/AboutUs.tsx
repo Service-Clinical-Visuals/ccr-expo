@@ -13,10 +13,10 @@ const AboutUs = () => {
     >
       <div className="custom-container">
         {/* Image + card sit flush side by side; the card extends above and below the image */}
-        <div className="flex flex-col lg:flex-row lg:items-stretch">
+        <div className="flex flex-col xl:flex-row xl:items-stretch">
           {/* Left: Image (only top-left corner rounded) */}
           <div
-            className="relative w-full lg:w-[51%] aspect-[4/3] lg:aspect-auto lg:my-8 min-[2500px]:my-12 min-[3800px]:my-16 overflow-hidden rounded-tl-[2.5rem] min-[2500px]:rounded-tl-[4rem] min-[3800px]:rounded-tl-[5rem]"
+            className="relative w-full xl:w-[51%] aspect-[4/3] xl:aspect-auto xl:my-8 min-[2500px]:my-12 min-[3800px]:my-16 overflow-hidden rounded-tl-[2.5rem] min-[2500px]:rounded-tl-[4rem] min-[3800px]:rounded-tl-[5rem]"
             data-aos="fade-right"
           >
             <img
@@ -28,7 +28,7 @@ const AboutUs = () => {
 
           {/* Right: Blue Card (top-left + bottom-right rounded) */}
           <div
-            className="w-full lg:w-[49%] bg-[var(--color-navy)] text-white rounded-br-[2.5rem] lg:rounded-tl-[3.5rem] lg:rounded-br-[3.5rem] min-[2500px]:rounded-tl-[5rem] min-[2500px]:rounded-br-[5rem] min-[3800px]:rounded-tl-[7rem] min-[3800px]:rounded-br-[7rem] px-6 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-20 xl:px-14 xl:py-24 min-[2500px]:px-24 min-[2500px]:py-36 min-[3800px]:px-32 min-[3800px]:py-48 flex flex-col items-start justify-center"
+            className="w-full xl:w-[49%] bg-[var(--color-navy)] text-white rounded-br-[2.5rem] xl:rounded-tl-[3.5rem] xl:rounded-br-[3.5rem] min-[2500px]:rounded-tl-[5rem] min-[2500px]:rounded-br-[5rem] min-[3800px]:rounded-tl-[7rem] min-[3800px]:rounded-br-[7rem] px-6 py-10 sm:px-10 sm:py-12 xl:px-14 xl:py-24 min-[2500px]:px-24 min-[2500px]:py-36 min-[3800px]:px-32 min-[3800px]:py-48 flex flex-col items-start justify-center"
             data-aos="fade-left"
             data-aos-delay="150"
           >

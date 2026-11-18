@@ -28,9 +28,9 @@ const points = [
 const OurImpact = () => {
   return (
     <section className="w-full bg-white py-14 sm:py-16 xl:py-24 min-[2500px]:py-36 min-[3800px]:py-48 overflow-hidden">
-      <div className="custom-container flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-12 xl:gap-16 min-[2500px]:gap-24">
+      <div className="custom-container flex flex-col xl:flex-row xl:items-center gap-10 xl:gap-16 min-[2500px]:gap-24">
         {/* Left: content */}
-        <div className="w-full lg:w-1/2 flex flex-col items-start" data-aos="fade-right">
+        <div className="w-full xl:w-1/2 flex flex-col items-start" data-aos="fade-right">
           <span className="inline-flex items-center gap-2 min-[2500px]:gap-3 rounded-full border border-gray-200 bg-white shadow-sm px-3 py-1 sm:px-4 sm:py-1.5 min-[2500px]:px-6 min-[2500px]:py-2.5 text-[#121C22]">
             <span aria-hidden className="block w-1.5 h-1.5 min-[2500px]:w-2.5 min-[2500px]:h-2.5 rounded-full bg-[var(--color-secondary)]" />
             Our Impact
@@ -71,7 +71,7 @@ const OurImpact = () => {
         </div>
 
         {/* Right: image collage */}
-        <div className="w-full lg:w-1/2" data-aos="fade-left" data-aos-delay="150">
+        <div className="w-full xl:w-1/2" data-aos="fade-left" data-aos-delay="150">
           <img
             src="/medical/zinnanti-surgical-2/innovative.webp"
             alt="Clinicians reviewing an X-ray and a digital healthcare innovation concept"

@@ -14,6 +14,7 @@ interface NavLink {
 }
 
 const topLinks: NavLink[] = [
+  { name: "Home", href: `/` },
   { name: "About", href: `${BASE_PATH}/about` },
   { name: "Products" },
   { name: "FAQ" },
@@ -188,12 +189,12 @@ const Header = () => {
             <img
               src="/medical/zinnanti-surgical-2/logo.webp"
               alt="Zinnanti Surgical Design Group Logo"
-              className="h-8 sm:h-9 lg:h-10 min-[2500px]:h-16 min-[3800px]:h-24 w-auto object-contain"
+              className="h-8 sm:h-9 xl:h-10 min-[2500px]:h-16 min-[3800px]:h-24 w-auto object-contain"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8 min-[2500px]:gap-12 min-[3800px]:gap-16">
+          <nav className="hidden xl:flex items-center gap-6 xl:gap-8 min-[2500px]:gap-12 min-[3800px]:gap-16">
             {mainLinks.map((link) => (
               <NavItem
                 key={link.name}
@@ -207,7 +208,7 @@ const Header = () => {
           {/* Mobile Hamburger */}
           <button
             type="button"
-            className="lg:hidden text-gray-800 p-1.5 hover:bg-gray-100 transition-colors focus:outline-none"
+            className="xl:hidden text-gray-800 p-1.5 hover:bg-gray-100 transition-colors focus:outline-none"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Navigation Menu"
           >
@@ -217,7 +218,7 @@ const Header = () => {
 
         {/* Mobile Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-100 shadow-2xl max-h-[calc(100dvh-120px)] overflow-y-auto">
+          <div className="xl:hidden bg-white border-t border-gray-100 shadow-2xl max-h-[calc(100dvh-120px)] overflow-y-auto">
             <div className="custom-container flex flex-col py-4">
               {[...mainLinks, ...topLinks].map((link) => (
                 <NavItem

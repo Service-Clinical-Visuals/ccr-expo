@@ -20,7 +20,7 @@ const ProductCategories = () => {
       <div className="custom-container flex flex-col gap-12 xl:gap-16 min-[2500px]:gap-24">
         {/* Centered Header */}
         <div
-          className="flex flex-col items-center text-center max-w-5xl lg:max-w-[84%] mx-auto"
+          className="flex flex-col items-center text-center max-w-5xl xl:max-w-[84%] mx-auto"
           data-aos="fade-up"
         >
           <Eyebrow text="Our Product Categories" />
@@ -36,11 +36,16 @@ const ProductCategories = () => {
         </div>
 
         {/* Category Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-6 xl:gap-8 min-[2500px]:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 sm:gap-6 xl:gap-8 min-[2500px]:gap-12">
           {categories.map((cat, index) => (
             <div
               key={cat.title}
-              className="flex flex-col items-center group"
+              className={`flex flex-col items-center group ${
+                // Odd last card: centre it on the 2-column (iPad) layout
+                categories.length % 2 === 1 && index === categories.length - 1
+                  ? "sm:col-span-2 sm:justify-self-center sm:w-[calc(50%-0.75rem)] xl:col-span-1 xl:w-auto xl:justify-self-stretch"
+                  : ""
+              }`}
               data-aos="fade-up"
               data-aos-delay={index * 150}
             >

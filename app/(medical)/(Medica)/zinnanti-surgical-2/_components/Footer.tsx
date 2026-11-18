@@ -51,9 +51,9 @@ const Footer = () => {
   return (
     <footer id="contact" className="w-full text-white overflow-hidden">
       <div className="bg-[var(--color-navy)] pt-12 sm:pt-14 xl:pt-16 pb-12 sm:pb-16 xl:pb-20 min-[2500px]:py-28 min-[3800px]:py-40">
-        <div className="custom-container grid grid-cols-2 lg:grid-cols-12 gap-x-6 gap-y-10 lg:gap-8 items-start">
+        <div className="custom-container grid grid-cols-2 xl:grid-cols-12 gap-x-6 gap-y-10 xl:gap-8 items-start">
           {/* Brand */}
-          <div className="col-span-2 lg:col-span-5 flex flex-col gap-5 items-start lg:pr-12" data-aos="fade-up">
+          <div className="col-span-2 xl:col-span-5 flex flex-col gap-5 items-start xl:pr-12" data-aos="fade-up">
             <div className="bg-white p-1.5 min-[2500px]:p-3">
               <img
                 src="/medical/zinnanti-surgical-2/logo.webp"
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="col-span-1 lg:col-span-2 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="100">
+          <div className="col-span-1 xl:col-span-2 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="100">
             <Typography variant="footer-heading" color="white">
               Quick Links
             </Typography>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
 
           {/* Legal */}
-          <div className="col-span-1 lg:col-span-2 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
+          <div className="col-span-1 xl:col-span-2 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="200">
             <Typography variant="footer-heading" color="white">
               Legendry
             </Typography>
@@ -97,7 +97,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="col-span-2 lg:col-span-3 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="300">
+          <div className="col-span-2 xl:col-span-3 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="300">
             <Typography variant="footer-heading" color="white">
               Subscribe to Newsletter :
             </Typography>
