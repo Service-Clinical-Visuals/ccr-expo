@@ -10,13 +10,27 @@ export default function ProductInAction() {
   return (
     <section id="videos" className="w-full bg-[#4F6744] py-12 sm:py-16 xl:py-[3.75rem] 2k:py-24 4k:py-32">
       <div className="custom-container flex flex-col split:flex-row split:items-center">
+            <div
+          className="w-full lg:w-[62%] mt-2 2k:mt-4 overflow-hidden rounded-lg 2k:rounded-2xl 4k:rounded-3xl bg-white shadow-xl"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <img
+            src="/medical/zinnanti-surgical-1/machine3.webp"
+            alt="Bovie ZSE01 Smoke Evacuator Unit"
+            width={1214}
+            height={637}
+            className="block w-full h-auto"
+          />
+        </div>
+        
         {/* Video */}
-        <div
+        {/* <div
           className="relative order-2 split:order-1 mt-6 split:mt-0 w-full split:w-[60%] 2xl:w-[66%] shrink-0 aspect-video split:aspect-auto split:self-stretch 2xl:aspect-video 2xl:self-auto rounded-md 2k:rounded-xl 4k:rounded-2xl overflow-hidden bg-white shadow-xl"
           data-aos="fade-right"
         >
           <DynamicVideoPlayer type="short-2" className="absolute inset-0 w-full h-full object-cover" />
-        </div>
+        </div> */}
 
         {/* Text card */}
         <div
