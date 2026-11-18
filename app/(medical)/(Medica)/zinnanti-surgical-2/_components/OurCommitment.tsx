@@ -16,7 +16,7 @@ const points = [
   },
 ];
 
-const PANEL_BG = "bg-[url('/medical/zinnanti-surgical-2/bg3.webp')] bg-[length:100%_100%] bg-no-repeat";
+const PANEL_BG = "bg-[url('/medical/zinnanti-surgical-2/bg33.webp')] bg-[length:100%_100%] bg-no-repeat";
 
 /**
  * About page: "Our Commitment" — blue wave panel flush with the left edge of the viewport,

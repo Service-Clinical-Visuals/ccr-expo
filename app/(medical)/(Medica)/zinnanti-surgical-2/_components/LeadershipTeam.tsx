@@ -17,7 +17,7 @@ const LeadershipTeam = () => {
     <section className="w-full bg-white px-3 sm:px-5 xl:px-8 min-[2500px]:px-12 min-[3800px]:px-16">
       <div
         className="relative w-full overflow-hidden bg-[var(--color-secondary)] bg-cover bg-center bg-no-repeat py-14 sm:py-16 xl:py-20 min-[2500px]:py-32 min-[3800px]:py-44"
-        style={{ backgroundImage: "url('/medical/zinnanti-surgical-2/bg2.webp')" }}
+        style={{ backgroundImage: "url('/medical/zinnanti-surgical-2/bg22.webp')" }}
       >
         <div className="custom-container relative z-10">
           {/* Heading row */}
