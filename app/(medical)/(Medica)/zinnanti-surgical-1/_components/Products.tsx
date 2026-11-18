@@ -19,6 +19,10 @@ const PRODUCTS: { src: string; name: string; category: Category }[] = [
   { src: "product-7.webp", name: "Bovie Derm 942 High Frequency Desiccator", category: "High-Res Anoscopy" },
   { src: "product-8.webp", name: "Smoke-Evac Fusion 4″ Preferred Blade – box of 5", category: "High-Res Anoscopy" },
   { src: "product-9.webp", name: "Smoke Evacuator Unit with 35-Hour Filter, 100–120V", category: "High-Res Anoscopy" },
+  { src: "product-10.webp", name: "Derm Tips", category: "Dermatology" },
+  { src: "product-11.webp", name: "Derm Setup – Bovie Components", category: "Dermatology" },
+  { src: "product-12.webp", name: "Electro Surgical Unit", category: "Gynecology" },
+  { src: "product-13.webp", name: "ZSDG Empty Cart", category: "High-Res Anoscopy" },
 ];
 
 export default function Products() {

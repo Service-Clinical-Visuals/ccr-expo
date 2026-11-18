@@ -5,10 +5,11 @@ import Typography from "./Typography";
 import Button from "./Button";
 import Eyebrow from "./Eyebrow";
 
-const categories = [
-  { title: "High-Res Anoscopy", image: "/medical/zinnanti-surgical-2/c1.webp" },
-  { title: "Dermatology", image: "/medical/zinnanti-surgical-2/c2.webp" },
-  { title: "Gynecology", image: "/medical/zinnanti-surgical-2/c3.webp" },
+// `contain` keeps wide product shots (white background) whole instead of cropping them
+const categories: { title: string; image: string; contain?: boolean }[] = [
+  { title: "High-Res Anoscopy", image: "/medical/zinnanti-surgical-2/derm-tips.webp" },
+  { title: "Dermatology", image: "/medical/zinnanti-surgical-2/derm-setup.webp", contain: true },
+  { title: "Gynecology", image: "/medical/zinnanti-surgical-2/acu-evac-adapter.webp", contain: true },
 ];
 
 const ProductCategories = () => {
@@ -54,7 +55,7 @@ const ProductCategories = () => {
                 <img
                   src={cat.image}
                   alt={cat.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={`w-full h-full ${cat.contain ? "object-contain p-3 min-[2500px]:p-6" : "object-cover"} transition-transform duration-500 group-hover:scale-105`}
                 />
               </div>
 

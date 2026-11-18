@@ -9,6 +9,7 @@ const DOCS = [
   { src: "product-documentation-3.webp", alt: "Instructions for Zinnanti Surgical reusable tubing kits and adapters" },
   { src: "product-documentation-1.webp", alt: "Smoke-Evac Fusion Electrode instructions for use" },
   { src: "product-documentation-2.webp", alt: "Tubing adapter kits instructions for use" },
+  { src: "product-documentation-4.webp", alt: "Smoke-Evac Fusion Treatment System cart assembly instructions" },
 ];
 
 const arrowBtn =
@@ -55,16 +56,17 @@ export default function Documentation() {
           data-aos-delay="100"
         >
           {DOCS.map((doc, i) => {
-            // -1 = left, 0 = centre, 1 = right
-            let pos = i - active;
-            if (pos > 1) pos -= n;
-            if (pos < -1) pos += n;
+            // -1 = left, 0 = centre, 1 = right; anything further is hidden off-stage
+            let pos = (((i - active) % n) + n) % n;
+            if (pos > n / 2) pos -= n;
             const isCenter = pos === 0;
+            const isHidden = Math.abs(pos) > 1;
             return (
               <div
                 key={doc.src}
                 role="button"
-                tabIndex={0}
+                tabIndex={isHidden ? -1 : 0}
+                aria-hidden={isHidden}
                 aria-label={doc.alt}
                 onClick={() => (isCenter ? setViewing(i) : setActive(i))}
                 onKeyDown={(e) => {
@@ -75,10 +77,15 @@ export default function Documentation() {
                   }
                 }}
                 className={`group absolute top-1/2 left-1/2 w-[60%] sm:w-[46%] aspect-[4/3] bg-white rounded-xl 2k:rounded-2xl 4k:rounded-3xl overflow-hidden border-2 4k:border-4 border-[var(--color-primary)] transition-all duration-500 ease-out cursor-pointer ${
-                  isCenter ? "z-20 shadow-[0_12px_30px_rgba(0,0,0,0.3)]" : "z-10 shadow-sm"
+                  isCenter
+                    ? "z-20 shadow-[0_12px_30px_rgba(0,0,0,0.3)]"
+                    : isHidden
+                      ? "z-0 opacity-0 pointer-events-none"
+                      : "z-10 shadow-sm"
                 }`}
                 style={{
-                  transform: `translate(calc(-50% + ${pos * 58.7}%), -50%) scale(${isCenter ? 1.12 : 1})`,
+                  // hidden cards park behind the side cards so they slide in from there
+                  transform: `translate(calc(-50% + ${Math.sign(pos) * Math.min(Math.abs(pos), 1) * 58.7}%), -50%) scale(${isCenter ? 1.12 : isHidden ? 0.9 : 1})`,
                 }}
               >
                 <img

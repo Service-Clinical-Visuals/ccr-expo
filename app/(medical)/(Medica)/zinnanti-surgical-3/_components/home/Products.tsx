@@ -23,6 +23,14 @@ const productsByCategory: Record<string, Product[]> = {
       title: "Bovie Bantam",
       image: "/medical/zinnanti-surgical-3/p3.webp",
     },
+    {
+      title: "Derm Tips",
+      image: "/medical/zinnanti-surgical-3/p10.webp",
+    },
+    {
+      title: "Derm Setup – Bovie Components",
+      image: "/medical/zinnanti-surgical-3/p11.webp",
+    },
   ],
   Gynecology: [
     {
@@ -37,6 +45,10 @@ const productsByCategory: Record<string, Product[]> = {
       title: "Gynecological Colposcopy Speculum Kit",
       image: "/medical/zinnanti-surgical-3/p6.webp",
     },
+    {
+      title: "Electro Surgical Unit",
+      image: "/medical/zinnanti-surgical-3/p12.webp",
+    },
   ],
   "High-Res Anoscopy": [
     {
@@ -50,6 +62,10 @@ const productsByCategory: Record<string, Product[]> = {
     {
       title: "ZSE01 High-Flow Anoscopy Evacuator Filter",
       image: "/medical/zinnanti-surgical-3/p9.webp",
+    },
+    {
+      title: "ZSDG Empty Cart",
+      image: "/medical/zinnanti-surgical-3/p13.webp",
     },
   ],
 };
@@ -124,12 +140,13 @@ const Products = () => {
             <div
               key={`${activeCategory}-${idx}`}
               className={`w-full bg-[#4F6744] text-white rounded-[24px] min-[3800px]:rounded-[48px] p-6 sm:p-7 min-[2500px]:p-10 min-[3800px]:p-14 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1.5 ${
-                idx === 2
-                  ? "md:col-span-2 md:w-full md:max-w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0 min-[1036px]:col-span-1 min-[1036px]:max-w-none min-[1036px]:mx-0"
+                // centre a lone last card on the 2-column tablet layout
+                idx === activeProducts.length - 1 && activeProducts.length % 2 === 1
+                  ?"md:col-span-2 md:w-full md:max-w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0 min-[1036px]:col-span-1 min-[1036px]:max-w-none min-[1036px]:mx-0"
                   : ""
               }`}
               data-aos="fade-up"
-              data-aos-delay={idx * 150}
+              data-aos-delay={(idx % 3) * 150}
             >
               <div>
                 {/* White Inner Image Frame */}
