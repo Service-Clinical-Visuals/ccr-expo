@@ -25,8 +25,6 @@ const Hero = () => {
         />
       </div>
 
-      {/* Dark Overlay for optimal text legibility */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-black/25 z-10 pointer-events-none" />
 
       {/* Content Area bounded by .custom-container */}
       <div className="custom-container relative z-20 w-full">

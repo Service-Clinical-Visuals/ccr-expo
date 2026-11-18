@@ -17,7 +17,7 @@ const SpecializedTechnology = () => {
     <section id="specialized-technology" className="w-full py-16 xl:py-24 bg-white overflow-hidden">
       <div className="custom-container">
         <div className="flex flex-col min-[1500px]:flex-row items-center gap-10 xl:gap-14 w-full">
-          
+
           {/* Content Column: order-1 on screens up to 1500px, order-2 on >=1500px */}
           <div
             className="w-full min-[1500px]:w-1/2 flex flex-col gap-5 sm:gap-6 order-1 min-[1500px]:order-2"
@@ -90,15 +90,15 @@ const SpecializedTechnology = () => {
             className="w-full min-[1500px]:w-1/2 aspect-video relative overflow-hidden rounded-[24px] min-[3800px]:rounded-[48px] shadow-2xl border border-gray-200 bg-[#001D33] order-2 min-[1500px]:order-1"
             data-aos="fade-right"
           >
-            {/* <DynamicVideoPlayer
+            <DynamicVideoPlayer
               type="short-2"
               className="absolute inset-0 w-full h-full object-cover"
-            /> */}
-            <img
+            />
+            {/* <img
               src="/medical/zinnanti-surgical-3/special.webp"
               alt="Specialized Technology"
               className="w-full h-full object-cover"
-            />
+            /> */}
           </div>
 
         </div>

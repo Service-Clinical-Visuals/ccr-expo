@@ -31,27 +31,14 @@ const SmokeEvacuator = () => {
         </div>
 
         {/* Video — wide frame, large top-left + bottom-right corners */}
-        {/* <div
+        <div
           className="w-full xl:max-w-[82%] aspect-video xl:aspect-[2.08/1] relative overflow-hidden bg-gray-100 rounded-tl-[2rem] rounded-br-[2rem] rounded-tr-sm rounded-bl-sm xl:rounded-tl-[2.5rem] xl:rounded-br-[2.5rem] min-[2500px]:rounded-tl-[4rem] min-[2500px]:rounded-br-[4rem]"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
           <DynamicVideoPlayer
-            type="short-2"
+            type="short-1"
             className="absolute inset-0 w-full h-full object-cover"
-          />
-        </div> */}
-        <div
-          className="w-full lg:w-[62%] mt-2 2k:mt-4 overflow-hidden rounded-lg 2k:rounded-2xl 4k:rounded-3xl bg-white shadow-xl"
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        >
-          <img
-            src="/medical/zinnanti-surgical-2/l2.webp"
-            alt="Bovie ZSE01 Smoke Evacuator Unit"
-            width={1214}
-            height={637}
-            className="block w-full h-auto"
           />
         </div>
       </div>

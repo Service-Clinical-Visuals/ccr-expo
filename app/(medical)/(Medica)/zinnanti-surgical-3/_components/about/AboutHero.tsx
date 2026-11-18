@@ -10,7 +10,7 @@ import Typography from "../Typography";
  */
 const AboutHero = () => {
   return (
-    <section className="relative w-full pt-[130px] sm:pt-[150px] lg:pt-[170px] pb-14 sm:pb-20 bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden text-white">
+    <section className="relative w-full pt-[130px] sm:pt-[150px] lg:pt-[170px] pb-14 sm:pb-20 bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/bg.webp?v=2')] bg-cover bg-center bg-no-repeat overflow-hidden text-white">
       <div className="custom-container text-center space-y-3 sm:space-y-4" data-aos="fade-up">
         <Typography
           variant="h1"

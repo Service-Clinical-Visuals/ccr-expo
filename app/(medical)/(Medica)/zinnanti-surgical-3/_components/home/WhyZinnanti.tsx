@@ -37,8 +37,8 @@ const WhyZinnanti = () => {
   return (
     <section id="why" className="w-full overflow-hidden">
       
-      {/* 1. Top Section: Blue Patterned Background */}
-      <div className="w-full py-16 xl:py-24 bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/bg.webp')] bg-cover bg-center bg-no-repeat text-white relative">
+      {/* 1. Top Section: Patterned Background */}
+      <div className="w-full py-16 xl:py-24 bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/bg.webp?v=2')] bg-cover bg-center bg-no-repeat text-white relative">
         <div className="custom-container flex flex-col gap-12 sm:gap-16">
           
           {/* Section Header */}

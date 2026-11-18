@@ -4,6 +4,7 @@ import React from "react";
 import Typography from "./Typography";
 import Button from "./Button";
 import Eyebrow from "./Eyebrow";
+import DynamicVideoPlayer from "@/app/_components/DynamicVideoPlayer";
 
 const Filtration = () => {
   return (
@@ -15,17 +16,14 @@ const Filtration = () => {
       <div className="w-full bg-[var(--color-navy)] xl:mt-12 min-[2500px]:mt-20 min-[3800px]:mt-28">
         <div className="custom-container pt-12 xl:pt-0 pb-14 xl:pb-10 min-[2500px]:pb-16 min-[3800px]:pb-24">
           <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-14 min-[2500px]:gap-20 items-start">
-            {/* Image — overlaps the band's top edge on desktop */}
+            {/* Video — overlaps the band's top edge on desktop */}
             <div
-              className="order-2 xl:order-none xl:col-span-7 xl:-mt-12 min-[2500px]:-mt-20 min-[3800px]:-mt-28 w-full max-w-[1117px] mx-auto overflow-hiddenrounded-tl-[2rem] rounded-br-[2rem] rounded-tr-md rounded-bl-md min-[2500px]:rounded-tl-[3rem] min-[2500px]:rounded-br-[3rem] "
+              className="order-2 xl:order-none xl:col-span-7 xl:-mt-12 min-[2500px]:-mt-20 min-[3800px]:-mt-28 w-full max-w-[1117px] mx-auto aspect-[1117/633] relative overflow-hidden bg-black rounded-tl-[2rem] rounded-br-[2rem] rounded-tr-md rounded-bl-md min-[2500px]:rounded-tl-[3rem] min-[2500px]:rounded-br-[3rem] shadow-xl"
               data-aos="fade-right"
             >
-              <img
-                src="/medical/zinnanti-surgical-2/l3.webp"
-                alt="Bovie smoke evacuator unit in use during surgery"
-                width={1117}
-                height={633}
-                className="block w-full h-auto"
+              <DynamicVideoPlayer
+                type="short-2"
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
 

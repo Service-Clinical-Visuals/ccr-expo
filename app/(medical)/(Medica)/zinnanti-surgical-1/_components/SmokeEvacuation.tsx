@@ -79,27 +79,13 @@ export default function SmokeEvacuation() {
           </div>
         </div>
 
-            <div
-          className="w-full lg:w-[62%] mt-2 2k:mt-4 overflow-hidden rounded-lg 2k:rounded-2xl 4k:rounded-3xl "
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        >
-          <img
-            src="/medical/zinnanti-surgical-1/machine2.webp"
-            alt="Bovie ZSE01 Smoke Evacuator Unit"
-            width={1214}
-            height={637}
-            className="block w-full h-auto"
-          />
-        </div>
-
         {/* Video */}
-        {/* <div
+        <div
           className="relative w-full lg:flex-1 mt-6 lg:mt-0 aspect-video lg:aspect-auto lg:self-stretch 2xl:aspect-video 2xl:self-auto rounded-lg 2k:rounded-2xl overflow-hidden bg-white shadow-xl"
           data-aos="fade-left"
         >
           <DynamicVideoPlayer type="short-1" className="absolute inset-0 w-full h-full object-cover" />
-        </div> */}
+        </div>
       </div>
     </section>
   );

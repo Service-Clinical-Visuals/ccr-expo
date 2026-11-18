@@ -16,7 +16,7 @@ const SmokeEvacuatorVideo = () => {
     <section id="evacuator-unit" className="w-full py-16 xl:py-24 bg-white overflow-hidden">
       <div className="custom-container">
         <div className="flex flex-col min-[1500px]:flex-row items-center gap-10 xl:gap-14 w-full">
-          
+
           {/* Content (40% on >=1500px) */}
           <div
             className="w-full min-[1500px]:w-[40%] flex flex-col gap-5 sm:gap-6"
@@ -62,15 +62,15 @@ const SmokeEvacuatorVideo = () => {
             className="w-full min-[1500px]:w-[60%] aspect-video relative overflow-hidden rounded-[20px] min-[3800px]:rounded-[40px] shadow-2xl border border-gray-200 bg-[#001D33]"
             data-aos="fade-left"
           >
-            {/* <DynamicVideoPlayer
+            <DynamicVideoPlayer
               type="short-1"
               className="absolute inset-0 w-full h-full object-cover"
-            /> */}
-            <img
+            />
+            {/* <img
               src="/medical/zinnanti-surgical-3/smoke.webp"
               alt="Smoke Evacuation Unit"
               className="w-full h-full object-cover"
-            />
+            /> */}
           </div>
 
         </div>

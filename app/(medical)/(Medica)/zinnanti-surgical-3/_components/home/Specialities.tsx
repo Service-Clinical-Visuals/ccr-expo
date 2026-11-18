@@ -46,10 +46,10 @@ const Specialities = () => {
   return (
     <section
       id="specialities"
-      className="w-full py-16 xl:py-24 bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden relative text-white"
+      className="w-full py-16 xl:py-24 bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/bg.webp?v=2')] bg-cover bg-center bg-no-repeat overflow-hidden relative text-white"
     >
       <div className="custom-container flex flex-col items-center gap-12 sm:gap-16">
-        
+
         {/* Section Header: Centered */}
         <div
           className="text-center w-full max-w-full xl:max-w-[70%] mx-auto space-y-4"
@@ -76,11 +76,10 @@ const Specialities = () => {
           {specialitiesData.map((item, idx) => (
             <div
               key={item.number}
-              className={`w-full bg-white text-[#333333] rounded-[16px] min-[3800px]:rounded-[32px] p-6 sm:p-7 min-[2500px]:p-10 min-[3800px]:p-14 shadow-[0px_20px_30px_-10px_#142538] flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl ${
-                idx === 2
+              className={`w-full bg-white text-[#333333] rounded-[16px] min-[3800px]:rounded-[32px] p-6 sm:p-7 min-[2500px]:p-10 min-[3800px]:p-14 shadow-[0px_20px_30px_-10px_#142538] flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl ${idx === 2
                   ? "md:col-span-2 md:w-full md:max-w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0 min-[1036px]:col-span-1 min-[1036px]:max-w-none min-[1036px]:mx-0"
                   : ""
-              }`}
+                }`}
               data-aos="fade-up"
               data-aos-delay={idx * 150}
             >

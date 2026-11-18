@@ -63,20 +63,20 @@ const Deg360 = () => {
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              {show360 ? (
-                <DynamicVideoPlayer
-                  type="360"
-                  className="absolute inset-0 w-full h-full object-contain bg-black"
-                />
-              ) : (
-                <img
+
+              <DynamicVideoPlayer
+                type="360"
+                className="absolute inset-0 w-full h-full object-contain bg-black"
+              />
+
+              {/* <img
                   src="/medical/zinnanti-surgical-2/l1.webp"
                   alt="Bovie Smoke Shark smoke evacuator unit"
                   width={969}
                   height={577}
                   className="absolute inset-0 w-full h-full object-contain"
-                />
-              )}
+                /> */}
+
             </div>
 
             {/* Blueprint Card — large top-right / bottom-right corners */}

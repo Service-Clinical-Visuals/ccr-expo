@@ -31,27 +31,14 @@ export default function Explore360() {
             Anoscopy (HRA) procedures.
           </Typography>
         </div>
-        <div
-          className="w-full lg:w-[62%] mt-2 2k:mt-4 overflow-hidden rounded-lg 2k:rounded-2xl 4k:rounded-3xl bg-white shadow-xl"
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        >
-          <img
-            src="/medical/zinnanti-surgical-1/machine1.webp"
-            alt="Bovie ZSE01 Smoke Evacuator Unit"
-            width={1214}
-            height={637}
-            className="block w-full h-auto"
-          />
-        </div>
 
-        {/* <div
+        <div
           className="w-full lg:w-[62%] mt-2 2k:mt-4 aspect-video relative overflow-hidden rounded-lg 2k:rounded-2xl 4k:rounded-3xl bg-white shadow-xl"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
           <DynamicVideoPlayer type="360" className="absolute inset-0 w-full h-full object-contain" />
-        </div> */}
+        </div>
       </div>
     </section>
   );

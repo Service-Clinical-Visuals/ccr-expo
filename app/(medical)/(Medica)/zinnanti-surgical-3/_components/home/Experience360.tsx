@@ -14,7 +14,7 @@ const Experience360 = () => {
   return (
     <section id="experience-360" className="w-full py-16 xl:py-24 bg-white overflow-hidden">
       <div className="custom-container flex flex-col items-center">
-        
+
         {/* Section Header: Centered */}
         <div
           className="text-center w-full max-w-full xl:max-w-[70%] mx-auto space-y-4"
@@ -50,15 +50,15 @@ const Experience360 = () => {
           data-aos="zoom-in"
           data-aos-delay="150"
         >
-          {/* <DynamicVideoPlayer
+          <DynamicVideoPlayer
             type="360"
             className="absolute inset-0 w-full h-full object-cover"
-          /> */}
-          <img
+          />
+          {/* <img
             src="/medical/zinnanti-surgical-3/360.webp"
             alt="360 Experience"
             className="w-full h-full object-cover"
-          />
+          /> */}
         </div>
 
       </div>

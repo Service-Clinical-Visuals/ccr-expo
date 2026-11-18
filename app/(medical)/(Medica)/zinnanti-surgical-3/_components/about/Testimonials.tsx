@@ -12,8 +12,8 @@ import Typography from "../Typography";
 const Testimonials = () => {
   return (
     <section className="relative w-full overflow-hidden bg-white">
-      {/* 1. Upper Cyan Background Band (bg_testi.webp) */}
-      <div className="w-full bg-[#38315E] bg-[url('/medical/zinnanti-surgical-3/about/bg_testi.webp')] bg-cover bg-top bg-no-repeat pt-14 sm:pt-16 lg:pt-20 pb-28 sm:pb-36 lg:pb-44 text-white">
+      {/* 1. Upper Green Background Band (bg_testi.webp) */}
+      <div className="w-full bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/about/bg_testi.webp?v=2')] bg-cover bg-top bg-no-repeat pt-14 sm:pt-16 lg:pt-20 pb-28 sm:pb-36 lg:pb-44 text-white">
         <div className="custom-container text-center space-y-3 sm:space-y-4" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2.5">
             <span className="w-8 h-1 bg-white rounded-full inline-block" />
