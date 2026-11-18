@@ -28,8 +28,8 @@ const WomensHealth = () => {
           data-aos="fade-up"
         >
           <div className="flex items-center justify-center gap-2.5">
-            <span className="w-7 sm:w-8 h-1 bg-[#01ADEF] rounded-full inline-block shrink-0" />
-            <span className="heading-blue text-[#00578E]">
+            <span className="w-7 sm:w-8 h-1 bg-[#38315E] rounded-full inline-block shrink-0" />
+            <span className="heading-blue text-[#4F6744]">
               Cervical Precancer Treatment
             </span>
           </div>

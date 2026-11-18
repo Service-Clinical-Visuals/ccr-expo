@@ -13,7 +13,7 @@ const Testimonials = () => {
   return (
     <section className="relative w-full overflow-hidden bg-white">
       {/* 1. Upper Cyan Background Band (bg_testi.webp) */}
-      <div className="w-full bg-[#01ADEF] bg-[url('/medical/zinnanti-surgical-3/about/bg_testi.webp')] bg-cover bg-top bg-no-repeat pt-14 sm:pt-16 lg:pt-20 pb-28 sm:pb-36 lg:pb-44 text-white">
+      <div className="w-full bg-[#38315E] bg-[url('/medical/zinnanti-surgical-3/about/bg_testi.webp')] bg-cover bg-top bg-no-repeat pt-14 sm:pt-16 lg:pt-20 pb-28 sm:pb-36 lg:pb-44 text-white">
         <div className="custom-container text-center space-y-3 sm:space-y-4" data-aos="fade-up">
           <div className="flex items-center justify-center gap-2.5">
             <span className="w-8 h-1 bg-white rounded-full inline-block" />
@@ -56,9 +56,9 @@ const Testimonials = () => {
             <div className="w-full min-[1036px]:w-1/2 flex flex-col justify-between space-y-4 sm:space-y-5">
 
               {/* Quote Mark Icon */}
-              <div className="text-[#00578E] select-none leading-none mb-1 sm:mb-2">
+              <div className="text-[#4F6744] select-none leading-none mb-1 sm:mb-2">
                 <svg
-                  className="w-10 h-10 sm:w-12 sm:h-12 min-[2500px]:w-16 min-[2500px]:h-16 text-[#00578E] fill-current"
+                  className="w-10 h-10 sm:w-12 sm:h-12 min-[2500px]:w-16 min-[2500px]:h-16 text-[#4F6744] fill-current"
                   viewBox="0 0 24 24"
                 >
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
@@ -72,7 +72,7 @@ const Testimonials = () => {
 
               {/* Author & Title */}
               <div className="pt-2 border-t border-gray-100 space-y-0.5">
-                <h4 className="text-sm sm:text-base min-[2500px]:text-lg min-[3800px]:text-2xl font-bold text-[#00578E]">
+                <h4 className="text-sm sm:text-base min-[2500px]:text-lg min-[3800px]:text-2xl font-bold text-[#4F6744]">
                   Dr. Lisa Flowers
                 </h4>
                 <p className="text-xs sm:text-sm min-[2500px]:text-base min-[3800px]:text-xl font-medium text-[#555555]">

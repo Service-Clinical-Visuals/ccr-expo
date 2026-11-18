@@ -81,7 +81,7 @@ export default function Products() {
                 />
 
                 {/* Hover label (always visible on touch devices) */}
-                <div className="absolute inset-x-[3.5%] bottom-[4%] min-h-[24%] flex items-center justify-center rounded-xl 2k:rounded-2xl 4k:rounded-3xl bg-[#0b5e94]/90 px-4 sm:px-6 2k:px-10 py-3 2k:py-5 text-center opacity-0 translate-y-3 [.group:hover_&]:opacity-100 [.group:hover_&]:translate-y-0 [@media(hover:none)]:opacity-100 [@media(hover:none)]:translate-y-0 transition-all duration-300">
+                <div className="absolute inset-x-[3.5%] bottom-[4%] min-h-[24%] flex items-center justify-center rounded-xl 2k:rounded-2xl 4k:rounded-3xl bg-[#4F6744]/90 px-4 sm:px-6 2k:px-10 py-3 2k:py-5 text-center opacity-0 translate-y-3 [.group:hover_&]:opacity-100 [.group:hover_&]:translate-y-0 [@media(hover:none)]:opacity-100 [@media(hover:none)]:translate-y-0 transition-all duration-300">
                   <span className="product-label text-white">{p.name}</span>
                 </div>
               </div>

@@ -46,7 +46,7 @@ const Specialities = () => {
   return (
     <section
       id="specialities"
-      className="w-full py-16 xl:py-24 bg-[#00578E] bg-[url('/medical/zinnanti-surgical-3/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden relative text-white"
+      className="w-full py-16 xl:py-24 bg-[#4F6744] bg-[url('/medical/zinnanti-surgical-3/bg.webp')] bg-cover bg-center bg-no-repeat overflow-hidden relative text-white"
     >
       <div className="custom-container flex flex-col items-center gap-12 sm:gap-16">
         

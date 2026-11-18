@@ -48,8 +48,8 @@ const OurTeam = () => {
           data-aos="fade-up"
         >
           <div className="flex items-center justify-center gap-2.5">
-            <span className="w-7 sm:w-8 h-1 bg-[#01ADEF] rounded-full inline-block shrink-0" />
-            <span className="heading-blue text-[#00578E]">
+            <span className="w-7 sm:w-8 h-1 bg-[#38315E] rounded-full inline-block shrink-0" />
+            <span className="heading-blue text-[#4F6744]">
               Our Teams
             </span>
           </div>
@@ -87,7 +87,7 @@ const OurTeam = () => {
 
                 {/* Name & Role Row */}
                 <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-gray-100 pb-3 mb-3">
-                  <h3 className="text-base sm:text-lg min-[2500px]:text-xl font-bold text-[#00578E]">
+                  <h3 className="text-base sm:text-lg min-[2500px]:text-xl font-bold text-[#4F6744]">
                     {member.name}
                   </h3>
                   <span className="text-xs sm:text-sm font-semibold text-[#555555]">

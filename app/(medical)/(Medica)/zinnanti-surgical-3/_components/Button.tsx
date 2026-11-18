@@ -38,7 +38,7 @@ const Button = ({
 }: ButtonProps) => {
   const variantStyles = {
     primary:
-      "bg-[#00578E] text-white hover:bg-[#004775] shadow-sm hover:shadow-lg hover:shadow-[#00578E]/25",
+      "bg-[#4F6744] text-white hover:bg-[#425739] shadow-sm hover:shadow-lg hover:shadow-[#4F6744]/25",
     secondary:
       "bg-transparent border border-white text-white hover:bg-white/10 hover:shadow-lg",
     white:
@@ -46,14 +46,14 @@ const Button = ({
     light:
       "bg-[#F9F9F9] text-[#212121] hover:bg-white shadow-sm hover:shadow-md",
     card:
-      "bg-[#00578E] text-white hover:bg-[#004775] shadow-sm hover:shadow-md",
+      "bg-[#4F6744] text-white hover:bg-[#425739] shadow-sm hover:shadow-md",
   };
 
   // Default circle background and arrow color based on variant
   const defaultCircleBg =
-    variant === "card" ? "bg-white" : "bg-[#01ADEF]";
+    variant === "card" ? "bg-white" : "bg-[#38315E]";
   const defaultArrowColor =
-    variant === "card" ? "text-[#00578E]" : "text-white";
+    variant === "card" ? "text-[#4F6744]" : "text-white";
 
   const resolvedCircleBg = circleBg || defaultCircleBg;
   const resolvedArrowColor = arrowColor || defaultArrowColor;

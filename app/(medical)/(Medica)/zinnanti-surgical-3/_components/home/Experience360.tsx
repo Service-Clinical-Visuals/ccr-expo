@@ -21,8 +21,8 @@ const Experience360 = () => {
           data-aos="fade-up"
         >
           <div className="flex items-center justify-center gap-2.5">
-            <span className="w-8 h-1 bg-[#00578E] rounded-full inline-block" />
-            <span className="heading-blue text-[#00578E]">
+            <span className="w-8 h-1 bg-[#4F6744] rounded-full inline-block" />
+            <span className="heading-blue text-[#4F6744]">
               Experience in Every Angle
             </span>
           </div>

@@ -70,8 +70,8 @@ const VideoGallery = () => {
                   onClick={() => handleSelect(item.id)}
                   className={`w-full aspect-[16/9] sm:aspect-[530/286] rounded-[16px] min-[3800px]:rounded-[28px] overflow-hidden cursor-pointer transition-all duration-300 relative shadow-sm hover:shadow-md group ${
                     isSelected
-                      ? "border-[3px] border-[#01ADEF] ring-2 ring-[#01ADEF]/30 scale-[1.01]"
-                      : "border border-[#00578E] opacity-90 hover:opacity-100"
+                      ? "border-[3px] border-[#38315E] ring-2 ring-[#38315E]/30 scale-[1.01]"
+                      : "border border-[#4F6744] opacity-90 hover:opacity-100"
                   }`}
                 >
                   <img
@@ -85,8 +85,8 @@ const VideoGallery = () => {
                     <div
                       className={`w-9 h-9 sm:w-11 sm:h-11 rounded-full flex items-center justify-center text-white transition-transform ${
                         isSelected
-                          ? "bg-[#01ADEF] scale-105 shadow-md"
-                          : "bg-black/50 group-hover:bg-[#01ADEF]"
+                          ? "bg-[#38315E] scale-105 shadow-md"
+                          : "bg-black/50 group-hover:bg-[#38315E]"
                       }`}
                     >
                       <svg
@@ -99,7 +99,7 @@ const VideoGallery = () => {
                   </div>
 
                   {isSelected && (
-                    <div className="absolute inset-0 bg-[#01ADEF]/10 pointer-events-none" />
+                    <div className="absolute inset-0 bg-[#38315E]/10 pointer-events-none" />
                   )}
                 </div>
               );
@@ -115,8 +115,8 @@ const VideoGallery = () => {
             <div className="flex flex-col gap-3 shrink-0">
               {/* Tagline */}
               <div className="flex items-center gap-2.5">
-                <span className="w-7 sm:w-8 h-1 bg-[#01ADEF] rounded-full inline-block shrink-0" />
-                <span className="heading-blue text-[#00578E]">
+                <span className="w-7 sm:w-8 h-1 bg-[#38315E] rounded-full inline-block shrink-0" />
+                <span className="heading-blue text-[#4F6744]">
                   Video Gallery
                 </span>
               </div>
@@ -147,7 +147,7 @@ const VideoGallery = () => {
             </div>
 
             {/* Active Featured Video Player */}
-            <div className="w-full max-[1035px]:aspect-[16/9] max-[1035px]:sm:aspect-[1100/595] min-[1036px]:flex-1 min-[1036px]:min-h-0 rounded-[16px] min-[3800px]:rounded-[28px] border-[3px] border-[#01ADEF] overflow-hidden shadow-2xl relative bg-black mt-5 sm:mt-6">
+            <div className="w-full max-[1035px]:aspect-[16/9] max-[1035px]:sm:aspect-[1100/595] min-[1036px]:flex-1 min-[1036px]:min-h-0 rounded-[16px] min-[3800px]:rounded-[28px] border-[3px] border-[#38315E] overflow-hidden shadow-2xl relative bg-black mt-5 sm:mt-6">
               <video
                 ref={videoRef}
                 key={selectedItem.video}
@@ -169,7 +169,7 @@ const VideoGallery = () => {
                   }}
                   className="absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/35 transition-colors cursor-pointer group"
                 >
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 min-[2500px]:w-28 min-[2500px]:h-28 min-[3800px]:w-36 min-[3800px]:h-36 rounded-full bg-[#01ADEF] hover:bg-[#0098d4] text-white flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 min-[2500px]:w-28 min-[2500px]:h-28 min-[3800px]:w-36 min-[3800px]:h-36 rounded-full bg-[#38315E] hover:bg-[#2d274c] text-white flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
                     <svg
                       className="w-8 h-8 sm:w-9 sm:h-9 min-[2500px]:w-14 min-[2500px]:h-14 min-[3800px]:w-18 min-[3800px]:h-18 ml-1 fill-current"
                       viewBox="0 0 24 24"

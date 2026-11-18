@@ -37,8 +37,8 @@ const AboutCompany = () => {
           >
             {/* Tagline */}
             <div className="flex items-center gap-2.5">
-              <span className="w-7 sm:w-8 h-1 bg-[#00578E] rounded-full inline-block shrink-0" />
-              <span className="heading-blue text-[#00578E]">
+              <span className="w-7 sm:w-8 h-1 bg-[#4F6744] rounded-full inline-block shrink-0" />
+              <span className="heading-blue text-[#4F6744]">
                 About Zinnanti Surgical
               </span>
             </div>

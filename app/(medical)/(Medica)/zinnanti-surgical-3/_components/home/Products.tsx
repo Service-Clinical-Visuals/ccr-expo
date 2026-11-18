@@ -79,8 +79,8 @@ const Products = () => {
           {/* Left Title: Centered on mobile & tablet, left on desktop */}
           <div className="space-y-3 text-center min-[1036px]:text-left w-full min-[1036px]:w-auto">
             <div className="flex items-center justify-center min-[1036px]:justify-start gap-2.5">
-              <span className="w-7 sm:w-8 h-1 bg-[#01ADEF] rounded-full inline-block shrink-0" />
-              <span className="heading-blue text-[#00578E]">
+              <span className="w-7 sm:w-8 h-1 bg-[#38315E] rounded-full inline-block shrink-0" />
+              <span className="heading-blue text-[#4F6744]">
                 Our Products
               </span>
             </div>
@@ -96,7 +96,7 @@ const Products = () => {
 
           {/* Right Category Filter Pills: Horizontally centered on tablet and mobile */}
           <div className="w-full min-[1036px]:w-auto flex justify-center min-[1036px]:justify-end shrink-0">
-            <div className="bg-[#00578E] rounded-full p-1.5 flex items-center gap-1 sm:gap-1.5 shadow-md overflow-x-auto max-w-full">
+            <div className="bg-[#4F6744] rounded-full p-1.5 flex items-center gap-1 sm:gap-1.5 shadow-md overflow-x-auto max-w-full">
               {categories.map((category) => {
                 const isActive = activeCategory === category;
                 return (
@@ -106,7 +106,7 @@ const Products = () => {
                     onClick={() => setActiveCategory(category)}
                     className={`px-4 sm:px-6 py-2 sm:py-2.5 rounded-full font-semibold text-xs sm:text-sm min-[2500px]:text-lg min-[3800px]:text-2xl whitespace-nowrap transition-all duration-300 ease-in-out cursor-pointer ${
                       isActive
-                        ? "bg-[#01ADEF] text-white shadow-sm"
+                        ? "bg-[#38315E] text-white shadow-sm"
                         : "text-white hover:text-white/80 hover:bg-white/10"
                     }`}
                   >
@@ -123,7 +123,7 @@ const Products = () => {
           {activeProducts.map((product, idx) => (
             <div
               key={`${activeCategory}-${idx}`}
-              className={`w-full bg-[#00578E] text-white rounded-[24px] min-[3800px]:rounded-[48px] p-6 sm:p-7 min-[2500px]:p-10 min-[3800px]:p-14 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1.5 ${
+              className={`w-full bg-[#4F6744] text-white rounded-[24px] min-[3800px]:rounded-[48px] p-6 sm:p-7 min-[2500px]:p-10 min-[3800px]:p-14 shadow-xl flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1.5 ${
                 idx === 2
                   ? "md:col-span-2 md:w-full md:max-w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0 min-[1036px]:col-span-1 min-[1036px]:max-w-none min-[1036px]:mx-0"
                   : ""
@@ -154,7 +154,7 @@ const Products = () => {
                   variant="light"
                   href="#contact"
                   className="w-full justify-between bg-[#F9F9F9] hover:bg-white text-[#212121]"
-                  circleBg="bg-[#01ADEF]"
+                  circleBg="bg-[#38315E]"
                   arrowColor="text-white"
                 />
               </div>

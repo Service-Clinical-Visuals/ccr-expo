@@ -48,7 +48,7 @@ const Hero = () => {
               text="Request Samples"
               variant="white"
               href="#contact"
-              className="bg-[#F9F9F9] hover:bg-white text-[#00578E] shadow-md"
+              className="bg-[#F9F9F9] hover:bg-white text-[#4F6744] shadow-md"
             />
           </div>
         </div>

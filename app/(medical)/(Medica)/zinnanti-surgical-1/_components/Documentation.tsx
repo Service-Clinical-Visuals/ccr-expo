@@ -96,7 +96,7 @@ export default function Documentation() {
                       e.stopPropagation();
                       setViewing(i);
                     }}
-                    className="flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 2k:w-20 2k:h-20 4k:w-28 4k:h-28 rounded-lg 2k:rounded-xl 4k:rounded-2xl bg-[#0b5e94] hover:bg-[#094d7a] text-white shadow-md transition-colors cursor-pointer"
+                    className="flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 2k:w-20 2k:h-20 4k:w-28 4k:h-28 rounded-lg 2k:rounded-xl 4k:rounded-2xl bg-[#4F6744] hover:bg-[#425739] text-white shadow-md transition-colors cursor-pointer"
                   >
                     <Scan className="w-5 h-5 sm:w-6 sm:h-6 2k:w-10 2k:h-10 4k:w-14 4k:h-14" strokeWidth={2} />
                   </button>
@@ -128,7 +128,7 @@ export default function Documentation() {
             type="button"
             aria-label="Close"
             onClick={() => setViewing(null)}
-            className="absolute top-4 right-4 sm:top-6 sm:right-6 flex items-center justify-center w-11 h-11 2k:w-20 2k:h-20 4k:w-28 4k:h-28 rounded-full bg-white/90 hover:bg-white text-[#0b5e94] cursor-pointer"
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 flex items-center justify-center w-11 h-11 2k:w-20 2k:h-20 4k:w-28 4k:h-28 rounded-full bg-white/90 hover:bg-white text-[#4F6744] cursor-pointer"
           >
             <X className="w-6 h-6 2k:w-10 2k:h-10 4k:w-14 4k:h-14" />
           </button>

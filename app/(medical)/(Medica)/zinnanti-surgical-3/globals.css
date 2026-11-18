@@ -43,10 +43,10 @@ body {
 :root {
   --background: #ffffff;
   --foreground: #333333;
-  --color-primary: #00578E;
-  --color-primary-hover: #004470;
-  --color-accent: #01ADEF;
-  --color-accent-hover: #0098d4;
+  --color-primary: #4F6744;
+  --color-primary-hover: #425739;
+  --color-accent: #38315E;
+  --color-accent-hover: #2d274c;
   --font-wix-text: 'Wix Madefor Text', ui-sans-serif, system-ui, sans-serif;
   --font-wix-display: 'Wix Madefor Display', ui-sans-serif, system-ui, sans-serif;
   --font-avant-garde: 'AvantGarde Bk BT', var(--font-wix-display), ui-sans-serif, system-ui, sans-serif;
@@ -55,10 +55,10 @@ body {
 }
 
 @theme inline {
-  --color-primary: #00578E;
-  --color-primary-hover: #004470;
-  --color-accent: #01ADEF;
-  --color-accent-hover: #0098d4;
+  --color-primary: #4F6744;
+  --color-primary-hover: #425739;
+  --color-accent: #38315E;
+  --color-accent-hover: #2d274c;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-wix-text: var(--font-wix-text);

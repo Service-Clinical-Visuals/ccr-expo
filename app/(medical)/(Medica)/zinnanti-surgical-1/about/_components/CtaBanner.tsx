@@ -39,7 +39,7 @@ export default function CtaBanner() {
           <div className="flex flex-col gap-3 w-full sm:w-auto sm:min-w-[240px] min-[2500px]:min-w-[400px] min-[3800px]:min-w-[560px]">
             <a
               href="tel:8004591389"
-              className={`${btnBase} bg-[var(--color-primary-dark)] hover:bg-[#094c78] text-white`}
+              className={`${btnBase} bg-[var(--color-primary-dark)] hover:bg-[#425739] text-white`}
               data-aos="fade-left"
               data-aos-delay="200"
               data-aos-duration="800"
