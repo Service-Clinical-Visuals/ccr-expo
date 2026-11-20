@@ -134,7 +134,7 @@ export default function Header() {
                       : "text-[#2A2A2A] hover:text-[#A41E27]"
                   }`}
                 >
-                  <span>{link.name}</span>
+                  {link.name}
                 </a>
               );
             })}
@@ -183,7 +183,7 @@ export default function Header() {
                         : "text-gray-700 hover:text-[#A41E27] pl-3"
                     }`}
                   >
-                    <span>{link.name}</span>
+                    {link.name}
                   </a>
                 );
               })}

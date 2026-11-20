@@ -64,7 +64,7 @@ const Button = ({
       <div
         className={`chm-btn-pill h-9 sm:h-10 md:h-11 lg:h-12 xl:h-[50px] min-[1920px]:h-14 2k:h-20 4k:h-28 px-3.5 sm:px-4 md:px-5 lg:px-6 xl:px-7 min-[1920px]:px-8 2k:px-12 4k:px-16 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out ${pillBg}`}
       >
-        <span className="chm-btn-text font-primary text-xs sm:text-sm md:text-[15px] lg:text-base xl:text-[17px] min-[1920px]:text-lg 2k:text-2xl 4k:text-4xl whitespace-nowrap font-normal tracking-wide">
+        <span className="chm-btn-text font-primary text-[11px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-base min-[1920px]:text-[17px] 2k:text-[24px] 4k:text-[33px] whitespace-nowrap font-bold tracking-wide">
           {text}
         </span>
       </div>
