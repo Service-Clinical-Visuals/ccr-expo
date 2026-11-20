@@ -69,7 +69,7 @@ const MedicalSolutions = () => {
               <p className="text-[#4A4A4A] mt-2 min-[2500px]:mt-3">{item.text}</p>
 
               <a
-                href="#products"
+                href=""
                 className="link mt-auto pt-4 2xl:pt-5 min-[2500px]:pt-8 self-start text-primary !font-semibold underline underline-offset-4 min-[2500px]:underline-offset-8 hover:text-primary-hover transition-colors"
               >
                 View More

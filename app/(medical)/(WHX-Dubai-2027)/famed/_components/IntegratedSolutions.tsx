@@ -37,7 +37,7 @@ const IntegratedSolutions = () => {
           </div>
 
           <a
-            href="#products"
+            href=""
             aria-label="View OrthoWheel and OrthoMed products"
             className="group shrink-0 flex items-center justify-center rounded-full bg-white text-[#1E2B5C] hover:bg-[#EEF6FD] transition-colors w-16 h-16 xl:w-18 xl:h-18 2xl:w-20 2xl:h-20 min-[2500px]:w-[120px] min-[2500px]:h-[120px] min-[3800px]:w-[150px] min-[3800px]:h-[150px]"
           >

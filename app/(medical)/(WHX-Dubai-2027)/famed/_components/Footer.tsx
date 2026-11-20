@@ -19,13 +19,13 @@ const productLinks = [
 ];
 
 const socials = [
-  { name: "LinkedIn", href: "#", Icon: FaLinkedinIn },
-  { name: "Instagram", href: "#", Icon: FaInstagram },
-  { name: "Facebook", href: "#", Icon: FaFacebookF },
-  { name: "Twitter", href: "#", Icon: FaTwitter },
+  { name: "LinkedIn", href: "", Icon: FaLinkedinIn },
+  { name: "Instagram", href: "", Icon: FaInstagram },
+  { name: "Facebook", href: "", Icon: FaFacebookF },
+  { name: "Twitter", href: "", Icon: FaTwitter },
 ];
 
-const linkClass = "footer-body text-white/90 hover:text-white transition-colors";
+const linkClass = "footer-body text-white hover:text-white transition-colors";
 const contactIconClass =
   "shrink-0 mt-[0.2em] w-4 h-4 2xl:w-[18px] 2xl:h-[18px] min-[2500px]:w-7 min-[2500px]:h-7 min-[3800px]:w-9 min-[3800px]:h-9";
 
@@ -72,7 +72,7 @@ const Footer = () => {
                 </li>
               ))}
               <li>
-                <a href="#home" className="footer-body !font-semibold text-white underline underline-offset-4 hover:text-white/80 transition-colors">
+                <a href="" className="footer-body !font-semibold text-white underline underline-offset-4 hover:text-white/80 transition-colors">
                   See More &gt;&gt;
                 </a>
               </li>
@@ -99,19 +99,19 @@ const Footer = () => {
             <ul className="flex flex-col gap-3 2xl:gap-3.5 min-[2500px]:gap-6">
               <li className="flex items-start gap-3 min-[2500px]:gap-5">
                 <Phone aria-hidden strokeWidth={1.75} className={contactIconClass} />
-                <a href="tel:+48338666264" className={linkClass}>
+                <a href="" className={linkClass}>
                   +48 33 866 62 64
                 </a>
               </li>
               <li className="flex items-start gap-3 min-[2500px]:gap-5">
                 <Mail aria-hidden strokeWidth={1.75} className={contactIconClass} />
-                <a href="mailto:export@famed.com.pl" className={`${linkClass} break-all`}>
+                <a href="" className={`${linkClass} break-all`}>
                   export@famed.com.pl
                 </a>
               </li>
               <li className="flex items-start gap-3 min-[2500px]:gap-5">
                 <MapPin aria-hidden strokeWidth={1.75} className={contactIconClass} />
-                <address className="footer-body not-italic text-white/90">
+                <address className="footer-body not-italic text-white">
                   Famed Żywiec Sp. z o.o.
                   <br />
                   ul. Fabryczna 1
