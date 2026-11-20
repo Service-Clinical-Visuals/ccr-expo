@@ -38,8 +38,6 @@ export default function Hero() {
               className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0"
               type="banner"
             />
-            {/* Subtle gradient overlay to match Figma */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/30 pointer-events-none" />
           </div>
 
           {/* Bottom-Left Content Area */}

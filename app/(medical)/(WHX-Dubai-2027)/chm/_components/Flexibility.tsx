@@ -56,8 +56,8 @@ export default function Flexibility() {
               className="w-full h-full object-cover rounded-none transition-transform duration-700 ease-out group-hover:scale-105"
             />
 
-            {/* Hover State: Red gradient overlay with heading & text */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#A41E27]/95 via-[#A41E27]/50 to-[#A41E27]/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col justify-end p-5 sm:p-6 md:p-6 lg:p-8 xl:p-9 2k:p-12 4k:p-16">
+            {/* Hover State: Red gradient overlay with heading & text matching Figma Component 1 */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#A41E27] via-[#A41E27]/55 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col justify-end p-5 sm:p-6 md:p-6 lg:p-8 xl:p-9 2k:p-12 4k:p-16">
               <div className="transform translate-y-3 group-hover:translate-y-0 transition-transform duration-500 ease-out flex flex-col gap-2 sm:gap-2.5 2k:gap-4">
                 <h3 className="font-primary text-white text-lg sm:text-xl lg:text-2xl 2k:text-3xl 4k:text-5xl font-bold leading-snug">
                   Innovation Driven By Clinical Needs
@@ -77,8 +77,8 @@ export default function Flexibility() {
               className="w-full h-full object-cover rounded-none transition-transform duration-700 ease-out group-hover:scale-105"
             />
 
-            {/* Hover State: Red gradient overlay with heading & text */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#A41E27]/95 via-[#A41E27]/50 to-[#A41E27]/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col justify-end p-5 sm:p-6 md:p-6 lg:p-8 xl:p-9 2k:p-12 4k:p-16">
+            {/* Hover State: Red gradient overlay with heading & text matching Figma Component 2 */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#A41E27] via-[#A41E27]/55 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col justify-end p-5 sm:p-6 md:p-6 lg:p-8 xl:p-9 2k:p-12 4k:p-16">
               <div className="transform translate-y-3 group-hover:translate-y-0 transition-transform duration-500 ease-out flex flex-col gap-2 sm:gap-2.5 2k:gap-4 max-w-[95%]">
                 <h3 className="font-primary text-white text-lg sm:text-xl lg:text-2xl 2k:text-3xl 4k:text-5xl font-bold leading-snug">
                   Improving Surgical Precision And Patient Care

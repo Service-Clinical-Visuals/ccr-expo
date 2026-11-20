@@ -26,26 +26,12 @@ export default function InogenLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <div className="inogen-fonts min-h-screen bg-white antialiased overflow-x-hidden relative w-full">
-        <SmoothAOS />
-        <VideoProvider website="inogen">
-          {children}
-        </VideoProvider>
-      </div>
-    </>
+    <div className="inogen-fonts min-h-screen bg-white antialiased overflow-x-hidden relative w-full">
+      <SmoothAOS />
+      <VideoProvider website="inogen">
+        {children}
+      </VideoProvider>
+    </div>
   );
 }
 

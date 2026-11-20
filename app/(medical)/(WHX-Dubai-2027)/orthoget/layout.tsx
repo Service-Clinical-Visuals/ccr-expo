@@ -26,26 +26,12 @@ export default function OrthogetLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <div className="orthoget-fonts min-h-screen bg-white antialiased overflow-x-hidden relative w-full">
-        <SmoothAOS />
-        <VideoProvider website="orthoget">
-          {children}
-        </VideoProvider>
-      </div>
-    </>
+    <div className="orthoget-fonts min-h-screen bg-white antialiased overflow-x-hidden relative w-full">
+      <SmoothAOS />
+      <VideoProvider website="orthoget">
+        {children}
+      </VideoProvider>
+    </div>
   );
 }
 

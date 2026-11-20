@@ -109,7 +109,7 @@ const UniqueSolution = () => {
                 <img
                   src="/medical/orthoget/SVG.webp"
                   alt="OrthoNail Implant"
-                  className="w-[72%] sm:w-[68%] min-[2500px]:w-[70%] max-w-[460px] min-[2500px]:max-w-[700px] min-[3800px]:max-w-[950px] h-auto object-contain transition-transform duration-700 ease-out group-hover:scale-110 drop-shadow-[0_20px_26px_rgba(0,0,0,0.12)]"
+                  className="w-[72%] sm:w-[68%] min-[2500px]:w-[70%] max-w-[460px] min-[2500px]:max-w-[700px] min-[3800px]:max-w-[950px] h-auto object-contain transition-transform duration-700 ease-out group-hover:scale-110 drop-shadow-[0_8px_10px_rgba(0,0,0,0.08)] drop-shadow-[0_20px_26px_rgba(0,0,0,0.03)]"
                 />
               </div>
             </div>
