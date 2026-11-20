@@ -1,0 +1,71 @@
+/**
+ * Typography Component
+ *
+ * ARCHITECTURAL REFERENCE (from Inogen):
+ * 1. Semantic Mapping:
+ *    - Renders native HTML heading elements (h1-h6), paragraphs (p), spans, or custom variants
+ *      ('footer-heading' maps to <h3> with '.footer-heading' class, 'footer-body' maps to <p>).
+ * 2. Fluid REM Scaling:
+ *    - Base typography styles (font-size in rem, line-height, font-weight) are defined globally in `globals.css`
+ *      and scale across breakpoints (Mobile, Tablet, Desktop, 2K, Ultra-wide, 4K).
+ * 3. Color & Weight Abstraction:
+ *    - Uses project design tokens (`primary`, `secondary`, `dark`, `white`, `muted`, `muted-light`).
+ */
+import React from 'react';
+
+type Variant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'footer-heading' | 'footer-body';
+type Color = 'primary' | 'secondary' | 'dark' | 'white' | 'muted' | 'muted-light' | 'none';
+type Weight = 'light' | 'normal' | 'medium' | 'semibold' | 'bold' | 'extrabold';
+
+interface TypographyProps {
+  variant?: Variant;
+  color?: Color;
+  weight?: Weight;
+  className?: string;
+  children: React.ReactNode;
+}
+
+export default function Typography({
+  variant = 'p',
+  color = 'dark',
+  weight,
+  className = '',
+  children,
+  ...props
+}: TypographyProps & React.HTMLAttributes<HTMLElement>) {
+  
+  let Component: any = variant;
+  let fontClass = '';
+
+  if (variant === 'footer-heading') {
+    Component = 'h3';
+    fontClass = 'footer-heading';
+  } else if (variant === 'footer-body') {
+    Component = 'p';
+    fontClass = 'footer-body';
+  }
+
+  const colorClasses = {
+    primary: 'text-[var(--color-primary)]', // #A41E27
+    secondary: 'text-[var(--color-secondary)]', // #2A2A2A
+    dark: 'text-[#2A2A2A]',
+    white: 'text-white',
+    muted: 'text-[#4A4A4A]',
+    'muted-light': 'text-white/80',
+    none: '',
+  };
+
+  const weightClasses = {
+    light: 'font-light',
+    normal: 'font-normal',
+    medium: 'font-medium',
+    semibold: 'font-semibold',
+    bold: 'font-bold',
+    extrabold: 'font-extrabold',
+  };
+
+  const finalClassName = `${fontClass} ${colorClasses[color]} ${weight ? weightClasses[weight] : ''} ${className}`.trim();
+
+  return React.createElement(Component, { className: finalClassName, ...props }, children);
+}
+
