@@ -65,7 +65,7 @@ const Products = () => {
   return (
     <section id="products" className="w-full py-16 xl:py-24 bg-white overflow-hidden">
       <div className="custom-container flex flex-col items-center">
-        
+
         {/* Section Header */}
         <div
           className="text-center w-full space-y-3"
@@ -89,15 +89,15 @@ const Products = () => {
           <Typography
             variant="p"
             color="secondary"
-            className="text-sm sm:text-base leading-relaxed text-[#0F2744]/80 max-w-3xl mx-auto"
+            className="text-sm sm:text-base leading-relaxed text-[#0F2744]/80 w-full max-w-full xl:max-w-[70%] mx-auto"
           >
             Discover EMTEL's comprehensive range of medical equipment, engineered to support accurate patient monitoring, effective resuscitation and continuous clinical supervision. Combining advanced technology, functional design and dependable performance.
           </Typography>
         </div>
 
-        {/* Featured Interactive Product Showcase Card (Figma: Rectangle 70 - 1394px, radius 16px) */}
+        {/* Featured Interactive Product Showcase Card (Figma: Rectangle 70 - 70% Strategy) */}
         <div
-          className="w-full xl:max-w-[1394px] mx-auto bg-gradient-to-r from-[#0F78AF] to-[#0F76AF] rounded-[16px] p-4 sm:p-8 lg:p-12 text-white shadow-xl relative overflow-hidden mt-8 sm:mt-12"
+          className="w-full xl:max-w-[90%] mx-auto bg-gradient-to-r from-[#0F78AF] to-[#0F76AF] rounded-[16px] p-4 sm:p-8 lg:p-12 text-white shadow-xl relative overflow-hidden mt-8 sm:mt-12"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -120,11 +120,10 @@ const Products = () => {
                     key={item.id}
                     type="button"
                     onClick={() => setSelectedProductIndex(idx)}
-                    className={`shrink-0 whitespace-nowrap px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm md:text-base font-semibold font-primary transition-all duration-300 cursor-pointer ${
-                      isActive
-                        ? "bg-[#0F78AF] text-white shadow-sm"
-                        : "text-[#0F2744] hover:text-[#0F78AF]"
-                    }`}
+                    className={`shrink-0 whitespace-nowrap px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm md:text-base font-semibold font-primary transition-all duration-300 cursor-pointer ${isActive
+                      ? "bg-[#0F78AF] text-white shadow-sm"
+                      : "text-[#0F2744] hover:text-[#0F78AF]"
+                      }`}
                   >
                     {item.tabLabel}
                   </button>
@@ -135,7 +134,7 @@ const Products = () => {
 
           {/* Product Detail Layout (Stacked on mobile/tablet up to 1300px, Two-column above 1300px) */}
           <div className="flex flex-col min-[1301px]:flex-row gap-8 lg:gap-10 items-center relative z-10 w-full">
-            
+
             {/* Left Column: Product Information */}
             <div className="w-full min-[1301px]:w-1/2 flex flex-col justify-between gap-6">
               <div key={currentProduct.id} className="space-y-4 animate-in fade-in duration-500">
@@ -160,7 +159,7 @@ const Products = () => {
 
             {/* Right Column: Hero Image & Thumbnails Dock */}
             <div className="w-full min-[1301px]:w-1/2 flex flex-col items-center justify-center relative min-h-0 sm:min-h-[360px]">
-              
+
               {/* Main Product Device Image */}
               <div className="relative z-20 w-full max-w-[460px] h-[190px] sm:h-[260px] md:h-[320px] lg:h-[380px] flex items-center justify-center overflow-visible pointer-events-none">
                 <img
@@ -180,11 +179,10 @@ const Products = () => {
                       key={prod.id}
                       type="button"
                       onClick={() => setSelectedProductIndex(idx)}
-                      className={`w-12 h-12 sm:w-16 sm:h-16 lg:w-[68px] lg:h-[68px] rounded-[10px] sm:rounded-[12px] border p-1 sm:p-1.5 transition-all duration-300 cursor-pointer overflow-hidden flex items-center justify-center shrink-0 ${
-                        isActive
-                          ? "border-2 border-white bg-white/35 shadow-xl scale-105 ring-2 ring-white/50"
-                          : "border-white/40 bg-[#0F78AF]/60 hover:border-white hover:bg-white/20 hover:scale-105 opacity-75 hover:opacity-100"
-                      }`}
+                      className={`w-12 h-12 sm:w-16 sm:h-16 lg:w-[68px] lg:h-[68px] rounded-[10px] sm:rounded-[12px] border p-1 sm:p-1.5 transition-all duration-300 cursor-pointer overflow-hidden flex items-center justify-center shrink-0 ${isActive
+                        ? "border-2 border-white bg-white/35 shadow-xl scale-105 ring-2 ring-white/50"
+                        : "border-white/40 bg-[#0F78AF]/60 hover:border-white hover:bg-white/20 hover:scale-105 opacity-75 hover:opacity-100"
+                        }`}
                       title={prod.title}
                       aria-label={`Select ${prod.title}`}
                     >

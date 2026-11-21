@@ -48,7 +48,7 @@ const About = () => {
             className="w-full min-[1301px]:w-1/2 flex items-center justify-center"
             data-aos="fade-right"
           >
-            <div className="relative w-full max-w-[500px] min-[1301px]:max-w-[700px] aspect-[819/798]">
+            <div className="relative w-full max-w-[500px] min-[1301px]:max-w-[700px] min-[2500px]:max-w-[1100px] min-[3800px]:max-w-[1500px] aspect-[819/798]">
               <img
                 src="/medical/emtel/about.webp"
                 alt="EMTEL Patient Monitor Device"

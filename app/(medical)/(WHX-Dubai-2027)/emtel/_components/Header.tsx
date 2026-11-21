@@ -116,7 +116,7 @@ const Header = () => {
             <img
               src="/medical/emtel/logo.webp"
               alt="EMTEL Logo"
-              className="h-8 sm:h-9 md:h-10 lg:h-11 min-[2500px]:h-16 min-[3800px]:h-22 w-auto object-contain transition-transform"
+              className="h-8 sm:h-9 md:h-10 lg:h-11 min-[2500px]:h-16 min-[3800px]:h-22 w-auto object-contain transition-transform transform scale-110 sm:scale-125 min-[2500px]:scale-135 min-[3800px]:scale-150 origin-left"
             />
           </Link>
 
@@ -129,13 +129,13 @@ const Header = () => {
                   key={link.name}
                   href={`#${link.id}`}
                   onClick={(e) => handleScrollTo(e, link.id)}
-                  className={`navbar relative cursor-pointer py-1.5 transition-colors select-none text-base font-normal font-secondary ${
+                  className={`navbar relative cursor-pointer py-1.5 transition-colors select-none text-sm sm:text-base font-normal font-secondary ${
                     isActive
                       ? "text-[#0F78AF] !font-bold"
                       : "text-gray-800 hover:text-[#0F78AF]"
                   }`}
                 >
-                  <span>{link.name}</span>
+                  <span className="text-sm sm:text-base !text-[inherit]">{link.name}</span>
                 </a>
               );
             })}
@@ -181,13 +181,13 @@ const Header = () => {
                     key={link.name}
                     href={`#${link.id}`}
                     onClick={(e) => handleScrollTo(e, link.id)}
-                    className={`text-base font-medium py-1.5 transition-colors pl-3 ${
+                    className={`navbar text-sm sm:text-base font-medium py-1.5 transition-colors pl-3 ${
                       isActive
                         ? "text-[#0F78AF] font-bold border-l-4 border-[#0F78AF]"
                         : "text-gray-700 hover:text-[#0F78AF]"
                     }`}
                   >
-                    <span>{link.name}</span>
+                    <span className="text-sm sm:text-base !text-[inherit]">{link.name}</span>
                   </a>
                 );
               })}

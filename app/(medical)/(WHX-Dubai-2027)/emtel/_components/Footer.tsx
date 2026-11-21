@@ -63,14 +63,14 @@ const Footer = () => {
               <img
                 src="/medical/emtel/footer_logo.webp"
                 alt="EMTEL Logo"
-                className="h-10 sm:h-12 w-auto object-contain"
+                className="h-10 sm:h-12 min-[2500px]:h-18 min-[3800px]:h-24 w-auto object-contain transition-transform transform scale-110 sm:scale-125 min-[2500px]:scale-135 min-[3800px]:scale-150 origin-left"
               />
             </Link>
 
             <Typography
               variant="footer-body"
               color="white"
-              className="text-white/90 leading-relaxed w-full max-w-[340px] mt-2"
+              className="text-sm sm:text-base text-white/90 leading-relaxed w-full max-w-full xl:max-w-[70%] mt-2"
             >
               EMTEL is a Polish Medical Equipment Manufacturer Specializing In Advanced Patient Monitoring Systems And Defibrillators. With Over 30 Years Of Experience, The Company Delivers Reliable Medical Technologies That Support Healthcare Professionals And Improve Patient Care Worldwide.
             </Typography>
@@ -86,7 +86,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="footer-body text-white/85 hover:text-white transition-colors"
+                    className="footer-body text-sm sm:text-base text-white/85 hover:text-white transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -103,25 +103,25 @@ const Footer = () => {
             <div className="flex flex-col gap-3 text-white/90">
               <a
                 href="tel:+48322719013"
-                className="footer-body flex items-center gap-2 hover:text-white transition-colors group"
+                className="footer-body text-sm sm:text-base flex items-center gap-2 hover:text-white transition-colors group"
               >
                 <Phone className="w-4 h-4 shrink-0 text-white" />
-                <span>+48 32 271 90 13</span>
+                <span className="text-sm sm:text-base !text-[inherit]">+48 32 271 90 13</span>
               </a>
 
-              <div className="footer-body flex items-start gap-2">
+              <div className="footer-body text-sm sm:text-base flex items-start gap-2">
                 <MapPin className="w-4 h-4 shrink-0 text-white mt-1" />
-                <span className="leading-snug">
+                <span className="leading-snug text-sm sm:text-base !text-[inherit]">
                   41-807 Zabrze, A. Mickiewicza 66, POLAND
                 </span>
               </div>
 
               <a
                 href="mailto:medical@emtel.pl"
-                className="footer-body flex items-center gap-2 hover:text-white transition-colors group"
+                className="footer-body text-sm sm:text-base flex items-center gap-2 hover:text-white transition-colors group"
               >
                 <Mail className="w-4 h-4 shrink-0 text-white" />
-                <span>medical@emtel.pl</span>
+                <span className="text-sm sm:text-base !text-[inherit]">medical@emtel.pl</span>
               </a>
             </div>
           </div>
@@ -135,7 +135,7 @@ const Footer = () => {
               <Typography
                 variant="footer-body"
                 color="white"
-                className="text-white/85 mt-1 font-medium"
+                className="text-sm sm:text-base text-white/85 mt-1 font-medium"
               >
                 Marcin Sliwa
               </Typography>
@@ -148,7 +148,7 @@ const Footer = () => {
               <Typography
                 variant="footer-body"
                 color="white"
-                className="text-white/85 mt-1 font-medium"
+                className="text-sm sm:text-base text-white/85 mt-1 font-medium"
               >
                 Jolanta Golczewska
               </Typography>
@@ -163,7 +163,7 @@ const Footer = () => {
             <Typography
               variant="footer-body"
               color="white"
-              className="text-white/85 leading-relaxed"
+              className="text-sm sm:text-base text-white/85 leading-relaxed"
             >
               Stay informed with the latest product launches, industry news, technical updates, and innovations
             </Typography>
@@ -172,12 +172,12 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter Your E-Mail id"
-                className="footer-body w-full px-3.5 py-2 text-gray-800 placeholder-gray-400 bg-transparent outline-none"
+                className="footer-body text-sm sm:text-base w-full px-3.5 py-2 text-gray-800 placeholder-gray-400 bg-transparent outline-none"
                 required
               />
               <button
                 type="submit"
-                className="footer-body bg-[#0F78AF] hover:bg-[#0C6492] text-white font-semibold px-4 sm:px-5 py-2 rounded-full transition-all shrink-0 cursor-pointer"
+                className="footer-body text-sm sm:text-base bg-[#0F78AF] hover:bg-[#0C6492] text-white font-semibold px-4 sm:px-5 py-2 rounded-full transition-all shrink-0 cursor-pointer"
               >
                 Subscribe
               </button>
@@ -191,14 +191,14 @@ const Footer = () => {
 
         {/* Bottom Legal / Copyright Bar */}
         <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 text-white/85">
-          <Typography variant="footer-body" color="white" className="text-white/85">
+          <Typography variant="footer-body" color="white" className="text-sm sm:text-base text-white/85">
             Copyright © 2026 EMTEL. All Rights Reserved.
           </Typography>
           <div className="flex items-center gap-6">
-            <Link href="#" className="footer-body hover:text-white transition-colors">
+            <Link href="#" className="footer-body text-sm sm:text-base hover:text-white transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#" className="footer-body hover:text-white transition-colors">
+            <Link href="#" className="footer-body text-sm sm:text-base hover:text-white transition-colors">
               Terms &amp; Conditions
             </Link>
           </div>

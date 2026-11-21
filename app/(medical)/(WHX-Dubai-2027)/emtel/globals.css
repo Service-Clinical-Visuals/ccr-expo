@@ -42,10 +42,10 @@ body {
 :root {
   --background: #ffffff;
   --foreground: #111111;
-  --font-exo: 'Exo 2', ui-sans-serif, system-ui, sans-serif;
-  --font-dm: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-primary: var(--font-exo), 'Exo 2', ui-sans-serif, system-ui, sans-serif;
-  --font-secondary: var(--font-dm), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-exo: var(--font-exo2, 'Exo 2'), 'Exo 2', ui-sans-serif, system-ui, sans-serif;
+  --font-dm: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-exo2, 'Exo 2'), 'Exo 2', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
 }
 
 @theme inline {
@@ -55,16 +55,24 @@ body {
   --color-secondary-hover: #081729;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-exo: var(--font-exo), 'Exo 2', ui-sans-serif, system-ui, sans-serif;
-  --font-dm: var(--font-dm), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-primary: var(--font-exo), 'Exo 2', ui-sans-serif, system-ui, sans-serif;
-  --font-secondary: var(--font-dm), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-exo: var(--font-exo2, 'Exo 2'), 'Exo 2', ui-sans-serif, system-ui, sans-serif;
+  --font-dm: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-exo2, 'Exo 2'), 'Exo 2', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
 }
 
 .emtel-fonts {
-  --font-primary: var(--font-exo), 'Exo 2', ui-sans-serif, system-ui, sans-serif;
-  --font-secondary: var(--font-dm), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-exo2, 'Exo 2'), 'Exo 2', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   font-family: var(--font-secondary), 'DM Sans', sans-serif;
+}
+
+.font-primary {
+  font-family: var(--font-exo2, 'Exo 2'), 'Exo 2', ui-sans-serif, system-ui, sans-serif !important;
+}
+
+.font-secondary {
+  font-family: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif !important;
 }
 
 body {
@@ -89,8 +97,8 @@ span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
 .navbar { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); }
 .navbar span, nav a, nav a span { font-size: 1rem !important; }
 .footer-heading { font-size: 1.25rem; /* 20px */ font-weight: 700; font-family: var(--font-primary); }
-.footer-body, .footer-body a, .footer-body span, .footer-body p, footer a, footer p, footer span, footer li { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); }
-.footer-body span, footer span { font-size: inherit !important; }
+.footer-body, .footer-body a, .footer-body span, .footer-body p, footer a:not(.footer-heading), footer p:not(.footer-heading), footer span:not(.footer-heading), footer li, .read-more { font-size: 1rem !important; font-weight: 400; font-family: var(--font-secondary); }
+.footer-body span, footer span:not(.footer-heading) { font-size: inherit !important; }
 .button { font-size: 1rem; /* 16px */ font-weight: 600; font-family: var(--font-primary) !important; }
 .number { font-size: 8rem; /* 128px */ font-weight: 700; font-family: var(--font-primary); line-height: 1; }
 
@@ -106,7 +114,7 @@ span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
   span { font-size: 0.6125rem; /* 9.8px */ }
   .navbar { font-size: 0.8125rem; /* 13px */ }
   .footer-heading { font-size: 0.875rem; /* 14px */ }
-  .footer-body { font-size: 0.8125rem; /* 13px */ }
+  .footer-body, .footer-body a, .footer-body span, .footer-body p, footer a:not(.footer-heading), footer p:not(.footer-heading), footer span:not(.footer-heading), footer li, .navbar, .navbar span, nav a, nav a span, .read-more { font-size: 0.8125rem !important; }
   .button { font-size: 0.8125rem; /* 13px */ }
   .number { font-size: 5.6rem; }
 }
@@ -123,7 +131,7 @@ span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
   span { font-size: 0.7rem; /* 11.2px */ }
   .navbar { font-size: 0.875rem; /* 14px */ }
   .footer-heading { font-size: 1rem; /* 16px */ }
-  .footer-body { font-size: 0.875rem; /* 14px */ }
+  .footer-body, .footer-body a, .footer-body span, .footer-body p, footer a:not(.footer-heading), footer p:not(.footer-heading), footer span:not(.footer-heading), footer li, .navbar, .navbar span, nav a, nav a span, .read-more { font-size: 0.875rem !important; }
   .button { font-size: 0.875rem; /* 14px */ }
   .number { font-size: 6.4rem; }
 }
@@ -140,7 +148,7 @@ span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
   span { font-size: 0.7875rem; /* 12.6px */ }
   .navbar { font-size: 0.9375rem; /* 15px */ }
   .footer-heading { font-size: 1.125rem; /* 18px */ }
-  .footer-body { font-size: 0.9375rem; /* 15px */ }
+  .footer-body, .footer-body a, .footer-body span, .footer-body p, footer a:not(.footer-heading), footer p:not(.footer-heading), footer span:not(.footer-heading), footer li, .navbar, .navbar span, nav a, nav a span, .read-more { font-size: 0.9375rem !important; }
   .button { font-size: 0.9375rem; /* 15px */ }
   .number { font-size: 7.2rem; }
 }
@@ -157,7 +165,7 @@ span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
   span { font-size: 0.83rem; /* 13.3px */ }
   .navbar { font-size: 0.975rem; /* 15.6px */ }
   .footer-heading { font-size: 1.1875rem; /* 19px */ }
-  .footer-body { font-size: 0.975rem; /* 15.6px */ }
+  .footer-body, .footer-body a, .footer-body span, .footer-body p, footer a:not(.footer-heading), footer p:not(.footer-heading), footer span:not(.footer-heading), footer li, .navbar, .navbar span, nav a, nav a span, .read-more { font-size: 0.975rem !important; }
   .button { font-size: 0.975rem; /* 15.6px */ }
   .number { font-size: 7.6rem; }
 }
@@ -189,7 +197,7 @@ span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
   span { font-size: 1.3125rem; /* 21px */ }
   .navbar { font-size: 1.5rem; /* 24px */ }
   .footer-heading { font-size: 1.875rem; /* 30px */ }
-  .footer-body { font-size: 1.5rem; /* 24px */ }
+  .footer-body, .footer-body a, .footer-body span, .footer-body p, footer a:not(.footer-heading), footer p:not(.footer-heading), footer span:not(.footer-heading), footer li, .navbar, .navbar span, nav a, nav a span, .read-more { font-size: 1.5rem !important; }
   .button { font-size: 1.5rem; /* 24px */ }
   .number { font-size: 12rem; }
 }
@@ -206,7 +214,7 @@ span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
   span { font-size: 1.75rem; /* 28px */ }
   .navbar { font-size: 2rem; /* 32px */ }
   .footer-heading { font-size: 2.5rem; /* 40px */ }
-  .footer-body { font-size: 2rem; /* 32px */ }
+  .footer-body, .footer-body a, .footer-body span, .footer-body p, footer a:not(.footer-heading), footer p:not(.footer-heading), footer span:not(.footer-heading), footer li, .navbar, .navbar span, nav a, nav a span, .read-more { font-size: 2rem !important; }
   .button { font-size: 2rem; /* 32px */ }
   .number { font-size: 16rem; }
 }

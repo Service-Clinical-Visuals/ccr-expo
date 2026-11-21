@@ -37,10 +37,7 @@ const Hero = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          {/* Eyebrow / Tag: 70% max-width on xl */}
-          <p className="text-white/85 text-xs sm:text-sm md:text-base font-semibold tracking-widest uppercase font-primary w-full max-w-full xl:max-w-[70%]">
-            MEDICAL TECHNOLOGY · SINCE 1992
-          </p>
+
 
           {/* Main Title (h1): 70% max-width on xl */}
           <Typography

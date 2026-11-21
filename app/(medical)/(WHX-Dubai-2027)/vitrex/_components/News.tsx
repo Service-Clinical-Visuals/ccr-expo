@@ -89,7 +89,7 @@ const News = () => {
               <div>
                 <Link
                   href="#news"
-                  className="inline-block text-[#1B4298] underline underline-offset-4 font-semibold text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] min-[2500px]:text-[1.4375rem] min-[3800px]:text-[1.9375rem] hover:text-[#143376] transition-colors"
+                  className="para-text inline-block text-[#1B4298] underline underline-offset-4 font-semibold hover:text-[#143376] transition-colors"
                 >
                   Read More
                 </Link>
@@ -133,7 +133,7 @@ const News = () => {
                 <div>
                   <Link
                     href="#news"
-                    className="inline-block text-[#1B4298] underline underline-offset-4 font-semibold text-[0.6875rem] sm:text-[0.8125rem] lg:text-[0.9375rem] min-[2500px]:text-[1.3125rem] min-[3800px]:text-[1.8125rem] hover:text-[#143376] transition-colors"
+                    className="para-text inline-block text-[#1B4298] underline underline-offset-4 font-semibold hover:text-[#143376] transition-colors"
                   >
                     Read More
                   </Link>
@@ -173,7 +173,7 @@ const News = () => {
                 <div>
                   <Link
                     href="#news"
-                    className="inline-block text-[#1B4298] underline underline-offset-4 font-semibold text-[0.6875rem] sm:text-[0.8125rem] lg:text-[0.9375rem] min-[2500px]:text-[1.3125rem] min-[3800px]:text-[1.8125rem] hover:text-[#143376] transition-colors"
+                    className="para-text inline-block text-[#1B4298] underline underline-offset-4 font-semibold hover:text-[#143376] transition-colors"
                   >
                     Read More
                   </Link>

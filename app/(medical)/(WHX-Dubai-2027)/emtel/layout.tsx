@@ -11,9 +11,24 @@
  *    - Mounts `<SmoothAOS />` to manage Lenis smooth scrolling and AOS animation triggers.
  */
 import type { Metadata } from "next";
+import { DM_Sans, Exo_2 } from "next/font/google";
 import "./globals.css";
 import { VideoProvider } from "@/app/_context/VideoContext";
 import SmoothAOS from "./_components/SmoothAOS";
+
+const exo2 = Exo_2({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-exo2",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "EMTEL - Advancing Patient Care Through Innovative Medical Technology",
@@ -26,7 +41,7 @@ export default function EmtelLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="emtel-fonts min-h-screen bg-white antialiased overflow-x-hidden relative w-full">
+    <div className={`${exo2.variable} ${dmSans.variable} emtel-fonts min-h-screen bg-white antialiased overflow-x-hidden relative w-full`}>
       <SmoothAOS />
       <VideoProvider website="emtel">
         {children}

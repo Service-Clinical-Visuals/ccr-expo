@@ -136,7 +136,7 @@ const News = () => {
                 <div className="mt-4 pt-2">
                   <Link
                     href={item.link}
-                    className="text-sm font-medium text-[#0F78AF] hover:text-[#0C6492] underline underline-offset-4 transition-colors"
+                    className="read-more text-sm sm:text-base font-medium text-[#0F78AF] hover:text-[#0C6492] underline underline-offset-4 transition-colors"
                   >
                     Read More
                   </Link>

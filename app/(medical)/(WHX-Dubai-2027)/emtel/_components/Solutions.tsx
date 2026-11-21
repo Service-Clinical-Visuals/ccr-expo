@@ -68,7 +68,7 @@ const Solutions = () => {
           <Typography
             variant="p"
             color="secondary"
-            className="text-sm sm:text-base leading-relaxed text-[#0F2744]/80 max-w-4xl mx-auto"
+            className="text-sm sm:text-base leading-relaxed text-[#0F2744]/80 w-full max-w-full xl:max-w-[70%] mx-auto"
           >
             EMTEL provides advanced medical monitoring and resuscitation solutions designed to support healthcare professionals in delivering reliable patient care. Our technologies combine accurate monitoring, efficient data management and dependable performance across diverse clinical settings.
           </Typography>
@@ -76,17 +76,17 @@ const Solutions = () => {
 
         {/* 3 Solutions Cards Grid (Figma Group 279: 1683px width, 42px gap) */}
         <div
-          className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-[42px] mt-12 sm:mt-16 items-end"
+          className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-[42px] min-[2500px]:gap-14 min-[3800px]:gap-20 mt-12 sm:mt-16 min-[2500px]:mt-24 min-[3800px]:mt-32 items-end"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           {solutionsData.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col items-center w-full max-w-[533px] mx-auto group cursor-pointer"
+              className="flex flex-col items-center w-full max-w-[533px] min-[2500px]:max-w-[780px] min-[3800px]:max-w-[1100px] mx-auto group cursor-pointer"
             >
               {/* Top Image: exact Figma 466px width inside 533px card (87.43%), 308px height, rounded-t-[10px] */}
-              <div className="w-[87.43%] max-w-[466px] aspect-[466/308] overflow-hidden rounded-t-[10px] relative bg-gray-100 shadow-xs">
+              <div className="w-[87.43%] max-w-[466px] min-[2500px]:max-w-[680px] min-[3800px]:max-w-[960px] aspect-[466/308] overflow-hidden rounded-t-[10px] min-[2500px]:rounded-t-[18px] min-[3800px]:rounded-t-[26px] relative bg-gray-100 shadow-xs">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -95,16 +95,16 @@ const Solutions = () => {
               </div>
 
               {/* Bottom Blue Box: exact Figma 533px width, 159px height, rounded-[10px], shadow & rgba background */}
-              <div className="w-full h-[159px] bg-[rgba(15,120,175,0.85)] rounded-[10px] shadow-[0px_1px_2px_rgba(60,64,67,0.3),0px_2px_6px_2px_rgba(60,64,67,0.15)] flex flex-col items-center justify-center p-4 gap-3 text-center transition-all duration-300 group-hover:bg-[#0F78AF]">
+              <div className="w-full h-[159px] min-[2500px]:h-[230px] min-[3800px]:h-[310px] bg-[rgba(15,120,175,0.85)] rounded-[10px] min-[2500px]:rounded-[18px] min-[3800px]:rounded-[26px] shadow-[0px_1px_2px_rgba(60,64,67,0.3),0px_2px_6px_2px_rgba(60,64,67,0.15)] flex flex-col items-center justify-center p-4 min-[2500px]:p-8 min-[3800px]:p-12 gap-3 min-[2500px]:gap-6 min-[3800px]:gap-8 text-center transition-all duration-300 group-hover:bg-[#0F78AF]">
                 {/* Title: 'Exo 2', 24px, font-weight 600, color #FFFFFF */}
-                <h3 className="font-primary font-semibold text-xl sm:text-2xl text-white tracking-normal leading-snug">
+                <h3 className="font-primary font-semibold text-xl sm:text-2xl min-[2500px]:text-4xl min-[3800px]:text-5xl text-white tracking-normal leading-snug">
                   {item.title}
                 </h3>
 
                 {/* Button (Frame 5): exact 163px × 48px, border 1px solid #FFFFFF, rounded-[20px], 'DM Sans' 16px */}
                 <Link
                   href={item.link}
-                  className="w-[163px] h-[48px] rounded-[20px] border border-white flex items-center justify-center font-secondary text-base text-white hover:bg-white hover:text-[#0F78AF] transition-all duration-300 active:scale-95 shadow-xs"
+                  className="w-[163px] h-[48px] min-[2500px]:w-[240px] min-[2500px]:h-[70px] min-[3800px]:w-[320px] min-[3800px]:h-[94px] rounded-[20px] min-[2500px]:rounded-[30px] min-[3800px]:rounded-[40px] border border-white flex items-center justify-center font-secondary text-base min-[2500px]:text-2xl min-[3800px]:text-3xl text-white hover:bg-white hover:text-[#0F78AF] transition-all duration-300 active:scale-95 shadow-xs"
                 >
                   <span>View More</span>
                 </Link>

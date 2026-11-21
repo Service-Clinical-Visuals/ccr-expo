@@ -61,7 +61,7 @@ const Footer = () => {
             <Typography
               variant="p"
               color="white"
-              className="text-white/90 leading-relaxed text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem] pr-0 lg:pr-4"
+              className="para-text text-white/90 leading-relaxed pr-0 lg:pr-4"
             >
               CHIRMAX Surgical, a member of Vitrex Medical Group, specializes in high-quality European-made surgical sutures and meshes. With a broad portfolio of absorbable and non-absorbable sutures, specialized needles, and surgical mesh solutions, the company supports human, veterinary, and dental surgical applications with a strong focus on precision, quality, and reliability.
             </Typography>
@@ -77,7 +77,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-white/85 hover:text-white transition-colors text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem]"
+                    className="para-text text-white/85 hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-white/85 hover:text-white transition-colors text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem]"
+                    className="para-text text-white/85 hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -111,17 +111,17 @@ const Footer = () => {
               Contact Us
             </Typography>
             <ul className="flex flex-col gap-3 2k:gap-5 4k:gap-7 text-white/90">
-              <li className="flex items-start gap-2.5 2k:gap-4 4k:gap-6 text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem]">
+              <li className="flex items-start gap-2.5 2k:gap-4 4k:gap-6 para-text">
                 <MapPin className="w-5 h-5 2k:w-8 2k:h-8 4k:w-11 4k:h-11 shrink-0 mt-0.5 text-white" />
-                <span className="text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem]">HEBUmedical GmbH Badstraße 8, D-78532 Tuttlingen,</span>
+                <span className="para-text">HEBUmedical GmbH Badstraße 8, D-78532 Tuttlingen,</span>
               </li>
-              <li className="flex items-center gap-2.5 2k:gap-4 4k:gap-6 text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem]">
+              <li className="flex items-center gap-2.5 2k:gap-4 4k:gap-6 para-text">
                 <Phone className="w-5 h-5 2k:w-8 2k:h-8 4k:w-11 4k:h-11 shrink-0 text-white" />
-                <span className="text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem]">+49 (0) 98420158,</span>
+                <span className="para-text">+49 (0) 98420158,</span>
               </li>
-              <li className="flex items-center gap-2.5 2k:gap-4 4k:gap-6 text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem]">
+              <li className="flex items-center gap-2.5 2k:gap-4 4k:gap-6 para-text">
                 <Mail className="w-5 h-5 2k:w-8 2k:h-8 4k:w-11 4k:h-11 shrink-0 text-white" />
-                <span className="text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem]">info@VMG.com</span>
+                <span className="para-text">info@VMG.com</span>
               </li>
             </ul>
           </div>
@@ -139,7 +139,7 @@ const Footer = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full bg-transparent border border-white rounded-[8px] 2k:rounded-[14px] 4k:rounded-[20px] px-3.5 py-2 2k:px-6 2k:py-3.5 4k:px-8 4k:py-5 text-white placeholder-white/80 text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem] outline-none"
+                className="w-full bg-transparent border border-white rounded-[8px] 2k:rounded-[14px] 4k:rounded-[20px] px-3.5 py-2 2k:px-6 2k:py-3.5 4k:px-8 4k:py-5 text-white placeholder-white/80 para-text outline-none"
               />
               <button
                 type="submit"
@@ -158,7 +158,7 @@ const Footer = () => {
 
         {/* Copyright Bar */}
         <div className="text-center">
-          <p className="text-white/80 text-[0.8125rem] sm:text-[0.9375rem] lg:text-[1.0625rem] 2k:text-[1.4375rem] 4k:text-[2.0625rem]">
+          <p className="text-white/80 para-text">
             Copyright © 2024 VMG
           </p>
         </div>

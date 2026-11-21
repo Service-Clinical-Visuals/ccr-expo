@@ -70,20 +70,20 @@ const Experience360 = () => {
             </Typography>
 
             {/* 4 Feature Badges Grid: icon1, icon2, icon3, icon4 images (clean transparent layout) */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-2 w-full">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 min-[2500px]:gap-10 min-[3800px]:gap-14 pt-2 w-full">
               {features.map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col items-center text-center gap-2.5 group"
+                  className="flex flex-col items-center text-center gap-2.5 min-[2500px]:gap-5 min-[3800px]:gap-7 group"
                 >
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center shrink-0">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 min-[2500px]:w-28 min-[2500px]:h-28 min-[3800px]:w-40 min-[3800px]:h-40 flex items-center justify-center shrink-0">
                     <img
                       src={item.icon}
                       alt={item.title}
                       className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <span className="text-xs sm:text-sm font-semibold font-primary text-[#0F2744] leading-snug">
+                  <span className="text-xs sm:text-sm min-[2500px]:text-xl min-[3800px]:text-2xl font-semibold font-primary text-[#0F2744] leading-snug">
                     {item.title}
                   </span>
                 </div>
