@@ -1,0 +1,283 @@
+/**
+ * GLOBAL STYLES & RESPONSIVE ARCHITECTURE - VITREX MEDICAL GROUP
+ *
+ * 1. FLUID REM TYPOGRAPHY SYSTEM:
+ *    - Primary Font: 'Open Sans' (headings, titles, navbar, buttons)
+ *    - Secondary Font: 'Inter' (body copy, descriptions, details)
+ *    - Base typography (h1-h4, p, li, span, button) uses REM units calculated from root 16px.
+ *    - Scaled across 8 standardized viewport media queries:
+ *      * Mobile Portrait (<480px): ~0.7x scale multiplier (e.g., h1: 1.575rem / 25.2px)
+ *      * Mobile Landscape (481px-767px): ~0.8x scale multiplier (e.g., h1: 1.8rem / 28.8px)
+ *      * Tablet (768px-1023px): ~0.9x scale multiplier (e.g., h1: 2.025rem / 32.4px)
+ *      * Laptop (1024px-1279px): ~0.95x scale multiplier (e.g., h1: 2.1375rem / 34.2px)
+ *      * Desktop PC (1280px-2499px): 1.0x standard baseline (e.g., h1: 2.25rem / 36px)
+ *      * Ultra-wide / 2K-3K (2500px-3799px): ~1.5x scale multiplier (e.g., h1: 3.375rem / 54px)
+ *      * 4K Ultra-wide (>=3800px): ~2.0x scale multiplier (e.g., h1: 4.5rem / 72px)
+ *
+ * 2. PERCENTAGE-BASED RESPONSIVE CONTAINER (`.custom-container`):
+ *    - Width: 100% width with auto horizontal margins (`mx-auto`).
+ *    - Max-width: 90% on mobile portrait, 92% on mobile landscape, 90% on tablet & desktop, 85% on ultra-wide, 90% on 4K.
+ *    - Content measure: Section headers & lead paragraphs apply `w-full max-w-full xl:max-w-[70%]` for optimal line length.
+ *
+ * 3. MEDIA & VIDEO RATIO:
+ *    - Always uses `aspect-video` (16:9) or specified ratio with `object-cover` to prevent layout shift.
+ */
+
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #202020;
+  --font-primary: var(--font-open-sans), 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-inter), 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-primary: #1B4298;
+  --color-primary-hover: #143376;
+  --color-secondary: #202020;
+  --color-secondary-hover: #000000;
+  --color-accent: #70CDE3;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --breakpoint-2k: 156.25rem; /* 2500px */
+  --breakpoint-4k: 237.5rem; /* 3800px */
+  --font-primary: var(--font-open-sans), 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-inter), 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+.vitrex-fonts {
+  font-family: var(--font-secondary) !important;
+}
+
+.font-primary {
+  font-family: var(--font-primary) !important;
+}
+
+.font-secondary {
+  font-family: var(--font-secondary) !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-secondary);
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop, Extra Large PC / 2K: 1280px - 2499px) */
+/* All base text sizes reduced by 1px and calculated strictly in rem (root 16px) */
+h1 { font-size: 2.1875rem; /* 35px */ font-weight: 700 !important; font-family: var(--font-primary) !important; }
+h2 { font-size: 1.9375rem; /* 31px */ font-weight: 700 !important; font-family: var(--font-primary) !important; }
+h3 { font-size: 1.1875rem; /* 19px */ font-weight: 600; font-family: var(--font-primary) !important; }
+h4 { font-size: 1rem; /* 16px */ font-weight: 600; font-family: var(--font-primary) !important; }
+p, li, .para-text { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary) !important; }
+span { font-size: 0.8125rem; /* 13px */ font-family: var(--font-secondary); }
+.navbar { font-size: 1rem; /* 16px - exact normal paragraph size */ font-weight: 600; font-family: var(--font-primary) !important; }
+.navbar span, .navbar a { font-size: inherit; }
+.footer-heading { font-size: 1.1875rem; /* 19px */ font-weight: 600; font-family: var(--font-primary) !important; }
+.footer-body, .footer-body a, .footer-body span, .footer-body p { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary) !important; }
+.footer-body span, footer span, footer a, footer li, footer p { font-size: inherit; }
+.button { font-size: 1rem; /* 16px */ font-weight: 600; font-family: var(--font-primary) !important; }
+.number { font-size: 7.9375rem; /* 127px */ font-weight: 700; font-family: var(--font-primary) !important; color: rgba(255, 255, 255, 0.6); line-height: 1; }
+
+/* Custom Swiper Pagination */
+.custom-pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 1.5rem; }
+.custom-pagination .swiper-pagination-bullet { width: 10px !important; height: 10px !important; border-radius: 50% !important; background-color: #D1D5DB !important; opacity: 1 !important; transition: all 0.3s; margin: 0 !important; }
+.custom-pagination .swiper-pagination-bullet-active { width: 14px !important; height: 14px !important; background-color: var(--color-primary) !important; }
+
+.vitrex-pill-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background-color: rgba(27, 66, 152, 0.3) !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+  margin: 0 4px !important;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.vitrex-pill-bullet.swiper-pagination-bullet-active {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #1B4298 !important;
+}
+
+/* Mobile Portrait Screen (up to 480px) */
+/* Multiplier applied, reduced by 1px (0.0625rem) in rem */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.5125rem; /* ~24.2px */ }
+  h2 { font-size: 1.3375rem; /* ~21.4px */ }
+  h3 { font-size: 0.8125rem; /* 13px */ }
+  h4 { font-size: 0.6875rem; /* 11px */ }
+  p, li, .para-text { font-size: 0.6875rem; /* 11px */ }
+  span { font-size: 0.55rem; /* ~8.8px */ }
+  .navbar { font-size: 0.6875rem; /* 11px */ }
+  .footer-heading { font-size: 0.8125rem; /* 13px */ }
+  .footer-body { font-size: 0.6875rem; /* 11px */ }
+  .button { font-size: 0.6875rem; /* 11px */ }
+  .number { font-size: 5.5375rem; }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+/* Multiplier applied, reduced by 1px (0.0625rem) in rem */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.7375rem; /* ~27.8px */ }
+  h2 { font-size: 1.5375rem; /* ~24.6px */ }
+  h3 { font-size: 0.9375rem; /* 15px */ }
+  h4 { font-size: 0.7875rem; /* ~12.6px */ }
+  p, li, .para-text { font-size: 0.7875rem; /* ~12.6px */ }
+  span { font-size: 0.6375rem; /* ~10.2px */ }
+  .navbar { font-size: 0.7875rem; /* ~12.6px */ }
+  .footer-heading { font-size: 0.9375rem; /* 15px */ }
+  .footer-body { font-size: 0.7875rem; /* ~12.6px */ }
+  .button { font-size: 0.7875rem; /* ~12.6px */ }
+  .number { font-size: 6.3375rem; }
+}
+
+/* Tablet / Tab Screen (768px - 1023px) */
+/* Multiplier applied, reduced by 1px (0.0625rem) in rem */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.9625rem; /* ~31.4px */ }
+  h2 { font-size: 1.7375rem; /* ~27.8px */ }
+  h3 { font-size: 1.0625rem; /* 17px */ }
+  h4 { font-size: 0.89375rem; /* ~14.3px */ }
+  p, li, .para-text { font-size: 0.89375rem; /* ~14.3px */ }
+  span { font-size: 0.725rem; /* ~11.6px */ }
+  .navbar { font-size: 0.89375rem; /* ~14.3px */ }
+  .footer-heading { font-size: 1.0625rem; /* 17px */ }
+  .footer-body { font-size: 0.89375rem; /* ~14.3px */ }
+  .button { font-size: 0.89375rem; /* ~14.3px */ }
+  .number { font-size: 7.1375rem; }
+}
+
+/* Laptop Screen (1024px - 1279px) */
+/* Multiplier applied, reduced by 1px (0.0625rem) in rem */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.075rem; /* ~33.2px */ }
+  h2 { font-size: 1.8375rem; /* ~29.4px */ }
+  h3 { font-size: 1.125rem; /* 18px */ }
+  h4 { font-size: 0.9375rem; /* 15px */ }
+  p, li, .para-text { font-size: 0.9375rem; /* 15px */ }
+  span { font-size: 0.7675rem; /* ~12.3px */ }
+  .navbar { font-size: 0.9375rem; /* 15px */ }
+  .footer-heading { font-size: 1.125rem; /* 18px */ }
+  .footer-body { font-size: 0.9375rem; /* 15px */ }
+  .button { font-size: 0.9375rem; /* 15px */ }
+  .number { font-size: 7.5375rem; }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px) */
+/* Multiplier: ~1.5x applied, reduced by 1px (0.0625rem) in rem */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.3125rem; /* 53px */ }
+  h2 { font-size: 2.9375rem; /* 47px */ }
+  h3 { font-size: 1.8125rem; /* 29px */ }
+  h4 { font-size: 1.5375rem; /* ~24.6px */ }
+  p, li, .para-text { font-size: 1.5375rem; /* ~24.6px */ }
+  span { font-size: 1.25rem; /* 20px */ }
+  .navbar { font-size: 1.5375rem; /* ~24.6px */ }
+  .footer-heading { font-size: 1.8125rem; /* 29px */ }
+  .footer-body { font-size: 1.5375rem; /* ~24.6px */ }
+  .button { font-size: 1.5375rem; /* ~24.6px */ }
+  .number { font-size: 11.9375rem; }
+
+  /* 2K Sliding Dots Scaling */
+  .vitrex-pill-bullet {
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 6px !important;
+  }
+  .vitrex-pill-bullet.swiper-pagination-bullet-active {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .custom-pagination .swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 6px !important;
+  }
+  .custom-pagination .swiper-pagination-bullet-active {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above) */
+/* Multiplier: ~2.0x applied, reduced by 1px (0.0625rem) in rem */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.4375rem; /* 71px */ }
+  h2 { font-size: 3.9375rem; /* 63px */ }
+  h3 { font-size: 2.4375rem; /* 39px */ }
+  h4 { font-size: 2.0625rem; /* 33px */ }
+  p, li, .para-text { font-size: 2.0625rem; /* 33px */ }
+  span { font-size: 1.6875rem; /* 27px */ }
+  .navbar { font-size: 2.0625rem; /* 33px */ }
+  .footer-heading { font-size: 2.4375rem; /* 39px */ }
+  .footer-body { font-size: 2.0625rem; /* 33px */ }
+  .button { font-size: 2.0625rem; /* 33px */ }
+  .number { font-size: 15.9375rem; }
+
+  /* 4K Sliding Dots Scaling */
+  .vitrex-pill-bullet {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 10px !important;
+  }
+  .vitrex-pill-bullet.swiper-pagination-bullet-active {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .custom-pagination .swiper-pagination-bullet {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 0 8px !important;
+  }
+  .custom-pagination .swiper-pagination-bullet-active {
+    width: 34px !important;
+    height: 34px !important;
+  }
+}
+
