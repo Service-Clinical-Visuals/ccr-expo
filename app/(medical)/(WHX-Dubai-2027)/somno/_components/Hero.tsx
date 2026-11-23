@@ -21,15 +21,13 @@ export default function Hero() {
     <section id="home" className="relative w-full overflow-hidden bg-[#0A192F]">
       {/* Container filling full screen height on all screen sizes */}
       <div className="relative w-full h-[100dvh] min-h-[100dvh] flex items-end">
-        
+
         {/* Dynamic Video Player Background with dark gradient overlay */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <DynamicVideoPlayer
             type="banner"
             className="absolute inset-0 w-full h-full object-cover z-0"
           />
-          {/* Subtle dark gradient overlay to ensure text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/30 z-10" />
         </div>
 
         {/* Content Container placed 15% above the bottom of the screen */}
