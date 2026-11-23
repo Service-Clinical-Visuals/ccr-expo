@@ -104,9 +104,13 @@ const Solutions = () => {
                 {/* Button (Frame 5): exact 163px × 48px, border 1px solid #FFFFFF, rounded-[20px], 'DM Sans' 16px */}
                 <Link
                   href={item.link}
-                  className="w-[163px] h-[48px] min-[2500px]:w-[240px] min-[2500px]:h-[70px] min-[3800px]:w-[320px] min-[3800px]:h-[94px] rounded-[20px] min-[2500px]:rounded-[30px] min-[3800px]:rounded-[40px] border border-white flex items-center justify-center font-secondary text-base min-[2500px]:text-2xl min-[3800px]:text-3xl text-white hover:bg-white hover:text-[#0F78AF] transition-all duration-300 active:scale-95 shadow-xs"
+                  className="relative overflow-hidden isolate w-[163px] h-[48px] min-[2500px]:w-[240px] min-[2500px]:h-[70px] min-[3800px]:w-[320px] min-[3800px]:h-[94px] rounded-[20px] min-[2500px]:rounded-[30px] min-[3800px]:rounded-[40px] border border-white flex items-center justify-center font-secondary text-base min-[2500px]:text-2xl min-[3800px]:text-3xl text-white transition-all duration-300 active:scale-95 shadow-xs group"
                 >
-                  <span>View More</span>
+                  <span
+                    className="absolute inset-0 bg-black -translate-y-full group-hover:translate-y-0 transition-transform duration-400 ease-in-out pointer-events-none z-0"
+                    aria-hidden="true"
+                  />
+                  <span className="relative z-10">View More</span>
                 </Link>
               </div>
             </div>

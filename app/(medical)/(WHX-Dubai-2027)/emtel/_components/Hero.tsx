@@ -54,7 +54,7 @@ const Hero = () => {
               text="Explore More"
               variant="primary"
               href="#about"
-              className="bg-[#0F78AF] hover:bg-[#0C6492] text-white px-7 py-3 rounded-[20px] font-semibold text-sm sm:text-base min-[2500px]:text-xl min-[3800px]:text-3xl"
+              className="px-7 py-3 rounded-[20px] font-semibold text-sm sm:text-base min-[2500px]:text-xl min-[3800px]:text-3xl"
             />
           </div>
         </div>

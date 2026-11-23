@@ -177,9 +177,13 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="footer-body text-sm sm:text-base bg-[#0F78AF] hover:bg-[#0C6492] text-white font-semibold px-4 sm:px-5 py-2 rounded-full transition-all shrink-0 cursor-pointer"
+                className="relative overflow-hidden isolate footer-body text-sm sm:text-base bg-[#0F78AF] text-white font-semibold px-4 sm:px-5 py-2 rounded-full transition-all shrink-0 cursor-pointer group"
               >
-                Subscribe
+                <span
+                  className="absolute inset-0 bg-black -translate-y-full group-hover:translate-y-0 transition-transform duration-400 ease-in-out pointer-events-none z-0"
+                  aria-hidden="true"
+                />
+                <span className="relative z-10">Subscribe</span>
               </button>
             </form>
           </div>

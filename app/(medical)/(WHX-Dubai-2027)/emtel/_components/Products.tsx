@@ -150,9 +150,13 @@ const Products = () => {
               <div className="pt-2">
                 <Link
                   href="#contact"
-                  className="inline-flex items-center justify-center border border-white hover:bg-white hover:text-[#0F78AF] text-white font-medium px-6 py-2.5 rounded-[20px] text-sm sm:text-base transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-95 cursor-pointer"
+                  className="relative overflow-hidden isolate inline-flex items-center justify-center border border-white text-white font-medium px-6 py-2.5 rounded-[20px] text-sm sm:text-base transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-95 cursor-pointer group"
                 >
-                  <span>View All Products</span>
+                  <span
+                    className="absolute inset-0 bg-black -translate-y-full group-hover:translate-y-0 transition-transform duration-400 ease-in-out pointer-events-none z-0"
+                    aria-hidden="true"
+                  />
+                  <span className="relative z-10">View All Products</span>
                 </Link>
               </div>
             </div>

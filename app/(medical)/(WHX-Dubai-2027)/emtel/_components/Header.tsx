@@ -146,9 +146,13 @@ const Header = () => {
             <Link
               href="#contact"
               onClick={(e) => handleScrollTo(e, "contact")}
-              className="bg-[#0F78AF] hover:bg-[#0C6492] text-white font-semibold font-primary px-6 py-2.5 min-[2500px]:px-9 min-[2500px]:py-3.5 min-[3800px]:px-14 min-[3800px]:py-5 rounded-[20px] text-sm lg:text-base min-[2500px]:text-xl min-[3800px]:text-3xl transition-all duration-300 ease-in-out shadow-sm hover:shadow-lg hover:shadow-[#0F78AF]/25 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 cursor-pointer"
+              className="relative overflow-hidden isolate bg-[#0F78AF] text-white font-semibold font-primary px-6 py-2.5 min-[2500px]:px-9 min-[2500px]:py-3.5 min-[3800px]:px-14 min-[3800px]:py-5 rounded-[20px] text-sm lg:text-base min-[2500px]:text-xl min-[3800px]:text-3xl transition-all duration-300 ease-in-out shadow-sm hover:shadow-lg hover:shadow-[#0F78AF]/25 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 cursor-pointer group"
             >
-              <span>Request Quote</span>
+              <span
+                className="absolute inset-0 bg-black -translate-y-full group-hover:translate-y-0 transition-transform duration-400 ease-in-out pointer-events-none z-0"
+                aria-hidden="true"
+              />
+              <span className="relative z-10">Request Quote</span>
             </Link>
           </div>
 
@@ -197,9 +201,13 @@ const Header = () => {
               <Link
                 href="#contact"
                 onClick={(e) => handleScrollTo(e, "contact")}
-                className="w-full bg-[#0F78AF] hover:bg-[#0C6492] text-white font-semibold font-primary py-2.5 rounded-[20px] flex items-center justify-center text-base transition-all duration-300 ease-in-out hover:shadow-md active:scale-95 cursor-pointer"
+                className="relative overflow-hidden isolate w-full bg-[#0F78AF] text-white font-semibold font-primary py-2.5 rounded-[20px] flex items-center justify-center text-base transition-all duration-300 ease-in-out hover:shadow-md active:scale-95 cursor-pointer group"
               >
-                <span>Request Quote</span>
+                <span
+                  className="absolute inset-0 bg-black -translate-y-full group-hover:translate-y-0 transition-transform duration-400 ease-in-out pointer-events-none z-0"
+                  aria-hidden="true"
+                />
+                <span className="relative z-10">Request Quote</span>
               </Link>
             </div>
           </div>
