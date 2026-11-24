@@ -1,0 +1,312 @@
+/**
+ * SPEED CARE GLOBAL STYLES & RESPONSIVE ARCHITECTURE
+ * Master Reference: Inogen & Zinnanti Surgical Development Standards
+ *
+ * 1. FLUID REM TYPOGRAPHY SYSTEM:
+ *    - Base typography (h1-h5, p, li, span, button) uses REM units calculated from root 16px.
+ *    - Fonts: DM Sans (headings/primary) & Outfit (body/secondary)
+ *    - Standardized media queries:
+ *      * Mobile Portrait (<480px): ~0.7x scale multiplier
+ *      * Mobile Landscape (481px-767px): ~0.8x scale multiplier
+ *      * Tablet (768px-1035px): ~0.9x scale multiplier (strictly maintained up to 1035px)
+ *      * Laptop / Desktop (1036px-1279px / `desktop:`): ~0.95x scale multiplier (desktop layout begins from 1036px)
+ *      * Desktop PC (1280px-2499px): 1.0x standard baseline
+ *      * Ultra-wide / 2K-3K (2500px-3799px / `2k:`): ~1.5x scale multiplier
+ *      * 4K Ultra-wide (>=3800px / `4k:`): ~2.0x scale multiplier
+ *
+ * 2. PERCENTAGE-BASED RESPONSIVE CONTAINER (`.custom-container`):
+ *    - Width: 100% width with auto horizontal margins (`mx-auto`).
+ *    - Max-width: 90% on mobile portrait, 92% on mobile landscape, 90% on tablet & desktop, 85% on ultra-wide / 2K.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1E1E1E;
+  --color-primary: #E62730;
+  --color-primary-hover: #c91f27;
+  --color-secondary: #1E1E1E;
+  --color-muted: #4B5563;
+  --color-bg-gray: #EFEFEF;
+  --font-dm-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-outfit: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme inline {
+  --breakpoint-desktop: 64.75rem; /* 1036px - Desktop layout threshold */
+  --breakpoint-laptop: 64.75rem; /* 1036px */
+  --breakpoint-2k: 156.25rem; /* 2500px */
+  --breakpoint-4k: 237.5rem; /* 3800px */
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-secondary: var(--color-secondary);
+  --color-muted: var(--color-muted);
+  --color-bg-gray: var(--color-bg-gray);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-heading: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-secondary: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+.speedcare-fonts {
+  --font-heading: var(--font-dm-sans, 'DM Sans'), 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-outfit, 'Outfit'), 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-heading);
+  --font-secondary: var(--font-body);
+  font-family: var(--font-body) !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading) !important;
+}
+
+p, li, .font-body {
+  font-family: var(--font-body) !important;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop: 1280px - 2499px) */
+/* All base text sizes reduced by 1px (0.0625rem) and calculated strictly in rem (root 16px) */
+h1 { font-size: 2.1875rem; /* 35px - reduced by 1px from 36px */ font-weight: 700 !important; font-family: var(--font-heading); }
+h2 { font-size: 1.6875rem; /* 27px - reduced by 1px from 28px */ font-weight: 700 !important; font-family: var(--font-heading); }
+h3 { font-size: 1.4375rem; /* 23px - reduced by 1px from 24px */ font-weight: 700; font-family: var(--font-heading); }
+h4 { font-size: 1.1875rem; /* 19px - reduced by 1px from 20px */ font-weight: 700; font-family: var(--font-heading); }
+h5 { font-size: 1.0625rem; /* 17px - reduced by 1px from 18px */ font-weight: 600; font-family: var(--font-heading); }
+p, li { font-size: 1.0625rem; /* 17px - reduced by 1px from 18px */ font-weight: 400; font-family: var(--font-body); line-height: 1.6; }
+span { font-size: 0.8125rem; /* 13px - reduced by 1px from 14px */ font-family: var(--font-body); }
+p span, li span, a span { font-size: inherit; }
+.navbar { font-size: 1.0625rem; /* 17px - reduced by 1px from 18px */ font-weight: 400; font-family: var(--font-body); }
+.footer-heading { font-size: 1.1875rem; /* 19px - reduced by 1px from 20px */ font-weight: 600; font-family: var(--font-heading); }
+.footer-body, .footer-body a, .footer-body span, .footer-body p { font-size: 1.0625rem; /* 17px - reduced by 1px from 18px */ font-weight: 400; font-family: var(--font-body); }
+.footer-body span { font-size: inherit !important; }
+.button { font-size: 1.0625rem; /* 17px - reduced by 1px from 18px */ font-weight: 600; font-family: var(--font-body) !important; }
+
+/* Custom Swiper Pagination */
+.custom-pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 1.5rem; }
+.custom-pagination .swiper-pagination-bullet { width: 10px !important; height: 10px !important; border-radius: 50% !important; background-color: #D1D5DB !important; opacity: 1 !important; transition: all 0.3s; margin: 0 !important; }
+.custom-pagination .swiper-pagination-bullet-active { width: 14px !important; height: 14px !important; background-color: var(--color-primary) !important; }
+
+/* 3D Flip Card Animation (Top-to-Bottom Vertical Flip) */
+.flip-card {
+  perspective: 1200px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: inherit;
+}
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  transform: rotateX(180deg);
+}
+
+/* =========================================================
+   FOOTER RESPONSIVE GRID LAYOUT
+   - Mobile (<768px): 1 column
+   - Tablet (768px - 1035px): strictly 2 columns tablet layout
+   - Desktop (>=1036px): strictly 5 columns horizontal row
+   ========================================================= */
+.speedcare-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 768px) and (max-width: 1035px) {
+  .speedcare-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1036px) {
+  .speedcare-footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.4fr 0.6fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .speedcare-footer-grid {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 2500px) {
+  .speedcare-footer-grid {
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 3800px) {
+  .speedcare-footer-grid {
+    gap: 6rem;
+  }
+}
+
+/* Mobile Portrait Screen (up to 480px) */
+/* Multiplier: ~0.7, reduced by 1px (0.0625rem) in rem */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.5125rem; /* ~24.2px */ }
+  h2 { font-size: 1.1625rem; /* ~18.6px */ }
+  h3 { font-size: 0.9875rem; /* ~15.8px */ }
+  h4 { font-size: 0.8125rem; /* 13px */ }
+  h5 { font-size: 0.725rem; /* ~11.6px */ }
+  p, li { font-size: 0.75rem; /* 12px */ }
+  span { font-size: 0.55rem; /* ~8.8px */ }
+  .navbar { font-size: 0.75rem; /* 12px */ }
+  .footer-heading { font-size: 0.8125rem; /* 13px */ }
+  .footer-body { font-size: 0.75rem; /* 12px */ }
+  .button { font-size: 0.75rem; /* 12px */ }
+}
+
+/* Mobile Landscape Screen (481px - 767px) */
+/* Multiplier: ~0.8, reduced by 1px (0.0625rem) in rem */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.7375rem; /* 27.8px */ }
+  h2 { font-size: 1.3375rem; /* 21.4px */ }
+  h3 { font-size: 1.1375rem; /* 18.2px */ }
+  h4 { font-size: 0.9375rem; /* 15px */ }
+  h5 { font-size: 0.8375rem; /* 13.4px */ }
+  p, li { font-size: 0.8375rem; /* 13.4px */ }
+  span { font-size: 0.6375rem; /* 10.2px */ }
+  .navbar { font-size: 0.8375rem; /* 13.4px */ }
+  .footer-heading { font-size: 0.9375rem; /* 15px */ }
+  .footer-body { font-size: 0.8375rem; /* 13.4px */ }
+  .button { font-size: 0.8375rem; /* 13.4px */ }
+}
+
+/* Tablet Screen (768px - 1035px) */
+/* Multiplier: ~0.9, reduced by 1px (0.0625rem) in rem */
+@media (min-width: 768px) and (max-width: 1035px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.9625rem; /* 31.4px */ }
+  h2 { font-size: 1.5125rem; /* 24.2px */ }
+  h3 { font-size: 1.2875rem; /* 20.6px */ }
+  h4 { font-size: 1.0625rem; /* 17px */ }
+  h5 { font-size: 0.95rem; /* 15.2px */ }
+  p, li { font-size: 0.95rem; /* 15.2px */ }
+  span { font-size: 0.725rem; /* 11.6px */ }
+  .navbar { font-size: 0.95rem; /* 15.2px */ }
+  .footer-heading { font-size: 1.0625rem; /* 17px */ }
+  .footer-body { font-size: 0.95rem; /* 15.2px */ }
+  .button { font-size: 0.95rem; /* 15.2px */ }
+}
+
+/* Laptop Screen (1036px - 1279px) */
+/* Multiplier: ~0.95, reduced by 1px (0.0625rem) in rem */
+@media (min-width: 1036px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.075rem; /* 33.2px */ }
+  h2 { font-size: 1.6rem; /* 25.6px */ }
+  h3 { font-size: 1.3625rem; /* 21.8px */ }
+  h4 { font-size: 1.125rem; /* 18px */ }
+  h5 { font-size: 1.00625rem; /* 16.1px */ }
+  p, li { font-size: 1.00625rem; /* 16.1px */ }
+  span { font-size: 0.7675rem; /* 12.3px */ }
+  .navbar { font-size: 1.00625rem; /* 16.1px */ }
+  .footer-heading { font-size: 1.125rem; /* 18px */ }
+  .footer-body { font-size: 1.00625rem; /* 16.1px */ }
+  .button { font-size: 1.00625rem; /* 16.1px */ }
+}
+
+/* Desktop PC Screen (1280px - 1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Large Desktop PC Screen (1536px - 1919px) */
+@media (min-width: 1536px) and (max-width: 1919px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Extra Large PC / 2K Screen (1920px - 2499px) */
+@media (min-width: 1920px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* Ultra-wide Screen / Max Cover (2500px - 3799px / 2k:) */
+/* Multiplier: ~1.5, reduced by 1px (0.0625rem) in rem */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.3125rem; /* 53px - reduced by 1px */ }
+  h2 { font-size: 2.5625rem; /* 41px - reduced by 1px */ }
+  h3 { font-size: 2.1875rem; /* 35px - reduced by 1px */ }
+  h4 { font-size: 1.8125rem; /* 29px - reduced by 1px */ }
+  h5 { font-size: 1.625rem; /* 26px - reduced by 1px */ }
+  p, li { font-size: 1.625rem; /* 26px - reduced by 1px */ }
+  span { font-size: 1.25rem; /* 20px - reduced by 1px */ }
+  .navbar { font-size: 1.625rem; /* 26px - reduced by 1px */ }
+  .footer-heading { font-size: 1.8125rem; /* 29px - reduced by 1px */ }
+  .footer-body { font-size: 1.625rem; /* 26px - reduced by 1px */ }
+  .button { font-size: 1.625rem; /* 26px - reduced by 1px */ }
+}
+
+/* 4K Ultra-wide Screen / Max Cover (3800px and above / 4k:) */
+/* Reduced by 1px (0.0625rem) in rem */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.4375rem; /* 71px - reduced by 1px */ }
+  h2 { font-size: 3.4375rem; /* 55px - reduced by 1px */ }
+  h3 { font-size: 2.9375rem; /* 47px - reduced by 1px */ }
+  h4 { font-size: 2.4375rem; /* 39px - reduced by 1px */ }
+  h5 { font-size: 2.1875rem; /* 35px - reduced by 1px */ }
+  p, li { font-size: 2.1875rem; /* 35px - reduced by 1px */ }
+  span { font-size: 1.6875rem; /* 27px - reduced by 1px */ }
+  .navbar { font-size: 2.1875rem; /* 35px - reduced by 1px */ }
+  .footer-heading { font-size: 2.4375rem; /* 39px - reduced by 1px */ }
+  .footer-body { font-size: 2.1875rem; /* 35px - reduced by 1px */ }
+  .button { font-size: 2.1875rem; /* 35px - reduced by 1px */ }
+}
