@@ -1,0 +1,458 @@
+/**
+ * GLOBAL STYLES & RESPONSIVE ARCHITECTURE - SUNOPTIC SURGICAL
+ * Master Reference: Inogen Project Methodology
+ *
+ * 1. FLUID REM TYPOGRAPHY SYSTEM:
+ *    - Base typography uses REM units calculated from root 16px.
+ *    - Fonts: 'Palanquin' (headings, titles, buttons) and 'DM Sans' (body, navigation, eyebrows).
+ *    - Scaled across 7 standardized breakpoint ranges:
+ *      * Small Mobile (<=480px): ~0.7x scale multiplier
+ *      * Mobile Landscape (481px-767px): ~0.8x scale multiplier
+ *      * Tablet (768px-1035px): ~0.9x scale multiplier [CRITICAL: Active throughout 768px-1035px]
+ *      * Laptop (1036px-1279px): ~0.95x scale multiplier [Desktop starts at 1036px]
+ *      * Desktop PC (1280px-2499px): 1.0x standard baseline
+ *      * Ultra-wide / 2K-3K (2500px-3799px): ~1.5x scale multiplier
+ *      * 4K Ultra-wide (>=3800px): ~2.0x scale multiplier
+ *
+ * 2. PERCENTAGE-BASED RESPONSIVE CONTAINER (`.custom-container`):
+ *    - Width: 100% width with auto horizontal margins (`mx-auto`).
+ *    - Max-width: 90% mobile portrait, 92% mobile landscape, 90% tablet/laptop/desktop, 85% ultra-wide, 90% 4K.
+ *    - Content measure: Section intros and headers apply `w-full max-w-full xl:max-w-[70%]` for optimal line measure.
+ *
+ * 3. MEDIA & VIDEO:
+ *    - Uses standard `aspect-video` (16:9) or explicit ratios (`aspect-[16/10]`) with `object-cover`.
+ *    - HERO STRICT RULE: Zero overlay colors (no dark, tinted, or gradient overlays).
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --font-palanquin: var(--font-palanquin, 'Palanquin'), 'Palanquin', sans-serif;
+  --font-dmsans: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+  --font-primary: var(--font-palanquin);
+  --font-secondary: var(--font-dmsans);
+}
+
+@theme inline {
+  --color-primary: #911920;
+  --color-primary-hover: #731319;
+  --color-secondary: #0A192F;
+  --color-accent: #409BBD;
+  --color-sky: #0284C7;
+  --color-dark-bg: #0B1A30;
+  --color-footer-bg: #0B192C;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --breakpoint-2k: 156.25rem; /* 2500px */
+  --breakpoint-4k: 237.5rem; /* 3800px */
+  --font-palanquin: var(--font-palanquin, 'Palanquin'), 'Palanquin', sans-serif;
+  --font-dmsans: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+  --font-primary: var(--font-palanquin, 'Palanquin'), 'Palanquin', sans-serif;
+  --font-secondary: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+}
+
+/* Explicit font family utilities for both Next.js fonts and CSS fallbacks */
+.font-palanquin,
+.font-primary {
+  font-family: var(--font-palanquin, 'Palanquin'), 'Palanquin', sans-serif !important;
+}
+
+.font-dmsans,
+.font-secondary {
+  font-family: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif !important;
+}
+
+.sunoptic-fonts {
+  font-family: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+}
+
+.sunoptic-fonts h1,
+.sunoptic-fonts h2,
+.sunoptic-fonts h3,
+.sunoptic-fonts h4,
+.sunoptic-fonts h5,
+.sunoptic-fonts h6,
+.sunoptic-fonts .button,
+.sunoptic-fonts .font-palanquin {
+  font-family: var(--font-palanquin, 'Palanquin'), 'Palanquin', sans-serif !important;
+}
+
+.sunoptic-fonts p,
+.sunoptic-fonts span,
+.sunoptic-fonts a,
+.sunoptic-fonts li,
+.sunoptic-fonts input,
+.sunoptic-fonts .navbar,
+.sunoptic-fonts .eyebrow,
+.sunoptic-fonts .footer-body,
+.sunoptic-fonts .font-dmsans {
+  font-family: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========================================================
+   Base Typography Baseline (Desktop PC: 1280px - 2499px)
+   ======================================================== */
+h1 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700 !important;
+  font-family: var(--font-primary);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+  font-weight: 700 !important;
+  font-family: var(--font-primary);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+  font-family: var(--font-primary);
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  font-family: var(--font-primary);
+  line-height: 1.4;
+}
+
+p, li {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+  line-height: 1.625;
+}
+
+span {
+  font-size: 0.875rem; /* 14px */
+  font-family: var(--font-secondary);
+}
+
+.eyebrow {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  color: #409BBD;
+}
+
+.navbar {
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+  font-family: var(--font-secondary);
+}
+
+.footer-heading {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  font-family: var(--font-primary);
+}
+
+.footer-body, .footer-body a, .footer-body span, .footer-body p {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+}
+
+.button {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  font-family: var(--font-primary) !important;
+}
+
+/* ========================================================
+   1. Small Mobile Screen (up to 480px) - Multiplier: ~0.7x
+   ======================================================== */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.575rem; /* ~25.2px */ }
+  h2 { font-size: 1.4rem; /* 22.4px */ }
+  h3 { font-size: 1.05rem; /* 16.8px */ }
+  h4 { font-size: 0.875rem; /* 14px */ }
+  p, li { font-size: 0.875rem; /* 14px */ }
+  span { font-size: 0.75rem; /* 12px */ }
+  .eyebrow { font-size: 0.75rem; /* 12px */ }
+  .navbar { font-size: 0.875rem; /* 14px */ }
+  .footer-heading { font-size: 0.95rem; /* ~15px */ }
+  .footer-body { font-size: 0.85rem; /* ~13.6px */ }
+  .button { font-size: 0.85rem; /* ~13.6px */ }
+}
+
+/* ========================================================
+   2. Mobile Landscape Screen (481px - 767px) - Multiplier: ~0.8x
+   ======================================================== */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.8rem; /* 28.8px */ }
+  h2 { font-size: 1.6rem; /* 25.6px */ }
+  h3 { font-size: 1.2rem; /* 19.2px */ }
+  h4 { font-size: 1rem; /* 16px */ }
+  p, li { font-size: 0.9rem; /* 14.4px */ }
+  span { font-size: 0.8rem; /* 12.8px */ }
+  .eyebrow { font-size: 0.85rem; /* ~13.6px */ }
+  .navbar { font-size: 0.9rem; /* 14.4px */ }
+  .footer-heading { font-size: 1.05rem; /* ~16.8px */ }
+  .footer-body { font-size: 0.9rem; /* 14.4px */ }
+  .button { font-size: 0.9rem; /* 14.4px */ }
+}
+
+/* ========================================================
+   3. Tablet Screen (768px - 1035px) - Multiplier: ~0.9x
+   [CRITICAL: Must remain active up to 1035px]
+   ======================================================== */
+@media (min-width: 768px) and (max-width: 1035px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.025rem; /* 32.4px */ }
+  h2 { font-size: 1.8rem; /* 28.8px */ }
+  h3 { font-size: 1.35rem; /* 21.6px */ }
+  h4 { font-size: 1.125rem; /* 18px */ }
+  p, li { font-size: 0.95rem; /* 15.2px */ }
+  span { font-size: 0.85rem; /* 13.6px */ }
+  .eyebrow { font-size: 0.9rem; /* 14.4px */ }
+  .navbar { font-size: 0.95rem; /* 15.2px */ }
+  .footer-heading { font-size: 1.125rem; /* 18px */ }
+  .footer-body { font-size: 0.95rem; /* 15.2px */ }
+  .button { font-size: 0.95rem; /* 15.2px */ }
+}
+
+/* ========================================================
+   4. Laptop Screen (1036px - 1279px) - Multiplier: ~0.95x
+   [Desktop layout starts at 1036px]
+   ======================================================== */
+@media (min-width: 1036px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.1375rem; /* 34.2px */ }
+  h2 { font-size: 1.9rem; /* 30.4px */ }
+  h3 { font-size: 1.425rem; /* 22.8px */ }
+  h4 { font-size: 1.1875rem; /* 19px */ }
+  p, li { font-size: 0.975rem; /* 15.6px */ }
+  span { font-size: 0.85rem; /* 13.6px */ }
+  .eyebrow { font-size: 0.95rem; /* 15.2px */ }
+  .navbar { font-size: 0.975rem; /* 15.6px */ }
+  .footer-heading { font-size: 1.1875rem; /* 19px */ }
+  .footer-body { font-size: 0.975rem; /* 15.6px */ }
+  .button { font-size: 0.975rem; /* 15.6px */ }
+}
+
+/* ========================================================
+   5. Desktop PC Screen (1280px - 2499px)
+   ======================================================== */
+@media (min-width: 1280px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* ========================================================
+   6. Ultra-wide Screen / 2K-3K (2500px - 3799px) - Multiplier: ~1.5x
+   ======================================================== */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.375rem; /* 54px */ }
+  h2 { font-size: 3rem; /* 48px */ }
+  h3 { font-size: 2.25rem; /* 36px */ }
+  h4 { font-size: 1.875rem; /* 30px */ }
+  p, li { font-size: 1.5rem; /* 24px */ }
+  span { font-size: 1.25rem; /* 20px */ }
+  .eyebrow { font-size: 1.5rem; /* 24px */ }
+  .navbar { font-size: 1.5rem; /* 24px */ }
+  .footer-heading { font-size: 1.875rem; /* 30px */ }
+  .footer-body { font-size: 1.5rem; /* 24px */ }
+  .button { font-size: 1.5rem; /* 24px */ }
+}
+
+/* ========================================================
+   7. 4K Ultra-wide Screen (3800px and above) - Multiplier: ~2.0x
+   ======================================================== */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.5rem; /* 72px */ }
+  h2 { font-size: 4rem; /* 64px */ }
+  h3 { font-size: 3rem; /* 48px */ }
+  h4 { font-size: 2.5rem; /* 40px */ }
+  p, li { font-size: 2rem; /* 32px */ }
+  span { font-size: 1.625rem; /* 26px */ }
+  .eyebrow { font-size: 2rem; /* 32px */ }
+  .navbar { font-size: 2rem; /* 32px */ }
+  .footer-heading { font-size: 2.5rem; /* 40px */ }
+  .footer-body { font-size: 2rem; /* 32px */ }
+  .button { font-size: 2rem; /* 32px */ }
+}
+
+
+
+/* ========================================================
+   RESPONSIVE LAYOUT SYSTEM - SUNOPTIC SURGICAL
+   Strict adherence to tablet preservation up to 1035px,
+   and clean desktop transition starting from 1036px.
+   ======================================================== */
+
+/* 4-column grid for Product Range & Quality Performance */
+.sunoptic-4-col-grid {
+  display: grid !important;
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+/* Tablet screen (768px - 1035px): strictly 2 columns */
+@media (min-width: 640px) and (max-width: 1035px) {
+  .sunoptic-4-col-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Desktop screen (from 1036px onwards): strictly 4 columns */
+@media (min-width: 1036px) {
+  .sunoptic-4-col-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  
+  .sunoptic-tabs-wrapper {
+    overflow-x: visible !important;
+  }
+  
+  .sunoptic-tabs-list {
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .sunoptic-split-row {
+    flex-direction: row !important;
+  }
+
+  .sunoptic-desktop-order-1 {
+    order: 1 !important;
+  }
+
+  .sunoptic-desktop-order-2 {
+    order: 2 !important;
+  }
+
+  .sunoptic-col-50 {
+    width: 50% !important;
+  }
+  .sunoptic-col-60 {
+    width: 60% !important;
+  }
+  .sunoptic-col-40 {
+    width: 40% !important;
+  }
+  .sunoptic-col-55 {
+    width: 55% !important;
+  }
+  .sunoptic-col-45 {
+    width: 45% !important;
+  }
+
+  .sunoptic-desktop-only {
+    display: flex !important;
+  }
+
+  .sunoptic-mobile-tablet-only {
+    display: none !important;
+  }
+
+  /* Category Filter Buttons: Strictly 1 Single Row on Desktop (>=1036px) */
+  .sunoptic-categories-container {
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+
+  .sunoptic-category-btn {
+    width: auto !important;
+    min-width: 105px !important;
+    max-width: 135px !important;
+    flex: 1 1 0% !important;
+  }
+}
+
+/* Smooth Category Switch Transition */
+@keyframes sunopticProductFade {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.sunoptic-product-fade {
+  animation: sunopticProductFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (max-width: 1035px) {
+  .sunoptic-split-row {
+    flex-direction: column !important;
+  }
+
+  /* Category Filter Buttons: Wrapped with Row 2 Centered on Tablets & Mobiles (<=1035px) */
+  .sunoptic-categories-container {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .sunoptic-category-btn {
+    width: calc(25% - 0.75rem) !important;
+    flex: 0 0 calc(25% - 0.75rem) !important;
+  }
+
+  .sunoptic-mobile-order-first {
+    order: 1 !important;
+  }
+
+  .sunoptic-mobile-order-second {
+    order: 2 !important;
+  }
+
+  .sunoptic-col-50,
+  .sunoptic-col-55,
+  .sunoptic-col-45,
+  .sunoptic-col-60,
+  .sunoptic-col-40 {
+    width: 100% !important;
+  }
+
+  .sunoptic-desktop-only {
+    display: none !important;
+  }
+
+  .sunoptic-mobile-tablet-only {
+    display: flex !important;
+  }
+}

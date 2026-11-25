@@ -1,0 +1,732 @@
+/**
+ * GLOBAL STYLES & RESPONSIVE ARCHITECTURE - REISON MEDICAL
+ *
+ * 1. FLUID REM TYPOGRAPHY SYSTEM:
+ *    - Primary Font: 'Cal Sans' (Headings, titles, buttons, navigation)
+ *    - Secondary Font: 'Outfit' (Body copy, descriptions, details)
+ *    - Scaled across 7 standardized viewport media queries:
+ *      * Small Mobile (<480px): ~0.7x multiplier
+ *      * Mobile Landscape (481px-767px): ~0.8x multiplier
+ *      * Tablet (768px-1035px): ~0.9x multiplier (CRITICAL: Active through 1035px)
+ *      * Laptop (1036px-1279px): ~0.95x multiplier
+ *      * Desktop (1280px-2499px): 1.0x standard baseline
+ *      * Ultra-wide (2500px-3799px): ~1.5x multiplier
+ *      * 4K Ultra-wide (>=3800px): ~2.0x multiplier
+ *
+ * 2. PERCENTAGE-BASED RESPONSIVE CONTAINER (`.custom-container`):
+ *    - Width: 100% width with auto horizontal margins (`mx-auto`).
+ *    - Max-width: 90% mobile portrait, 92% mobile landscape, 90% tablet & desktop, 85% ultra-wide.
+ *    - Content measure: Headings and intro blocks apply `w-full max-w-full xl:max-w-[70%]` for optimal readability.
+ *
+ * 3. MEDIA & VIDEO RATIO:
+ *    - Standard 16:9 (`aspect-video`) or 16:10 (`aspect-[16/10]`) with `object-cover` to prevent layout shift.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+@font-face {
+  font-family: 'Cal Sans';
+  src: url('/fonts/CalSans-SemiBold.woff2') format('woff2'),
+       url('/medical/reison/CalSans-SemiBold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/npm/cal-sans@1.0.1/fonts/webfonts/CalSans-SemiBold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/npm/cal-sans@1.0.1/fonts/webfonts/CalSans-SemiBold.woff') format('woff');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #2A2A2A;
+  --color-primary: #2F3F5A;
+  --color-primary-hover: #1e2a3d;
+  --color-accent: #E53B14;
+  --color-accent-hover: #c9300d;
+  --color-dark: #2A2A2A;
+  --color-muted: #4A4A4A;
+  --color-card-bg: #F5F5F5;
+  --color-section-bg: #F4F4F4;
+
+  --font-calsans: 'Cal Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-outfit: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-primary: var(--font-calsans, 'Cal Sans'), 'Cal Sans', sans-serif;
+  --font-secondary: var(--font-outfit, 'Outfit'), 'Outfit', sans-serif;
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-dark: var(--color-dark);
+  --color-muted: var(--color-muted);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-primary: 'Cal Sans', sans-serif;
+  --font-secondary: 'Outfit', sans-serif;
+}
+
+/* Bulletproof Font Utility Classes */
+.font-primary,
+[class*="font-primary"] {
+  font-family: var(--font-calsans), 'Cal Sans', sans-serif !important;
+}
+
+.font-secondary,
+[class*="font-secondary"] {
+  font-family: var(--font-outfit), 'Outfit', sans-serif !important;
+}
+
+.reison-fonts {
+  --font-primary: var(--font-calsans), 'Cal Sans', sans-serif;
+  --font-secondary: var(--font-outfit), 'Outfit', sans-serif;
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
+}
+
+img {
+  object-fit: cover;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================================================
+   NINEX GROUP & FOOTER RESPONSIVE DESKTOP/TABLET GRIDS
+   Strict Requirement: Tablet layout (2 cols) stays active 768px-1035px.
+   Desktop layout (3 cols for Ninex, 5 cols single row for Footer) begins at 1036px.
+   ========================================================================= */
+.reison-ninex-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1035px) {
+  .reison-ninex-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 4rem 2rem !important;
+  }
+
+  .reison-ninex-grid> :last-child:nth-child(odd),
+  .tablet-center-odd> :last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    width: calc((100% - 2rem) / 2) !important;
+  }
+}
+
+@media (min-width: 1036px) {
+  .reison-ninex-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+
+  .reison-ninex-grid> :last-child:nth-child(odd),
+  .tablet-center-odd> :last-child:nth-child(odd) {
+    grid-column: auto !important;
+    justify-self: stretch !important;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 2500px) {
+  .reison-ninex-grid {
+    gap: 3.5rem !important;
+  }
+}
+
+@media (min-width: 3800px) {
+  .reison-ninex-grid {
+    gap: 5rem !important;
+  }
+}
+
+.reison-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 1.5rem;
+  width: 100%;
+  align-items: start;
+}
+
+.reison-footer-col-1 {
+  grid-column: span 2 / span 2;
+}
+
+@media (min-width: 768px) and (max-width: 1035px) {
+  .reison-footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2.5rem;
+  }
+
+  .reison-footer-col-1 {
+    grid-column: span 2 / span 2;
+  }
+}
+
+@media (min-width: 1036px) {
+  .reison-footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr 1fr !important;
+    gap: 2rem;
+    align-items: start !important;
+  }
+
+  .reison-footer-col-1 {
+    grid-column: span 1 / span 1 !important;
+    align-self: center !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reison-footer-grid {
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 2500px) {
+  .reison-footer-grid {
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 3800px) {
+  .reison-footer-grid {
+    gap: 6rem;
+  }
+}
+
+/* =========================================================================
+   BASE TYPOGRAPHY (Desktop Baseline: 1280px - 2499px)
+   ========================================================================= */
+h1 {
+  font-size: 2.375rem;
+  /* ~38px */
+  font-weight: 600 !important;
+  font-family: var(--font-primary);
+  line-height: 1.35;
+}
+
+h2 {
+  font-size: 1.875rem;
+  /* ~30px */
+  font-weight: 600 !important;
+  font-family: var(--font-primary);
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.25rem;
+  /* ~20px */
+  font-weight: 600;
+  font-family: var(--font-primary);
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.0625rem;
+  /* ~17px */
+  font-weight: 600;
+  font-family: var(--font-primary);
+  line-height: 1.5;
+}
+
+p,
+li {
+  font-size: 1.03125rem;
+  /* ~16.5px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+  line-height: 1.5;
+}
+
+span {
+  font-size: 0.875rem;
+  /* 14px */
+  font-family: var(--font-secondary);
+}
+
+.navbar,
+a.navbar,
+span.navbar {
+  font-size: 1.03125rem !important;
+  font-weight: 400;
+  font-family: var(--font-primary);
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  /* 24px */
+  font-weight: 600;
+  font-family: var(--font-primary);
+}
+
+.footer-body,
+.footer-body a,
+.footer-body span,
+.footer-body p {
+  font-size: 1.03125rem;
+  /* 16.5px */
+  font-weight: 400;
+  font-family: var(--font-secondary);
+}
+
+.footer-body span {
+  font-size: inherit !important;
+}
+
+.button,
+span.button,
+a.button,
+button.button {
+  font-size: 1.03125rem !important;
+  font-weight: 600;
+  font-family: var(--font-primary) !important;
+}
+
+.number {
+  font-size: 8rem;
+  /* 128px */
+  font-weight: 700;
+  font-family: var(--font-primary);
+  line-height: 1;
+}
+
+/* =========================================================================
+   1. Small Mobile Screen (up to 480px) - Multiplier: ~0.7x
+   ========================================================================= */
+@media (max-width: 480px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.6625rem;
+    /* ~26.6px */
+  }
+
+  h2 {
+    font-size: 1.3125rem;
+    /* ~21px */
+  }
+
+  h3 {
+    font-size: 0.875rem;
+    /* 14px */
+  }
+
+  h4 {
+    font-size: 0.75rem;
+    /* 12px */
+  }
+
+  p,
+  li {
+    font-size: 0.75rem;
+    /* 12px */
+  }
+
+  span {
+    font-size: 0.6125rem;
+    /* 9.8px */
+  }
+
+  .navbar,
+  a.navbar,
+  span.navbar {
+    font-size: 0.75rem !important;
+  }
+
+  .footer-heading {
+    font-size: 1.05rem;
+    /* ~16.8px */
+  }
+
+  .footer-body {
+    font-size: 0.75rem;
+    /* 12px */
+  }
+
+  .button,
+  span.button,
+  a.button,
+  button.button {
+    font-size: 0.75rem !important;
+  }
+
+  .number {
+    font-size: 5.6rem;
+  }
+}
+
+/* =========================================================================
+   2. Mobile Landscape Screen (481px - 767px) - Multiplier: ~0.8x
+   ========================================================================= */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container {
+    max-width: 92%;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    /* ~30.4px */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+
+  h3 {
+    font-size: 1rem;
+    /* 16px */
+  }
+
+  h4 {
+    font-size: 0.85rem;
+    /* 13.6px */
+  }
+
+  p,
+  li {
+    font-size: 0.825rem;
+    /* ~13.2px */
+  }
+
+  span {
+    font-size: 0.7rem;
+    /* 11.2px */
+  }
+
+  .navbar,
+  a.navbar,
+  span.navbar {
+    font-size: 0.825rem !important;
+  }
+
+  .footer-heading {
+    font-size: 1.2rem;
+    /* ~19.2px */
+  }
+
+  .footer-body {
+    font-size: 0.825rem;
+    /* ~13.2px */
+  }
+
+  .button,
+  span.button,
+  a.button,
+  button.button {
+    font-size: 0.825rem !important;
+  }
+
+  .number {
+    font-size: 6.4rem;
+  }
+}
+
+/* =========================================================================
+   3. Tablet Screen (768px - 1035px) - Multiplier: ~0.9x
+   * CRITICAL REQUIREMENT: Tablet layout remains active up to 1035px.
+   ========================================================================= */
+@media (min-width: 768px) and (max-width: 1035px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2.1375rem;
+    /* ~34.2px */
+  }
+
+  h2 {
+    font-size: 1.6875rem;
+    /* ~27px */
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    /* 18px */
+  }
+
+  h4 {
+    font-size: 0.95625rem;
+    /* 15.3px */
+  }
+
+  p,
+  li {
+    font-size: 0.928rem;
+    /* ~14.85px */
+  }
+
+  span {
+    font-size: 0.7875rem;
+    /* 12.6px */
+  }
+
+  .navbar,
+  a.navbar,
+  span.navbar {
+    font-size: 0.928rem !important;
+  }
+
+  .footer-heading {
+    font-size: 1.35rem;
+    /* ~21.6px */
+  }
+
+  .footer-body {
+    font-size: 0.928rem;
+    /* ~14.85px */
+  }
+
+  .button,
+  span.button,
+  a.button,
+  button.button {
+    font-size: 0.928rem !important;
+  }
+
+  .number {
+    font-size: 7.2rem;
+  }
+}
+
+/* =========================================================================
+   4. Laptop Screen (1036px - 1279px) - Multiplier: ~0.95x
+   * Desktop layout begins at 1036px
+   ========================================================================= */
+@media (min-width: 1036px) and (max-width: 1279px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2.25625rem;
+    /* ~36.1px */
+  }
+
+  h2 {
+    font-size: 1.78125rem;
+    /* ~28.5px */
+  }
+
+  h3 {
+    font-size: 1.1875rem;
+    /* 19px */
+  }
+
+  h4 {
+    font-size: 1rem;
+    /* 16px */
+  }
+
+  p,
+  li {
+    font-size: 0.98rem;
+    /* ~15.68px */
+  }
+
+  span {
+    font-size: 0.83rem;
+    /* 13.3px */
+  }
+
+  .navbar,
+  a.navbar,
+  span.navbar {
+    font-size: 0.98rem !important;
+  }
+
+  .footer-heading {
+    font-size: 1.425rem;
+    /* ~22.8px */
+  }
+
+  .footer-body {
+    font-size: 0.98rem;
+    /* ~15.68px */
+  }
+
+  .button,
+  span.button,
+  a.button,
+  button.button {
+    font-size: 0.98rem !important;
+  }
+
+  .number {
+    font-size: 7.6rem;
+  }
+}
+
+/* =========================================================================
+   5. Desktop PC Screen (1280px - 2499px) - Multiplier: 1.0x (Standard Baseline)
+   ========================================================================= */
+@media (min-width: 1280px) and (max-width: 2499px) {
+  .custom-container {
+    max-width: 90%;
+  }
+}
+
+/* =========================================================================
+   6. Ultra-wide Screen (2500px - 3799px) - Multiplier: ~1.5x
+   ========================================================================= */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container {
+    max-width: 85%;
+  }
+
+  h1 {
+    font-size: 3.5625rem;
+    /* ~57px */
+  }
+
+  h2 {
+    font-size: 2.8125rem;
+    /* ~45px */
+  }
+
+  h3 {
+    font-size: 1.875rem;
+    /* 30px */
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    /* 25.6px */
+  }
+
+  p,
+  li {
+    font-size: 1.547rem;
+    /* ~24.75px */
+  }
+
+  span {
+    font-size: 1.3125rem;
+    /* 21px */
+  }
+
+  .navbar,
+  a.navbar,
+  span.navbar {
+    font-size: 1.547rem !important;
+  }
+
+  .footer-heading {
+    font-size: 2.25rem;
+    /* 36px */
+  }
+
+  .footer-body {
+    font-size: 1.547rem;
+    /* ~24.75px */
+  }
+
+  .button,
+  span.button,
+  a.button,
+  button.button {
+    font-size: 1.547rem !important;
+  }
+
+  .number {
+    font-size: 12rem;
+  }
+}
+
+/* =========================================================================
+   7. 4K Ultra-wide Screen (3800px and above) - Multiplier: ~2.0x
+   ========================================================================= */
+@media (min-width: 3800px) {
+  .custom-container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 4.75rem;
+    /* ~76px */
+  }
+
+  h2 {
+    font-size: 3.75rem;
+    /* ~60px */
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    /* 40px */
+  }
+
+  h4 {
+    font-size: 2.125rem;
+    /* 34px */
+  }
+
+  p,
+  li {
+    font-size: 2.0625rem;
+    /* ~33px */
+  }
+
+  span {
+    font-size: 1.75rem;
+    /* 28px */
+  }
+
+  .navbar,
+  a.navbar,
+  span.navbar {
+    font-size: 2.0625rem !important;
+  }
+
+  .footer-heading {
+    font-size: 3rem;
+    /* 48px */
+  }
+
+  .footer-body {
+    font-size: 2.0625rem;
+    /* ~33px */
+  }
+
+  .button,
+  span.button,
+  a.button,
+  button.button {
+    font-size: 2.0625rem !important;
+  }
+
+  .number {
+    font-size: 16rem;
+  }
+}

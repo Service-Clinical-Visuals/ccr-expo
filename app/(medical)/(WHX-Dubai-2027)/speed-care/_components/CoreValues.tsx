@@ -8,28 +8,80 @@
 import React from "react";
 import Typography from "./Typography";
 import Badge from "./Badge";
-import { Activity, FlaskConical, Droplets, Award } from "lucide-react";
+
+// Exact Figma Vector Icons
+function LifeFirstIcon({ className = "" }: { className?: string; strokeWidth?: number }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2.4}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path d="M2 12h4.5l2.5-7.5 3.5 15.5 3-8 1.5 3.5H22" />
+    </svg>
+  );
+}
+
+function MineralScienceIcon({ className = "" }: { className?: string; strokeWidth?: number }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+    >
+      <path d="M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z" />
+    </svg>
+  );
+}
+
+function HemostasisIcon({ className = "" }: { className?: string; strokeWidth?: number }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+    >
+      <path d="M12 22c4.636 0 8-3.468 8-8.246C20 7.522 12.882 2.4 12.579 2.185a1 1 0 0 0-1.156-.001C11.12 2.397 4 7.503 4 13.75 4 18.53 7.364 22 12 22zm-.001-17.74C13.604 5.55 18 9.474 18 13.754 18 17.432 15.532 20 12 20s-6-2.57-6-6.25c0-4.29 4.394-8.203 5.999-9.49z" />
+    </svg>
+  );
+}
+
+function ScientificIntegrityIcon({ className = "" }: { className?: string; strokeWidth?: number }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+    >
+      <path d="M12 2a1 1 0 0 1 .894.553l1.819 3.687l4.067.591a1 1 0 0 1 .554 1.705l-2.943 2.87l.695 4.054a1 1 0 0 1-1.451 1.054L12 14.885l-3.635 1.91a1 1 0 0 1-1.451-1.054l.695-4.054l-2.943-2.87a1 1 0 0 1 .554-1.705l4.067-.591l1.819-3.687A1 1 0 0 1 12 2ZM6.5 17.5a1 1 0 0 0-1 1v1.172c0 1.096 1.259 1.681 2.086.963l2.09-1.828a1 1 0 0 1 1.308 0l2.09 1.828c.827.718 2.086.133 2.086-.963V18.5a1 1 0 0 0-1-1h-7.66Z" />
+    </svg>
+  );
+}
 
 const coreValues = [
   {
     title: "Life First",
     desc: "Every decision is driven by the goal of saving lives, ensuring that protecting and preserving human life remains at the heart of everything we do.",
-    icon: Activity,
+    icon: LifeFirstIcon,
   },
   {
     title: "Mineral Science Meets Medicine",
     desc: "Combining advanced mineral processing expertise with modern medical knowledge, innovative technology, and scientific precision.",
-    icon: FlaskConical,
+    icon: MineralScienceIcon,
   },
   {
     title: "Hemostasis Expertise",
     desc: "Focused development of medical products for effective bleeding control. Clear, intuitive solutions for high-stress situation under toughest conditions.",
-    icon: Droplets,
+    icon: HemostasisIcon,
   },
   {
     title: "Scientific Integrity",
     desc: "We develop our products based on the latest scientific findings and continuously improve them through direct feedback from our users and patients.",
-    icon: Award,
+    icon: ScientificIntegrityIcon,
   },
 ];
 
