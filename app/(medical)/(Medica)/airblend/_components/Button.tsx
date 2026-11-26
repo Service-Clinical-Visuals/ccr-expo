@@ -93,7 +93,7 @@ const Button = ({
 
   if (href) {
     return (
-      <Link href={href} target={target} className={wrapperStyles}>
+      <Link href={href} target={target} className={wrapperStyles} onClick={onClick}>
         {content}
       </Link>
     );
