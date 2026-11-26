@@ -1,0 +1,393 @@
+/**
+ * GLOBAL STYLES & RESPONSIVE ARCHITECTURE - AMNOTEC
+ * Master Reference: Inogen Project Methodology
+ *
+ * 1. FLUID REM TYPOGRAPHY SYSTEM:
+ *    - Base typography uses REM units calculated from root 16px.
+ *    - Fonts: 'Plus Jakarta Sans' (headings, titles, buttons) and 'DM Sans' (body, navigation, eyebrows).
+ *    - Scaled across 7 standardized breakpoint ranges:
+ *      * Small Mobile (<=480px): ~0.7x scale multiplier
+ *      * Mobile Landscape (481px-767px): ~0.8x scale multiplier
+ *      * Tablet (768px-1035px): ~0.9x scale multiplier [CRITICAL: Active throughout 768px-1035px]
+ *      * Laptop (1036px-1279px): ~0.95x scale multiplier [Desktop layout starts at 1036px]
+ *      * Desktop PC (1280px-2499px): 1.0x standard baseline
+ *      * Ultra-wide / 2K-3K (2500px-3799px): ~1.5x scale multiplier
+ *      * 4K Ultra-wide (>=3800px): ~2.0x scale multiplier
+ *
+ * 2. PERCENTAGE-BASED RESPONSIVE CONTAINER (`.custom-container`):
+ *    - Width: 100% with auto horizontal margins (`mx-auto`).
+ *    - Max-width: 90% mobile portrait, 92% mobile landscape, 90% tablet/laptop/desktop, 85% ultra-wide, 90% 4K.
+ *    - Content measure: Section intros and headers apply `w-full max-w-full xl:max-w-[70%]` for optimal line length.
+ *
+ * 3. MEDIA & VIDEO:
+ *    - Uses standard `aspect-video` (16:9) or explicit ratios (`aspect-[16/10]`) with `object-cover`.
+ *    - HERO STRICT RULE: Zero overlay colours (no dark, tinted, or gradient overlays).
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --font-jakarta: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-dmsans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-primary: var(--font-jakarta, 'Plus Jakarta Sans'), 'Plus Jakarta Sans', sans-serif;
+  --font-secondary: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+}
+
+@theme inline {
+  --color-primary: #134093;
+  --color-primary-hover: #0e2f6d;
+  --color-secondary: #111111;
+  --color-accent: #E2ECF3;
+  --color-accent-light: #E2EDF4;
+  --color-sky-blue: #D7EDF8;
+  --color-gray-bg: #F1F5F9;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --breakpoint-2k: 156.25rem; /* 2500px */
+  --breakpoint-4k: 237.5rem; /* 3800px */
+  --font-jakarta: var(--font-jakarta, 'Plus Jakarta Sans'), 'Plus Jakarta Sans', sans-serif;
+  --font-dmsans: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+  --font-primary: var(--font-jakarta, 'Plus Jakarta Sans'), 'Plus Jakarta Sans', sans-serif;
+  --font-secondary: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+}
+
+/* Explicit font-family utility classes */
+.font-jakarta,
+.font-primary {
+  font-family: var(--font-jakarta, 'Plus Jakarta Sans'), 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.font-dmsans,
+.font-secondary {
+  font-family: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif !important;
+}
+
+.amnotec-fonts {
+  --font-primary: var(--font-jakarta, 'Plus Jakarta Sans'), 'Plus Jakarta Sans', sans-serif;
+  --font-secondary: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+  font-family: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif !important;
+}
+
+/* Strict element-level font bindings */
+.amnotec-fonts h1,
+.amnotec-fonts h2,
+.amnotec-fonts h3,
+.amnotec-fonts h4,
+.amnotec-fonts h5,
+.amnotec-fonts h6,
+.amnotec-fonts strong,
+.amnotec-fonts b,
+.amnotec-fonts .button,
+.amnotec-fonts button,
+.amnotec-fonts .font-jakarta,
+.amnotec-fonts .font-primary,
+.amnotec-fonts .eyebrow,
+.amnotec-fonts .footer-heading {
+  font-family: var(--font-jakarta, 'Plus Jakarta Sans'), 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.amnotec-fonts p,
+.amnotec-fonts span,
+.amnotec-fonts a,
+.amnotec-fonts li,
+.amnotec-fonts input,
+.amnotec-fonts textarea,
+.amnotec-fonts .font-dmsans,
+.amnotec-fonts .font-secondary,
+.amnotec-fonts .navbar,
+.amnotec-fonts .footer-body {
+  font-family: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-dmsans, 'DM Sans'), 'DM Sans', sans-serif;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Base Typography (Desktop PC, Large Desktop: 1280px - 2499px) */
+h1 { font-size: 2.25rem; /* 36px */ font-weight: 700 !important; font-family: var(--font-primary); line-height: 1.25; }
+h2 { font-size: 2.25rem; /* 36px */ font-weight: 700 !important; font-family: var(--font-primary); line-height: 1.25; }
+h3 { font-size: 1.5rem; /* 24px */ font-weight: 700; font-family: var(--font-primary); line-height: 1.3; }
+h4 { font-size: 1.25rem; /* 20px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.4; }
+p, li { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); line-height: 1.75; }
+span { font-size: 0.875rem; /* 14px */ font-family: var(--font-secondary); }
+.eyebrow { font-size: 1rem; /* 16px */ font-weight: 600; font-family: var(--font-primary); line-height: 1.25; letter-spacing: 0.05em; text-transform: uppercase; }
+.navbar { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); line-height: 1.3; }
+.footer-heading { font-size: 1.25rem; /* 20px */ font-weight: 700; font-family: var(--font-primary); line-height: 1.4; }
+.footer-body, .footer-body a, .footer-body span, .footer-body p { font-size: 1rem; /* 16px */ font-weight: 400; font-family: var(--font-secondary); line-height: 1.75; }
+.button { font-size: 1rem; /* 16px */ font-weight: 600; font-family: var(--font-primary) !important; line-height: 1.25; }
+
+/* 1. Small Mobile Screen (up to 480px) */
+/* Multiplier: ~0.7 */
+@media (max-width: 480px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 1.575rem; /* ~25.2px */ }
+  h2 { font-size: 1.575rem; /* ~25.2px */ }
+  h3 { font-size: 1.05rem; /* ~16.8px */ }
+  h4 { font-size: 0.875rem; /* 14px */ }
+  p, li { font-size: 0.8rem; /* 12.8px */ line-height: 1.6; }
+  span { font-size: 0.7rem; }
+  .eyebrow { font-size: 0.75rem; /* 12px */ }
+  .navbar { font-size: 0.85rem; }
+  .footer-heading { font-size: 1rem; }
+  .footer-body { font-size: 0.8rem; }
+  .button { font-size: 0.85rem; }
+}
+
+/* 2. Mobile Landscape Screen (481px - 767px) */
+/* Multiplier: ~0.8 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .custom-container { max-width: 92%; }
+  h1 { font-size: 1.8rem; /* ~28.8px */ }
+  h2 { font-size: 1.8rem; /* ~28.8px */ }
+  h3 { font-size: 1.2rem; /* ~19.2px */ }
+  h4 { font-size: 1rem; /* 16px */ }
+  p, li { font-size: 0.875rem; /* 14px */ line-height: 1.65; }
+  span { font-size: 0.75rem; }
+  .eyebrow { font-size: 0.85rem; }
+  .navbar { font-size: 0.9rem; }
+  .footer-heading { font-size: 1.1rem; }
+  .footer-body { font-size: 0.875rem; }
+  .button { font-size: 0.9rem; }
+}
+
+/* 3. Tablet Screen (768px - 1035px) - CRITICAL: Tablet-specific layout active up to 1035px */
+/* Multiplier: ~0.9 */
+@media (min-width: 768px) and (max-width: 1035px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.025rem; /* ~32.4px */ }
+  h2 { font-size: 2.025rem; /* ~32.4px */ }
+  h3 { font-size: 1.35rem; /* ~21.6px */ }
+  h4 { font-size: 1.125rem; /* ~18px */ }
+  p, li { font-size: 0.95rem; /* ~15.2px */ line-height: 1.7; }
+  span { font-size: 0.8rem; }
+  .eyebrow { font-size: 0.9rem; }
+  .navbar { font-size: 0.95rem; }
+  .footer-heading { font-size: 1.15rem; }
+  .footer-body { font-size: 0.95rem; }
+  .button { font-size: 0.95rem; }
+}
+
+/* 4. Laptop Screen (1036px - 1279px) - Desktop layout starts at 1036px */
+/* Multiplier: ~0.95 */
+@media (min-width: 1036px) and (max-width: 1279px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 2.1375rem; /* ~34.2px */ }
+  h2 { font-size: 2.1375rem; /* ~34.2px */ }
+  h3 { font-size: 1.425rem; /* ~22.8px */ }
+  h4 { font-size: 1.1875rem; /* ~19px */ }
+  p, li { font-size: 0.975rem; /* ~15.6px */ }
+  span { font-size: 0.85rem; }
+  .eyebrow { font-size: 0.95rem; }
+  .navbar { font-size: 1rem; }
+  .footer-heading { font-size: 1.2rem; }
+  .footer-body { font-size: 0.975rem; }
+  .button { font-size: 1rem; }
+}
+
+/* 5. Desktop PC Screen (1280px - 2499px) */
+@media (min-width: 1280px) and (max-width: 2499px) {
+  .custom-container { max-width: 90%; }
+}
+
+/* 6. Ultra-wide Screen / 2K-3K (2500px - 3799px) */
+/* Multiplier: ~1.5 */
+@media (min-width: 2500px) and (max-width: 3799px) {
+  .custom-container { max-width: 85%; }
+  h1 { font-size: 3.375rem; /* 54px */ }
+  h2 { font-size: 3.375rem; /* 54px */ }
+  h3 { font-size: 2.25rem; /* 36px */ }
+  h4 { font-size: 1.875rem; /* 30px */ }
+  p, li { font-size: 1.5rem; /* 24px */ line-height: 1.8; }
+  span { font-size: 1.3125rem; /* 21px */ }
+  .eyebrow { font-size: 1.5rem; /* 24px */ }
+  .navbar { font-size: 1.5rem; /* 24px */ }
+  .footer-heading { font-size: 1.875rem; /* 30px */ }
+  .footer-body { font-size: 1.5rem; /* 24px */ }
+  .button { font-size: 1.5rem; /* 24px */ }
+}
+
+/* 7. 4K Ultra-wide Screen (3800px and above) */
+/* Multiplier: ~2.0 */
+@media (min-width: 3800px) {
+  .custom-container { max-width: 90%; }
+  h1 { font-size: 4.5rem; /* 72px */ }
+  h2 { font-size: 4.5rem; /* 72px */ }
+  h3 { font-size: 3rem; /* 48px */ }
+  h4 { font-size: 2.5rem; /* 40px */ }
+  p, li { font-size: 2rem; /* 32px */ line-height: 1.85; }
+  span { font-size: 1.75rem; /* 28px */ }
+  .eyebrow { font-size: 2rem; /* 32px */ }
+  .navbar { font-size: 2rem; /* 32px */ }
+  .footer-heading { font-size: 2.5rem; /* 40px */ }
+  .footer-body { font-size: 2rem; /* 32px */ }
+  .button { font-size: 2rem; /* 32px */ }
+}
+
+/* =========================================================================
+   STRICT RESPONSIVE GRIDS FOR AMNOTEC
+   Requirement: Tablet layout (2 cols) stays active 768px - 1035px.
+   Desktop layout begins strictly at 1036px:
+   - Products: 3 columns
+   - Certifications: 4 columns
+   - Latest News: 3 columns
+   - Footer: 5 columns in a single row
+   ========================================================================= */
+
+/* Products: 1 col (<768px), 2 cols (768px-1035px), 3 cols (>=1036px) */
+.amnotec-products-grid {
+  display: grid !important;
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
+}
+@media (min-width: 768px) and (max-width: 1035px) {
+  .amnotec-products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.75rem !important;
+  }
+  .amnotec-products-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    width: 100% !important;
+    max-width: calc((100% - 1.75rem) / 2) !important;
+  }
+}
+@media (min-width: 1036px) {
+  .amnotec-products-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+  .amnotec-products-grid > :last-child:nth-child(odd) {
+    grid-column: auto !important;
+    justify-self: stretch !important;
+    max-width: none !important;
+  }
+}
+
+/* Certifications: 1 col (<480px), 2 cols (481px-1035px), 4 cols (>=1036px) */
+.amnotec-certs-grid {
+  display: grid !important;
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
+}
+@media (min-width: 481px) and (max-width: 1035px) {
+  .amnotec-certs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.75rem !important;
+  }
+  .amnotec-certs-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    width: 100% !important;
+    max-width: calc((100% - 1.75rem) / 2) !important;
+  }
+}
+@media (min-width: 1036px) {
+  .amnotec-certs-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+  .amnotec-certs-grid > :last-child:nth-child(odd) {
+    grid-column: auto !important;
+    justify-self: stretch !important;
+    max-width: none !important;
+  }
+}
+
+/* Latest News: 1 col (<768px), 2 cols (768px-1035px), 3 cols (>=1036px) */
+.amnotec-news-grid {
+  display: grid !important;
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
+}
+@media (min-width: 768px) and (max-width: 1035px) {
+  .amnotec-news-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.75rem !important;
+  }
+  .amnotec-news-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    width: 100% !important;
+    max-width: calc((100% - 1.75rem) / 2) !important;
+  }
+}
+@media (min-width: 1036px) {
+  .amnotec-news-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+  }
+  .amnotec-news-grid > :last-child:nth-child(odd) {
+    grid-column: auto !important;
+    justify-self: stretch !important;
+    max-width: none !important;
+  }
+}
+
+/* Footer Grid: 2 cols on mobile (<768px), 3 cols on tablet (768px-1035px), 5 cols single row (>=1036px) */
+.amnotec-footer-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 2rem 1.25rem !important;
+  width: 100% !important;
+  align-items: start !important;
+}
+.amnotec-footer-col-1 {
+  grid-column: span 2 / span 2 !important;
+}
+@media (min-width: 768px) and (max-width: 1035px) {
+  .amnotec-footer-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 2.5rem 2rem !important;
+  }
+  .amnotec-footer-col-1 {
+    grid-column: span 3 / span 3 !important;
+  }
+}
+@media (min-width: 1036px) {
+  .amnotec-footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr 1fr !important;
+    gap: 2rem !important;
+    align-items: start !important;
+  }
+  .amnotec-footer-col-1 {
+    grid-column: span 1 / span 1 !important;
+    align-self: center !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+}
+@media (min-width: 1280px) {
+  .amnotec-footer-grid {
+    gap: 2.5rem !important;
+  }
+}
+
